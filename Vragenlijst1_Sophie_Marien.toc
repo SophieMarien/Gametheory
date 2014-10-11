@@ -1,0 +1,10 @@
+\select@language {dutch}
+\contentsline {section}{\numberline {1}Wat is de doelstelling van je thesis? (beschrijf deze doelstelling met eigen woorden in min 5, max 10 lijnen)}{2}{section.1}
+\contentsline {section}{\numberline {2}Wat zijn de belangrijkste problemen die je moet oplossen? (max 5 lijnen)}{2}{section.2}
+\contentsline {section}{\numberline {3}Wat heb je tot op heden gedaan? (literatuur (wat precies?), leren werken met tools (welke?), analyse (van wat?), al iets ontworpen en/of geïmplementeerd (wat precies?), ...)}{2}{section.3}
+\contentsline {section}{\numberline {4}Wat heb je gepland om te doen tijdens de volgende 4 weken?}{3}{section.4}
+\contentsline {section}{\numberline {5}Tegen wanneer plan je om je thesis in te dienen (juni, september, januari)?}{3}{section.5}
+\contentsline {section}{\numberline {6}Stuur je ISP naar je begeleider en je promotor, en geef aan hoeveel examens je in de januari-zittijd en in de juni-zittijd zult hebben.}{3}{section.6}
+\contentsline {section}{\numberline {7}Evalueer de tijd die je in je thesis gestoken hebt in de voorbije 4 weken: veel te weinig / te weinig / voldoende / ruim voldoende / meer dan verwacht.}{3}{section.7}
+\contentsline {section}{\numberline {8}Evalueer de vorderingen van je thesis t.o.v. het bereiken van de vooropgestelde doelstelling: ver achter op het schema / achter op het schema / goed op schema / vooruit op het schema / ver vooruit op het schema.}{3}{section.8}
+\contentsline {section}{\numberline {9}Stuur de ingevulde timesheet mee als bijlage.}{3}{section.9}
