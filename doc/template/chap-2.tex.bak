@@ -1,6 +1,6 @@
 \chapter{The FlipIt game}
 \label{cha:2}
-In this section, we introduce the game \flip{FlipIt}. \flip{FlipIt} is a game introduced by .. .. and Rivest. First we explain the framework of FlipIt and after that the formulas and aannames that we will make for the game for during the whole paper.  
+In this section, we introduce the game \flip{FlipIt} \cite{FlipIt}. \flip{FlipIt} is a game introduced by .. .. and Rivest. First we explain the framework of FlipIt and after that the formulas and aannames that we will make for the game for during the whole paper.  
 
 \section{The First Topic of this Chapter}
 \flip{FlipIt} is a two-players game with a shared (single) resource that the players want to control as long as possible. The shared resource can be a password, a network or a secret key depending on the setting being modeled. In the rest of the paper we will call the players the Attacker and the Defender. To get the control over the resource, players can flip the resource at any given time. Each move will imply a certain cost. The unique feature of \flip{FlipIt} is that the move will happen in a stealthy way, meaning that the other player has no clue that the other player has flipped the resource. For instance, the defender will not find out if the resource has already been compromised by the attacker, but he can only potentially know it after he flips the resource himself. The goal of the player is to maximize the time that he or she has control over the resource while minimizing total cost of the moves. Players won't move to frequently. A move can also result in a "wasted move", in this paper called flop. It could be that the resource was for example already under control of the defender. If the defender moves when he or she has already the control over the resource, he or she would have a wasted move because it would not result in a change of ownership. 
@@ -17,7 +17,7 @@ The game can be extended by the amount of information that a player receives. It
 \item Knowledge-of-strategy (KS): The player finds out the complete information of the strategy that the opponent is playing.
 \end{itemize}
 
-In our assumptio will the strategy of both players be non-adaptive. Non of the players has information of the strategy of the opponent. 
+In our assumption will the strategy of both players be non-adaptive. Non of the players has information of the strategy of the opponent. 
 
 
 \subsection{An item}
