@@ -1,0 +1,89 @@
+\documentclass[a4paper, 11pt]{article}
+\setlength{\topmargin}{-.5in}
+\setlength{\textheight}{9in}
+\setlength{\oddsidemargin}{.100in}
+\setlength{\textwidth}{6.25in}
+\usepackage [dutch] {babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{fullpage}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{soul}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage{parskip}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true
+  tabsize=3
+}
+
+\newcommand{\todo}[1]{{\huge \textcolor{green}{#1}}\\}
+\newcommand{\comment}[1]{\textcolor{red}{#1}\\}
+\newcommand{\viscomment}[1]{\textcolor{red}{#1}}
+\newcommand{\flip}[1] {\textcolor{black}{#1}}
+
+\begin{document}
+
+\begin{titlepage}
+\title{Thesis followup}
+\author{Sophie Marien}
+\end{titlepage}
+
+
+
+\maketitle
+
+
+\section{Vergelijk wat je gedaan hebt de vorige 4 weken met wat je in het vorige verslag aangekondigd had te zullen doen.}
+
+In het vorige verslag had ik aangekondigd dat ik mijn verloren uren van de eerste twee weken zou inhalen. Dit was toch niet zo makkelijk. Ik heb ze voorlopig nog niet ingehaald maar ik blijf wel goed doorwerken.
+Verder wou ik ook nog meer lezen over gametheory en de cursus op coursera verder volgen. Ik heb dit uiteindelijk uitgebreid naar kennis over netwerk beveiliging en virussen en wormen en of hierop al gametheorie is toegepast. 
+Mijn laatste doelstelling was mijn hypothese kunnen opstellen en mijn topic kunnen afbakenen. Deze week ben ik mijn goals aan het opstellen en heb ik mijn topic zo goed als duidelijk kunnen afbakenen.
+
+
+\section{Wat heb je gepland om te doen tijdens de volgende 4 weken?}
+Voor volgende weken staat nog steeds literatuurstudie gepland. Ik zou graag mijn goals af willen hebben zodat ik in staat ben om alles in formule vorm op te schrijven. Daar kan ik dan verder mee doorgaan en gaan bewijzen wat de beste oplossing is voor de verschillende vraagstellingen. 
+
+\section{Welk type artikel ga je eind december indienen (IEEE-stijl of populariserend)? Dit moet je bepalen in samenspraak met je begeleider en/of promotor. (Dit is niet van toepassing voor de studenten van de Master Toegepaste Informatica)}
+
+Het populariserend artikel.
+\section{Geef een korte samenvatting van het artikel dat je gaat schrijven. (Dit is niet van toepassing voor de studenten van de Master Toegepaste Informatica)}
+
+Het artikel zal eerst een introductie geven over gametheorie en een korte geschiedenis. Daarna vertel ik meer over de propagatie van virussen en wormen in een computer netwerk. Uiteindelijk leg ik uit hoe ik FlipIt hierop ga toepassen en wat de doelstellingen zijn van mijn onderzoek.
+
+
+
+\section{Evalueer de tijd die je in je thesis gestoken hebt in de voorbije 4 weken: veel te weinig / te weinig / voldoende / ruim voldoende / meer dan verwacht.}
+
+Voldoende. Vorige week heb ik er maar weinig tijd ingestoken wegens het werken aan een ander project. De andere weken heb ik geprobeerd om zoveel mogelijk tijd in mijn thesis te steken en te mikken op 23u per week. Voorlopig is het me nog niet gelukt om aan zoveel uur te geraken.
+
+\section{Evalueer de vorderingen van je thesis t.o.v. het bereiken van de vooropgestelde doelstelling: ver achter op het schema / achter op het schema / goed op schema / vooruit op het schema / ver vooruit op het schema.}
+
+Voorlopig sta ik op schema zoals ik het in het vorige verslag opgesteld had.  
+
+
+
+
+
+ 
+\end{document}
+
+
