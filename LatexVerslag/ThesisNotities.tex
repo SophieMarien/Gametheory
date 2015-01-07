@@ -1,0 +1,109 @@
+\documentclass[a4paper, 11pt]{article}
+\setlength{\topmargin}{-.5in}
+\setlength{\textheight}{9in}
+\setlength{\oddsidemargin}{.100in}
+\setlength{\textwidth}{6.25in}
+\usepackage [dutch] {babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{fullpage}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{soul}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage{parskip}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true
+  tabsize=3
+}
+
+\newcommand{\todo}[1]{{\huge \textcolor{green}{#1}}\\}
+\newcommand{\comment}[1]{\textcolor{red}{#1}\\}
+\newcommand{\viscomment}[1]{\textcolor{red}{#1}}
+\newcommand{\flip}[1] {\textcolor{black}{#1}}
+
+\begin{document}
+
+\begin{titlepage}
+\title{Vragen OSS}
+\author{Sophie Marien}
+\end{titlepage}
+
+
+
+\maketitle
+\tableofcontents
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%																					%%%%%%
+%%%%%					FLipIt with Multiple resources									%%%%%%
+%%%%%																					%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Abstract}
+\label{Section:Abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%																					%%%%%%
+%%%%%					FLipIt with Multiple resources									%%%%%%
+%%%%%																					%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+\label{Section:Introduction}
+important for economics, psygology, computer science, ..
+How should these interactions be structured
+"Game is an interaction between two or more people, where the outcome of the interactions depends on what everybody does, and everybody has different levels of happiness for the different outcomes"
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%																					%%%%%%
+%%%%%					Intoruction to FlipIt 											%%%%%%
+%%%%%																					%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{FLipIt introduction}
+
+In this section, we introduce the game \flip{FlipIt}. \flip{FlipIt} is a two-players game with a shared (single) resource that the players want to control as long as possible. The shared resource can be a password, a network or a secret key depending on the setting being modeled. In the rest of the paper we will call the players the Attacker and the Defender. To get the control over the resource, players can flip the resource at any given time. Each move will imply a certain cost. The unique feature of \flip{FlipIt} is that the move will happen in a stealthy way, meaning that the other player has no clue that the other player has flipped the resource. For instance, the defender will not find out if the resource has already been compromised by the attacker, but he can only potentially know it after he flips the resource himself. The goal of the player is to maximize the time that he or she has control over the resource while minimizing total cost of the moves. Players won't move to frequently. A move can also result in a "wasted move", in this paper called flop. It could be that the resource was for example already under control of the defender. If the defender moves when he or she has already the control over the resource, he or she would have a wasted move because it would not result in a change of ownership. 
+ 
+Because the players move in a sthealty way, there are different types of feedback that a player can get while moving:
+\begin{itemize}
+\item Non-adaptive (NA): The player does not receive any feedback while flipping.
+\item Last move (LM): The player finds out the exact time the opponent played the last time.
+\item Full History (FH): The player finds out the complete history of the opponents move.
+\end{itemize}
+The game can be "uitgebreid" by the amount of information that a player receives. It can also be possible for a player to get information at the start of the game. Both interesting cases are:
+\begin{itemize}
+\item Rate-of-play (RP: The player finds out the exact rate of play of the opponent.
+\item Knowledge-of-strategy (KS): The player finds out the complete information of the strategy that the opponent is playing.
+\end{itemize}
+
+In our "aanname" will the strategy of both players be non-adaptive. Non of the players has information of the strategy of the opponent. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%																					%%%%%%
+%%%%%					FLipIt with Multiple resources									%%%%%%
+%%%%%																					%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Changing FlipIt to multiple resources}
+\label{Section:FLipItmulti}
+In this section we will discuss the changes made to \flip{FlipIt} to make a model to model multiple resources. 
+\flip{FlipIt} is a framework for a single shared resource and two players, the defender and the attacker. 
+\end{document}
+
+
