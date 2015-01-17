@@ -1,0 +1,54 @@
+-- Thesis verslag vergadering 16/01
+
+
+%-------- Actie aanvaller --------%
+
+- alle naburige nodes infecteren met terugkerende infectie
+- alle naburuge nodes infecteren en niet meer terug kunnen infecteren
+
+parameters
+- node aanvallen
+- hoeveel keer aanvallen
+- propagatie snelheid
+- kost
+
+Opmerkingen
+- wanneer virus droppen 
+- op welke node
+- wanneer volgende viruse droppen
+- eerst situatie bekijken waarbij node wel terug wordt geinfecteerd
+ 
+
+%-------- Actie verdediger --------%
+
+- nodes onafhankelijk gaan bekijken en flippen
+- met groep geconnecteerde nodes werken of niet
+
+parameters
+- graad van de node
+- aantal nodes
+- kost
+
+
+%-------- Algemeen ----------------%
+
+Beginnen met de default situatie van node die terug geinfecteerd kan worden en flip die geen patch
+voorsteld van de node. Gaan kijken of we met 1 node terug Flip-It krijgen. Uitbreiden naar 2 nodes
+en dan gaan zien waarom Flip-it dit niet meer kan coveren en zeggen wat er aan veranderd moet worden
+zodat dit wel gaat.
+
+
+Verder uitzoeken:
+- Voorlopig flip een clean en geen patch
+- Veranderen wormen zich gaandeweg
+- UDP en TCP wormen, verschil in propagatiesnelheid
+- Verdediger met full history of andere extra informatie
+- mogelijks een budget geven
+- papers over grafen en sociale netwerken voor groepen
+
+
+
+Opmerkingen
+- Flipit is een Targeted thread
+- kans node geinfecteerd
+- nodes niet terug geinfecteerd moeilijker
