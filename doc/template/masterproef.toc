@@ -6,12 +6,12 @@
 \select@language {dutch}
 \select@language {dutch}
 \contentsline {chapter}{Voorwoord}{i}{chapter*.1}
-\contentsline {chapter}{Samenvatting}{iii}{chapter*.2}
-\select@language {dutch}
 \contentsline {chapter}{Samenvatting}{iv}{chapter*.3}
 \select@language {dutch}
-\contentsline {chapter}{L"yst van figuren en tabellen}{v}{chapter*.4}
-\contentsline {chapter}{List of Abbreviations and Symbols}{vi}{chapter*.7}
+\contentsline {chapter}{Samenvatting}{v}{chapter*.4}
+\select@language {dutch}
+\contentsline {chapter}{L"yst van figuren en tabellen}{vi}{chapter*.5}
+\contentsline {chapter}{List of Abbreviations and Symbols}{vii}{chapter*.8}
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Lorem Ipsum 4--5}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Lorem Ipsum 6--7}{1}{section.1.2}
@@ -21,22 +21,23 @@
 \contentsline {subsection}{\numberline {2.1.2}Malware}{4}{subsection.2.1.2}
 \contentsline {section}{\numberline {2.2}Conclusion}{4}{section.2.2}
 \contentsline {chapter}{\chapternumberline {3}The FlipIt game}{5}{chapter.3}
-\contentsline {section}{\numberline {3.1}The First Topic of this Chapter}{5}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}An item}{6}{subsection.3.1.1}
-\contentsline {section}{\numberline {3.2}Figures}{6}{section.3.2}
-\contentsline {section}{\numberline {3.3}Tables}{6}{section.3.3}
-\contentsline {section}{\numberline {3.4}Lorem Ipsum}{7}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Lorem ipsum dolor sit amet, consectetur adipiscing elit}{7}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Praesent auctor venenatis posuere}{7}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Cras vulputate ultricies venenatis}{8}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Donec nibh ante, consectetur et posuere id, tempus nec arcu}{8}{subsection.3.4.4}
-\contentsline {subsection}{\numberline {3.4.5}Morbi et mauris tempus purus ornare vehicula}{8}{subsection.3.4.5}
-\contentsline {section}{\numberline {3.5}Conclusion}{9}{section.3.5}
+\contentsline {section}{\numberline {3.1}Extensions on FlipIt}{5}{section.3.1}
+\contentsline {section}{\numberline {3.2}The First Topic of this Chapter}{5}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}An item}{6}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}Figures}{6}{section.3.3}
+\contentsline {section}{\numberline {3.4}Tables}{7}{section.3.4}
+\contentsline {section}{\numberline {3.5}Lorem Ipsum}{7}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Lorem ipsum dolor sit amet, consectetur adipiscing elit}{7}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Praesent auctor venenatis posuere}{8}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Cras vulputate ultricies venenatis}{8}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.4}Donec nibh ante, consectetur et posuere id, tempus nec arcu}{8}{subsection.3.5.4}
+\contentsline {subsection}{\numberline {3.5.5}Morbi et mauris tempus purus ornare vehicula}{9}{subsection.3.5.5}
+\contentsline {section}{\numberline {3.6}Conclusion}{9}{section.3.6}
 \contentsline {chapter}{\chapternumberline {4}The Final Chapter}{11}{chapter.4}
 \contentsline {section}{\numberline {4.1}The First Topic of this Chapter}{11}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Item 1}{11}{subsection.4.1.1}
-\contentsline {subsubsection}{Sub-item 1}{11}{section*.10}
-\contentsline {subsubsection}{Sub-item 2}{11}{section*.11}
+\contentsline {subsubsection}{Sub-item 1}{11}{section*.12}
+\contentsline {subsubsection}{Sub-item 2}{11}{section*.13}
 \contentsline {subsection}{\numberline {4.1.2}Item 2}{12}{subsection.4.1.2}
 \contentsline {section}{\numberline {4.2}The Second Topic}{12}{section.4.2}
 \contentsline {section}{\numberline {4.3}Conclusion}{13}{section.4.3}
@@ -49,7 +50,7 @@
 \contentsline {appendix}{\chapternumberline {B}The Last Appendix}{21}{appendix.B}
 \contentsline {section}{\numberline {B.1}Lorem 20-24}{21}{section.B.1}
 \contentsline {section}{\numberline {B.2}Lorem 25-27}{22}{section.B.2}
-\contentsline {chapter}{Bibliografie}{23}{section*.13}
+\contentsline {chapter}{Bibliografie}{23}{section*.15}
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}
