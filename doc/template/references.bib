@@ -1,3 +1,74 @@
+@article{FlipIt,
+abstract = {Most cryptographic systems carry the basic assumption that entities are able to preserve the secrecy of their keys. With attacks today showing ever increasing sophistication, however, this tenet is eroding. “Advanced Persistent Threats” (APTs), for instance, leverage zero-day exploits and extensive system knowledge to achieve full compromise of cryptographic keys and other secrets. Such compromise is often silent, with defenders failing to detect the loss of private keys critical to protection of their systems. The growing virulence of today’s
+threats clearly calls for new models of defenders’ goals and abilities. In this paper, we explore applications of FLIPIT, a novel game-theoretic model of system defense introduced in [17]. In FLIPIT, an attacker periodically gains complete control of a system, with the unique feature that system compromises are stealthy, i.e., not immediately detected by the system owner, called the defender. We distill out several lessons from our study of FLIPIT and demonstrate their application to several real-world problems, including password reset policies, key rotation, VM refresh and cloud auditing.},
+year={2013},
+issn={0933-2790},
+journal={Journal of Cryptology},
+volume={26},
+number={4},
+doi={10.1007/s00145-012-9134-5},
+title={FlipIt: The Game of “Stealthy Takeover”},
+url={http://dx.doi.org/10.1007/s00145-012-9134-5},
+publisher={Springer US},
+keywords={FlipIt; Security modeling; Game theory; Advanced persistent threats; Repeated stealthy takeovers},
+author={van Dijk, Marten and Juels, Ari and Oprea, Alina and Rivest, RonaldL.},
+pages={655-713},
+language={English}
+}
+
+@article{FlipThem,
+abstract = {Recent high-profile targeted attacks showed that even the most secure and secluded networks can be compromised by motivated and resourceful attackers, and that such a system compromise may not be immediately detected by the system owner. Researchers at RSA proposed the FlipIt game to study the impact of such stealthy takeovers. In the basic FlipIt game, an attacker and a defender fight over a single resource; in practice, however, systems typically consist of multiple resources that can be targeted. In this paper, we present FlipThem, a generalization of FlipIt to multiple resources. To formulate the players’ goals and study their best strategies, we introduce two control models: in the AND model, the attacker has to compromise all resources in order to take over the entire system, while in the OR model, she has to compromise only one. Our analytical and numerical results provide practical recommendations for defenders.},
+author = {Aron Laszka, Gabor Horvath, Mark Felegyhazi, Levente Buttyan},
+doi = {10.1007/978-3-319-12601-2_10},
+isbn = {978-3-319-12601-2},
+issn = {0302-9743},
+journal = {5th International Conference, GameSec 2014, Los Angeles, CA, USA, November 6-7, 2014. Proceedings}, 
+pages = 175--194},
+title = {{FlipThem: Modeling Targeted Attacks with FlipIt for Multiple Resources}},
+volume = {8840},
+year = {2014},
+publisher = {Springer Berlin Heidelberg}
+}
+
+
+@article{MitigationNonTargeted,
+abstract = {We consider a strategic game in which a defender wants to maintain control over a resource that is subject to both targeted and non-targeted covert attacks. Because the attacks are covert, the defender must choose to secure the resource in real time without knowing who controls it. Each move by the defender to secure the resource has a one-time cost and these defending moves are not covert, so that a targeted attacker may time her attacks based on the defender’s moves. The time between when a targeted attack starts and when it succeeds is given by an exponentially distributed random variable with a known rate. Non-targeted attackers are modeled together as a single attacker whose attacks arrive following a Poisson process. We find that in this regime, the optimal moving strategy for the defender is a periodic strategy, so that the time intervals between consecutive moves are constant.},
+year={2013},
+isbn={978-3-319-02785-2},
+booktitle={Decision and Game Theory for Security},
+volume={8252},
+series={Lecture Notes in Computer Science},
+editor={Das, SajalK. and Nita-Rotaru, Cristina and Kantarcioglu, Murat},
+doi={10.1007/978-3-319-02786-9_11},
+title={Mitigation of Targeted and Non-targeted Covert Attacks as a Timing Game},
+url={http://dx.doi.org/10.1007/978-3-319-02786-9_11},
+publisher={Springer International Publishing},
+keywords={Game Theory; Computer Security; Games of Timing; Covert Compromise; Targeted Attacks; Non-Targeted Attacks},
+author={Laszka, Aron and Johnson, Benjamin and Grossklags, Jens},
+pages={175-191},
+language={English}
+}
+
+@article{MitigationCovert,
+abstract = {Attackers of computing resources increasingly aim to keep security compromises hidden from defenders in order to extract more value over a longer period of time. These covert attacks come in multiple varieties, which can be categorized into two main types: targeted and non-targeted attacks. Targeted attacks include, for example, cyberespionage, while non-targeted attacks include botnet recruitment.
+We are concerned with the subclass of these attacks for which detection is too costly or technically infeasible given the capabilities of a typical organization. As a result, defenders have to mitigate potential damages under a regime of incomplete information. A primary mitigation strategy is to reset potentially compromised resources to a known safe state, for example, by reinstalling computer systems, and changing passwords or cryptographic private keys.
+In a game-theoretic framework, we study the economically optimal mitigation strategies in the presence of targeted and non-targeted covert attacks. Our work has practical implications for the definition of security policies, in particular, for password and key renewal schedules.},
+year={2013},
+isbn={978-3-642-45045-7},
+booktitle={Web and Internet Economics},
+volume={8289},
+series={Lecture Notes in Computer Science},
+editor={Chen, Yiling and Immorlica, Nicole},
+doi={10.1007/978-3-642-45046-4_26},
+title={Mitigating Covert Compromises},
+url={http://dx.doi.org/10.1007/978-3-642-45046-4_26},
+publisher={Springer Berlin Heidelberg},
+keywords={Game Theory; Computer Security; Covert Compromise; Targeted Attacks; Non-Targeted Attacks},
+author={Laszka, Aron and Johnson, Benjamin and Grossklags, Jens},
+pages={319-332},
+language={English}
+}
+
 
 @article{Craig2005,
 abstract = {Loss of mobility can occur for a variety of reasons,such as spinal cord injury or motor neurone disease. The onset of these conditions often brings with it an associated loss of personal independence, which is primarily due to the fact that the sufferer is no longer able to control their mobility. This project aims to address this problem through the creation of a head movement based wheelchair control system. Using a personal digital assistant (PDA) artificial intelligence techniques on an embedded LINUX operating system, a wireless head movement wheelchair control system has been designed and implemented. This system provides relief for sufferers of conditions which inhibit mobility through a method of wheelchair control which offers enhanced ease of use, attractiveness and independence.},
@@ -28,33 +99,65 @@ year = {2012},
 publisher = {Springer Berlin Heidelberg}
 }
 
-@article{FlipIt,
-abstract = {Most cryptographic systems carry the basic assumption that entities are able to preserve the secrecy of their keys. With attacks today showing ever increasing sophistication, however, this tenet is eroding. “Advanced Persistent Threats” (APTs), for instance, leverage zero-day exploits and extensive system knowledge to achieve full compromise of cryptographic keys and other secrets. Such compromise is often silent, with defenders failing to detect the loss of private keys critical to protection of their systems. The growing virulence of today’s
-threats clearly calls for new models of defenders’ goals and abilities. In this paper, we explore applications of FLIPIT, a novel game-theoretic model of system defense introduced in [17]. In FLIPIT, an attacker periodically gains complete control of a system, with the unique feature that system compromises are stealthy, i.e., not immediately detected by the system owner, called the defender. We distill out several lessons from our study of FLIPIT and demonstrate their application to several real-world problems, including password reset policies, key rotation, VM refresh and cloud auditing.},
-author = {Kevin D. Brouwers, Marten van Dijk, Robert Griffin, Ari Juels, Alina Oprea, Ronald L. Rivest and Nikos Triandopoulos},
-doi = {10.1007/978-3-642-34266-0_15},
-isbn = {978-3-642-34266-0},
-issn = {0302-9743},
-journal = {Third International Conference, GameSec 2012, Budapest, Hungary, November 5-6, 2012. Proceedings}, 
-pages = {248--263},
-title = {{Defending Against the Unkown Enemy: Applying FlipIt to System Security}},
-volume = {7638},
-year = {2012},
-publisher = {Springer Berlin Heidelberg}
+
+@book{leyton2008essentials,
+  title={Essentials of Game Theory: A Concise, Multidisciplinary Introduction},
+  author={Leyton-Brown, K. and Shoham, Y.},
+  isbn={9781598295931},
+  series={Synthesis lectures on artificial intelligence and machine learning},
+  url={http://books.google.be/books?id=u8sDLATVJikC},
+  year={2008},
+  publisher={Morgan \& Claypool Publishers}
 }
 
-@article{FlipThem,
-abstract = {Recent high-profile targeted attacks showed that even the most secure and secluded networks can be compromised by motivated and resourceful attackers, and that such a system compromise may not be immediately detected by the system owner. Researchers at RSA proposed the FlipIt game to study the impact of such stealthy takeovers. In the basic FlipIt game, an attacker and a defender fight over a single resource; in practice, however, systems typically consist of multiple resources that can be targeted. In this paper, we present FlipThem, a generalization of FlipIt to multiple resources. To formulate the players’ goals and study their best strategies, we introduce two control models: in the AND model, the attacker has to compromise all resources in order to take over the entire system, while in the OR model, she has to compromise only one. Our analytical and numerical results provide practical recommendations for defenders.},
-author = {Aron Laszka, Gabor Horvath, Mark Felegyhazi, Levente Buttyan},
-doi = {10.1007/978-3-319-12601-2_10},
-isbn = {978-3-319-12601-2},
-issn = {0302-9743},
-journal = {5th International Conference, GameSec 2014, Los Angeles, CA, USA, November 6-7, 2014. Proceedings}, 
-pages = 175--194},
-title = {{FlipThem: Modeling Targeted Attacks with FlipIt for Multiple Resources}},
-volume = {8840},
-year = {2014},
-publisher = {Springer Berlin Heidelberg}
+@Misc{wikiGT,
+author =       {Wikipedia},
+title =        {Game Theory},
+howpublished = {URL: \url{http://http://en.wikipedia.org/wiki/Game_theory},
+last checked on 2014-02-14}}
+}
+
+@Misc{Symantec,
+author =       {Symentec},
+title =        {2014 Internet Security Threat Report, Volume 19},
+howpublished = {URL: \url{http://www.symantec.com/content/en/us/enterprise/other_resources/b-istr_appendices_v19_221284438.en-us.pdf},
+last checked on 2014-02-14}}
+}
+
+@inproceedings{hack.in2009,
+  title={Survey on malware detection methods},
+  author={Vinod, P and Jaipur, R and Laxmi, V and Gaur, M},
+  booktitle={Proceedings of the 3rd Hackers’ Workshop on Computer and Internet Security (IITKHACK’09)},
+  pages={74--79},
+  year={2009}
+}
+
+@article{OnWorms2005survey,
+abstract={With the explosive growth and increasing complexity of network applications, the threats of Internet worms against network security are more and more serious. This paper presents the concepts and research situations of Internet worms, their function component, and their execution mechanism. It also addresses the scanning strategies, propagation models, and the critical techniques of Internet worm prevention. Finally, the remaining problems and emerging trends in this area are also outlined},
+  title={A survey and trends on Internet worms},
+  author={Qing, Sihan and Wen, Weiping},
+  journal={Computers \& Security},
+  volume={24},
+  number={4},
+  pages={334--346},
+  year={2005},
+  publisher={Elsevier}
+}
+
+@article{SurveyGameTheoryAppliedOnNetworkSecurity,
+abstract = {Network security is a complex and challenging problem. The area of network defense mechanism design is receiving immense attention from the research community for more than two decades. However, the network security problem is far from completely solved. Researchers have been exploring the applicability of game theoretic approaches to address the network security issues and some of these approaches look promising. This paper surveys the existing game theoretic solutions which are designed to enhance network security and presents a taxonomy for classifying the proposed solutions. This taxonomy should provide the reader with a better understanding of game theoretic solutions to a variety of cyber security problems.},
+author = {Roy, S. ; Dept. of Comput. Sci., Univ. of Memphis, Memphis, TN, USA ; Ellis, C. ; Shiva, S. ; Dasgupta, D. 
+more authors},
+doi = {10.1109/HICSS.2010.35},
+isbn = {978-1-4244-5510-2},
+issn = {1530-1605},
+conference = {System Sciences (HICSS), 2010 43rd Hawaii International Conference on}, 
+location = {Honolulu, HI},
+time = {5-8 Jan. 2010},
+pages = {1 - 10},
+title = {{Defending Against the Unkown Enemy: Applying FlipIt to System Security}},
+year = {2010},
+publisher = {IEEE}
 }
 
 %@Book{h2g2,

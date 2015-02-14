@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.27)  13 FEB 2015 19:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.27)  14 FEB 2015 11:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1523,42 +1523,52 @@ Package babel Info: Redefining dutch shorthand "y
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 1.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 9.
+(babel)             in language  on input line 7.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 9.
+(babel)             in language  on input line 7.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 9.
+(babel)             in language  on input line 7.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 9.
+(babel)             in language  on input line 7.
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 9.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 53.
+(babel)             in language  on input line 14.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 53.
+(babel)             in language  on input line 14.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 53.
+(babel)             in language  on input line 14.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 53.
+(babel)             in language  on input line 14.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 53.
+(babel)             in language  on input line 45.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 53.
+(babel)             in language  on input line 45.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 53.
+(babel)             in language  on input line 45.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 53.
+(babel)             in language  on input line 45.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 45.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 45.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 45.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 45.
  [3
 
 
 
 ]
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 71.
+(babel)             in language  on input line 76.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 71.
+(babel)             in language  on input line 76.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 71.
+(babel)             in language  on input line 76.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 71.
+(babel)             in language  on input line 76.
 )
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 143.
@@ -1596,8 +1606,14 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 5.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 5.
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 8.
+
+
+LaTeX Warning: Citation `MitigationNonTargeted' on page 5 undefined on input li
+ne 8.
+
+
+LaTeX Warning: Marginpar on page 5 moved by 4.11551pt.
+
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 20.
 Package babel Info: Redefining dutch shorthand "~
@@ -1622,7 +1638,7 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 22.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 22.
- [5
+[5
 
 
 
@@ -1635,8 +1651,7 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 43.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 43.
-
-<logokul.pdf, id=263, 159.33528pt x 56.90298pt>
+ <logokul.pdf, id=267, 159.33528pt x 56.90298pt>
 File: logokul.pdf Graphic file (type pdf)
  <use logokul.pdf>
 Package pdftex.def Info: logokul.pdf used on input line 48.
@@ -1715,7 +1730,8 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 165.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 165.
- [8]
+
+[8]
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 185.
 Package babel Info: Redefining dutch shorthand "~
@@ -1741,8 +1757,7 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 144.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 144.
-
-[9]
+ [9]
 \openout2 = `chap-n.aux'.
 
  (./chap-n.tex
@@ -2162,37 +2177,50 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 162.
 (./chap-n.aux) (./conclusion.aux) (./app-A.aux) (./app-n.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 162.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 162.
-Package rerunfilecheck Info: File `masterproef.out' has not changed.
-(rerunfilecheck)             Checksum: 6F550D5E5314137F8AA6ACA8D19AA414;1728.
+
+
+Package rerunfilecheck Warning: File `masterproef.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `masterproef.out':
+(rerunfilecheck)             Before: EC4D29EBA99B6DC2C36E0A312109B907;1728
+(rerunfilecheck)             After:  26A91830218C4158526ED7B238DFB1D2;1794.
+
+LaTeX Warning: There were undefined references.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 162.
  ) 
 Here is how much of TeX's memory you used:
- 22642 strings out of 493315
- 380959 string characters out of 6137903
- 625091 words of memory out of 5000000
- 25432 multiletter control sequences out of 15000+600000
+ 22657 strings out of 493315
+ 381302 string characters out of 6137903
+ 629172 words of memory out of 5000000
+ 25443 multiletter control sequences out of 15000+600000
  76851 words of font info for 102 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  61i,12n,78p,1333b,683s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
-texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/20
-13/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2013/texmf-d
-ist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1
-/public/lm/lmbx10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm
-/lmbx12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmcsc10.p
-fb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/l
-ocal/texlive/2013/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texliv
-e/2013/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2013/texm
-f-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2013/texmf-dist/fonts
-/type1/public/lm/lmri10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/pub
-lic/lm/lmss10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lms
-y10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></
-usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/loc
-al/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on masterproef.pdf (34 pages, 302808 bytes).
+pdfTeX warning (dest): name{section*.16} has been referenced but does not exi
+st, replaced by a fixed one
+
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/te
+xlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2013
+/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2013/texmf-dis
+t/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/p
+ublic/lm/lmbx10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/l
+mbx12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb
+></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/loc
+al/texlive/2013/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/
+2013/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2013/texmf-
+dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2013/texmf-dist/fonts/t
+ype1/public/lm/lmri10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/publi
+c/lm/lmss10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmsy1
+0.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></us
+r/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local
+/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on masterproef.pdf (34 pages, 304483 bytes).
 PDF statistics:
- 437 PDF objects out of 1000 (max. 8388607)
- 380 compressed objects within 4 object streams
- 94 named destinations out of 1000 (max. 500000)
+ 443 PDF objects out of 1000 (max. 8388607)
+ 386 compressed objects within 4 object streams
+ 98 named destinations out of 1000 (max. 500000)
  21255 words of extra memory for PDF output out of 24883 (max. 10000000)
 
