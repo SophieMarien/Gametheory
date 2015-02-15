@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  15 FEB 2015 12:06
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  15 FEB 2015 12:44
 entering extended mode
 **masterproef.tex
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.tex
@@ -1285,24 +1285,21 @@ niverse, and Everything''
 ]) [2]
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-1.tex
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 10.
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--14
-
- []
+ine 12.
 
 
 LaTeX Warning: Marginpar on page 3 moved by 58.51553pt.
 
 
-Underfull \vbox (badness 3989) has occurred while \output is active []
+Underfull \vbox (badness 1394) has occurred while \output is active []
 
  [3
 
 
 
-])
-[4] [5] (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-2.tex
+]
+[4]) [5]
+(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-2.tex
 [6
 
 
@@ -1385,18 +1382,14 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 162.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 162.
 Package rerunfilecheck Info: File `masterproef.out' has not changed.
 (rerunfilecheck)             Checksum: 358263829783ED27707883E88DA0090B;1876.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 162.
  ) 
 Here is how much of TeX's memory you used:
- 24016 strings out of 493921
- 427079 string characters out of 3144864
- 664978 words of memory out of 3000000
- 26638 multiletter control sequences out of 15000+200000
- 76851 words of font info for 102 fonts, out of 3000000 for 9000
+ 24022 strings out of 493921
+ 427166 string characters out of 3144864
+ 665097 words of memory out of 3000000
+ 26640 multiletter control sequences out of 15000+200000
+ 77111 words of font info for 104 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  60i,12n,78p,1333b,707s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program F
@@ -1414,7 +1407,7 @@ ss10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x8
 6)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on masterproef.pdf (36 pages, 351255 bytes).
+Output written on masterproef.pdf (36 pages, 352475 bytes).
 PDF statistics:
  457 PDF objects out of 1000 (max. 8388607)
  101 named destinations out of 1000 (max. 500000)
