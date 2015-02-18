@@ -4,6 +4,7 @@
 
 \section{Extensions on FlipIt}
 
+
 There a various possible ways to extend \flip{FlipIt}. For instance Laszka et al. extended the basic \flip{FlipIt} game to multiple resources. The incentive is that for compromising a system in a real case it needs more than just taking over one resource. An example is gaining access to a system and breaking the password. The model is called FlipThem \cite{FlipThem}. To ways of flipping the resources are used: the AND and the OR control model. In the AND model the attacker only controls the system if he controls all the resources of the system, whereas in the OR model the attacker only needs to compromise one resource to be in control of the entire system. The difference with FlipThem and this paper is that we introduce a Graph Model in the beginning.
 Another extention on FlipIt is done by Pham [\todo{citatie needed voor Are We Compromised?}]. Beside the action Flip their is another action Test. The basic idea is to test with an extra action if the resource has been compromised or not. This action involves also an extra cost. This model is useful if somebody wants to know for example if his password has been compromised or wants to assess the periodic security of a system.  In [\todo{citatie van Mitigatie blabla en nog is mitigatie blabla}] \cite{MitigationNonTargeted} Laszka et al. they also consider non targeted attacks by non-strategic players and . 
 
@@ -14,12 +15,12 @@ Another extention on FlipIt is done by Pham [\todo{citatie needed voor Are We Co
 
 
 
-In this section, we introduce the game \flip{FlipIt} \cite{FlipIt}. \flip{FlipIt} is a game introduced by .. .. and Rivest. First we explain the framework of FlipIt and after that the formulas and aannames that we will make for the game for during the whole paper.  
+In this section, we introduce the game \flip{FlipIt} \cite{FlipIt}. \flip{FlipIt} is a game introduced by .. .. and Rivest. First we explain the framework of FlipIt and after that the formulas and assumptions that we will make for the game for during the whole paper.  
 
 \section{The First Topic of this Chapter}
-\flip{FlipIt} is a two-players game with a shared (single) resource that the players want to control as long as possible. The shared resource can be a password, a network or a secret key depending on the setting being modeled. In the rest of the paper we will call the players the Attacker and the Defender. To get the control over the resource, players can flip the resource at any given time. Each move will imply a certain cost. The unique feature of \flip{FlipIt} is that the move will happen in a stealthy way, meaning that the other player has no clue that the other player has flipped the resource. For instance, the defender will not find out if the resource has already been compromised by the attacker, but he can only potentially know it after he flips the resource himself. The goal of the player is to maximize the time that he or she has control over the resource while minimizing total cost of the moves. Players won't move to frequently. A move can also result in a "wasted move", in this paper called flop. It could be that the resource was for example already under control of the defender. If the defender moves when he or she has already the control over the resource, he or she would have a wasted move because it would not result in a change of ownership. 
+\flip{FlipIt} is a two-players game with a shared (single) resource that the players want to control as long as possible. The shared resource can be a password, a network or a secret key depending on the setting being modelled. In the rest of the paper we will call the players the Attacker and the Defender. To get the control over the resource, players can flip the resource at any given time. Each move will imply a certain cost. The unique feature of \flip{FlipIt} is that the move will happen in a stealthy way, meaning that the other player has no clue that the other player has flipped the resource. For instance, the defender will not find out if the resource has already been compromised by the attacker, but he can only potentially know it after he flips the resource himself. The goal of the player is to maximize the time that he or she has control over the resource while minimizing total cost of the moves. Players won't move to frequently. A move can also result in a "wasted move", called a flop. It may happen that the resource was already under control by the defender. If the defender moves when he or she has already control over the resource, he or she would have wasted move since it does not result in a change of ownership. 
  
-Because the players move in a sthealty way, there are different types of feedback that a player can get while moving:
+Because the players move in a stealthy way, there are different types of feedback that a player can get while moving:
 \begin{itemize}
 \item Non-adaptive (NA): The player does not receive any feedback while flipping.
 \item Last move (LM): The player finds out the exact time the opponent played the last time.
@@ -31,9 +32,72 @@ The game can be extended by the amount of information that a player receives. It
 \item Knowledge-of-strategy (KS): The player finds out the complete information of the strategy that the opponent is playing.
 \end{itemize}
 
-In our assumption will the strategy of both players be non-adaptive. Non of the players has information of the strategy of the opponent. 
+In our assumption the strategy of both players will be non-adaptive. None of the players has information of the strategy of the opponent. 
 
 
+<<<<<<< HEAD
+=======
+\subsection{An item}
+A master thesis is never an isolated work. This means that your text must
+contain references. On-line documents\cite{FlipThem} as well as
+books\cite{DefendingAgainstUnknownEnemy} can be referenced. \cite{Craig2005}.
+
+\section{Figures}
+Figures are used to add illustrations to the text. The \fref{fig:logo} shows
+the KU~Leuven logo as an illustration.
+\begin{figure}
+  \centering
+  \includegraphics{logokul}
+  \caption{The KU~Leuven logo.}
+  \label{fig:logo}
+\end{figure}
+
+\section{Tables}
+Tables are used to present data neatly arranged. A table is normally
+not a spreadsheet! Compare \tref{tab:wrong} en \tref{tab:ok}: which table do
+you prefer?
+
+\begin{table}
+  \centering
+  \begin{tabular}{||l|lr||} \hline
+    gnats     & gram      & \$13.65 \\ \cline{2-3}
+              & each      & .01 \\ \hline
+    gnu       & stuffed   & 92.50 \\ \cline{1-1} \cline{3-3}
+    emu       &           & 33.33 \\ \hline
+    armadillo & frozen    & 8.99 \\ \hline
+  \end{tabular}
+  \caption{A table with the wrong layout.}
+  \label{tab:wrong}
+\end{table}
+
+\begin{table}
+  \centering
+  \begin{tabular}{@{}llr@{}} \toprule
+    \multicolumn{2}{c}{Item} \\ \cmidrule(r){1-2}
+    Animal    & Description & Price (\$)\\ \midrule
+    Gnat      & per gram    & 13.65 \\
+              & each        & 0.01 \\
+    Gnu       & stuffed     & 92.50 \\
+    Emu       & stuffed     & 33.33 \\
+    Armadillo & frozen      & 8.99 \\ \bottomrule
+  \end{tabular}
+  \caption{A table with the correct layout.}
+  \label{tab:ok}
+\end{table}
+
+\section{Lorem Ipsum}
+This section is added to check headers and footers. So this chapter must at
+least contain three pages. To make sure that we get the required amount,
+the \textsf{lipsum} package isn't used but the text is put directly in the
+text.
+
+
+\section{Conclusion}
+The final section of the chapter gives an overview of the important results
+of this chapter. This implies that the introductory chapter and the
+concluding chapter don't need a conclusion.
+
+>>>>>>> FETCH_HEAD
 
 %%% Local Variables: 
 %%% mode: latex

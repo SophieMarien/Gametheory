@@ -4,12 +4,12 @@
 \BOOKMARK [0][-]{chapter*.5}{Lijst van figuren en tabellen}{}% 4
 \BOOKMARK [0][-]{chapter*.8}{List of Abbreviations and Symbols}{}% 5
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 6
-\BOOKMARK [1][-]{section.1.1}{Lorem Ipsum 4\2055}{chapter.1}% 7
-\BOOKMARK [1][-]{section.1.2}{Lorem Ipsum 6\2057}{chapter.1}% 8
-\BOOKMARK [0][-]{chapter.2}{Intoduction to GameTheory}{}% 9
-\BOOKMARK [1][-]{section.2.1}{Intro to Gametheory}{chapter.2}% 10
-\BOOKMARK [1][-]{section.2.2}{Virusses}{chapter.2}% 11
-\BOOKMARK [1][-]{section.2.3}{Conclusion}{chapter.2}% 12
+\BOOKMARK [1][-]{section.1.1}{chap}{chapter.1}% 7
+\BOOKMARK [0][-]{chapter.2}{Intoduction to GameTheory}{}% 8
+\BOOKMARK [1][-]{section.2.1}{Intro Game Theory}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.2}{Other}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.3}{Virusses}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.4}{Conclusion}{chapter.2}% 12
 \BOOKMARK [0][-]{chapter.3}{The FlipIt game}{}% 13
 \BOOKMARK [1][-]{section.3.1}{Extensions on FlipIt}{chapter.3}% 14
 \BOOKMARK [1][-]{section.3.2}{The First Topic of this Chapter}{chapter.3}% 15
@@ -18,14 +18,11 @@
 \BOOKMARK [1][-]{section.3.5}{Lorem Ipsum}{chapter.3}% 18
 \BOOKMARK [1][-]{section.3.6}{Conclusion}{chapter.3}% 19
 \BOOKMARK [0][-]{chapter.4}{The Final Chapter}{}% 20
-\BOOKMARK [1][-]{section.4.1}{The First Topic of this Chapter}{chapter.4}% 21
-\BOOKMARK [1][-]{section.4.2}{The Second Topic}{chapter.4}% 22
-\BOOKMARK [1][-]{section.4.3}{Conclusion}{chapter.4}% 23
-\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 24
-\BOOKMARK [0][-]{appendix.A}{The First Appendix}{}% 25
-\BOOKMARK [1][-]{section.A.1}{More Lorem}{appendix.A}% 26
-\BOOKMARK [1][-]{section.A.2}{Lorem 51}{appendix.A}% 27
-\BOOKMARK [0][-]{appendix.B}{The Last Appendix}{}% 28
-\BOOKMARK [1][-]{section.B.1}{Lorem 20-24}{appendix.B}% 29
-\BOOKMARK [1][-]{section.B.2}{Lorem 25-27}{appendix.B}% 30
-\BOOKMARK [0][-]{section*.17}{Bibliografie}{}% 31
+\BOOKMARK [1][-]{section.4.1}{chap}{chapter.4}% 21
+\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 22
+\BOOKMARK [1][-]{section.5.1}{trala}{chapter.5}% 23
+\BOOKMARK [0][-]{appendix.A}{The First Appendix}{}% 24
+\BOOKMARK [1][-]{section.A.1}{More Lorem}{appendix.A}% 25
+\BOOKMARK [0][-]{appendix.B}{The Last Appendix}{}% 26
+\BOOKMARK [1][-]{section.B.1}{Lorem 20-24}{appendix.B}% 27
+\BOOKMARK [0][-]{section*.16}{Bibliografie}{}% 28
