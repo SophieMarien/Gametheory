@@ -26,7 +26,7 @@
 \contentsline {section}{\numberline {3.2}The First Topic of this Chapter}{7}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}An item}{8}{subsection.3.2.1}
 \contentsline {section}{\numberline {3.3}Figures}{8}{section.3.3}
-\contentsline {section}{\numberline {3.4}Tables}{9}{section.3.4}
+\contentsline {section}{\numberline {3.4}Tables}{8}{section.3.4}
 \contentsline {section}{\numberline {3.5}Lorem Ipsum}{9}{section.3.5}
 \contentsline {section}{\numberline {3.6}Conclusion}{9}{section.3.6}
 \contentsline {chapter}{\chapternumberline {4}The Final Chapter}{11}{chapter.4}
@@ -37,7 +37,7 @@
 \contentsline {section}{\numberline {A.1}More Lorem}{17}{section.A.1}
 \contentsline {appendix}{\chapternumberline {B}The Last Appendix}{19}{appendix.B}
 \contentsline {section}{\numberline {B.1}Lorem 20-24}{19}{section.B.1}
-\contentsline {chapter}{Bibliografie}{21}{section*.16}
+\contentsline {chapter}{Bibliografie}{21}{section*.17}
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}
