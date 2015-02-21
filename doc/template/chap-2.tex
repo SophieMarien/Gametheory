@@ -5,8 +5,8 @@
 \section{Extensions on FlipIt}
 
 
-There a various possible ways to extend \flip{FlipIt}. For instance Laszka et al. extended the basic \flip{FlipIt} game to multiple resources. The incentive is that for compromising a system in a real case it needs more than just taking over one resource. An example is gaining access to a system and breaking the password. The model is called FlipThem \cite{FlipThem}. To ways of flipping the resources are used: the AND and the OR control model. In the AND model the attacker only controls the system if he controls all the resources of the system, whereas in the OR model the attacker only needs to compromise one resource to be in control of the entire system. The difference with FlipThem and this paper is that we introduce a Graph Model in the beginning.
-Another extention on FlipIt is done by Pham [\todo{citatie needed voor Are We Compromised?}]. Beside the action Flip their is another action Test. The basic idea is to test with an extra action if the resource has been compromised or not. This action involves also an extra cost. This model is useful if somebody wants to know for example if his password has been compromised or wants to assess the periodic security of a system.  In [\todo{citatie van Mitigatie blabla en nog is mitigatie blabla}] \cite{MitigationNonTargeted} Laszka et al. they also consider non targeted attacks by non-strategic players and . 
+There a various possible ways to extend \flip{FlipIt}. For instance Laszka et al. extended the basic \flip{FlipIt} game to multiple resources. The incentive is that for compromising a system in a real case it needs more than just taking over one resource. An example is gaining access to a system and breaking the password. The model is called FlipThem \cite{FlipThem}. Two ways of flipping the resources are used: the AND and the OR control model. In the AND model the attacker only controls the system if he controls all the resources of the system, whereas in the OR model the attacker only needs to compromise one resource to be in control of the entire system. The difference with FlipThem and this paper is that we introduce a Graph Model in the beginning.\\
+Another extension on FlipIt is done by Pham [\todo{citatie needed voor Are We Compromised?}]. Beside the action Flip their is another action Test. The basic idea is to test with an extra action if the resource has been compromised or not. This action involves also an extra cost. This model is useful if somebody wants to know for example if his password has been compromised or wants to assess the periodic security of a system.  In \citep{MitigationCovert} \cite{MitigationNonTargeted} Laszka et al. they also consider non targeted attacks by non-strategic players and \todo{verder aanvullen}. 
 
 
 
@@ -35,61 +35,17 @@ The game can be extended by the amount of information that a player receives. It
 In our assumption the strategy of both players will be non-adaptive. None of the players has information of the strategy of the opponent. 
 
 
-<<<<<<< HEAD
-=======
-\subsection{An item}
-A master thesis is never an isolated work. This means that your text must
-contain references. On-line documents\cite{FlipThem} as well as
-books\cite{DefendingAgainstUnknownEnemy} can be referenced. \cite{Craig2005}.
 
 \section{Figures}
-Figures are used to add illustrations to the text. The \fref{fig:logo} shows
-the KU~Leuven logo as an illustration.
-\begin{figure}
-  \centering
-  \includegraphics{logokul}
-  \caption{The KU~Leuven logo.}
-  \label{fig:logo}
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=1]{Images/FlipItDefault.jpg}
+\caption{The FlipIt game where both players are playing periodically}
+\label{fig:FLipItDefault}
 \end{figure}
+\todo{verwijzen naar de figuur \ref{fig:FLipItDefault}}
 
-\section{Tables}
-Tables are used to present data neatly arranged. A table is normally
-not a spreadsheet! Compare \tref{tab:wrong} en \tref{tab:ok}: which table do
-you prefer?
 
-\begin{table}
-  \centering
-  \begin{tabular}{||l|lr||} \hline
-    gnats     & gram      & \$13.65 \\ \cline{2-3}
-              & each      & .01 \\ \hline
-    gnu       & stuffed   & 92.50 \\ \cline{1-1} \cline{3-3}
-    emu       &           & 33.33 \\ \hline
-    armadillo & frozen    & 8.99 \\ \hline
-  \end{tabular}
-  \caption{A table with the wrong layout.}
-  \label{tab:wrong}
-\end{table}
-
-\begin{table}
-  \centering
-  \begin{tabular}{@{}llr@{}} \toprule
-    \multicolumn{2}{c}{Item} \\ \cmidrule(r){1-2}
-    Animal    & Description & Price (\$)\\ \midrule
-    Gnat      & per gram    & 13.65 \\
-              & each        & 0.01 \\
-    Gnu       & stuffed     & 92.50 \\
-    Emu       & stuffed     & 33.33 \\
-    Armadillo & frozen      & 8.99 \\ \bottomrule
-  \end{tabular}
-  \caption{A table with the correct layout.}
-  \label{tab:ok}
-\end{table}
-
-\section{Lorem Ipsum}
-This section is added to check headers and footers. So this chapter must at
-least contain three pages. To make sure that we get the required amount,
-the \textsf{lipsum} package isn't used but the text is put directly in the
-text.
 
 
 \section{Conclusion}
