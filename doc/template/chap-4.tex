@@ -7,8 +7,13 @@
 
 \section{Write down the settings of the game}
 
-What is different from Flip-It.
+We model the network through an undirected Graph $G = < V, E> $ where V denotes the number of resources in the network and E the connection between two resources. 
+$N_{0}$ denotes the initially infected resources at the beginning of the virus propagation. 
+$P_{x}(R_{n},t|R_{0},r,t_{0})$ denotes the chance that resource $R_{n}$ is infected at time $t$ after dropping virus number x on to resource $R_{0}$ at $t_{0}$ with rate $r$. \\
 
+$S(R_{n},R_{0})$ denotes the shortest path from the infected resource $R_{0}$ to resource $R_{n}$. It gives back a value with the distance measured with how many resources are in between including the end resource. \\
+
+So the chance that a resource is infected after time t is the chance that the resource is infected by all the previous infections and that the defender has not flipped the resource.
 %%% Local Variables: 
 %%% mode: latex
 %%% TeX-master: "thesis"

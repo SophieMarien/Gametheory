@@ -24,22 +24,3 @@
 \contentsline {section}{\numberline {3.2}The First Topic of this Chapter}{7}{section.3.2}
 \contentsline {section}{\numberline {3.3}Figures}{8}{section.3.3}
 \contentsline {section}{\numberline {3.4}Conclusion}{8}{section.3.4}
-\contentsline {chapter}{\chapternumberline {4}The Final Chapter}{11}{chapter.4}
-\contentsline {section}{\numberline {4.1}chap}{11}{section.4.1}
-\contentsline {chapter}{\chapternumberline {5}Conclusion}{13}{chapter.5}
-\contentsline {section}{\numberline {5.1}trala}{13}{section.5.1}
-\contentsline {appendix}{\chapternumberline {A}The First Appendix}{17}{appendix.A}
-\contentsline {section}{\numberline {A.1}More Lorem}{17}{section.A.1}
-\contentsline {appendix}{\chapternumberline {B}The Last Appendix}{19}{appendix.B}
-\contentsline {section}{\numberline {B.1}Lorem 20-24}{19}{section.B.1}
-\contentsline {chapter}{Bibliografie}{21}{section*.16}
-\select@language {dutch}
-\select@language {dutch}
-\select@language {dutch}
-\select@language {dutch}
-\select@language {dutch}
-\select@language {dutch}
-\select@language {dutch}
-\select@language {dutch}
-\select@language {dutch}
-\select@language {dutch}
