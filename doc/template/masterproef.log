@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  22 FEB 2015 14:50
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  22 FEB 2015 18:49
 entering extended mode
 **masterproef.tex
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.tex
@@ -963,6 +963,66 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count187
 )
+(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\ti
+kz\libraries\tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
+
+(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflib
+raryarrows.code.tex
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.0 (rcs-revision 1.16)
+\arrowsize=\dimen216
+))
+(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\ti
+kz\libraries\tikzlibraryautomata.code.tex
+File: tikzlibraryautomata.code.tex 2008/07/14 v3.0.0 (rcs-revision 1.3)
+
+(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\ti
+kz\libraries\tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
+
+
+(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\shapes
+\pgflibraryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.0 (rcs-revision 1.2)
+\pgfnodepartlowerbox=\box44
+\pgfnodeparttwobox=\box45
+\pgfnodepartthreebox=\box46
+\pgfnodepartfourbox=\box47
+\pgfnodeparttwentybox=\box48
+\pgfnodepartnineteenbox=\box49
+\pgfnodeparteighteenbox=\box50
+\pgfnodepartseventeenbox=\box51
+\pgfnodepartsixteenbox=\box52
+\pgfnodepartfifteenbox=\box53
+\pgfnodepartfourteenbox=\box54
+\pgfnodepartthirteenbox=\box55
+\pgfnodeparttwelvebox=\box56
+\pgfnodepartelevenbox=\box57
+\pgfnodeparttenbox=\box58
+\pgfnodepartninebox=\box59
+\pgfnodeparteightbox=\box60
+\pgfnodepartsevenbox=\box61
+\pgfnodepartsixbox=\box62
+\pgfnodepartfivebox=\box63
+)))
+
+! LaTeX Error: Option clash for package inputenc.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 \definecolor
+                 {dkgreen}{rgb}{0,0.6,0}
+The package inputenc has already been loaded with options:
+  [ascii]
+There has now been an attempt to load it with options
+  [latin1]
+Adding the global options:
+  ascii,latin1
+to your \documentclass declaration may fix this.
+Try typing  <return>  to proceed.
+
 (C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 ) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
@@ -1017,7 +1077,7 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen216
+\@linkdim=\dimen217
 \Hy@linkcounter=\count188
 \Hy@pagecounter=\count189
 
@@ -1041,10 +1101,10 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count191
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen217
+\XeTeXLinkMargin=\dimen218
 \Fld@menulength=\count192
-\Field@Width=\dimen218
-\Fld@charsize=\dimen219
+\Field@Width=\dimen219
+\Fld@charsize=\dimen220
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -1088,21 +1148,21 @@ Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-5.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-2.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-4.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 81.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 85.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1110,13 +1170,13 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 (C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count201
-\scratchdimen=\dimen220
-\scratchbox=\box44
+\scratchdimen=\dimen221
+\scratchbox=\box64
 \nofMPsegments=\count202
 \nofMParguments=\count203
 \everyMPshowfont=\toks51
 \MPscratchCnt=\count204
-\MPscratchDim=\dimen221
+\MPscratchDim=\dimen222
 \MPnumerator=\count205
 \makeMPintoPDFobject=\count206
 \everyMPtoPDFconversion=\toks52
@@ -1141,7 +1201,7 @@ Sidefoothsep and sidefootwidth: 7pt and 101pt
 Sidefootvsep and sidefootheight: 13.6pt and 594.32022pt
 ******************************************************
 
-LaTeX Info: Redefining \microtypecontext on input line 81.
+LaTeX Info: Redefining \microtypecontext on input line 85.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1158,8 +1218,8 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 \c@lstlisting=\count207
 
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box45
-Package hyperref Info: Link coloring ON on input line 81.
+\AtBeginShipoutBox=\box65
+Package hyperref Info: Link coloring ON on input line 85.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1171,10 +1231,10 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 81.
-LaTeX Info: Redefining \ref on input line 81.
-LaTeX Info: Redefining \pageref on input line 81.
-LaTeX Info: Redefining \nameref on input line 81.
+LaTeX Info: Redefining \nameref on input line 85.
+LaTeX Info: Redefining \ref on input line 85.
+LaTeX Info: Redefining \pageref on input line 85.
+LaTeX Info: Redefining \nameref on input line 85.
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.out)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.out)
 \@outlinefile=\write5
@@ -1186,27 +1246,27 @@ Package microtype Info: Loading generic settings for font family
 <logokuleng.pdf, id=74, 159.33528pt x 85.358pt>
 File: logokuleng.pdf Graphic file (type pdf)
  <use logokuleng.pdf>
-Package pdftex.def Info: logokuleng.pdf used on input line 81.
+Package pdftex.def Info: logokuleng.pdf used on input line 85.
 (pdftex.def)             Requested size: 159.33542pt x 85.3617pt.
  [-1
 
 
 {C:/Users/ECONGUEST/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/User
 s/ECONGUEST/Documents/GitHub/Gametheory/doc/template/logokuleng.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 81.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 85.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 81.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 85.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 81.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 81.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 85.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 85.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1265,11 +1325,11 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 ]
 
-Package natbib Warning: Citation `h2g2' on page vii undefined on input line 137
+Package natbib Warning: Citation `h2g2' on page vii undefined on input line 141
 .
 
 
-Overfull \hbox (0.86812pt too wide) in paragraph at lines 137--137
+Overfull \hbox (0.86812pt too wide) in paragraph at lines 141--141
 []|\T1/lmr/m/n/10.95 (-20) ``The Answer to the Ultimate Question of Life, the U
 niverse, and Everything''
  []
@@ -1374,20 +1434,49 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--13
+Underfull \hbox (badness 10000) in paragraph at lines 50--68
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--15
+Underfull \hbox (badness 10000) in paragraph at lines 70--81
 
  []
 
-[10
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
+
+ []
 
 
-] [11
+Underfull \hbox (badness 10000) in paragraph at lines 85--96
 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--111
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--113
+
+ []
+
+[11] [12
+
+] [13
 
 ]
 
@@ -1397,53 +1486,54 @@ Package natbib Warning: There were undefined citations.
 \tf@tdo=\write7
 \tf@lof=\write8
 \tf@lot=\write9
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 22.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 22.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 115.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 115.
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.aux
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\intro.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-5.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-2.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-4.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 22.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 22.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 115.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 115.
 Package rerunfilecheck Info: File `masterproef.out' has not changed.
 (rerunfilecheck)             Checksum: F1E47A7097753109955049AC1D9F06C2;1013.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 22.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 115.
  ) )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 4 (\begingroup)
 ### bottom level
-(\end occurred when \iftrue on line 146 was incomplete)
-(\end occurred when \ifnum on line 146 was incomplete) 
+(\end occurred when \iftrue on line 150 was incomplete)
+(\end occurred when \ifnum on line 150 was incomplete) 
 Here is how much of TeX's memory you used:
- 24170 strings out of 493921
- 427553 string characters out of 3144864
- 665901 words of memory out of 3000000
- 26874 multiletter control sequences out of 15000+200000
- 73807 words of font info for 97 fonts, out of 3000000 for 9000
+ 25343 strings out of 493921
+ 463815 string characters out of 3144864
+ 710252 words of memory out of 3000000
+ 28023 multiletter control sequences out of 15000+200000
+ 74103 words of font info for 100 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 60i,12n,78p,1303b,707s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,12n,78p,1303b,847s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/M
 iKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts
-/enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/
-lm/lm-rm.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.en
-c}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files (x86)/MiKTeX 2
-.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
-ype1/public/lm/lmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public
-/lm/lmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pf
-b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files (x86)/MiKTeX 2.9
-/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
-1/public/lm/lmtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helve
-tic/uhvb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr
-8a.pfb>
-Output written on masterproef.pdf (21 pages, 322265 bytes).
+/enc/dvips/lm/lm-mathex.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/
+lm/lm-rm.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.en
+c}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files (x86)/MiKTeX 2
+.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
+pe1/public/lm/lmcsc10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public
+/lm/lmex10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.
+pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files (x86)/MiKTeX 2
+.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
+1/public/lm/lmri10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm
+/lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb
+><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on masterproef.pdf (23 pages, 343914 bytes).
 PDF statistics:
- 282 PDF objects out of 1000 (max. 8388607)
- 50 named destinations out of 1000 (max. 500000)
+ 296 PDF objects out of 1000 (max. 8388607)
+ 52 named destinations out of 1000 (max. 500000)
  19103 words of extra memory for PDF output out of 20736 (max. 10000000)
 
