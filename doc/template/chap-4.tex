@@ -64,7 +64,7 @@ For our graph we have an $|V| \times |V|$ matrix with on every entry $a_{ij}$ a 
 %    x_{d1} & x_{d2} & x_{d3} & \dots  & x_{dn}
 %\end{bmatrix}
 %\] 
-The adjacent matrix becomes this matrix $A$: \\
+The adjacent matrix becomes this matrix $[A]$: \\
 
 
 $
@@ -79,7 +79,7 @@ $
 }$
 \\
 
-Matrix $A \times A = A^{2}$ becomes the matrix with the number of paths with 2 steps from $N_{i}$ to $N_{j}$:\\
+Matrix $A \times A = A^{2}$ becomes the matrix with the number of paths with 2 steps from $N_{i}$ to $N_{j}$: We denote this matrix as matrix \textit{[B]}\\
 
 
 $
@@ -94,7 +94,7 @@ $
 }$
 \\
 
-Matrix $A^{2} \times A = A^{3}$ becomes the matrix with the number of paths with 3 steps from $N_{i}$ to $N_{j}$:\\
+Matrix $A^{2} \times A = A^{3}$ becomes the matrix with the number of paths with 3 steps from $N_{i}$ to $N_{j}$: We denote this matrix as matrix \textit{[C]}\\
 
 
 $
@@ -112,4 +112,6 @@ $
 So for $A^{N}$ every $a_{ij}$ entry gives the number of paths with N steps from $N_{i}$ to $N_{j}$.\\
 
 With this knowledge we can calculate in how many steps a node is infected. $A$ calculates which nodes are infected after 1 step, $A^{N}$ calculates which nodes are infected in N steps.. So if we want to know how many nodes are infected after 3 steps we have to add every matrix $(A + A^{2} + A^{3}) $ and see which entry is a non zero entry. 
+
+
 \end{document}
