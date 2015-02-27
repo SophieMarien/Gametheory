@@ -40,7 +40,7 @@
 \contentsline {section}{\numberline {A.1}More Lorem}{23}{section.A.1}
 \contentsline {appendix}{\chapternumberline {B}The Last Appendix}{25}{appendix.B}
 \contentsline {section}{\numberline {B.1}Lorem 20-24}{25}{section.B.1}
-\contentsline {chapter}{Bibliografie}{27}{section*.25}
+\contentsline {chapter}{Bibliografie}{27}{section*.24}
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}

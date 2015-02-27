@@ -1,52 +1,35 @@
 \begin{thebibliography}{1}
 
 \bibitem{h2g2}
-D.~Adams.
-\newblock {\em The Hitchhiker's Guide to the Galaxy}.
-\newblock Del Rey (reprint), 1995.
-\newblock ISBN-13: 978-0345391803.
+
 
 \bibitem{FlipThem}
-A.~L. G. H. M. F.~L. Buttyan.
-\newblock Flipthem: Modeling targeted attacks with flipit for multiple
-  resources.
+M.~F. L.~B. Aron~Laszka, Gabor~Horvath.
 \newblock {\em 5th International Conference, GameSec 2014, Los Angeles, CA,
-  USA, November 6-7, 2014. Proceedings}, 8840:175--194, 2014.
+  USA, November 6-7, 2014. Proceedings}, page 175.
 
-\bibitem{Coursera}
-Coursera.
-\newblock Game theory by matthew o. jackson, kevin leyton-brown, yoav shoham.
-\newblock https://class.coursera.org/gametheory-004.
-
-\bibitem{MitigationCovert}
-A.~Laszka, B.~Johnson, and J.~Grossklags.
-\newblock {\em Mitigating Covert Compromises}, volume 8289 of {\em Lecture
-  Notes in Computer Science}.
-\newblock Springer Berlin Heidelberg, 2013.
-
-\bibitem{MitigationNonTargeted}
-A.~Laszka, B.~Johnson, and J.~Grossklags.
-\newblock {\em Mitigation of Targeted and Non-targeted Covert Attacks as a
-  Timing Game}, volume 8252 of {\em Lecture Notes in Computer Science}.
-\newblock Springer International Publishing, 2013.
-
-\bibitem{leyton2008essentials}
-K.~Leyton-Brown and Y.~Shoham.
-\newblock {\em Essentials of Game Theory: A Concise, Multidisciplinary
-  Introduction}.
-\newblock Synthesis lectures on artificial intelligence and machine learning.
-  Morgan \& Claypool Publishers, 2008.
-
-\bibitem{GameTheorApprCostBenefitAnalyses}
-T.~Spyridopoulos, G.~Oikonomou, T.~Tryfonas, and M.~Ge.
-\newblock {\em Game Theoretic Approach for Cost-Benefit Analysis of Malware
-  Proliferation Prevention}, volume 405 of {\em IFIP Advances in Information
-  and Communication Technology}.
-\newblock Springer Berlin Heidelberg, 2013.
+\bibitem{Craig2005}
+D.~A. Craig and H.~T. Nguyen.
+\newblock {Wireless Real-Time Head Movement System Using a Personal Digital
+  Assistant (PDA) for Control of a Power Wheelchair.}
+\newblock {\em Conference proceedings : ... Annual International Conference of
+  the IEEE Engineering in Medicine and Biology Society. IEEE Engineering in
+  Medicine and Biology Society. Conference}, 1:772--775, 2005.
 
 \bibitem{FlipIt}
-M.~van Dijk, A.~Juels, A.~Oprea, and R.~Rivest.
-\newblock Flipit: The game of “stealthy takeover”.
-\newblock {\em Journal of Cryptology}, 26(4):655--713, 2013.
+R.~G. A. J. A. O. R. L.~R. Kevin D.~Brouwers, Marten van~Dijk and
+  N.~Triandopoulos.
+\newblock {Defending Against the Unkown Enemy: Applying FlipIt to System
+  Security}.
+\newblock {\em Third International Conference, GameSec 2012, Budapest, Hungary,
+  November 5-6, 2012. Proceedings}, 7638:248--263, 2012.
+
+\bibitem{DefendingAgainstUnknownEnemy}
+R.~G. A. J. A. O. R. L.~R. Kevin D.~Brouwers, Marten van~Dijk and
+  N.~Triandopoulos.
+\newblock {Defending Against the Unkown Enemy: Applying FlipIt to System
+  Security}.
+\newblock {\em Third International Conference, GameSec 2012, Budapest, Hungary,
+  November 5-6, 2012. Proceedings}, 7638:248--263, 2012.
 
 \end{thebibliography}

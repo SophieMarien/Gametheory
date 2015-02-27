@@ -19,6 +19,7 @@ language={English}
 
 @article{FlipThem,
 abstract = {Recent high-profile targeted attacks showed that even the most secure and secluded networks can be compromised by motivated and resourceful attackers, and that such a system compromise may not be immediately detected by the system owner. Researchers at RSA proposed the FlipIt game to study the impact of such stealthy takeovers. In the basic FlipIt game, an attacker and a defender fight over a single resource; in practice, however, systems typically consist of multiple resources that can be targeted. In this paper, we present FlipThem, a generalization of FlipIt to multiple resources. To formulate the players’ goals and study their best strategies, we introduce two control models: in the AND model, the attacker has to compromise all resources in order to take over the entire system, while in the OR model, she has to compromise only one. Our analytical and numerical results provide practical recommendations for defenders.},
+author = {Aron Laszka, Gabor Horvath, Mark Felegyhazi, Levente Buttyan},
 doi = {10.1007/978-3-319-12601-2-10},
 isbn = {978-3-319-12601-2},
 issn = {0302-9743},
@@ -27,18 +28,18 @@ pages = {175--194},
 title = {FlipThem: Modeling Targeted Attacks with FlipIt for Multiple Resources},
 volume = {8840},
 year = {2014},
-publisher = {Springer Berlin Heidelberg},
-author = {Aron Laszka; Gabor Horvath; Mark Felegyhazi; Levente Buttyan}
+publisher = {Springer Berlin Heidelberg}
 }
 
 
-@book{MitigationNonTargeted,
+@article{MitigationNonTargeted,
 abstract = {We consider a strategic game in which a defender wants to maintain control over a resource that is subject to both targeted and non-targeted covert attacks. Because the attacks are covert, the defender must choose to secure the resource in real time without knowing who controls it. Each move by the defender to secure the resource has a one-time cost and these defending moves are not covert, so that a targeted attacker may time her attacks based on the defender’s moves. The time between when a targeted attack starts and when it succeeds is given by an exponentially distributed random variable with a known rate. Non-targeted attackers are modeled together as a single attacker whose attacks arrive following a Poisson process. We find that in this regime, the optimal moving strategy for the defender is a periodic strategy, so that the time intervals between consecutive moves are constant.},
 year={2013},
 isbn={978-3-319-02785-2},
 booktitle={Decision and Game Theory for Security},
 volume={8252},
 series={Lecture Notes in Computer Science},
+editor={Das, SajalK. and Nita-Rotaru, Cristina and Kantarcioglu, Murat},
 doi={10.1007/978-3-319-02786-9-11},
 title={Mitigation of Targeted and Non-targeted Covert Attacks as a Timing Game},
 url= {http://dx.doi.org/10.1007/978-3-319-02786-9-11},
@@ -49,7 +50,7 @@ pages={175-191},
 language={English}
 }
 
-@Book{MitigationCovert,
+@article{MitigationCovert,
 abstract = {Attackers of computing resources increasingly aim to keep security compromises hidden from defenders in order to extract more value over a longer period of time. These covert attacks come in multiple varieties, which can be categorized into two main types: targeted and non-targeted attacks. Targeted attacks include, for example, cyberespionage, while non-targeted attacks include botnet recruitment.
 We are concerned with the subclass of these attacks for which detection is too costly or technically infeasible given the capabilities of a typical organization. As a result, defenders have to mitigate potential damages under a regime of incomplete information. A primary mitigation strategy is to reset potentially compromised resources to a known safe state, for example, by reinstalling computer systems, and changing passwords or cryptographic private keys.
 In a game-theoretic framework, we study the economically optimal mitigation strategies in the presence of targeted and non-targeted covert attacks. Our work has practical implications for the definition of security policies, in particular, for password and key renewal schedules.},
@@ -58,6 +59,7 @@ isbn={978-3-642-45045-7},
 booktitle={Web and Internet Economics},
 volume={8289},
 series={Lecture Notes in Computer Science},
+editor={Chen, Yiling and Immorlica, Nicole},
 doi={10.1007/978-3-642-45046-4-26},
 title={Mitigating Covert Compromises},
 url={ http://dx.doi.org/10.1007/978-3-642-45046-4-26},
@@ -103,20 +105,19 @@ howpublished = {http://http://en.wikipedia.org/wiki/Game-theory}
 }
 
 
-@Misc{Coursera,
-author =  {Coursera},
-title =  {Game Theory by Matthew O. Jackson, Kevin Leyton-Brown, Yoav Shoham},
-howpublished = {https://class.coursera.org/gametheory-004}
-}
+@Misc{Symantec,
+author =       {Coursera},
+title =        {Game Theory by Matthew O. Jackson, Kevin Leyton-Brown, Yoav Shoham},
+howpublished = {https://class.coursera.org/gametheory-004}, last checked on 2015-02-22}}
 
 
 @Misc{Symantec,
 author =       {Symentec},
 title =        {2014 Internet Security Threat Report, Volume 19},
-howpublished = {http://www.symantec.com/content/en/us/enterprise/other-resources/b-istr-appendices-v19-221284438.en-us.pdf}
-}
+howpublished = {http://www.symantec.com/content/en/us/enterprise/other-resources/b-istr-appendices-v19-221284438.en-us.pdf}, last checked on 2015-02-22}}
 
-@Misc{hack.in2009,
+
+@inproceedings{hack.in2009,
   title={Survey on malware detection methods},
   author={Vinod, P and Jaipur, R and Laxmi, V and Gaur, M},
   booktitle={Proceedings of the 3rd Hackers’ Workshop on Computer and Internet Security (IITKHACK’09)},
@@ -160,13 +161,14 @@ year = {2010},
 publisher = {IEEE}
 }
 
-@book{GameTheorApprCostBenefitAnalyses,
+@incollection{GameTheorApprCostBenefitAnalyses,
 abstract = {Many existing research efforts in the field of malware proliferation aim at modelling and analysing its spread dynamics. Many malware dissemination models are based on the characteristics of biological disease spread in human populations. In this work, we utilise game theory in order to extend two very commonly used malware spread models (SIS and SIR) by incorporating defence strategies against malware proliferation. We consider three different security mechanisms, “patch”, “removal” and “patch and removal” on which our model is based. We also propose a cost-benefit model that describes optimal strategies the defender could follow when cost is taken into account. Lastly, as a way of illustration, we apply our models on the well studied Code-Red worm.},
 year={2013},
 isbn={978-3-642-39217-7},
 booktitle={Security and Privacy Protection in Information Processing Systems},
 volume={405},
 series={IFIP Advances in Information and Communication Technology},
+editor={Janczewski, LechJ. and Wolfe, HenryB. and Shenoi, Sujeet},
 doi={10.1007/978-3-642-39218-4-3},
 title={Game Theoretic Approach for Cost-Benefit Analysis of Malware Proliferation Prevention},
 url={ http://dx.doi.org/10.1007/978-3-642-39218-4-3},
@@ -176,7 +178,7 @@ pages={28-41},
 language={English}
 }
 
-@book{DistributedWormSim,
+@inproceedings{DistributedWormSim,
   abstract = {Internet worm spread is a phenomenon involving millions of hosts, who interact in complex and diverse environment. Scanning speed of each infected host depends on its resources and the defenses at work in its network. Aggressive worms further interact with the underlying Internet topology .. the dynamics of the spread is constrained by the limited bandwidth of network links, and high-volume scan traffic leads to BGP router failure thus affecting global routing. Worm traffic also interacts with legitimate background traffic competing for (and often winning) the limited bandwidth resources. To faithfully simulate worm spread and other Internet-wide events such as DDoS, flash crowds and spam we need a detailed Internet model, a packet-level simulation of relevant event features, and a realistic model of background traffic on the whole Internet. The memory and CPU requirements of such simulation exceed a single machineýs resources, creating a need for distributed simulation. We propose a design and present implementation of a distributed worm simulator, called PAWS. PAWS runs on Emulab testbed, which facilitates its use by other researchers. We validate PAWS in a variety of scenarios, and evaluate costs and benefits of distributed worm simulation.},
   title={Distributed worm simulation with a realistic internet model},
   author={Wei, Songjie and Mirkovic, Jelena and Swany, Martin},
@@ -203,19 +205,19 @@ publisher = {IEEE Computer Society},
 address = {Los Alamitos, CA, USA},
 }
 
-@Book{h2g2,
- author =    {Adams, Douglas},
-title =     {The Hitchhiker's Guide to the Galaxy},
- publisher = {Del Rey (reprint)},
-year =      1995, note =      {ISBN-13: 978-0345391803}
-}
+%@Book{h2g2,
+% author =    {Adams, Douglas},
+% title =     {The Hitchhiker's Guide to the Galaxy},
+% publisher = {Del Rey (reprint)},
+% year =      1995,
+%  note =      {ISBN-13: 978-0345391803}}
 
-@Book{pratchett06:_good_omens,
-  author =    {Pratchett, Terry and Gaiman, Neil},
-  title =     {Good Omens:
-             \emph{The Nice and Accurate Prophecies of Agnes Nutter, Witch}},
- publisher = {HarperTorch (reprint)},
- year =      2006,
- note =      {ISBN-13: 978-0060853983}}
+%@Book{pratchett06:_good_omens,
+%  author =    {Pratchett, Terry and Gaiman, Neil},
+%  title =     {Good Omens:
+%               \emph{The Nice and Accurate Prophecies of Agnes Nutter, Witch}},
+%  publisher = {HarperTorch (reprint)},
+%  year =      2006,
+%  note =      {ISBN-13: 978-0060853983}}
 
 
