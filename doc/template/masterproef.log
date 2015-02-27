@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.27)  27 FEB 2015 11:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.27)  27 FEB 2015 20:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1740,7 +1740,7 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 39.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 39.
- <Images/FlipItDefault.jpg, id=268, 1285.80376pt x 337.26pt>
+ <Images/FlipItDefault.jpg, id=274, 1285.80376pt x 337.26pt>
 File: Images/FlipItDefault.jpg Graphic file (type jpg)
 
 <use Images/FlipItDefault.jpg>
@@ -1777,64 +1777,69 @@ Package babel Info: Redefining dutch shorthand "y
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 76.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 85.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 85.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 85.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 85.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 85.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 85.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 85.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 85.
  [9]
+Underfull \hbox (badness 10000) in paragraph at lines 89--92
+
+ []
+
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 114.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 114.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 114.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 114.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 114.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 114.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 114.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 114.
- [10]
+(babel)             in language  on input line 111.
+[10]
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 149.
+(babel)             in language  on input line 147.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 149.
+(babel)             in language  on input line 147.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 149.
+(babel)             in language  on input line 147.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 149.
+(babel)             in language  on input line 147.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 153.
+(babel)             in language  on input line 147.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 153.
+(babel)             in language  on input line 147.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 153.
+(babel)             in language  on input line 147.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 153.
+(babel)             in language  on input line 147.
+ [11]
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 153.
+(babel)             in language  on input line 152.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 153.
+(babel)             in language  on input line 152.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 153.
+(babel)             in language  on input line 152.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 153.
- [11])
+(babel)             in language  on input line 152.
+)
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 149.
 Package babel Info: Redefining dutch shorthand "~
@@ -2321,28 +2326,22 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 168.
 (./chap-n.aux) (./conclusion.aux) (./app-A.aux) (./app-n.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 168.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 168.
+Package rerunfilecheck Info: File `masterproef.out' has not changed.
+(rerunfilecheck)             Checksum: 7AA3DB0D00270B3647CCAB40CFF2F046;1612.
 
-
-Package rerunfilecheck Warning: File `masterproef.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `masterproef.out':
-(rerunfilecheck)             Before: 11395F86AA3CDFC4391FE0675D8F45D1;1612
-(rerunfilecheck)             After:  CA11EF9C87838D75C2FF0839BA30E23A;1612.
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 168.
  ) 
 Here is how much of TeX's memory you used:
- 23854 strings out of 493315
- 412949 string characters out of 6137903
- 682434 words of memory out of 5000000
- 26598 multiletter control sequences out of 15000+600000
- 75298 words of font info for 111 fonts, out of 8000000 for 9000
+ 23868 strings out of 493315
+ 413182 string characters out of 6137903
+ 682715 words of memory out of 5000000
+ 26603 multiletter control sequences out of 15000+600000
+ 75677 words of font info for 115 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 61i,12n,78p,1303b,870s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,12n,78p,1303b,884s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
 texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/20
 13/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2013/texmf-d
@@ -2362,10 +2361,10 @@ mf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2013/texmf-dist/fo
 nts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/
 urw/helvetic/uhvb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/hel
 vetic/uhvr8a.pfb>
-Output written on masterproef.pdf (38 pages, 351197 bytes).
+Output written on masterproef.pdf (38 pages, 352189 bytes).
 PDF statistics:
- 461 PDF objects out of 1000 (max. 8388607)
- 398 compressed objects within 4 object streams
- 96 named destinations out of 1000 (max. 500000)
+ 467 PDF objects out of 1000 (max. 8388607)
+ 403 compressed objects within 5 object streams
+ 97 named destinations out of 1000 (max. 500000)
  19191 words of extra memory for PDF output out of 20736 (max. 10000000)
 

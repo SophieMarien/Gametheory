@@ -78,9 +78,13 @@ A renewal strategy is a non-adaptive strategy where the time intervals between t
 In this section we provide the formal definition of the game and the notation that we will use throughout the paper.
 
 \begin{description}
+% ---- PLAYERS ---- %
 \item \textit{Players}  There are two players in the game, one is the defender and the other one is the attacker. They are respectively identified by 0 and 1.
+
+% ---- TIME ---- %
 \item \textit{Time}  The game starts at $t=0$ and continuous indefinitely as $t \rightarrow \infty$. The game is a continuous game.
-\item \textit{Game State} There is also a time-dependent variable that represents the state of the game. $C=C(t)$ is either 0 if the Game is under control by the defender and 1 if the Game is under control by the attacker. We can also define the state of each resource by $C^{A}$ and $C^{D}$. If $C^{A} = 1$ then this means that the attacker has control over the resource, and 0 otherwise. For $C^{D}$ it is visa versa, $C^{D} = 1 - C^{A}$.
+
+% ---- GRAPH ---- %
 \item \textit{Graph} We represent the company network as a Graph $G = < V,E>$. G is an ordered pair where V denotes the set of resources or nodes in the network and E denotes the set of connections or links, which are a two-element subset of V. We use the notations resources and nodes interleaving in this paper.\\
 We have N resources in the network. $N \in $  \todo{aanvullen}. This means we can denote the resources by:
 \begin{center}
@@ -88,6 +92,12 @@ $V \in {V_{0}, V_{1}, V_{2}, ... , V_{N} }$
 \end{center}
 The set E of connections indicates if there is a link between two resources. We see the links as bidirectional so the total graph is undirected. If there is a link between resource $V_{n}$ and $V_{n+1}$ then there is also a link between $V_{n+1}$ and $V_{n}$. 
 
+% ---- GAME STATE ---- %
+\item \textit{Game State} There is also a time-dependent variable that represents the state of the game. $C=C(t)$ is either 0 if the game is under control by the defender and 1 if the Game is under control by the attacker. \\
+We start at $t=0$ with the defender who has control over the game. We do this because we assume that the defender will only put the network online without having a virus or worm in it. The Attacker can gain control over the game when it compromises a subset \textit{s} of the resources. The subset \textit{s} is a minimum of 1 resource and a maximum of all the resources N. \\
+\todo{deze variabele nodig ja of nee ? JA} We can also define the state of each resource by $C^{A}_{N}$ and $C^{D}_{N}$. If $C^{A}_{N} = 1$ then this means that the attacker has control over the resource, and 0 otherwise. For $C^{D}_{N}$ it is visa versa, $C^{D}_{N} = 1 - C^{A}_{N}$.\\
+
+% ---- MOVES ---- %
 \item \textit{Moves} Both players can make a move in the game. Moves done in a finite numbers of time in any finite time interval. Both players can play at any time they want, they can also play at the same time. If this happens the one that has control over the resource will keep having control over the resource.
 This makes the game fully symmetric \todo{beter uitleggen}. The sequence of move times are denoted by the following infinite sequence:
 \begin{center}
@@ -104,31 +114,41 @@ We can also denote who made the \textit{k}th move by defining a sequence \textit
 $p=p_{1},p_{2},p_{3}, .. $ with $p_{k}$ $\in$ $\lbrace 0,1 \rbrace$
 \end{center}
 
+% ---- NUMVER OF MOVES ---- %
 \item \textit{Number of moves}  $n_{i}(t$ denotes the number of moves made by player \textit{i} up to and including time t. This means that 
 \begin{center}
 $n(t)=n_{1}(t) + n_{0}(t)$
 \end{center}
 is the sum of the number of moves made by the defender and the attacker up to and including time t. 
 
+% ---- AVERAGE MOVE RATE ---- %
 \item \textit{Average move rate} We denote $\alpha_{i}(t)$ as the average move rate by player i:
 \begin{center}
 $\alpha_{i}(t) = n_{i}(t)/t$ with $t > 0$ and \textit{i} $ \in $ $\lbrace 0,1 \rbrace$
 \end{center}
 
+% ---- PERIOD ---- %
 \item \textit{Period} We can also define the period in terms of the average move rate:
 \begin{center}
 $\delta_{i}=1/\alpha_{i}$
 \end{center}
 
+% ---- WHO PLAYED LAST ---- %
+\item \textit{Who played last} We know who played last by taking the modulo with the period. $Z_{i}$ represents the time since the last flip of player i. We can also denote the time since the last flip of player i on resource r by $Z_{i}^{N}$. 
+
+% ---- COST ---- %
 \item \textit{Cost} The cost is an important property of the game. In FlipIt for every player the cost of a move is denoted by $k_{i}$. These costs can be very different for every player. In this game we denote the players flipping cost for resource $V_{N}$ by $c_{i}^{V_{N}}$. \\
 For the defender the cost will be either the cost of flipping every resource or the cost of flipping a subgroup of the resources.\\
 For the attacker the cost will be the cost of dropping a virus on a node. The spreading of the virus will not imply an extra cost. 
 
+% ---- UTILITY/ GAIN ---- %
 \item \textit{Utility} In FlipIt the Gain definition is the utility function. The Gain denotes the total time a player i has gained control over a resource. \todo{nu gain van een resource, moet voor verschillende resources zijn}
 The Gain $G_{i}$ denotes players i total gain of a game, wich is the total time the player has gained control over a subset of resources thus controlling the game. If we sum up the total Gain of the attacker and the defender we end up with the time:
 \begin{center}
 $G_{1}(t) + G_{0}(t) = t$
 \end{center}
+
+% ---- AVERAGE GAIM RATE ---- %
 \item \textit{Average gain rate} The average gain rate for player i is defined as
 \begin{center}
 $\gamma_{i}(t)= G_{i}(t)/t$
