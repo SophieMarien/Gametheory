@@ -6,7 +6,7 @@
 
 
 There a various possible ways to extend \flip{FlipIt}. For instance Laszka et al. extended the basic \flip{FlipIt} game to multiple resources. The incentive is that for compromising a system in a real case it needs more than just taking over one resource. An example is gaining access to a system and breaking the password. The model is called FlipThem \cite{FlipThem}. Two ways of flipping the resources are used: the AND and the OR control model. In the AND model the attacker only controls the system if he controls all the resources of the system, whereas in the OR model the attacker only needs to compromise one resource to be in control of the entire system. The difference with FlipThem and this paper is that we introduce a Graph Model in the beginning.\\
-Another extension on FlipIt is done by Pham [\todo{citatie needed voor Are We Compromised?}]. Beside the action Flip their is another action Test. The basic idea is to test with an extra action if the resource has been compromised or not. This action involves also an extra cost. This model is useful if somebody wants to know for example if his password has been compromised or wants to assess the periodic security of a system.  In \citep{MitigationCovert} \cite{MitigationNonTargeted} Laszka et al. they also consider non targeted attacks by non-strategic players and \todo{verder aanvullen}. 
+Another extension on FlipIt is done by Pham\cite{GameTheorApprCostBenefitAnalyses} [\todo{citatie needed voor Are We Compromised?}]. Beside the action Flip their is another action Test. The basic idea is to test with an extra action if the resource has been compromised or not. This action involves also an extra cost. This model is useful if somebody wants to know for example if his password has been compromised or wants to assess the periodic security of a system.  In \cite{MitigationCovert} \cite{MitigationNonTargeted} Laszka et al. they also consider non targeted attacks by non-strategic players and \todo{verder aanvullen}. 
 
 
 
@@ -135,6 +135,8 @@ $\delta_{i}=1/\alpha_{i}$
 
 % ---- WHO PLAYED LAST ---- %
 \item \textit{Who played last} We know who played last by taking the modulo with the period. $Z_{i}$ represents the time since the last flip of player i. We can also denote the time since the last flip of player i on resource r by $Z_{i}^{N}$. 
+For a non adaptive game, period deterministic: At time $t=n$ is $Z_{i} = n mod i$.  \todo{er kan nog steeds tegelijk geflipt zijn maar dan hebben ze wel geflipt}.
+
 
 % ---- COST ---- %
 \item \textit{Cost} The cost is an important property of the game. In FlipIt for every player the cost of a move is denoted by $k_{i}$. These costs can be very different for every player. In this game we denote the players flipping cost for resource $V_{N}$ by $c_{i}^{V_{N}}$. \\

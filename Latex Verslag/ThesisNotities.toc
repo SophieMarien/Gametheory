@@ -1,2 +1,0 @@
-\select@language {dutch}
-\contentsline {section}{\numberline {1}Gametheory Notities}{2}{section.1}
