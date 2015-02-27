@@ -1,65 +1,54 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: masterproef.aux
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: masterproef.aux
 A level-1 auxiliary file: intro.aux
-A level-1 auxiliary file: chap-1.aux
+A level-1 auxiliary file: chap-5.aux
 A level-1 auxiliary file: chap-2.aux
+A level-1 auxiliary file: chap-4.aux
 A level-1 auxiliary file: chap-n.aux
 A level-1 auxiliary file: conclusion.aux
 A level-1 auxiliary file: app-A.aux
 A level-1 auxiliary file: app-n.aux
 The style file: abbrv.bst
 Database file #1: references.bib
-I was expecting a `,' or a `}'---line 53 of file references.bib
- : pages = 175
- :            --194},
-I'm skipping whatever remains of this entry
-You're missing a field name---line 61 of file references.bib
- : 
- : % author =    {Adams, Douglas},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 68 of file references.bib
- : 
- : %  author =    {Pratchett, Terry and Gaiman, Neil},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 76 of file references.bib
- : 
- : %  author =       {Wikipedia},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Warning--to sort, need author, editor, or key in h2g2
-Too many commas in name 1 of "Kevin D. Brouwers, Marten van Dijk, Robert Griffin, Ari Juels, Alina Oprea, Ronald L. Rivest and Nikos Triandopoulos" for entry FlipIt
-while executing---line 1049 of file abbrv.bst
-Too many commas in name 1 of "Kevin D. Brouwers, Marten van Dijk, Robert Griffin, Ari Juels, Alina Oprea, Ronald L. Rivest and Nikos Triandopoulos" for entry FlipIt
-while executing---line 1049 of file abbrv.bst
-Too many commas in name 1 of "Kevin D. Brouwers, Marten van Dijk, Robert Griffin, Ari Juels, Alina Oprea, Ronald L. Rivest and Nikos Triandopoulos" for entry FlipIt
-while executing---line 1049 of file abbrv.bst
-Too many commas in name 1 of "Aron Laszka, Gabor Horvath, Mark Felegyhazi, Levente Buttyan" for entry FlipThem
-while executing---line 1049 of file abbrv.bst
-Too many commas in name 1 of "Kevin D. Brouwers, Marten van Dijk, Robert Griffin, Ari Juels, Alina Oprea, Ronald L. Rivest and Nikos Triandopoulos" for entry DefendingAgainstUnknownEnemy
-while executing---line 1049 of file abbrv.bst
-Too many commas in name 1 of "Kevin D. Brouwers, Marten van Dijk, Robert Griffin, Ari Juels, Alina Oprea, Ronald L. Rivest and Nikos Triandopoulos" for entry DefendingAgainstUnknownEnemy
-while executing---line 1049 of file abbrv.bst
-Too many commas in name 1 of "Kevin D. Brouwers, Marten van Dijk, Robert Griffin, Ari Juels, Alina Oprea, Ronald L. Rivest and Nikos Triandopoulos" for entry DefendingAgainstUnknownEnemy
-while executing---line 1049 of file abbrv.bst
-Warning--empty author and editor in h2g2
-Warning--empty title in h2g2
-Warning--empty publisher in h2g2
-Warning--empty year in h2g2
-Too many commas in name 1 of "Aron Laszka, Gabor Horvath, Mark Felegyhazi, Levente Buttyan" for entry FlipThem
-while executing---line 1090 of file abbrv.bst
-Warning--empty title in FlipThem
-Warning--empty year in FlipThem
-Too many commas in name 1 of "Kevin D. Brouwers, Marten van Dijk, Robert Griffin, Ari Juels, Alina Oprea, Ronald L. Rivest and Nikos Triandopoulos" for entry FlipIt
-while executing---line 1090 of file abbrv.bst
-Too many commas in name 1 of "Kevin D. Brouwers, Marten van Dijk, Robert Griffin, Ari Juels, Alina Oprea, Ronald L. Rivest and Nikos Triandopoulos" for entry FlipIt
-while executing---line 1090 of file abbrv.bst
-Too many commas in name 1 of "Kevin D. Brouwers, Marten van Dijk, Robert Griffin, Ari Juels, Alina Oprea, Ronald L. Rivest and Nikos Triandopoulos" for entry FlipIt
-while executing---line 1090 of file abbrv.bst
-Too many commas in name 1 of "Kevin D. Brouwers, Marten van Dijk, Robert Griffin, Ari Juels, Alina Oprea, Ronald L. Rivest and Nikos Triandopoulos" for entry DefendingAgainstUnknownEnemy
-while executing---line 1090 of file abbrv.bst
-Too many commas in name 1 of "Kevin D. Brouwers, Marten van Dijk, Robert Griffin, Ari Juels, Alina Oprea, Ronald L. Rivest and Nikos Triandopoulos" for entry DefendingAgainstUnknownEnemy
-while executing---line 1090 of file abbrv.bst
-Too many commas in name 1 of "Kevin D. Brouwers, Marten van Dijk, Robert Griffin, Ari Juels, Alina Oprea, Ronald L. Rivest and Nikos Triandopoulos" for entry DefendingAgainstUnknownEnemy
-while executing---line 1090 of file abbrv.bst
-(There were 18 error messages)
+You've used 8 entries,
+            2118 wiz_defined-function locations,
+            562 strings with 5436 characters,
+and the built_in function-call counts, 2321 in all, are:
+= -- 211
+> -- 116
+< -- 3
++ -- 47
+- -- 38
+* -- 157
+:= -- 404
+add.period$ -- 26
+call.type$ -- 8
+change.case$ -- 38
+chr.to.int$ -- 0
+cite$ -- 8
+duplicate$ -- 92
+empty$ -- 189
+format.name$ -- 38
+if$ -- 477
+int.to.chr$ -- 0
+int.to.str$ -- 8
+missing$ -- 12
+newline$ -- 44
+num.names$ -- 16
+pop$ -- 57
+preamble$ -- 1
+purify$ -- 35
+quote$ -- 0
+skip$ -- 53
+stack$ -- 0
+substring$ -- 87
+swap$ -- 14
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 22
+warning$ -- 0
+while$ -- 19
+width$ -- 9
+write$ -- 89

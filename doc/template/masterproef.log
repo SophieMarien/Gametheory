@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.27)  27 FEB 2015 21:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.27)  27 FEB 2015 21:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1450,6 +1450,12 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 121.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 121.
+
+Overfull \hbox (0.86812pt too wide) in paragraph at lines 141--141
+[]|\T1/lmr/m/n/10.95 (-20) ``The Answer to the Ultimate Question of Life, the U
+niverse, and Everything''
+ []
+
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 146.
 Package babel Info: Redefining dutch shorthand "~
@@ -1466,7 +1472,7 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 146.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 146.
- [7
+[7
 
 ]
 Package babel Info: Redefining dutch shorthand "|
@@ -1560,19 +1566,6 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 1.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 1.
-
-
-Package natbib Warning: Citation `leyton2008essentials' on page 3 undefined on 
-input line 13.
-
-
-Package natbib Warning: Citation `Coursera' on page 3 undefined on input line 1
-3.
-
-
-Package natbib Warning: Citation `leyton2008essentials' on page 3 undefined on 
-input line 13.
-
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 17.
 Package babel Info: Redefining dutch shorthand "~
@@ -1698,19 +1691,6 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 5.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 5.
-
-
-Package natbib Warning: Citation `GameTheorApprCostBenefitAnalyses' on page 7 u
-ndefined on input line 9.
-
-
-Package natbib Warning: Citation `MitigationCovert' on page 7 undefined on inpu
-t line 9.
-
-
-Package natbib Warning: Citation `MitigationNonTargeted' on page 7 undefined on
- input line 9.
-
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 20.
 Package babel Info: Redefining dutch shorthand "~
@@ -1735,7 +1715,7 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 22.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 22.
-[7]
+ [7]
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 39.
 Package babel Info: Redefining dutch shorthand "~
@@ -1744,7 +1724,8 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 39.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 39.
- <Images/FlipItDefault.jpg, id=276, 1285.80376pt x 337.26pt>
+
+<Images/FlipItDefault.jpg, id=293, 1285.80376pt x 337.26pt>
 File: Images/FlipItDefault.jpg Graphic file (type jpg)
 
 <use Images/FlipItDefault.jpg>
@@ -2269,6 +2250,85 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 1.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 1.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49 \newblock Flipit: The game of ‚
+                                    Äústealthy takeover‚Äù.
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49 \newblock Flipit: The game of ‚Ä
+                                     ústealthy takeover‚Äù.
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49 \newblock Flipit: The game of ‚Äú
+                                      stealthy takeover‚Äù.
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49 ... Flipit: The game of ‚Äústealthy takeover‚
+                                                  Äù.
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49 ...Flipit: The game of ‚Äústealthy takeover‚Ä
+                                                  ù.
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49 ...lipit: The game of ‚Äústealthy takeover‚Äù
+                                                  .
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
 )
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 168.
@@ -2286,8 +2346,7 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 168.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 168.
-
-[27
+ [27
 
 ]
 Package babel Info: Redefining dutch shorthand "|
@@ -2309,9 +2368,6 @@ Package babel Info: Redefining dutch shorthand "Y
  [28
 
 ]
-
-Package natbib Warning: There were undefined citations.
-
 \tf@toc=\write6
 \openout6 = `masterproef.toc'.
 
@@ -2326,12 +2382,12 @@ Package natbib Warning: There were undefined citations.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 168.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 168.
-(./masterproef.aux (./intro.aux) (./chap-5.aux) (./chap-2.aux) (./chap-4.aux)
-(./chap-n.aux) (./conclusion.aux) (./app-A.aux) (./app-n.aux))
+ (./masterproef.aux (./intro.aux) (./chap-5.aux) (./chap-2.aux)
+(./chap-4.aux) (./chap-n.aux) (./conclusion.aux) (./app-A.aux) (./app-n.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 168.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 168.
 Package rerunfilecheck Info: File `masterproef.out' has not changed.
-(rerunfilecheck)             Checksum: CFC9232134CC7C2A5A2F2F38AAB92C29;1612.
+(rerunfilecheck)             Checksum: BBF3F26608272CADE72A7B36D252EBE7;1612.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2339,11 +2395,11 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 168.
  ) 
 Here is how much of TeX's memory you used:
- 23877 strings out of 493315
- 413391 string characters out of 6137903
- 682796 words of memory out of 5000000
- 26609 multiletter control sequences out of 15000+600000
- 75807 words of font info for 116 fonts, out of 8000000 for 9000
+ 23891 strings out of 493315
+ 413688 string characters out of 6137903
+ 682797 words of memory out of 5000000
+ 26613 multiletter control sequences out of 15000+600000
+ 76150 words of font info for 119 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  61i,12n,78p,1303b,898s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
@@ -2365,10 +2421,10 @@ mf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2013/texmf-dist/fo
 nts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/
 urw/helvetic/uhvb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/hel
 vetic/uhvr8a.pfb>
-Output written on masterproef.pdf (38 pages, 354282 bytes).
+Output written on masterproef.pdf (38 pages, 357492 bytes).
 PDF statistics:
- 469 PDF objects out of 1000 (max. 8388607)
- 405 compressed objects within 5 object streams
- 98 named destinations out of 1000 (max. 500000)
+ 482 PDF objects out of 1000 (max. 8388607)
+ 416 compressed objects within 5 object streams
+ 102 named destinations out of 1000 (max. 500000)
  19191 words of extra memory for PDF output out of 20736 (max. 10000000)
 
