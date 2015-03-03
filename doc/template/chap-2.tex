@@ -65,6 +65,41 @@ A renewal strategy is a non-adaptive strategy where the time intervals between t
  \item Non-Arithmetic Renewal
  \item Exponential
  \end{description}
+ 
+ \subsection{Actions of the attacker}
+A virus has different kind of ways of making his way through a company network. We will describe the different ways of how the virus can propagate. For start we will say that the virus or worm will be dropped on Node i and that it has k numbers of neighbours. 
+\begin{enumerate}
+\item Node i is infected and will spread the virus or worm to every k neighbours and will stop infecting the neighbours in the next step
+\item Node i is infected and will spread the virus or worm to every k neighbours and will keep on spreading the virus in every next step
+\item Node i is infected and will spread the virus to only one of the k neighbours and will stop infecting another one in the next step
+\item Node i is infected and will spread the virus to only one of the k neighbours and in the next step it will infect another one of the k neighbours 
+\end{enumerate}
+
+In the game that will be modelled in the paper we will use the settings of the 1 spreading method. We will not use method 2 because this kind of propagation will float the network. Because we use the settings of a mail system and contact in a mailing list the method of 3 and 4 are not used. \\
+In the first method the node that has been infected can be again infected. If one of the neighbours infect the node again the node will infect his neighbours again. By using this spreading method we have three states of a node. An infected state, a clean state and a spreading state. And infected state means that the node is infected and will not spread itself again to its neighbours, a clean state means that there is no virus or worm on the node and a spreading state means that the node is infected and that it will spread itself in the next step to its neighbours.
+We can argument this kind of propagation through a mail worm. \todo{voorbeeld geven van zo een worm}
+%Another propagation method is that the virus works as a token. It will propagate to only one neighbour and continue to spread. 
+
+We will model two kind of attacks of the attacker:
+\begin{enumerate}
+\item The attacker drops the virus on a random node on the network
+\item The attacker drops the virus on a targeted node on the network
+\end{enumerate}
+The attacker in this game will put a virus or worm on one of the nodes in the network. This will happen at random. The attacker does not know on which node the virus will be dropped. We will use this randomness because \todo{feit uit security rapport symantec} most virusses are spread via a usb stick or a shared resource. If we use this spreading method where we have a targeted attack the attacker will have more information about the network. \\
+
+The attacker can choose at which rate it will drop a virus on one of the nodes on the network. The cost of dropping a virus will be the same. It will not increase. If it will increase this means that the attacker will eventually drop out of the game because it becomes to expensive.\\
+The attacker is in control over the game if it manages to infect a subset of all the resources of the company network.
+
+
+\subsection{Actions of the defender}
+The attacker wants to protect all the nodes of his network. It can do so by getting back control over the resources. We will assume that the defender of the network has knowledge over his own network. Which is convenient in the real world because a company has to know how his infrastructure looks like.\\
+
+The defender has two possible ways of defending its network:
+\begin{enumerate}
+\item The defender flips all the nodes of his network
+\item The defender will flip a subset of the nodes of his network
+\end{enumerate}
+
 
 \section{Formal definition Game}
 
@@ -153,7 +188,7 @@ $G_{1}(t) + G_{0}(t) = t$
 $\gamma_{i}(t)= G_{i}(t)/t$
 \end{center}
 
-\subsection{Our Game parameters}
+\subsection{Formal definition}
 \begin{description}
 \item \textit{Graph Matrix} We represent the graph of the network through a matrix $ A = |V| \times |V|$. The (i,j)-entry of the matrix A will have a 1 if there is a connection between node $V_{i}$ and node $V_{j}$. If we are working with an undirected graph the matrix will be symmetric. 
 \item \textit{Attack Vector} We denote $X = 1 \times |V|$ as the attack vector. It will be a vector with only zeros. The attacker will place a virus on a node V. This will be denoted by the Vth entry in the vector that is changed by a 1.
@@ -164,19 +199,6 @@ $\gamma_{i}(t)= G_{i}(t)/t$
 De eerste infectie is de attack vector * Graph matrix . 
 \end{description}
 
-\subsection{Different kind of games}
-A virus has different kind of ways of making his way through a company network. We will describe the different ways of how the virus can propagate. For start we will say that the virus or worm will be dropped on Node i and that it has k numbers of neighbours. 
-\begin{enumerate}
-\item Node i is infected and will spread the virus or worm to every k neighbours and will stop infecting the neighbours in the next step
-\item Node i is infected and will spread the virus or worm to every k neighbours and will keep on spreading the virus in every next step
-\item Node i is infected and will spread the virus to only one of the k neighbours and will stop infecting another one in the next step
-\item Node i is infected and will spread the virus to only one of the k neighbours and in the next step it will infect another one of the k neighbours 
-\end{enumerate}
-
-In the game that will be modelled in the paper we will use the settings of the 1 spreading method. We will not use method 2 because this kind of propagation will float the network. Because we use the settings of a mail system and contact in a mailling list the method of 3 and 4 are not used. \\
-In the first method the node that has been infected can be again infected. If one of the neighbours infect the node again the node will infect his neighbours again. By using this spreading method we have three states of a node. An infected state, a clean state and a spreading state. And infected state means that the node is infected and will not spread itself again to its neighbours, a clean state means that there is no virus or worm on the node and a spreading state means that the node is infected and that it will spread itself in the next step to its neighbours.
-We can argument this kind of propagation through a mail worm. \todo{voorbeeld geven van zo een worm}
-%Another propagation method is that the virus works as a token. It will propagate to only one neighbour and continue to spread. 
 
 \section{Conclusion}
 The final section of the chapter gives an overview of the important results
