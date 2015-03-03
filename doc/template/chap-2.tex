@@ -85,7 +85,7 @@ We will model two kind of attacks of the attacker:
 \item The attacker drops the virus on a random node on the network
 \item The attacker drops the virus on a targeted node on the network
 \end{enumerate}
-The attacker in this game will put a virus or worm on one of the nodes in the network. This will happen at random. The attacker does not know on which node the virus will be dropped. We will use this randomness because \todo{feit uit security rapport symantec} most virusses are spread via a usb stick or a shared resource. If we use this spreading method where we have a targeted attack the attacker will have more information about the network. \\
+The attacker in this game will put a virus or worm on one of the nodes in the network. This will happen at random. The attacker does not know on which node the virus will be dropped. We will use this randomness because \todo{feit uit security rapport symantec} most viruses are spread via a usb stick or a shared resource. If we use this spreading method where we have a targeted attack the attacker will have more information about the network. \\
 
 The attacker can choose at which rate it will drop a virus on one of the nodes on the network. The cost of dropping a virus will be the same. It will not increase. If it will increase this means that the attacker will eventually drop out of the game because it becomes to expensive.\\
 The attacker is in control over the game if it manages to infect a subset of all the resources of the company network.
@@ -100,10 +100,17 @@ The defender has two possible ways of defending its network:
 \item The defender will flip a subset of the nodes of his network
 \end{enumerate}
 
+The cost of flipping all the nods of the network will be greater than the cost of flipping a subset of nodes. We make this assumption because otherwise it will be beneficial for the defender to always flip all the nodes in the network.\\
+
+We will also make the assumption that as a defender flips a node the node can get infected again. A flip will not be  correlated to a patch but to a clean-up. \todo{waarom geen patch, wormen kunnen veranderen gaandeweg}
+\todo{andere mogelijkheid:} Another setting of the game can be that the flip of the defender is equal to a patch and that the resource cannot be infected any more. But with this case we deviate from the flipIt game, because the attacker cannot flip the resource any more. Unless we work with different virusses every time the attacker flips. We start with the less complex game of flipping is equal to a clean-up.
+
+\subsection{Strategies of both players}
+We explained what the actions of each player are. 
 
 \section{Formal definition Game}
 
-In this section we provide the formal definition of the game and the notation that we will use throughout the paper.
+In this section we provide a formal definition of the game and the notation that we will use throughout the paper. 
 
 \begin{description}
 % ---- PLAYERS ---- %
