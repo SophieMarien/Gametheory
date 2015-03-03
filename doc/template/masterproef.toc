@@ -29,6 +29,7 @@
 \contentsline {subsection}{\numberline {3.3.1}Strategies}{9}{subsection.3.3.1}
 \contentsline {section}{\numberline {3.4}Formal definition Game}{9}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Our Game parameters}{12}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Different kind of games}{12}{subsection.3.4.2}
 \contentsline {section}{\numberline {3.5}Conclusion}{12}{section.3.5}
 \contentsline {chapter}{\chapternumberline {4}Intoduction to GameTheory}{13}{chapter.4}
 \contentsline {section}{\numberline {4.1}Write down the settings of the game}{13}{section.4.1}

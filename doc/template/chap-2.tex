@@ -165,14 +165,19 @@ De eerste infectie is de attack vector * Graph matrix .
 \end{description}
 
 \subsection{Different kind of games}
-De virus has different kind of ways of making his way through the network. The virus can be dropped on a node and than spread itself out to all the neighbours. When a neighbour node is infected it will infect all its neighbours too, so the initial node is back infected. Then their are two options, either the initial node stays infected and does not infect all it neighbours again, or it does. \\
-Another propagation method is that the virus works as a token. It will propagate to only one neighbour and continue to spread. 
-%waarom kiezen voor een methode
-\begin{itemize}
-\item A virus can use the mail system to spread itself. This will use then every contact in the contact list so it will spread itself to every neighbour
-\item If the virus does not want to get caught it can use the method of a path, infecting only one neighbour.
-\item 
-\end{itemize}
+A virus has different kind of ways of making his way through a company network. We will describe the different ways of how the virus can propagate. For start we will say that the virus or worm will be dropped on Node i and that it has k numbers of neighbours. 
+\begin{enumerate}
+\item Node i is infected and will spread the virus or worm to every k neighbours and will stop infecting the neighbours in the next step
+\item Node i is infected and will spread the virus or worm to every k neighbours and will keep on spreading the virus in every next step
+\item Node i is infected and will spread the virus to only one of the k neighbours and will stop infecting another one in the next step
+\item Node i is infected and will spread the virus to only one of the k neighbours and in the next step it will infect another one of the k neighbours 
+\end{enumerate}
+
+In the game that will be modelled in the paper we will use the settings of the 1 spreading method. We will not use method 2 because this kind of propagation will float the network. Because we use the settings of a mail system and contact in a mailling list the method of 3 and 4 are not used. \\
+In the first method the node that has been infected can be again infected. If one of the neighbours infect the node again the node will infect his neighbours again. By using this spreading method we have three states of a node. An infected state, a clean state and a spreading state. And infected state means that the node is infected and will not spread itself again to its neighbours, a clean state means that there is no virus or worm on the node and a spreading state means that the node is infected and that it will spread itself in the next step to its neighbours.
+We can argument this kind of propagation through a mail worm. \todo{voorbeeld geven van zo een worm}
+%Another propagation method is that the virus works as a token. It will propagate to only one neighbour and continue to spread. 
+
 \section{Conclusion}
 The final section of the chapter gives an overview of the important results
 of this chapter. This implies that the introductory chapter and the
