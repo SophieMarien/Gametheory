@@ -11,7 +11,7 @@ Another extension on FlipIt is done by Pham\cite{GameTheorApprCostBenefitAnalyse
 In this section, we introduce the game \flip{FlipIt} \cite{FlipIt}. \flip{FlipIt} is a game introduced by .. .. and Rivest. First we explain the framework of FlipIt and after that the formulas and assumptions that we will make for the game for during the whole paper.  
 
 \section{The First Topic of this Chapter}
-\flip{FlipIt} is a two-players game with a shared (single) resource that the players want to control as long as possible. The shared resource can be a password, a network or a secret key depending on the setting being modelled. In the rest of the paper we will call the players the Attacker and the Defender. To get the control over the resource, players can flip the resource at any given time. Each move will imply a certain cost. The unique feature of \flip{FlipIt} is that the move will happen in a stealthy way, meaning that the other player has no clue that the other player has flipped the resource. For instance, the defender will not find out if the resource has already been compromised by the attacker, but he can only potentially know it after he flips the resource himself. The goal of the player is to maximize the time that he or she has control over the resource while minimizing total cost of the moves. Players won't move to frequently. A move can also result in a "wasted move", called a flop. It may happen that the resource was already under control by the defender. If the defender moves when he or she has already control over the resource, he or she would have wasted move since it does not result in a change of ownership. 
+\flip{FlipIt} is a two-players game with a shared (single) resource that the players want to control as long as possible. The shared resource can be a password, a network or a secret key depending on the setting being modelled. In the rest of the paper we will call the two players the Attacker and the Defender. To get control over the resource, the players can flip the resource at any given time. A flip will be regarded as a move from a player. Each move will imply a certain cost and the cost can vary for each player. Both players will try to minimize their cost. By adding a cost will prevent players to move to frequently. The unique feature of \flip{FlipIt} is that every move will happen in a stealthy way, meaning that the other player has no clue that the other player has flipped the resource. For instance, the defender will not find out if the resource has already been compromised by the attacker, but he can only potentially know it after he flips the resource himself. The goal of the player is to maximize the time that he or she has control over the resource while minimizing total cost of the moves. A move can also result in a "wasted move", called a flop. It may happen that the resource was already under control by the defender. If the defender moves when he or she has already control over the resource, he or she would have wasted move since it does not result in a change of ownership. 
  
 Because the players move in a stealthy way, there are different types of feedback that a player can get while moving:
 \begin{itemize}
@@ -21,7 +21,7 @@ Because the players move in a stealthy way, there are different types of feedbac
 \end{itemize}
 The game can be extended by the amount of information that a player receives. It can also be possible for a player to get information at the start of the game. Both interesting cases are:
 \begin{itemize}
-\item Rate-of-play (RP: The player finds out the exact rate of play of the opponent.
+\item Rate-of-play (RP): The player finds out the exact rate of play of the opponent.
 \item Knowledge-of-strategy (KS): The player finds out the complete information of the strategy that the opponent is playing.
 \end{itemize}
 
@@ -70,22 +70,22 @@ A renewal strategy is a non-adaptive strategy where the time intervals between t
 A virus has different kind of ways of making his way through a company network. We will describe the different ways of how the virus can propagate. For start we will say that the virus or worm will be dropped on Node i and that it has k numbers of neighbours. 
 \begin{enumerate}
 \item Node i is infected and will spread the virus or worm to every k neighbours and will stop infecting the neighbours in the next step
-\item Node i is infected and will spread the virus or worm to every k neighbours and will keep on spreading the virus in every next step
-\item Node i is infected and will spread the virus to only one of the k neighbours and will stop infecting another one in the next step
+\item Node i is infected and will spread the virus or worm to every k neighbours and will keep on spreading the virus to the same neighbours in every next step
+\item Node i is infected and will spread the virus to only one of the k neighbours and will stop infecting another neighbour in the next step
 \item Node i is infected and will spread the virus to only one of the k neighbours and in the next step it will infect another one of the k neighbours 
 \end{enumerate}
 
-In the game that will be modelled in the paper we will use the settings of the 1 spreading method. We will not use method 2 because this kind of propagation will float the network. Because we use the settings of a mail system and contact in a mailing list the method of 3 and 4 are not used. \\
-In the first method the node that has been infected can be again infected. If one of the neighbours infect the node again the node will infect his neighbours again. By using this spreading method we have three states of a node. An infected state, a clean state and a spreading state. And infected state means that the node is infected and will not spread itself again to its neighbours, a clean state means that there is no virus or worm on the node and a spreading state means that the node is infected and that it will spread itself in the next step to its neighbours.
+In the game that will be modelled in the paper we will use the settings of the first spreading method. We will not use method 2 because this kind of propagation will float the network. Because we use the settings of a mail system and contact in a mailing list the method of 3 and 4 are not used. \\
+In the first method the node that has been infected can be again infected. If one of the neighbours infects the node again the node will infect his neighbours again. By using this spreading method we have three distinct states in which a node can be situated. An \textit{infected state}, a \textit{clean state} and a \textit{spreading state}. An infected state means that the node is infected and will not spread the virus to its neighbours, a clean state means that the node is not infected on that moment and a spreading state means that the node is infected and that it will spread the virus or worm to its neighbours in the next step.
 We can argument this kind of propagation through a mail worm. \todo{voorbeeld geven van zo een worm}
 %Another propagation method is that the virus works as a token. It will propagate to only one neighbour and continue to spread. 
 
-We will model two kind of attacks of the attacker:
+The Attacker itself has two different ways of attacking the company network. It will only infected one node of the network and will wait for the virus to spread itself through the network. We will model two ways of attacks of an Attacker:
 \begin{enumerate}
 \item The attacker drops the virus on a random node on the network
 \item The attacker drops the virus on a targeted node on the network
 \end{enumerate}
-The attacker in this game will put a virus or worm on one of the nodes in the network. This will happen at random. The attacker does not know on which node the virus will be dropped. We will use this randomness because \todo{feit uit security rapport symantec} most viruses are spread via a usb stick or a shared resource. If we use this spreading method where we have a targeted attack the attacker will have more information about the network. \\
+The attacker in this game will put a virus or worm on one of the nodes in the network. (This will happen at random.) The attacker does not know on which node the virus will be dropped. We will use this randomness because \todo{feit uit security rapport symantec} most viruses are spread via a usb stick or a shared resource. If we use this spreading method where we have a targeted attack the attacker will have more information about the network. \\
 
 The attacker can choose at which rate it will drop a virus on one of the nodes on the network. The cost of dropping a virus will be the same. It will not increase. If it will increase this means that the attacker will eventually drop out of the game because it becomes to expensive.\\
 The attacker is in control over the game if it manages to infect a subset of all the resources of the company network.

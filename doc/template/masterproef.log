@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  3 MAR 2015 15:11
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  13 MAR 2015 12:56
 entering extended mode
 **masterproef.tex
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.tex
@@ -1374,7 +1374,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
  []
 
-[7] <Images/FlipItDefault.jpg, id=274, 1285.80376pt x 337.26pt>
+[7] <Images/FlipItDefault.jpg, id=282, 1285.80376pt x 337.26pt>
 File: Images/FlipItDefault.jpg Graphic file (type jpg)
 
 <use Images/FlipItDefault.jpg>
@@ -1512,15 +1512,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 168.
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\app-n.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 168.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 168.
+Package rerunfilecheck Info: File `masterproef.out' has not changed.
+(rerunfilecheck)             Checksum: 85F501873C18FCB5DA340B2CCD6994C4;1640.
 
-
-Package rerunfilecheck Warning: File `masterproef.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `masterproef.out':
-(rerunfilecheck)             Before: C4A1A84BF3759FAC871049B4CE5D4CEA;1640
-(rerunfilecheck)             After:  85F501873C18FCB5DA340B2CCD6994C4;1640.
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1529,7 +1523,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 168.
 Here is how much of TeX's memory you used:
  25583 strings out of 493921
  469284 string characters out of 3144864
- 720386 words of memory out of 3000000
+ 720730 words of memory out of 3000000
  28141 multiletter control sequences out of 15000+200000
  75594 words of font info for 114 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -1553,9 +1547,9 @@ type1/public/lm/lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publi
 c/lm/lmtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhv
 b8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
 
-Output written on masterproef.pdf (40 pages, 411976 bytes).
+Output written on masterproef.pdf (40 pages, 412884 bytes).
 PDF statistics:
- 490 PDF objects out of 1000 (max. 8388607)
+ 494 PDF objects out of 1000 (max. 8388607)
  115 named destinations out of 1000 (max. 500000)
  19191 words of extra memory for PDF output out of 20736 (max. 10000000)
 
