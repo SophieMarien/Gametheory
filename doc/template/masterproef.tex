@@ -36,7 +36,13 @@ assistant={Ir.\ Jonathan Merlevede, \ Ir. Kristof Coninx}}
 \usepackage{soul}
 \usepackage{tikz}
 \usepackage{parskip}
-
+\usepackage{todonotes}
+\usepackage{url}
+\usepackage{natbib} 
+\usepackage{pgf}
+\usepackage{tikz}
+\usetikzlibrary{arrows,automata}
+%\usepackage[latin1]{inputenc}
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
 \definecolor{mauve}{rgb}{0.58,0,0.82}
@@ -51,14 +57,14 @@ assistant={Ir.\ Jonathan Merlevede, \ Ir. Kristof Coninx}}
   numbers=none,
   numberstyle=\tiny\color{gray},
   keywordstyle=\color{blue},
-  commentstyle=\color{dkgreen},
-  stringstyle=\color{mauve},
+  commentstyle=\color{green},
+  stringstyle=\color{black},
   breaklines=true,
   breakatwhitespace=true
   tabsize=3
 }
 
-\newcommand{\todo}[1]{{\huge \textcolor{green}{#1}}\\}
+%\newcommand{\todo}[1]{{\huge \textcolor{green}{#1}}\\}
 \newcommand{\com}[1]{\textcolor{red}{#1}\\}
 \newcommand{\viscomment}[1]{\textcolor{red}{#1}}
 \newcommand{\flip}[1] {\textcolor{black}{#1}}
@@ -86,13 +92,13 @@ assistant={Ir.\ Jonathan Merlevede, \ Ir. Kristof Coninx}}
 \end{preface}
 
 \tableofcontents*
-
+\listoftodos
 \begin{abstract}
 In this thesis I present a work of gametheory merged with cybersecurity. 
   The \texttt{abstract} environment contains a more extensive overview of
   the work. But it should be limited to one page.
 
-  \lipsum[1]
+
 \end{abstract}
 
 \begin{abstract*}
@@ -122,25 +128,26 @@ In this thesis I present a work of gametheory merged with cybersecurity.
     PSNR  & Peak Signal-to-Noise ratio \\
   \end{tabularx}
 \end{flushleft}
-\section*{Symbols}
-\begin{flushleft}
-  \renewcommand{\arraystretch}{1.1}
-  \begin{tabularx}{\textwidth}{@{}p{12mm}X@{}}
-    42    & ``The Answer to the Ultimate Question of Life, the Universe,
-            and Everything'' according to \cite{h2g2} \\
-    $c$   & Speed of light \\
-    $E$   & Energy \\
-    $m$   & Mass \\
-    $\pi$ & The number pi \\
-  \end{tabularx}
-\end{flushleft}
+%\section*{Symbols}
+%\begin{flushleft}
+%  \renewcommand{\arraystretch}{1.1}
+%  \begin{tabularx}{\textwidth}{@{}p{12mm}X@{}}
+%    42    & ``The Answer to the Ultimate Question of Life, the Universe,
+%            and Everything'' according to \cite{h2g2} \\
+%    $c$   & Speed of light \\
+%    $E$   & Energy \\
+%    $m$   & Mass \\
+%    $\pi$ & The number pi \\
+%  \end{tabularx}
+%\end{flushleft}
 
 % Nu begint de eigenlijke tekst
 \mainmatter
 
 \include{intro}
-\include{chap-1}
+\include{chap-5}
 \include{chap-2}
+\include{chap-4}
 % ... en zo verder tot
 \include{chap-n}
 \include{conclusion}
