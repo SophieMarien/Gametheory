@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.11)  29 MAR 2015 23:20
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.11)  29 MAR 2015 23:37
 entering extended mode
 **masterproef.tex
 (C:\Users\Sophie\Documents\unif\Thesis2015\doc\template\masterproef.tex
@@ -1433,88 +1433,8 @@ Package natbib Warning: Citation `h2g2' on page 27 undefined on input line 5.
 
 
 ]
-(C:\Users\Sophie\Documents\unif\Thesis2015\doc\template\masterproef.bbl
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 \newblock Flipit: The game of ‚
-                                    Äústealthy takeover‚Äù.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 \newblock Flipit: The game of ‚Ä
-                                     ústealthy takeover‚Äù.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 \newblock Flipit: The game of ‚Äú
-                                      stealthy takeover‚Äù.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ... Flipit: The game of ‚Äústealthy takeover‚
-                                                  Äù.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...Flipit: The game of ‚Äústealthy takeover‚Ä
-                                                  ù.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...lipit: The game of ‚Äústealthy takeover‚Äù
-                                                  .
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-) [31
-
-] [32
+No file masterproef.bbl.
+[31
 
 ]
 
@@ -1534,33 +1454,22 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 173.
 (C:\Users\Sophie\Documents\unif\Thesis2015\doc\template\chap-n.aux)
 (C:\Users\Sophie\Documents\unif\Thesis2015\doc\template\conclusion.aux)
 (C:\Users\Sophie\Documents\unif\Thesis2015\doc\template\app-A.aux)
-(C:\Users\Sophie\Documents\unif\Thesis2015\doc\template\app-n.aux)
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
+(C:\Users\Sophie\Documents\unif\Thesis2015\doc\template\app-n.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 173.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 173.
+Package rerunfilecheck Info: File `masterproef.out' has not changed.
+(rerunfilecheck)             Checksum: 11AD046FF2436764498BF6A44CE04819;1659.
 
-
-Package rerunfilecheck Warning: File `masterproef.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `masterproef.out':
-(rerunfilecheck)             Before: 11AD046FF2436764498BF6A44CE04819;1659
-(rerunfilecheck)             After:  7CDF713A7102E088D3221A74DC828D6C;1710.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 23593 strings out of 494045
- 410586 string characters out of 3148383
+ 23566 strings out of 494045
+ 409927 string characters out of 3148383
  683059 words of memory out of 3000000
- 26154 multiletter control sequences out of 15000+200000
- 75724 words of font info for 115 fonts, out of 3000000 for 9000
+ 26140 multiletter control sequences out of 15000+200000
+ 75594 words of font info for 114 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  61i,12n,78p,1303b,896s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
@@ -1580,9 +1489,9 @@ m Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9
 :/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/urw/helvetic/uhvr8a.pfb>
-Output written on masterproef.pdf (42 pages, 423047 bytes).
+Output written on masterproef.pdf (41 pages, 418041 bytes).
 PDF statistics:
- 516 PDF objects out of 1000 (max. 8388607)
- 126 named destinations out of 1000 (max. 500000)
+ 503 PDF objects out of 1000 (max. 8388607)
+ 117 named destinations out of 1000 (max. 500000)
  19191 words of extra memory for PDF output out of 20736 (max. 10000000)
 
