@@ -1,11 +1,58 @@
-%\chapter{Intoduction to GameTheory}
-%\label{cha:1}
-\documentclass[10pt]{article}
-\begin{document}
+\chapter{Intoduction to GameTheory}
+\label{cha:1}
+%\documentclass[10pt]{article}
+%\begin{document}
 
-In this chapter an introduction to gametheory will be given with the formulas that will be used throughout this paper. We start with the basics of gametheory. People that have a background in gametheory can skip this chapter.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%			Introduction Chapter 1				%%%%%%
+%%%%%												%%%%%%
+%%%%%												%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+In the following paragraph an introduction to game theory is given based on the work of \cite{leyton2008essentials} and \cite{Coursera}. For a more detailed and full introduction to game theory, the reader is referred to \cite{leyton2008essentials}.
+%------------------------------------------------%
+%            Intro Game Theory 					 %
+%------------------------------------------------%
+\section{Intro Game Theory}
+\label{Cha:1:Intro.Game.Theory}
+
+%begin over dat gametheorie handig is in de economie
+Game theory studies the interaction between independent and self-interested agents. It is a mathematical way of modelling the interactions between two or more agents where the outcomes depend on what everybody does and how it should be structured to lead to good outcomes. For this reason it is very important for economics and also for politics, biology, computer science, philosophy and a variety of other disciplines.  \\
+%Every agent has different levels of happiness for the different outcomes.
+%self interested meaning
+
+One of the assumptions underlying game theory is that the players of the game, the agents, are independent and self-interested. This does not necessarily mean that they want to harm other agents or that they only care about themselves. 
+%utility function meaning 
+Instead it means that each agent has preferences about the states of the world he likes. These preferences are mapped to natural numbers and are called the utility function. The numbers are interpreted as a mathematical measure to tell you how much an agent likes or dislikes the states of the world. \\
+It also explains the impact of uncertainty. When an agent is uncertain about a distribution of outcomes, his utility will describe the expected value of the utility function with respect to the probability of the distribution of the outcomes. For example: with 0.7 probability it will be 7 degrees outside and with 0.3 probability it will be 10 degrees. The agent can have a different opinion about that distribution versus another distribution. (\todo{uitleggen aan de hand van een voorbeeld}).\\
+%Cooperative and non cooperative games
+In a decision game theoretic approach an agent will try to act in such a way to maximise his expected or average utility function. It becomes more complicated when two or more agents want to maximise their utility and whose actions can affect each other utilities. This kind of games are referred to as non cooperative game theory, where the basic modelling unit is the group of agents. The individualistic approach, where the basic modelling is only one agent, is referred as cooperative game theory. 
+
+There are two standard representations for games. The first one is the Normal Form. The second one is the Extensive Form.
+
+In the following lists a couple of terms that will be used throughout the paper.
+\begin{description}
+\item \textit{Players}: players are referred as the ones who are the decision makers. It can be a person, a company or an animal.
+\item \textit{Actions}: actions are what the player can do. 
+\item \textit{Outcomes}:  
+\item \textit{Utility function}: the utility function is the mapping of the level of happiness of an agent about the state of the world to natural numbers.
+\item \textit{Strategies}: A strategy is the combination of different actions. A pure strategy is only one action.
+\end{description}
+
+A game in game theory consists of multiple agents and every agent has a set of actions that he can play. 
 
 
+
+%Nash equilibrium
+
+
+
+% --------------- example of a game -----------------%
+
+
+%------------------------------------------------%
+%            Intro about virusses				 %
+%------------------------------------------------%
 \section{Virusses}
 
 Many network security threats today are spread over the Internet. The most common include:
@@ -45,15 +92,6 @@ There are also email viruses were the malicious program is hidden in the txt and
 %http://www.mcafee.com/us/resources/white-papers/foundstone/wp-managing-malware-outbreak.pdf
 
 
-\subsection{What are my topics}
-\begin{itemize}
-\item Security, Costs, Cybersecurity
-\item Viruses, kinds
-\item Gametheory
-\item Flip-it
-\item Flip-it multiple resources
-\item 
-\end{itemize}
 
 \subsection{Malware}
 %Does a company network faces lot of malware? what is the cost ?
@@ -69,7 +107,16 @@ Purpose thesis: model a worm propagation with adaptations of Flip-It. Flip-It ca
 So the virus can propagate 
 
 
+=======
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%			Conclusion Chapter 1				%%%%%%
+%%%%%												%%%%%%
+%%%%%												%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Conclusion}
+\label{Cha:1:Conclusion}
 The final section of the chapter gives an overview of the important results
 of this chapter. This implies that the introductory chapter and the
 concluding chapter don't need a conclusion.
@@ -80,4 +127,4 @@ concluding chapter don't need a conclusion.
 %%% TeX-master: "thesis"
 %%% End: 
 
-\end{document}
+%\end{document}

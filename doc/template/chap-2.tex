@@ -2,34 +2,15 @@
 \label{cha:2}
 
 
-\section{Extensions on FlipIt}
+
+In this section, we introduce the \flip{FlipIt} game \cite{FlipIt} and the most important results. \flip{FlipIt} is a stealthy takeover game introduced by a team of the RSA in 2012. First we explain the framework of \flip{FlipIt}, next we introduce some variations already made on \flip{FlipIt} and as last we give a formal definition of our variation on the model of FlipIt and the assumptions that we will make for the game during the whole paper.  
+
+\section{Introduction to FlipIt}
+To get an understanding of our model it is important to get (an inside in) familiar with the FlipIt game and the main results. 
+\flip{FlipIt} is a two-players game with a shared (single) resource that the players want to control as long as possible. The shared resource can be a password, a network or a secret key depending on the setting being modelled. In the rest of the paper we will call the players the Attacker and the Defender. In figure \ref{fig:FLipItDefault} the attacker is denoted by the light gray and the defender by the darker color. To get control over the resource, players can flip the resource at any given time. Each flip corresponds with a move and will also imply a certain cost. \\
+The unique feature of \flip{FlipIt} is that the flip will happen in a stealthy way, meaning that the other player has no clue that his opponent has flipped the resource. For instance, the defender will not find out if the resource has already been compromised by the attacker, but he can only potentially know it after he flips the resource himself. The goal of each player is to maximize the time that he or she has control over the resource while minimizing the total cost of the moves. (This cost causes) the players won't move to frequently. A move can also result in a "wasted move", called a flop. It may happen that the resource was already under control by the defender. If the defender moves again when he or she has already control over the resource, he or she would have wasted a move since it does not result in a change of ownership. \\
 
 
-There a various possible ways to extend \flip{FlipIt}. For instance Laszka et al. extended the basic \flip{FlipIt} game to multiple resources. The incentive is that for compromising a system in a real case it needs more than just taking over one resource. An example is gaining access to a system and breaking the password. The model is called FlipThem \cite{FlipThem}. Two ways of flipping the resources are used: the AND and the OR control model. In the AND model the attacker only controls the system if he controls all the resources of the system, whereas in the OR model the attacker only needs to compromise one resource to be in control of the entire system. The difference with FlipThem and this paper is that we introduce a Graph Model in the beginning.\\
-Another extension on FlipIt is done by Pham\cite{GameTheorApprCostBenefitAnalyses} [\todo{citatie needed voor Are We Compromised?}]. Beside the action Flip their is another action Test. The basic idea is to test with an extra action if the resource has been compromised or not. This action involves also an extra cost. This model is useful if somebody wants to know for example if his password has been compromised or wants to assess the periodic security of a system.  In \cite{MitigationCovert} \cite{MitigationNonTargeted} Laszka et al. they also consider non targeted attacks by non-strategic players and \todo{verder aanvullen}. \\
-
-In this section, we introduce the game \flip{FlipIt} \cite{FlipIt}. \flip{FlipIt} is a game introduced by .. .. and Rivest. First we explain the framework of FlipIt and after that the formulas and assumptions that we will make for the game for during the whole paper.  
-
-\section{The First Topic of this Chapter}
-\flip{FlipIt} is a two-players game with a shared (single) resource that the players want to control as long as possible. The shared resource can be a password, a network or a secret key depending on the setting being modelled. In the rest of the paper we will call the players the Attacker and the Defender. To get the control over the resource, players can flip the resource at any given time. Each move will imply a certain cost. The unique feature of \flip{FlipIt} is that the move will happen in a stealthy way, meaning that the other player has no clue that the other player has flipped the resource. For instance, the defender will not find out if the resource has already been compromised by the attacker, but he can only potentially know it after he flips the resource himself. The goal of the player is to maximize the time that he or she has control over the resource while minimizing total cost of the moves. Players won't move to frequently. A move can also result in a "wasted move", called a flop. It may happen that the resource was already under control by the defender. If the defender moves when he or she has already control over the resource, he or she would have wasted move since it does not result in a change of ownership. 
- 
-Because the players move in a stealthy way, there are different types of feedback that a player can get while moving:
-\begin{itemize}
-\item Non-adaptive (NA): The player does not receive any feedback during the game while flipping.
-\item Last move (LM): When a player flips it will find out the exact time that the opponent played the last time.
-\item Full History (FH): When a player flips it will find out the whole history of the opponents move.
-\end{itemize}
-The game can be extended by the amount of information that a player receives. It can also be possible for a player to get information at the start of the game. Both interesting cases are:
-\begin{itemize}
-\item Rate-of-play (RP: The player finds out the exact rate of play of the opponent.
-\item Knowledge-of-strategy (KS): The player finds out the complete information of the strategy that the opponent is playing.
-\end{itemize}
-
-In our assumption the strategy of both players will be non-adaptive. None of the players has information of the strategy of the opponent. 
-
-
-
-\section{Figures}
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=0.25]{Images/FlipItDefault.jpg}
@@ -37,6 +18,20 @@ In our assumption the strategy of both players will be non-adaptive. None of the
 \label{fig:FLipItDefault}
 \end{figure}
 \todo{verwijzen naar de figuur \ref{fig:FLipItDefault}}
+
+Because the players move in a stealthy way, there are different types of feedback that a player can get while moving:
+\begin{itemize}
+\item Non-adaptive (NA): The player does not receive any feedback during the game while flipping.
+\item Last move (LM): When a player flips it will find out the exact time that the opponent played the last time.
+\item Full History (FH): When a player flips it will find out the whole history of the opponents moves.
+\end{itemize}
+
+The game can be extended by the amount of information that a player receives. It may also be possible for a player to receive information at the beginning of the game. Both interesting cases are:
+\begin{itemize}
+\item Rate-of-play (RP): The player learns the exact rate of play of the opponent.
+\item Knowledge-of-strategy (KS): The player finds out the complete information of the strategy of his opponent.
+\end{itemize}
+
 
 \subsection{Strategies}
  
@@ -57,7 +52,6 @@ In our assumption the strategy of both players will be non-adaptive. None of the
  \end{table}
 
 There are two different kinds of strategies, the \textit{non-adaptive strategies} and the \textit{renewal strategies}. If there is no need for feedback for both of the players, we say that we have a non-adaptive strategy. Because the player does not receive any feedback during the game it will play in the same manner against every opponent. They are not dependent on the opponents movements. This means that they can already generate the time sequence for all the moves in advance.  But they can depend on some randomness because the non-adaptive strategies can be randomised. 
-In this paper we will focus in the beginning on the non-adaptive strategies. Reasons behind this is that a player (defender or attacker) rarely knows what the strategies are of his opponent. [If the attacker wants to move stealthily, it might have limited attack options FLIPTHEM]. \todo{nog redenen zoeken}\\
 A renewal strategy is a non-adaptive strategy where the time intervals between two consecutive moves are generated by a renewal process. \\
 
  \begin{description}
@@ -66,6 +60,18 @@ A renewal strategy is a non-adaptive strategy where the time intervals between t
  \item Exponential
  \end{description}
  
+ \subsection{Variations on FlipIt}
+ 
+ There are various possible ways to extend \flip{FlipIt}. For instance Laszka et al. extended the basic \flip{FlipIt} game to multiple resources. The incentive is that for compromising a system in a real case it needs more than just taking over one resource. An example is gaining access to the internal system and then breaking the password. This model is called \textit{FlipThem} \cite{FlipThem}. Two ways of flipping the resources are used: the AND and the OR control model. In the AND model the attacker only controls the system if he controls all the resources of the system, whereas in the OR model the attacker only needs to compromise one resource to be in control of the entire system. The difference with \textit{FlipThem} and this paper is that we introduce a Graph Model in the beginning and the system is compromised if the attacker controls a subset of the resources. \todo{nog verschillen ?}\\
+Another extension on \textit{FlipIt} is done by Pham\cite{GameTheorApprCostBenefitAnalyses} [\todo{citatie needed voor Are We Compromised?}]. Beside the action Flip their is another action Test. The basic idea is to test with an extra action if the resource has been compromised or not. This action involves an extra cost. This model is useful if somebody wants to know for example if his password has been compromised or wants to assess the periodic security of a system.  In \cite{MitigationCovert} \cite{MitigationNonTargeted} Laszka et al. they also consider non targeted attacks by non-strategic players and \todo{verder aanvullen}. \\
+
+\section{Our model}
+Explanaiton of our model and the differences with FlipIt and other models
+
+Our model will focus in the beginning on the non-adaptive strategies. Reasons behind this is that a player (defender or attacker) rarely knows what the strategies are of his opponent. [If the attacker wants to move stealthily, it might have limited attack options FLIPTHEM]. \todo{nog redenen zoeken}\\
+
+In this section we summarize the different actions of the Attacker and the defender and we define the formal definition of our game. First we start explaining the actions of the attacker and after that the actions of the defender.
+
  \subsection{Actions of the attacker}
 A virus has different kind of ways of making his way through a company network. We will describe the different ways of how the virus can propagate. For start we will say that the virus or worm will be dropped on Node i and that it has k numbers of neighbours. 
 \begin{enumerate}
@@ -80,7 +86,7 @@ In the first method the node that has been infected can be again infected. If on
 We can argument this kind of propagation through a mail worm. \todo{voorbeeld geven van zo een worm}
 %Another propagation method is that the virus works as a token. It will propagate to only one neighbour and continue to spread. 
 
-We will model two kind of attacks of the attacker:
+We will model two kind of attack of the attacker:
 \begin{enumerate}
 \item The attacker drops the virus on a random node on the network
 \item The attacker drops the virus on a targeted node on the network
@@ -102,8 +108,8 @@ The defender has two possible ways of defending its network:
 
 The cost of flipping all the nods of the network will be greater than the cost of flipping a subset of nodes. We make this assumption because otherwise it will be beneficial for the defender to always flip all the nodes in the network.\\
 
-We will also make the assumption that as a defender flips a node the node can get infected again. A flip will not be  correlated to a patch but to a clean-up. \todo{waarom geen patch, wormen kunnen veranderen gaandeweg}
-\todo{andere mogelijkheid:} Another setting of the game can be that the flip of the defender is equal to a patch and that the resource cannot be infected any more. But with this case we deviate from the flipIt game, because the attacker cannot flip the resource any more. Unless we work with different virusses every time the attacker flips. We start with the less complex game of flipping is equal to a clean-up.
+We will also make the assumption that as a defender flips a node the node can get infected again. A flip will not be correlated to a patch but to a clean-up. \todo{waarom geen patch, wormen kunnen veranderen gaandeweg}
+\todo{andere mogelijkheid:} Another setting of the game can be that the flip of the defender is equal to a patch and that the resource cannot be infected any more. But with this case we deviate from the flipIt game, because the attacker cannot flip the resource any more. Unless we work with different viruses every time the attacker flips. We start with the less complex game of flipping is equal to a clean-up.
 
 \subsection{Strategies of both players}
 We explained what the actions of each player are. 

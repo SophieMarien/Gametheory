@@ -1,178 +1,224 @@
 \chapter{The FlipIt game}
 \label{cha:2}
-In this section, we introduce the game \flip{FlipIt} \cite{FlipIt}. \flip{FlipIt} is a game introduced by .. .. and Rivest. First we explain the framework of FlipIt and after that the formulas and aannames that we will make for the game for during the whole paper.  
-
-\section{The First Topic of this Chapter}
-\flip{FlipIt} is a two-players game with a shared (single) resource that the players want to control as long as possible. The shared resource can be a password, a network or a secret key depending on the setting being modeled. In the rest of the paper we will call the players the Attacker and the Defender. To get the control over the resource, players can flip the resource at any given time. Each move will imply a certain cost. The unique feature of \flip{FlipIt} is that the move will happen in a stealthy way, meaning that the other player has no clue that the other player has flipped the resource. For instance, the defender will not find out if the resource has already been compromised by the attacker, but he can only potentially know it after he flips the resource himself. The goal of the player is to maximize the time that he or she has control over the resource while minimizing total cost of the moves. Players won't move to frequently. A move can also result in a "wasted move", in this paper called flop. It could be that the resource was for example already under control of the defender. If the defender moves when he or she has already the control over the resource, he or she would have a wasted move because it would not result in a change of ownership. 
- 
-Because the players move in a sthealty way, there are different types of feedback that a player can get while moving:
-\begin{itemize}
-\item Non-adaptive (NA): The player does not receive any feedback while flipping.
-\item Last move (LM): The player finds out the exact time the opponent played the last time.
-\item Full History (FH): The player finds out the complete history of the opponents move.
-\end{itemize}
-The game can be extended by the amount of information that a player receives. It can also be possible for a player to get information at the start of the game. Both interesting cases are:
-\begin{itemize}
-\item Rate-of-play (RP: The player finds out the exact rate of play of the opponent.
-\item Knowledge-of-strategy (KS): The player finds out the complete information of the strategy that the opponent is playing.
-\end{itemize}
-
-In our assumption will the strategy of both players be non-adaptive. Non of the players has information of the strategy of the opponent. 
 
 
-\subsection{An item}
-A master thesis is never an isolated work. This means that your text must
-contain references. On-line documents\cite{FlipThem} as well as
-books\cite{DefendingAgainstUnknownEnemy} can be referenced. \cite{Craig2005}.
 
-\section{Figures}
-Figures are used to add illustrations to the text. The \fref{fig:logo} shows
-the KU~Leuven logo as an illustration.
-\begin{figure}
-  \centering
-  \includegraphics{logokul}
-  \caption{The KU~Leuven logo.}
-  \label{fig:logo}
+In this section, we introduce the \flip{FlipIt} game \cite{FlipIt} and the most important results. \flip{FlipIt} is a stealthy takeover game introduced by a team of the RSA in 2012. First we explain the framework of \flip{FlipIt}, next we introduce some variations already made on \flip{FlipIt} and as last we give a formal definition of our variation on the model of FlipIt and the assumptions that we will make for the game during the whole paper.  
+
+\section{Introduction to FlipIt}
+To get an understanding of our model it is important to get (an inside in) familiar with the FlipIt game and the main results. 
+\flip{FlipIt} is a two-players game with a shared (single) resource that the players want to control as long as possible. The shared resource can be a password, a network or a secret key depending on the setting being modelled. In the rest of the paper we will call the players the Attacker and the Defender. In figure \ref{fig:FLipItDefault} the attacker is denoted by the light gray and the defender by the darker color. To get control over the resource, players can flip the resource at any given time. Each flip corresponds with a move and will also imply a certain cost. \\
+The unique feature of \flip{FlipIt} is that the flip will happen in a stealthy way, meaning that the other player has no clue that his opponent has flipped the resource. For instance, the defender will not find out if the resource has already been compromised by the attacker, but he can only potentially know it after he flips the resource himself. The goal of each player is to maximize the time that he or she has control over the resource while minimizing the total cost of the moves. (This cost causes) the players won't move to frequently. A move can also result in a "wasted move", called a flop. It may happen that the resource was already under control by the defender. If the defender moves again when he or she has already control over the resource, he or she would have wasted a move since it does not result in a change of ownership. \\
+
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=0.25]{Images/FlipItDefault.jpg}
+\caption{The FlipIt game where both players are playing periodically}
+\label{fig:FLipItDefault}
 \end{figure}
+\todo{verwijzen naar de figuur \ref{fig:FLipItDefault}}
 
-\section{Tables}
-Tables are used to present data neatly arranged. A table is normally
-not a spreadsheet! Compare \tref{tab:wrong} en \tref{tab:ok}: which table do
-you prefer?
+Because the players move in a stealthy way, there are different types of feedback that a player can get while moving:
+\begin{itemize}
+\item Non-adaptive (NA): The player does not receive any feedback during the game while flipping.
+\item Last move (LM): When a player flips it will find out the exact time that the opponent played the last time.
+\item Full History (FH): When a player flips it will find out the whole history of the opponents moves.
+\end{itemize}
 
-\begin{table}
-  \centering
-  \begin{tabular}{||l|lr||} \hline
-    gnats     & gram      & \$13.65 \\ \cline{2-3}
-              & each      & .01 \\ \hline
-    gnu       & stuffed   & 92.50 \\ \cline{1-1} \cline{3-3}
-    emu       &           & 33.33 \\ \hline
-    armadillo & frozen    & 8.99 \\ \hline
-  \end{tabular}
-  \caption{A table with the wrong layout.}
-  \label{tab:wrong}
-\end{table}
+The game can be extended by the amount of information that a player receives. It may also be possible for a player to receive information at the beginning of the game. Both interesting cases are:
+\begin{itemize}
+\item Rate-of-play (RP): The player learns the exact rate of play of the opponent.
+\item Knowledge-of-strategy (KS): The player finds out the complete information of the strategy of his opponent.
+\end{itemize}
 
-\begin{table}
-  \centering
-  \begin{tabular}{@{}llr@{}} \toprule
-    \multicolumn{2}{c}{Item} \\ \cmidrule(r){1-2}
-    Animal    & Description & Price (\$)\\ \midrule
-    Gnat      & per gram    & 13.65 \\
-              & each        & 0.01 \\
-    Gnu       & stuffed     & 92.50 \\
-    Emu       & stuffed     & 33.33 \\
-    Armadillo & frozen      & 8.99 \\ \bottomrule
-  \end{tabular}
-  \caption{A table with the correct layout.}
-  \label{tab:ok}
-\end{table}
 
-\section{Lorem Ipsum}
-This section is added to check headers and footers. So this chapter must at
-least contain three pages. To make sure that we get the required amount,
-the \textsf{lipsum} package isn't used but the text is put directly in the
-text.
+\subsection{Strategies}
+ 
+ In this subsection we go through the strategies used in FlipIt and the most important results. 
+ \begin{table}
+ \centering
+ \begin{tabular}{ l | c  }
+  \textbf{Categories} & \textbf{Classes of Strategies} \\
+  \hline Non-adaptive (NA) & Exponential \\
+  & Periodic \\
+  & Renewal \\
+  & General non-adaptive \\
+  \hline Adaptive (AD) & Last move (LM) \\
+  & Full History (FH) \\  
+\end{tabular}
+ \caption{Classes of strategies in FlipIt}
+ \label{table:Strategies}
+ \end{table}
 
-\subsection{Lorem ipsum dolor sit amet, consectetur adipiscing elit}
-Sed nec tortor id felis tristique sodales. Nulla nec massa eu dui fermentum
-tincidunt. Integer ullamcorper ante eget eros posuere faucibus. Nam id
-ligula ut augue pulvinar vulputate id at purus. Aenean condimentum tortor
-eu mi placerat eget eleifend massa mollis. Nam est mi, sagittis quis
-euismod eget, sagittis in nibh. Proin elit turpis, aliquam et imperdiet
-sed, volutpat eu turpis.
+There are two different kinds of strategies, the \textit{non-adaptive strategies} and the \textit{renewal strategies}. If there is no need for feedback for both of the players, we say that we have a non-adaptive strategy. Because the player does not receive any feedback during the game it will play in the same manner against every opponent. They are not dependent on the opponents movements. This means that they can already generate the time sequence for all the moves in advance.  But they can depend on some randomness because the non-adaptive strategies can be randomised. 
+A renewal strategy is a non-adaptive strategy where the time intervals between two consecutive moves are generated by a renewal process. \\
 
-Pellentesque vel enim tellus, vitae egestas turpis. Praesent malesuada elit
-non nisi sollicitudin non blandit lacus tincidunt. Morbi blandit urna at
-lectus ornare laoreet. Suspendisse turpis diam, lobortis dictum luctus
-quis, commodo at lorem. Integer lacinia convallis ultricies. Sed quis augue
-neque, eu malesuada arcu. Nullam vehicula, purus vitae sagittis pulvinar,
-erat eros semper massa, eu egestas nibh erat quis magna. Cras pellentesque,
-nisl eu dapibus volutpat, urna augue ornare quam, quis egestas lectus nulla
-a lectus.
+ \begin{description}
+ \item Periodic
+ \item Non-Arithmetic Renewal
+ \item Exponential
+ \end{description}
+ 
+ \subsection{Variations on FlipIt}
+ 
+ There are various possible ways to extend \flip{FlipIt}. For instance Laszka et al. extended the basic \flip{FlipIt} game to multiple resources. The incentive is that for compromising a system in a real case it needs more than just taking over one resource. An example is gaining access to the internal system and then breaking the password. This model is called \textit{FlipThem} \cite{FlipThem}. Two ways of flipping the resources are used: the AND and the OR control model. In the AND model the attacker only controls the system if he controls all the resources of the system, whereas in the OR model the attacker only needs to compromise one resource to be in control of the entire system. The difference with \textit{FlipThem} and this paper is that we introduce a Graph Model in the beginning and the system is compromised if the attacker controls a subset of the resources. \todo{nog verschillen ?}\\
+Another extension on \textit{FlipIt} is done by Pham\cite{GameTheorApprCostBenefitAnalyses} [\todo{citatie needed voor Are We Compromised?}]. Beside the action Flip their is another action Test. The basic idea is to test with an extra action if the resource has been compromised or not. This action involves an extra cost. This model is useful if somebody wants to know for example if his password has been compromised or wants to assess the periodic security of a system.  In \cite{MitigationCovert} \cite{MitigationNonTargeted} Laszka et al. they also consider non targeted attacks by non-strategic players and \todo{verder aanvullen}. \\
 
-Vivamus dictum libero in massa cursus sed vulputate eros imperdiet. Donec
-lacinia, libero ac lobortis egestas, nibh dui ornare arcu, luctus porttitor
-velit massa sit amet quam. Maecenas scelerisque laoreet diam, vitae congue
-quam adipiscing vitae. Aliquam cursus nisl a leo convallis eleifend
-fermentum massa porta. Nunc libero quam, dapibus dapibus molestie sit amet,
-faucibus vel nunc.
+\section{Our model}
+Explanaiton of our model and the differences with FlipIt and other models
 
-\subsection{Praesent auctor venenatis posuere}
-Sed tellus augue, molestie in pulvinar lacinia, dapibus non ipsum. Fusce
-vitae mi vitae enim ullamcorper hendrerit eu malesuada est. Proin iaculis
-ante sed nibh tincidunt vel interdum libero posuere. Vivamus accumsan metus
-quis felis congue suscipit dapibus enim mattis. Fusce mattis tortor eget
-ipsum interdum sagittis auctor id metus.
+Our model will focus in the beginning on the non-adaptive strategies. Reasons behind this is that a player (defender or attacker) rarely knows what the strategies are of his opponent. [If the attacker wants to move stealthily, it might have limited attack options FLIPTHEM]. \todo{nog redenen zoeken}\\
 
-Integer diam lacus, pharetra sit amet tempor et, tristique non lorem.
-Aenean auctor, nisi eu interdum fermentum, lectus massa adipiscing elit,
-sed facilisis orci odio a lectus. Proin mi nibh, tempus quis porta a,
-viverra quis enim. In sollicitudin egestas libero, quis viverra velit
-molestie eget. Nulla rhoncus, dolor a mollis vestibulum, lacus elit semper
-nisi, nec sollicitudin sem urna eu magna. Nunc sed est urna, euismod congue
-mi.
+In this section we summarize the different actions of the Attacker and the defender and we define the formal definition of our game. First we start explaining the actions of the attacker and after that the actions of the defender.
 
-\subsection{Cras vulputate ultricies venenatis}
-Vivamus eros urna, sodales accumsan semper vel, lobortis sit amet mauris.
-Etiam condimentum eleifend lorem, ullamcorper ornare lectus aliquet vitae.
-Praesent massa enim, interdum sit amet semper et, venenatis ut elit.
-Quisque faucibus, quam ac lacinia imperdiet, nulla neque elementum purus,
-tempus rutrum justo massa porta sapien. Vestibulum ante ipsum primis in
-faucibus orci luctus et ultrices posuere cubilia Curae; Sed ultrices
-interdum mi, et rhoncus sapien rutrum sed.
+ \subsection{Actions of the attacker}
+A virus has different kind of ways of making his way through a company network. We will describe the different ways of how the virus can propagate. For start we will say that the virus or worm will be dropped on Node i and that it has k numbers of neighbours. 
+\begin{enumerate}
+\item Node i is infected and will spread the virus or worm to every k neighbours and will stop infecting the neighbours in the next step
+\item Node i is infected and will spread the virus or worm to every k neighbours and will keep on spreading the virus in every next step
+\item Node i is infected and will spread the virus to only one of the k neighbours and will stop infecting another one in the next step
+\item Node i is infected and will spread the virus to only one of the k neighbours and in the next step it will infect another one of the k neighbours 
+\end{enumerate}
 
-Duis elit orci, molestie quis sollicitudin sed, convallis non ante.
-Maecenas tincidunt condimentum justo, et ultricies leo tristique vitae.
-Vestibulum quis quam non lectus dapibus eleifend a vitae nibh. Nam nibh
-justo, pharetra quis iaculis consequat, elementum quis justo. Etiam mollis
-lacinia lacus, nec sollicitudin urna lobortis ac. Nulla facilisi.
+In the game that will be modelled in the paper we will use the settings of the 1 spreading method. We will not use method 2 because this kind of propagation will float the network. Because we use the settings of a mail system and contact in a mailing list the method of 3 and 4 are not used. \\
+In the first method the node that has been infected can be again infected. If one of the neighbours infect the node again the node will infect his neighbours again. By using this spreading method we have three states of a node. An infected state, a clean state and a spreading state. And infected state means that the node is infected and will not spread itself again to its neighbours, a clean state means that there is no virus or worm on the node and a spreading state means that the node is infected and that it will spread itself in the next step to its neighbours.
+We can argument this kind of propagation through a mail worm. \todo{voorbeeld geven van zo een worm}
+%Another propagation method is that the virus works as a token. It will propagate to only one neighbour and continue to spread. 
 
-Proin placerat risus eleifend erat ultricies placerat. Etiam rutrum magna
-nec turpis euismod consectetur. Phasellus tortor odio, lacinia imperdiet
-condimentum sed, faucibus commodo erat. Phasellus sed felis id ante
-placerat ultrices. Aenean tempor justo in tortor volutpat eu auctor dolor
-mollis. Aenean sit amet risus urna. Morbi viverra vehicula cursus.
+We will model two kind of attack of the attacker:
+\begin{enumerate}
+\item The attacker drops the virus on a random node on the network
+\item The attacker drops the virus on a targeted node on the network
+\end{enumerate}
+The attacker in this game will put a virus or worm on one of the nodes in the network. This will happen at random. The attacker does not know on which node the virus will be dropped. We will use this randomness because \todo{feit uit security rapport symantec} most viruses are spread via a usb stick or a shared resource. If we use this spreading method where we have a targeted attack the attacker will have more information about the network. \\
 
-\subsection{Donec nibh ante, consectetur et posuere id, tempus nec arcu}
-Curabitur a tellus aliquet ipsum pellentesque scelerisque. Etiam congue,
-risus et volutpat rutrum, est purus dapibus leo, non cursus metus felis
-eget ligula. Vivamus facilisis tristique turpis, ut pretium lectus luctus
-eleifend. Fusce magna sapien, ullamcorper vitae fringilla id, euismod quis
-ante.
+The attacker can choose at which rate it will drop a virus on one of the nodes on the network. The cost of dropping a virus will be the same. It will not increase. If it will increase this means that the attacker will eventually drop out of the game because it becomes to expensive.\\
+The attacker is in control over the game if it manages to infect a subset of all the resources of the company network.
 
-Phasellus volutpat, nunc et pharetra semper, sem justo adipiscing mauris,
-id blandit magna quam et orci. Vestibulum a erat purus, ut molestie ante.
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-cubilia Curae; Proin turpis diam, consequat ut ullamcorper ut, consequat eu
-orci. Sed metus risus, fringilla nec interdum vel, interdum eu nunc.
-Suspendisse vel sapien orci.
 
-\subsection{Morbi et mauris tempus purus ornare vehicula}
-Mauris sit amet diam quam, eget luctus purus. Sed faucibus, risus semper
-eleifend iaculis, mi turpis bibendum nisl, quis cursus nibh nisl sit amet
-ipsum. Vestibulum tempor urna vitae mi auctor malesuada eget non ligula.
-Nullam convallis, diam vel ultrices auctor, eros eros egestas elit, sed
-accumsan arcu tortor eget leo. Vestibulum orci purus, porttitor in pharetra
-eget, tincidunt eget nisl. Nullam sit amet nulla dui, facilisis vestibulum
-dui.
+\subsection{Actions of the defender}
+The attacker wants to protect all the nodes of his network. It can do so by getting back control over the resources. We will assume that the defender of the network has knowledge over his own network. Which is convenient in the real world because a company has to know how his infrastructure looks like.\\
 
-Donec faucibus facilisis mauris ac cursus. Duis rhoncus quam sed nisi
-laoreet eu scelerisque massa tincidunt. Vivamus sit amet libero nec arcu
-imperdiet tempor quis non libero. Sed consequat dignissim justo. Phasellus
-ullamcorper, velit quis posuere vulputate, felis erat tincidunt mauris, at
-vestibulum justo lectus et turpis. Maecenas lacinia convallis euismod.
-Quisque egestas fermentum sapien eu dictum. Sed nec lacus in purus dictum
-consequat quis vel nisl. Fusce non urna sem. Curabitur eu diam vitae elit
-accumsan blandit. Nullam fermentum nunc et leo dictum laoreet. Donec semper
-varius velit vel fringilla. Vivamus eu orci nunc.
+The defender has two possible ways of defending its network:
+\begin{enumerate}
+\item The defender flips all the nodes of his network
+\item The defender will flip a subset of the nodes of his network
+\end{enumerate}
+
+The cost of flipping all the nods of the network will be greater than the cost of flipping a subset of nodes. We make this assumption because otherwise it will be beneficial for the defender to always flip all the nodes in the network.\\
+
+We will also make the assumption that as a defender flips a node the node can get infected again. A flip will not be correlated to a patch but to a clean-up. \todo{waarom geen patch, wormen kunnen veranderen gaandeweg}
+\todo{andere mogelijkheid:} Another setting of the game can be that the flip of the defender is equal to a patch and that the resource cannot be infected any more. But with this case we deviate from the flipIt game, because the attacker cannot flip the resource any more. Unless we work with different viruses every time the attacker flips. We start with the less complex game of flipping is equal to a clean-up.
+
+\subsection{Strategies of both players}
+We explained what the actions of each player are. 
+
+\section{Formal definition Game}
+
+In this section we provide a formal definition of the game and the notation that we will use throughout the paper. 
+
+\begin{description}
+% ---- PLAYERS ---- %
+\item \textit{Players}  There are two players in the game, one is the defender and the other one is the attacker. They are respectively identified by 0 and 1.
+
+% ---- TIME ---- %
+\item \textit{Time}  The game starts at $t=0$ and continuous indefinitely as $t \rightarrow \infty$. The game is a continuous game.
+
+% ---- GRAPH ---- %
+\item \textit{Graph} We represent the company network as a Graph $G = < V,E>$. G is an ordered pair where V denotes the set of resources or nodes in the network and E denotes the set of connections or links, which are a two-element subset of V. We use the notations resources and nodes interleaving in this paper.\\
+We have N resources in the network. $N \in $  \todo{aanvullen}. This means we can denote the resources by:
+\begin{center}
+$V \in {V_{0}, V_{1}, V_{2}, ... , V_{N} }$
+\end{center}
+The set E of connections indicates if there is a link between two resources. We see the links as bidirectional so the total graph is undirected. If there is a link between resource $V_{n}$ and $V_{n+1}$ then there is also a link between $V_{n+1}$ and $V_{n}$. 
+
+% ---- GAME STATE ---- %
+\item \textit{Game State} There is also a time-dependent variable that represents the state of the game. $C=C(t)$ is either 0 if the game is under control by the defender and 1 if the Game is under control by the attacker. \\
+We start at $t=0$ with the defender who has control over the game. We do this because we assume that the defender will only put the network online without having a virus or worm in it. The Attacker can gain control over the game when it compromises a subset \textit{s} of the resources. The subset \textit{s} is a minimum of 1 resource and a maximum of all the resources N. \\
+\todo{deze variabele nodig ja of nee ? JA} We can also define the state of each resource by $C^{A}_{N}$ and $C^{D}_{N}$. If $C^{A}_{N} = 1$ then this means that the attacker has control over the resource, and 0 otherwise. For $C^{D}_{N}$ it is visa versa, $C^{D}_{N} = 1 - C^{A}_{N}$.\\
+
+% ---- MOVES ---- %
+\item \textit{Moves} Both players can make a move in the game. Moves done in a finite numbers of time in any finite time interval. Both players can play at any time they want, they can also play at the same time. If this happens the one that has control over the resource will keep having control over the resource.
+This makes the game fully symmetric \todo{beter uitleggen}. The sequence of move times are denoted by the following infinite sequence:
+\begin{center}
+$t=t_{1},t_{2},t_{3},..$
+\end{center}
+Two move times can be the same because we allow players to move at the same time.
+We can also denote the infinite sequence of times when player \textit{i}  moves. We write this as :
+\begin{center}
+$t=t_{i,1},t_{i,2},t_{i,3},..$ with \textit{i} $ \in $ $\lbrace 0,1 \rbrace$
+\end{center}
+The sequences $t_{1}$ and $t_{0}$ are disjoint subsets of the sequent t. 
+We can also denote who made the \textit{k}th move by defining a sequence \textit{p} that denotes the sequence of who played:
+\begin{center}
+$p=p_{1},p_{2},p_{3}, .. $ with $p_{k}$ $\in$ $\lbrace 0,1 \rbrace$
+\end{center}
+
+% ---- NUMVER OF MOVES ---- %
+\item \textit{Number of moves}  $n_{i}(t$ denotes the number of moves made by player \textit{i} up to and including time t. This means that 
+\begin{center}
+$n(t)=n_{1}(t) + n_{0}(t)$
+\end{center}
+is the sum of the number of moves made by the defender and the attacker up to and including time t. 
+
+% ---- AVERAGE MOVE RATE ---- %
+\item \textit{Average move rate} We denote $\alpha_{i}(t)$ as the average move rate by player i:
+\begin{center}
+$\alpha_{i}(t) = n_{i}(t)/t$ with $t > 0$ and \textit{i} $ \in $ $\lbrace 0,1 \rbrace$
+\end{center}
+
+% ---- PERIOD ---- %
+\item \textit{Period} We can also define the period in terms of the average move rate:
+\begin{center}
+$\delta_{i}=1/\alpha_{i}$
+\end{center}
+
+% ---- WHO PLAYED LAST ---- %
+\item \textit{Who played last} We know who played last by taking the modulo with the period. $Z_{i}$ represents the time since the last flip of player i. We can also denote the time since the last flip of player i on resource r by $Z_{i}^{N}$. 
+For a non adaptive game, period deterministic: At time $t=n$ is $Z_{i} = n mod i$.  \todo{er kan nog steeds tegelijk geflipt zijn maar dan hebben ze wel geflipt}.
+
+
+% ---- COST ---- %
+\item \textit{Cost} The cost is an important property of the game. In FlipIt for every player the cost of a move is denoted by $k_{i}$. These costs can be very different for every player. In this game we denote the players flipping cost for resource $V_{N}$ by $c_{i}^{V_{N}}$. \\
+For the defender the cost will be either the cost of flipping every resource or the cost of flipping a subgroup of the resources.\\
+For the attacker the cost will be the cost of dropping a virus on a node. The spreading of the virus will not imply an extra cost. 
+
+% ---- UTILITY/ GAIN ---- %
+\item \textit{Utility} In FlipIt the Gain definition is the utility function. The Gain denotes the total time a player i has gained control over a resource. \todo{nu gain van een resource, moet voor verschillende resources zijn}
+The Gain $G_{i}$ denotes players \textit{i} total gain of a game, which is the total time the player has gained control over a subset of resources thus controlling the game. This is denoted by the following:\\
+\begin{center}
+$G_{i}(t) = \int^{t}_{0} C_{i}(x) dx$ 
+\end{center}
+ If we sum up the total Gain of the attacker and the defender we end up with the time:
+\begin{center}
+$G_{1}(t) + G_{0}(t) = t$
+\end{center}
+
+% ---- AVERAGE GAIM RATE ---- %
+\item \textit{Average gain rate} The average gain rate for player i is defined as
+\begin{center}
+$\gamma_{i}(t)= G_{i}(t)/t$
+\end{center}
+
+\subsection{Formal definition}
+\begin{description}
+\item \textit{Graph Matrix} We represent the graph of the network through a matrix $ A = |V| \times |V|$. The (i,j)-entry of the matrix A will have a 1 if there is a connection between node $V_{i}$ and node $V_{j}$. If we are working with an undirected graph the matrix will be symmetric. 
+\item \textit{Attack Vector} We denote $X = 1 \times |V|$ as the attack vector. It will be a vector with only zeros. The attacker will place a virus on a node V. This will be denoted by the Vth entry in the vector that is changed by a 1.
+\item \textit{Reset vector} The reset vector will make sure that the right entries in the matrix become zero. If the defender flips every node every time it flips then the attack vector will be 0.
+\item \textit{Cummulative Matrix} This matrix will keep record of the propagation of the virus through the network.
+\item \textit{State Matrix} The State matrix $T(t) = 1 \times |V| $ will keep at every time t the state of the game and denote which node at time t is infected with the virus. At time $t=0$ the State Matrix will be the null matrix.
+\end{description}
+De eerste infectie is de attack vector * Graph matrix . 
+\end{description}
+
 
 \section{Conclusion}
 The final section of the chapter gives an overview of the important results
 of this chapter. This implies that the introductory chapter and the
 concluding chapter don't need a conclusion.
 
-\lipsum[66]
+
 
 %%% Local Variables: 
 %%% mode: latex

@@ -11,11 +11,11 @@
 
 
 In the following paragraph an introduction to game theory is given based on the work of 
-%\citep{leyton2008essentials} 
+{leyton2008essentials} 
 and 
-%\citep{Coursera}. 
+{Coursera}. 
 For a more detailed and full introduction to game theory, the reader is referred to 
-%\citep{leyton2008essentials}. 
+{leyton2008essentials}. 
 %------------------------------------------------%
 %            Intro Game Theory 					 %
 %------------------------------------------------%
