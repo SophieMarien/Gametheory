@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  13 MAR 2015 12:56
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  21 MAR 2015 16:04
 entering extended mode
 **masterproef.tex
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.tex
@@ -1521,13 +1521,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 168.
  ) 
 Here is how much of TeX's memory you used:
- 25583 strings out of 493921
- 469284 string characters out of 3144864
- 720730 words of memory out of 3000000
+ 25585 strings out of 493921
+ 469306 string characters out of 3144864
+ 721839 words of memory out of 3000000
  28141 multiletter control sequences out of 15000+200000
- 75594 words of font info for 114 fonts, out of 3000000 for 9000
+ 75677 words of font info for 115 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 60i,12n,78p,1303b,922s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,12n,78p,1469b,922s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files (x86)/
 MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/MiKTeX 2.9/
@@ -1547,7 +1547,7 @@ type1/public/lm/lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publi
 c/lm/lmtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhv
 b8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
 
-Output written on masterproef.pdf (40 pages, 412884 bytes).
+Output written on masterproef.pdf (40 pages, 413379 bytes).
 PDF statistics:
  494 PDF objects out of 1000 (max. 8388607)
  115 named destinations out of 1000 (max. 500000)
