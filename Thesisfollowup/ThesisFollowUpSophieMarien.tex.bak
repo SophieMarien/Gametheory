@@ -52,23 +52,21 @@
 
 \maketitle
 
-\section{Geef een uitgewerkt werkplan voor je thesis-activiteiten tussen nu en half juni (dan moet je je masterproef indienen). Dit werkplan moet PER TWEE WEKEN aangeven wat je precies gaat doen voor je masterproef. Maak het heel CONCREET: in het geval van implementatie, implementatie van welk deel precies, in het geval van het schrijven van tekst, het schrijven van welk hoofdstuk precies, e.d. Stel dit werkplan zelfstandig op, en bespreek het daarna met je begeleider, voordat je op deze mail antwoordt.}
-
-Uitgewerkt plan steekt bij in de bijlage. In de timesheet file staat naast de werkuren aan wat ik ga werken. 
-
-\section{Schrijf een stuk tekst van minstens 5 pagina's waarin je de probleemstelling van je masterproef formuleert, gevolgd door de doelstellingen. Je verwerkt hier onder meer elementen van je literatuurstudie in.}
-
-Ik heb afgesproken dat ik het stuk tekst tegen dit weekend uitschrijf. Hier is al een kleine inleiding.
-
-Virussen zijn een groot probleem voor bedrijfsnetwerken. Ze kunnen gevoelige informatie verzamelen of een bedrijfsnetwerk platleggen. Gegeven de grote kost gebonden aan schade door malware, is het vinden van de juiste verdegingingsstrategie belangrijk. Het aanvallen en verdedigen van een bedrijfsnetwerk kan gezien worden als een spel, waarbij de verdediger en de aanvaller elk proberen de beste strategie te vinden.  Ik ga dus toelichten hoe het spel van aanvallen en verdedigen kan gedefinieerd worden als een variatie op het spel FlipIt. Dit laat toe om te onderzoeken wat de verschillende strategieën zijn van de netwerkbeheerder enerzijds en van de aanvaller die virussen zendt, anderzijds. Bedoeling is om in een volgende stap het spel verder te analyseren met behulp van Game Theory om te bepalen welke de dominerende strategieën zijn en of er zich Nash equilibria voordoen.
-
+\section{Vergelijk wat je gedaan hebt met het opgestelde werkplan. Hoever sta je? Moet het werkplan aangepast worden?}
+Ik moet een tandje bijsteken en al verder beginnen schrijven. Ik was vergeten in mijn werkplan bij te steken dat ik een week op Athens ging gaan. 
+\section{Schrijf een eerste versie van een hoofstuk over een afgewerkte bijdrage van je masterproef.}
+Dit is meegegeven in bijlage. Ik heb ineens heel mijn voorlopige thesistekst in bijlage gestoken. 
+\section{Geef een korte inhoud van het tweede artikel dat je gaat schrijven. (Dit is niet van toepassing voor de studenten van de Master Toegepaste Informatica)}
+Het tweede artikel gaat gaan over mijn implementatie van FlipIt op een bedrijfsnetwerk. Eerst bespreek ik hoe ik FlipIt aanpas. Daarna stel ik een methode voor via matrices om de propagatie van een virus te beschrijven. De methode die gebruikt wordt is gelijkaardig aan die van Google Page Ranking. Via deze functie kan ik de totale controle berekenen van een speler over een spel. In het artikel leg ik de methode uit aan de hand van een default spel. 
+Ook geef ik een eerste setting van een spel en de bijhorende benefit formules waaruit ik al dan niet een equilibrium kan bepalen.
+\section{Beschrijf in 10 lijnen de demo die je bij je verdediging zult geven.}
+Ik heb een theoretische thesis dus kan ik moeilijk een demo geven. Ik zal enkele voorbeelden uitwerken om mijn werkingsmethode uit te leggen.
+\section{Wat is er afgesproken met je begeleider en/of promotor om op te leveren als major milestone die het praktische werk van je thesis afsluit?}
+Dit is nog niet afgesproken.
 \section{Evalueer de tijd die je in je thesis gestoken hebt in de voorbije 4 weken: veel te weinig / te weinig / voldoende / ruim voldoende / meer dan verwacht.}
-
-Ik heb voldoende tijd in mijn thesis gestoken. Ik heb de timesheet aangepast naar mijn planning. Ik heb weinig examens en ben een week eerder klaar dan de lesvrije week dus dan kan ik nog verder werken aan mijn thesis. Voor deze komende weken heb ik minder uren ingepland omdat ik van andere vakken projecten moet afwerken en presentaties moet geven. De laatste week heb ik minder kunnen werken dan dat ik graag had willen doen omwille van een kaakgewrichtsontsteking die momenteel nog steeds niet over is. De volgende weken ga ik proberen meer te werken aan mijn thesis dan dat ik gepland heb, om mijn uren in te halen.
-
+De voorbije weken heb ik minder dan voldoende aan mijn thesis gewerkt. Ik liep vast op een aantal zaken en ik ben een week op Athens cursus geweest. 
 \section{Evalueer de vorderingen van je thesis t.o.v. het bereiken van de vooropgestelde doelstelling: ver achter op het schema / achter op het schema / goed op schema / vooruit op het schema / ver vooruit op het schema.}
+Ik loop een beetje achter op schema want ik had toch graag nu al een aantal formuleringen bepaald en een model uitgewerkt.
+\section{Stuur de ingevulde timesheet mee als bijlage.}
 
-Ik sta op schema volgens het schema dat ik zelf gemaakt heb. Ik heb mijn schema voor de komende weken aangepast. 
-
-\section{Stuur de ingevulde timesheet mee als bijlage}
 \end{document}
