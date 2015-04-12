@@ -34,14 +34,15 @@ One of the assumptions underlying game theory is that the players of the game, t
 %utility function meaning 
 Instead it means that each agent has preferences about the states of the world he likes. These preferences are mapped to natural numbers and are called the utility function. The numbers are interpreted as a mathematical measure to tell you how much an agent likes or dislikes the states of the world. \\
 It also explains the impact of uncertainty. When an agent is uncertain about a distribution of outcomes, his utility will describe the expected value of the utility function with respect to the probability of the distribution of the outcomes. For example: with 0.7 probability it will be 7 degrees outside and 0.3 probability it will be 10 degrees. The agent can have a different opinion about that distribution versus another distribution. (\todo{uitleggen aan de hand van een voorbeeld}).\\
+\todo{players rationeel en max outcomes}
 %Cooperative and non cooperative games
-In a decision game theoretic approach an agent will try to act in such a way to maximise his expected or average utility function. It becomes more complicated when two or more agents want to maximise their utility and whose actions can affect each other utilities. This kind of games are referred to as non cooperative game theory, where the basic modelling unit is the group of agents. The individualistic approach, where the basic modelling is only one agent, is referred as cooperative game theory. 
+In a Decision Game Theoretic Approach an agent will try to act in such a way to maximise his expected or average utility function. It becomes more complicated when two or more agents want to maximise their utility and whose actions can affect each other utilities. This kind of games are referred to as non cooperative game theory, where the basic modelling unit is the group of agents. The individualistic approach, where the basic modelling is only one agent, is referred as cooperative game theory. 
 
 There are two standard representations for games. The first one is the Normal Form. The second one is the Extensive Form.
 
 In the following list a couple of terms that will be used throughout the paper.
 \begin{description}
-\item \textit{Players}: players are referred as the ones who are the decision makers. It can be a person, a company or an animal.
+\item \textit{Players}: players are referred as the ones who are the decision makers. It can be a person, a company or an animal. 
 \item \textit{Actions}: actions are what the player can do. 
 \item \textit{Outcomes}:  
 \item \textit{Utility function}: the utility function is the mapping of the level of happiness of an agent about the state of the world to natural numbers.
@@ -50,11 +51,18 @@ In the following list a couple of terms that will be used throughout the paper.
 
 A game in game theory consists of multiple agents and every agent has a set of actions that he can play. 
 
-
+\todo{strategien en acties definieren}
 
 %Nash equilibrium
 
 
+In game theory, the Nash equilibrium is a solution concept of a non-cooperative game involving two or more players, in which each player is assumed to know the equilibrium strategies of the other players, and no player has anything to gain by changing only their own strategy.[1] If each player has chosen a strategy and no player can benefit by changing strategies while the other players keep theirs unchanged, then the current set of strategy choices and the corresponding payoffs constitutes a Nash equilibrium. The reality of the Nash equilibrium of a game can be tested using experimental economics method.
+
+In de speltheorie, een deelgebied van de wiskunde, is een Nash-evenwicht een oplossingsconcept voor een niet-coooperatief spel, waar twee of meer spelers aan meedoen. In een Nash-evenwicht wordt elke speler geacht de evenwichtsstrategieeen van de andere spelers te kennen en heeft geen van de spelers er voordeel bij om zijn of haar strategie eenzijdig te wijzigen. Als elke speler een strategie heeft gekozen en geen enkele speler kan profiteren door zijn strategie te veranderen, terwijl de andere spelers dat ook niet doen, dan vormt de huidige verzameling van strategiekeuzes plus de bijbehorende uitbetalingen een Nash-evenwicht.
+
+Een Nash-evenwicht gaat uit van een spel, waarin iedere speler een strategie heeft. Die strategie geeft precies aan wat een speler in de verschillende fases van een spel doet. Een strategie kan zowel een pure strategie als een gemengde strategie zijn. De verzameling van strategieeen van alle spelers die meedoen aan een bepaald spel noemt men een strategieprofiel. In de speltheorie is een Nash-evenwicht een strategieprofiel waarbij het voor geen enkele speler voordelig is daarvan af te wijken, als de andere spelers dat ook niet doen.
+
+Het Nash-evenwichtsconcept is een begrip dat vooral toepassing vindt in de economie.
 
 % --------------- example of a game -----------------%
 
@@ -107,6 +115,32 @@ to permit checking email content for detecting viruses before end users receive 
 Send a email with malicious attachment. Only again infected if attachment again opened. Thus this is the action of attacking every neighbour node + also can attack again the node where the virus was coming from.
 There are also email viruses were the malicious program is hidden in the txt and the attachment does not need to be opened. 
 
+
+Spy vs Spy: Aldrich Ames was a CIA Counter-Intelligence officer. He was also a spy feeding valuable intelligence to the Soviets and compromising US intelligence operations in the Soviet Union. He operated for 9 years before the CIA recognized that they had a spy and began an investigation and determined that he was the leak. This strategic situation is the same one faced by computer networks, drug cartels, intelligence agencies and guerrilla networks.
+
+All such organisations have a reasonable expectation that trusted personal/systems will eventually be recruited/captured by enemy organisations. Therefore such organisations must consume valuable resources to discover such betrayals and thereby regain secrecy. The question is then given the possible threats how often and at what cost should they spend resources on investigations/spy hunts/virus scans. This is where flipIt comes in.
+
+FLIPIT: The Game of “Stealthy Takeover:” FlipIt was created to model these sorts of strategic situations and to study the best courses of action. Specifically flipIt was motivated by the recent interest in and success of Advanced Persistent Threats, or APT.
+
+The basic idea is that given the current experience that perfect protection of trusted resources is unattainable, lets think about how we can optimally manage compromises of the our most trusted systems.
+
+Rules
+
+Two players, player X (blue) and player Y (red) attempt to maintain control over a shared resource.
+At anytime in the game each player is allowed to play ‘flip’.
+The only way a player can learn the state of the game (who is in control) is when they play 'flip’.
+If a player is in control of the resource and they play 'flip’ they remain in control of the resource.
+If a player is not in control of the resource and they play 'flip’ they gain control of the resource.
+Players gain points for the length of time they control the resource.
+Players lose points every time they play flip.
+This reflects the situation that the CIA is placed in with regard to moles/enemy spies. They don't know if they have been compromised. They can perform an investigation and determine if they have been compromised, also catching the spy in the act, but this action is very expensive. That is, the CIA has to trade off between remaining “mole free” (a good) and investigations (an expense).
+
+Winning: How do you win a fair game of flipIt against intelligent adaptive human adversaries? I'm not sure.
+
+In the real world what is the best move given that the other players can secretly capture/corrupt your most trusted personal/systems? Rives suggests in his talk that you:
+Be prepared to deal with repeated total failure (loss of control).
+Play fast! Aim to make opponent drop out!
+Arrange game so that your moves cost much less than your opponent's!
 %http://www.cisco.com/web/offer/gist_ty2_asset/Cisco_2014_ASR.pdf p49
 %http://repo.hackerzvoice.net/depot_madchat/vxdevl/papers/avers/2004-35.pdf
 %http://www.mcafee.com/us/resources/white-papers/foundstone/wp-managing-malware-outbreak.pdf
