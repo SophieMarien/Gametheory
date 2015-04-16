@@ -20,7 +20,7 @@
 \contentsline {section}{\numberline {1.2}introduction number 2}{2}{section.1.2}
 \contentsline {chapter}{\chapternumberline {2}Intoduction to GameTheory}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}Intro Game Theory}{5}{section.2.1}
-\contentsline {section}{\numberline {2.2}Virusses}{7}{section.2.2}
+\contentsline {section}{\numberline {2.2}Virusses}{6}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Malware}{8}{subsection.2.2.1}
 \contentsline {section}{\numberline {2.3}Conclusion}{8}{section.2.3}
 \contentsline {chapter}{\chapternumberline {3}The FlipIt game}{9}{chapter.3}

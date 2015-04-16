@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  10 APR 2015 17:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  13 APR 2015 14:44
 entering extended mode
 **masterproef.tex
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.tex
@@ -1352,7 +1352,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--32
 
 LaTeX Warning: Marginpar on page 5 moved by 42.78638pt.
 
-[5] [6] [7]
+[5]
+
+LaTeX Warning: Marginpar on page 6 moved by 28.5387pt.
+
+
+LaTeX Warning: Marginpar on page 6 moved by 73.45422pt.
+
+[6]
 
 ! Package inputenc Error: Keyboard character used is undefined
 (inputenc)                in inputencoding `ascii'.
@@ -1361,7 +1368,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.123 FLIPIT: The Game of ‚
+l.127 FLIPIT: The Game of ‚
                            ÄúStealthy Takeover:‚Äù FlipIt was created to mod...
 
 You need to provide a definition with \DeclareInputText 
@@ -1375,7 +1382,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.123 FLIPIT: The Game of ‚Ä
+l.127 FLIPIT: The Game of ‚Ä
                             úStealthy Takeover:‚Äù FlipIt was created to mod...
 
 You need to provide a definition with \DeclareInputText 
@@ -1389,7 +1396,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.123 FLIPIT: The Game of ‚Äú
+l.127 FLIPIT: The Game of ‚Äú
                              Stealthy Takeover:‚Äù FlipIt was created to mod...
 
 You need to provide a definition with \DeclareInputText 
@@ -1403,7 +1410,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.123 FLIPIT: The Game of ‚ÄúStealthy Takeover:‚
+l.127 FLIPIT: The Game of ‚ÄúStealthy Takeover:‚
                                                 Äù FlipIt was created to mod...
 
 You need to provide a definition with \DeclareInputText 
@@ -1417,7 +1424,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.123 FLIPIT: The Game of ‚ÄúStealthy Takeover:‚Ä
+l.127 FLIPIT: The Game of ‚ÄúStealthy Takeover:‚Ä
                                                  ù FlipIt was created to mod...
 
 You need to provide a definition with \DeclareInputText 
@@ -1431,7 +1438,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.123 FLIPIT: The Game of ‚ÄúStealthy Takeover:‚Äù
+l.127 FLIPIT: The Game of ‚ÄúStealthy Takeover:‚Äù
                                                    FlipIt was created to mod...
 
 You need to provide a definition with \DeclareInputText 
@@ -1445,7 +1452,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.130 ...the game each player is allowed to play ‚
+l.134 ...the game each player is allowed to play ‚
                                                   Äòflip‚Äô.
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1458,7 +1465,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.130 ...he game each player is allowed to play ‚Ä
+l.134 ...he game each player is allowed to play ‚Ä
                                                   òflip‚Äô.
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1471,7 +1478,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.130 ...e game each player is allowed to play ‚Äò
+l.134 ...e game each player is allowed to play ‚Äò
                                                   flip‚Äô.
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1484,7 +1491,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.130 ...e each player is allowed to play ‚Äòflip‚
+l.134 ...e each player is allowed to play ‚Äòflip‚
                                                   Äô.
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1497,7 +1504,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.130 ... each player is allowed to play ‚Äòflip‚Ä
+l.134 ... each player is allowed to play ‚Äòflip‚Ä
                                                   ô.
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1510,7 +1517,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.130 ...each player is allowed to play ‚Äòflip‚Äô
+l.134 ...each player is allowed to play ‚Äòflip‚Äô
                                                   .
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1523,7 +1530,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.131 ...o is in control) is when they play 'flip‚
+l.135 ...o is in control) is when they play 'flip‚
                                                   Äô.
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1536,7 +1543,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.131 ... is in control) is when they play 'flip‚Ä
+l.135 ... is in control) is when they play 'flip‚Ä
                                                   ô.
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1549,7 +1556,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.131 ...is in control) is when they play 'flip‚Äô
+l.135 ...is in control) is when they play 'flip‚Äô
                                                   .
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1562,7 +1569,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.132 ...trol of the resource and they play 'flip‚
+l.136 ...trol of the resource and they play 'flip‚
                                                   Äô they remain in control ...
 
 You need to provide a definition with \DeclareInputText 
@@ -1576,7 +1583,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.132 ...rol of the resource and they play 'flip‚Ä
+l.136 ...rol of the resource and they play 'flip‚Ä
                                                   ô they remain in control o...
 
 You need to provide a definition with \DeclareInputText 
@@ -1590,7 +1597,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.132 ...ol of the resource and they play 'flip‚Äô
+l.136 ...ol of the resource and they play 'flip‚Äô
                                                    they remain in control of...
 
 You need to provide a definition with \DeclareInputText 
@@ -1604,7 +1611,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.133 ...trol of the resource and they play 'flip‚
+l.137 ...trol of the resource and they play 'flip‚
                                                   Äô they gain control of th...
 
 You need to provide a definition with \DeclareInputText 
@@ -1618,7 +1625,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.133 ...rol of the resource and they play 'flip‚Ä
+l.137 ...rol of the resource and they play 'flip‚Ä
                                                   ô they gain control of the...
 
 You need to provide a definition with \DeclareInputText 
@@ -1632,7 +1639,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.133 ...ol of the resource and they play 'flip‚Äô
+l.137 ...ol of the resource and they play 'flip‚Äô
                                                    they gain control of the ...
 
 You need to provide a definition with \DeclareInputText 
@@ -1646,7 +1653,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.136 ... CIA has to trade off between remaining ‚
+l.140 ... CIA has to trade off between remaining ‚
                                                   Äúmole free‚Äù (a good) an...
 
 You need to provide a definition with \DeclareInputText 
@@ -1660,7 +1667,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.136 ...CIA has to trade off between remaining ‚Ä
+l.140 ...CIA has to trade off between remaining ‚Ä
                                                   úmole free‚Äù (a good) and...
 
 You need to provide a definition with \DeclareInputText 
@@ -1674,7 +1681,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.136 ...IA has to trade off between remaining ‚Äú
+l.140 ...IA has to trade off between remaining ‚Äú
                                                   mole free‚Äù (a good) and ...
 
 You need to provide a definition with \DeclareInputText 
@@ -1688,7 +1695,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.136 ...trade off between remaining ‚Äúmole free‚
+l.140 ...trade off between remaining ‚Äúmole free‚
                                                   Äù (a good) and investigat...
 
 You need to provide a definition with \DeclareInputText 
@@ -1702,7 +1709,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.136 ...rade off between remaining ‚Äúmole free‚Ä
+l.140 ...rade off between remaining ‚Äúmole free‚Ä
                                                   ù (a good) and investigati...
 
 You need to provide a definition with \DeclareInputText 
@@ -1716,13 +1723,14 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.136 ...ade off between remaining ‚Äúmole free‚Äù
+l.140 ...ade off between remaining ‚Äúmole free‚Äù
                                                    (a good) and investigatio...
 
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
-) [8] (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-2.tex
+[7]) [8]
+(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-2.tex
 
 Package natbib Warning: Citation `FlipThem' on page 9 undefined on input line 8
 .
@@ -1900,10 +1908,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 170.
  ) 
 Here is how much of TeX's memory you used:
- 25604 strings out of 493921
- 469814 string characters out of 3144864
- 724796 words of memory out of 3000000
- 28160 multiletter control sequences out of 15000+200000
+ 25616 strings out of 493921
+ 470126 string characters out of 3144864
+ 723796 words of memory out of 3000000
+ 28170 multiletter control sequences out of 15000+200000
  75677 words of font info for 115 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  60i,12n,78p,1469b,922s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1926,9 +1934,9 @@ type1/public/lm/lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publi
 c/lm/lmtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhv
 b8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
 
-Output written on masterproef.pdf (41 pages, 422169 bytes).
+Output written on masterproef.pdf (41 pages, 421782 bytes).
 PDF statistics:
- 503 PDF objects out of 1000 (max. 8388607)
- 117 named destinations out of 1000 (max. 500000)
+ 505 PDF objects out of 1000 (max. 8388607)
+ 119 named destinations out of 1000 (max. 500000)
  19191 words of extra memory for PDF output out of 20736 (max. 10000000)
 
