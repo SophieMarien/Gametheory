@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  17 APR 2015 11:15
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  17 APR 2015 16:23
 entering extended mode
 **masterproef.tex
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.tex
@@ -1127,13 +1127,9 @@ Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 )
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.aux
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\intro.aux)
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-5.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-2.aux)
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-4.aux
-
-LaTeX Warning: Label `cha:1' multiply defined.
-
-) (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-6.aux
+(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-4.aux)
+(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-6.aux
 
 LaTeX Warning: Label `first' multiply defined.
 
@@ -1239,7 +1235,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-<logokuleng.pdf, id=126, 159.33528pt x 85.358pt>
+<logokuleng.pdf, id=110, 159.33528pt x 85.358pt>
 File: logokuleng.pdf Graphic file (type pdf)
  <use logokuleng.pdf>
 Package pdftex.def Info: logokuleng.pdf used on input line 85.
@@ -1337,7 +1333,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [1
 
 
-])
+]
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -1346,27 +1342,98 @@ Package microtype Info: Character `029' is missing
 
 LaTeX Warning: Marginpar on page 3 moved by 17.06781pt.
 
-[3] (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-5.tex
+) [3] (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-2.tex
 [4
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 29--32
+
+Package natbib Warning: Citation `FlipThem' on page 5 undefined on input line 8
+.
+
+
+Package natbib Warning: Citation `GameTheorApprCostBenefitAnalyses' on page 5 u
+ndefined on input line 9.
+
+
+Package natbib Warning: Citation `MitigationCovert' on page 5 undefined on inpu
+t line 9.
+
+
+Package natbib Warning: Citation `MitigationNonTargeted' on page 5 undefined on
+ input line 9.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
  []
 
 
-LaTeX Warning: Marginpar on page 5 moved by 42.78638pt.
-
-[5]
-
-LaTeX Warning: Marginpar on page 6 moved by 28.5387pt.
+Package natbib Warning: Citation `FlipIt' on page 5 undefined on input line 11.
 
 
-LaTeX Warning: Marginpar on page 6 moved by 73.45422pt.
+[5] <Images/FlipItDefault.jpg, id=278, 1285.80376pt x 337.26pt>
+File: Images/FlipItDefault.jpg Graphic file (type jpg)
 
-[6]
+<use Images/FlipItDefault.jpg>
+Package pdftex.def Info: Images/FlipItDefault.jpg used on input line 35.
+(pdftex.def)             Requested size: 321.45015pt x 84.31479pt.
+ [6 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/FlipItD
+efault.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 59--62
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
+
+ []
+
+
+LaTeX Warning: Marginpar on page 9 moved by 69.28687pt.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--134
+
+ []
+
+[9] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 182--184
+
+ []
+
+[11]) [12]
+(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-5.tex
+Underfull \hbox (badness 10000) in paragraph at lines 26--29
+
+ []
+
+
+LaTeX Warning: Marginpar on page 13 moved by 42.78638pt.
+
+[13
+
+
+
+]
+
+LaTeX Warning: Marginpar on page 14 moved by 28.5387pt.
+
+
+LaTeX Warning: Marginpar on page 14 moved by 73.45422pt.
+
+[14]
 
 ! Package inputenc Error: Keyboard character used is undefined
 (inputenc)                in inputencoding `ascii'.
@@ -1375,7 +1442,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.127 FLIPIT: The Game of ‚
+l.124 FLIPIT: The Game of ‚
                            ÄúStealthy Takeover:‚Äù FlipIt was created to mod...
 
 You need to provide a definition with \DeclareInputText 
@@ -1389,7 +1456,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.127 FLIPIT: The Game of ‚Ä
+l.124 FLIPIT: The Game of ‚Ä
                             úStealthy Takeover:‚Äù FlipIt was created to mod...
 
 You need to provide a definition with \DeclareInputText 
@@ -1403,7 +1470,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.127 FLIPIT: The Game of ‚Äú
+l.124 FLIPIT: The Game of ‚Äú
                              Stealthy Takeover:‚Äù FlipIt was created to mod...
 
 You need to provide a definition with \DeclareInputText 
@@ -1417,7 +1484,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.127 FLIPIT: The Game of ‚ÄúStealthy Takeover:‚
+l.124 FLIPIT: The Game of ‚ÄúStealthy Takeover:‚
                                                 Äù FlipIt was created to mod...
 
 You need to provide a definition with \DeclareInputText 
@@ -1431,7 +1498,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.127 FLIPIT: The Game of ‚ÄúStealthy Takeover:‚Ä
+l.124 FLIPIT: The Game of ‚ÄúStealthy Takeover:‚Ä
                                                  ù FlipIt was created to mod...
 
 You need to provide a definition with \DeclareInputText 
@@ -1445,7 +1512,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.127 FLIPIT: The Game of ‚ÄúStealthy Takeover:‚Äù
+l.124 FLIPIT: The Game of ‚ÄúStealthy Takeover:‚Äù
                                                    FlipIt was created to mod...
 
 You need to provide a definition with \DeclareInputText 
@@ -1459,7 +1526,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.134 ...the game each player is allowed to play ‚
+l.131 ...the game each player is allowed to play ‚
                                                   Äòflip‚Äô.
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1472,7 +1539,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.134 ...he game each player is allowed to play ‚Ä
+l.131 ...he game each player is allowed to play ‚Ä
                                                   òflip‚Äô.
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1485,7 +1552,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.134 ...e game each player is allowed to play ‚Äò
+l.131 ...e game each player is allowed to play ‚Äò
                                                   flip‚Äô.
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1498,7 +1565,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.134 ...e each player is allowed to play ‚Äòflip‚
+l.131 ...e each player is allowed to play ‚Äòflip‚
                                                   Äô.
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1511,7 +1578,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.134 ... each player is allowed to play ‚Äòflip‚Ä
+l.131 ... each player is allowed to play ‚Äòflip‚Ä
                                                   ô.
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1524,7 +1591,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.134 ...each player is allowed to play ‚Äòflip‚Äô
+l.131 ...each player is allowed to play ‚Äòflip‚Äô
                                                   .
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1537,7 +1604,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.135 ...o is in control) is when they play 'flip‚
+l.132 ...o is in control) is when they play 'flip‚
                                                   Äô.
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1550,7 +1617,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.135 ... is in control) is when they play 'flip‚Ä
+l.132 ... is in control) is when they play 'flip‚Ä
                                                   ô.
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1563,7 +1630,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.135 ...is in control) is when they play 'flip‚Äô
+l.132 ...is in control) is when they play 'flip‚Äô
                                                   .
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -1576,7 +1643,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.136 ...trol of the resource and they play 'flip‚
+l.133 ...trol of the resource and they play 'flip‚
                                                   Äô they remain in control ...
 
 You need to provide a definition with \DeclareInputText 
@@ -1590,7 +1657,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.136 ...rol of the resource and they play 'flip‚Ä
+l.133 ...rol of the resource and they play 'flip‚Ä
                                                   ô they remain in control o...
 
 You need to provide a definition with \DeclareInputText 
@@ -1604,7 +1671,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.136 ...ol of the resource and they play 'flip‚Äô
+l.133 ...ol of the resource and they play 'flip‚Äô
                                                    they remain in control of...
 
 You need to provide a definition with \DeclareInputText 
@@ -1618,7 +1685,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.137 ...trol of the resource and they play 'flip‚
+l.134 ...trol of the resource and they play 'flip‚
                                                   Äô they gain control of th...
 
 You need to provide a definition with \DeclareInputText 
@@ -1632,7 +1699,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.137 ...rol of the resource and they play 'flip‚Ä
+l.134 ...rol of the resource and they play 'flip‚Ä
                                                   ô they gain control of the...
 
 You need to provide a definition with \DeclareInputText 
@@ -1646,7 +1713,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.137 ...ol of the resource and they play 'flip‚Äô
+l.134 ...ol of the resource and they play 'flip‚Äô
                                                    they gain control of the ...
 
 You need to provide a definition with \DeclareInputText 
@@ -1660,7 +1727,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.140 ... CIA has to trade off between remaining ‚
+l.137 ... CIA has to trade off between remaining ‚
                                                   Äúmole free‚Äù (a good) an...
 
 You need to provide a definition with \DeclareInputText 
@@ -1674,7 +1741,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.140 ...CIA has to trade off between remaining ‚Ä
+l.137 ...CIA has to trade off between remaining ‚Ä
                                                   úmole free‚Äù (a good) and...
 
 You need to provide a definition with \DeclareInputText 
@@ -1688,7 +1755,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.140 ...IA has to trade off between remaining ‚Äú
+l.137 ...IA has to trade off between remaining ‚Äú
                                                   mole free‚Äù (a good) and ...
 
 You need to provide a definition with \DeclareInputText 
@@ -1702,7 +1769,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.140 ...trade off between remaining ‚Äúmole free‚
+l.137 ...trade off between remaining ‚Äúmole free‚
                                                   Äù (a good) and investigat...
 
 You need to provide a definition with \DeclareInputText 
@@ -1716,7 +1783,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.140 ...rade off between remaining ‚Äúmole free‚Ä
+l.137 ...rade off between remaining ‚Äúmole free‚Ä
                                                   ù (a good) and investigati...
 
 You need to provide a definition with \DeclareInputText 
@@ -1730,82 +1797,11 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.140 ...ade off between remaining ‚Äúmole free‚Äù
+l.137 ...ade off between remaining ‚Äúmole free‚Äù
                                                    (a good) and investigatio...
 
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
-
-[7]) [8]
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-2.tex
-
-Package natbib Warning: Citation `FlipThem' on page 9 undefined on input line 8
-.
-
-
-Package natbib Warning: Citation `GameTheorApprCostBenefitAnalyses' on page 9 u
-ndefined on input line 9.
-
-
-Package natbib Warning: Citation `MitigationCovert' on page 9 undefined on inpu
-t line 9.
-
-
-Package natbib Warning: Citation `MitigationNonTargeted' on page 9 undefined on
- input line 9.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8--10
-
- []
-
-
-Package natbib Warning: Citation `FlipIt' on page 9 undefined on input line 11.
-
-
-[9
-
-
-
-] <Images/FlipItDefault.jpg, id=324, 1285.80376pt x 337.26pt>
-File: Images/FlipItDefault.jpg Graphic file (type jpg)
-
-<use Images/FlipItDefault.jpg>
-Package pdftex.def Info: Images/FlipItDefault.jpg used on input line 35.
-(pdftex.def)             Requested size: 321.45015pt x 84.31479pt.
- [10 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/FlipIt
-Default.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 59--62
-
- []
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
-
- []
-
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
-
- []
-
-
-LaTeX Warning: Marginpar on page 13 moved by 69.28687pt.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 131--134
-
- []
-
-[13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 182--184
-
- []
 
 [15]) [16]
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-4.tex
@@ -1856,7 +1852,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
 
 
-] <Images/diffVirusDelay.jpg, id=394, 1279.78125pt x 444.66125pt>
+] <Images/diffVirusDelay.jpg, id=369, 1279.78125pt x 444.66125pt>
 File: Images/diffVirusDelay.jpg Graphic file (type jpg)
 
 <use Images/diffVirusDelay.jpg>
@@ -1906,58 +1902,67 @@ Package natbib Warning: There were undefined citations.
 \tf@tdo=\write7
 \tf@lof=\write8
 \tf@lot=\write9
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 171.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 171.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 172.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 172.
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.aux
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\intro.aux)
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-5.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-2.aux)
+(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-5.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-4.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-6.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-n.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\conclusion.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\app-A.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\app-n.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 171.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 171.
-Package rerunfilecheck Info: File `masterproef.out' has not changed.
-(rerunfilecheck)             Checksum: 68F30ED9A4C767D2CF586267AB5C564B;1762.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 172.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 172.
 
+
+Package rerunfilecheck Warning: File `masterproef.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `masterproef.out':
+(rerunfilecheck)             Before: 7FEFFD4AEF9B2F16FC36E84BB94CD63D;1521
+(rerunfilecheck)             After:  A543A6054D46D397A71819C12A2CD22C;1763.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 171.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 172.
  ) 
 Here is how much of TeX's memory you used:
- 25676 strings out of 493921
- 471590 string characters out of 3144864
- 728383 words of memory out of 3000000
- 28201 multiletter control sequences out of 15000+200000
+ 25670 strings out of 493921
+ 471401 string characters out of 3144864
+ 724503 words of memory out of 3000000
+ 28196 multiletter control sequences out of 15000+200000
  76020 words of font info for 118 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  60i,12n,78p,1469b,922s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files (x86)/MiKT
-eX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files (x86)/MiKTeX 2.9/font
-s/enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips
-/lm/lm-mathsy.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8
-r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
-nts/type1/public/lm/lmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
-ublic/lm/lmmi6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmm
-i8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Files (x86)/MiKTeX
- 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmri10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
-lm/lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.p
-fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on masterproef.pdf (43 pages, 525271 bytes).
+pdfTeX warning (dest): name{figure.4.1} has been referenced but does not exis
+t, replaced by a fixed one
+
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/
+enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/l
+m/lm-mathsy.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.
+enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
+s/type1/public/lm/lmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
+lic/lm/lmmi6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi8
+.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Files (x86)/MiKTeX 2
+.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
+1/public/lm/lmri10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm
+/lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb
+><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on masterproef.pdf (43 pages, 522797 bytes).
 PDF statistics:
- 550 PDF objects out of 1000 (max. 8388607)
- 134 named destinations out of 1000 (max. 500000)
- 19212 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 531 PDF objects out of 1000 (max. 8388607)
+ 135 named destinations out of 1000 (max. 500000)
+ 19180 words of extra memory for PDF output out of 20736 (max. 10000000)
 
