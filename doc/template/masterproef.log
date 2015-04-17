@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  17 APR 2015 16:28
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  17 APR 2015 16:31
 entering extended mode
 **masterproef.tex
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.tex
@@ -1125,25 +1125,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count200
 )
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.aux
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\intro.aux)
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-2.aux)
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-5.aux)
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-4.aux
-
-LaTeX Warning: Label `cha:1' multiply defined.
-
-) (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-6.aux
-
-LaTeX Warning: Label `first' multiply defined.
-
-
-LaTeX Warning: Label `first' multiply defined.
-
-) (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-n.aux)
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\conclusion.aux)
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\app-A.aux)
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\app-n.aux))
+No file masterproef.aux.
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
 LaTeX Font Info:    ... okay on input line 85.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
@@ -1159,7 +1141,6 @@ LaTeX Font Info:    ... okay on input line 85.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 85.
 LaTeX Font Info:    ... okay on input line 85.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 85.
-
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1231,15 +1212,12 @@ LaTeX Info: Redefining \nameref on input line 85.
 LaTeX Info: Redefining \ref on input line 85.
 LaTeX Info: Redefining \pageref on input line 85.
 LaTeX Info: Redefining \nameref on input line 85.
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.out)
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.out)
 \@outlinefile=\write5
 Package microtype Info: Loading generic settings for font family
 (microtype)             `kulemtfpf' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-<logokuleng.pdf, id=126, 159.33528pt x 85.358pt>
+<logokuleng.pdf, id=6, 159.33528pt x 85.358pt>
 File: logokuleng.pdf Graphic file (type pdf)
  <use logokuleng.pdf>
 Package pdftex.def Info: logokuleng.pdf used on input line 85.
@@ -1278,34 +1256,10 @@ Package microtype Info: Loading generic settings for font family
 
 
 
-]
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.toc
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 8.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
-File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 8.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
-File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 8.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
-File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 8.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 8.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 8.
-) [2
+] [2
 
 
 ]
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.tdo)
 [3
 
 ] [4
@@ -1313,13 +1267,12 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 ] [5
 
 
-]
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.lof)
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.lot)
-[6
+] [6
 
 
-] [7
+] ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omllmm.fd")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omxlmex.fd") [7
 
 ] [8
 
@@ -1377,14 +1330,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--10
 Package natbib Warning: Citation `FlipIt' on page 5 undefined on input line 11.
 
 
-[5] <Images/FlipItDefault.jpg, id=308, 1285.80376pt x 337.26pt>
+[5] <Images/FlipItDefault.jpg, id=111, 1285.80376pt x 337.26pt>
 File: Images/FlipItDefault.jpg Graphic file (type jpg)
 
 <use Images/FlipItDefault.jpg>
 Package pdftex.def Info: Images/FlipItDefault.jpg used on input line 35.
 (pdftex.def)             Requested size: 321.45015pt x 84.31479pt.
- [6 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/FlipItD
-efault.jpg>]
+
+
+LaTeX Warning: Reference `fig:FLipItDefault' on page 6 undefined on input line 
+39.
+
+
+LaTeX Warning: Reference `fig:FLipItDefault' on page 6 undefined on input line 
+39.
+
+
+LaTeX Warning: Reference `fig:FLipItDefault' on page 6 undefined on input line 
+39.
+
+
+LaTeX Warning: Reference `fig:FLipItDefault' on page 6 undefined on input line 
+39.
+
+[6 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/FlipItDe
+fault.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 59--62
 
  []
@@ -1437,377 +1407,7 @@ LaTeX Warning: Marginpar on page 14 moved by 28.5387pt.
 
 LaTeX Warning: Marginpar on page 14 moved by 73.45422pt.
 
-[14]
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.127 FLIPIT: The Game of ‚
-                           ÄúStealthy Takeover:‚Äù FlipIt was created to mod...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.127 FLIPIT: The Game of ‚Ä
-                            úStealthy Takeover:‚Äù FlipIt was created to mod...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.127 FLIPIT: The Game of ‚Äú
-                             Stealthy Takeover:‚Äù FlipIt was created to mod...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.127 FLIPIT: The Game of ‚ÄúStealthy Takeover:‚
-                                                Äù FlipIt was created to mod...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.127 FLIPIT: The Game of ‚ÄúStealthy Takeover:‚Ä
-                                                 ù FlipIt was created to mod...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.127 FLIPIT: The Game of ‚ÄúStealthy Takeover:‚Äù
-                                                   FlipIt was created to mod...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.134 ...the game each player is allowed to play ‚
-                                                  Äòflip‚Äô.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.134 ...he game each player is allowed to play ‚Ä
-                                                  òflip‚Äô.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.134 ...e game each player is allowed to play ‚Äò
-                                                  flip‚Äô.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.134 ...e each player is allowed to play ‚Äòflip‚
-                                                  Äô.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.134 ... each player is allowed to play ‚Äòflip‚Ä
-                                                  ô.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.134 ...each player is allowed to play ‚Äòflip‚Äô
-                                                  .
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.135 ...o is in control) is when they play 'flip‚
-                                                  Äô.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.135 ... is in control) is when they play 'flip‚Ä
-                                                  ô.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.135 ...is in control) is when they play 'flip‚Äô
-                                                  .
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.136 ...trol of the resource and they play 'flip‚
-                                                  Äô they remain in control ...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.136 ...rol of the resource and they play 'flip‚Ä
-                                                  ô they remain in control o...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.136 ...ol of the resource and they play 'flip‚Äô
-                                                   they remain in control of...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.137 ...trol of the resource and they play 'flip‚
-                                                  Äô they gain control of th...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.137 ...rol of the resource and they play 'flip‚Ä
-                                                  ô they gain control of the...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.137 ...ol of the resource and they play 'flip‚Äô
-                                                   they gain control of the ...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.140 ... CIA has to trade off between remaining ‚
-                                                  Äúmole free‚Äù (a good) an...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.140 ...CIA has to trade off between remaining ‚Ä
-                                                  úmole free‚Äù (a good) and...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.140 ...IA has to trade off between remaining ‚Äú
-                                                  mole free‚Äù (a good) and ...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.140 ...trade off between remaining ‚Äúmole free‚
-                                                  Äù (a good) and investigat...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.140 ...rade off between remaining ‚Äúmole free‚Ä
-                                                  ù (a good) and investigati...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `ascii'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.140 ...ade off between remaining ‚Äúmole free‚Äù
-                                                   (a good) and investigatio...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-[15]) [16]
+[14] [15]) [16]
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-4.tex
 Underfull \hbox (badness 10000) in paragraph at lines 99--117
 
@@ -1856,7 +1456,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
 
 
-] <Images/diffVirusDelay.jpg, id=396, 1279.78125pt x 444.66125pt>
+] <Images/diffVirusDelay.jpg, id=222, 1279.78125pt x 444.66125pt>
 File: Images/diffVirusDelay.jpg Graphic file (type jpg)
 
 <use Images/diffVirusDelay.jpg>
@@ -1927,18 +1527,21 @@ Package rerunfilecheck Warning: File `masterproef.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `masterproef.out':
-(rerunfilecheck)             Before: A543A6054D46D397A71819C12A2CD22C;1763
+(rerunfilecheck)             Before: <no file>
 (rerunfilecheck)             After:  78B26F25CEB0478E885A8B7849232AD6;1762.
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 172.
  ) 
 Here is how much of TeX's memory you used:
- 25676 strings out of 493921
- 471590 string characters out of 3144864
- 726127 words of memory out of 3000000
- 28201 multiletter control sequences out of 15000+200000
+ 25602 strings out of 493921
+ 468783 string characters out of 3144864
+ 713934 words of memory out of 3000000
+ 28159 multiletter control sequences out of 15000+200000
  76020 words of font info for 118 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  60i,12n,78p,1469b,922s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1961,9 +1564,9 @@ pe1/public/lm/lmri10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
 lm/lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.p
 fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/P
 rogram Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on masterproef.pdf (43 pages, 525499 bytes).
+Output written on masterproef.pdf (43 pages, 497282 bytes).
 PDF statistics:
- 551 PDF objects out of 1000 (max. 8388607)
+ 391 PDF objects out of 1000 (max. 8388607)
  134 named destinations out of 1000 (max. 500000)
- 19212 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 18972 words of extra memory for PDF output out of 20736 (max. 10000000)
 
