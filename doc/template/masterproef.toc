@@ -36,14 +36,18 @@
 \contentsline {section}{\numberline {3.5}Conclusion}{16}{section.3.5}
 \contentsline {chapter}{\chapternumberline {4}Intoduction to GameTheory}{17}{chapter.4}
 \contentsline {section}{\numberline {4.1}Write down the settings of the game}{17}{section.4.1}
-\contentsline {chapter}{\chapternumberline {5}The Final Chapter}{21}{chapter.5}
-\contentsline {section}{\numberline {5.1}chap}{21}{section.5.1}
-\contentsline {chapter}{\chapternumberline {6}Conclusion}{23}{chapter.6}
-\contentsline {section}{\numberline {6.1}trala}{23}{section.6.1}
-\contentsline {appendix}{\chapternumberline {A}The First Appendix}{27}{appendix.A}
-\contentsline {section}{\numberline {A.1}More Lorem}{27}{section.A.1}
-\contentsline {appendix}{\chapternumberline {B}The Last Appendix}{29}{appendix.B}
-\contentsline {section}{\numberline {B.1}Lorem 20-24}{29}{section.B.1}
+\contentsline {chapter}{\chapternumberline {5}Intro to virus}{21}{chapter.5}
+\contentsline {section}{\numberline {5.1}tekst}{21}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}FlipIt with a virus}{21}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}chap}{21}{subsection.5.1.2}
+\contentsline {chapter}{\chapternumberline {6}The Final Chapter}{23}{chapter.6}
+\contentsline {section}{\numberline {6.1}chap}{23}{section.6.1}
+\contentsline {chapter}{\chapternumberline {7}Conclusion}{25}{chapter.7}
+\contentsline {section}{\numberline {7.1}trala}{25}{section.7.1}
+\contentsline {appendix}{\chapternumberline {A}The First Appendix}{29}{appendix.A}
+\contentsline {section}{\numberline {A.1}More Lorem}{29}{section.A.1}
+\contentsline {appendix}{\chapternumberline {B}The Last Appendix}{31}{appendix.B}
+\contentsline {section}{\numberline {B.1}Lorem 20-24}{31}{section.B.1}
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}
