@@ -40,6 +40,7 @@
 \contentsline {section}{\numberline {5.1}tekst}{21}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}FlipIt with a virus}{21}{subsection.5.1.1}
 \contentsline {subsection}{\numberline {5.1.2}chap}{21}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}define formula}{22}{subsection.5.1.3}
 \contentsline {chapter}{\chapternumberline {6}The Final Chapter}{23}{chapter.6}
 \contentsline {section}{\numberline {6.1}chap}{23}{section.6.1}
 \contentsline {chapter}{\chapternumberline {7}Conclusion}{25}{chapter.7}
