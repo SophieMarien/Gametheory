@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.27)  23 APR 2015 22:33
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.27)  24 APR 2015 18:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2145,84 +2145,100 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 12.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 12.
-
-<Images/Flipvirus.png, id=416, 379.8993pt x 273.6624pt>
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 21.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 21.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 21.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 21.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 21.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 21.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 21.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 21.
+ [21]
+<Images/Flipvirus.png, id=422, 379.8993pt x 273.6624pt>
 File: Images/Flipvirus.png Graphic file (type png)
 
 <use Images/Flipvirus.png>
-Package pdftex.def Info: Images/Flipvirus.png used on input line 24.
+Package pdftex.def Info: Images/Flipvirus.png used on input line 26.
 (pdftex.def)             Requested size: 379.89838pt x 273.66171pt.
 
-<Images/FlipSpel.png, id=417, 394.1124pt x 104.0688pt>
+<Images/FlipSpel.png, id=423, 394.1124pt x 104.0688pt>
 File: Images/FlipSpel.png Graphic file (type png)
 
 <use Images/FlipSpel.png>
-Package pdftex.def Info: Images/FlipSpel.png used on input line 36.
+Package pdftex.def Info: Images/FlipSpel.png used on input line 38.
 (pdftex.def)             Requested size: 394.11142pt x 104.06854pt.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 38.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 38.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 38.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 38.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 38.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 38.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 38.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 38.
- [21]
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 59.
+(babel)             in language  on input line 61.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 59.
+(babel)             in language  on input line 61.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 59.
+(babel)             in language  on input line 61.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 59.
+(babel)             in language  on input line 61.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 59.
+(babel)             in language  on input line 61.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 59.
+(babel)             in language  on input line 61.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 59.
+(babel)             in language  on input line 61.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 59.
-[22 <./Images/Flipvirus.png> <./Images/FlipSpel.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 61--63
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--86
+(babel)             in language  on input line 61.
+[22 <./Images/Flipvirus.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 63--65
 
  []
 
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 94.
+(babel)             in language  on input line 78.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 94.
+(babel)             in language  on input line 78.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 94.
+(babel)             in language  on input line 78.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 94.
+(babel)             in language  on input line 78.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 94.
+(babel)             in language  on input line 78.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 94.
+(babel)             in language  on input line 78.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 94.
+(babel)             in language  on input line 78.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 94.
-[23])
+(babel)             in language  on input line 78.
+[23 <./Images/FlipSpel.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 86--88
+
+ []
+
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 106.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 106.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 106.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 106.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 106.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 106.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 106.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 106.
+[24])
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 154.
 Package babel Info: Redefining dutch shorthand "~
@@ -2239,7 +2255,7 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 154.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 154.
- [24]
+ [25]
 \openout2 = `chap-7.aux'.
 
  (./chap-7.tex
@@ -2252,6 +2268,27 @@ Package babel Info: Redefining dutch shorthand "y
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 1.
 Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 1.
+ [26
+
+
+
+]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 12.
 Package babel Info: Redefining dutch shorthand "~
 (babel)             in language  on input line 12.
@@ -2260,7 +2297,7 @@ Package babel Info: Redefining dutch shorthand "y
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 12.
 
-<Images/chainAPT.png, id=447, 362.7954pt x 555.7563pt>
+<Images/chainAPT.png, id=457, 362.7954pt x 555.7563pt>
 File: Images/chainAPT.png Graphic file (type png)
 
 <use Images/chainAPT.png>
@@ -2283,11 +2320,7 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 155.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 155.
- [25
-
-
-
-]
+ [27]
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 155.
 Package babel Info: Redefining dutch shorthand "~
@@ -2304,7 +2337,7 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 155.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 155.
- [26 <./Images/chainAPT.png
+ [28 <./Images/chainAPT.png
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./Images/chainAPT.png): large interl
 aced PNG might cause out of memory (use non-interlaced PNG to fix this)
@@ -2345,7 +2378,7 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 157.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 157.
- [27
+ [29
 
 
 
@@ -2369,7 +2402,7 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 1.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 1.
- [28
+ [30
 
 
 
@@ -2407,43 +2440,6 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 158.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 158.
- [29]
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 161.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 161.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 161.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 161.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 161.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 161.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 161.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 161.
- [30
-
-
-]
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 161.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 161.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 161.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 161.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 161.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 161.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 161.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 161.
  [31]
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 161.
@@ -2461,7 +2457,44 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 161.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 161.
- [32]
+ [32
+
+
+]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 161.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 161.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 161.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 161.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 161.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 161.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 161.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 161.
+ [33]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 161.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 161.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 161.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 161.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 161.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 161.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 161.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 161.
+ [34]
 \openout2 = `app-A.aux'.
 
  (./app-A.tex
@@ -2474,7 +2507,7 @@ Package babel Info: Redefining dutch shorthand "y
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 1.
 
-Package natbib Warning: Citation `h2g2' on page 33 undefined on input line 5.
+Package natbib Warning: Citation `h2g2' on page 35 undefined on input line 5.
 
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 7.
@@ -2501,7 +2534,7 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 163.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 163.
- [33
+ [35
 
 
 ]
@@ -2524,7 +2557,7 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 1.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 1.
- [34
+ [36
 
 
 
@@ -2562,7 +2595,7 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 165.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 165.
- [35]
+ [37]
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 167.
 Package babel Info: Redefining dutch shorthand "~
@@ -2579,7 +2612,7 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 167.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 167.
- [36
+ [38
 
 
 ]
@@ -2600,7 +2633,7 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 173.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 173.
-[37
+[39
 
 ]
 
@@ -2626,7 +2659,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 173.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 173.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 173.
 Package rerunfilecheck Info: File `masterproef.out' has not changed.
-(rerunfilecheck)             Checksum: 4228F3EAEAF9438E7FA4A68DBFEC7012;1845.
+(rerunfilecheck)             Checksum: 0FEB2391FF0DDE5857F57D2394BFCDBD;1852.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2634,9 +2667,9 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 173.
  ) 
 Here is how much of TeX's memory you used:
- 24052 strings out of 493315
- 416817 string characters out of 6137903
- 689553 words of memory out of 5000000
+ 24054 strings out of 493315
+ 416831 string characters out of 6137903
+ 689581 words of memory out of 5000000
  26709 multiletter control sequences out of 15000+600000
  76020 words of font info for 118 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -2661,10 +2694,10 @@ s/type1/public/lm/lmsy10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/pu
 blic/lm/lmtt10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic
 /uhvb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a
 .pfb>
-Output written on masterproef.pdf (47 pages, 506805 bytes).
+Output written on masterproef.pdf (49 pages, 509940 bytes).
 PDF statistics:
- 608 PDF objects out of 1000 (max. 8388607)
- 530 compressed objects within 6 object streams
- 154 named destinations out of 1000 (max. 500000)
+ 619 PDF objects out of 1000 (max. 8388607)
+ 538 compressed objects within 6 object streams
+ 156 named destinations out of 1000 (max. 500000)
  19238 words of extra memory for PDF output out of 20736 (max. 10000000)
 

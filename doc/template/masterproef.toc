@@ -37,22 +37,22 @@
 \contentsline {chapter}{\chapternumberline {4}Intoduction to GameTheory}{17}{chapter.4}
 \contentsline {section}{\numberline {4.1}Write down the settings of the game}{17}{section.4.1}
 \contentsline {chapter}{\chapternumberline {5}Intro to virus}{21}{chapter.5}
-\contentsline {section}{\numberline {5.1}tekst}{21}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}FlipIt with a virus}{21}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}chap}{21}{subsection.5.1.2}
+\contentsline {section}{\numberline {5.1}Introduction}{21}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}FlipIt with a virus propagation}{21}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}chap}{22}{subsection.5.1.2}
 \contentsline {subsection}{\numberline {5.1.3}define formula}{22}{subsection.5.1.3}
 \contentsline {subsection}{\numberline {5.1.4}Formula with a virus propagation}{24}{subsection.5.1.4}
-\contentsline {subsection}{\numberline {5.1.5}Random phase}{24}{subsection.5.1.5}
-\contentsline {chapter}{\chapternumberline {6}APT}{25}{chapter.6}
-\contentsline {section}{\numberline {6.1}Advanced Persistent Threats}{25}{section.6.1}
-\contentsline {chapter}{\chapternumberline {7}The Final Chapter}{27}{chapter.7}
-\contentsline {section}{\numberline {7.1}chap}{27}{section.7.1}
-\contentsline {chapter}{\chapternumberline {8}Conclusion}{29}{chapter.8}
-\contentsline {section}{\numberline {8.1}trala}{29}{section.8.1}
-\contentsline {appendix}{\chapternumberline {A}The First Appendix}{33}{appendix.A}
-\contentsline {section}{\numberline {A.1}More Lorem}{33}{section.A.1}
-\contentsline {appendix}{\chapternumberline {B}The Last Appendix}{35}{appendix.B}
-\contentsline {section}{\numberline {B.1}Lorem 20-24}{35}{section.B.1}
+\contentsline {subsection}{\numberline {5.1.5}Random phase}{25}{subsection.5.1.5}
+\contentsline {chapter}{\chapternumberline {6}APT}{27}{chapter.6}
+\contentsline {section}{\numberline {6.1}Advanced Persistent Threats}{27}{section.6.1}
+\contentsline {chapter}{\chapternumberline {7}The Final Chapter}{29}{chapter.7}
+\contentsline {section}{\numberline {7.1}chap}{29}{section.7.1}
+\contentsline {chapter}{\chapternumberline {8}Conclusion}{31}{chapter.8}
+\contentsline {section}{\numberline {8.1}trala}{31}{section.8.1}
+\contentsline {appendix}{\chapternumberline {A}The First Appendix}{35}{appendix.A}
+\contentsline {section}{\numberline {A.1}More Lorem}{35}{section.A.1}
+\contentsline {appendix}{\chapternumberline {B}The Last Appendix}{37}{appendix.B}
+\contentsline {section}{\numberline {B.1}Lorem 20-24}{37}{section.B.1}
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}
