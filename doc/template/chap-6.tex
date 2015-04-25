@@ -16,10 +16,8 @@ This section gives a formal definition of the FlipIt game with a virus propagati
 \subsection{FlipIt with a virus propagation}
 In the previous section the FlipIt game is already been explained. In this section we will introduce a FlipIt game with a virus propagation. A FlipIt game with a virus propagation is a game where the attacker will drop a virus on one of the resources that is available. The virus will then spread itself to the neighbour resources. The attacker will only gain control over the whole network, in general the game, when it has infected all the resources. All the resources will not be infected immediately when the attacker has dropped its virus. It will take some time before the virus is spread and has infected everything. The time that it takes for the virus to infect every resource will be denoted as parameter \textit{d}. If we want to measure how long it takes for the virus to infect all resources, we have to calculate the shortest path to the farthest node. This can be measured by a method that we will explain in section []. With this parameter we can compose a formula to calculate the gain of a FlipIt game with a virus propagation.  \\ \todo{uitleggen waarom we een gewone flippit kunnen nemen met 1 resource}
 
-The gain of a player is defined as the total amount of time that a player has owned the resource over the amount of time that has passed since the beginning of the game. If the attacker attacks with the virus it will cause a delay of length \textit{d}. This means that the gain of the player from the normal game has to be abstracted with a delay everytime the attacker moves. This game, where the attacker drops a virus, cannot be modelled completely by a FlipIt game with a delay. This is because if the delay is bigger than the period of the attacker, the attacker will gain no control. If it would be with the delay caused by a phase bigger than zero the attacker would gain control after the defender flipt again. This is explained in figure \ref{fig:virusflip}. In the next section a formal definition 
+The gain of a player is defined as the total amount of time that a player has owned the resource over the amount of time that has passed since the beginning of the game. If the attacker attacks with the virus it will cause a delay of length \textit{d}. This means that the gain of the player from the normal game has to be abstracted with a delay every time the attacker moves. This game, where the attacker drops a virus, cannot be modelled completely by a FlipIt game with a delay. This is because if the delay is bigger than the period of the attacker, the attacker will gain no control. If it would be with the delay caused by a phase bigger than zero the attacker would gain control after the defender flipt again. This is explained in figure \ref{fig:virusflip}. In the next section a formal definition .. \todo{verder uitleggen nog}
 
-\subsection{chap}
-The setting of the game that we are going to play is one with multiple resources. When the defender flips it will always flip all the resources. The attacker will flip the node in the graph that can infect all the nodes in the shortest time possible. The attacker will gain the control over the resources when all the resources are infected. So ''d'' will be the shortest path to the furthest node. We will model ''d'' in time units. \todo{moet misschien niet ? }.
 \begin{figure}[hbtp]
 \caption{Difference in a FlipIt game between delay caused by a virus and a phase bigger than zero for the Attacker}
 \centering
@@ -28,17 +26,36 @@ The setting of the game that we are going to play is one with multiple resources
 \end{figure}
 
 
-
-
 \subsection{define formula}
-Their is a definition given by the writers of the paper FlipIt, but we want to add the property of a virus to the game so we are trying to find a formula that defines a game by counting the amount of time one of the players has control. \\
+The game FlipIt with a virus propagation is a two-player game with multiple resources. The multiple resources represent the nodes in a network. One of the players, the defender, will try to defend his network. The defender will do this by flipping all the nodes of the network in every move he plays. The attacker, the other player, will try to infect all the nodes in the network. The attacker will do this by flipping the node in the graph that can infect all the nodes in the shortest time possible. The attacker will gain the control over the network when all the resources are infected. So parameter \textit{d} will be the time of the shortest path from the start node to the furthest node. \\
+
+
+
+
+
+
+Their is a definition given for the gain of a player \textit{i} by the writers of the paper FlipIt, but we want to add the property of a virus propagation to the game, hence parameter \textit{d}, so we are trying to find another formula that defines a game by counting the amount of time one of the players has control. \\
+
+First a list of notations that will be used throughout the formal definition (see figure \ref{fig:notations} for a graphic representation of some of the notations):
+\begin{description}
+\item $\delta_{0}$: This is the period of the defender. This denotes the length of the interval between two consecutive moves of the defender. 
+\item $\delta_{1}$: This is the period of the attacker. This denotes the length of the interval between two consecutive moves of the attacker.
+\item \textit{$T_{0}$}: This denotes the phase of the attacker that was random and uniform chosen over the interval [0,$\delta_{0}$].
+\item \textit{$T_{1}$}: This denotes the phase of the defender that was chosen uniformly at random in interval [0,$\delta_{0}$].
+\item \textit{Unit of control}: Every continuous time step that one of the players has control over the resource is defined as a unit of control. 
+\item \textit{n}: n is the n'th interval of the attacker, starting from interval 1.
+\item $\Delta A$ : This is a function that denotes the length of a unit of control of the attacker in the n'th interval of the attacker.
+\item \textit{lcm(a,b)}: The lcm of a and b is the least common multiple of a and b.
+\item \textit{gcd(a,b)}: The gcd of a and b is the greatest common divider of a and b.
+\end{description}
 \begin{figure}[hbtp]
 \caption{Defining unit of control}
 \centering
 \includegraphics[scale=1]{Images/FlipSpel.png}
+\label{fig:notations}
 \end{figure}
 
-
+ 
 %\begin{equation}\label{first}
 %n = \delta_{1} mod \delta_{0}
 %\end{equation}
@@ -53,22 +70,35 @@ Their is a definition given by the writers of the paper FlipIt, but we want to a
 %\todo{formule met i nakijken}
 
 
-for $delta_{1} > delta_{0}$ (The defender moves faster than the attacker.) \\
+We \todo{We mag gebruikt worden in een wetenschappelijke tekst zolang de focus blijft op het werk en niet op de schrijver, FlipIt schrijvers gebruiken ook veel de we vorm} start by computing the gain of the attacker in a periodic game without phases. After that we introduce the phases. Next we compute the benefit of a player i in function of the gain. As last we adapt the computed formula for the gain and the benefit to formulate a new formula for a FlipIt game with a virus propagation. \todo{sectie over phases nog uitleggen}
+\\
+\subsubsection{Computing the benefit for an attacker of a normal FlipIt game}
+\textbf{Case  1:} \\
+For $delta_{1} > delta_{0}$ (The defender moves faster than the attacker.) \\
 
-We will call every continuous time step that one of the players has control over the resource a unit of control. 
-Next we will divide our time line of our FlipIt game into different intervals of size $delta_{1}$. So every time the attacker takes control we have the start of a new interval. Because the defender will move faster than the attacker it will at least move 1 time during the interval. Because the attacker only moves at the start of the interval we can say that the defender will always end as being in control of the resource. This brings us to the next forumula to calculate the length of a unit of control of the attacker. 
-For every real number $delta_{1}$ and $delta_{0}$ and every n $\in$ of the natural numbers:
+We consider a game in which both of the players start with a phase $T_{0}$ and phase $T_{1}$ equal to zero. Both players start their first move at $t=0$. As previously stated (in the formal definition of the game and the introduction of different notations used throughout the paper), the defender has control in the beginning of the game at $t=0$. If the two players move at the same time during the game, the moves cancel and no change of state happens. \\ \todo{eerder gedefinieerd dat elk spel begint op t=0}
+
+To compute the gain formula for the attacker, we need to calculate the amount of time that the attacker has control over the game from the start of the game up to time t. This can be done by computing all the units of control of the defender up to time t \todo{formule is niet in staat om dat te doen als functie van t} and summarize it. \\
+The formula that we are going to compute will not be in function of the time but in function of the intervals of the attacker. By doing this we always have a whole unit of control. If time is used the last unit of control can be shortened. Because the game goes on indefinitely and because it is easier to compute a formula in function of the intervals of the attacker, the gain formula will be in function of the intervals of the attacker. \todo{kan misschien beter uitgelegd worden}
+
+For that reason we divide our time line of our FlipIt game into different intervals of size $delta_{1}$. Therefore every time the attacker moves we have the start of a new interval. Considering that the defender will move faster than the attacker, he or she will at least move one time during the interval of the attacker. Because the attacker only moves at the start of his or her interval we can say that the defender will always end as being in control of the resource. To calculate how long the unit of control of the attacker is in every interval, we only need to know how long the defender had control during that interval and substract it from the length of the interval of the attacker. 
+\todo{blabla en dan hebben we de volgende formule}
+This brings us to the next forumula to calculate the length of a unit of control in the n'th interval of the attacker. 
+For every real number $delta_{1}$ and $delta_{0}$ and every n $\in$ of the natural numbers (including 0 in the set of natural numbers) :
 \begin{equation}\label{first}
 \Delta A = [( 1- n  ) \times \delta_{1}] mod \delta_{0}
 \end{equation}
-where n is the number of the unit of control that you want to calculate of the attacker.\\
+where n is the number of the n'th interval of the attacker where the length of the unit of control of the attacker is calculated.\\
 
-In this formula we multiply the number of unit of control that we want with the period of Attacker ( $\delta_{1}$). The 1 - n is when we count beginning from 1. If we start counting starting at 0 we leave the 1 and the formula becomes:
+%In this formula we multiply the number of unit of control that we want with the period of Attacker ( $\delta_{1}$). 
+The 1 - n is when we count beginning from 1. If we start counting starting at 0 we leave the 1 and the formula becomes:
 \begin{equation}\label{first}
 \Delta A = [( - n  ) \times \delta_{1}] mod \delta_{0}
 \end{equation}
 
-We know that each interval ends with the control for the defender. This means that we only need to know how long the defender had control during that interval and take the rest. The rest will be the amount of time the attacker has control in that interval. We take the rest by doing the $mod \delta_{0} $
+%We know that each interval ends with the control for the defender. This means that we only need to know how long the defender had control during that interval and take the rest. The rest will be the amount of time the attacker has control in that interval. We take the rest by doing the $mod \delta_{0} $
+
+For phases ..
 
 This means that if we want to calculate the gain of the attacker we need to calculate the time the attacker has control over the total amount of time that has passed by.
 For $\delta_{0}$ and $\delta_{1}$ $\in$ Rational numbers we can see that we have a cycle. A pattern that comes back over and over again. That is when the amount of time is a multiple of $\delta_{0}$ and $\delta_{1}$ or the largest common multiplier (lcm). At this point the Attacker and the Defender move at the same time what brings us back to the beginning.

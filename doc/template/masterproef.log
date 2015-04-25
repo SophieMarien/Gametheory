@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  24 APR 2015 11:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  25 APR 2015 09:10
 entering extended mode
 **masterproef.tex
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.tex
@@ -1140,6 +1140,15 @@ LaTeX Warning: Label `first' multiply defined.
 
 LaTeX Warning: Label `first' multiply defined.
 
+
+LaTeX Warning: Label `first' multiply defined.
+
+
+LaTeX Warning: Label `first' multiply defined.
+
+
+LaTeX Warning: Label `first' multiply defined.
+
 ) (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-7.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-n.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\conclusion.aux)
@@ -1303,7 +1312,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 8.
 
-Overfull \hbox (0.1675pt too wide) detected at line 14
+Overfull \hbox (0.1675pt too wide) detected at line 13
  \T1/lmr/bx/n/10.95 viii
  []
 
@@ -1318,20 +1327,23 @@ Package microtype Info: Character `029' is missing
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.tdo)
 [4
 
-] [5
+] [5] [6
 
-] [6
+] [7
 
 
 ]
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.lof)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.lot)
-[7
+[8
 
 
-] [8
+] [9
 
-] (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\intro.tex
+] [10
+
+]
+(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\intro.tex
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
 ine 5.
 
@@ -1342,7 +1354,6 @@ LaTeX Warning: Marginpar on page 1 moved by 17.06781pt.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [1
-
 
 
 ]
@@ -1381,7 +1392,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--10
 Package natbib Warning: Citation `FlipIt' on page 5 undefined on input line 11.
 
 
-[5] <Images/FlipItDefault.jpg, id=323, 1285.80376pt x 337.26pt>
+[5] <Images/FlipItDefault.jpg, id=339, 1285.80376pt x 337.26pt>
 File: Images/FlipItDefault.jpg Graphic file (type jpg)
 
 <use Images/FlipItDefault.jpg>
@@ -1490,92 +1501,111 @@ Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
 
 
-]
-
-LaTeX Warning: Reference `fig:virusflip' on page 21 undefined on input line 17.
-
-
-<Images/Flipvirus.png, id=411, 379.8993pt x 273.6624pt>
+] [21] <Images/Flipvirus.png, id=434, 379.8993pt x 273.6624pt>
 File: Images/Flipvirus.png Graphic file (type png)
 
 <use Images/Flipvirus.png>
 Package pdftex.def Info: Images/Flipvirus.png used on input line 24.
 (pdftex.def)             Requested size: 379.89838pt x 273.66171pt.
 
-<Images/FlipSpel.png, id=412, 394.1124pt x 104.0688pt>
-File: Images/FlipSpel.png Graphic file (type png)
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
 
-<use Images/FlipSpel.png>
-Package pdftex.def Info: Images/FlipSpel.png used on input line 36.
-(pdftex.def)             Requested size: 394.11142pt x 104.06854pt.
- [21]
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
  []
 
 [22 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/Flipvir
-us.png> <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/Fli
-pSpel.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 61--63
+us.png>] <Images/FlipSpel.png, id=441, 394.1124pt x 104.0688pt>
+File: Images/FlipSpel.png Graphic file (type png)
+
+<use Images/FlipSpel.png>
+Package pdftex.def Info: Images/FlipSpel.png used on input line 54.
+(pdftex.def)             Requested size: 394.11142pt x 104.06854pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--75
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--86
+LaTeX Warning: Marginpar on page 23 moved by 124.38641pt.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--78
 
  []
 
-[23]) [24]
+[23 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/FlipSpe
+l.png>]
+
+LaTeX Warning: Marginpar on page 24 moved by 15.58636pt.
+
+
+LaTeX Warning: Marginpar on page 24 moved by 3.97272pt.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
+
+ []
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 112--114
+
+ []
+
+[25]) [26]
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-7.tex
-<Images/chainAPT.png, id=444, 362.7954pt x 555.7563pt>
+<Images/chainAPT.png, id=472, 362.7954pt x 555.7563pt>
 File: Images/chainAPT.png Graphic file (type png)
 
 <use Images/chainAPT.png>
 Package pdftex.def Info: Images/chainAPT.png used on input line 26.
 (pdftex.def)             Requested size: 253.95505pt x 389.02676pt.
-) [25
+) [27
 
 
 
-] [26 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/chain
+] [28 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/chain
 APT.png
 
 pdfTeX warning: pdflatex (file C:/Users/ECONGUEST/Documents/GitHub/Gametheory/d
 oc/template/Images/chainAPT.png): large interlaced PNG might cause out of memor
 y (use non-interlaced PNG to fix this)
 >] (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-n.tex)
-[27
+[29
 
 
 
 ]
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\conclusion.tex
-[28
+[30
 
 
 
-]) [29] [30
+]) [31] [32
 
 
-] [31] [32]
+] [33] [34]
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\app-A.tex
 
-Package natbib Warning: Citation `h2g2' on page 33 undefined on input line 5.
+Package natbib Warning: Citation `h2g2' on page 35 undefined on input line 5.
 
-) [33
+) [35
 
 
 ] (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\app-n.tex
-[34
+[36
 
 
 
-]) [35] [36
+]) [37] [38
 
 
 ]
 No file masterproef.bbl.
-[37
+[39
 
 ]
 
@@ -1601,10 +1631,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 173.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 173.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 173.
 Package rerunfilecheck Info: File `masterproef.out' has not changed.
-(rerunfilecheck)             Checksum: A6EEFA50841A4CD93CAEB80C020A5FF6;1877.
-
-
-LaTeX Warning: There were undefined references.
+(rerunfilecheck)             Checksum: 5D449F48690FCE758A9747A93A68DD15;1884.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1612,11 +1639,11 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 173.
  ) 
 Here is how much of TeX's memory you used:
- 25725 strings out of 493921
- 472634 string characters out of 3144864
- 727858 words of memory out of 3000000
- 28221 multiletter control sequences out of 15000+200000
- 76020 words of font info for 118 fonts, out of 3000000 for 9000
+ 25767 strings out of 493921
+ 473535 string characters out of 3144864
+ 728585 words of memory out of 3000000
+ 28248 multiletter control sequences out of 15000+200000
+ 76316 words of font info for 121 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  60i,12n,78p,1469b,922s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program F
@@ -1638,9 +1665,9 @@ pe1/public/lm/lmri10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
 lm/lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.p
 fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/P
 rogram Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on masterproef.pdf (47 pages, 569931 bytes).
+Output written on masterproef.pdf (51 pages, 580863 bytes).
 PDF statistics:
- 602 PDF objects out of 1000 (max. 8388607)
- 154 named destinations out of 1000 (max. 500000)
+ 633 PDF objects out of 1000 (max. 8388607)
+ 163 named destinations out of 1000 (max. 500000)
  19238 words of extra memory for PDF output out of 20736 (max. 10000000)
 
