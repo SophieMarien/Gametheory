@@ -45,8 +45,8 @@ First a list of notations that will be used throughout the formal definition (se
 \item \textit{Unit of control}: Every continuous time step that one of the players has control over the resource is defined as a unit of control. 
 \item \textit{n}: n is the n'th interval of the attacker, starting from interval 1.
 \item $\Delta A$ : This is a function that denotes the length of a unit of control of the attacker in the n'th interval of the attacker.
-\item \textit{lcm(a,b)}: The lcm of a and b is the least common multiple of a and b.
-\item \textit{gcd(a,b)}: The gcd of a and b is the greatest common divider of a and b.
+\item \textit{lcm(a,b)}: The \textit{lcm} of a and b is the least common multiple of a and b.
+\item \textit{gcd(a,b)}: The \textit{gcd} of a and b is the greatest common divider of a and b.
 \end{description}
 \begin{figure}[hbtp]
 \caption{Defining unit of control}
@@ -72,56 +72,68 @@ First a list of notations that will be used throughout the formal definition (se
 
 We \todo{We mag gebruikt worden in een wetenschappelijke tekst zolang de focus blijft op het werk en niet op de schrijver, FlipIt schrijvers gebruiken ook veel de we vorm} start by computing the gain of the attacker in a periodic game without phases. After that we introduce the phases. Next we compute the benefit of a player i in function of the gain. As last we adapt the computed formula for the gain and the benefit to formulate a new formula for a FlipIt game with a virus propagation. \todo{sectie over phases nog uitleggen}
 \\
-\subsubsection{Computing the benefit for an attacker of a normal FlipIt game}
+\subsubsection{Computing the gain for an attacker of a normal FlipIt game}
 \textbf{Case  1:} \\
-For $delta_{1} > delta_{0}$ (The defender moves faster than the attacker.) \\
+For $\delta_{1} > \delta_{0}$ (The defender moves faster than the attacker.) \\
 
 We consider a game in which both of the players start with a phase $T_{0}$ and phase $T_{1}$ equal to zero. Both players start their first move at $t=0$. As previously stated (in the formal definition of the game and the introduction of different notations used throughout the paper), the defender has control in the beginning of the game at $t=0$. If the two players move at the same time during the game, the moves cancel and no change of state happens. \\ \todo{eerder gedefinieerd dat elk spel begint op t=0}
 
 To compute the gain formula for the attacker, we need to calculate the amount of time that the attacker has control over the game from the start of the game up to time t. This can be done by computing all the units of control of the defender up to time t \todo{formule is niet in staat om dat te doen als functie van t} and summarize it. \\
 The formula that we are going to compute will not be in function of the time but in function of the intervals of the attacker. By doing this we always have a whole unit of control. If time is used the last unit of control can be shortened. Because the game goes on indefinitely and because it is easier to compute a formula in function of the intervals of the attacker, the gain formula will be in function of the intervals of the attacker. \todo{kan misschien beter uitgelegd worden}
 
-For that reason we divide our time line of our FlipIt game into different intervals of size $delta_{1}$. Therefore every time the attacker moves we have the start of a new interval. Considering that the defender will move faster than the attacker, he or she will at least move one time during the interval of the attacker. Because the attacker only moves at the start of his or her interval we can say that the defender will always end as being in control of the resource. To calculate how long the unit of control of the attacker is in every interval, we only need to know how long the defender had control during that interval and substract it from the length of the interval of the attacker. 
+For that reason we divide our time line of our FlipIt game into different intervals of size $\delta_{1}$. Therefore every time the attacker moves we have the start of a new interval. Considering that the defender will move faster than the attacker, he or she will at least move one time during the interval of the attacker. Because the attacker only moves at the start of his or her interval we can say that the defender will always end as being in control of the resource. To calculate how long the unit of control of the attacker is in every interval, we only need to know how long the defender had control during that interval and substract it from the length of the interval of the attacker. 
 \todo{blabla en dan hebben we de volgende formule}
 This brings us to the next forumula to calculate the length of a unit of control in the n'th interval of the attacker. 
-For every real number $delta_{1}$ and $delta_{0}$ and every n $\in$ of the natural numbers (including 0 in the set of natural numbers) :
+For every real $\delta_{1}$ and $\delta_{0}$ $\in$ \(\mathbb{R}\) and every n $\in$ \(\mathbb{N}\) (including 0 in the set of natural numbers) :
 \begin{equation}\label{first}
-\Delta A = [( 1- n  ) \times \delta_{1}] mod \delta_{0}
+\Delta A = [( 1- n  ) \cdot \delta_{1}] mod \delta_{0}
 \end{equation}
 where n is the number of the n'th interval of the attacker where the length of the unit of control of the attacker is calculated.\\
 
 %In this formula we multiply the number of unit of control that we want with the period of Attacker ( $\delta_{1}$). 
 The 1 - n is when we count beginning from 1. If we start counting starting at 0 we leave the 1 and the formula becomes:
 \begin{equation}\label{first}
-\Delta A = [( - n  ) \times \delta_{1}] mod \delta_{0}
+\Delta A = [( - n  ) \cdot \delta_{1}] mod \delta_{0}
 \end{equation}
 
 %We know that each interval ends with the control for the defender. This means that we only need to know how long the defender had control during that interval and take the rest. The rest will be the amount of time the attacker has control in that interval. We take the rest by doing the $mod \delta_{0} $
 
-For phases ..
+For phases .. \\
 
-This means that if we want to calculate the gain of the attacker we need to calculate the time the attacker has control over the total amount of time that has passed by.
-For $\delta_{0}$ and $\delta_{1}$ $\in$ Rational numbers we can see that we have a cycle. A pattern that comes back over and over again. That is when the amount of time is a multiple of $\delta_{0}$ and $\delta_{1}$ or the largest common multiplier (lcm). At this point the Attacker and the Defender move at the same time what brings us back to the beginning.
-So to calculate the gain of $\delta_{0}$ and $\delta_{1}$ $\in$ Rational numbers we need to calculate the amount of control units of the attacker that go into the length of time units equal to the lcm of  $\delta_{0}$ and $\delta_{1}$. After this calculation we divide it by the lcm of $\delta_{0} $ and $ \delta_{1}$, which is the total amount of time and the amount of time for one cycle.  This gives us the following formula:
+\textbf{Case 2}:
+Alles omdraaien \todo{beter beschrijven}
+\subsubsection{Computing the average benefit for a normal FlipIt game}
+
+The average benefit of a player \textit{i} is denoted by $\beta_(i)(t) = \gamma_(i)(t) - k_{i} / \delta_{i}$, which is equal to the fraction of time that the resource has been owned by player \textit{i}, minus the cost rate for moving. For now we consider the cost rate equal to 0. $\gamma_{i}(t) = G_{i}(t)/t$ is the average gain rate of player \textit{i} which is defined as the fraction of time that player \textit{i} has control over the resource up to time t.
+As stated before the formula that will be computed is in function of $\delta_{1}$. So parameter t will be in this case a multiple of the period of the attacker, hence a multiple of $\delta_{1}$. In the rest of the paper the average benefit will be addressed as the benefit of the game for player \textit{i}. \\
+
+To be able to calculate the benefit of the attacker, we need to calculate the average gain rate of the attacker. We will look at this for two cases. One case where $\delta_{0}$ and $\delta_{1}$ $\in$ \(\mathbb{Q}\) and the other one where $\delta_{0}$ and $\delta_{1}$ $\in$ \(\mathbb{I}.\) \\
+
+\textbf{Rational numbers (\(\mathbb{Q}\)):} For $\delta_{0}$ and $\delta_{1}$ $\in$ \(\mathbb{Q}\), a repetition of the game will occur. As every rational number is any number that can be expressed as the fraction p/q with p and q $\in$ \(\mathbb{Z}\) (integers), with the denominator q not equal to zero, it is possible to find the \textit{lcm} of $\delta_{0}$ and $\delta_{1}$. The \textit{lcm} is defined for all rational numbers as: $lcm(\dfrac{a}{b},\dfrac{c}{d})= \dfrac{a \cdot c}{gcd(b,d)} with  $ [\todo{referentie}]. When \textit{t} is equal to the \textit{lcm} of $\delta_{0}$ and $\delta_{1}$, both players will move again at the same time and this can be mapped to the beginning of the game. Because we stated that at the end of the interval of the attacker, the defender is in control and because if two players move at the same time the moves are cancelled, we can map this to the beginning of the game. Since the game goes on infinite, to calculate the average gain of the attacker, it is sufficient to calculate the average gain of the attacker only during this repetition equal to the \textit{lcm} of $\delta_{0}$ and $\delta_{1}$. 
+%This means that if we want to calculate the gain of the attacker we need to calculate the time the attacker has control over the total amount of time that has passed by.
+%For $\delta_{0}$ and $\delta_{1}$ $\in$ \(\mathbb{Q}\) we can see that we have a cycle. A pattern that comes back over and over again. That is when the amount of time is a multiple of $\delta_{0}$ and $\delta_{1}$ or the largest common multiplier (\textit{lcm}). At this point the Attacker and the Defender move at the same time what brings us back to the beginning.
+So to calculate the gain of $\delta_{0}$ and $\delta_{1}$ $\in$ \(\mathbb{Q}\) we need to calculate the amount of control units of the attacker that go into the length of time units equal to the \textit{lcm} of  $\delta_{0}$ and $\delta_{1}$. This will be equal to the amount of time that the period of the attacker goes into the \textit{lcm}. We denote this by parameter \textit{p} and define it as follow:
 \begin{equation}\label{first}
-a = \dfrac{\delta_{0} }{lcm(\delta_{0},\delta_{1})} 
+p = \dfrac{lcm(\delta_{0},\delta_{1})}{\delta_{1} } 
 \end{equation}
+After this calculation we summarize our units of control in function of \textit{p} and divide it by the \textit{lcm} of $\delta_{0} $ and $ \delta_{1}$, which is the total amount of time for one cycle.  This gives us the following formula of the benefit of the attacker with a cost rate equal to zero:
+
 \begin{equation}\label{first}
-\dfrac{\sum_{i=0}^{a} \lbrace [( 1 - i ) \times \delta_{1}] mod \delta_{0} \rbrace \rbrace }{lcm(\delta_{0},\delta_{1})} 
+\beta_{1} = \dfrac{\sum_{i=0}^{p} \lbrace [( 1 - i ) \cdot \delta_{1}] mod \delta_{0} \rbrace }{lcm(\delta_{0},\delta_{1})} 
 \end{equation}
 
-We can also define a formula without the greatest common divider. Every $\delta_{0}$ and $\delta_{1}$ have to be written in a fraction:
-\begin{equation}\label{first}
-\delta_{0}=\dfrac{a}{b} ~~~~and~~~~\delta_{1}=\dfrac{c}{d}
-\end{equation}
-If  $\delta_{0}$ or $\delta_{1}$ is a Geheel getal then b or d will be 1. The formula for the gain becomes different:\\
+%We can also define a formula without the greatest common divider. Every $\delta_{0}$ and $\delta_{1}$ have to be written in a fraction:
+%\begin{equation}\label{first}
+%\delta_{0}=\dfrac{a}{b} ~~~~and~~~~\delta_{1}=\dfrac{c}{d}
+%\end{equation}
+%If  $\delta_{0}$ or $\delta_{1}$ is a Geheel getal then b or d will be 1. The formula for the gain becomes different:\\
+%
+%\todo{formule zoeken zonder lcm en gcd}
 
-\todo{formule zoeken zonder lcm en gcd}
 
-
-If $\delta_{0}$ and/or $\delta_{1}$ is an Irrational number:
-An irrational number $ i \neq \dfrac{a}{b}$ with $b \in Z, a \in N$
-Because we cannot write \textit{i} in a fraction, this means that we won't have a cycle. If we would have a cycle that means that we do have a number that divides \textit{i}. If we don't have a cycle it goes on forever. Meaning that it goes on to infinity. This also means that no number will be repeated two times. If it does that means that their is repetition, meaning again that their is a cycle. We can conclude that if we have no cycle and no number will be repeated twice, that it will enumerate every number between 0 and the biggest interval (which is $\delta_{0}$). \todo{interval definieren}
+\textbf{Irrational numbers (\(\mathbb{I}\)):} If $\delta_{0}$ and/or $\delta_{1}$ $\in$ \(\mathbb{I}\):
+An irrational number $ i \neq \dfrac{a}{b}$ with $b \in$ \(\mathbb{Z}\) , a $\in$ \(\mathbb{N}\).
+Because we cannot write \textit{i} as a fraction, this means that we cannot compute a common multiplier of $\delta_{0}$ and $\delta_{1}$. If their is no common multiplier the attacker and the defender won't move at one point on the same time, meaning that this does not result in a cycle. If we would have a cycle that means that there exists a number \textit{x} that can be divided by $\delta_{0}$ and $\delta_{1}$. At $t=x$ both of the players will move at the same time, which is not possible because then their would be a cycle. Since their is no cycle it also means that no unit of control will be repeated two times. Every unit of control will have a distinct length. If it does that means that their is repetition, meaning again that their is a cycle. \todo{nog verder uitleggen} We can conclude that if we have no cycle and no number will be repeated twice, that it will enumerate every number between 0 and the biggest interval (which is $\delta_{0}$). 
 \textit{The reals are uncountable; that is: while both the set of all natural numbers and the set of all real numbers are infinite sets, there can be no one-to-one function from the real numbers to the natural numbers} [WikiPedia: real numbers] If they are uncountable that means that we cannot calculate the sum of all the numbers between 0 and the biggest interval. This is proved by the Cantor diagonalisation argument. Uncountable does not mean that we cannot order it. The Field of the real numbers is ordered. 
 
 What we can do is take the limit, count as many control units of time of the attacker and divide it by the greatest amount of time. We can see that this eventually will result to the solution given by the writers of FlipIt. [r/2]. Example delta1 Pi and delta0 1. Grafiek voor maken.
@@ -132,7 +144,7 @@ Now we can define how we can use the previous formula to calculate the benefit o
 As mentioned before we have a parameter \textit{d} that defines the virus propagation. It will take an amount of time d before the attacker gains control over all the resources. We know how to calculate each unit of control of the attacker. If it takes d time before it can take control we have to subtract d form each unit of control. It can be that the unit of control is less than d. This means that we will have a negative number of time. In this case this means that the defender has flipped all the resources before the attacker good gain all the control. So if we want to calculate the benefit we can only take unit of control that are bigger than 0. So the formula becomes:
 
 \begin{equation}\label{first}
-\dfrac{\sum_{i=0}^{\delta_{0}} \lbrace [( 1 - i ) \times \delta_{1}] mod \delta_{0} - d \rbrace  > 0 \rbrace }{delta_{0} \times delta_{1}} 
+\dfrac{\sum_{i=0}^{\delta_{0}} \lbrace [( 1 - i ) \cdot \delta_{1}] mod \delta_{0} - d \rbrace  > 0 \rbrace }{delta_{0} \cdot delta_{1}} 
 \end{equation}
 
 \subsection{Random phase}
