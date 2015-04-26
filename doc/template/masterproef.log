@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  25 APR 2015 13:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  26 APR 2015 09:16
 entering extended mode
 **masterproef.tex
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.tex
@@ -1414,7 +1414,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--10
 Package natbib Warning: Citation `FlipIt' on page 5 undefined on input line 11.
 
 
-[5] <Images/FlipItDefault.jpg, id=353, 1285.80376pt x 337.26pt>
+[5] <Images/FlipItDefault.jpg, id=362, 1285.80376pt x 337.26pt>
 File: Images/FlipItDefault.jpg Graphic file (type jpg)
 
 <use Images/FlipItDefault.jpg>
@@ -1523,82 +1523,81 @@ Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
 
 
-] [21] <Images/Flipvirus.png, id=448, 379.8993pt x 273.6624pt>
+]
+Underfull \hbox (badness 10000) in paragraph at lines 19--22
+
+ []
+
+
+LaTeX Warning: Marginpar on page 21 moved by 83.5864pt.
+
+<Images/Flipvirus.png, id=451, 379.8993pt x 273.6624pt>
 File: Images/Flipvirus.png Graphic file (type png)
 
 <use Images/Flipvirus.png>
-Package pdftex.def Info: Images/Flipvirus.png used on input line 24.
+Package pdftex.def Info: Images/Flipvirus.png used on input line 28.
 (pdftex.def)             Requested size: 379.89838pt x 273.66171pt.
+ [21]
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
-
- []
+LaTeX Warning: Marginpar on page 22 moved by 58.51553pt.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
-
- []
+LaTeX Warning: Marginpar on page 22 moved by 157.83109pt.
 
 [22 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/Flipvir
-us.png>] <Images/FlipSpel.png, id=455, 394.1124pt x 104.0688pt>
+us.png>] <Images/FlipSpel.png, id=463, 394.1124pt x 104.0688pt>
 File: Images/FlipSpel.png Graphic file (type png)
 
 <use Images/FlipSpel.png>
-Package pdftex.def Info: Images/FlipSpel.png used on input line 54.
+Package pdftex.def Info: Images/FlipSpel.png used on input line 61.
 (pdftex.def)             Requested size: 394.11142pt x 104.06854pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--75
+Underfull \hbox (badness 10000) in paragraph at lines 79--82
 
  []
 
 
-LaTeX Warning: Marginpar on page 23 moved by 124.38641pt.
+LaTeX Warning: Marginpar on page 23 moved by 58.51553pt.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--78
+Underfull \hbox (badness 10000) in paragraph at lines 83--85
 
  []
+
+
+LaTeX Warning: Marginpar on page 23 moved by 15.58636pt.
 
 [23 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/FlipSpe
 l.png>]
 
-LaTeX Warning: Marginpar on page 24 moved by 15.58636pt.
+LaTeX Warning: Marginpar on page 24 moved by 1.98636pt.
 
 
-LaTeX Warning: Marginpar on page 24 moved by 3.97272pt.
+LaTeX Warning: Marginpar on page 24 moved by 58.37274pt.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--92
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 101--102
+Underfull \hbox (badness 10000) in paragraph at lines 98--100
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--109
-
- []
-
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
 
-LaTeX Warning: Marginpar on page 25 moved by 17.71552pt.
+Underfull \hbox (badness 10000) in paragraph at lines 115--117
+
+ []
 
 
-LaTeX Warning: Marginpar on page 25 moved by 6.10187pt.
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
 
-[25]
+ []
 
-LaTeX Warning: Marginpar on page 26 moved by 0.39275pt.
-
-) [26] (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-7.tex
-<Images/chainAPT.png, id=486, 362.7954pt x 555.7563pt>
+[24] [25]) [26]
+(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-7.tex
+<Images/chainAPT.png, id=494, 362.7954pt x 555.7563pt>
 File: Images/chainAPT.png Graphic file (type png)
 
 <use Images/chainAPT.png>
@@ -1672,7 +1671,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 174.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 174.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 174.
 Package rerunfilecheck Info: File `masterproef.out' has not changed.
-(rerunfilecheck)             Checksum: 5D449F48690FCE758A9747A93A68DD15;1884.
+(rerunfilecheck)             Checksum: 3C0A556066B8CD2F8E290FD04D4902EA;1902.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1680,11 +1679,11 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 174.
  ) 
 Here is how much of TeX's memory you used:
- 26108 strings out of 493921
- 478189 string characters out of 3144864
- 734510 words of memory out of 3000000
- 28561 multiletter control sequences out of 15000+200000
- 77551 words of font info for 127 fonts, out of 3000000 for 9000
+ 26143 strings out of 493921
+ 478937 string characters out of 3144864
+ 742638 words of memory out of 3000000
+ 28581 multiletter control sequences out of 15000+200000
+ 78284 words of font info for 133 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  60i,12n,78p,1469b,922s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program F
@@ -1707,9 +1706,9 @@ lm/lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.p
 fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm1
 0.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on masterproef.pdf (51 pages, 592458 bytes).
+Output written on masterproef.pdf (51 pages, 593700 bytes).
 PDF statistics:
- 649 PDF objects out of 1000 (max. 8388607)
- 168 named destinations out of 1000 (max. 500000)
+ 658 PDF objects out of 1000 (max. 8388607)
+ 171 named destinations out of 1000 (max. 500000)
  19238 words of extra memory for PDF output out of 20736 (max. 10000000)
 

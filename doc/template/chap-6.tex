@@ -1,4 +1,4 @@
-\chapter{Intro to virus}
+\chapter{FlipIt with a virus propagation }
 \label{cha:6}
 %\documentclass[10pt]{article}\
 
@@ -8,15 +8,19 @@
 %%%%%												%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
+\todo{resources vs nodes}
 \section{Introduction}
 This section gives a formal definition of the FlipIt game with a virus propagation. First we derive a formula for a FlipIt game without a virus. After that we introduce a modification to this formula to achieve an adapted formula for a FlipIt game with a virus propagation. 
 %In this section we are going to elaborate how we are going to model a Flipit game with multiple resources and a virus that propagates and infects the resources. We come up with a formula for the normal FlipIt (normal as in specific parameters and no normalising over the first interval) and then reform it to a FlipIt game with a virus. 
 
-\subsection{FlipIt with a virus propagation}
-In the previous section the FlipIt game is already been explained. In this section we will introduce a FlipIt game with a virus propagation. A FlipIt game with a virus propagation is a game where the attacker will drop a virus on one of the resources that is available. The virus will then spread itself to the neighbour resources. The attacker will only gain control over the whole network, in general the game, when it has infected all the resources. All the resources will not be infected immediately when the attacker has dropped its virus. It will take some time before the virus is spread and has infected everything. The time that it takes for the virus to infect every resource will be denoted as parameter \textit{d}. If we want to measure how long it takes for the virus to infect all resources, we have to calculate the shortest path to the farthest node. This can be measured by a method that we will explain in section []. With this parameter we can compose a formula to calculate the gain of a FlipIt game with a virus propagation.  \\ \todo{uitleggen waarom we een gewone flippit kunnen nemen met 1 resource}
+\subsection{FlipIt vs FlipIt with virus propagation}
+Section [] explained the FlipIt game. This section will expands the FlipIt game to a FlipIt game with virus propagation. A FlipIt game with virus propagation is a game with multiple nodes where the attacker will drop a virus on one of the nodes. The virus will then spread itself to the neighbour nodes trying to infect every node. The attacker will only gain control over the whole network -or the game in general- when it has infected all the nodes. 
 
-The gain of a player is defined as the total amount of time that a player has owned the resource over the amount of time that has passed since the beginning of the game. If the attacker attacks with the virus it will cause a delay of length \textit{d}. This means that the gain of the player from the normal game has to be abstracted with a delay every time the attacker moves. This game, where the attacker drops a virus, cannot be modelled completely by a FlipIt game with a delay. This is because if the delay is bigger than the period of the attacker, the attacker will gain no control. If it would be with the delay caused by a phase bigger than zero the attacker would gain control after the defender flipt again. This is explained in figure \ref{fig:virusflip}. In the next section a formal definition .. \todo{verder uitleggen nog}
+After dropping a virus on the first resource, it takes a while for the virus to infect the entire network. The time that it takes for the virus to infect every resource will be denoted as parameter \textit{d}. If we want to measure how long it takes for the virus to infect all the resources, we have to calculate the shortest path from the first infected node to the farthest node. This can be measured by a method that we will explain in section []. Using this parameter, the gain of a FlipIt game will be calculated in section []. \\ \todo{uitleggen waarom we een gewone flippit kunnen nemen met 1 resource}
+\todo{a virus propagation}
+The gain of a player is defined as the total amount of time that a player has owned the resource since the start of the game. In the context of a FlipIt game with virus propagation, the whole network is seen as one resource. This resource is owned by the attacked if he has control over the entire network. If the defender owns at least one node, he owns the resource.\\
+
+%If the attacker attacks with the virus, the propagation will cause a delay of length \textit{d} before the attacker gains control over the whole network. This means that the gain of the attacker from the normal game has to be substracted with a delay every time the attacker moves. This game, where the attacker drops a virus, cannot be modelled completely by a FlipIt game with a delay. It may happen that the delay \textit{d} is bigger than the initial amount of control of the attacker. In this case the attacker will gain no control. If it would be with the delay caused by a phase bigger than zero the attacker would gain control after the defender flipt again. This is explained in figure \ref{fig:virusflip}. In the next section a formal definition .. \todo{verder uitleggen nog. Phases zijn vooraf uitgelegd.}
 
 \begin{figure}[hbtp]
 \caption{Difference in a FlipIt game between delay caused by a virus and a phase bigger than zero for the Attacker}
@@ -27,22 +31,25 @@ The gain of a player is defined as the total amount of time that a player has ow
 
 
 \subsection{define formula}
-The game FlipIt with a virus propagation is a two-player game with multiple resources. The multiple resources represent the nodes in a network. One of the players, the defender, will try to defend his network. The defender will do this by flipping all the nodes of the network in every move he plays. The attacker, the other player, will try to infect all the nodes in the network. The attacker will do this by flipping the node in the graph that can infect all the nodes in the shortest time possible. The attacker will gain the control over the network when all the resources are infected. So parameter \textit{d} will be the time of the shortest path from the start node to the furthest node. \\
+%The game FlipIt with a virus propagation is a two-player game with multiple resources. The multiple resources represent the nodes in a network. One of the players, the defender, will try to defend his network. The defender will do this by flipping all the nodes of the network in every move he plays. The attacker, the other player, will try to infect all the nodes in the network. The attacker will do this by flipping the node in the graph that can infect all the nodes in the shortest time possible. The attacker will gain the control over the network when all the resources are infected. So parameter \textit{d} will be the time of the shortest path from the start node to the furthest node. \\
 
 
 
 
 
+\todo{deze sectie herschrijven}
+There is a definition given for the gain of a player \textit{i} by the writers of the paper FlipIt, but we want to add the property of a virus propagation to the game, hence parameter \textit{d}, so we are trying to find another formula that defines a game by counting the amount of time one of the players has control. \\
+\todo{we hebben een periodisch spel, simpelste spel.}
+\todo{ergens vermelden waarom we deze case bespreken en niet waarbij de aanvaller niet periodisch speelt}
 
-Their is a definition given for the gain of a player \textit{i} by the writers of the paper FlipIt, but we want to add the property of a virus propagation to the game, hence parameter \textit{d}, so we are trying to find another formula that defines a game by counting the amount of time one of the players has control. \\
-
+\todo{zeggen dat we eerst de functie voorstellen van de normale FlipIt}
 First a list of notations that will be used throughout the formal definition (see figure \ref{fig:notations} for a graphic representation of some of the notations):
 \begin{description}
 \item $\delta_{0}$: This is the period of the defender. This denotes the length of the interval between two consecutive moves of the defender. 
 \item $\delta_{1}$: This is the period of the attacker. This denotes the length of the interval between two consecutive moves of the attacker.
-\item \textit{$T_{0}$}: This denotes the phase of the attacker that was random and uniform chosen over the interval [0,$\delta_{0}$].
-\item \textit{$T_{1}$}: This denotes the phase of the defender that was chosen uniformly at random in interval [0,$\delta_{0}$].
-\item \textit{Unit of control}: Every continuous time step that one of the players has control over the resource is defined as a unit of control. 
+\item \textit{$T_{0}$}: This denotes the phase of the defender that was random and uniform chosen over the interval [0,$\delta_{0}$].
+\item \textit{$T_{1}$}: This denotes the phase of the attacker that was chosen uniformly at random in interval [0,$\delta_{1}$].
+\item \textit{Unit of control}: Defined as the period between gaining control and losing control over the resource.  
 \item \textit{n}: n is the n'th interval of the attacker, starting from interval 1.
 \item $\Delta A$ : This is a function that denotes the length of a unit of control of the attacker in the n'th interval of the attacker.
 \item \textit{lcm(a,b)}: The \textit{lcm} of a and b is the least common multiple of a and b.
@@ -69,8 +76,8 @@ First a list of notations that will be used throughout the formal definition (se
 %\end{equation}
 %\todo{formule met i nakijken}
 
-
-We \todo{We mag gebruikt worden in een wetenschappelijke tekst zolang de focus blijft op het werk en niet op de schrijver, FlipIt schrijvers gebruiken ook veel de we vorm} start by computing the gain of the attacker in a periodic game without phases. After that we introduce the phases. Next we compute the benefit of a player i in function of the gain. As last we adapt the computed formula for the gain and the benefit to formulate a new formula for a FlipIt game with a virus propagation. \todo{sectie over phases nog uitleggen}
+\todo{hier staat al benefit dat nog niet is uitgelegd}
+We \todo{We mag gebruikt worden in een wetenschappelijke tekst zolang de focus blijft op het werk en niet op de schrijver, FlipIt schrijvers gebruiken ook veel de we vorm} start by computing the gain of the attacker in a periodic game without phases. After that we introduce the phases. Next we compute the benefit of the attacker in function of the gain. Finally we adapt our gain and benefit calculation to include virus propagation. 
 \\
 \subsubsection{Computing the gain for an attacker of a normal FlipIt game}
 \textbf{Case  1:} \\
@@ -78,12 +85,13 @@ For $\delta_{1} > \delta_{0}$ (The defender moves faster than the attacker.) \\
 
 We consider a game in which both of the players start with a phase $T_{0}$ and phase $T_{1}$ equal to zero. Both players start their first move at $t=0$. As previously stated (in the formal definition of the game and the introduction of different notations used throughout the paper), the defender has control in the beginning of the game at $t=0$. If the two players move at the same time during the game, the moves cancel and no change of state happens. \\ \todo{eerder gedefinieerd dat elk spel begint op t=0}
 
-To compute the gain formula for the attacker, we need to calculate the amount of time that the attacker has control over the game from the start of the game up to time t. This can be done by computing all the units of control of the defender up to time t \todo{formule is niet in staat om dat te doen als functie van t} and summarize it. \\
+To compute the gain formula for the attacker, we need to calculate the amount of time that the attacker has control over the game from the start of the game up to time t. This can be done by computing all the units of control of the attacker up to time t \todo{formule is niet in staat om dat te doen als functie van t} and summing them. \\
 The formula that we are going to compute will not be in function of the time but in function of the intervals of the attacker. By doing this we always have a whole unit of control. If time is used the last unit of control can be shortened. Because the game goes on indefinitely and because it is easier to compute a formula in function of the intervals of the attacker, the gain formula will be in function of the intervals of the attacker. \todo{kan misschien beter uitgelegd worden}
 
-For that reason we divide our time line of our FlipIt game into different intervals of size $\delta_{1}$. Therefore every time the attacker moves we have the start of a new interval. Considering that the defender will move faster than the attacker, he or she will at least move one time during the interval of the attacker. Because the attacker only moves at the start of his or her interval we can say that the defender will always end as being in control of the resource. To calculate how long the unit of control of the attacker is in every interval, we only need to know how long the defender had control during that interval and substract it from the length of the interval of the attacker. 
+For that reason we divide our time line of our FlipIt game into different intervals of size $\delta_{1}$. Therefore every time the attacker moves we have the start of a new interval. Considering that the defender will move faster than the attacker, he or she will at least move one time during the interval of the attacker. Because the attacker only moves at the start of his or her interval we can say that the defender will always end as being in control of the resource. \todo{tekening met voorbeeld}. To calculate how long the unit of control of the attacker is in every interval, we only need to know how long the defender had control during that interval and substract it from the length of the interval of the attacker. 
 \todo{blabla en dan hebben we de volgende formule}
 This brings us to the next forumula to calculate the length of a unit of control in the n'th interval of the attacker. 
+\todo{definieer dat delta groter als nul is en niet negatief}
 For every real $\delta_{1}$ and $\delta_{0}$ $\in$ \(\mathbb{R}\) and every n $\in$ \(\mathbb{N}\) (including 0 in the set of natural numbers) :
 \begin{equation}\label{first}
 \Delta A = [( 1- n  ) \cdot \delta_{1}] mod \delta_{0}
@@ -104,7 +112,7 @@ For phases .. \\
 Alles omdraaien \todo{beter beschrijven}
 \subsubsection{Computing the average benefit for a normal FlipIt game}
 
-The average benefit of a player \textit{i} is denoted by $\beta_(i)(t) = \gamma_(i)(t) - k_{i} / \delta_{i}$, which is equal to the fraction of time that the resource has been owned by player \textit{i}, minus the cost rate for moving. For now we consider the cost rate equal to 0. $\gamma_{i}(t) = G_{i}(t)/t$ is the average gain rate of player \textit{i} which is defined as the fraction of time that player \textit{i} has control over the resource up to time t.
+The average benefit of a player \textit{i} is denoted by $\beta_{i}(t) = \gamma_{i}(t) - k_{i} / \delta_{i}$, which is equal to the fraction of time that the resource has been owned by player \textit{i}, minus the cost rate for moving. For now we consider the cost rate equal to 0. $\gamma_{i}(t) = G_{i}(t)/t$ is the average gain rate of player \textit{i} which is defined as the fraction of time that player \textit{i} has control over the resource up to time t.
 As stated before the formula that will be computed is in function of $\delta_{1}$. So parameter t will be in this case a multiple of the period of the attacker, hence a multiple of $\delta_{1}$. In the rest of the paper the average benefit will be addressed as the benefit of the game for player \textit{i}. \\
 
 To be able to calculate the benefit of the attacker, we need to calculate the average gain rate of the attacker. We will look at this for two cases. One case where $\delta_{0}$ and $\delta_{1}$ $\in$ \(\mathbb{Q}\) and the other one where $\delta_{0}$ and $\delta_{1}$ $\in$ \(\mathbb{I}.\) \\
@@ -141,15 +149,15 @@ What we can do is take the limit, count as many control units of time of the att
 
 \subsection{Formula with a virus propagation}
 Now we can define how we can use the previous formula to calculate the benefit of the attacker with a virus propagation.
-As mentioned before we have a parameter \textit{d} that defines the virus propagation. It will take an amount of time d before the attacker gains control over all the resources. We know how to calculate each unit of control of the attacker. If it takes d time before it can take control we have to subtract d form each unit of control. It can be that the unit of control is less than d. This means that we will have a negative number of time. In this case this means that the defender has flipped all the resources before the attacker good gain all the control. So if we want to calculate the benefit we can only take unit of control that are bigger than 0. So the formula becomes:
+As mentioned before parameter \textit{d} defines the virus propagation. It will take an amount of time \textit{d} before the attacker gains control over all the resources. In the previous section we defined a formula to calculate each unit of control of the attacker. If the virus propagation takes \textit{d} time before every resource is infected then this d has to be subtracted from each unit of control. (see figure \ref{fig:virusflip}). It may happen that the unit of control is less than \textit{d}. The result of the substration will be a negative number in time. In this case this means that the defender has flipped all the resources before the attacker could gain control over all the resources. To calculate the benefit only the units of control bigger than 0 have to be summarized. So the formula becomes:
 
 \begin{equation}\label{first}
-\dfrac{\sum_{i=0}^{\delta_{0}} \lbrace [( 1 - i ) \cdot \delta_{1}] mod \delta_{0} - d \rbrace  > 0 \rbrace }{delta_{0} \cdot delta_{1}} 
+Gain_{1} = \dfrac{\sum_{i=0}^{\delta_{0}} \lbrace [( 1 - i ) \cdot \delta_{1}] mod \delta_{0} - d \rbrace  > 0 \rbrace }{delta_{0} \cdot delta_{1}} 
 \end{equation}
 
-\subsection{Random phase}
-For now we assumed that the first move of both players started at phase $t=0$. In the FlipIt game the first move is chosen uniformly over the interval [0,$\delta$]. We will call this first move the phase move and denote it by $T_{1}$ for the attacker and $T_{0}$ for the defender.
-We will have to integrate these two phases into the formula.  
+%\subsection{Random phase}
+%For now we assumed that the first move of both players started at phase $t=0$. In the FlipIt game the first move is chosen uniformly over the interval [0,$\delta$]. We will call this first move the phase move and denote it by $T_{1}$ for the attacker and $T_{0}$ for the defender.
+%We will have to integrate these two phases into the formula.  
 %\begin{equation}      
 %\boxed{\eta \leq C(\delta(\eta) +\Lambda_M(0,\delta))}
 %\end{equation}
