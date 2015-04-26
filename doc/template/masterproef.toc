@@ -6,12 +6,12 @@
 \select@language {dutch}
 \select@language {dutch}
 \contentsline {chapter}{Voorwoord}{i}{chapter*.1}
-\contentsline {chapter}{Samenvatting}{vi}{chapter*.3}
+\contentsline {chapter}{Samenvatting}{iv}{chapter*.3}
 \select@language {dutch}
-\contentsline {chapter}{Samenvatting}{vii}{chapter*.4}
+\contentsline {chapter}{Samenvatting}{v}{chapter*.4}
 \select@language {dutch}
-\contentsline {chapter}{L"yst van figuren en tabellen}{viii}{chapter*.5}
-\contentsline {chapter}{List of Abbreviations and Symbols}{ix}{chapter*.8}
+\contentsline {chapter}{L"yst van figuren en tabellen}{vi}{chapter*.5}
+\contentsline {chapter}{List of Abbreviations and Symbols}{vii}{chapter*.8}
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Motivation of the game}{2}{subsection.1.1.1}
