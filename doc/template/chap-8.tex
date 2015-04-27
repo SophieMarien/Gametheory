@@ -24,12 +24,12 @@ nodes. One of the players, the defender, will try to defend his network. The def
 will do this by flipping all the nodes of the network (i.e. the entire resource) in every move he plays. The
 attacker, the other player, will try to infect all the nodes in the network. The attacker
 will do this by flipping the node in the graph that can infect all the nodes in the
-shortest time possible. After dropping a virus on the first resource, it takes a while for the virus to infect the entire network. However, since the original FlipIt game works with a single resource that is always flipped entirely, the assumption is made that the attacker is considered to have gained the control over the resource only when all the nodes of the network have been infected, i.e. the entire resource has been flipped. 
+shortest time possible. After dropping a virus on the first node, it takes a while for the virus to infect the entire network. However, since the original FlipIt game works with a single resource that is always flipped entirely, the assumption is made that the attacker is considered to have gained the control over the resource only when all the nodes of the network have been infected, i.e. the entire resource has been flipped. 
 
 
 \section{Gain formula for a FlipIt game without virus propagation}
 \label{ch:8:GainFlip}
-In their FlipIt paper [], Marten van Dijk and Ari Juels and Alina Oprea and Ronald L. Rivest, give a definition of the gain of a player \textit{i} . This definition is however not easy to adapt to the situation with virus propagation. Therefore, this section presents an alternative formula in that defines a game by quantifying the amount of time each player has control. \\
+In their FlipIt paper [], Marten van Dijk and Ari Juels and Alina Oprea and Ronald L. Rivest, give a definition of the gain of a player \textit{i} . This definition is however not easy to adapt to the situation with virus propagation. Therefore, this section presents an alternative formula that defines a game by quantifying the amount of time each player has control. \\
 
 
 The following notations will be used throughout the formal definition (see figure \ref{fig:notations} for a graphic representation of some of the notations):
@@ -40,10 +40,10 @@ The following notations will be used throughout the formal definition (see figur
 \item \textit{$T_{D}$}: This denotes the phase of the defender that was chosen randomly and uniformly over the interval [0,$\delta_{D}$].
 \item \textit{$T_{A}$}: This denotes the phase of the attacker that was chosen randomly and uniformly over the interval [0,$\delta_{A}$].
 \item \textit{Unit of control}: Defined as the period between gaining (full) control and losing control over the resource.  
-\item $n_{D}$: n is the n'th interval of the defender if $\delta_{D} \geq \delta_{A}$ , starting from interval 0.
-\item $n_{A}$: n is the n'th interval of the attacker if $\delta_{A} \geq \delta_{D}$ , starting from interval 0.
-\item $\Delta Unit_{D}(n)$ : This is a function that denotes the length of a unit of control of the defender in the n'th interval of the defender, if $\delta_{D} \geq \delta_{A}$.
-\item $\Delta Unit_{A}(n)$ : This is a function that denotes the length of a unit of control of the attacker in the n'th interval of the attacker, if $\delta_{A} \geq \delta_{D}$.
+\item $n_{D}$: The n'th interval of the defender if $\delta_{D} \geq \delta_{A}$ , starting from interval 0.
+\item $n_{A}$: The n'th interval of the attacker if $\delta_{A} \geq \delta_{D}$ , starting from interval 0.
+\item $\Delta Unit_{D}(n)$ : This is a function that denotes the length of a unit of control of the defender in the n'th interval of the attacker or the defender depending on who is playing faster.
+\item $\Delta Unit_{A}(n)$ : This is a function that denotes the length of a unit of control of the attacker in the n'th interval of the attacker or the defender depending on who is playing faster.
 \item \textit{lcm(a,b)}: The least common multiple of a and b.
 \item \textit{gcd(a,b)}: The greatest common divider of a and b.
 \item $G_{i}(t)$: Gain of player \textit{i} at time t. The gain of a player is defined as the total amount of time that a player has owned the resource since the start of the game up to time t. In the context of a FlipIt game with virus propagation, the whole network is seen as one resource. This resource is owned by the attacker if he has control over the entire network.\\
@@ -56,9 +56,9 @@ In the rest of the paper the 'benefit' of the game for player \textit{i} will be
 %%------------------------------------------------------------%%
 \end{description}
 \begin{figure}[hbtp]
-\caption{Defining unit of control}
+\caption{Graphic representation of some of the notations}
 \centering
-\includegraphics[scale=1]{Images/FlipSpel.png}
+\includegraphics[scale=0.8]{Images/notqties}
 \label{fig:notations}
 \end{figure}
 
@@ -125,7 +125,7 @@ On figure \ref{fig:unitofcontrolformula}
 \label{fig:unitofcontrolformula}
 \end{figure}
 
-The gain formula can be calculated by taking all the units of control of the player up to an amount of p intervals of the attacker. 
+The gain formula can be calculated by taking all the units of control of the player up to an amount of p intervals of the attacker. The gain formula for the attacker is stated as follows:
 
 \begin{equation}\label{first}
 Gain_{A} = \sum_{i=0}^{p} \lbrace [( - i ) \cdot \delta_{A}] mod \delta_{D}  \rbrace \rbrace 
@@ -180,7 +180,7 @@ For every positive and non zero real $\delta_{A}$ and $\delta_{D}$ $\in$ \(\math
 \end{equation}
 where $n_{D}$ is the number of the n'th interval of the defender starting form interval 0 where the length of the unit of control of the defender is calculated.\\
 
-The length of a unit of control of the attacker is the remainder of the interval after the defender loses control over the resource when the attacker plays. This can be defines as follows for the n'th interval of the defender:
+The length of a unit of control of the attacker is the remainder of the interval after the defender loses control over the resource when the attacker plays. This can be defined as follows for the n'th interval of the defender:
 \begin{equation}\label{first}
 \Delta Unit_{A}(n_{D}) = \delta_{D} - \Delta Unit_{D}(n_{D})
 \end{equation}
@@ -189,12 +189,12 @@ The gain formula for $\delta_{D} \geq \delta_{A}$ is calculated in the same mann
 
 The gain of the defender is the sum of the units of control of the defender up to the same amount of p intervals of the attacker:
 \begin{equation}\label{first}
-Gain_{D} =\sum_{i=1}^{p} \lbrace [( - i ) \cdot \delta_{D}] mod \delta_{A} \rbrace  \rbrace ~~with~~ i=0 ~~ Gain_{D}=\delta_{A}\\ 
+Gain_{D} =\sum_{i=1}^{p} \lbrace [( - i ) \cdot \delta_{D}] mod \delta_{A} \rbrace   ~~with~~ i=0 ~~ Gain_{D}=\delta_{A}\\ 
 \end{equation}
 
 and for the attacker:
 \begin{equation}\label{first}
-Gain_{A} =\delta_{D} \cdot p - \sum_{i=1}^{p} \lbrace [( - i ) \cdot \delta_{D}] mod \delta_{A} \rbrace  \rbrace ~~with~~ i=0 ~~ Gain_{A}=\delta_{D} - \delta_{A}\\ 
+Gain_{A} =\delta_{D} \cdot p - \sum_{i=1}^{p} \lbrace [( - i ) \cdot \delta_{D}] mod \delta_{A} \rbrace   ~~with~~ i=0 ~~ Gain_{A}=\delta_{D} - \delta_{A}\\ 
 \end{equation}
 
 \section{Gain and benefit formula for a FlipIt game with virus propagation}
@@ -202,7 +202,7 @@ Gain_{A} =\delta_{D} \cdot p - \sum_{i=1}^{p} \lbrace [( - i ) \cdot \delta_{D}]
 The formulas from the previous section can now be adapted to calculate the gain of both players in a FlipIt game with virus propagation. As mentioned before, the attacker will try to infect all the nodes in the network. He will do this by flipping the node in the graph that can infect all the nodes in the shortest time possible. After dropping a virus on the first node, it takes a while for the virus to infect the entire network. The time that it takes for the virus to infect every node will be denoted as parameter \textit{d}. If we want to measure how long it takes for the virus to infect all the nodes in the network, we have to calculate the shortest path from the
 first infected node to the farthest node. This can be measured by a method explained in section [matrix berekeningen]. Assume that an attacker attacks at time t, then only at time t + \textit{d} he gains control over the entire network. If the defender flips the network before the period d has elapsed (so, somewhere between t and t+ \textit{d}), then the attacker will never gain control over the entire network. Using this parameter \textit{d}, a FlipIt game with virus propagation can be modelled.
 
-The previous section defined a formula to calculate each unit of control of the attacker for two cases. If the virus propagation takes d time before every resource is infected then this d has to be subtracted from each unit of control. (see figure 7.4 \ref{fig:virusflip}). It may happen that the unit of control is less than \textit{d}. In that case, the result of the substration will be a negative number, meaning that the defender has flipped all the resources before the attacker could gain control over all the resources. To calculate the gain only the units of control bigger than 0 have to be summed. So the formula becomes: 
+The previous section defined a formula to calculate each unit of control of the attacker and the defender for two cases. If the virus propagation takes d time before every resource is infected then this \textit{d} has to be subtracted from each unit of control. (see figure 7.4 \ref{fig:virusflip}). It may happen that the unit of control is less than \textit{d}. In that case, the result of the substration will be a negative number, meaning that the defender has flipped all the resources before the attacker could gain control over all the resources. To calculate the gain only the units of control bigger than 0 have to be summed. So the formula becomes: \\
 
 %%------------------------------------------------------------%%
 %% Formule
@@ -222,6 +222,22 @@ Gain_{D} = p \cdot \delta_{A}  -  \sum_{i=0}^{p} \lbrace [( - i ) \cdot \delta_{
 \end{equation}
 
 For $\delta_{D} \geq \delta_{A}$ :
+\begin{subequations}\label{grp}
+\begin{align}
+Gain_{A} =\delta_{D} \cdot p - \sum_{i=1}^{p} \lbrace [( - i ) \cdot \delta_{D}] mod \delta_{A} -d \rbrace > 0 \rbrace \\
+with~~ i=0 ~~ Gain_{A}=\delta_{D} -( \delta_{A} - d) > 0\\ 
+\end{align}
+\end{subequations}
+
+and for the defender:
+\begin{subequations}\label{grp}
+\begin{align}
+Gain_{D} =\sum_{i=1}^{p} \lbrace [( - i ) \cdot \delta_{D}] mod \delta_{A} - d \rbrace > 0  \rbrace \\
+with~~ i=0 ~~ Gain_{D}=\delta_{A} - d > 0\\ 
+\end{align}
+\end{subequations}
+
+
 
 %%------------------------------------------------------------%%
 %% Figuur
@@ -236,7 +252,7 @@ For $\delta_{D} \geq \delta_{A}$ :
 
 \subsubsection{Computing the benefit of a FLipIt game with virus propagation}
 
-Calculating the benefit of the attacker, requires calculating the average gain rate of the attacker. To compute the benefit the value of parameter \textit{p} needs to be determined. Two cases can be considered: one case where $\delta_{D}$ and $\delta_{A}$ $\in$ \(\mathbb{Q}\) and the other one where $\delta_{D}$ and $\delta_{A}$ $\in$ \(\mathbb{I}.\) \\
+Calculating the benefit of both players, requires calculating the average gain rate of both players. To compute the benefit the value of parameter \textit{p} needs to be determined. Two cases can be considered: one case where $\delta_{D}$ and $\delta_{A}$ $\in$ \(\mathbb{Q}\) and the other one where $\delta_{D}$ and $\delta_{A}$ $\in$ \(\mathbb{I}.\) In both cases we first calculate the benefit of the attacker in case that the defender moves at least as fast as the attacker. The benefit of the defender will be BenD = 1 - BenA. The benefit of both players for the case where the defender moves as least as fast as the defender is done in a similar way.  \\
 
 \textbf{Rational numbers (\(\mathbb{Q}\)):} When $\delta_{D}$ and $\delta_{A}$ are rational numbers, after a number of intervals (namely their least common multiple), the same pattern of intervals will be repeated over and over again. Why? A rational number is a number that can be expressed as the fraction p/q with p and q $\in$ \(\mathbb{Z}\) (integers), with the denominator q not equal to zero, it is possible to find the \textit{lcm} of $\delta_{D}$ and $\delta_{A}$. The \textit{lcm} is defined for all rational numbers as: $lcm(\dfrac{a}{b},\dfrac{c}{d})= \dfrac{a \cdot c}{gcd(b,d)} with  $ [\todo{referentie}]. When \textit{t} is equal to the \textit{lcm} of $\delta_{D}$ and $\delta_{A}$, both players will move again at the same time and this can be mapped to the beginning of the game. Because we stated that at the end of the interval of the attacker, the defender is in control and because if two players move at the same time the moves cancel each other out, we can map this to the beginning of the game. Since the game goes on infinitely, to calculate the average gain of the attacker, it is sufficient to calculate the average gain of the attacker only during a period of time equal to the \textit{lcm} of $\delta_{D}$ and $\delta_{A}$. Since \textit{lcm} is a multiple of $\delta_{D}$ and $\delta_{A}$, there is a number \textit{p} so that \textit{lcm} $=$p $\cdot \delta_{A}$, meaning that the attacker will have played \textit{p} times. \textit{p} can be defined as follows:
 
@@ -269,8 +285,15 @@ An irrational number $ i \neq \dfrac{a}{b}$ with $b \in$ \(\mathbb{Z}\) , a $\in
 Two cases can be distinguished.
 (A) $\dfrac{\delta_{D}}{ \delta_{A}}$ is a rational number a/b with a <= b. In that case, after b intervals, the pattern will repeat itself.
 
-Since either $\delta_{D}$ and $\delta_{A}$ cannot be written as a fraction, the least common multiplier cannot be calculated. Moreover, there will be no repeating pattern because we cannot write $\delta_{D}$ and/or $\delta_{A}$ as a fraction, this means that we cannot compute a common multiplier of $\delta_{D}$ and $\delta_{A}$. If their is no common multiplier the attacker and the defender won't move at one point on the same time, meaning that this does not result in a cycle. If we would have a cycle that means that there exists a number \textit{x} that can be divided by $\delta_{D}$ and $\delta_{A}$. At $t=x$ both of the players will move at the same time, which is not possible because then their would be a cycle. Since their is no cycle it also means that no unit of control will be repeated two times. Every unit of control will have a distinct length. If it does that means that their is repetition, meaning again that their is a cycle. \todo{nog verder uitleggen} We can conclude that if we have no cycle and no number will be repeated twice, that it will enumerate every number between 0 and the biggest interval (which is $\delta_{D}$). 
-\textit{The reals are uncountable; that is: while both the set of all natural numbers and the set of all real numbers are infinite sets, there can be no one-to-one function from the real numbers to the natural numbers} [WikiPedia: real numbers] If they are uncountable that means that we cannot calculate the sum of all the numbers between 0 and the biggest interval. This is proved by the Cantor diagonalisation argument. Uncountable does not mean that we cannot order it. The Field of the real numbers is ordered. 
+(B)If either $\delta_{D}$ and $\delta_{A}$ cannot be written as a fraction, and they are no multiple of each other, the least common multiplier cannot be calculated. Moreover, there will be no repeating pattern. If both players move at one point in the game at the same moment, this point of time has to be a multiple of the period of the attacker and a multiple of the period of the defender. But because there is no least common multiple, no such point of time exists during the game. If both players never play at the same moment, it is not possible to have a repeated pattern because no mapping to the beginning of the game can occur. Additionly two unit of controls with the same length cannot exist. This would mean that the game has a repeated pattern, which is not possible.  \\
+The game will go on forever, if no repeating pattern occurs and it would keep on generating units of control with different lengths. This implies that if the game goes on forever, every length between 0 and the smallest interval (which is $\delta_{D}$ ) will be generated.
+%If their is no common multiplier the attacker and the defender won't move at one point on the same time, meaning that this does not result in a cycle. If we would have a cycle that means that there exists a number \textit{x} that can be divided by $\delta_{D}$ and $\delta_{A}$. At $t=x$ both of the players will move at the same time, which is not possible because then their would be a cycle. Since their is no cycle it also means that no unit of control will be repeated two times. Every unit of control will have a distinct length. If it does that means that their is repetition, meaning again that their is a cycle. \todo{nog verder uitleggen} We can conclude that if we have no cycle and no number will be repeated twice, that it will enumerate every number between 0 and the biggest interval (which is $\delta_{D}$)
+To calculate the benefit we want to summarize the unit of controls up to a number of interval \textit{p}. Considering that the game goes on forever without repetition we cannot rely on the fact that the benefit can also be calculated only during the repetition. Calculating the benefit of a game without repetition would imply that all the unit of control to infinite have to be calculated. This implicates that all the numbers between 0 and   $\delta_{D}$ have to be summed but this is impossible. 
+\textit{The reals are uncountable; that is: while both the set of all natural numbers and the set of all real numbers are infinite sets, there can be no one-to-one function from the real numbers to the natural numbers} [WikiPedia: real numbers] If they are uncountable that means that we cannot calculate the sum of all the numbers between 0 and the biggest interval. This is proved by the Cantor diagonalisation argument. Uncountable does not mean that we cannot order it. The Field of the real numbers is ordered. \\
+
+\todo{nog mooie tekst schrijven in engels: hier essentie}
+We kunnen de benefit wel benaderen door een zo groot mogelijke som te nemen van de unit of controls. Uit deze benadering is af te leiden waar de verhouding naartoe zou gaan als de limiet zou genomen worden. -> laten zien met een voorbeeld van Pi en 1. 
+
 
 %What we can do is take the limit, count as many control units of time of the attacker and divide it by the greatest amount of time. We can see that this eventually will result to the solution given by the writers of FlipIt. [r/2]. Example delta1 Pi and delta0 1. Grafiek voor maken.
 
