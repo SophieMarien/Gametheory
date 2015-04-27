@@ -6,12 +6,12 @@
 \select@language {dutch}
 \select@language {dutch}
 \contentsline {chapter}{Voorwoord}{i}{chapter*.1}
-\contentsline {chapter}{Samenvatting}{iv}{chapter*.3}
+\contentsline {chapter}{Samenvatting}{v}{chapter*.3}
 \select@language {dutch}
-\contentsline {chapter}{Samenvatting}{v}{chapter*.4}
+\contentsline {chapter}{Samenvatting}{vi}{chapter*.4}
 \select@language {dutch}
-\contentsline {chapter}{L"yst van figuren en tabellen}{vi}{chapter*.5}
-\contentsline {chapter}{List of Abbreviations and Symbols}{vii}{chapter*.8}
+\contentsline {chapter}{L"yst van figuren en tabellen}{vii}{chapter*.5}
+\contentsline {chapter}{List of Abbreviations and Symbols}{viii}{chapter*.8}
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Motivation of the game}{2}{subsection.1.1.1}
@@ -36,30 +36,22 @@
 \contentsline {section}{\numberline {3.3}Conclusion}{16}{section.3.3}
 \contentsline {chapter}{\chapternumberline {4}Intoduction to GameTheory}{17}{chapter.4}
 \contentsline {section}{\numberline {4.1}Write down the settings of the game}{17}{section.4.1}
-\contentsline {chapter}{\chapternumberline {5}FlipIt with a virus propagation }{21}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction}{21}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}FlipIt vs FlipIt with virus propagation}{21}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}define formula}{22}{subsection.5.1.2}
-\contentsline {subsubsection}{Computing the gain for an attacker of a normal FlipIt game}{23}{section*.45}
-\contentsline {subsubsection}{Computing the average benefit for a normal FlipIt game}{24}{section*.53}
-\contentsline {subsection}{\numberline {5.1.3}Formula with a virus propagation}{26}{subsection.5.1.3}
-\contentsline {chapter}{\chapternumberline {6}APT}{27}{chapter.6}
-\contentsline {section}{\numberline {6.1}Advanced Persistent Threats}{27}{section.6.1}
-\contentsline {chapter}{\chapternumberline {7}FlipIt with a virus propagation }{29}{chapter.7}
-\contentsline {section}{\numberline {7.1}Introduction}{29}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}FlipIt vs FlipIt with virus propagation}{29}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}define formula}{30}{subsection.7.1.2}
-\contentsline {subsubsection}{Computing the gain for an attacker of a normal FlipIt game}{31}{section*.63}
-\contentsline {subsection}{\numberline {7.1.3}Formula with a virus propagation}{33}{subsection.7.1.3}
-\contentsline {subsubsection}{Computing the benefit of a FLipIt game with virus propagation}{33}{section*.72}
-\contentsline {chapter}{\chapternumberline {8}The Final Chapter}{37}{chapter.8}
-\contentsline {section}{\numberline {8.1}chap}{37}{section.8.1}
-\contentsline {chapter}{\chapternumberline {9}Conclusion}{39}{chapter.9}
-\contentsline {section}{\numberline {9.1}trala}{39}{section.9.1}
-\contentsline {appendix}{\chapternumberline {A}The First Appendix}{43}{appendix.A}
-\contentsline {section}{\numberline {A.1}More Lorem}{43}{section.A.1}
-\contentsline {appendix}{\chapternumberline {B}The Last Appendix}{45}{appendix.B}
-\contentsline {section}{\numberline {B.1}Lorem 20-24}{45}{section.B.1}
+\contentsline {chapter}{\chapternumberline {5}APT}{21}{chapter.5}
+\contentsline {section}{\numberline {5.1}Advanced Persistent Threats}{21}{section.5.1}
+\contentsline {chapter}{\chapternumberline {6}FlipIt with virus propagation }{23}{chapter.6}
+\contentsline {section}{\numberline {6.1}FlipIt vs FlipIt with virus propagation}{23}{section.6.1}
+\contentsline {section}{\numberline {6.2}Gain formula for a FlipIt game without virus propagation}{24}{section.6.2}
+\contentsline {subsubsection}{Computing the gain for an attacker of a normal FlipIt game}{25}{section*.38}
+\contentsline {section}{\numberline {6.3}Gain and benefit formula for a FlipIt game with virus propagation}{29}{section.6.3}
+\contentsline {subsubsection}{Computing the benefit of a FLipIt game with virus propagation}{29}{section*.41}
+\contentsline {chapter}{\chapternumberline {7}The Final Chapter}{33}{chapter.7}
+\contentsline {section}{\numberline {7.1}chap}{33}{section.7.1}
+\contentsline {chapter}{\chapternumberline {8}Conclusion}{35}{chapter.8}
+\contentsline {section}{\numberline {8.1}trala}{35}{section.8.1}
+\contentsline {appendix}{\chapternumberline {A}The First Appendix}{39}{appendix.A}
+\contentsline {section}{\numberline {A.1}More Lorem}{39}{section.A.1}
+\contentsline {appendix}{\chapternumberline {B}The Last Appendix}{41}{appendix.B}
+\contentsline {section}{\numberline {B.1}Lorem 20-24}{41}{section.B.1}
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}

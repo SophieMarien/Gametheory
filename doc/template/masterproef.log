@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  26 APR 2015 16:09
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  27 APR 2015 18:11
 entering extended mode
 **masterproef.tex
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.tex
@@ -1135,7 +1135,65 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count200
 )
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.aux)
+(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.aux
+(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\intro.aux)
+(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-2.aux)
+(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-5.aux)
+(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-4.aux
+
+LaTeX Warning: Label `cha:1' multiply defined.
+
+) (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-7.aux)
+(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-8.aux
+
+LaTeX Warning: Label `first' multiply defined.
+
+
+LaTeX Warning: Label `first' multiply defined.
+
+
+LaTeX Warning: Label `first' multiply defined.
+
+
+LaTeX Warning: Label `first' multiply defined.
+
+
+LaTeX Warning: Label `first' multiply defined.
+
+
+LaTeX Warning: Label `first' multiply defined.
+
+
+LaTeX Warning: Label `first' multiply defined.
+
+
+LaTeX Warning: Label `first' multiply defined.
+
+
+LaTeX Warning: Label `first' multiply defined.
+
+
+LaTeX Warning: Label `first' multiply defined.
+
+
+LaTeX Warning: Label `first' multiply defined.
+
+
+LaTeX Warning: Label `first' multiply defined.
+
+
+LaTeX Warning: Label `first' multiply defined.
+
+
+LaTeX Warning: Label `first' multiply defined.
+
+
+LaTeX Warning: Label `first' multiply defined.
+
+) (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-n.aux)
+(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\conclusion.aux)
+(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\app-A.aux)
+(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\app-n.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
 LaTeX Font Info:    ... okay on input line 86.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 86.
@@ -1271,41 +1329,69 @@ Package microtype Info: Loading generic settings for font family
 
 
 ]
+(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.toc
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 8.
 
-Package hyperref Warning: old toc file detected, not used; run LaTeX again.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 8.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 8.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 8.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 8.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 8.
+LaTeX Font Info:    Try loading font information for U+msa on input line 8.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 8.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+Overfull \hbox (0.1675pt too wide) detected at line 14
+ \T1/lmr/bx/n/10.95 viii
+ []
 
 [2
 
 
-]
-
-Package hyperref Warning: old tdo file detected, not used; run LaTeX again.
-
-[3
-
-] [4
+])
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/lmr/m/sc/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+ [3]
+(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.tdo)
+[4
 
 ] [5
 
+] [6
+
 
 ]
-
-Package hyperref Warning: old lof file detected, not used; run LaTeX again.
-
-
-Package hyperref Warning: old lot file detected, not used; run LaTeX again.
-
-[6
-
-
-] ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omllmm.fd")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omxlmex.fd")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd")
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\mt-msa.cfg)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd")
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\mt-msb.cfg)
+(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.lof)
+(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.lot)
 [7
+
 
 ] [8
 
@@ -1322,11 +1408,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [1
 
 
-]
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/lmr/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
 
+]
 [2]
 
 LaTeX Warning: Marginpar on page 3 moved by 17.06781pt.
@@ -1362,31 +1445,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--10
 Package natbib Warning: Citation `FlipIt' on page 5 undefined on input line 11.
 
 
-[5] <Images/FlipItDefault.jpg, id=236, 1285.80376pt x 337.26pt>
+[5] <Images/FlipItDefault.jpg, id=340, 1285.80376pt x 337.26pt>
 File: Images/FlipItDefault.jpg Graphic file (type jpg)
 
 <use Images/FlipItDefault.jpg>
 Package pdftex.def Info: Images/FlipItDefault.jpg used on input line 35.
 (pdftex.def)             Requested size: 321.45015pt x 84.31479pt.
-
-
-LaTeX Warning: Reference `fig:FLipItDefault' on page 6 undefined on input line 
-39.
-
-
-LaTeX Warning: Reference `fig:FLipItDefault' on page 6 undefined on input line 
-39.
-
-
-LaTeX Warning: Reference `fig:FLipItDefault' on page 6 undefined on input line 
-39.
-
-
-LaTeX Warning: Reference `fig:FLipItDefault' on page 6 undefined on input line 
-39.
-
-[6 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/FlipItDe
-fault.jpg>]
+ [6 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/FlipItD
+efault.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 59--62
 
  []
@@ -1483,248 +1549,173 @@ Underfull \hbox (badness 10000) in paragraph at lines 161--162
  []
 
 [18]) [19]
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-6.tex
+(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-7.tex
 [20
 
 
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 19--22
+] <Images/chainAPT.png, id=428, 362.7954pt x 555.7563pt>
+File: Images/chainAPT.png Graphic file (type png)
+
+<use Images/chainAPT.png>
+Package pdftex.def Info: Images/chainAPT.png used on input line 26.
+(pdftex.def)             Requested size: 253.95505pt x 389.02676pt.
+) [21] [22 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/
+chainAPT.png
+
+pdfTeX warning: pdflatex (file C:/Users/ECONGUEST/Documents/GitHub/Gametheory/d
+oc/template/Images/chainAPT.png): large interlaced PNG might cause out of memor
+y (use non-interlaced PNG to fix this)
+>] (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-8.tex
+Underfull \hbox (badness 10000) in paragraph at lines 14--16
 
  []
 
 
-LaTeX Warning: Marginpar on page 21 moved by 83.5864pt.
+Underfull \hbox (badness 10000) in paragraph at lines 18--20
 
-<Images/Flipvirus.png, id=338, 379.8993pt x 273.6624pt>
-File: Images/Flipvirus.png Graphic file (type png)
-
-<use Images/Flipvirus.png>
-Package pdftex.def Info: Images/Flipvirus.png used on input line 28.
-(pdftex.def)             Requested size: 379.89838pt x 273.66171pt.
- [21]
-
-LaTeX Warning: Marginpar on page 22 moved by 58.51553pt.
+ []
 
 
-LaTeX Warning: Reference `fig:notations' on page 22 undefined on input line 46.
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23
 
 
 
-LaTeX Warning: Marginpar on page 22 moved by 157.83109pt.
+]
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
-[22 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/Flipvir
-us.png>] <Images/FlipSpel.png, id=358, 394.1124pt x 104.0688pt>
+ []
+
+[24] <Images/FlipSpel.png, id=456, 394.1124pt x 104.0688pt>
 File: Images/FlipSpel.png Graphic file (type png)
 
 <use Images/FlipSpel.png>
 Package pdftex.def Info: Images/FlipSpel.png used on input line 61.
 (pdftex.def)             Requested size: 394.11142pt x 104.06854pt.
 
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--73
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 79--82
 
  []
 
+[25 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/FlipSpe
+l.png>] <Images/modulotek.png, id=465, 474.77374pt x 294.09875pt>
+File: Images/modulotek.png Graphic file (type png)
 
-LaTeX Warning: Marginpar on page 23 moved by 58.51553pt.
+<use Images/modulotek.png>
+Package pdftex.def Info: Images/modulotek.png used on input line 96.
+(pdftex.def)             Requested size: 189.90613pt x 117.6374pt.
 
+<Images/Modulosimpel.png, id=466, 474.77374pt x 294.09875pt>
+File: Images/Modulosimpel.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--85
-
- []
-
-
-LaTeX Warning: Marginpar on page 23 moved by 15.58636pt.
-
-[23 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/FlipSpe
-l.png>]
-
-LaTeX Warning: Marginpar on page 24 moved by 1.98636pt.
-
-
-LaTeX Warning: Marginpar on page 24 moved by 58.37274pt.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 98--100
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 115--117
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 118--119
-
- []
-
-[24]
-
-LaTeX Warning: Reference `fig:virusflip' on page 25 undefined on input line 152
-.
-
-[25]) [26]
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-7.tex
-<Images/chainAPT.png, id=399, 362.7954pt x 555.7563pt>
-File: Images/chainAPT.png Graphic file (type png)
-
-<use Images/chainAPT.png>
-Package pdftex.def Info: Images/chainAPT.png used on input line 26.
-(pdftex.def)             Requested size: 253.95505pt x 389.02676pt.
-) [27
-
-
-
-] [28 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/chain
-APT.png
-
-pdfTeX warning: pdflatex (file C:/Users/ECONGUEST/Documents/GitHub/Gametheory/d
-oc/template/Images/chainAPT.png): large interlaced PNG might cause out of memor
-y (use non-interlaced PNG to fix this)
->] (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-8.tex
-Underfull \hbox (badness 10000) in paragraph at lines 22--23
-
- []
-
-[29
-
-
-
-]
-
-LaTeX Warning: Reference `fig:notations' on page 30 undefined on input line 42.
-
-
-
-LaTeX Warning: Marginpar on page 30 moved by 44.91553pt.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
-
- []
-
-[30]
-File: Images/FlipSpel.png Graphic file (type png)
- <use Images/FlipSpel.png>
-Package pdftex.def Info: Images/FlipSpel.png used on input line 61.
-(pdftex.def)             Requested size: 394.11142pt x 104.06854pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--83
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--86
-
- []
-
-
-LaTeX Warning: Marginpar on page 31 moved by 15.58636pt.
-
-
-LaTeX Warning: Marginpar on page 31 moved by 3.97272pt.
-
-
-LaTeX Warning: Reference `fig:modulo' on page 31 undefined on input line 92.
-
-<Images/Modulo.png, id=432, 684.30656pt x 225.09094pt>
-File: Images/Modulo.png Graphic file (type png)
- <use Images/Modulo.png>
-Package pdftex.def Info: Images/Modulo.png used on input line 97.
-(pdftex.def)             Requested size: 410.5871pt x 135.05559pt.
-
-Overfull \hbox (12.5871pt too wide) in paragraph at lines 97--99
- [][] 
- []
-
-[31]
-
-LaTeX Warning: Marginpar on page 32 moved by 56.38638pt.
-
+<use Images/Modulosimpel.png>
+Package pdftex.def Info: Images/Modulosimpel.png used on input line 97.
+(pdftex.def)             Requested size: 189.90613pt x 117.6374pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 107--109
 
  []
 
-
-LaTeX Warning: Reference `fig:modulo' on page 32 undefined on input line 116.
-
-
-LaTeX Warning: Reference `fig:unitofcontrolformula' on page 32 undefined on inp
-ut line 117.
-
-<Images/VoorbeeldUnit.png, id=443, 815.045pt x 257.96375pt>
+<Images/VoorbeeldUnit.png, id=469, 815.045pt x 257.96375pt>
 File: Images/VoorbeeldUnit.png Graphic file (type png)
 
 <use Images/VoorbeeldUnit.png>
-Package pdftex.def Info: Images/VoorbeeldUnit.png used on input line 121.
+Package pdftex.def Info: Images/VoorbeeldUnit.png used on input line 124.
 (pdftex.def)             Requested size: 489.03076pt x 154.77943pt.
 
-Overfull \hbox (91.03076pt too wide) in paragraph at lines 121--123
+Overfull \hbox (91.03076pt too wide) in paragraph at lines 124--126
  [][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
+[26 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/modulot
+ek.png> <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/Mod
+ulosimpel.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
 
  []
 
-[32 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/Modulo.
-png>]
 
-LaTeX Warning: Reference `fig:virusflip' on page 33 undefined on input line 136
-.
+Underfull \hbox (badness 10000) in paragraph at lines 156--158
 
+ []
+
+[27 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/Voorbee
+ldUnit.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 163--171
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--182
+
+ []
+
+[28] <Images/Flipvirus.png, id=499, 379.8993pt x 273.6624pt>
 File: Images/Flipvirus.png Graphic file (type png)
+
 <use Images/Flipvirus.png>
-Package pdftex.def Info: Images/Flipvirus.png used on input line 145.
+Package pdftex.def Info: Images/Flipvirus.png used on input line 228.
 (pdftex.def)             Requested size: 379.89838pt x 273.66171pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--153
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
 
  []
 
-[33 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/Voorbee
-ldUnit.png>] [34]) [35]
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-n.tex
-[36
+[29]
+Underfull \vbox (badness 2790) has occurred while \output is active []
+
+ [30 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/Flipvi
+rus.png>])
+[31] (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-n.tex
+[32
 
 
 
-]) [37]
+]) [33]
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\conclusion.tex
-[38
+[34
 
 
 
-]) [39] [40
+]) [35] [36
 
 
-] [41] [42]
+] [37] [38]
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\app-A.tex
 
-Package natbib Warning: Citation `h2g2' on page 43 undefined on input line 5.
+Package natbib Warning: Citation `h2g2' on page 39 undefined on input line 5.
 
-) [43
+) [39
 
 
 ] (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\app-n.tex
-[44
+[40
 
 
 
-]) [45] [46
+]) [41] [42
 
 
 ]
 No file masterproef.bbl.
-[47
+[43
 
 ]
 
@@ -1734,45 +1725,41 @@ Package natbib Warning: There were undefined citations.
 \tf@tdo=\write7
 \tf@lof=\write8
 \tf@lot=\write9
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 175.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 175.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 174.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 174.
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.aux
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\intro.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-2.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-5.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-4.aux)
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-6.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-7.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-8.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-n.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\conclusion.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\app-A.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\app-n.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 175.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 175.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 174.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 174.
 Package rerunfilecheck Info: File `masterproef.out' has not changed.
-(rerunfilecheck)             Checksum: FB2EB8DC38A64E6A97C2EE3D87CCD355;2031.
+(rerunfilecheck)             Checksum: 7C644F9C2022F603F79310CC06BCD8E6;2144.
 
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: There were multiply-defined labels.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 175.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 174.
  ) 
 Here is how much of TeX's memory you used:
- 26248 strings out of 493921
- 480234 string characters out of 3144864
- 729149 words of memory out of 3000000
- 28665 multiletter control sequences out of 15000+200000
- 78497 words of font info for 135 fonts, out of 3000000 for 9000
+ 26096 strings out of 493921
+ 477491 string characters out of 3144864
+ 732117 words of memory out of 3000000
+ 28534 multiletter control sequences out of 15000+200000
+ 77977 words of font info for 131 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 60i,12n,78p,1469b,922s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,12n,78p,1574b,922s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files (x86)/MiKT
-eX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files (x86)/MiKTeX 2.9/font
-s/enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips
+iles (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files (x86)/
+MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/MiKTeX 2.9/
+fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips
 /lm/lm-mathsy.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8
 r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/P
 rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program File
@@ -1782,16 +1769,16 @@ nts/type1/public/lm/lmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
 ublic/lm/lmmi6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmm
 i8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/P
 rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Files (x86)/MiKTeX
- 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmri10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
-lm/lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.p
-fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm1
-0.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on masterproef.pdf (57 pages, 611513 bytes).
+ (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
+type1/public/lm/lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publi
+c/lm/lmtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
+symbols/msbm10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/
+uhvb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.p
+fb>
+Output written on masterproef.pdf (53 pages, 604077 bytes).
 PDF statistics:
- 638 PDF objects out of 1000 (max. 8388607)
- 209 named destinations out of 1000 (max. 500000)
- 19264 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 667 PDF objects out of 1000 (max. 8388607)
+ 172 named destinations out of 1000 (max. 500000)
+ 19269 words of extra memory for PDF output out of 20736 (max. 10000000)
 
