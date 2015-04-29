@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  27 APR 2015 21:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  27 APR 2015 21:53
 entering extended mode
 **masterproef.tex
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.tex
@@ -1766,7 +1766,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 174.
 Here is how much of TeX's memory you used:
  26109 strings out of 493921
  477668 string characters out of 3144864
- 732341 words of memory out of 3000000
+ 732340 words of memory out of 3000000
  28535 multiletter control sequences out of 15000+200000
  78237 words of font info for 133 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -1791,7 +1791,7 @@ c/lm/lmtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
 symbols/msbm10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/
 uhvb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.p
 fb>
-Output written on masterproef.pdf (53 pages, 604096 bytes).
+Output written on masterproef.pdf (53 pages, 604124 bytes).
 PDF statistics:
  676 PDF objects out of 1000 (max. 8388607)
  180 named destinations out of 1000 (max. 500000)
