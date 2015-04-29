@@ -43,7 +43,7 @@
 \contentsline {section}{\numberline {6.2}Gain formula for a FlipIt game without virus propagation}{24}{section.6.2}
 \contentsline {subsubsection}{Computing the gain for an attacker of a normal FlipIt game}{25}{section*.38}
 \contentsline {section}{\numberline {6.3}Gain and benefit formula for a FlipIt game with virus propagation}{29}{section.6.3}
-\contentsline {subsubsection}{Computing the benefit of a FLipIt game with virus propagation}{31}{section*.41}
+\contentsline {subsubsection}{Computing the benefit of a FlipIt game with virus propagation}{31}{section*.41}
 \contentsline {chapter}{\chapternumberline {7}The Final Chapter}{33}{chapter.7}
 \contentsline {section}{\numberline {7.1}chap}{33}{section.7.1}
 \contentsline {chapter}{\chapternumberline {8}Conclusion}{35}{chapter.8}
