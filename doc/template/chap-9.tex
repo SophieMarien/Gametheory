@@ -13,12 +13,70 @@
 %------------------------------------------------%
 %            Intro Game Theory 					 %
 %------------------------------------------------%
-\section{something}
-\label{Cha:9:inrto}
+
+\section*{Playing periodically with virus propagation}
+
+This chapter explains how to model a FlipIt game with a virus propagation that infects a network. The first section explains the difference between a normal FlipIt game and a FlipIt game with virus propagation. The next section derives a formula to calculate the benefit for a FlipIt game with a virus propagation. In the last section we calculate the Nash equilibrium for the benefit formula.
+
+\section{Explaining difference between FlipIt with and without virus propagation}
+zelfde als in vorige chapter:
+
+In chapter 2 the FlipIt game was explained.  This chapter starts from the specific case of a non-adaptive continuous FlipIt game where both players play a periodic strategy with a random phase. This choice is motivated by the assumption that in the practical situation of most organisations, the defence strategy is to periodically defend the network. This corresponds to a periodic defender strategy. To simplify the analysis in a first time, a periodic attacker strategy is assumed as well. Further research can investigate the effect of relaxing this assumption.\\
+
+
+A FlipIt game consists of a single resource. To represent the security problem, the game now defines its single resource as a computer network with multiple
+nodes. One of the players, the defender, will try to defend his network. The defender
+will do this by flipping all the nodes of the network (i.e. the entire resource) in every move he plays. The
+attacker, the other player, will try to infect all the nodes in the network. The attacker
+will do this by flipping the node in the graph that can infect all the nodes in the
+shortest time possible. After dropping a virus on the first node, it takes a while for the virus to infect the entire network. However, since the original FlipIt game works with a single resource that is always flipped entirely, the assumption is made that the attacker is considered to have gained the control over the resource only when all the nodes of the network have been infected, i.e. the entire resource has been flipped.
+
+After dropping a virus on the first resource, it takes a while for the virus to infect
+the entire network. The time that it takes for the virus to infect every node will be
+denoted as parameter d. If we want to measure how long it takes for the virus to
+infect all the nodes in the network, we have to calculate the shortest path from the
+first infected node to the farthest node. This can be measured by a method that we
+will explain in section []. Assume that an attacker attacks at time t, then only at time t + d he gains control over the entire network. If the defender flips the network before the period d has elapsed (so, somewhere between t and t+ d), then the attacker will never gain control over the entire network. Using this parameter d, a FlipIt game with virus propagation
+can be modelled. 
+
+
+\section{Benefit for FlipIt game with virus propagation}
 
 Periodic Game with delay for the attacker:
 
 \textbf{Case 1:} $\delta_{D} \leq \delta_{A} $(The defender plays at least as fast as the attacker.) \\
+
+Let $r = \dfrac{\delta_{D}}{ \delta_{A} }$. The intervals between two consecutive defender's moves have length $\delta_{D}$. Consider a given defender move interval. The probability over the attacker's phase selection that the attacker moves in this interval is r. Given that the attacker moves within the interval, he moves exactly once within the interval (since $\delta_{D} \leq \delta_{A} $) and his move is distributed uniformly at random. \\
+
+The expected period of attacker control within the interval would be r/2, without considering the delay. \\
+
+However, because of the delay, the maximal time of control is reduced to $\delta_{D}-d$. There is a probability of \textit{r} that the attacker will move in the interval of the defender. The attacker has to play soon enough to gain control, meaning that the attacker has to play during the period of $\delta_{D}-d$ during the interval of the defender. There is $\dfrac{\delta_{D}-d}{\delta_{D}}$ probability that the attacker will move soon enough which gives the attacker a gain of $\dfrac{\delta_{D}-d}{2}$. If the attacker moves after the period of $\delta_{D}-d$, the gain of the attacker will be zero. The average gain rate of the attacker can be expressed as follows if we look at one interval of the defender:
+\begin{equation}\label{first}
+\beta_{A}(\alpha_{D},\alpha_{A}) = \dfrac {1}{\delta_{D}} [ \dfrac{\delta_{D}}{\delta_{A}} \cdot \dfrac{\delta_{D}-d}{\delta_{D}} \cdot \dfrac{\delta_{D}-d}{2} + \dfrac{\delta_{D}}{\delta_{A}} \cdot \dfrac{d}{\delta_{D}} \cdot 0 ]
+\end{equation}
+
+To complete the formula to derive the benefit function, the cost of moving is added. In the second formula we can see the formula of the original FlipIt game.
+\begin{equation}\label{first}
+\beta_{A}(\alpha_{D},\alpha_{A}) = \dfrac { (\delta_{D}-d) ^{2}} {2 \cdot \delta_{D}  \delta_{A}} - k_{A} \alpha_{A}
+\end{equation}
+\begin{equation}\label{first}
+\beta_{A}(\alpha_{D},\alpha_{A}) = \dfrac { \delta_{D}} {2 \cdot \delta_{A}} - k_{A} \alpha_{A} + \dfrac{d}{\delta_{A}} + \dfrac{d^{2}}{2 \cdot \delta_{A} \delta_{D}}
+\end{equation}
+ 
+ The benefit of the defender is expressed as follows:
+ \begin{equation}\label{first}
+\beta_{D}(\alpha_{D},\alpha_{A}) = 1 - \dfrac { (\delta_{D}-d) ^{2}} {2 \cdot \delta_{D}  \delta_{A}} - k_{D} \alpha_{D}
+\end{equation}
+
+\section{something}
+\label{Cha:9:inrto}
+
+
+
+Periodic Game with delay for the attacker:
+
+\textbf{Case 1:} $\delta_{D} \leq \delta_{A} $(The defender plays at least as fast as the attacker.) \\
+
 
 Let $r = \dfrac{\delta_{D}}{ \delta_{A} }$. The intervals between two consecutive defender's moves have length $\delta_{D}$. Consider a given defender move interval. The probability over the attacker's phase selection that the attacker moves in this interval is r. Given that the attacker moves within the interval, he moves exactly once within the interval (since $\delta_{D} \leq \delta_{A} $) and his move is distributed uniformly at random. \\
 
