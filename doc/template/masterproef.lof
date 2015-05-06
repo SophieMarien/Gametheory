@@ -14,21 +14,15 @@
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces The FlipIt game where both players are playing periodically}}{11}{figure.3.1}
-\addvspace {10pt}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces A representation of a FlipIt game where both players are playing periodically and discrete. Every move or "flip" is indicated by a blue or orange circle. The blue and orange rectangles represent the amount of time one of the players is in control of the resource.}}{6}{figure.2.1}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Difference in a FlipIt game between delay caused by a virus and a phase bigger than zero for the Attacker}}{30}{figure.8.1}
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Defining unit of control}}{31}{figure.8.2}
-\addvspace {10pt}
-\addvspace {10pt}
-\contentsline {figure}{\numberline {10.1}{\ignorespaces Graphic representation of some of the notations}}{39}{figure.10.1}
-\contentsline {figure}{\numberline {10.2}{\ignorespaces Taking the modulo of a negative number}}{40}{figure.10.2}
-\contentsline {figure}{\numberline {10.3}{\ignorespaces Example for calculating the control unit in interval 3 for a FlipIt game with period defender = 1 and period attacker = pi}}{41}{figure.10.3}
-\contentsline {figure}{\numberline {10.4}{\ignorespaces Difference in a FlipIt game between delay caused by a virus and a phase bigger than zero for the Attacker}}{44}{figure.10.4}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Graphic representation of some of the notations}}{21}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Taking the modulo of a negative number}}{22}{figure.6.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Example for calculating the control unit in interval 3 for a FlipIt game with period defender = 1 and period attacker = pi}}{23}{figure.6.3}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Difference in a FlipIt game between delay caused by a virus and a phase bigger than zero for the Attacker}}{26}{figure.6.4}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}

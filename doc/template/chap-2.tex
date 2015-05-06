@@ -12,6 +12,15 @@ The game begins at $t=0$ and continuous indefinitely ($t \rightarrow \infty $). 
 The unique feature of \flip{FlipIt} is that every move will happen in a stealthy way, meaning that the player has no clue that (his adversary) the other player has flipped the resource. For instance, the defender will not find out if the resource has already been compromised by the attacker, but he can only potentially know it after he flips the resource himself. The goal of the player is to maximize the time that he or she has control over the resource while minimizing total cost of the moves. A move can also result in a "wasted move", called a flop. It may happen that the resource was already under control by the defender. If the defender moves when he or she has already control over the resource, he or she would have wasted a move since it does not result in a change of ownership and a cost is involved. \\
 
 
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=0.8]{Images/DefFlipit}
+\caption{A representation of a FlipIt game where both players are playing periodically and discrete. Every move or "flip" is indicated by a blue or orange circle. The blue and orange rectangles represent the amount of time one of the players is in control of the resource.}
+\label{fig:FLipItDefault}
+\end{figure}
+\todo{verwijzen naar de figuur \ref{fig:FLipItDefault}}
+
+
 The state of the resource is denoted as a time independent variable $C=C_{i}(t)$. 
 $C_{D}(t)$ is either 1 if the game is under control by the defender and 0 if the game is under control by the attacker. For $C^{A}(t)$ it is visa versa, $C^{A}(t)= 1 - C^{D}(t)$.\\ \\
 The game starts with defender being in control of the game, $C_{D}(0)= 1$. 
@@ -45,20 +54,12 @@ The game can be extended by the amount of information that a player receives. It
 \item Knowledge-of-strategy (KS): The player finds out the complete information of the strategy that the opponent is playing.
 \end{itemize}
 
-In our assumption the strategy of both players will be non-adaptive. None of the players has information of the strategy of the opponent. 
+In our analyses of the FlipIt game with a virus propagation in section [], we assume the strategy of both players to be non-adaptive. None of the players has information of the strategy of the opponent. The defender will never know when the attacker will attack the network with a virus. Conversely, the attacker does not know how often the defender defends his network. 
 
-
-\begin{figure}[hbtp]
-\centering
-\includegraphics[scale=0.25]{Images/FlipItDefault.jpg}
-\caption{The FlipIt game where both players are playing periodically}
-\label{fig:FLipItDefault}
-\end{figure}
-\todo{verwijzen naar de figuur \ref{fig:FLipItDefault}}
 
 \subsection{Strategies}
  
- In this subsection we go through the strategies used in FlipIt and the most important results. 
+ In this subsection we elaborate about the strategy of FlipIt . For the other strategies of FlipIt we refer the reader to [the paper of FlipIt]
  \begin{table}
  \centering
  \begin{tabular}{ l | c  }
@@ -231,11 +232,7 @@ The final section of the chapter gives an overview of the important results
 of this chapter. This implies that the introductory chapter and the
 concluding chapter don't need a conclusion.
 
-\section{Extensions on FlipIt}
 
-
-There a various possible ways to extend \flip{FlipIt}. For instance Laszka et al. extended the basic \flip{FlipIt} game to multiple resources. The incentive is that for compromising a system in a real case it needs more than just taking over one resource. An example is gaining access to a system and breaking the password. The model is called FlipThem \cite{FlipThem}. Two ways of flipping the resources are used: the AND and the OR control model. In the AND model the attacker only controls the system if he controls all the resources of the system, whereas in the OR model the attacker only needs to compromise one resource to be in control of the entire system. The difference with FlipThem and this paper is that we introduce a Graph Model in the beginning.\\
-Another extension on FlipIt is done by Pham\cite{GameTheorApprCostBenefitAnalyses} [\todo{citatie needed voor Are We Compromised?}]. Beside the action Flip their is another action Test. The basic idea is to test with an extra action if the resource has been compromised or not. This action involves also an extra cost. This model is useful if somebody wants to know for example if his password has been compromised or wants to assess the periodic security of a system.  In \cite{MitigationCovert} \cite{MitigationNonTargeted} Laszka et al. they also consider non targeted attacks by non-strategic players and \todo{verder aanvullen}. \\
 
 %%% Local Variables: 
 %%% mode: latex

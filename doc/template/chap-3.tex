@@ -1,19 +1,29 @@
-\chapter{Intoduction to GameTheory}
+\chapter{Related work}
 \label{cha:1}
 
 
-\section{Gametheory}
 
-Game theory is the study between self interested agents and the actions they perform. self interested agents means not that they want to harm each other or that they only care about themselves. Agent has a description of the world he likes. A utility function is a mapping of the world that the agent likes to real numbers. 
-
-
-\section{Literatuurstudie}
+\section{Related work}
 
 Difference with FlipThem: sub part of nodes for control and strategy difference: dependant of grade of the nodes, instead of just periodic.
 - Literatuurstudie
 - Flipit
 - Game Motivation
 - Formal definition
+
+\section{Extensions on FlipIt}
+
+In this section we discuss the extentions that can be made on the FlipIt game. 
+
+
+There a various possible ways to extend \flip{FlipIt}. 
+Laszka et al. made a lot of additions and extensions on the original game of FlipIt. For instance Laszka et al. extended the basic \flip{FlipIt} game to multiple resources. The incentive is that for compromising a system in a real case it needs more than just taking over just one resource. An example is that one resource can be gaining access to a system and breaking the password of the system is another resource. The model is called FlipThem \cite{FlipThem}. They use two ways to flip the multiple resources: the AND and the OR control model. In the AND model the attacker only controls the system if he controls all the resources of the system, whereas in the OR model the attacker only needs to compromise one resource to be in control of the entire system. %The difference with FlipThem and this paper is that we introduce a Graph Model in the beginning.\\
+Another addition of Laszka et al. to the game of FlipIt is extending the game to also consider non-targeted attacks by non-strategic players. In this game the defender tries to maintain control over the resource that is subjected to both targeted and non-targeted attacks.
+
+A last important addition from Laszka et al. to the game of FlipIt is   The moves made by the attacker are still covert but the moves made by the defender are known to the attacker. This means that the attacker can base his attacks on the defender's moves. Both the targeted and non-targeted attacks don't succeed immidiatly. For the targeted attack the time till it succeeds is given by an exponential distributed random variable with a known rate. The non-targeted attacks are modelled as a single attacker and the time till it succeeds is given by a Poisson process.\todo{misschien meer uitleggen}. The conclusion of this paper is that the optimal strategy for the defender is moving periodically. 
+ 
+
+on FlipIt is done by Pham\cite{GameTheorApprCostBenefitAnalyses} [\todo{citatie needed voor Are We Compromised?}]. Beside the action Flip their is another action Test. The basic idea is to test with an extra action if the resource has been compromised or not. This action involves also an extra cost. This model is useful if somebody wants to know for example if his or her password has been compromised or wants to assess the periodic security of a system.  In \cite{MitigationCovert} \cite{MitigationNonTargeted} Laszka et al. they also consider non targeted attacks by non-strategic players and \todo{verder aanvullen}. \\
 
 
 \begin{description}
