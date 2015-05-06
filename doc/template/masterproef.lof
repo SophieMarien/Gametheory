@@ -14,10 +14,21 @@
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Graphic representation of some of the notations}}{7}{figure.2.1}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Taking the modulo of a negative number}}{8}{figure.2.2}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Example for calculating the control unit in interval 3 for a FlipIt game with period defender = 1 and period attacker = pi}}{9}{figure.2.3}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Difference in a FlipIt game between delay caused by a virus and a phase bigger than zero for the Attacker}}{12}{figure.2.4}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The FlipIt game where both players are playing periodically}}{11}{figure.3.1}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Difference in a FlipIt game between delay caused by a virus and a phase bigger than zero for the Attacker}}{30}{figure.8.1}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Defining unit of control}}{31}{figure.8.2}
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {10.1}{\ignorespaces Graphic representation of some of the notations}}{39}{figure.10.1}
+\contentsline {figure}{\numberline {10.2}{\ignorespaces Taking the modulo of a negative number}}{40}{figure.10.2}
+\contentsline {figure}{\numberline {10.3}{\ignorespaces Example for calculating the control unit in interval 3 for a FlipIt game with period defender = 1 and period attacker = pi}}{41}{figure.10.3}
+\contentsline {figure}{\numberline {10.4}{\ignorespaces Difference in a FlipIt game between delay caused by a virus and a phase bigger than zero for the Attacker}}{44}{figure.10.4}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
