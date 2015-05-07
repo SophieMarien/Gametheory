@@ -1,277 +1,37 @@
-\chapter{FlipIt game with virus propagation}
-\label{cha:1}
+\chapter{Introduction}
+\label{cha:10}
 %\documentclass[10pt]{article}
 %\begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%			Introduction Chapter 1				%%%%%%
+%%%%%			Introduction Chapter 10			%%%%%%
 %%%%%												%%%%%%
 %%%%%												%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
- \subsection{Actions of the attacker}
-A virus has different kind of ways of making his way through a company network. We will describe the different ways of how the virus can propagate. For start we will say that the virus or worm will be dropped on Node i and that it has k numbers of neighbours. 
-\begin{enumerate}
-\item Node i is infected and will spread the virus or worm to every k neighbours and will stop infecting the neighbours in the next step
-\item Node i is infected and will spread the virus or worm to every k neighbours and will keep on spreading the virus to the same neighbours in every next step
-\item Node i is infected and will spread the virus to only one of the k neighbours and will stop infecting another neighbour in the next step
-\item Node i is infected and will spread the virus to only one of the k neighbours and in the next step it will infect another one of the k neighbours 
-\end{enumerate}
+\section{Introduction}
 
-In the game that will be modelled in the paper we will use the settings of the first spreading method. We will not use method 2 because this kind of propagation will float the network. Because we use the settings of a mail system and contact in a mailing list the method of 3 and 4 are not used. \\
-In the first method the node that has been infected can be again infected. If one of the neighbours infects the node again the node will infect his neighbours again. By using this spreading method we have three distinct states in which a node can be situated. An \textit{infected state}, a \textit{clean state} and a \textit{spreading state}. An infected state means that the node is infected and will not spread the virus to its neighbours, a clean state means that the node is not infected on that moment and a spreading state means that the node is infected and that it will spread the virus or worm to its neighbours in the next step.
-We can argument this kind of propagation through a mail worm. \todo{voorbeeld geven van zo een worm}
-%Another propagation method is that the virus works as a token. It will propagate to only one neighbour and continue to spread. 
+%  Situation
+%  Complication
+%  Question
+%  Answer
 
-The Attacker itself has two different ways of attacking the company network. It will only infected one node of the network and will wait for the virus to spread itself through the network. We will model two ways of attacks of an Attacker:
-\begin{enumerate}
-\item The attacker drops the virus on a random node on the network
-\item The attacker drops the virus on a targeted node on the network
-\end{enumerate}
-The attacker in this game will put a virus or worm on one of the nodes in the network. (This will happen at random.) The attacker does not know on which node the virus will be dropped. We will use this randomness because \todo{feit uit security rapport symantec} most viruses are spread via a usb stick or a shared resource. If we use this spreading method where we have a targeted attack the attacker will have more information about the network. \\
+% woorden die in introductie moeten voorkomen: Game theory, cybersecurity, APT, FlipIt, virus propagation
 
-The attacker can choose at which rate it will drop a virus on one of the nodes on the network. The cost of dropping a virus will be the same. It will not increase. If it will increase this means that the attacker will eventually drop out of the game because it becomes to expensive.\\
-The attacker is in control over the game if it manages to infect a subset of all the resources of the company network.
+% -- Situation -- %
+In this era where digitalization becomes prominent in every aspect of our lives, where technology is growing fast and where business are always under attack, security becomes an issue of increasing complexity. Without security, their is no protection to keep somebody out of a system. It is the same as leaving the door of your house open for everybody to come in. It is important to keep a system secure. \todo{waarom? :  lekken van informatie, DOSS attacks, ..} A hacker will be a person that seeks exploits or weaknesses in a system or network, to be able to gain access.  Many of those attacks have a different cause. Some of the attacks by a hacker can be benign, others can be harmful. Their are variant ways to break into a system. 
 
+% -- Complication -- %
+It is difficult to protect a system or network against all this variant threats. 
+Game theory is more and more used to model Cyber Security. Game theory analyses in this case a game where the interactions are between an attacker and a defender of a system, where both players have to make decisions. Both players want to .. 
+%-- Question -- %
+In this paper we want to focus on situations where a computer network is attacked by APT. These threats will infect the network by means of a virus that will propagate through the network. 
 
-\subsection{Actions of the defender}
-The attacker wants to protect all the nodes of his network. It can do so by getting back control over the resources. We will assume that the defender of the network has knowledge over his own network. Which is convenient in the real world because a company has to know how his infrastructure looks like.\\
+% -- Anwer -- %
+We propose an addition to the basic FlipIt model to model a scenario where the moves by the attacker will not be instantaneous. Next we analyse what the new Nash equilibria will be and .. 
 
-The defender has two possible ways of defending its network:
-\begin{enumerate}
-\item The defender flips all the nodes of his network
-\item The defender will flip a subset of the nodes of his network
-\end{enumerate}
-
-The cost of flipping all the nods of the network will be greater than the cost of flipping a subset of nodes. We make this assumption because otherwise it will be beneficial for the defender to always flip all the nodes in the network.\\
-
-We will also make the assumption that as a defender flips a node the node can get infected again. A flip will not be  correlated to a patch but to a clean-up. \todo{waarom geen patch, wormen kunnen veranderen gaandeweg}
-\todo{andere mogelijkheid:} Another setting of the game can be that the flip of the defender is equal to a patch and that the resource cannot be infected any more. But with this case we deviate from the flipIt game, because the attacker cannot flip the resource any more. Unless we work with different virusses every time the attacker flips. We start with the less complex game of flipping is equal to a clean-up.
-
-\subsection{Strategies of both players}
-We explained what the actions of each player are. 
-
-\section{Formal definition Game}
-
-In this section we provide a formal definition of the game and the notation that we will use throughout the paper. 
-
-\begin{description}
-% ---- PLAYERS ---- %
-\item \textit{Players}  There are two players in the game, one is the defender and the other one is the attacker. They are respectively identified by 0 and 1.
-
-% ---- TIME ---- %
-\item \textit{Time}  The game starts at $t=0$ and continuous indefinitely as $t \rightarrow \infty$. The game is a continuous game.
-
-% ---- GRAPH ---- %
-\item \textit{Graph} We represent the company network as a Graph $G = < V,E>$. G is an ordered pair where V denotes the set of resources or nodes in the network and E denotes the set of connections or links, which are a two-element subset of V. We use the notations resources and nodes interleaving in this paper.\\
-We have N resources in the network. $N \in $  \todo{aanvullen}. This means we can denote the resources by:
-\begin{center}
-$V \in {V_{0}, V_{1}, V_{2}, ... , V_{N} }$
-\end{center}
-The set E of connections indicates if there is a link between two resources. We see the links as bidirectional so the total graph is undirected. If there is a link between resource $V_{n}$ and $V_{n+1}$ then there is also a link between $V_{n+1}$ and $V_{n}$. 
-
-% ---- GAME STATE ---- %
-\item \textit{Game State} There is also a time-dependent variable that represents the state of the game. $C=C(t)$ is either 0 if the game is under control by the defender and 1 if the Game is under control by the attacker. \\
-We start at $t=0$ with the defender who has control over the game. We do this because we assume that the defender will only put the network online without having a virus or worm in it. The Attacker can gain control over the game when it compromises a subset \textit{s} of the resources. The subset \textit{s} is a minimum of 1 resource and a maximum of all the resources N. \\
-\todo{deze variabele nodig ja of nee ? JA} We can also define the state of each resource by $C^{A}_{N}$ and $C^{D}_{N}$. If $C^{A}_{N} = 1$ then this means that the attacker has control over the resource, and 0 otherwise. For $C^{D}_{N}$ it is visa versa, $C^{D}_{N} = 1 - C^{A}_{N}$.\\
-
-% ---- MOVES ---- %
-\item \textit{Moves} Both players can make a move in the game. Moves done in a finite numbers of time in any finite time interval. Both players can play at any time they want, they can also play at the same time. If this happens the one that has control over the resource will keep having control over the resource.
-This makes the game fully symmetric \todo{beter uitleggen}. The sequence of move times are denoted by the following infinite sequence:
-\begin{center}
-$t=t_{1},t_{2},t_{3},..$
-\end{center}
-Two move times can be the same because we allow players to move at the same time.
-We can also denote the infinite sequence of times when player \textit{i}  moves. We write this as :
-\begin{center}
-$t=t_{i,1},t_{i,2},t_{i,3},..$ with \textit{i} $ \in $ $\lbrace 0,1 \rbrace$
-\end{center}
-The sequences $t_{1}$ and $t_{0}$ are disjoint subsets of the sequent t. 
-We can also denote who made the \textit{k}th move by defining a sequence \textit{p} that denotes the sequence of who played:
-\begin{center}
-$p=p_{1},p_{2},p_{3}, .. $ with $p_{k}$ $\in$ $\lbrace 0,1 \rbrace$
-\end{center}
-
-% ---- NUMVER OF MOVES ---- %
-\item \textit{Number of moves}  $n_{i}(t$ denotes the number of moves made by player \textit{i} up to and including time t. This means that 
-\begin{center}
-$n(t)=n_{1}(t) + n_{0}(t)$
-\end{center}
-is the sum of the number of moves made by the defender and the attacker up to and including time t. 
-
-% ---- AVERAGE MOVE RATE ---- %
-\item \textit{Average move rate} We denote $\alpha_{i}(t)$ as the average move rate by player i:
-\begin{center}
-$\alpha_{i}(t) = n_{i}(t)/t$ with $t > 0$ and \textit{i} $ \in $ $\lbrace 0,1 \rbrace$
-\end{center}
-
-% ---- PERIOD ---- %
-\item \textit{Period} We can also define the period in terms of the average move rate:
-\begin{center}
-$\delta_{i}=1/\alpha_{i}$
-\end{center}
-
-% ---- WHO PLAYED LAST ---- %
-\item \textit{Who played last} We know who played last by taking the modulo with the period. $Z_{i}$ represents the time since the last flip of player i. We can also denote the time since the last flip of player i on resource r by $Z_{i}^{N}$. 
-For a non adaptive game, period deterministic: At time $t=n$ is $Z_{i} = n mod i$.  \todo{er kan nog steeds tegelijk geflipt zijn maar dan hebben ze wel geflipt}.
-
-
-% ---- COST ---- %
-\item \textit{Cost} The cost is an important property of the game. In FlipIt for every player the cost of a move is denoted by $k_{i}$. These costs can be very different for every player. In this game we denote the players flipping cost for resource $V_{N}$ by $c_{i}^{V_{N}}$. \\
-For the defender the cost will be either the cost of flipping every resource or the cost of flipping a subgroup of the resources.\\
-For the attacker the cost will be the cost of dropping a virus on a node. The spreading of the virus will not imply an extra cost. 
-
-% ---- UTILITY/ GAIN ---- %
-\item \textit{Utility} In FlipIt the Gain definition is the utility function. The Gain denotes the total time a player i has gained control over a resource. \todo{nu gain van een resource, moet voor verschillende resources zijn}
-The Gain $G_{i}$ denotes players \textit{i} total gain of a game, which is the total time the player has gained control over a subset of resources thus controlling the game. This is denoted by the following:\\
-\begin{center}
-$G_{i}(t) = \int^{t}_{0} C_{i}(x) dx$ 
-\end{center}
- If we sum up the total Gain of the attacker and the defender we end up with the time:
-\begin{center}
-$G_{1}(t) + G_{0}(t) = t$
-\end{center}
-
-% ---- AVERAGE GAIM RATE ---- %
-\item \textit{Average gain rate} The average gain rate for player i is defined as
-\begin{center}
-$\gamma_{i}(t)= G_{i}(t)/t$
-\end{center}
-
-\subsection{Formal definition}
-\begin{description}
-\item \textit{Graph Matrix} We represent the graph of the network through a matrix $ A = |V| \times |V|$. The (i,j)-entry of the matrix A will have a 1 if there is a connection between node $V_{i}$ and node $V_{j}$. If we are working with an undirected graph the matrix will be symmetric. 
-\item \textit{Attack Vector} We denote $X = 1 \times |V|$ as the attack vector. It will be a vector with only zeros. The attacker will place a virus on a node V. This will be denoted by the Vth entry in the vector that is changed by a 1.
-\item \textit{Reset vector} The reset vector will make sure that the right entries in the matrix become zero. If the defender flips every node every time it flips then the attack vector will be 0.
-\item \textit{Cummulative Matrix} This matrix will keep record of the propagation of the virus through the network.
-\item \textit{State Matrix} The State matrix $T(t) = 1 \times |V| $ will keep at every time t the state of the game and denote which node at time t is infected with the virus. At time $t=0$ the State Matrix will be the null matrix.
-\end{description}
-De eerste infectie is de attack vector * Graph matrix . 
-\end{description}
-
-
-\section{Conclusion}
-The final section of the chapter gives an overview of the important results
-of this chapter. This implies that the introductory chapter and the
-concluding chapter don't need a conclusion.
-
-%
-%In the following paragraph an introduction to game theory is given based on the work of \cite{leyton2008essentials} and \cite{Coursera}. For a more detailed and full introduction to game theory, the reader is referred to \cite{leyton2008essentials}.
-%%------------------------------------------------%
-%%            Intro Game Theory 					 %
-%%------------------------------------------------%
-%\section{Intro Game Theory}
-%\label{Cha:1:Intro.Game.Theory}
-%
-%%begin over dat gametheorie handig is in de economie
-%Game theory studies the interaction between independent and self-interested agents. It is a mathematical way of modelling the interactions between two or more agents where the outcomes depend on what everybody does and how it should be structured to lead to good outcomes. For this reason it is very important for economics and also for politics, biology, computer science, philosophy and a variety of other disciplines.  \\
-%%Every agent has different levels of happiness for the different outcomes.
-%%self interested meaning
-%
-%One of the assumptions underlying game theory is that the players of the game, the agents, are independent and self-interested. This does not necessarily mean that they want to harm other agents or that they only care about themselves. 
-%%utility function meaning 
-%Instead it means that each agent has preferences about the states of the world he likes. These preferences are mapped to natural numbers and are called the utility function. The numbers are interpreted as a mathematical measure to tell you how much an agent likes or dislikes the states of the world. \\
-%It also explains the impact of uncertainty. When an agent is uncertain about a distribution of outcomes, his utility will describe the expected value of the utility function with respect to the probability of the distribution of the outcomes. For example: with 0.7 probability it will be 7 degrees outside and with 0.3 probability it will be 10 degrees. The agent can have a different opinion about that distribution versus another distribution. (\todo{uitleggen aan de hand van een voorbeeld}).\\
-%%Cooperative and non cooperative games
-%In a decision game theoretic approach an agent will try to act in such a way to maximise his expected or average utility function. It becomes more complicated when two or more agents want to maximise their utility and whose actions can affect each other utilities. This kind of games are referred to as non cooperative game theory, where the basic modelling unit is the group of agents. The individualistic approach, where the basic modelling is only one agent, is referred as cooperative game theory. 
-%
-%There are two standard representations for games. The first one is the Normal Form. The second one is the Extensive Form.
-%
-%In the following lists a couple of terms that will be used throughout the paper.
-%\begin{description}
-%\item \textit{Players}: players are referred as the ones who are the decision makers. It can be a person, a company or an animal.
-%\item \textit{Actions}: actions are what the player can do. 
-%\item \textit{Outcomes}:  
-%\item \textit{Utility function}: the utility function is the mapping of the level of happiness of an agent about the state of the world to natural numbers.
-%\item \textit{Strategies}: A strategy is the combination of different actions. A pure strategy is only one action.
-%\end{description}
-%
-%A game in game theory consists of multiple agents and every agent has a set of actions that he can play. 
-%
-%
-%
-%%Nash equilibrium
-%
-%
-%
-%% --------------- example of a game -----------------%
-%
-%
-%%------------------------------------------------%
-%%            Intro about virusses				 %
-%%------------------------------------------------%
-%\section{Virusses}
-%
-%Many network security threats today are spread over the Internet. The most common include:
-%
-%Viruses, worms, and Trojan horses
-%Spyware and adware
-%Zero-day attacks, also called zero-hour attacks
-%Hacker attacks
-%Denial of service attacks
-%Data interception and theft
-%Identity theft
-%
-%%http://www.ists.dartmouth.edu/library/258.pdf Email Virus Propagation Modeling and Analysis
-%%Cliff C. Zou∗, Don Towsley†, Weibo Gong∗
-%%∗Department of Electrical & Computer Engineering
-%%†Department of Computer Science
-%%Univ. Massachusetts, Amherst
-%%Technical Report: TR-CSE-03-04
-%
-%Computer virus through mail. 
-%Though virus spreading through email is an old technique, it is still effective and is widely used by
-%current viruses and worms. Sending viruses through email has some advantages that are attractive to
-%virus writers:
-% Sending viruses through email does not require any security holes in computer operating systems
-%or software.
-% Almost everyone who uses computers uses email service.
-% A large number of users have little knowledge of email viruses and trust most email they receive,
-%especially email from their friends [28][29].
-% Email are private properties like post office letters. Thus correspondent laws or policies are required
-%to permit checking email content for detecting viruses before end users receive email [18].
-%
-%Send a email with malicious attachment. Only again infected if attachment again opened. Thus this is the action of attacking every neighbour node + also can attack again the node where the virus was coming from.
-%There are also email viruses were the malicious program is hidden in the txt and the attachment does not need to be opened. 
-%
-%%http://www.cisco.com/web/offer/gist_ty2_asset/Cisco_2014_ASR.pdf p49
-%%http://repo.hackerzvoice.net/depot_madchat/vxdevl/papers/avers/2004-35.pdf
-%%http://www.mcafee.com/us/resources/white-papers/foundstone/wp-managing-malware-outbreak.pdf
-%
-%
-%
-%\subsection{Malware}
-%%Does a company network faces lot of malware? what is the cost ?
-%Relevant researches:
-%\begin{itemize}
-%%http://ants.iis.sinica.edu.tw/3BkMJ9lTeWXTSrrvNoKNFDxRm3zFwRR/17/04483668.pdf
-%\item How Viruses and worm can be detected. Difference between UDP en TCP worm propagation. Difference for the propagation speed. 
-%\end{itemize}
-%
-%
-%
-%Purpose thesis: model a worm propagation with adaptations of Flip-It. Flip-It cannot address the evaluation of individual nodes. Flip-It with multiple resources has not addressed the fact that a virus does not need to compromise the whole network. A subpart of the network can already cause problems for the company. Data leackages. 
-%So the virus can propagate 
-%
-%
-%=======
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%			Conclusion Chapter 1				%%%%%%
-%%%%%%												%%%%%%
-%%%%%%												%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%\section{Conclusion}
-%\label{Cha:1:Conclusion}
-%The final section of the chapter gives an overview of the important results
-%of this chapter. This implies that the introductory chapter and the
-%concluding chapter don't need a conclusion.
-%
-%
 %%%% Local Variables: 
 %%%% mode: latex
 %%%% TeX-master: "thesis"
 %%%% End: 
 
-%\end{document}
