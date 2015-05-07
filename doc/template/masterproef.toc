@@ -32,25 +32,23 @@
 \contentsline {section}{\numberline {4.1}Related work}{15}{section.4.1}
 \contentsline {section}{\numberline {4.2}Extensions on FlipIt}{15}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}What can be done in further research}{16}{subsection.4.2.1}
-\contentsline {section}{\numberline {4.3}Conclusion}{16}{section.4.3}
-\contentsline {section}{\numberline {4.4}Why Game Theory to model security problem}{16}{section.4.4}
-\contentsline {section}{\numberline {4.5}..}{16}{section.4.5}
-\contentsline {chapter}{\chapternumberline {5}APT}{17}{chapter.5}
-\contentsline {section}{\numberline {5.1}Advanced Persistent Threats}{17}{section.5.1}
-\contentsline {chapter}{\chapternumberline {6}FlipIt with virus propagation }{19}{chapter.6}
-\contentsline {section}{\numberline {6.1}FlipIt vs FlipIt with virus propagation}{19}{section.6.1}
-\contentsline {section}{\numberline {6.2}Gain formula for a FlipIt game without virus propagation}{20}{section.6.2}
-\contentsline {subsubsection}{Computing the gain for an attacker of a normal FlipIt game}{21}{section*.33}
-\contentsline {section}{\numberline {6.3}Gain and benefit formula for a FlipIt game with virus propagation}{25}{section.6.3}
-\contentsline {subsubsection}{Computing the benefit of a FlipIt game with virus propagation}{27}{section*.36}
-\contentsline {chapter}{\chapternumberline {7}Formula}{29}{chapter.7}
-\contentsline {section}{\numberline {7.1}Explaining difference between FlipIt with and without virus propagation}{29}{section.7.1}
-\contentsline {section}{\numberline {7.2}Benefit for FlipIt game with virus propagation}{30}{section.7.2}
-\contentsline {section}{\numberline {7.3}something}{31}{section.7.3}
-\contentsline {chapter}{\chapternumberline {8}The Final Chapter}{35}{chapter.8}
-\contentsline {section}{\numberline {8.1}chap}{35}{section.8.1}
-\contentsline {chapter}{\chapternumberline {9}Conclusion}{37}{chapter.9}
-\contentsline {section}{\numberline {9.1}trala}{37}{section.9.1}
+\contentsline {section}{\numberline {4.3}Conclusion}{17}{section.4.3}
+\contentsline {section}{\numberline {4.4}Why Game Theory to model security problem}{17}{section.4.4}
+\contentsline {section}{\numberline {4.5}..}{17}{section.4.5}
+\contentsline {chapter}{\chapternumberline {5}APT}{19}{chapter.5}
+\contentsline {section}{\numberline {5.1}Advanced Persistent Threats}{19}{section.5.1}
+\contentsline {chapter}{\chapternumberline {6}FlipIt with virus propagation }{21}{chapter.6}
+\contentsline {section}{\numberline {6.1}FlipIt vs FlipIt with virus propagation}{21}{section.6.1}
+\contentsline {section}{\numberline {6.2}Gain formula for a FlipIt game without virus propagation}{22}{section.6.2}
+\contentsline {subsubsection}{Computing the gain for an attacker of a normal FlipIt game}{23}{section*.33}
+\contentsline {section}{\numberline {6.3}Gain and benefit formula for a FlipIt game with virus propagation}{27}{section.6.3}
+\contentsline {subsubsection}{Computing the benefit of a FlipIt game with virus propagation}{29}{section*.36}
+\contentsline {chapter}{\chapternumberline {7}Formula}{31}{chapter.7}
+\contentsline {section}{\numberline {7.1}Explaining difference between FlipIt with and without virus propagation}{31}{section.7.1}
+\contentsline {section}{\numberline {7.2}Benefit for FlipIt game with virus propagation}{32}{section.7.2}
+\contentsline {section}{\numberline {7.3}something}{33}{section.7.3}
+\contentsline {chapter}{\chapternumberline {8}Conclusion}{37}{chapter.8}
+\contentsline {section}{\numberline {8.1}trala}{37}{section.8.1}
 \contentsline {appendix}{\chapternumberline {A}The First Appendix}{41}{appendix.A}
 \contentsline {section}{\numberline {A.1}More Lorem}{41}{section.A.1}
 \contentsline {appendix}{\chapternumberline {B}The Last Appendix}{43}{appendix.B}

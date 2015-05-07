@@ -13,17 +13,21 @@ Difference with FlipThem: sub part of nodes for control and strategy difference:
 
 \section{Extensions on FlipIt}
 
-In this section we discuss the extentions that can be made on the FlipIt game. 
+In this section we discuss the extentions that can be made on the FlipIt game. \\
 
 
 There a various possible ways to extend \flip{FlipIt}. 
-Laszka et al. made a lot of additions and extensions on the original game of FlipIt. For instance Laszka et al. extended the basic \flip{FlipIt} game to multiple resources. The incentive is that for compromising a system in a real case it needs more than just taking over just one resource. An example is that one resource can be gaining access to a system and breaking the password of the system is another resource. The model is called FlipThem \cite{FlipThem}. They use two ways to flip the multiple resources: the AND and the OR control model. In the AND model the attacker only controls the system if he controls all the resources of the system, whereas in the OR model the attacker only needs to compromise one resource to be in control of the entire system. %The difference with FlipThem and this paper is that we introduce a Graph Model in the beginning.\\
-Another addition of Laszka et al. to the game of FlipIt is extending the game to also consider non-targeted attacks by non-strategic players. In this game the defender tries to maintain control over the resource that is subjected to both targeted and non-targeted attacks.
+Laszka et al. made a lot of additions and extensions on the original game of FlipIt. For instance Laszka et al. extended the basic \flip{FlipIt} game to multiple resources. The incentive is that for compromising a system in a real case it needs more than just taking over just one resource. An example is that one resource can be gaining access to a system and breaking the password of the system is another resource. The model is called FlipThem \cite{FlipThem}. They use two ways to flip the multiple resources: the AND and the OR control model. In the AND model the attacker only controls the system if he controls all the resources of the system, whereas in the OR model the attacker only needs to compromise one resource to be in control of the entire system. \\
+%The difference with FlipThem and this paper is that we introduce a Graph Model in the beginning.\\
+Another addition of Laszka et al. to the game of FlipIt [mitigating covert compromises] is extending the game to also consider non-targeted attacks by non-strategic players. In this game the defender tries to maintain control over the resource that is subjected to both targeted and non-targeted attacks. Non-targeted attacks can include phishing, while targeted attacks may include threats delivered through zero day attack vulnerabilities. \\
+One of the last important addition from Laszka et al. [Mitigation of Targeted and] is to consider a game where the moves made by the attacker are still covert but the moves made by the defender are known to the attacker. This means that the attacker can base his attacks on the defender's moves. Both the targeted and non-targeted attacks don't succeed immidiatly. For the targeted attack the time till it succeeds is given by an exponential distributed random variable with a known rate. The non-targeted attacks are modelled as a single attacker and the time till it succeeds is given by a Poisson process.\todo{misschien meer uitleggen}. The conclusion of this paper is that the optimal strategy for the defender is moving periodically. \\ 
 
-A last important addition from Laszka et al. to the game of FlipIt is   The moves made by the attacker are still covert but the moves made by the defender are known to the attacker. This means that the attacker can base his attacks on the defender's moves. Both the targeted and non-targeted attacks don't succeed immidiatly. For the targeted attack the time till it succeeds is given by an exponential distributed random variable with a known rate. The non-targeted attacks are modelled as a single attacker and the time till it succeeds is given by a Poisson process.\todo{misschien meer uitleggen}. The conclusion of this paper is that the optimal strategy for the defender is moving periodically. 
- 
+Other authors used the FlipIt game to apply it on a specific scenario. To be able to use the FlipIt game, modifications where required for the FlipIt model.
+One of the scenarios by Pham\cite{GameTheorApprCostBenefitAnalyses} [\todo{citatie needed voor Are We Compromised?}] was to find out whether a resource was compromised or not by the attacker. This could be verified by the defender, who has an extra move "test" beside the flip move. The basic idea is to test with an extra action if the resource has been compromised or not. This move involves also an extra cost. This model is useful if somebody wants to know for example if his or her password has been compromised.   \\
 
-on FlipIt is done by Pham\cite{GameTheorApprCostBenefitAnalyses} [\todo{citatie needed voor Are We Compromised?}]. Beside the action Flip their is another action Test. The basic idea is to test with an extra action if the resource has been compromised or not. This action involves also an extra cost. This model is useful if somebody wants to know for example if his or her password has been compromised or wants to assess the periodic security of a system.  In \cite{MitigationCovert} \cite{MitigationNonTargeted} Laszka et al. they also consider non targeted attacks by non-strategic players and \todo{verder aanvullen}. \\
+Finally researchers also have investigated the behavioural of humans when playing FlipIt. A Nochenson and Grossklags [A behavioural investigation of the FlipIt game]  investigate how people really act when given temporal decisions. [Risk-seeking in a continuous game of timing] Reitter et al. they observe continuous games, 20-seconds FlipIt game..
+
+
 
 
 \begin{description}
@@ -51,7 +55,6 @@ Actors in a security protocol must follow the systems and some arbitrarily actor
 Flip-it. Some authors have written other papers about flipit. One of them is the [Game theoretic approach for cost-benefit analysis of malware proliferation prevention]. 
 
 
-Company networks are targeted. It costs a lot. They want to defend their company networks. No loss of data, integrity and confidentiality.  Many ways to attack a company. Viruses, Trojans, worms, DOS, .. Hard to protect against every attacker.
 
 
 %%% Local Variables: 
