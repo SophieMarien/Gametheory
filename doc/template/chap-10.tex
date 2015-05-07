@@ -19,16 +19,52 @@
 % woorden die in introductie moeten voorkomen: Game theory, cybersecurity, APT, FlipIt, virus propagation
 
 % -- Situation -- %
-In this era where digitalization becomes prominent in every aspect of our lives, where technology is growing fast and where business are always under attack, security becomes an issue of increasing complexity. Without security, their is no protection to keep somebody out of a system. It is the same as leaving the door of your house open for everybody to come in. It is important to keep a system secure. \todo{waarom? :  lekken van informatie, DOSS attacks, ..} A hacker will be a person that seeks exploits or weaknesses in a system or network, to be able to gain access.  Many of those attacks have a different cause. Some of the attacks by a hacker can be benign, others can be harmful. Their are variant ways to break into a system. 
+In this era where digitalization becomes prominent in every aspect of our lives, where technology is growing fast and where business are always under attack, security becomes an issue of increasing complexity. Without security, their is no protection to keep somebody out of a system. It is the same as leaving the door of your house open for everybody to come in. It is important to keep a system secure. \todo{waarom? :  lekken van informatie, DOSS attacks, ..} A hacker will be a person that seeks exploits or weaknesses in a system or network, to be able to gain access.  Many of those attacks have a different cause. Some of the attacks by a hacker can be benign, others can be harmful. Their are variant ways to break into a system. Virusses, worms, spyware and other malware are nr 2 for the top external threats [security report kaspersky 2014]. Furthermore these kind of threat also causes the greatest percentage in loss of data. These threats will infect the network by means of a virus that will propagate through the network. 
 
 % -- Complication -- %
-It is difficult to protect a system or network against all this variant threats. 
-Game theory is more and more used to model Cyber Security. Game theory analyses in this case a game where the interactions are between an attacker and a defender of a system, where both players have to make decisions. Both players want to .. 
+It is difficult to protect a system or a network against APT. 
+Game theory is more and more used to model Cyber Security. Game theory analyses in this case a game where the interactions are between an attacker and a defender of a system, where both players have to make decisions. Both players want to ..  Researchers at RSA made a game theoretic framework to model targeted attacks. Specific for a scenario where a system or network is taken over completely by an attacker repeatedly and this attack is not immediately detected by the defender of the system or network. This game theoretic game "flipit" is a two players game where the attacker and the defender are competing to get control over a shared resource. Both players do not know who is currently in control of the resource until they move. In FlipIt every move gives them immediately control over the resource. But what if the attacker moves and it takes a while before the attacker gets full control over the resource? FlipIt does not take into account that a move may not be instantaneous, but has a certain delay. Take for example as a resource a network with different nodes ( laptops, datacenters). The defender drops a virus on one of the nodes and wait till this virus infects the whole network. The defender will only be in control of the resource if the whole network is infected. This an lead us to the following resaurch questions:
+Gaat er een specieke grootte zijn van een delay waarbij de attacker al weet dat hem niet meer moet gaan spelen ? ( is niet gelijk aan de grootte van de periode van de attacker)
+%Specific research question:
+%-         Is it possible to incorporate the notion of delay in the game-theoretical analysis of the Flip-It game ?
+%
+%-        Can we calculate a Nash Equilibrium for a FlipIt Game with delay ?
+%
+%-        Does this allow us to determine an optimal defense strategy against an attacker ?
+When working with a network and a delay we can .. graph model en uitleggen hoe we de graph kunnen maken zodat de delay altijd zo groot mogelijk gaat zijn. 
+
 %-- Question -- %
-In this paper we want to focus on situations where a computer network is attacked by APT. These threats will infect the network by means of a virus that will propagate through the network. 
+In this paper we want to focus on situations where a computer network is attacked by APT. 
 
 % -- Anwer -- %
 We propose an addition to the basic FlipIt model to model a scenario where the moves by the attacker will not be instantaneous. Next we analyse what the new Nash equilibria will be and .. 
+
+
+%In this paper we want to focus on situations where a computer network is attacked by an APT. These threats will infect the network by means of a virus that will propagate through the network. 
+%ð  Dat is geen vraag.
+%
+% 
+%Kijk naar de opdracht van je thesis. De vraag zou bv. kunnen zijn:
+%General research question: Does the application of game theory help in defining a good defense (or attacker) strategy ?
+%This question is to large, so we reduce the question to …
+%Specific research question:
+%-         Is it possible to incorporate the notion of delay in the game-theoretical analysis of the Flip-It game ?
+%
+%-        Can we calculate a Nash Equilibrium for a FlipIt Game with delay ?
+%
+%-        Does this allow us to determine an optimal defense strategy against an attacker ?
+%
+% 
+%Je matrix-berekening beantwoordt de vraag:
+%-        How can we calcuate the expected duration for a node’s infection/the entire network infection ?
+%
+%-        Can we calculate this node per node ?
+%
+% 
+%Complication
+%Wat je schrijft is veel te algemeen. Maak het heel concreet en toegespitst op jouw specifieke bijdrage ?
+%ð  De complicatie is dat de FlipIt game geen rekening houdt met de delay
+
 
 %%%% Local Variables: 
 %%%% mode: latex
