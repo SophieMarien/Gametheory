@@ -9,13 +9,11 @@
 %%%%%												%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+Gametheory is a mathematical study to analyse interactions between independent and self-interested agents. To get an understanding of the most important concepts of game theory, a short introduction based on the work of 
+\citep{leyton2008essentials} and \todo{Coursera} is given in section 2.1 [] \todo{ref}. For a more detailed and full introduction to game theory, the reader is referred to 
+\todo{leyton2008essentials}.  In section 2.2 [] \todo{ref} an overview of the FlipIt game is given with the definitions and concepts that will be used throughout the paper.
+The last section [] \todo{ref} will cover the extensions and additions already made on FlipIt.
 
-In the following paragraph an introduction to game theory is given based on the work of 
-{leyton2008essentials} 
-and 
-{Coursera}. 
-For a more detailed and full introduction to game theory, the reader is referred to 
-{leyton2008essentials}. 
 %------------------------------------------------%
 %            Intro Game Theory 					 %
 %------------------------------------------------%
@@ -26,7 +24,7 @@ For a more detailed and full introduction to game theory, the reader is referred
 
 %begin over dat gametheorie handig is in de economie
 
-Game theory studies the interaction between independent and self-interested agents. It is a mathematical way of modelling the interactions between two or more agents where the outcomes depend on what everybody does and how it should be structured to lead to good outcomes. For this reason it is very important for economics and also for politics, biology, computer science, philosophy and a variety of other disciplines.  \\
+Game theory studies the interaction between independent and self-interested agents. It is a mathematical way of modelling the interactions between two or more agents where the outcomes depend on what everybody does and how it should be structured to lead to good outcomes. For this reason it can be very useful in economics and also in other branches as politics, biology, computer science, philosophy and a variety of other disciplines.  \\
 %Every agent has different levels of happiness for the different outcomes.
 %self interested meaning
 
@@ -36,17 +34,17 @@ Instead it means that each agent has preferences about the states of the world h
 It also explains the impact of uncertainty. When an agent is uncertain about a distribution of outcomes, his utility will describe the expected value of the utility function with respect to the probability of the distribution of the outcomes. For example: with 0.7 probability it will be 7 degrees outside and 0.3 probability it will be 10 degrees. The agent can have a different opinion about that distribution versus another distribution. (\todo{uitleggen aan de hand van een voorbeeld}).\\
 \todo{players rationeel en max outcomes}
 %Cooperative and non cooperative games
-In a Decision Game Theoretic Approach an agent will try to act in such a way to maximise his expected or average utility function. It becomes more complicated when two or more agents want to maximise their utility and whose actions can affect each other utilities. This kind of games are referred to as non cooperative game theory, where the basic modelling unit is the group of agents. The individualistic approach, where the basic modelling is only one agent, is referred as cooperative game theory. 
+In a Decision Game Theoretic Approach an agent will try to act in such a way to maximise his expected or average utility function. It becomes more complicated when two or more agents want to maximise their utility and whose actions can affect each other utilities. This kind of games are referred to as non-cooperative game theory, where the basic modelling unit is the group of agents. The individualistic approach, where the basic modelling is only one agent, is referred as cooperative game theory. 
 
-There are two standard representations for games. The first one is the Normal Form. The second one is the Extensive Form.
+%There are two standard representations for games. The first one is the Normal Form. The second one is the Extensive Form.
 
 In the following list a couple of terms that will be used throughout the paper.
 \begin{description}
-\item \textit{Players}: players are referred as the ones who are the decision makers. It can be a person, a company or an animal. 
-\item \textit{Actions}: actions are what the player can do. 
-\item \textit{Outcomes}:  
-\item \textit{Utility function}: the utility function is the mapping of the level of happiness of an agent about the state of the world to natural numbers.
+\item \textit{Players}: Players are referred as the ones who are the decision makers. It can be a person, a company or an animal.  (they will act rational )
+\item \textit{Actions}: Every player has actions that he or he can do. 
 \item \textit{Strategies}: A strategy is the combination of different actions. A pure strategy is only one action.
+\item \textit{Utility function}: The utility function is the mapping of the level of happiness of an agent about the state of the world to natural numbers.
+
 \end{description}
 
 A game in game theory consists of multiple agents and every agent has a set of actions that he can play. 
@@ -56,9 +54,21 @@ A game in game theory consists of multiple agents and every agent has a set of a
 %Nash equilibrium
 
 %John Nash speelde ook een grote rol in de geschiedenis van de speltheorie. Hij is een van de wiskundigen geweest die speltheorie geformaliseerd heeft. Het Nash evenwicht werd naar hem vernoemd. Een Nash evenwicht wordt gezien als een evenwicht tussen beide spelers zodat ze allebei de beste tactiek kiezen en niet meer veranderen als de andere van tactiek veranderen. John Nash breide de theorie over het Nash evenwicht in een paper nog uit met gemengde strategieën. In 1994 kreeg John Nash samen met twee andere wiskundigen gespecialiseerd op het vlak van speltheorie de Nobelprijs voor de economie op basis van hun prestaties in de niet-coöperatieve speltheorie. . Over John Nash is een prachtige film 
-\todo{Best response ook uitleggen?}
-\todo{Voorbeeld ook nog uitleggen?}
-One of the solution concepts in Game Theory for non-cooperative games is a Nash Equilibrium. A Nash Equilibrium is a subset of outcomes that can be interesting to analyse a game. For a Nash Equilibrium each player has a consist list of actions and each player's action maximizes his or her payoff given the actions of the other players. Nobody has the incentive to change his or her action if an equilibrium profile is played. In general we can say that a Nash Equilibrium is a stable strategy profile: each player is considered to know the equilibrium strategies of the other players and no player would want to change his own strategy if he knows the strategies of the other players. 
+\subsection{Best response and Nash Equilibrium}
+One of the solution concepts in Game Theory for non-cooperative games is a Nash Equilibrium that we will use in this paper. A Nash Equilibrium is a subset of outcomes that can be interesting to analyse a game. For a Nash Equilibrium each player has a consist list of actions and each player's action maximizes his or her payoff given the actions of the other players. Nobody has the incentive to change his or her action if an equilibrium profile is played. In general we can say that a Nash Equilibrium is a stable strategy profile: each player is considered to know the equilibrium strategies of the other players and no player would want to change his own strategy if he knows the strategies of the other players. 
+
+Formal defenition of a Nash Equilibrium:
+A strategy profile $s = (s1, . . . , sn)$ is a Nash equilibrium
+if, for all agents $i$, $si$ is a best response to $s-i$ .
+''Intuitively, a Nash equilibrium is a stable strategy profile: no agent would want to change
+his strategy if he knew what strategies the other agents were following.
+Wecan divide Nash equilibria into two categories, strict and weak, depending on whether
+or not every agent's strategy constitutes a unique best response to the other agents' strategies.''
+
+\todo{Nash beter uitleggen nog met best response erbij}
+
+
+POSTCONDITION: Uitgelegd: Strategien, acties, strategien, spelers, rationeel, Nash, best response
 %In game theory, the Nash equilibrium is a solution concept of a non-cooperative game involving two or more players, in which each player is assumed to know the equilibrium strategies of the other players, and no player has anything to gain by changing only their own strategy.[1] If each player has chosen a strategy and no player can benefit by changing strategies while the other players keep theirs unchanged, then the current set of strategy choices and the corresponding payoffs constitutes a Nash equilibrium. The reality of the Nash equilibrium of a game can be tested using experimental economics method.
 
 %In de speltheorie, een deelgebied van de wiskunde, is een Nash-evenwicht een oplossingsconcept voor een niet-coooperatief spel, waar twee of meer spelers aan meedoen. In een Nash-evenwicht wordt elke speler geacht de evenwichtsstrategieeen van de andere spelers te kennen en heeft geen van de spelers er voordeel bij om zijn of haar strategie eenzijdig te wijzigen. Als elke speler een strategie heeft gekozen en geen enkele speler kan profiteren door zijn strategie te veranderen, terwijl de andere spelers dat ook niet doen, dan vormt de huidige verzameling van strategiekeuzes plus de bijbehorende uitbetalingen een Nash-evenwicht. 
@@ -68,115 +78,131 @@ One of the solution concepts in Game Theory for non-cooperative games is a Nash 
 %Het Nash-evenwichtsconcept is een begrip dat vooral toepassing vindt in de economie.
 
 
+\section{The FlipIt game}
+In this section, we introduce the ''stealthy takeover '' game \flip{FlipIt} \cite{FlipIt}. \flip{FlipIt} is a game introduced by van Dijk et al. First we explain the framework of FlipIt and introduce the most important formules that will be used throughout the paper. To understand how to model a FlipIt game with virus propagation it is important to get familiar with the concepts of the normal FlipIt game and it's notations.  \\
+
+\flip{FlipIt} is a two-players game with a shared (single) resource that the players want to control as long as possible. The shared resource can be a password, a network or a secret key depending on the setting being modelled. In the rest of the paper we name the two players the attacker, denoted by the subscript \textit{A} and the defender, denoted by subscript \textit{D}. 
+
+The game begins at $t=0$ and continuous indefinitely ($t \rightarrow \infty $). The time in the game can be viewed as being continuous, but a discrete time can also be viewed. To get control over the resource, the players \textit{i} can flip the resource at any given time. A flip will be regarded as a move from a player \textit{i}. Each move will imply a certain cost $k_{i}$ and the cost can vary for each player. Both players will try to minimize their cost. By adding a cost, it will prevent players to move to frequently. \\
+
+The unique feature of \flip{FlipIt} is that every move will happen in a stealthy way, meaning that the player has no clue that (his adversary) the other player has flipped the resource. For instance, the defender will not find out if the resource has already been compromised by the attacker, but he can only potentially know it after he flips the resource himself. The goal of the player is to maximize the time that he or she has control over the resource while minimizing total cost of the moves. A move can also result in a "wasted move", called a flop. It may happen that the resource was already under control by the defender. If the defender moves when he or she has already control over the resource, he or she would have wasted a move since it does not result in a change of ownership and a cost is involved. \\
+
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=0.8]{Images/DefFlipit}
+\caption{A representation of a FlipIt game where both players are playing periodically and discrete. Every move or flip is indicated by a blue or orange circle. The attacker is the orange colour and plays with a period of $\delta_{A}=4$. The defender is the blue colour and plays with a period of $\delta_{D}=3$.The blue and orange rectangles represent the amount of time one of the players is in control of the resource.}
+\label{fig:FLipItDefault}
+\end{figure}
+\todo{verwijzen naar de figuur \ref{fig:FLipItDefault}}
+
+
+The state of the resource is denoted as a time independent variable $C=C_{i}(t)$. 
+$C_{D}(t)$ is either 1 if the game is under control by the defender and 0 if the game is under control by the attacker. For $C^{A}(t)$ it is visa versa, $C^{A}(t)= 1 - C^{D}(t)$.\\ \\
+The game starts with defender being in control of the game, $C_{D}(0)= 1$. 
+
+The players receive a benefit equal to the time of units that they were in possession of the resource minus the cost of making their moves. The cost of a player \textit{i} is denoted by $k_{i}$. 
+The total gain of player \textit{i} is equal to the total amount of time that a player \textit{i} has owned the resource from the beginning of the game up to time \textit{t}. It is expressed as follows:
+\begin{equation}\label{first}
+G_{i}(t) = \int_0^1 \! C_{i}(x) dx.
+\end{equation}
+If we add up the gain of the defender and the gain of the attacker it should sum up to t:
+\begin{equation}\label{first}
+G_{D}(t) + G_{A}(t) = t
+\end{equation}
+The average gain of player \textit{i} is defined as:
+\begin{equation}\label{first}
+\gamma_{i}(t) = G_{i}(t)/t.
+\end{equation}
+And thus for all $t > 0$ :
+\begin{equation}\label{first}
+\gamma_{D}(t) + \gamma_{A}(t) = 1
+\end{equation}
+Let $\beta_{i}(t)$ denote player's \textit{i} average benefit upto time \textit{t}:
+\begin{equation}\label{first}
+\beta_{i}(t) = \gamma_{i}(t) - k_{i}\alpha_{i}.
+\end{equation}
+This is equal to the fraction of time the resource has been owned by player \textit{i}, minus the cost of making the moves. ~$ \alpha_{i}$ defines the average move rate by player \textit{i} up to time \textit{t}.
+In a give game, the asymptotic benefit rate or simply benefit will be defined as the lim inf of the average benefit because time t will increase to infinity and the average benefit may not have limiting values.
+\[ \beta_{i}(t)  = \lim_{t \to \infty} inf \beta_{i}(t)  \]
+\\
+
+
+\subsubsection{strategies}
+Because the players move in a stealthy way, there are different types of feedback that a player can get while moving. These types of feedback can be divided into two groups of strategies. The non-adaptive strategies and the adaptive strategies. These are described in table \ref{table:Strategies}. \\
+
+If there is no need for feedback for both of the players, we say that we have a non-adaptive strategy. Because the player does not receive any feedback during the game it will play in the same manner against every opponent. They are not dependent on the opponents movements. This means that they can already generate the time sequence for all the moves in advance.  But they can depend on some randomness because the non-adaptive strategies can be randomised. 
+In this paper we will focus in the beginning on the non-adaptive strategies. Reasons behind this is that a player (defender or attacker) rarely knows what the strategies are of his opponent. An interesting subclass of the non-adaptive strategies is one where the time intervals between two consecutive moves are generated by a renewal process. Example of such a renewal strategy is the periodic strategy where the time between two consecutive moves of the players are a fixed interval. An exponential strategy is a renewal strategy in which the interval between two consecutive moves is exponentially distributed.  \\
+
+-- Ik kan dit ook pas uitleggen als ik mijn FlipIt spel met virus propagatie uit de doeken doe -- \\
+We elaborate more about the periodic strategy because we will use this one to model our first extension. For more details about the other strategies of FlipIt we refer the reader to [the paper of FlipIt].
+
+\textit{periodic strategy}: A Periodic strategy is a non-adaptive renewal strategy where the time intervals between consecutive moves are a fixed period, denoted by $\delta$. Moreover it has a random phase, that is chosen uniformly and random in the interval $[0,\delta]$ for the first move. The average rate of play is denoted by $\alpha = \dfrac{1}{\delta}$. \\
+
+In the category Adaptive strategy there are two sub classes of strategies. The first one is the Last move (LM). In this class whenever a player flips it will find out the exact time that the opponent played the last time. In the second class the Full History (FH), whenever a player flips it will find out the whole history of the opponents move. If the opponent player plays with a renewal strategy the sub classes FH and LM collapse. \\
+ I%n this subsection we elaborate about the strategy of FlipIt . 
+%A renewal strategy is a non-adaptive strategy \\
+
+
+ 
+The game can be extended by the amount of information that a player receives. It can also be possible for a player to get information at the start of the game. Both interesting cases are:
+\begin{itemize}
+\item Rate-of-play (RP): The player finds out the exact rate of play of the opponent.
+\item Knowledge-of-strategy (KS): The player finds out the complete information of the strategy that the opponent is playing.
+\end{itemize}
+
+
+
+
+ 
+
+ \begin{table}
+ \centering
+ \begin{tabular}{ l | c  }
+  \textbf{Categories} & \textbf{Classes of Strategies} \\
+  \hline Non-adaptive (NA) & Exponential \\
+  & Periodic \\
+  & Renewal \\
+  & General non-adaptive \\
+  \hline Adaptive (AD) & Last move (LM) \\
+  & Full History (FH) \\  
+\end{tabular}
+ \caption{Hierarchy of Classes of strategies in FlipIt}
+ \label{table:Strategies}
+ \end{table}
+
+
+
+
+\subsubsection{Imporant results}
+
+\begin{itemize}
+\item periodische spellen domineren de andere renewal strategies
+\item periodische strategien wel slecht tegen attacker die laatste move weet
+\item als de defender snel speelt dan forceert die de attacker om niet meer mee te spelen
+\item iedereen die feedback krijgt heeft meer benefit dan zonder die feedback
+\end{itemize}
+ 
+\section{Extensions on FlipIt}
+
+In this section we discuss the extensions that can be made on the FlipIt game. \\
+
+
+There a various possible ways to extend \flip{FlipIt}. 
+Laszka et al. made a lot of additions and extensions on the original game of FlipIt. For instance Laszka et al. extended the basic \flip{FlipIt} game to multiple resources. The incentive is that for compromising a system in a real case it needs more than just taking over just one resource. An example is that one resource can be gaining access to a system and breaking the password of the system is another resource. The model is called FlipThem \cite{FlipThem}. They use two ways to flip the multiple resources: the AND and the OR control model. In the AND model the attacker only controls the system if he controls all the resources of the system, whereas in the OR model the attacker only needs to compromise one resource to be in control of the entire system. \\
+%The difference with FlipThem and this paper is that we introduce a Graph Model in the beginning.\\
+Another addition of Laszka et al. to the game of FlipIt [mitigating covert compromises] is extending the game to also consider non-targeted attacks by non-strategic players. In this game the defender tries to maintain control over the resource that is subjected to both targeted and non-targeted attacks. Non-targeted attacks can include phishing, while targeted attacks may include threats delivered through zero day attack vulnerabilities. \\
+One of the last important addition from Laszka et al. [Mitigation of Targeted and] is to consider a game where the moves made by the attacker are still covert but the moves made by the defender are known to the attacker. This means that the attacker can base his attacks on the defender's moves. Both the targeted and non-targeted attacks don't succeed immediately. For the targeted attack the time till it succeeds is given by an exponential distributed random variable with a known rate. The non-targeted attacks are modelled as a single attacker and the time till it succeeds is given by a Poisson process.\todo{misschien meer uitleggen}. The conclusion of this paper is that the optimal strategy for the defender is moving periodically. \\ 
+
+Other authors used the FlipIt game to apply it on a specific scenario. To be able to use the FlipIt game, modifications where required for the FlipIt model.
+One of the scenarios by Pham\cite{GameTheorApprCostBenefitAnalyses} [\todo{citatie needed voor Are We Compromised?}] was to find out whether a resource was compromised or not by the attacker. This could be verified by the defender, who has an extra move "test" beside the flip move. The basic idea is to test with an extra action if the resource has been compromised or not. This move involves also an extra cost. This model is useful if somebody wants to know for example if his or her password has been compromised.   \\
+
+Finally researchers also have investigated the behavioural of humans when playing FlipIt. A Nochenson and Grossklags [A behavioural investigation of the FlipIt game]  investigate how people really act when given temporal decisions. [Risk-seeking in a continuous game of timing] Reitter et al. they observe continuous games, 20-seconds FlipIt game..
+
 % --------------- example of a game -----------------%
 
 
 %------------------------------------------------%
 %            Intro about virusses				 %
 %------------------------------------------------%
-\section{Virusses}
 
-Stealth
-Regin's developers put considerable effort into making it highly inconspicuous. Its low key nature means it can potentially be used in espionage campaigns lasting several years. Even when its presence is detected, it is very difficult to ascertain what it is doing. Symantec was only able to analyze the payloads after it decrypted sample files.
-
-It has several ''stealth'' features. These include anti-forensics capabilities, a custom-built encrypted virtual file system (EVFS), and alternative encryption in the form of a variant of RC5, which isn't commonly used. Regin uses multiple sophisticated means to covertly communicate with the attacker including via ICMP/ping, embedding commands in HTTP cookies, and custom TCP and UDP protocols
-%http://www.symantec.com/connect/blogs/regin-top-tier-espionage-tool-enables-stealthy-surveillance
-Ways of defending a network:
-\begin{itemize}
-\item Self-defending networks: The next generation of network security
-\item Honeynet games: a game theoretic approach to defending network monitors
-
-\end{itemize}
-Many network security threats today are spread over the Internet. The most common include:
-
-Viruses, worms, and Trojan horses
-Spyware and adware
-Zero-day attacks, also called zero-hour attacks
-Hacker attacks
-Denial of service attacks
-Data interception and theft
-Identity theft
-
-%http://www.ists.dartmouth.edu/library/258.pdf Email Virus Propagation Modeling and Analysis
-%Cliff C. Zou∗, Don Towsley†, Weibo Gong∗
-%∗Department of Electrical & Computer Engineering
-%†Department of Computer Science
-%Univ. Massachusetts, Amherst
-%Technical Report: TR-CSE-03-04
-
-Computer virus through mail. 
-Though virus spreading through email is an old technique, it is still effective and is widely used by
-current viruses and worms. Sending viruses through email has some advantages that are attractive to
-virus writers:
- Sending viruses through email does not require any security holes in computer operating systems
-or software.
- Almost everyone who uses computers uses email service.
- A large number of users have little knowledge of email viruses and trust most email they receive,
-especially email from their friends [28][29].
- Email are private properties like post office letters. Thus correspondent laws or policies are required
-to permit checking email content for detecting viruses before end users receive email [18].
-
-Send a email with malicious attachment. Only again infected if attachment again opened. Thus this is the action of attacking every neighbour node + also can attack again the node where the virus was coming from.
-There are also email viruses were the malicious program is hidden in the txt and the attachment does not need to be opened. 
-
-
-Spy vs Spy: Aldrich Ames was a CIA Counter-Intelligence officer. He was also a spy feeding valuable intelligence to the Soviets and compromising US intelligence operations in the Soviet Union. He operated for 9 years before the CIA recognized that they had a spy and began an investigation and determined that he was the leak. This strategic situation is the same one faced by computer networks, drug cartels, intelligence agencies and guerrilla networks.
-
-All such organisations have a reasonable expectation that trusted personal/systems will eventually be recruited/captured by enemy organisations. Therefore such organisations must consume valuable resources to discover such betrayals and thereby regain secrecy. The question is then given the possible threats how often and at what cost should they spend resources on investigations/spy hunts/virus scans. This is where flipIt comes in.
-
-FLIPIT: The Game of ''Stealthy Takeover:'' FlipIt was created to model these sorts of strategic situations and to study the best courses of action. Specifically flipIt was motivated by the recent interest in and success of Advanced Persistent Threats, or APT.
-
-The basic idea is that given the current experience that perfect protection of trusted resources is unattainable, lets think about how we can optimally manage compromises of the our most trusted systems.
-
-Rules
-
-Two players, player X (blue) and player Y (red) attempt to maintain control over a shared resource.
-At anytime in the game each player is allowed to play 'flip'.
-The only way a player can learn the state of the game (who is in control) is when they play flip.
-If a player is in control of the resource and they play flip they remain in control of the resource.
-If a player is not in control of the resource and they play flip they gain control of the resource.
-Players gain points for the length of time they control the resource.
-Players lose points every time they play flip.
-This reflects the situation that the CIA is placed in with regard to moles/enemy spies. They don't know if they have been compromised. They can perform an investigation and determine if they have been compromised, also catching the spy in the act, but this action is very expensive. That is, the CIA has to trade off between remaining''mole free'' (a good) and investigations (an expense).
-
-Winning: How do you win a fair game of flipIt against intelligent adaptive human adversaries? I'm not sure.
-
-In the real world what is the best move given that the other players can secretly capture/corrupt your most trusted personal/systems? Rives suggests in his talk that you:
-Be prepared to deal with repeated total failure (loss of control).
-Play fast! Aim to make opponent drop out!
-Arrange game so that your moves cost much less than your opponent's!
-%http://www.cisco.com/web/offer/gist_ty2_asset/Cisco_2014_ASR.pdf p49
-%http://repo.hackerzvoice.net/depot_madchat/vxdevl/papers/avers/2004-35.pdf
-%http://www.mcafee.com/us/resources/white-papers/foundstone/wp-managing-malware-outbreak.pdf
-
-
-
-\subsection{Malware}
-%Does a company network faces lot of malware? what is the cost ?
-Relevant researches:
-\begin{itemize}
-%http://ants.iis.sinica.edu.tw/3BkMJ9lTeWXTSrrvNoKNFDxRm3zFwRR/17/04483668.pdf
-\item How Viruses and worm can be detected. Difference between UDP en TCP worm propagation
-\end{itemize}
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%			Conclusion Chapter 1				%%%%%%
-%%%%%												%%%%%%
-%%%%%												%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Conclusion}
-\label{Cha:1:Conclusion}
-The final section of the chapter gives an overview of the important results
-of this chapter. This implies that the introductory chapter and the
-concluding chapter don't need a conclusion.
-
-
-%%% Local Variables: 
-%%% mode: latex
-%%% TeX-master: "thesis"
-%%% End: 
-
-%\end{document}

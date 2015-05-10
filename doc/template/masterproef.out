@@ -5,27 +5,22 @@
 \BOOKMARK [0][-]{chapter*.8}{List of Abbreviations and Symbols}{}% 5
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 6
 \BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}% 7
-\BOOKMARK [0][-]{chapter.2}{The FlipIt game}{}% 8
-\BOOKMARK [1][-]{section.2.1}{The FlipIt game}{chapter.2}% 9
-\BOOKMARK [0][-]{chapter.3}{Related work}{}% 10
-\BOOKMARK [1][-]{section.3.1}{Related work}{chapter.3}% 11
-\BOOKMARK [1][-]{section.3.2}{Extensions on FlipIt}{chapter.3}% 12
-\BOOKMARK [1][-]{section.3.3}{Conclusion}{chapter.3}% 13
-\BOOKMARK [1][-]{section.3.4}{Why Game Theory to model security problem}{chapter.3}% 14
-\BOOKMARK [1][-]{section.3.5}{..}{chapter.3}% 15
-\BOOKMARK [0][-]{chapter.4}{APT}{}% 16
-\BOOKMARK [1][-]{section.4.1}{Advanced Persistent Threats}{chapter.4}% 17
-\BOOKMARK [0][-]{chapter.5}{FlipIt with virus propagation }{}% 18
-\BOOKMARK [1][-]{section.5.1}{FlipIt vs FlipIt with virus propagation}{chapter.5}% 19
-\BOOKMARK [1][-]{section.5.2}{Gain formula for a FlipIt game without virus propagation}{chapter.5}% 20
-\BOOKMARK [1][-]{section.5.3}{Gain and benefit formula for a FlipIt game with virus propagation}{chapter.5}% 21
-\BOOKMARK [0][-]{chapter.6}{Formula}{}% 22
-\BOOKMARK [1][-]{section.6.1}{Explaining difference between FlipIt with and without virus propagation}{chapter.6}% 23
-\BOOKMARK [1][-]{section.6.2}{Benefit for FlipIt game with virus propagation}{chapter.6}% 24
-\BOOKMARK [1][-]{section.6.3}{something}{chapter.6}% 25
-\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 26
-\BOOKMARK [1][-]{section.7.1}{trala}{chapter.7}% 27
-\BOOKMARK [0][-]{appendix.A}{The First Appendix}{}% 28
-\BOOKMARK [1][-]{section.A.1}{More Lorem}{appendix.A}% 29
-\BOOKMARK [0][-]{appendix.B}{The Last Appendix}{}% 30
-\BOOKMARK [1][-]{section.B.1}{Lorem 20-24}{appendix.B}% 31
+\BOOKMARK [0][-]{chapter.2}{Intoduction to GameTheory}{}% 8
+\BOOKMARK [1][-]{section.2.1}{A brief introduction in Game Theory}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.2}{The FlipIt game}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.3}{Extensions on FlipIt}{chapter.2}% 11
+\BOOKMARK [0][-]{chapter.3}{FlipIt game with virus propagation}{}% 12
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 13
+\BOOKMARK [1][-]{section.3.2}{FlipIt game with virus propagation}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.3}{Formal definition Game}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.4}{Explaining difference between FlipIt with and without virus propagation}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.5}{Benefit for FlipIt game with virus propagation}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.6}{something}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.7}{Simulation}{chapter.3}% 19
+\BOOKMARK [0][-]{chapter.4}{Virus Propagation }{}% 20
+\BOOKMARK [1][-]{section.4.1}{Methods of virus propagation}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.2}{REpresenting Virus Propagation in a network}{chapter.4}% 22
+\BOOKMARK [0][-]{appendix.A}{The First Appendix}{}% 23
+\BOOKMARK [1][-]{section.A.1}{More Lorem}{appendix.A}% 24
+\BOOKMARK [0][-]{appendix.B}{The Last Appendix}{}% 25
+\BOOKMARK [1][-]{section.B.1}{Lorem 20-24}{appendix.B}% 26
