@@ -16,34 +16,59 @@
 %  Question
 %  Answer
 
-% woorden die in introductie moeten voorkomen: Game theory, cybersecurity, APT, FlipIt, virus propagation
+% woorden die in introductie moeten voorkomen: Game theory, cybersecurity, APT, FlipIt, virus propagation, network security
 
+\subsubsection{Situation}
 % -- Situation -- %
-In this era where digitalization becomes prominent in every aspect of our lives, where technology is growing fast and where businesses are always under attack, security becomes an issue of increasing complexity. Without security, there is no protection to keep somebody out of a system. It is the same as leaving the door of your house wide open for everyone to come in. Why is it so important to keep a system secure?  \todo{waarom? :  lekken van informatie: je hebt info over klanten en moet hun privacy beschermen, je eigen data is geld waard voor concurrenten, DOSS attacks: je will je service-level agreements kunnen nakomen, ..} A hacker will be a person that seeks exploits or weaknesses in a system or network in order to gain access.  Many of those attacks have a different cause. Some of the attacks by a hacker can be benign, others can be harmful. There are various ways to break into a system. Virusses, worms, spyware and other malware are the number two of the top external threats [security report kaspersky 2014]. Furthermore these kind of threats also causes the greatest percentage in loss of data. These threats will infect the network by means of a virus that will propagate through the network. 
+In this era where digitalization becomes prominent in every aspect of our lives, where technology is growing fast and where businesses are always under attack, security becomes an issue of increasing complexity. Without security, there is no protection to keep somebody out of a system. It is the same as leaving the door of your house wide open for everyone to come in. Why is it so important to keep a system secure?  \\
+
+Businesses can have confidential information on clients. Through data leakage, confidential information can be lost and possibly used by the competitor. Businesses wants to meet their service-level agreements. They will protect themselves against disruption that can be caused by DOSS attacks. Ultimately, system and network security helps protecting a business's reputation, which is one of its most important assets. %\todo{waarom?  :  lekken van informatie: je hebt info over klanten en moet hun privacy beschermen, je eigen data is geld waard voor concurrenten, DOSS attacks: je will je service-level agreements kunnen nakomen, ..}
+ A hacker will be a person that seeks exploits or weaknesses in a system or network in order to gain access.  Many of those attacks have a different cause. Some of the attacks by a hacker can be benign, others can be harmful. There are various ways to break into a system. Viruses, worms, spyware and other malware are the number two of the top external threats that a business faces [security report kaspersky 2014]. (number one is Spam). Furthermore these kind of threats also causes the greatest percentage in loss of data. These threats will infect the network by means of a virus that will propagate through the network. Most of the attacks are Advanced Persistent Threats (APT).\\
+
+An APT is a targeted cyber attack that will keep trying to break into the targeted system. It will try to stay unnoticed for as long as possible. Bruce Schneier describes an APT as something different and stronger than a conventional hacker: ''\textit{A conventional hacker or criminal isn't interested in any particular target. He wants a thousand credit card numbers for fraud, or to break into an account and turn it into a zombie, or whatever. Security against this sort of attacker is relative; as long as you're more secure than almost everyone else, the attackers will go after other people, not you. An APT is different; it's an attacker who - for whatever reason - wants to attack you. Against this sort of attacker, the absolute level of your security is what's important. It doesn't matter how secure you are compared to your peers; all that matters is whether you're secure enough to keep him out}'' - Bruce Schneier: APT is a Useful Buzzword.
+
+-- verder uitwerken -- \\
+\textit{Stealthy key characteristic of APT. \\
+Voorbeeld APT Equastion group. \\
+Site van Kaspersky lab\\}
 \todo{APT uitleggen ? en dat het moeilijk is om een systeem te beschermen tegen APT ==> overgang naar de volgende paragraaf maken.}
 
+\subsubsection{Complication}
 % -- Complication -- %
-Since it is so difficult to protect a system or a network against APT, researcher have been looking for effective ways to predict in advance which defense strategy might be the better one. 
-Game theory is gaining more and more interest as an effective technique to  model and study Cyber Security. Game theory analyses the security problem as a game where the players are an attacker and a defender of a system, and where both players have to make decisions. In particular, both players will aim for the strategy that results in a maximal benefit for them.  Researchers at RSA made a game theoretic framework to model targeted attacks. They study the specific scenario where a system or network is repeatedly taken over completely by an attacker and this attack is not immediately detected by the defender of the system or network. In game theory, such a game is known as ''FlipI''. This is a two players game where the attacker and the defender are competing to get control over a shared resource. Both players do not know who is currently in control of the resource until they move. In FlipIt every move gives them immediately control over the resource. But what if the attacker moves and it takes a while before the attacker gets full control over the resource? FlipIt does not take into account that a move may not be instantaneous, but has a certain delay. Consider for example a network with different nodes ( laptops, datacenters) as a resource. The attacker drops a virus on one of the nodes and then wait till this virus infects the whole network. The attacker will only be in control of the resource once the whole network is infected. 
+Since it is so difficult to protect a system or a network against APT, researcher have been looking for effective ways to predict in advance which defence strategy might be the better one. 
+Game theory is gaining more and more interest as an effective technique to  model and study Cyber Security. Game theory analyses the security problem as a game where the players are an attacker and a defender of a system, and where both players have to make decisions. In particular, both players will aim for the strategy that results in a maximal benefit for them.  Researchers at RSA made a game theoretic framework to model targeted attacks. They study the specific scenario where a system or network is repeatedly taken over completely by an attacker and this attack is not immediately detected by the defender of the system or network. In game theory, such a game is known as ''FlipIt''. This is a two players game where the attacker and the defender are competing to get control over a shared resource. Both players do not know who is currently in control of the resource until they move. In FlipIt every move gives them immediately control over the resource. But what if the attacker moves and it takes a while before the attacker gets full control over the resource? FlipIt does not take into account that a move may not be instantaneous, but has a certain delay. Consider for example a network with different nodes ( laptops, datacenters) as a resource. The attacker drops a virus on one of the nodes and then wait till this virus infects the whole network. The attacker will only be in control of the resource once the whole network is infected. \\
 
-The game theoretical approach of the FlipIt does not take such delay into account. This an lead us to the following research questions:
-- Is it possible to incorporate the notion of delay in the game-theoretical analysis of the Flip-It game ?
+\subsubsection{Research questions}
+The game theoretical approach of the FlipIt does not take such delay into account. 
+This an lead us to the following research questions:
+\begin{itemize}
+\item Is it possible to incorporate the notion of delay in the game-theoretical analysis of the Flip-It game ?
+\item Is it possible to incorporate the notion of delay in the game-theoretical analysis of the Flip-It game ?
+\item Does this allow us to determine an optimal defense strategy against an attacker ? for example: Gaat er een specieke grootte zijn van een delay waarbij de attacker al weet dat hem niet meer moet gaan spelen ? ( is niet gelijk aan de grootte van de periode van de attacker)
+\end{itemize}
 
 
-%Specific research question:
-%-         Is it possible to incorporate the notion of delay in the game-theoretical analysis of the Flip-It game ?
+
+Resarch questions when working with a network and a delay: .. graph model en uitleggen hoe we de graph kunnen maken zodat de delay altijd zo groot mogelijk gaat zijn. 
+\begin{itemize}
+\item How can we calculate the expected duration for a node's infection/the entire network infection ?
+\item Can we calculate this node per node ?
+\end{itemize}
+%-        How can we calcuate the expected duration for a node’s infection/the entire network infection ?
 %
-%-        Can we calculate a Nash Equilibrium for a FlipIt Game with delay ?
-%
-%-        
-- Does this allow us to determine an optimal defense strategy against an attacker ? for example: Gaat er een specieke grootte zijn van een delay waarbij de attacker al weet dat hem niet meer moet gaan spelen ? ( is niet gelijk aan de grootte van de periode van de attacker)
-When working with a network and a delay we can .. graph model en uitleggen hoe we de graph kunnen maken zodat de delay altijd zo groot mogelijk gaat zijn. 
-
+%-        Can we calculate this node per node ?
 
 % -- Anwer -- %
-We propose an addition to the basic FlipIt model to model a scenario where the moves by the attacker will not be instantaneous. Next we analyse what the new Nash equilibria will be and .. 
+\subsubsection{Contributions}
+We propose an addition to the basic FlipIt model to model a scenario where the moves by the attacker will not be instantaneous. Next we analyse what the new Nash equilibria will be and .. \\
 
-In the remainder of this thesis we
+\subsubsection{Overview of the thesis}
+--opbouw van de thesis uitleggen-- \\
+
+The organisation of this paper is the following.  In chapter 2 [] \todo{ref}  a brief introduction to Gametheory is introduced to get familiar with the game theoretic concepts that will be further used in the paper. In the same chapter the FlipIt framework  is summarized and the most important conclusions together with the the related work done on FlipIt and the difference with this paper.
+In chapter 3  [] \todo{ref} , we first introduce the adaptations made on FlipIt to model a FlipIt game with virus propagation. After that formulas are derived to model a FlipIt game with a virus propagation for a specific case where players play a periodic strategy with a random phase. This chapter ends with simulations where conclusions can be derived.
+Next in Chapter 4 [] \todo{ref}, we given an overview of the various ways in which a virus can propagate. We present a method to calculate the speed of the propagation of a virus in a network and how this network can be established to reduce the spreading of a virus.
+Finally, in Chapter 5 [] \todo{ref}, we discuss the main results and complications and provide directions for further research.
 
 %In this paper we want to focus on situations where a computer network is attacked by an APT. These threats will infect the network by means of a virus that will propagate through the network. 
 %ð  Dat is geen vraag.

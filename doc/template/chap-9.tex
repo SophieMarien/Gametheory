@@ -90,17 +90,26 @@ This chapter explains how to model a FlipIt game with a virus propagation that i
 
 
 
-\section{Benefit for FlipIt game with virus propagation}
+\section{Benefit for a periodic FlipIt game with virus propagation}
+We start by formalizing the non-adaptive continuous basic FlipIt game where players use a periodic strategy with a random phase. Next we split the formalisation for the benefit formula for a FlipIt game with virus propagation in two cases. First the benefit formula is derived for the basis case and then it is calculated for the case with a virus propagation. One case is where the defender plays at least as fast as the attacker, the other case is where the attacker plays at least as fast as the defender. This subdivision is also used in the FlipIt paper. \\
 
-Periodic Game with delay for the attacker:
+ A Periodic strategy is a non-adaptive renewal strategy where the time intervals between consecutive moves are a fixed period, denoted by $\delta$. Moreover it has a random phase, that is chosen uniformly and random in the interval $[0,\delta]$ for the first move. The average rate of play of a player is denoted by $\alpha_{i} = \dfrac{1}{\delta_{i}}$. \\
+~~\\
 
-\textbf{Case 1:} $\delta_{D} \leq \delta_{A} $(The defender plays at least as fast as the attacker.) \\
+
+\subsection*{\textbf{Case 1:} $\delta_{D} \leq \delta_{A} $ (The defender plays at least as fast as the attacker.) }
 
 Let $r = \dfrac{\delta_{D}}{ \delta_{A} }$. The intervals between two consecutive defender's moves have length $\delta_{D}$. Consider a given defender move interval. The probability over the attacker's phase selection that the attacker moves in this interval is r. Given that the attacker moves within the interval, he moves exactly once within the interval (since $\delta_{D} \leq \delta_{A} $) and his move is distributed uniformly at random. \\
 
-The expected period of attacker control within the interval would be r/2, without considering the delay. \\
+The expected period of attacker control within the interval would be r/2, without considering the delay by a virus. Therefore the benefit without this virus can be expressed as follows:
+\begin{equation}\label{first}
+\beta_{D}(\alpha_{D},\alpha_{A}) =1 -  \dfrac {r} {2} - k_{D} \alpha_{D} = 1 - \dfrac {\delta_{D}} {2\delta_{A}} - k_{D} \alpha_{D} 
+\end{equation}
+\begin{equation}\label{first}
+\beta_{A}(\alpha_{D},\alpha_{A}) =\dfrac {r} {2} - k_{A} \alpha_{A} = \dfrac {\delta_{D}} {2\delta_{A}} - k_{A} \alpha_{A}  
+\end{equation}\\
 
-However, because of the delay, the maximal time of control is reduced to $\delta_{D}-d$. There is a probability of \textit{r} that the attacker will move in the interval of the defender. The attacker has to play soon enough to gain control, meaning that the attacker has to play during the period of $\delta_{D}-d$ during the interval of the defender. There is $\dfrac{\delta_{D}-d}{\delta_{D}}$ probability that the attacker will move soon enough which gives the attacker a gain of $\dfrac{\delta_{D}-d}{2}$. If the attacker moves after the period of $\delta_{D}-d$, the gain of the attacker will be zero. The average gain rate of the attacker can be expressed as follows if we look at one interval of the defender:
+However, because of the delay caused by a virus, the maximal time of control is reduced to $\delta_{D}-d$. There is a probability of \textit{r} that the attacker will move in the interval of the defender. The attacker has to play soon enough to gain control, meaning that the attacker has to play during the period of $\delta_{D}-d$ during the interval of the defender. There is $\dfrac{\delta_{D}-d}{\delta_{D}}$ probability that the attacker will move soon enough which gives the attacker a gain of $\dfrac{\delta_{D}-d}{2}$. If the attacker moves after the period of $\delta_{D}-d$, the gain of the attacker will be zero. The average gain rate of the attacker can be expressed as follows if we look at one interval of the defender:
 \begin{equation}\label{first}
 \beta_{A}(\alpha_{D},\alpha_{A}) = \dfrac {1}{\delta_{D}} [ \dfrac{\delta_{D}}{\delta_{A}} \cdot \dfrac{\delta_{D}-d}{\delta_{D}} \cdot \dfrac{\delta_{D}-d}{2} + \dfrac{\delta_{D}}{\delta_{A}} \cdot \dfrac{d}{\delta_{D}} \cdot 0 ]
 \end{equation}
@@ -117,78 +126,57 @@ To complete the formula to derive the benefit function, the cost of moving is ad
  \begin{equation}\label{first}
 \beta_{D}(\alpha_{D},\alpha_{A}) = 1 - \dfrac { (\delta_{D}-d) ^{2}} {2 \cdot \delta_{D}  \delta_{A}} - k_{D} \alpha_{D}
 \end{equation}
+~~\\
 
 
 
-\textbf{Case 2:} $\delta_{A} \leq \delta_{D} $ (The attacker plays at least as fast as the defender.) \\
-
-Let $r = \dfrac{\delta_{D}}{ \delta_{A} }$. The intervals between two consecutive attacker's moves have length $\delta_{A}$. Consider a given attackers move interval. The probability over the attacker's phase selection that the defender moves in this interval is $\dfrac{\delta_{D}}{ \delta_{A} } = (1/r)$. Given that the defender moves within the interval, he moves exactly once within the interval (since$\delta_{A} \leq \delta_{D} $) and his move is distributed uniformly at random. \\
 
 
-\section{something}
-\label{Cha:9:inrto}
+\subsection*{\textbf{Case 2:} $\delta_{A} \leq \delta_{D} $ (The attacker plays at least as fast as the defender.) }
 
+First let $r = \dfrac{\delta_{D}}{ \delta_{A} }$. The intervals between two consecutive attacker's moves have length $\delta_{A}$. Consider a given attackers move interval. The probability over the attacker's phase selection that the defender moves in this interval is $\dfrac{\delta_{D}}{ \delta_{A} } = (1/r)$. Given that the defender moves within the interval, he moves exactly once within the interval (since$\delta_{A} \leq \delta_{D} $) and his move is distributed uniformly at random. \\
 
-
-Periodic Game with delay for the attacker:
-
-\textbf{Case 1:} $\delta_{D} \leq \delta_{A} $(The defender plays at least as fast as the attacker.) \\
-
-
-Let $r = \dfrac{\delta_{D}}{ \delta_{A} }$. The intervals between two consecutive defender's moves have length $\delta_{D}$. Consider a given defender move interval. The probability over the attacker's phase selection that the attacker moves in this interval is r. Given that the attacker moves within the interval, he moves exactly once within the interval (since $\delta_{D} \leq \delta_{A} $) and his move is distributed uniformly at random. \\
-
-The expected period of attacker control within the interval would be r/2, without considering the delay. \\
-
-However, because of the delay, the maximal time of control is reduced to $\delta_{D}-d$. If we consider a duration of $\delta_{D} \cdot \delta_{A}$ the attacker will play $\delta_{D}$ times. If the attacker plays soon enough it will get a gain of $\dfrac{\delta_{D}-d}{2}$ in $\delta_{D}-d$ of the cases. In \textit{d} cases it will receive a gain of zero. This is the case were the duration of the delay causes the defender to play before the attacker can get control over the resource. 
-So the gain of the attacker can be expressed as follows:
+A similar analysis as in case 1 for a FlipIt game without virus propagation yields the following benefits:
 \begin{equation}\label{first}
-Gain =  \dfrac{\delta_{D}-d}{2} \cdot (\delta_{D}-d) + 0 \cdot d = \dfrac{\delta_{D}-d}{2} \cdot (\delta_{D}-d)
-\end{equation}
-
-The benefit of the attacker can be expressed as follows
-
-\begin{equation}\label{first}
-\beta_{A}(\alpha_{D},\alpha_{A}) = \dfrac { (\delta_{D}-d) ^{2}} {2 \cdot \delta_{D}  \delta_{A}} + k_{A} \cdot \alpha_{A}
+\beta_{D}(\alpha_{D},\alpha_{A}) = \dfrac {1} {2r} - k_{D} \alpha_{D} = \dfrac {\delta_{A}} {2\delta_{D}} - k_{D} \alpha_{D} 
 \end{equation}
 \begin{equation}\label{first}
-\beta_{A}(\alpha_{D},\alpha_{A}) = \dfrac { \delta_{D}} {2 \cdot \delta_{A}} + k_{A} \cdot \alpha_{A} + \dfrac{d}{\delta_{A}} + \dfrac{d^{2}}{2 \cdot \delta_{A} \delta_{D}}
-\end{equation}
-\\
+\beta_{A}(\alpha_{D},\alpha_{A}) =1 - \dfrac {1} {2r} - k_{A} \alpha_{A} = 1- \dfrac {\delta_{A}} {2\delta_{D}} - k_{A} \alpha_{A}  
+\end{equation}\\
 
-The benefit of the defender is then:
 
+For the case with a virus we consider two cases, \textbf{Case a} and \textbf{Case b}, to compute the benefit of both players.  \\
+
+
+\subsubsection*{\textbf{Case a:} $d + \delta_{A} \leq \delta_{D}$}
+
+If $d + \delta_{A} \leq \delta_{D}$ that means that in this timespan for the attacker, the defender will never move twice.  $\dfrac{delta_{A}}{\delta_{D}}$ the defender will move during the interval of the attacker. When this happens the defender will end with beeing in control at the end of the interval. In the next interval the attacker will move in the beginning but will not gain control after the delay of \textit{d}. This means that if the defender moved in the interval prior to this one, the delay is the minimum gain of the defender. To calculate the gain rate of the defender we don't look at one interval of the defender. We know that if the defender moves within the interval of the defender it will receive a minimum of $\dfrac{\delta_{A}}{2}$ gain. In the next interval the defender will receive a minimum gain of $d$. It is also possible that the defender will move in this interval after the delay, adding a gain of $\dfrac{\delta_{A}}{2}$, but the defender will never play during the delay if in the interval prior to this, the defender already has moved. 
+
+This means that every time the defender plays it will get a benefit of $\dfrac{\delta_{A}}{2}$ and the next interval will always receive a gain of $d$. To derive the benefit formula for the defender we can calculate the probability that the defender will move during an interval of the attacker and multiply it by the gain of the interval plus the gain that it will give to the next interval. 
+This yields in the following formula:
 \begin{equation}\label{first}
-\beta_{D}(\alpha_{D},\alpha_{A}) = 1 - \dfrac { (\delta_{D}-d) ^{2}} {2 \cdot \delta_{D} \cdot \delta_{A}} + k_{D} \cdot \alpha_{D}
-\end{equation}
-\begin{equation}\label{first}
-\beta_{D}(\alpha_{D},\alpha_{A}) = 1 - \dfrac { \delta_{D}} {2 \cdot \delta_{A}} + k_{D} \cdot \alpha_{D} - \dfrac{d}{\delta_{A}}- \dfrac{d^{2}}{2 \cdot \delta_{A} \delta_{D}}
-\end{equation}
-
-
-\textbf{Case 2:} $\delta_{A} \leq \delta_{D} $ (The attacker plays at least as fast as the defender.) \\
-
-Let $r = \dfrac{\delta_{D}}{ \delta_{A} }$. The intervals between two consecutive attacker's moves have length $\delta_{A}$. Consider a given attackers move interval. The probability over the attacker's phase selection that the defender moves in this interval is $\dfrac{\delta_{D}}{ \delta_{A} } = (1/r)$. Given that the defender moves within the interval, he moves exactly once within the interval (since$\delta_{A} \leq \delta_{D} $) and his move is distributed uniformly at random. \\
-
-If we consider a duration of $\delta_{A} \cdot \delta_{D} $ there is a probability of $\dfrac{\delta_{A} } {\delta_{D}} $ that the defender moves within the interval of the attacker. The defender will then receive an average gain of $\dfrac{\delta_{A}} {2} $. There is $1- \dfrac{\delta_{A} } {\delta_{D}} $ probability that the defender will not move in the interval of the attacker and so the defender will receive no gain. The benefit can be expressed as follows when the  defender plays $\delta_{D}$ times during a duration of $\delta_{A} \cdot \delta_{D}$:
-\begin{equation}\label{first}
-\beta_{D}(\alpha_{D},\alpha_{A}) = \dfrac { 1} {\delta_{A} \delta_{D}} \cdot \delta_{D} \cdot [ \dfrac{\delta_{A}}{\delta_{D}} \cdot \dfrac{\delta_{A}}{2}+[ 1-\dfrac{\delta_{A}}{ \delta_{D}}] \cdot 0 ] + k_{D} \cdot \alpha_{D}
+\beta_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta{A}}{\delta_{D}} \cdot \dfrac{(d+\dfrac{\delta_{A}}{2})}{\delta_{A}} - k_{D} \alpha_{D} 
 \end{equation}
 \begin{equation}\label{first}
-\beta_{D}(\alpha_{D},\alpha_{A}) = \dfrac {\delta_{A} }{2 \cdot \delta_{D}} + k_{D} \cdot \alpha_{D} $$same as the FlipIt solution$$
-\end{equation}
+\beta_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - k_{D} \alpha_{D} 
+\end{equation}\\
 
-However, because of the delay, the maximal time of control of the defender is increased by d. In other words, the defender has some benefit time of d before the attacker really gains control over the resource, meaning that the attacker gains control only after $\delta_{A}+d$ instead of after $\delta_{A}$. So, when the defender plays, with a probability of $\dfrac{\delta_{A} } {\delta_{D}} $, the expected gain of the defender's control in this interval would be more than half of the period $\delta_{A} $: it is $\dfrac{\delta_{A} + d}{2}$. There is $1- \dfrac{\delta_{A} } {\delta_{D}} $ probability that the defender will not move in the interval of the attacker but because of the delay the defender will receive a gain of d. So the benefit of the defender can be expressed as:
+The benefit for the attacker will be as follows:
 \begin{equation}\label{first}
-\beta_{D}(\alpha_{D},\alpha_{A}) = \dfrac { 1} {\delta_{A} \delta_{D}} \cdot \delta_{D} \cdot [ \dfrac{\delta_{A} }{\delta_{D}} \cdot \dfrac{\delta_{A} + d}{2}+[ 1-\dfrac{\delta_{A}}{ \delta_{D}}] \cdot d ] + k_{D} \cdot \alpha_{D}
-\end{equation}
-\begin{equation}\label{first}
-\beta_{D}(\alpha_{D},\alpha_{A}) = \dfrac {\delta_{A} - d}{2 \cdot \delta_{D}} + \dfrac{d}{\delta_{A}}  + k_{D} \cdot \alpha_{D}
-\end{equation}
+\beta_{A}(\alpha_{D},\alpha_{A}) = 1 -\dfrac{\delta{A}}{2\delta_{D}} - \dfrac{d}{\delta_{D}} - k_{A} \alpha_{A} 
+\end{equation}\\
 
-The benefit of the attacker is expressed as follows:
-\begin{equation}\label{first}
-\beta_{A}(\alpha_{D},\alpha_{A}) = 1- [ \dfrac {\delta_{A} - d}{2 \cdot \delta_{D}} + \dfrac{d}{\delta_{A}}  ] + k_{A} \cdot \alpha_{A}
-\end{equation}
+\begin{figure}[hbtp]
+\caption{Case 2 where d + deltaA < deltaD}
+\centering
+\includegraphics[scale=0.7]{Images/FlipItCase2.png}
+\end{figure}
+
+
+It is crucial that the $d + \delta_{1}$ is not greater than $ \delta_{0}$. If it is greater that means that the defender can move during a delay after an interval of the attacker where the defender already has moved. If we calculate the benefit formula in the same manner, to much gain is added. Namely the overlap during the delay.
+
+\subsubsection*{\textbf{Case b:} $d + \delta_{1} > \delta_{D}$}
+
 
 \section{Simulation}
 %nce the defender has played, it takes 1 time until the attacker plays and the defender loses control again. Therefere, the expected period of attacker control within the interval would be 1/2.1/0, without considering the delay.

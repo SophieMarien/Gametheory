@@ -14,8 +14,9 @@
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces A representation of a FlipIt game where both players are playing periodically and discrete. Every move or flip is indicated by a blue or orange circle. The attacker is the orange colour and plays with a period of $\delta _{A}=4$. The defender is the blue colour and plays with a period of $\delta _{D}=3$.The blue and orange rectangles represent the amount of time one of the players is in control of the resource.}}{5}{figure.2.1}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces A representation of a FlipIt game where both players are playing periodically and discrete. Every move or flip is indicated by a blue or orange circle. The attacker is the orange colour and plays with a period of $\delta _{A}=4$. The defender is the blue colour and plays with a period of $\delta _{D}=3$.The blue and orange rectangles represent the amount of time one of the players is in control of the resource.}}{7}{figure.2.1}
 \addvspace {10pt}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Case 2 where d + deltaA < deltaD}}{19}{figure.3.1}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
