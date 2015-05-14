@@ -1,0 +1,61 @@
+%\newcommand{\CLASSINPUTbaselinestretch}{1.0} % baselinestretch
+%\newcommand{\CLASSINPUTinnersidemargin}{1in} % inner side margin
+%\newcommand{\CLASSINPUToutersidemargin}{1in} % outer side margin
+%\newcommand{\CLASSINPUTtoptextmargin}{1in}   % top text margin
+%\newcommand{\CLASSINPUTbottomtextmargin}{1in}% bottom text margin
+
+\documentclass[journal,a4paper]{IEEEtran}
+
+
+\usepackage[pdftex]{graphicx}  
+\usepackage[cmex10]{amsmath}
+\usepackage[dutch]{babel}
+
+\usepackage{float}
+\usepackage{caption}
+\usepackage[caption = false,subrefformat=parens,labelformat=parens]{subfig}
+\usepackage{amsmath}
+\usepackage{epstopdf}
+\usepackage{textcomp}
+\usepackage{gensymb}
+\usepackage[titlenumbered,algoruled, linesnumbered]{algorithm2e}
+\usepackage{algpseudocode}
+\usepackage{booktabs}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\graphicspath{{C:/Users/Jeroen/Dropbox/Thesis/latex/figures/}}
+
+\newcommand\MYhyperrefoptions{bookmarks=true,bookmarksnumbered=true,
+pdfpagemode={UseOutlines},plainpages=false,pdfpagelabels=true,
+colorlinks=true,linkcolor={black},citecolor={black},pagecolor={black},
+urlcolor={black},
+pdftitle={Ontwerp en implementatie van navigatie-assistentie voor rolstoelgebruikers met oogbesturing},
+pdfauthor={Jeroen Van Hemelen}}
+
+\begin{document}
+
+\title{Ontwerp en implementatie van navigatie-assistentie voor rolstoelgebruikers met oogbesturing}
+\author{Jeroen Van Hemelen}
+\maketitle
+
+\IEEEcompsoctitleabstractindextext{%
+\begin{abstract}
+Dit werk beschrijft de ontwikkeling en implementatie van een systeem op basis van oogcontrole dat de gebruiker efficiënter helpt navigeren. Dit wordt geïmplementeerd door de omgeving te verdelen in een discrete set mogelijke doelen, en de intentie van de gebruiker te schatten. Deze informatie wordt door een Maximum Likelihood, Maximum A Posteriori of Partially Observable Markov Decision Proces algoritme gebruikt om naar het juiste doel te navigeren. Uit de resultaten blijkt dat gebruiker met deze methode tot 40\% minder signalen moet geven. De POMDP en ML methode hebben specifieke zwakheden: de POMDP methode werkt niet goed indien de rolstoel grote acties mag ondernemen, en de ML methode mag niet gecombineerd worden met een continu gebruikersmodel.
+\end{abstract}
+}
+
+\IEEEdisplaynotcompsoctitleabstractindextext
+\IEEEpeerreviewmaketitle
+
+
+\section{Inleiding}
+\label{sec:inleiding}
+
+\IEEEPARstart{E}{lektrische} rolstoelen worden door mindervaliden over heel de wereld gebruikt om zichzelf te verplaatsen. Doorgaans worden dergelijke rolstoelen bestuurd met een joystick, maar dit is voor sommige mensen geen optie. Ze beschikken niet over de benodigde handcontrole om zich veilig te verplaatsen met een dergelijke rolstoel. Deze mensen dienen van alternatieve controlemethodes gebruik te maken, of ze worden rondgereden door een verzorger.
+
+\cite{Barea2003}
+
+\bibliographystyle{IEEEtran}
+\bibliography{IEEEabrv,references}
+
+\end{document}

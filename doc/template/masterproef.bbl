@@ -1,0 +1,36 @@
+\begin{thebibliography}{1}
+
+\bibitem{FlipThem}
+A.~Laszka.
+\newblock Flipthem: Modeling targeted attacks with flipit for multiple
+  resources.
+\newblock {\em 5th International Conference, GameSec 2014, Los Angeles, CA,
+  USA, November 6-7, 2014. Proceedings}, 8840:175--194, 2014.
+
+\bibitem{MitigationCovert}
+A.~Laszka, B.~Johnson, and J.~Grossklags.
+\newblock Mitigating covert compromises.
+\newblock {\em iets}, 8289:319--332, 2013.
+
+\bibitem{leyton2008essentials}
+K.~Leyton-Brown and Y.~Shoham.
+\newblock {\em Essentials of Game Theory: A Concise, Multidisciplinary
+  Introduction}.
+\newblock Synthesis lectures on artificial intelligence and machine learning.
+  Morgan \& Claypool Publishers, 2008.
+
+\bibitem{GameTheorApprCostBenefitAnalyses}
+T.~Spyridopoulos, G.~Oikonomou, T.~Tryfonas, and M.~Ge.
+\newblock Game theoretic approach for cost-benefit analysis of malware
+  proliferation prevention.
+\newblock In L.~Janczewski, H.~Wolfe, and S.~Shenoi, editors, {\em Security and
+  Privacy Protection in Information Processing Systems}, volume 405 of {\em
+  IFIP Advances in Information and Communication Technology}, pages 28--41.
+  Springer Berlin Heidelberg, 2013.
+
+\bibitem{FlipIt}
+M.~van Dijk, A.~Juels, A.~Oprea, and R.~Rivest.
+\newblock Flipit: The game of “stealthy takeover”.
+\newblock {\em Journal of Cryptology}, 26(4):655--713, 2013.
+
+\end{thebibliography}

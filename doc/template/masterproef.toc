@@ -21,11 +21,11 @@
 \contentsline {subsubsection}{Overview of the thesis}{3}{section*.15}
 \contentsline {chapter}{\chapternumberline {2}Intoduction to GameTheory}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}A brief introduction in Game Theory}{5}{section.2.1}
-\contentsline {subsubsection}{List of terms}{6}{section*.27}
+\contentsline {subsubsection}{List of terms}{6}{section*.26}
 \contentsline {subsection}{\numberline {2.1.1}Best response and Nash Equilibrium}{6}{subsection.2.1.1}
 \contentsline {section}{\numberline {2.2}The FlipIt game}{7}{section.2.2}
-\contentsline {subsubsection}{strategies}{8}{section*.31}
-\contentsline {subsubsection}{Imporant results}{9}{section*.32}
+\contentsline {subsubsection}{strategies}{8}{section*.30}
+\contentsline {subsubsection}{Imporant results}{9}{section*.31}
 \contentsline {section}{\numberline {2.3}Extensions on FlipIt}{10}{section.2.3}
 \contentsline {chapter}{\chapternumberline {3}FlipIt game with virus propagation}{13}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introduction}{13}{section.3.1}
@@ -43,6 +43,7 @@
 \contentsline {section}{\numberline {A.1}More Lorem}{27}{section.A.1}
 \contentsline {appendix}{\chapternumberline {B}The Last Appendix}{29}{appendix.B}
 \contentsline {section}{\numberline {B.1}Lorem 20-24}{29}{section.B.1}
+\contentsline {chapter}{Bibliografie}{31}{section*.45}
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}
