@@ -23,6 +23,7 @@
 \usepackage{booktabs}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
+\usepackage{hyperref}
 
 
 \newcommand\MYhyperrefoptions{bookmarks=true,bookmarksnumbered=true,
@@ -55,7 +56,7 @@ useful information for the defender to defend his network.
 \IEEEpeerreviewmaketitle
 
 
-\section{Inleiding}
+\section{Introduction}
 \label{sec:inleiding}
 \IEEEPARstart{I}{n this era} where digitalization becomes prominent in every aspect of our lives, where technology is growing fast and where businesses are always under attack, security becomes an issue of increasing complexity. Without security, there is no protection to keep somebody out of a system. It is the same as leaving the door of your house wide open for everyone to come in. Why is it so important to keep a system secure?  \\
 
@@ -66,15 +67,112 @@ An APT is a targeted cyber attack that targets organisations in a stealthy way a
 
 
 \section{Stealthy takeover model}
-Since it is so difficult to protect a system or a network against APT, researcher have been looking for effective ways to predict in advance which defence strategy might be the better one. 
+Since it is so difficult to protect a system or a network against APT's, researcher have been looking for effective ways to predict in advance which defence strategy might be the better one. 
 Game theory is gaining more and more interest as an effective technique to  model and study Cyber Security. Game theory analyses the security problem as a game where the players are an attacker and a defender of a system, and where both players have to make decisions. In particular, both players will aim for the strategy that results in a maximal benefit for them.  Researchers at RSA made a game theoretic framework to model targeted attacks. They study the specific scenario where a system or network is repeatedly taken over completely by an attacker and this attack is not immediately detected by the defender of the system or network. In game theory, such a game is known as ''FlipIt'' \cite{FlipIt}. This is a two players game where the attacker and the defender are competing to get control over a shared resource. Both players do not know who is currently in control of the resource until they move. In FlipIt every move gives them immediately control over the resource. But what if the attacker moves and it takes a while before the attacker gets full control over the resource? FlipIt does not take into account that a move may not be instantaneous, but has a certain delay. Consider for example a network with different nodes ( laptops, datacenters) as a resource. The attacker drops a virus on one of the nodes and then wait till this virus infects the whole network. The attacker will only be in control of the resource once the whole network is infected. \\
+
+\section{The FlipIt game}
+\label{ch:FlipItGame}
+FlipIt is a game introduced by van Dijk et al. First we explain the framework of FlipIt and introduce the most important formulas that will be used throughout the paper. To understand how to model a FlipIt game with virus propagation it is important to get familiar with the concepts of the normal FlipIt game and it's notations.  \\
+
+FlipIt is a two-players game with a shared (single) resource that the players want to control as long as possible. The shared resource can be a password, a network or a secret key depending on the setting being modelled. In the rest of the paper we name the two players the attacker, denoted by the subscript \textit{A} and the defender, denoted by subscript \textit{D}. 
+
+The game begins at $t=0$ and continuous indefinitely ($t \rightarrow \infty $). The time in the game can be viewed as being continuous, but a discrete time can also be viewed. To get control over the resource, the players \textit{i} can flip the resource at any given time. A flip will be regarded as a move from a player \textit{i}. Each move will imply a certain cost $k_{i}$ and the cost can vary for each player. Both players will try to minimize their cost. By adding a cost, it will prevent players to move to frequently. \\
+
+The unique feature of FlipIt is that every move will happen in a stealthy way, meaning that the player has no clue that (his adversary) the other player has flipped the resource. For instance, the defender will not find out if the resource has already been compromised by the attacker, but he can only potentially know it after he flips the resource himself. The goal of the player is to maximize the time that he or she has control over the resource while minimizing total cost of the moves. A move can also result in a "wasted move", called a flop. It may happen that the resource was already under control by the defender. If the defender moves when he or she has already control over the resource, he or she would have wasted a move since it does not result in a change of ownership and a cost is involved. \\
 
 
 \begin{figure}[hbtp]
-\caption{FlipIt game with a periodic strategy. The defender plays with a period of deltaA = .. The attacker plays with a period $\delta_{A}$ }
 \centering
-\includegraphics[scale=0.5]{../../doc/template/Images/DefFlipIt.png}
+\includegraphics[scale=0.5]{../../doc/template/Images/DefFlipit}
+\caption{A representation of a FlipIt game where both players are playing periodically and discrete. Every move or flip is indicated by a blue or orange circle. The attacker is the orange colour and plays with a period of $\delta_{A}=4$. The defender is the blue colour and plays with a period of $\delta_{D}=3$.The blue and orange rectangles represent the amount of time one of the players is in control of the resource.}
+\label{fig:FLipItDefault}
 \end{figure}
+
+
+
+The state of the resource is denoted as a time independent variable $C=C_{i}(t)$. 
+$C_{D}(t)$ is either 1 if the game is under control by the defender and 0 if the game is under control by the attacker. For $C^{A}(t)$ it is visa versa, $C^{A}(t)= 1 - C^{D}(t)$.\\ \\
+The game starts with defender being in control of the game, $C_{D}(0)= 1$. 
+
+The players receive a benefit equal to the time of units that they were in possession of the resource minus the cost of making their moves. The cost of a player \textit{i} is denoted by $k_{i}$. 
+The total gain of player \textit{i} is equal to the total amount of time that a player \textit{i} has owned the resource from the beginning of the game up to time \textit{t}. It is expressed as follows:
+\begin{equation}\label{first}
+G_{i}(t) = \int_0^1 \! C_{i}(x) dx.
+\end{equation}
+If we add up the gain of the defender and the gain of the attacker it should sum up to t:
+\begin{equation}\label{first}
+G_{D}(t) + G_{A}(t) = t
+\end{equation}
+The average gain rate of player \textit{i} is defined as:
+\begin{equation}\label{first}
+\gamma_{i}(t) = G_{i}(t)/t.
+\end{equation}
+And thus for all $t > 0$ :
+\begin{equation}\label{first}
+\gamma_{D}(t) + \gamma_{A}(t) = 1
+\end{equation}
+Let $\beta_{i}(t)$ denote player's \textit{i} average benefit upto time \textit{t}:
+\begin{equation}\label{first}
+\beta_{i}(t) = \gamma_{i}(t) - k_{i}\alpha_{i}.
+\end{equation}
+This is equal to the fraction of time the resource has been owned by player \textit{i}, minus the cost of making the moves. ~$ \alpha_{i}$ defines the average move rate by player \textit{i} up to time \textit{t}.
+In a give game, the asymptotic benefit rate or simply benefit will be defined as the lim inf of the average benefit because time t will increase to infinity and the average benefit may not have limiting values.
+\[ \beta_{i}(t)  = \lim_{t \to \infty} inf \beta_{i}(t)  \]
+\\
+
+
+\subsubsection{strategies}
+Because the players move in a stealthy way, there are different types of feedback that a player can get while moving. These types of feedback can be divided into two groups of strategies. The non-adaptive strategies and the adaptive strategies. These are described in table \ref{table:Strategies}. \\
+
+If there is no need for feedback for both of the players, we say that we have a non-adaptive strategy. Because the player does not receive any feedback during the game it will play in the same manner against every opponent. They are not dependent on the opponents movements. This means that they can already generate the time sequence for all the moves in advance.  But they can depend on some randomness because the non-adaptive strategies can be randomised. 
+In this paper we will focus in the beginning on the non-adaptive strategies. Reasons behind this is that a player (defender or attacker) rarely knows what the strategies are of his opponent. An interesting subclass of the non-adaptive strategies is one where the time intervals between two consecutive moves are generated by a renewal process. Example of such a renewal strategy is the periodic strategy where the time between two consecutive moves of the players are a fixed interval. An exponential strategy is a renewal strategy in which the interval between two consecutive moves is exponentially distributed.  \\
+
+
+In the category Adaptive strategy there are two sub classes of strategies. The first one is the Last move (LM). In this class whenever a player flips it will find out the exact time that the opponent played the last time. In the second class the Full History (FH), whenever a player flips it will find out the whole history of the opponents move. If the opponent player plays with a renewal strategy the sub classes FH and LM collapse. \\
+ %n this subsection we elaborate about the strategy of FlipIt . 
+%A renewal strategy is a non-adaptive strategy \\
+
+
+ 
+The game can be extended by the amount of information that a player receives. It can also be possible for a player to get information at the start of the game. Both interesting cases are:
+\begin{itemize}
+\item Rate-of-play (RP): The player finds out the exact rate of play of the opponent.
+\item Knowledge-of-strategy (KS): The player finds out the complete information of the strategy that the opponent is playing.
+\end{itemize}
+
+
+
+
+ 
+
+ \begin{table}
+ \centering
+ \begin{tabular}{ l | c  }
+  \textbf{Categories} & \textbf{Classes of Strategies} \\
+  \hline Non-adaptive (NA) & Exponential \\
+  & Periodic \\
+  & Renewal \\
+  & General non-adaptive \\
+  \hline Adaptive (AD) & Last move (LM) \\
+  & Full History (FH) \\  
+\end{tabular}
+ \caption{Hierarchy of Classes of strategies in FlipIt}
+ \label{table:Strategies}
+ \end{table}
+
+
+
+
+\subsubsection{Imporant results}
+
+\begin{itemize}
+\item periodische spellen domineren de andere renewal strategies
+\item periodische strategien wel slecht tegen attacker die laatste move weet
+\item als de defender snel speelt dan forceert die de attacker om niet meer mee te spelen
+\item iedereen die feedback krijgt heeft meer benefit dan zonder die feedback
+\end{itemize}
+ 
+
 
 \section{FlipIt with virus propagation}
 A FlipIt game consists of a single resource. To represent the security problem, the game now defines its single resource as a computer network with multiple
@@ -88,11 +186,10 @@ After dropping a virus on the first resource, it takes a while for the virus to 
 the entire network. The time that it takes for the virus to infect every node will be
 denoted as parameter d. If we want to measure how long it takes for the virus to
 infect all the nodes in the network, we have to calculate the shortest path from the
-first infected node to the farthest node. This can be measured by a method that we
-will explain in section []. Assume that an attacker attacks at time t, then only at time t + d he gains control over the entire network. If the defender flips the network before the period d has elapsed (so, somewhere between t and t+ d), then the attacker will never gain control over the entire network. Using this parameter d, a FlipIt game with virus propagation
+first infected node to the farthest node. Assume that an attacker attacks at time t, then only at time t + d he gains control over the entire network. If the defender flips the network before the period d has elapsed (so, somewhere between t and t+ d), then the attacker will never gain control over the entire network. Using this parameter d, a FlipIt game with virus propagation
 can be modelled. \\
 
-We start by formalizing the non-adaptive continuous basic FlipIt game where players use a periodic strategy with a random phase. his choice is motivated by the assumption that in the practical situation of most organisations, the defence strategy is to periodically defend the network. This corresponds to a periodic defender strategy.  To simplify the analysis in a first time, a periodic attacker strategy is assumed as well. Further research can investigate the effect of relaxing this assumption. \\
+We start by formalizing the non-adaptive continuous basic FlipIt game where players use a periodic strategy with a random phase. This choice is motivated by the assumption that in the practical situation of most organisations, the defence strategy is to periodically defend the network. This corresponds to a periodic defender strategy.  To simplify the analysis in a first time, a periodic attacker strategy is assumed as well. Further research can investigate the effect of relaxing this assumption. \\
 
 Next we split the formalisation for the benefit formula for a FlipIt game with virus propagation in two cases. First the benefit formula is derived for the basis case and then it is calculated for the case with a virus propagation. The first case is where the defender plays at least as fast as the attacker, the second case is where the attacker plays at least as fast as the defender. This subdivision is also used in the FlipIt paper. \\
 
@@ -112,9 +209,9 @@ The expected period of attacker control within the interval would be r/2, withou
 \beta_{A}(\alpha_{D},\alpha_{A}) =\dfrac {r} {2} - k_{A} \alpha_{A} = \dfrac {\delta_{D}} {2\delta_{A}} - k_{A} \alpha_{A}  
 \end{equation}\\
 
-However, because of the delay caused by a virus, the maximal time of control is reduced to $\delta_{D}-d$. There is a probability of \textit{r} that the attacker will move in the interval of the defender. The attacker has to play soon enough to gain control, meaning that the attacker has to play during the period of $\delta_{D}-d$ during the interval of the defender. There is $\dfrac{\delta_{D}-d}{\delta_{D}}$ probability that the attacker will move soon enough which gives the attacker a gain of $\dfrac{\delta_{D}-d}{2}$. If the attacker moves after the period of $\delta_{D}-d$, the gain of the attacker will be zero. The average gain rate of the attacker can be expressed as follows if we look at one interval of the defender:
+However, because of the delay caused by a virus, the maximal time of control is reduced to $\delta_{D}-d$. There is a probability of \textit{r} that the attacker will move in the interval of the defender. The attacker has to play soon enough to gain control, meaning that the attacker has to play during the period of $\delta_{D}-d$ during the interval of the defender. There is $\dfrac{\delta_{D}-d}{\delta_{D}}$ probability that the attacker will move soon enough which gives the attacker a gain of $\dfrac{\delta_{D}-d}{2}$. If the attacker moves after the period of $\delta_{D}-d$, the gain of the attacker will be zero. The average gain rate of the attacker can be expressed as follows if we look at one interval of the defender and average over all the phases:
 \begin{equation}\label{first}
-\beta_{A}(\alpha_{D},\alpha_{A}) = \dfrac {1}{\delta_{D}} [ \dfrac{\delta_{D}}{\delta_{A}} \cdot \dfrac{\delta_{D}-d}{\delta_{D}} \cdot \dfrac{\delta_{D}-d}{2} + \dfrac{\delta_{D}}{\delta_{A}} \cdot \dfrac{d}{\delta_{D}} \cdot 0 ]
+\gamma_{A}(\alpha_{D},\alpha_{A}) = \dfrac {1}{\delta_{D}} [ \dfrac{\delta_{D}}{\delta_{A}} \cdot \dfrac{\delta_{D}-d}{\delta_{D}} \cdot \dfrac{\delta_{D}-d}{2} + \dfrac{\delta_{D}}{\delta_{A}} \cdot \dfrac{d}{\delta_{D}} \cdot 0 ]
 \end{equation}
 
 To complete the formula to derive the benefit function, the cost of moving is added. In the second formula we can see the formula of the original FlipIt game.
@@ -150,34 +247,61 @@ For the case with a virus we consider two cases, Case a and Case b, to compute t
 
 
 \subsubsection*{\textbf{Case a:} $d + \delta_{A} \leq \delta_{D}$}
+~~\\
+If $d + \delta_{A}$  is a timespan for the attacker, the defender will never move twice during this timespan because $d + \delta_{A} \leq \delta_{D}$. With a probability of $\dfrac{\delta_{A}}{\delta_{D}} $ the defender move will during the interval of the attacker. When this happens the defender will end with being in control at the end of the interval. In the next interval the attacker will move in the beginning but will not gain control because of the delay, see figure \ref{fig:case2} cases (1) and (2). This means that the defender will keep the control over the resource in the next interval over a period of the delay, namely \textit{d}. Because $d + \delta_{A} \leq \delta_{D}$ the next move of the defender in this second interval will not be during the delay. 
 
-Let $d + \delta_{A} \leq \delta_{D}$. If $d + \delta_{A}$  is a timespan for the attacker, the defender will never move twice in this timespan.  $\dfrac{delta_{A}}{\delta_{D}}$ the defender will move during the interval of the attacker. When this happens the defender will end with being in control at the end of the interval. In the next interval the attacker will move in the beginning but will not gain control after the delay of \textit{d}. This means that if the defender moved in the interval prior to this one, the delay is the minimum gain of the defender. To calculate the gain rate of the defender we don't look at one interval of the defender. We know that if the defender moves within the interval of the defender, he will receive a minimum of $\dfrac{\delta_{A}}{2}$ gain. In the next interval the defender will receive a gain of $d$. 
+%To calculate the gain rate we only need to calculate the number of moves that the defender moves in the interval of the attacker. We know that if the defender moves within the interval of the defender, he will receive a minimum of $\dfrac{\delta_{A}}{2}$ gain. In the next interval the defender will receive a gain of $d$. 
 
-This means that every time the defender plays, he will get a gain of $\dfrac{\delta_{A}}{2}$ and the next interval will always receive a gain of $d$. To derive the benefit formula for the defender we can calculate the probability that the defender will move during an interval of the attacker and multiply it by the gain rate of the defender plus the gain rate that it will give to the next interval. 
-This yields in the following formula:
+Every time the defender plays, he will get a gain rate of $\dfrac{\delta_{A}}{2\delta_{A}}$ and the next interval will always receive a gain rate of $\dfrac{d}{\delta_{A}}$. To derive the total gain formula for the defender we can calculate the probability that the defender will move during an interval of the attacker and multiply it by the gain rate of the defender plus the gain rate that it will give to the next interval. 
+
 \begin{equation}\label{first}
-\beta_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta{A}}{\delta_{D}} \cdot \dfrac{(d+\dfrac{\delta_{A}}{2})}{\delta_{A}} - k_{D} \alpha_{D} 
+\gamma_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta_{A}}{\delta_{D}} \cdot \dfrac{(d+\dfrac{\delta_{A}}{2})}{\delta_{A}} 
 \end{equation}
 \begin{equation}\label{first}
-\beta_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - k_{D} \alpha_{D} 
+\gamma_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} 
+\end{equation}\\
+This yields in the following benefit formula:
+\begin{equation}\label{first}
+\beta_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - k_{D} \alpha_{D} 
 \end{equation}\\
 
 The benefit for the attacker will be as follows:
 \begin{equation}\label{first}
-\beta_{A}(\alpha_{D},\alpha_{A}) = 1 -\dfrac{\delta{A}}{2\delta_{D}} - \dfrac{d}{\delta_{D}} - k_{A} \alpha_{A} 
+\beta_{A}(\alpha_{D},\alpha_{A}) = 1 -\dfrac{\delta_{A}}{2\delta_{D}} - \dfrac{d}{\delta_{D}} - k_{A} \alpha_{A} 
 \end{equation}\\
 
 \begin{figure}[hbtp]
 \caption{Case 2 where d + deltaA < deltaD}
 \centering
-\includegraphics[scale=0.7]{../../doc/template/Images/FlipItCase2.png}
+\includegraphics[scale=0.5]{../../doc/template/Images/FlipItCase2.png}
+\label{fig:case2}
 \end{figure}
 
 
-It is crucial that the $d + \delta_{1}$ is not greater than $ \delta_{0}$. If it is greater that means that the defender can move during a delay after an interval of the attacker where the defender already has moved. If we calculate the benefit formula in the same manner, to much gain is added. Namely the overlap during the delay.
+It is crucial that the $d + \delta_{1}$ is not greater than $ \delta_{0}$. If it is greater that means that the defender can move during a delay after an interval of the attacker where the defender already has moved. If we calculate the benefit formula in the same manner, to much gain is added. Namely the overlap during the delay. \\
+~~\\
 
-\subsubsection*{\textbf{Case b:} $d + \delta_{1} > \delta_{D}$}
+\subsubsection*{\textbf{Case b:} $d + \delta_{A} > \delta_{D}$}
+~~~\\
 
+
+\section{Simulations and results}
+
+\section{Related work on FlipIt}
+\label{ch:extendedWork}
+
+There a various possible ways to extend FlipIt. 
+Laszka et al. made a lot of additions and extensions on the original game of FlipIt. For instance Laszka et al. extended the basic FlipIt game to multiple resources. The incentive is that for compromising a system in a real case it needs more than just taking over just one resource. An example is that one resource can be gaining access to a system and breaking the password of the system is another resource. The model is called FlipThem \cite{FlipThem}
+. They use two ways to flip the multiple resources: the AND and the OR control model. In the AND model the attacker only controls the system if he controls all the resources of the system, whereas in the OR model the attacker only needs to compromise one resource to be in control of the entire system. \\
+
+Another addition of Laszka et al. to the game of FlipIt \cite{MitigationCovert} 
+is extending the game to also consider non-targeted attacks by non-strategic players. In this game the defender tries to maintain control over the resource that is subjected to both targeted and non-targeted attacks. Non-targeted attacks can include phishing, while targeted attacks may include threats delivered through zero day attack vulnerabilities. \\
+One of the last important addition from Laszka et al. \cite{MitigationNonTargeted} is to consider a game where the moves made by the attacker are still covert but the moves made by the defender are known to the attacker. This means that the attacker can base his attacks on the defender's moves. Both the targeted and non-targeted attacks don't succeed immediately. For the targeted attack the time till it succeeds is given by an exponential distributed random variable with a known rate. The non-targeted attacks are modelled as a single attacker and the time till it succeeds is given by a Poisson process. The conclusion of this paper is that the optimal strategy for the defender is moving periodically. \\ 
+
+Other authors used the FlipIt game to apply it on a specific scenario. To be able to use the FlipIt game, modifications where required for the FlipIt model.
+One of the scenarios by Pham \cite{compromised} was to find out whether a resource was compromised or not by the attacker. This could be verified by the defender, who has an extra move "test" beside the flip move. The basic idea is to test with an extra action if the resource has been compromised or not. This move involves also an extra cost. This model is useful if somebody wants to know for example if his or her password has been compromised.   \\
+
+Finally researchers also have investigated the behavioural of humans when playing FlipIt. A Nochenson and Grossklags \cite{nochenson2013behavioral}  investigate how people really act when given temporal decisions. Reitter et al. \cite{reitter2013risk} observed continuous games, 20-seconds FlipIt game..
 
 \bibliographystyle{IEEEtran}
 \bibliography{IEEEabrv,references}

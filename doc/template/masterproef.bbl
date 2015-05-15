@@ -1,0 +1,55 @@
+\begin{thebibliography}{1}
+
+\bibitem{Coursera}
+Gametheory, 2004.
+
+\bibitem{FlipThem}
+A.~Laszka.
+\newblock Flipthem: Modeling targeted attacks with flipit for multiple
+  resources.
+\newblock {\em 5th International Conference, GameSec 2014, Los Angeles, CA,
+  USA, November 6-7, 2014. Proceedings}, 8840:175--194, 2014.
+
+\bibitem{MitigationCovert}
+A.~Laszka, B.~Johnson, and J.~Grossklags.
+\newblock Mitigating covert compromises.
+\newblock {\em iets}, 8289:319--332, 2013.
+
+\bibitem{MitigationNonTargeted}
+A.~Laszka, B.~Johnson, and J.~Grossklags.
+\newblock Mitigation of targeted and non-targeted covert attacks as a timing
+  game.
+\newblock 8252:175--191, 2013.
+
+\bibitem{leyton2008essentials}
+K.~Leyton-Brown and Y.~Shoham.
+\newblock {\em Essentials of Game Theory: A Concise, Multidisciplinary
+  Introduction}.
+\newblock Synthesis lectures on artificial intelligence and machine learning.
+  Morgan \& Claypool Publishers, 2008.
+
+\bibitem{nochenson2013behavioral}
+A.~Nochenson, J.~Grossklags, et~al.
+\newblock A behavioral investigation of the flipit game.
+\newblock In {\em Proceedings of the 12th Workshop on the Economics of
+  Information Security (WEIS)}, 2013.
+
+\bibitem{compromised}
+V.~Pham and C.~Cid.
+\newblock Are we compromised? modelling security assessment games.
+\newblock In J.~Grossklags and J.~Walrand, editors, {\em Decision and Game
+  Theory for Security}, volume 7638 of {\em Lecture Notes in Computer Science},
+  pages 234--247. Springer Berlin Heidelberg, 2012.
+
+\bibitem{reitter2013risk}
+D.~Reitter, J.~Grossklags, and A.~Nochenson.
+\newblock Risk-seeking in a continuous game of timing.
+\newblock In {\em Proceedings of the 13th International Conference on Cognitive
+  Modeling (ICCM)}, pages 397--403, 2013.
+
+\bibitem{FlipIt}
+M.~van Dijk, A.~Juels, A.~Oprea, and R.~Rivest.
+\newblock Flipit: The game of ''stealthy takeover''.
+\newblock {\em Journal of Cryptology}, 26(4):655--713, 2013.
+
+\end{thebibliography}

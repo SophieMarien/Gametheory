@@ -1,5 +1,5 @@
 @misc{kaspersky,
-title = {{IT security risk survey 2014}},
+title = {IT security risk survey 2014},
 url = {http://media.kaspersky.com/en/IT_Security_Risks_Survey_2014_Global_report.pdf/},
 urldate = {14/05/15}
 }
@@ -13,11 +13,226 @@ journal={Journal of Cryptology},
 volume={26},
 number={4},
 doi={10.1007/s00145-012-9134-5},
-title={FlipIt: The Game of “Stealthy Takeover”},
+title={FlipIt: The Game of ''Stealthy Takeover''},
 url={http://dx.doi.org/10.1007/s00145-012-9134-5},
 publisher={Springer US},
 keywords={FlipIt; Security modeling; Game theory; Advanced persistent threats; Repeated stealthy takeovers},
 author={van Dijk, Marten and Juels, Ari and Oprea, Alina and Rivest, RonaldL.},
 pages={655-713},
 language={English}
+}
+
+@article{FlipThem,
+abstract = {Recent high-profile targeted attacks showed that even the most secure and secluded networks can be compromised by motivated and resourceful attackers, and that such a system compromise may not be immediately detected by the system owner. Researchers at RSA proposed the FlipIt game to study the impact of such stealthy takeovers. In the basic FlipIt game, an attacker and a defender fight over a single resource; in practice, however, systems typically consist of multiple resources that can be targeted. In this paper, we present FlipThem, a generalization of FlipIt to multiple resources. To formulate the players’ goals and study their best strategies, we introduce two control models: in the AND model, the attacker has to compromise all resources in order to take over the entire system, while in the OR model, she has to compromise only one. Our analytical and numerical results provide practical recommendations for defenders.},
+author = {Aron Laszka},
+doi = {10.1007/978-3-319-12601-2-10},
+isbn = {978-3-319-12601-2},
+issn = {0302-9743},
+journal = {5th International Conference, GameSec 2014, Los Angeles, CA, USA, November 6-7, 2014. Proceedings}, 
+pages = {175--194},
+title = {FlipThem: Modeling Targeted Attacks with FlipIt for Multiple Resources},
+volume = {8840},
+year = {2014},
+publisher = {Springer Berlin Heidelberg}
+}
+
+
+@article{MitigationNonTargeted,
+abstract = {We consider a strategic game in which a defender wants to maintain control over a resource that is subject to both targeted and non-targeted covert attacks. Because the attacks are covert, the defender must choose to secure the resource in real time without knowing who controls it. Each move by the defender to secure the resource has a one-time cost and these defending moves are not covert, so that a targeted attacker may time her attacks based on the defender’s moves. The time between when a targeted attack starts and when it succeeds is given by an exponentially distributed random variable with a known rate. Non-targeted attackers are modeled together as a single attacker whose attacks arrive following a Poisson process. We find that in this regime, the optimal moving strategy for the defender is a periodic strategy, so that the time intervals between consecutive moves are constant.},
+year={2013},
+isbn={978-3-319-02785-2},
+booktitle={Decision and Game Theory for Security},
+volume={8252},
+series={Lecture Notes in Computer Science},
+editor={Das, SajalK. and Nita-Rotaru, Cristina and Kantarcioglu, Murat},
+doi={10.1007/978-3-319-02786-9-11},
+title={Mitigation of Targeted and Non-targeted Covert Attacks as a Timing Game},
+url= {http://dx.doi.org/10.1007/978-3-319-02786-9-11},
+publisher={Springer International Publishing},
+keywords={Game Theory; Computer Security; Games of Timing; Covert Compromise; Targeted Attacks; Non-Targeted Attacks},
+author={Laszka, Aron and Johnson, Benjamin and Grossklags, Jens},
+pages={175-191},
+language={English}
+}
+
+@article{MitigationCovert,
+abstract = {Attackers of computing resources increasingly aim to keep security compromises hidden from defenders in order to extract more value over a longer period of time. These covert attacks come in multiple varieties, which can be categorized into two main types: targeted and non-targeted attacks. Targeted attacks include, for example, cyberespionage, while non-targeted attacks include botnet recruitment.
+We are concerned with the subclass of these attacks for which detection is too costly or technically infeasible given the capabilities of a typical organization. As a result, defenders have to mitigate potential damages under a regime of incomplete information. A primary mitigation strategy is to reset potentially compromised resources to a known safe state, for example, by reinstalling computer systems, and changing passwords or cryptographic private keys.
+In a game-theoretic framework, we study the economically optimal mitigation strategies in the presence of targeted and non-targeted covert attacks. Our work has practical implications for the definition of security policies, in particular, for password and key renewal schedules.},
+year={2013},
+isbn={978-3-642-45045-7},
+booktitle={Web and Internet Economics},
+volume={8289},
+series={Lecture Notes in Computer Science},
+editor={Chen, Yiling and Immorlica, Nicole},
+doi={10.1007/978-3-642-45046-4-26},
+title={Mitigating Covert Compromises},
+journal ={iets}, 
+url={ http://dx.doi.org/10.1007/978-3-642-45046-4-26},
+publisher={Springer Berlin Heidelberg},
+keywords={Game Theory; Computer Security; Covert Compromise; Targeted Attacks; Non-Targeted Attacks},
+author={Laszka, Aron and Johnson, Benjamin and Grossklags, Jens},
+pages={319-332},
+language={English}
+}
+
+
+
+@article{DefendingAgainstUnknownEnemy,
+abstract = {Most cryptographic systems carry the basic assumption that entities are able to preserve the secrecy of their keys. With attacks today showing ever increasing sophistication, however, this tenet is eroding. “Advanced Persistent Threats” (APTs), for instance, leverage zero-day exploits and extensive system knowledge to achieve full compromise of cryptographic keys and other secrets. Such compromise is often silent, with defenders failing to detect the loss of private keys critical to protection of their systems. The growing virulence of today’s
+threats clearly calls for new models of defenders’ goals and abilities. In this paper, we explore applications of FLIPIT, a novel game-theoretic model of system defense introduced in [17]. In FLIPIT, an attacker periodically gains complete control of a system, with the unique feature that system compromises are stealthy, i.e., not immediately detected by the system owner, called the defender. We distill out several lessons from our study of FLIPIT and demonstrate their application to several real-world problems, including password reset policies, key rotation, VM refresh and cloud auditing.},
+author = {Kevin D. Brouwers, Marten van Dijk, Robert Griffin, Ari Juels, Alina Oprea, Ronald L. Rivest and Nikos Triandopoulos},
+doi = {10.1007/978-3-642-34266-0-15},
+isbn = {978-3-642-34266-0},
+issn = {0302-9743},
+journal = {Third International Conference, GameSec 2012, Budapest, Hungary, November 5-6, 2012. Proceedings}, 
+pages = {248--263},
+title = {Defending Against the Unkown Enemy: Applying FlipIt to System Security},
+volume = {7638},
+year = {2012},
+publisher = {Springer Berlin Heidelberg}
+}
+
+
+@book{leyton2008essentials,
+  title={Essentials of Game Theory: A Concise, Multidisciplinary Introduction},
+  author={Leyton-Brown, K. and Shoham, Y.},
+  isbn={9781598295931},
+  series={Synthesis lectures on artificial intelligence and machine learning},
+  url={ http://books.google.be/books?id=u8sDLATVJikC},
+  year={2008},
+  publisher={Morgan \& Claypool Publishers}
+}
+
+@Misc{wikiGT,
+author =  {Wikipedia},
+title =  {Game Theory},
+howpublished = {http://http://en.wikipedia.org/wiki/Game-theory}
+}
+
+@inproceedings{hack.in2009,
+  title={Survey on malware detection methods},
+  author={Vinod, P and Jaipur, R and Laxmi, V and Gaur, M},
+  booktitle={Proceedings of the 3rd Hackers’ Workshop on Computer and Internet Security (IITKHACK’09)},
+  pages={74--79},
+  year={2009}
+}
+
+@Misc{wikiGT,
+author =       {Ars Technica},
+title =        {How “omnipotent” hackers tied to NSA hid for 14 years—and were found at last},
+howpublished = {http://arstechnica.com/security/2015/02/how-omnipotent-hackers-tied-to-the-nsa-hid-for-14-years-and-were-found-at-last/},
+time = {last checked on 2014-02-18}
+}
+
+
+@article{OnWorms2005survey,
+abstract={With the explosive growth and increasing complexity of network applications, the threats of Internet worms against network security are more and more serious. This paper presents the concepts and research situations of Internet worms, their function component, and their execution mechanism. It also addresses the scanning strategies, propagation models, and the critical techniques of Internet worm prevention. Finally, the remaining problems and emerging trends in this area are also outlined},
+  title={A survey and trends on Internet worms},
+  author={Qing, Sihan and Wen, Weiping},
+  journal={Computers \& Security},
+  volume={24},
+  number={4},
+  pages={334--346},
+  year={2005},
+  publisher={Elsevier}
+}
+
+@article{SurveyGameTheoryAppliedOnNetworkSecurity,
+abstract = {Network security is a complex and challenging problem. The area of network defense mechanism design is receiving immense attention from the research community for more than two decades. However, the network security problem is far from completely solved. Researchers have been exploring the applicability of game theoretic approaches to address the network security issues and some of these approaches look promising. This paper surveys the existing game theoretic solutions which are designed to enhance network security and presents a taxonomy for classifying the proposed solutions. This taxonomy should provide the reader with a better understanding of game theoretic solutions to a variety of cyber security problems.},
+author = {Roy, S. ; Dept. of Comput. Sci., Univ. of Memphis, Memphis, TN, USA ; Ellis, C. ; Shiva, S. ; Dasgupta, D. 
+more authors},
+doi = {10.1109/HICSS.2010.35},
+isbn = {978-1-4244-5510-2},
+issn = {1530-1605},
+conference = {System Sciences (HICSS), 2010 43rd Hawaii International Conference on}, 
+location = {Honolulu, HI},
+time = {5-8 Jan. 2010},
+pages = {1 - 10},
+title = {{Defending Against the Unkown Enemy: Applying FlipIt to System Security}},
+year = {2010},
+publisher = {IEEE}
+}
+
+@incollection{GameTheorApprCostBenefitAnalyses,
+abstract = {Many existing research efforts in the field of malware proliferation aim at modelling and analysing its spread dynamics. Many malware dissemination models are based on the characteristics of biological disease spread in human populations. In this work, we utilise game theory in order to extend two very commonly used malware spread models (SIS and SIR) by incorporating defence strategies against malware proliferation. We consider three different security mechanisms, “patch”, “removal” and “patch and removal” on which our model is based. We also propose a cost-benefit model that describes optimal strategies the defender could follow when cost is taken into account. Lastly, as a way of illustration, we apply our models on the well studied Code-Red worm.},
+year={2013},
+isbn={978-3-642-39217-7},
+booktitle={Security and Privacy Protection in Information Processing Systems},
+volume={405},
+series={IFIP Advances in Information and Communication Technology},
+editor={Janczewski, LechJ. and Wolfe, HenryB. and Shenoi, Sujeet},
+doi={10.1007/978-3-642-39218-4-3},
+title={Game Theoretic Approach for Cost-Benefit Analysis of Malware Proliferation Prevention},
+url={ http://dx.doi.org/10.1007/978-3-642-39218-4-3},
+publisher={Springer Berlin Heidelberg},
+author={Spyridopoulos, Theodoros and Oikonomou, George and Tryfonas, Theo and Ge, Mengmeng},
+pages={28-41},
+language={English}
+}
+
+@inproceedings{DistributedWormSim,
+  abstract = {Internet worm spread is a phenomenon involving millions of hosts, who interact in complex and diverse environment. Scanning speed of each infected host depends on its resources and the defenses at work in its network. Aggressive worms further interact with the underlying Internet topology .. the dynamics of the spread is constrained by the limited bandwidth of network links, and high-volume scan traffic leads to BGP router failure thus affecting global routing. Worm traffic also interacts with legitimate background traffic competing for (and often winning) the limited bandwidth resources. To faithfully simulate worm spread and other Internet-wide events such as DDoS, flash crowds and spam we need a detailed Internet model, a packet-level simulation of relevant event features, and a realistic model of background traffic on the whole Internet. The memory and CPU requirements of such simulation exceed a single machineýs resources, creating a need for distributed simulation. We propose a design and present implementation of a distributed worm simulator, called PAWS. PAWS runs on Emulab testbed, which facilitates its use by other researchers. We validate PAWS in a variety of scenarios, and evaluate costs and benefits of distributed worm simulation.},
+  title={Distributed worm simulation with a realistic internet model},
+  author={Wei, Songjie and Mirkovic, Jelena and Swany, Martin},
+  booktitle={Proceedings of the 19th Workshop on Principles of Advanced and Distributed Simulation},
+  pages={71--79},
+  year={2005},
+  organization={IEEE Computer Society},
+  isbn = {0-7695-2383-8},
+  doi = {10.1109/PADS.2005.7}
+}
+
+@article{VirusChangePropSpeed,
+abstract = {In this paper, we address issues related to the modeling, analysis, and countermeasures of worm attacks on the Internet. Most previous work assumed that a worm always propagates itself at the highest possible speed. Some newly developed worms (e.g., “Atak” worm) contradict this assumption by deliberately reducing the propagation speed in order to avoid detection. As such, we study a new class of worms, referred to as self-disciplinary worms. These worms adapt their propagation patterns in order to reduce the probability of detection, and eventually, to infect more computers. We demonstrate that existing worm detection schemes based on traffic volume and variance cannot effectively defend against these self-disciplinary worms. To develop proper countermeasures, we introduce a game-theoretic formulation to model the interaction between the worm propagator and the defender. We show that an effective integration of multiple countermeasure schemes (e.g., worm detection and forensics analysis) is critical for defending against self-disciplinary worms. We propose different integrated schemes for fighting different self-disciplinary worms, and evaluate their performance via real-world traffic data.},
+author = {Wei Yu and Nan Zhang and Xinwen Fu and Wei Zhao},
+title = {Self-Disciplinary Worms and Countermeasures: Modeling and Analysis},
+journal ={IEEE Transactions on Parallel and Distributed Systems},
+volume = {21},
+number = {10},
+issn = {1045-9219},
+year = {2010},
+pages = {1501-1514},
+doi = { http://doi.ieeecomputersociety.org/10.1109/TPDS.2009.161},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA}
+}
+
+
+@online{Coursera,
+  title = {Gametheory},
+  year = 2004,
+  url = {https://class.coursera.org/gametheory-004},
+  urldate = {2015-02-22}
+}
+
+@incollection{Compromised,
+year={2012},
+isbn={978-3-642-34265-3},
+booktitle={Decision and Game Theory for Security},
+volume={7638},
+series={Lecture Notes in Computer Science},
+editor={Grossklags, Jens and Walrand, Jean},
+doi={10.1007/978-3-642-34266-0_14},
+title={Are We Compromised? Modelling Security Assessment Games},
+url={http://dx.doi.org/10.1007/978-3-642-34266-0_14},
+publisher={Springer Berlin Heidelberg},
+author={Pham, Viet and Cid, Carlos},
+pages={234-247},
+language={English}
+}
+
+@inproceedings{nochenson2013behavioral,
+  title={A behavioral investigation of the FlipIt game},
+  author={Nochenson, Alan and Grossklags, Jens and others},
+  booktitle={Proceedings of the 12th Workshop on the Economics of Information Security (WEIS)},
+  year={2013}
+}
+
+@inproceedings{reitter2013risk,
+  title={Risk-seeking in a continuous game of timing},
+  author={Reitter, David and Grossklags, Jens and Nochenson, Alan},
+  booktitle={Proceedings of the 13th International Conference on Cognitive Modeling (ICCM)},
+  pages={397--403},
+  year={2013}
 }
