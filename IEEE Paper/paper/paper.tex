@@ -9,17 +9,15 @@
 
 \usepackage[pdftex]{graphicx}  
 \usepackage[cmex10]{amsmath}
-\usepackage[dutch]{babel}
 
 \usepackage{float}
+%maakt caption van figuren groter
 \usepackage{caption}
-\usepackage[caption = false,subrefformat=parens,labelformat=parens]{subfig}
 \usepackage{amsmath}
 \usepackage{epstopdf}
 \usepackage{textcomp}
 \usepackage{gensymb}
 \usepackage[titlenumbered,algoruled, linesnumbered]{algorithm2e}
-\usepackage{algpseudocode}
 \usepackage{booktabs}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -66,12 +64,12 @@ Why is it so important to keep a system secure?  Many businesses store confident
 % A hacker will be a person that seeks exploits or weaknesses in a system or network in order to gain access.  Many of those attacks have a different cause. Some of the attacks by a hacker can be benign, others can be harmful. There are various ways to break into a system. Viruses, worms, spyware and other malware are the number two of the top external threats that a business faces, according to the security report kaspersky 2014 \cite{kaspersky} (number one is Spam). Furthermore these kind of threats also causes the greatest percentage in loss of data. These threats will infect the network by means of a virus that will propagate through the network.  Most of the attacks are Advanced Persistent Threats (APT). \\
  
 
-A particular kind of frequently occurring threaths are Advanced Persistent Threats (APT). An APT is a targeted cyber attack that targets organisations in a stealthy way and that can stay undetected for a long period. This makes it so hard to protect a network or a system against an APT. Bruce Schneier describes an APT as something different and stronger than a conventional threat: ''\textit{A conventional hacker or criminal isn't interested in any particular target. He wants a thousand credit card numbers for fraud, or to break into an account and turn it into a zombie, or whatever. Security against this sort of attacker is relative; as long as you're more secure than almost everyone else, the attackers will go after other people, not you. An APT is different; it's an attacker who - for whatever reason - wants to attack you. Against this sort of attacker, the absolute level of your security is what's important. It doesn't matter how secure you are compared to your peers; all that matters is whether you're secure enough to keep him out}'' - Bruce Schneier: APT is a Useful Buzzword [].\\
+A particular kind of frequently occurring threats are Advanced Persistent Threats (APT). An APT is a targeted cyber attack that targets organisations in a stealthy way and that can stay undetected for a long period. This makes it so hard to protect a network or a system against an APT. Bruce Schneier describes an APT as something different and stronger than a conventional threat: ''\textit{A conventional hacker or criminal isn't interested in any particular target. He wants a thousand credit card numbers for fraud, or to break into an account and turn it into a zombie, or whatever. Security against this sort of attacker is relative; as long as you're more secure than almost everyone else, the attackers will go after other people, not you. An APT is different; it's an attacker who - for whatever reason - wants to attack you. Against this sort of attacker, the absolute level of your security is what's important. It doesn't matter how secure you are compared to your peers; all that matters is whether you're secure enough to keep him out}'' - Bruce Schneier \cite{APTBruce}.\\
 
 Since it is so difficult to protect a system or a network against APT's, researchers have been looking for effective ways to predict in advance which defence strategy might be the better one. 
 Game theory is gaining increasing interest as an effective technique to model and study Cyber Security. Game theory analyses the security problem as a game where the players are an attacker and a defender of a system, and where both players have to make decisions. In particular, both players will aim for the strategy that results in a maximal benefit for them.  Researchers at RSA made a game theoretic framework to model targeted attacks. They study the specific scenario where a system or network is repeatedly taken over completely by an attacker and this attack is not immediately detected by the defender of the system or network. In game theory, such a game is known as ''FlipIt'' \cite{FlipIt}. This is a two players game where the attacker and the defender are competing to get control over a shared resource. Both players do not know who is currently in control of the resource until they move. In FlipIt every move gives them immediately control over the resource. But what if the attacker moves and it takes a while before the attacker gets full control over the resource? FlipIt does not take into account that a move may not be instantaneous, but has a certain delay. Consider for example a network with different nodes ( laptops, datacenters) as a resource. The attacker drops a virus on one of the nodes and then wait till this virus infects the whole network. The attacker will only be in control of the resource once the whole network is infected. \\
 
-This paper proposes the adaptation of the FlipIt formulas as presented in \cite{FlipIt} such as to take the delay for virus propagation into account. In the next section we first present the original FlipIt game. Then section [] presents the FlipIt game with virus propagation. Section [] presents some related work. Section [] concludes the paper and presents avenues for further research.
+This paper proposes the adaptation of the FlipIt formulas as presented in \cite{FlipIt} such as to take the delay for virus propagation into account. In the next section we first present the original FlipIt game. Then section \ref{ch:FlipItGame} presents the FlipIt game with virus propagation. Section \ref{ch:extendedWork} presents some related work. Section \ref{ch:conclusion} concludes the paper and presents avenues for further research.
 
 \section{The FlipIt game}
 \label{ch:FlipItGame}
@@ -94,7 +92,7 @@ The unique feature of FlipIt is that every move will happen in a stealthy way, m
 
 
 The state of the resource is denoted as a time-dependent variable $C=C_{i}(t)$. 
-$C_{D}(t)$ is 1 if the game is under control by the defender and 0 if the game is under control by the attacker. Reversely, $C_{A}(t)$ will be 1 if the game is under control by the attacker and 0 if under controle by the defender. So, $C_{A}(t)= 1 - C_{D}(t)$.
+$C_{D}(t)$ is 1 if the game is under control by the defender and 0 if the game is under control by the attacker. Reversely, $C_{A}(t)$ will be 1 if the game is under control by the attacker and 0 if under control by the defender. So, $C_{A}(t)= 1 - C_{D}(t)$.
 The game starts with the defender being in control: $C_{D}(0)= 1$. \\
 
 
@@ -140,8 +138,8 @@ In this paper we will focus on the non-adaptive strategies. This choice is motiv
  \begin{tabular}{ l | c  }
   \textbf{Categories} & \textbf{Classes of Strategies} \\
   \hline Non-adaptive (NA) & Renewal \\
-  &  ~~~~ Periodic \\
-  &  ~~~~ Exponential \\
+  & - Periodic \\
+  & ~~~ - Exponential \\
   & General non-adaptive \\
   \hline Adaptive (AD) & Last move (LM) \\
   & Full History (FH) \\  
@@ -153,8 +151,8 @@ In this paper we will focus on the non-adaptive strategies. This choice is motiv
 
 The study of the different strategies by means of FlipIt framework allows to derive a number of interesting results:  
 \begin{itemize}
-\item periodic games dominate the other renewal strategies, meaning that it is always advantagous to play periodically against an opponent with a renewal strategy;
-\item periodic games are disadvantagous against players following a Last Move adaptive strategy;
+\item periodic games dominate the other renewal strategies, meaning that it is always advantageous to play periodically against an opponent with a renewal strategy;
+\item periodic games are disadvantageous against players following a Last Move adaptive strategy;
 \item if the defender plays with a periodic rate that is fast enough he'll force the attacker to drop out;
 \item any amount of feedback about the opponent received during the game, benefits to a player.
 \end{itemize}
@@ -180,7 +178,7 @@ Assume that an attacker attacks at time \textit{t}, he doesn't get immediate con
 The formalization starts from the model of the non-adaptive continuous basic FlipIt game where players use a periodic strategy with a random phase. This choice is motivated by the assumption that in most organisations, the defence strategy is to periodically defend the network. This corresponds to a periodic defender strategy.  A periodic attacker strategy is assumed as well, as this also corresponds to a common real life strategy. %nog eventueel verder te motiveren
 Further research can investigate the effect of relaxing this assumption. \\
 
-Similarly as in [], we split the formalization in two cases. The first case is where the defender plays at least as fast as the attacker, the second case is where the attacker plays at least as fast as the defender. For each of these cases, first the benefit formula of the basic case without delay is presented, and then the delay is introduced.  \\
+Similarly as in \cite{FlipIt}, we split the formalization in two cases. The first case is where the defender plays at least as fast as the attacker, the second case is where the attacker plays at least as fast as the defender. For each of these cases, first the benefit formula of the basic case without delay is presented, and then the delay is introduced.  \\
 
 \subsection{Formalization the benefit formula including the infection-delay}
  A Periodic strategy is a non-adaptive renewal strategy where the time intervals between consecutive moves are a fixed period, denoted by $\delta$. Moreover it has a random phase, that is chosen uniformly and random in the interval $[0,\delta]$ for the first move. The average rate of play of a player is denoted by $\alpha_{i} = \dfrac{1}{\delta_{i}}$. \\
@@ -196,22 +194,22 @@ The expected period of attacker control within the interval would be r/2, withou
 \beta_{A}(\alpha_{D},\alpha_{A}) =\dfrac {r} {2} - k_{A} \alpha_{A} = \dfrac {\delta_{D}} {2\delta_{A}} - k_{A} \alpha_{A}  
 \end{equation}\\
 
-Correspondeingly, the benefit for the defender can be expressed as:
+Correspondingly, the benefit for the defender can be expressed as:
 \begin{equation}\label{first}
 \beta_{D}(\alpha_{D},\alpha_{A}) =1 -  \dfrac {r} {2} - k_{D} \alpha_{D} = 1 - \dfrac {\delta_{D}} {2\delta_{A}} - k_{D} \alpha_{D} 
 \end{equation}
 
-However, because of the delay required for virus propagation, the maximal time of control is reduced to $\delta_{D}-d$. There is a probability of \textit{r} that the attacker will move in the interval of the defender. However, the gain will not be half of the interval. Indeed, the attacker has to play soon enough to gain control, meaning that the attacker has to play during the period of $\delta_{D}-d$ during the interval of the defender. The probability that the attacker plays soon enough is $\dfrac{\delta_{D}-d}{\delta_{D}}$ and this will give the attacker an avarage gain of $\dfrac{\delta_{D}-d}{2}$. If the attacker moves after the period of $\delta_{D}-d$, the gain of the attacker will be zero. The probability that this happens is  $\dfrac{d}{\delta_{D}}$. The average gain rate of the attacker can then be expressed as follows if we look at one interval of the defender:
+However, because of the delay required for virus propagation, the maximal time of control is reduced to $\delta_{D}-d$. There is a probability of \textit{r} that the attacker will move in the interval of the defender. However, the gain will not be half of the interval. Indeed, the attacker has to play soon enough to gain control, meaning that the attacker has to play during the period of $\delta_{D}-d$ during the interval of the defender. The probability that the attacker plays soon enough is $\dfrac{\delta_{D}-d}{\delta_{D}}$ and this will give the attacker an average gain of $\dfrac{\delta_{D}-d}{2}$. If the attacker moves after the period of $\delta_{D}-d$, the gain of the attacker will be zero. The probability that this happens is  $\dfrac{d}{\delta_{D}}$. The average gain rate of the attacker can then be expressed as follows if we look at one interval of the defender:
 \begin{equation}\label{first}
 \gamma_{A}(\alpha_{D},\alpha_{A}) = \dfrac {1}{\delta_{D}} [ \dfrac{\delta_{D}}{\delta_{A}} \cdot \dfrac{\delta_{D}-d}{\delta_{D}} \cdot \dfrac{\delta_{D}-d}{2} + \dfrac{\delta_{D}}{\delta_{A}} \cdot \dfrac{d}{\delta_{D}} \cdot 0 ]
 \end{equation}
 
-To derive the benefit, the cost of moving is substracted from the average gain. 
+To derive the benefit, the cost of moving is subtracted from the average gain. 
 \begin{equation}\label{first}
 \beta_{A}(\alpha_{D},\alpha_{A}) = \dfrac { (\delta_{D}-d) ^{2}} {2 \cdot \delta_{D}  \delta_{A}} - k_{A} \alpha_{A}
 \end{equation}
 \begin{equation}\label{first}
-\beta_{A}(\alpha_{D},\alpha_{A}) = \dfrac { \delta_{D}} {2 \cdot \delta_{A}} - k_{A} \alpha_{A} - (\dfrac{d}{\delta_{A}} - \dfrac{d^{2}}{2 \cdot \delta_{A} \delta_{D}})
+\beta_{A}(\alpha_{D},\alpha_{A}) = \dfrac { \delta_{D}} {2 \cdot \delta_{A}} - k_{A} \alpha_{A} - ( \dfrac{d^{2}}{2 \cdot \delta_{A} \delta_{D}} - \dfrac{d}{\delta_{A}} )
 \end{equation}
  
  
@@ -244,7 +242,7 @@ For the case with a virus we consider two cases, Case a and Case b, depending on
 ~~\\
 Consider a timespan $\delta_{A} + d$, representing the attacker's interval followed by the delay period in his next interval. The defender will never move twice during this timespan because $\delta_{A} + d \leq \delta_{D}$. The defender will move during the interval of the attacker with a probability of $\dfrac{\delta_{A}}{\delta_{D}} $. When this happens the defender will end with being in control at the end of the interval. In the next interval the attacker will have to regain control, meaning that during the delay, the defender stays in control, see figure \ref{fig:case2} cases (1) and (2). This means that the defender will keep the control over the resource in the next interval over a period of the delay, namely \textit{d}. Because $d + \delta_{A} \leq \delta_{D}$ the next move of the defender in this second interval will never occur during the delay, meaning that the entire delay can be considered as an extra benefit resulting of a play in the previous interval. 
 So, every time the defender plays, he will get an average gain of $\dfrac{\delta_{A}}{2}$ in the interval where he plays and in the next interval will always receive a extra gain of $d$, yielding a total average gain per interval of
-$\dfrac{(d+\dfrac{\delta_{A}2})}{\delta_{A}}$
+$\dfrac{(d+\dfrac{\delta_{A}}{2})}{\delta_{A}}$
 
 The total gain  rate of the defender is then the probability that the defender will move during an interval of the attacker multiplied by the total average gain per interval: 
 
@@ -272,11 +270,36 @@ The benefit for the attacker will be as follows:
 \end{figure}
 
 
-It is crucial that $ \delta_{D}$ is at least as large as $d + \delta_{A}$. If not, this would mean that the defender can move during the delay in the interval following the interval where the defender already moved. This would mean that there can be an overlap between the average gain of $\dfrac{\delta_{a}}{2}$ and the delay. The above benefit formula would then include to much gain for the defender: the potential overlap during the delay would be counted twice. \\
-To obtain the formula in case of a too long delay, we therefore need to substract this overlapping gain from the above formula.  The overlapping gain is equal to 
+It is crucial that $ \delta_{D}$ is at least as large as $d + \delta_{A}$. If not, this would mean that the defender can move during the delay in the interval following the interval where the defender already moved. This would mean that there can be an overlap between the average gain of $\dfrac{\delta_{A}}{2}$ and the delay. The above benefit formula would then include to much gain for the defender: the potential overlap during the delay would be counted twice. \\
+
+
 ~~ \\
-\subsubsection*{\textbf{Case b:} $d + \delta_{A} > \delta_{D}$}
+\subsubsection*{\textbf{Case b:} $d + \delta_{A} \geq \delta_{D}$}
 ~~~\\
+
+To obtain the formula in case of a too long delay, we therefore need to subtract this overlapping gain from the above formula. 
+Since $\delta_{D} \geq \delta_{A}$, if the defender enters the interval immediately after the attacker has played, then the defender cannot have played in the previous interval. In that case, there is no overlap. So the problem of the overlap only appears if the defenders enters late enough and thus only the last part of the delay is subject to overlap. The larger the difference between the interval of the defender and the attacker, the smaller the risk of overlap. Concretely, only the last part of lengt $d - (\delta_{D} - \delta_{A})$ is subject to overlap. Hence, the probability of overlap is $\dfrac{ d - (\delta_{D} - \delta_{A})}{\delta_{D}}$ and the gain will be half of this interval:  $\dfrac{ d - (\delta_{D} - \delta_{A})}{2}$.  The gain rate to be subtracted is therefore:\\
+
+\begin{equation}\label{first}
+\dfrac{1} {\delta_{A}} \cdot \dfrac{d - (\delta_{D} - \delta_{A})}{\delta_{D}} \cdot \dfrac{d - (\delta_{D} - \delta_{A})}{\delta_{D}}
+\end{equation}
+
+The total gain  rate of the defender is obtained by subtracting this term from the gain rate of case a:
+ \begin{equation}\label{first}
+\gamma_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta_{A}}{\delta_{D}} \cdot \dfrac{(d+\dfrac{\delta_{A}}{2})}{\delta_{A}} - \dfrac{(d - (\delta_{D} - \delta_{A}))^{2}}{2 \delta_{D} \delta_{A}}
+\end{equation}
+\begin{equation}\label{first}
+\gamma_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - \dfrac{(d - (\delta_{D} - \delta_{A}))^{2}}{2 \delta_{D} \delta_{A}}
+\end{equation}\\
+This yields in the following benefit formula:
+\begin{equation}\label{first}
+\beta_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - k_{D} \alpha_{D} - \dfrac{(d - (\delta_{D} - \delta_{A}))^{2}}{2 \delta_{D} \delta_{A}}
+\end{equation}\\
+ 
+The benefit for the attacker will be as follows:
+\begin{equation}\label{first}
+\beta_{A}(\alpha_{D},\alpha_{A}) = 1 -\dfrac{\delta_{A}}{2\delta_{D}} - \dfrac{d}{\delta_{D}} - k_{A} \alpha_{A} + \dfrac{(d - (\delta_{D} - \delta_{A}))^{2}}{2 \delta_{D} \delta_{A}}
+\end{equation}\\
 
 
 \section{Related work on FlipIt}
@@ -287,19 +310,19 @@ Laszka et al. made a lot of additions and extensions to the original game of Fli
 
 Another addition of Laszka et al. to the game of FlipIt \cite{MitigationCovert} 
 is extending the game to also consider non-targeted attacks by non-strategic players. In this game the defender tries to maintain control over the resource that is subjected to both targeted and non-targeted attacks. Non-targeted attacks can include phishing, while targeted attacks may include threats delivered through zero day attack vulnerabilities. \\
-One of the last important additions from Laszka et al. \cite{MitigationNonTargeted} is to consider a game where the moves made by the attacker are still covert but the moves made by the defender are known to the attacker. This means that the attacker can base his attacks on the defender's moves. Both the targeted and non-targeted attacks don't succeed immediately. [verschil uitleggen] For the targeted attack the time till it succeeds is given by an exponential distributed random variable with a known rate. The non-targeted attacks are modelled as a single attacker and the time till it succeeds is given by a Poisson process. The conclusion of this paper is that the optimal strategy for the defender is moving periodically. \\ 
+One of the last important additions from Laszka et al. \cite{MitigationNonTargeted} is to consider a game where the moves made by the attacker are still covert but the moves made by the defender are known to the attacker. This means that the attacker can base his attacks on the defender's moves. Both the targeted and non-targeted attacks don't succeed immediately. For the targeted attack the time till it succeeds is given by an exponential distributed random variable with a known rate. The non-targeted attacks are modelled as a single attacker and the time till it succeeds is given by a Poisson process. The conclusion of this paper is that the optimal strategy for the defender is moving periodically. The difference with this paper is that the delay in this paper is dependent on the number of nodes that have to be flipped in a network. This cannot be modelled with the framework in the Laszka et al. paper because the delay is chosen as an exponential distributed random variable. Another difference is that in the case of the Laszka et al. paper, the moves of the defender are considered not stealthy and so the attacker knows when the defender plays. \\ 
 
 Other authors used the FlipIt game to apply it on a specific scenario. To be able to use the FlipIt game, modifications where required for the FlipIt model.
 One of the scenarios by Pham \cite{compromised} was to find out whether a resource was compromised or not by the attacker. This could be verified by the defender, who has an extra move "test" beside the flip move. The basic idea is to test with an extra action if the resource has been compromised or not. This move involves also an extra cost.\\
 
-Finally researchers also have investigated the behaviour of humans playing FlipIt. A. Nochenson and Grossklags \cite{nochenson2013behavioral}  investigate how people really act when given temporal decisions. Reitter et al. \cite{reitter2013risk} observed continuous games, 20-seconds FlipIt game.
+Finally researchers also have investigated the behaviour of humans playing FlipIt. A. Nochenson and Grossklags \cite{nochenson2013behavioral}  investigate how people really act when given temporal decisions. Reitter et al. \cite{reitter2013risk} extended the work of A. Nochenson and Grossklags to include various visual presentation modalities for the available feedback during the investigation.
 
-\section{Conclusions and Furhter Research}
+\section{Conclusions and Further Research}
 \label{ch:conclusion}
 In this paper we presented an adaptation of the FlipIt game to the situation of virus propagation, such as to take the delay for network infection into account. We discerned two cases. In the case the defender plays faster than the attacker, the attacker simply looses the delay. In the case the attacker plays faster, each time the defender plays in an interval, he will gain the extra time of the delay. The delay is therefore always detrimental to the benefit of the attacker. 
-The formula for the second case is a slight overestimation of the defender's benefit in case the defender plays faster than the attacker period extende with the delay. When the defender plays in an interval, he will gain extra time in the next interval, since the attacker has to regain control. However, not the entire delay will be extra time, as the defender may move in again sooner. 
-Futher research needs to be performed to calculate the exact overestimation in this case.\\
-Also the impact of the delay on nash equilibria and the determination of optimal defender and attacher strategies needs further investigation.
+The formula for the second case is a slight overestimation of the defender's benefit in case the defender plays faster than the attacker period extended with the delay. When the defender plays in an interval, he will gain extra time in the next interval, since the attacker has to regain control. However, not the entire delay will be extra time, as the defender may move in again sooner. 
+Further research needs to be performed to calculate the exact overestimation in this case.\\
+Also the impact of the delay on Nash equilibria and the determination of optimal defender and attacher strategies needs further investigation.
 
 \bibliographystyle{IEEEtran}
 \bibliography{IEEEabrv,references}

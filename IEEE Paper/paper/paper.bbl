@@ -21,10 +21,10 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{kaspersky}
+\bibitem{APTBruce}
 \BIBentryALTinterwordspacing
-``It security risk survey 2014.'' [Online]. Available:
-  \url{http://media.kaspersky.com/en/IT_Security_Risks_Survey_2014_Global_report.pdf/}
+``Advanced persistant threats (apt).'' [Online]. Available:
+  \url{https://www.schneier.com/blog/archives/2011/11/advanced_persis.html}
 \BIBentrySTDinterwordspacing
 
 \bibitem{FlipIt}
