@@ -9,6 +9,7 @@ The style file: abbrv.bst
 Database file #1: reffiess.bib
 Warning--entry type for "Coursera" isn't style-file defined
 --line 196 of file reffiess.bib
+Warning--I didn't find a database entry for "APTBruce"
 Warning--to sort, need author or key in Coursera
 Warning--empty journal in MitigationNonTargeted
-(There were 3 warnings)
+(There were 4 warnings)
