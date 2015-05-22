@@ -35,10 +35,12 @@
 \contentsline {subsection}{\numberline {3.3.2}Actions of the defender}{13}{subsection.3.3.2}
 \contentsline {section}{\numberline {3.4}Formal definition Game}{14}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Formalization the benefit formula including the infection-delay}{14}{subsection.3.4.1}
-\contentsline {section}{\numberline {3.5}Simulation}{19}{section.3.5}
+\contentsline {section}{\numberline {3.5}Nash Equilibria}{19}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}case: $\delta _{D} \leq \delta _{A} $ or $\alpha _{D} \geq \alpha _{A}$}{19}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}case 2: $\delta _{D} \geq \delta _{A} $ or $\alpha _{D} \leq \alpha _{A}$}{20}{subsection.3.5.2}
 \contentsline {chapter}{\chapternumberline {4}Virus Propagation }{21}{chapter.4}
 \contentsline {section}{\numberline {4.1}Methods of virus propagation}{21}{section.4.1}
-\contentsline {section}{\numberline {4.2}REpresenting Virus Propagation in a network}{21}{section.4.2}
+\contentsline {section}{\numberline {4.2}Representing Virus Propagation in a network}{21}{section.4.2}
 \contentsline {chapter}{\chapternumberline {5}Conclusion}{25}{chapter.5}
 \contentsline {section}{\numberline {5.1}trala}{25}{section.5.1}
 \contentsline {chapter}{Bibliografie}{27}{section*.30}
