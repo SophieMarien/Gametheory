@@ -222,9 +222,75 @@ The benefit for the attacker will be as follows:
 \end{equation}\\
 
 
-\section{Simulation}
-%nce the defender has played, it takes 1 time until the attacker plays and the defender loses control again. Therefere, the expected period of attacker control within the interval would be 1/2.1/0, without considering the delay.
+\section{Nash Equilibria}
+-- rechtstreeks uit FlipIt paper --\\
+As a second step, we are interested in finding Nash equilibria, points
+for which neither player will increase his benefit by changing his rate of play. More
+formally, a Nash equilibrium for the periodic game is a point $(\alpha_{0}^{*},\alpha_{1}^{*})$ such that
+the defender's benefit $\beta_{0}(\alpha_{0},\alpha_{1}^{*}) $is maximized at $\alpha_{0}= \alpha_{0}^{*}$ and the attacker's benefit
+$\beta_{1}(\alpha_{0}^{*},\alpha_{1}) $ is maximized at $\alpha_{1}= \alpha_{1}^{*}$ .
+To begin with, some useful notation. We denote by opt0($\alpha_{1}$) the set of values (rates
+of play $\alpha_{0}$) that optimize the benefit of the defender for a fixed rate of play $\alpha_{1}$ of the
+attacker. Similarly, we denote by opt1($\alpha_{0}$) the set of values (rates of play $\alpha_{1}$) that optimize
+the benefit of the attacker for a fixed rate of play $\alpha_{0}$ of the defender. The following
+theorem specifies Nash equilibria for the periodic game and is proven in Appendix A. \\
 
+Nash equilibria are points whith the property that neither player benefits by deviating in isolaition form equilibrium. We can compute Nash Equilibria for the periodic game as an intersection points of curvest opt0 and opt1. To determine opt0(a0) we need to compute the derivate of  $\beta_{0}(\alpha_{0},\alpha_{1}) $ for a fixed $\alpha_{1}$. We consider two cases:\\
+-----
+
+\subsection{case: $\delta_{D} \leq \delta_{A} $ or $\alpha_{D} \geq \alpha_{A}$}
+
+Since 
+\begin{equation}\label{formdelta}
+\frac{\partial \beta_{D}(\alpha_{D},\alpha_{A})}{\partial \alpha_{D}} = \frac{\partial [1 - \dfrac { (\delta_{D}-d) ^{2}} {2 \cdot \delta_{D}  \delta_{A}]} - k_{D} \alpha_{D}}{\partial \alpha_{D}}
+\end{equation}
+
+If we change every $\delta = \dfrac{1}{\alpha}$ in formule \ref{formdelta} we get the next formula that is easier to take the derivate of:
+\begin{equation}
+\frac{\partial \beta_{D}(\alpha_{D},\alpha_{A})}{\partial \alpha_{D}} =\frac{\partial [1 - \dfrac { (1/\alpha_{D}-d) ^{2} \cdot \alpha_{D} \alpha_{A}} {2} - k_{D} \alpha_{D}]}{\partial \alpha_{D}}
+\end{equation}
+Which gives the following result:
+\begin{equation}
+\frac{\partial \beta_{D}(\alpha_{D},\alpha_{A})}{\partial \alpha_{D}} = \alpha_{A} ( \dfrac{1}{\alpha_{D}^{2}} - \dfrac{d^{2}}{2}) - k_{D}
+\end{equation}
+
+it follows that if equal to zero $\alpha_{0}=\sqrt{\dfrac{\alpha_{A}}{2k_{D} + d^{2}\alpha_{A}}}$
+
+\subsection{case 2: $\delta_{D} \geq \delta_{A} $ or $\alpha_{D} \leq \alpha_{A}$}
+
+\textbf{case A}\\
+
+\begin{equation}
+\frac{\partial \beta_{D}(\alpha_{D},\alpha_{A})}{\partial \alpha_{D}} = \frac{\partial [ \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - k_{D} \alpha_{D}] }{\partial \alpha_{D}}
+\end{equation}
+\begin{equation}
+\frac{\partial \beta_{D}(\alpha_{D},\alpha_{A})}{\partial \alpha_{D}} = \frac{\partial [ \dfrac{\alpha_{D}}{2\alpha_{A}} + d\alpha_{D} - k_{D} \alpha_{D}] }{\partial \alpha_{D}}
+\end{equation}
+\begin{equation}
+\frac{\partial \beta_{D}(\alpha_{D},\alpha_{A})}{\partial \alpha_{D}} = \dfrac{1}{2\delta_{A}} + d - k_{D}
+\end{equation}
+
+Dus increasing als $\alpha_{A} < \dfrac{1}{2(k_{D} -d)}$ and decreasing if $\alpha_{A} > \dfrac{1}{2(k_{D} -d)}$
+
+\textbf{Case b} \\
+
+\begin{equation}
+\frac{\partial \beta_{D}(\alpha_{D},\alpha_{A})}{\partial \alpha_{D}} = \frac{\partial [ \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - k_{D} \alpha_{D} - \dfrac{(d - (\delta_{D} - \delta_{A}))^{2}}{2 \delta_{D} \delta_{A}}] }{\partial \alpha_{D}}
+\end{equation}
+
+Uitgewerkt geeft de benefit formule de volgende formule omgezet naar alpha
+\begin{equation}
+\frac{\partial \beta_{D}(\alpha_{D},\alpha_{A})}{\partial \alpha_{D}} = \frac{\partial [ 1 - \dfrac{\alpha_{A}}{2\alpha_{D}} - k_{D}\alpha_{D} + \dfrac{d \alpha_{A}}{2} + \dfrac{d \alpha_{D}}{2} - \dfrac{d^{2} \alpha_{A} \alpha_{D}}{2} ] }{\partial \alpha_{D}}
+\end{equation}
+
+\begin{equation}
+\frac{\partial \beta_{D}(\alpha_{D},\alpha_{A})}{\partial \alpha_{D}} = \dfrac{\alpha_{A}}{2\alpha_{D}^{2}} - k_{D} + \dfrac{d}{2} - \dfrac{d^{2} \alpha_{A}}{2}
+\end{equation}
+
+Als ge dat gelijk stelt aan 0 krijgt ge:
+\begin{equation}
+\alpha_{D} = \sqrt{\dfrac{\alpha_{A}}{2k_{D} -d + d^{2}\alpha_{A}}}
+\end{equation}
 %%% Local Variables: 
 %%% mode: latex
 %%% TeX-master: "thesis"
