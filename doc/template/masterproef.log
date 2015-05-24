@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  18 MAY 2015 12:22
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  20 MAY 2015 19:04
 entering extended mode
 **masterproef.tex
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.tex
@@ -1200,9 +1200,7 @@ LaTeX Warning: Label `first' multiply defined.
 LaTeX Warning: Label `first' multiply defined.
 
 ) (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-4.aux)
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\conclusion.aux)
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\app-A.aux)
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\app-n.aux))
+(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\conclusion.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
 LaTeX Font Info:    ... okay on input line 87.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 87.
@@ -1298,7 +1296,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-<logokuleng.pdf, id=114, 159.33528pt x 85.358pt>
+<logokuleng.pdf, id=106, 159.33528pt x 85.358pt>
 File: logokuleng.pdf Graphic file (type pdf)
  <use logokuleng.pdf>
 Package pdftex.def Info: logokuleng.pdf used on input line 87.
@@ -1384,7 +1382,12 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 ] [4
 
-] [5
+]
+Underfull \hbox (badness 10000) in paragraph at lines 107--112
+
+ []
+
+[5
 
 
 ]
@@ -1393,12 +1396,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 [6
 
 
-] [7
-
-] [8
-
-]
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-10.tex
+] (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-10.tex
 Underfull \hbox (badness 10000) in paragraph at lines 27--29
 
  []
@@ -1407,10 +1405,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--29
 Underfull \hbox (badness 10000) in paragraph at lines 30--33
 
  []
-
-
-Package natbib Warning: Citation `APTBruce' on page 1 undefined on input line 3
-4.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 34--35
@@ -1426,6 +1420,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--40
 Underfull \vbox (badness 3977) has occurred while \output is active []
 
  [1
+
 
 
 ]
@@ -1469,7 +1464,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
-<../../doc/template/Images/DefFlipit.png, id=276, 512.3943pt x 92.9874pt>
+<../../doc/template/Images/DefFlipit.png, id=261, 512.3943pt x 92.9874pt>
 File: ../../doc/template/Images/DefFlipit.png Graphic file (type png)
 
 <use ../../doc/template/Images/DefFlipit.png>
@@ -1576,7 +1571,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 107--108
 
  []
 
-<../../doc/template/Images/FLipItCase1.pdf, id=350, 594.22pt x 316.18124pt>
+<../../doc/template/Images/FLipItCase1.pdf, id=333, 594.22pt x 316.18124pt>
 File: ../../doc/template/Images/FLipItCase1.pdf Graphic file (type pdf)
 
 <use ../../doc/template/Images/FLipItCase1.pdf>
@@ -1614,7 +1609,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 183--184
 
  []
 
-<../../doc/template/Images/FlipItCase2.png, id=383, 403.2666pt x 498.4221pt>
+<../../doc/template/Images/FlipItCase2.png, id=365, 403.2666pt x 498.4221pt>
 File: ../../doc/template/Images/FlipItCase2.png Graphic file (type png)
 
 <use ../../doc/template/Images/FlipItCase2.png>
@@ -1663,50 +1658,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 222--223
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 100--118
+Underfull \hbox (badness 10000) in paragraph at lines 106--124
+
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 126--137
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--131
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
 
  []
 
 
-Underfull \vbox (badness 2521) has occurred while \output is active []
-
- [21]
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
+Underfull \hbox (badness 10000) in paragraph at lines 141--152
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--146
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
+Underfull \hbox (badness 10000) in paragraph at lines 156--167
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--161
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
-
- []
-
-[22]) [23]
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\conclusion.tex
-[24
+[22] [23]) [24]
+(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\conclusion.tex)
+[25
 
 
 
-]) [25] [26
+] [26
 
 
 ]
@@ -1716,23 +1708,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 162--163
 ] [28
 
 ]
-
-Package natbib Warning: There were undefined citations.
-
 \tf@toc=\write6
 \tf@tdo=\write7
 \tf@lof=\write8
 \tf@lot=\write9
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 188.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 188.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 191.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 191.
+
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.aux
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-10.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-5.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-9.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-4.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\conclusion.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 188.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 188.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 191.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 191.
 
 
 Package rerunfilecheck Warning: File `masterproef.out' has changed.
@@ -1740,31 +1730,25 @@ Package rerunfilecheck Warning: File `masterproef.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `masterproef.out':
-(rerunfilecheck)             Before: 53D3188B62DB4D72B64625765076680B;1724
-(rerunfilecheck)             After:  56AA7D20C587078FC0A01C3864F18870;1494.
+(rerunfilecheck)             Before: 1A5A5EC40210D96FB838FC2A9E73F39B;1622
+(rerunfilecheck)             After:  CECF73E5A2A9D6EF0483A0020CEED039;1551.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 188.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 191.
  ) 
 Here is how much of TeX's memory you used:
- 25884 strings out of 493921
- 472067 string characters out of 3144864
- 717546 words of memory out of 3000000
- 28388 multiletter control sequences out of 15000+200000
+ 25871 strings out of 493921
+ 471742 string characters out of 3144864
+ 719046 words of memory out of 3000000
+ 28384 multiletter control sequences out of 15000+200000
  81872 words of font info for 135 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  60i,12n,78p,1522b,779s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{section.B.1} has been referenced but does not exi
+pdfTeX warning (dest): name{section*.30} has been referenced but does not exi
 st, replaced by a fixed one
 
-pdfTeX warning (dest): name{appendix.B} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section.A.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{appendix.A} has been referenced but does not exist,
+pdfTeX warning (dest): name{chapter*.8} has been referenced but does not exist,
  replaced by a fixed one
 
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Fil
@@ -1786,9 +1770,9 @@ ype1/public/lm/lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public
 /lm/lmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.p
 fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/P
 rogram Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on masterproef.pdf (38 pages, 505737 bytes).
+Output written on masterproef.pdf (36 pages, 503819 bytes).
 PDF statistics:
- 538 PDF objects out of 1000 (max. 8388607)
- 138 named destinations out of 1000 (max. 500000)
- 21241 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 519 PDF objects out of 1000 (max. 8388607)
+ 135 named destinations out of 1000 (max. 500000)
+ 21225 words of extra memory for PDF output out of 24883 (max. 10000000)
 

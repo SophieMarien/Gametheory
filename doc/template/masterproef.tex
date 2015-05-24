@@ -1,7 +1,7 @@
 \documentclass[master=cws, masteroption=vs]{kulemt}
 
 % Vul de titel van jouw masterproef hieronder in tussen { en }.
-\setup{title={Flip the virus: A gametheoretic approach to cybersecurity},
+\setup{title={Flip the virus: Modelling cybersecurity games using FlipIt with propagation delay},
 %
 % Vul hieronder namen in, steeds Voornaam Naam.
 % Indien meerdere auteurs, assessoren, assistenten, scheidt hun namen
@@ -88,9 +88,7 @@ assistant={Ir.\ Jonathan Merlevede, \ Ir. Kristof Coninx}}
 
 \begin{preface}
   I would like to thank everybody who kept me busy the last year,
-  especially my promotor and my assistants. I would also like to thank the
-  jury for reading the text. My sincere gratitude also goes to my wive and
-  the rest of my family.
+  especially my promotor and my assistants.
 \end{preface}
 
 \tableofcontents*
@@ -110,9 +108,14 @@ In this thesis I present a work of gametheory merged with cybersecurity.
   Nederlandse samenvatting van het werk gegeven.
   Wanneer de tekst voor een Nederlandstalige master in het Engels wordt
   geschreven, wordt hier normaal een uitgebreide samenvatting verwacht,
-  bijvoorbeeld een tiental bladzijden. 
-
-  \lipsum[1]
+  bijvoorbeeld een tiental bladzijden. \\
+  
+  Dit is het kort geschreven.\\ Eigenlijk paper in het nederlands schrijven \\
+  Intro -- positionering -- vraagstelling -- oplossingen en contributies \\
+  Flipit en cybersecurity\\
+  Flipit met delay \\
+  Berekeningen \\
+Niet zo lang geleden werden APT's ontdekt. (Introzin moet beter en anders). Bedrijven worden door APTs aangevallen. Belangrijk om APTs tegen te gaan. Geven een grote kost aan de bedrijven. Hun stealthy aspect is vervelend en moeilijk aan te pakken. Preventie is beter dan detectie. Eens ze binnen zijn kunnen we veel schade veroorzaken. Conventionele middelen zoals firewalls, malware detection helpen hier niet tegen. Nieuwe methode nodig. Gametheory FlipIt. FlipIt uitleggen. Deze formules gaan we dan omvormen tot ze wel propagatie delay kunnen modelleren. Hiervan berekenen we ook het Nash equilibrium. 
 \end{abstract*}
 
 % Een lijst van figuren en tabellen is optioneel
@@ -122,16 +125,16 @@ In this thesis I present a work of gametheory merged with cybersecurity.
 \listoffiguresandtables
 % De lijst van symbolen is eveneens optioneel.
 % Deze lijst moet wel manueel aangemaakt worden, bv. als volgt:
-\chapter{List of Abbreviations and Symbols}
-\section*{Abbreviations}
-\begin{flushleft}
-  \renewcommand{\arraystretch}{1.1}
-  \begin{tabularx}{\textwidth}{@{}p{12mm}X@{}}
-    LoG   & Laplacian-of-Gaussian \\
-    MSE   & Mean Square error \\
-    PSNR  & Peak Signal-to-Noise ratio \\
-  \end{tabularx}
-\end{flushleft}
+%\chapter{List of Abbreviations and Symbols}
+%\section*{Abbreviations}
+%\begin{flushleft}
+%  \renewcommand{\arraystretch}{1.1}
+%  \begin{tabularx}{\textwidth}{@{}p{12mm}X@{}}
+%    LoG   & Laplacian-of-Gaussian \\
+%    MSE   & Mean Square error \\
+%    PSNR  & Peak Signal-to-Noise ratio \\
+%  \end{tabularx}
+%\end{flushleft}
 %\section*{Symbols}
 %\begin{flushleft}
 %  \renewcommand{\arraystretch}{1.1}
@@ -152,7 +155,7 @@ In this thesis I present a work of gametheory merged with cybersecurity.
 \include{chap-10}
 
 
-
+%gebruik van mijn model kan bevoorbeeld gebruikt worden om aan te duiden hoe vaak paswoorden moeten worden veranderd. 
 
 
 
