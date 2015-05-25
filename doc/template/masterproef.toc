@@ -9,19 +9,20 @@
 \contentsline {chapter}{Samenvatting}{iv}{chapter*.3}
 \select@language {dutch}
 \contentsline {chapter}{Samenvatting}{v}{chapter*.4}
+\contentsline {subsubsection}{strategie"en}{vii}{section*.5}
 \select@language {dutch}
-\contentsline {chapter}{L"yst van figuren en tabellen}{vi}{chapter*.5}
+\contentsline {chapter}{L"yst van figuren en tabellen}{ix}{chapter*.6}
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}
-\contentsline {subsubsection}{Situation}{1}{section*.8}
-\contentsline {subsubsection}{Complication}{2}{section*.9}
-\contentsline {subsubsection}{Research questions}{2}{section*.10}
-\contentsline {subsubsection}{Contributions}{3}{section*.11}
-\contentsline {subsubsection}{Overview of the thesis}{3}{section*.12}
+\contentsline {subsubsection}{Situation}{1}{section*.9}
+\contentsline {subsubsection}{Complication}{2}{section*.11}
+\contentsline {subsubsection}{Research questions}{2}{section*.12}
+\contentsline {subsubsection}{Contributions}{3}{section*.13}
+\contentsline {subsubsection}{Overview of the thesis}{3}{section*.14}
 \contentsline {chapter}{\chapternumberline {2}Intoduction to GameTheory}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}A brief introduction in Game Theory}{5}{section.2.1}
-\contentsline {subsubsection}{List of terms}{6}{section*.13}
 \contentsline {subsection}{\numberline {2.1.1}Best response and Nash Equilibrium}{6}{subsection.2.1.1}
+\contentsline {subsubsection}{List of terms}{6}{section*.15}
 \contentsline {section}{\numberline {2.2}The FlipIt game}{6}{section.2.2}
 \contentsline {subsubsection}{strategies}{8}{section*.16}
 \contentsline {subsubsection}{Results of the FlipIt game}{9}{section*.17}
