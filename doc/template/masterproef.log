@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  24 MAY 2015 13:43
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  25 MAY 2015 14:16
 entering extended mode
 **masterproef.tex
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.tex
@@ -1383,20 +1383,69 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ] [4
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 108--113
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
 
 [5
 
 
-]
+] <../../doc/template/Images/DefFlipit.png, id=190, 512.3943pt x 92.9874pt>
+File: ../../doc/template/Images/DefFlipit.png Graphic file (type png)
+
+<use ../../doc/template/Images/DefFlipit.png>
+Package pdftex.def Info: ../../doc/template/Images/DefFlipit.png used on input 
+line 125.
+(pdftex.def)             Requested size: 256.19652pt x 46.49358pt.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/lmr/m/sc/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--135
+
+ []
+
+[6 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/DefFlipi
+t.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 162--164
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--172
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 199--204
+
+ []
+
+[8]
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.lof)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.lot)
-[6
+[9
 
 
-] (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-10.tex
+] [10
+
+]
+(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-10.tex
 Underfull \hbox (badness 10000) in paragraph at lines 27--29
 
  []
@@ -1406,6 +1455,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--33
 
  []
 
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 34.
 
 Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
@@ -1422,15 +1473,11 @@ Underfull \vbox (badness 3977) has occurred while \output is active []
  [1
 
 
-
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
 
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/lmr/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
 [2]
 Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
@@ -1446,64 +1493,63 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--31
 
  []
 
-[5]
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 51.
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
+Underfull \hbox (badness 10000) in paragraph at lines 45--47
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--80
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
-
- []
-
-<../../doc/template/Images/DefFlipit.png, id=259, 512.3943pt x 92.9874pt>
 File: ../../doc/template/Images/DefFlipit.png Graphic file (type png)
-
 <use ../../doc/template/Images/DefFlipit.png>
 Package pdftex.def Info: ../../doc/template/Images/DefFlipit.png used on input 
-line 93.
+line 86.
 (pdftex.def)             Requested size: 256.19652pt x 46.49358pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--103
+Underfull \hbox (badness 10000) in paragraph at lines 93--96
 
  []
 
-[7 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/DefFlipi
-t.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 130--132
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 123--125
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--140
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--133
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 170--172
+Underfull \hbox (badness 10000) in paragraph at lines 163--165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--169
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 173--176
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 177--179
+Underfull \hbox (badness 10000) in paragraph at lines 170--172
 
  []
 
@@ -1571,7 +1617,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 107--108
 
  []
 
-<../../doc/template/Images/FLipItCase1.pdf, id=333, 594.22pt x 316.18124pt>
+<../../doc/template/Images/FLipItCase1.pdf, id=367, 594.22pt x 316.18124pt>
 File: ../../doc/template/Images/FLipItCase1.pdf Graphic file (type pdf)
 
 <use ../../doc/template/Images/FLipItCase1.pdf>
@@ -1609,7 +1655,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 183--184
 
  []
 
-<../../doc/template/Images/FlipItCase2.png, id=365, 403.2666pt x 498.4221pt>
+<../../doc/template/Images/FlipItCase2.png, id=399, 403.2666pt x 498.4221pt>
 File: ../../doc/template/Images/FlipItCase2.png Graphic file (type png)
 
 <use ../../doc/template/Images/FlipItCase2.png>
@@ -1727,8 +1773,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 181--182
 \tf@tdo=\write7
 \tf@lof=\write8
 \tf@lot=\write9
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 192.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 192.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 277.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 277.
 
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.aux
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-10.aux)
@@ -1736,46 +1782,55 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 192.
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-9.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-4.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\conclusion.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 192.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 192.
-Package rerunfilecheck Info: File `masterproef.out' has not changed.
-(rerunfilecheck)             Checksum: 28D9A5F081D4B826C4BDECC494E8A648;1647.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 277.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 277.
 
+
+Package rerunfilecheck Warning: File `masterproef.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `masterproef.out':
+(rerunfilecheck)             Before: 6CC24B4329F3FF33B5A78C19F7E1D056;1647
+(rerunfilecheck)             After:  6E3037580E8CFF95E13E96D2D9BF11E3;1647.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 192.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 277.
  ) 
 Here is how much of TeX's memory you used:
- 25886 strings out of 493921
- 471959 string characters out of 3144864
- 714923 words of memory out of 3000000
+ 25917 strings out of 493921
+ 472290 string characters out of 3144864
+ 719764 words of memory out of 3000000
  28386 multiletter control sequences out of 15000+200000
- 81908 words of font info for 136 fonts, out of 3000000 for 9000
+ 82908 words of font info for 145 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 60i,12n,78p,1543b,779s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/
-MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files (x86)/MiKTeX 2.9/
-fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips
-/lm/lm-mathex.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8
-r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
-nts/type1/public/lm/lmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
-ublic/lm/lmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lm
-mi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/
-Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files (x86)/MiKTe
-X 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
-/type1/public/lm/lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
-ic/lm/lmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt10
-.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on masterproef.pdf (36 pages, 513688 bytes).
+ 60i,12n,78p,1510b,779s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{section*.29} has been referenced but does not exi
+st, replaced by a fixed one
+
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files (x86)/MiKTeX 2.9/fo
+nts/enc/dvips/lm/lm-rm.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/l
+m/lm-mathex.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.
+enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
+s/type1/public/lm/lmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
+lic/lm/lmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi
+8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files (x86)/MiKTeX 
+2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
+ype1/public/lm/lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public
+/lm/lmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.p
+fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on masterproef.pdf (40 pages, 530026 bytes).
 PDF statistics:
- 534 PDF objects out of 1000 (max. 8388607)
- 146 named destinations out of 1000 (max. 500000)
+ 573 PDF objects out of 1000 (max. 8388607)
+ 159 named destinations out of 1000 (max. 500000)
  21225 words of extra memory for PDF output out of 24883 (max. 10000000)
 
