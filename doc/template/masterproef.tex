@@ -8,9 +8,9 @@
 % Indien meerdere auteurs, assessoren, assistenten, scheidt hun namen
 % met \and .
 author={Sophie Marien},
-promotor={Prof.\,dr.\,ir.\ Tom Holvoet},
-assessor={Ir.\,W. Eetveel\and W. Eetrest},
-assistant={Ir.\ Jonathan Merlevede, \ Ir. Kristof Coninx}}
+promotor={Prof. dr. T. Holvoet},
+assessor={Prof. dr. B. Jacobs \and Dr. ir. A. Dries},
+assistant={Ir. Jonathan Merlevede, \and Ir. Kristof Coninx}}
 % 
 % De volgende \setup mag verwijderd worden als geen fiche gewenst is.
 \setup{filingcard,
@@ -88,19 +88,45 @@ assistant={Ir.\ Jonathan Merlevede, \ Ir. Kristof Coninx}}
 \begin{document}
 
 \begin{preface}
-  I would like to thank everybody who kept me busy the last year,
-  especially my promotor and my assistants.
+ Many people have helped in the realization of this thesis. 
+  I would like to thank everybody who kept me busy the last year and made it possible for me to finish my thesis.\\
+  
+  First I would like to thank my promoter and my assistants for their excellent support during the writing of this paper. They helped me figure out what to do and put a lot of time and effort in me.\\
+  
+   Second I would like to thank my parents for their patient with me. A special thanks goes to my mother, who helped me a lot with my thesis and told me how to write in a structured way. Without her this thesis would be incomprehensible. Also a thank for my brother for his insights into mathematics that gave me a different angle to look at problems.\\
+   
+   I would also like to thank my boyfriend who supported me during the writing of this thesis and helped me to write a beautiful text.  \\
+   
+   Last but not least all the people that read my thesis for faults: .. \\
+   A few other people earn a special mention: Revue-blokt for keeping me focused on my thesis, DistriNet labo for letting me in and study in a quit place, Antonio for distracting me and telling me stories about his travels.
+   A special memorial to John Nash, a mathematician with a fundamental contribution to Game Theory, that died in a car accident during the writing of this thesis. His Nash Equilibrium is used in this thesis.. \\
+ 
 \end{preface}
 
 \tableofcontents*
 \listoftodos
 \begin{abstract}
-There are many possible ways to attack a company network. Everyday they suffer frrom multiple attakcs and stealthy attacks.
-We will make use of a gamemodel FlipIt to find out what the best strategies are for a network manager to defend his network. A worm or a virus will propagate through the network and will cause nodes to be infected. By flipping it the network manager can keep his network clean.
-In this thesis I present a work of gametheory merged with cybersecurity. 
-  The \texttt{abstract} environment contains a more extensive overview of
-  the work. But it should be limited to one page.
 
+%  The \texttt{abstract} environment contains a more extensive overview of  the work. But it should be limited to one page.
+  
+Recently, high profile targeted attacks such as the
+attack on Belgacom \cite{BelgacomGehackt} (a major Belgian telcom), have demonstrated
+that even the most secure companies can still be compromised,
+and that moreover such attacks can go undetected for a while. Fighting against these attacks requires methods that go beyond the standard tools against malware. These kind of attacks are called APT, advanced persistent threats, which are designed to penetrate secretly a computer network, collect sensitive data and stay hidden for many years. A company has every interest to mitigate the risks of an APT and the consequences that it can cause. 
+A group of researchers at the RSA, van Dijk et al., proposed the game FlipIt (The game of ``stealthy takeover'') to model stealthy takeovers. It is a 2-players game composed of
+a single attacker, a single defender and a single shared resource.
+The players will 
+compete to get control over the shared resource. Every move of the players will involve a cost and
+these moves happen in a stealthy way. The objective of the game for each player is to maximise the fraction of time of controlling the resource and minimise the total move cost.  \\
+FlipIt does however not take into
+account that a move may not be instantaneous, but has a certain
+delay. In this paper, we restrict ourselves to games where both the defender and the attacker play with a periodic strategy. We adapt FlipIt such that we can use it to
+model the game of defending a company network that is attacked
+by a virus. The FlipIt formulas are adapted such as to take the
+delay for virus propagation into account.
+\todo{Results toevoegen} \\
+
+\textbf{Keywords}: Game theory, Advanced persistant threats, cyber security, FlipIt, stealthy takeovers.
 
 \end{abstract}
 
@@ -108,16 +134,16 @@ In this thesis I present a work of gametheory merged with cybersecurity.
 Onlangs zijn er gerichte security aanvallen geweest op grote bedrijven, zoals de aanval op Belgacom (een grote Belgische telcom). Deze aanvallen hebben aangetoond dat zelfs de meest veilige
 bedrijven nog steeds gecompromitteerd kunnen worden, en dat bovendien dergelijke aanvallen onopgemerkt kunnen blijven voor een bepaalde tijd.
 Flipit is een model dat door onderzoekers van de RSA (van Dijk et al.) is voorgesteld om dergelijke aanvallen te modelleren. Het is een 2-spelers spel bestaat uit een aanvaller, een verdediger en een gedeelde bron.  De spelers proberen om controle te krijgen over de gedeelde bron en ze
-doen dit op een heimelijke manier. Met FlipIt wordt echter geen rekening mee gehouden dat een aanval niet onmiddellijk is, maar dat dit kan gebeuren met een zekere vertraging. In dit artikel passen we het model van FlipIt zodanig aan dat we het kunnen gebruiken gerichte security aanvallen te modelleren die onder heven zijn aan een vertraging.
+doen dit op een heimelijke manier. Met FlipIt wordt echter geen rekening mee gehouden dat een aanval niet onmiddellijk is, maar dat dit kan gebeuren met een zekere vertraging. In dit artikel passen we het model van FlipIt zodanig aan dat we het kunnen gebruiken voor heimelijke aanvallen die onderheven zijn aan een vertraging.
 Resultaat :
 
-Flipit is een spel ge"introduceerd door Van Dijk et al. Om te begrijpen hoe het model een Flipit spel met viruspropagatie is het belangrijk om vertrouwd te raken met de concepten van de normale Flipit spel en notaties te krijgen. Daarom hebben we eerst uitleggen het kader van Flipit en voeren de belangrijkste formules die hele papier wordt gebruikt. \\
+Flipit is een spel ge"introduceerd door Van Dijk et al. Om te begrijpen hoe we het FlipIt spel kunnen aanpassen om virus propagatie in acht te nemen, is het belangrijk om vertrouwd te raken met de concepten van het basische Flipit spel en de notaties. Daarom beginnen we eerst met een uitleg hoe het basische FlipIt spel werkt en de belangrijksete formules die we in de paper gebruiken. \\
 
-Flipit is een twee spelers spel met een gedeelde enkele bron die de spelers willen zo lang mogelijk te beheersen. De gedeelde bron kan een wachtwoord, een netwerk of een geheime sleutel afhankelijk van de instelling gemodelleerd worden. In de rest van het papier noemen we de twee spelers de aanvaller, aangegeven met subscript \textit{A} en de fase, aangegeven met subscript \textit{D}.
+Flipit is een spel met twee spelers met een gedeelde bron die de spelers zo lang mogelijk willen beheren. De gedeelde bron kan een wachtwoord, een netwerk of een geheime sleutel zijn afhankelijk afhankelijk van welke situatie gemodelleerd wordt. In de rest van de paper noemen we de twee spelers de aanvaller, aangegeven met subscript \textit{A} en de verdediger, aangegeven met subscript \textit{D}.
 
-Het spel begint op $ t = 0 $ en blijft voor onbepaalde tijd ($ t \rightarrow \infty $). De tijd van het spel wordt aangenomen als zijnde continu, maar discrete tijd, kunnen ook worden overwogen. Om controle over de bron komen, de spelers $ $ i, met $ i \in \{A, D \} $, kunnen de resource spiegelen op elk moment. Een flip zal worden beschouwd als een overgang van een speler \textit{i}. Elke beweging zal een zekere kosten $ k_{i} $ impliceren en de kosten kunnen vari"eren voor elke speler. Beide spelers zullen proberen om hun kosten te minimaliseren. Kosten toevoegen voorkomt spelers te vaak bewegen. \\
+Het spel begint op $ t = 0 $ en blijft voor onbepaalde tijd duren($ t \rightarrow \infty $). De tijd van het spel wordt aangenomen als zijnde continu. Om controle over de bron te krijgen kunnen de spelers $i$, met $ i \in \{A, D \} $ de bron flippen. Elke flip zal een zekere kost $ k_{i} $ impliceren en de kosten kunnen vari"eren voor elke speler. Beide spelers zullen proberen om hun kosten te minimaliseren. Door een kost in te voeren, voorkomt men dat de spelers te vaak bewegen. \\
 
-De unieke eigenschap van Flipit is dat elke beweging zal gebeuren in een sluipende manier, wat betekent dat de speler heeft geen idee dat de andere speler (zijn tegenstander) de bron heeft omgedraaid. Zo zal de verdediger niet te achterhalen of de bron al is aangetast door de aanvaller tot hij klapt de bron zelf. Het doel van de speler om het moment dat hij of zij heeft over de bron, terwijl het minimaliseren van de totale kosten van de bewegingen te maximaliseren. Een beweging kan ook leiden tot een "verloren beweging", genoemd flop. Het kan gebeuren dat de middelen reeds onder besturing door de speler. Als de speler beweegt wanneer hij of zij al heeft de controle over de bron, zou hij of zij hebben verspild een zet, omdat het niet leidt tot een verandering van eigendom, dus de kosten wordt verspild. \\
+De unieke eigenschap van Flipit is dat elke flip zal gebeuren op een heimelijke manier, wat betekent dat de speler heeft geen idee dat de andere speler (zijn tegenstander) de bron heeft geflipt. Zo zal de verdediger niet kunnen achterhalen of de bron al is gefipt door de aanvaller tot hij de bron zelf flipt. Het doel van de speler is om zo lang mogelijk de controle te behouden over de bron en terwijl de kost minimaliseren. Een beweging kan ook leiden tot een "verloren beweging", genoemd een flop. Het kan gebeuren dat de bron reeds onder controle is van de speler. Als de speler flipt wanneer hij of zij al de controle  heeft over de bron, dan verspilt de speler een zet omdat het niet leidt tot een verandering van controle en dus een kost verspilt wordt. \\
 
 
 \begin{figure}[hbtp]

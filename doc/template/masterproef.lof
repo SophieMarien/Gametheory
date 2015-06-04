@@ -16,8 +16,8 @@
 \addvspace {10pt}
 \contentsline {figure}{\numberline {2.1}{\ignorespaces A representation of a FlipIt game where both players are playing periodically and at discrete time intervals. Every move or flip is indicated by a blue or orange circle. The attacker is represented in orange and plays with a period of $\delta _{A}=4$. The defender is represented in blue and plays with a period of $\delta _{D}=3$. The blue and orange rectangles represent the amount of time the respective player is in control of the resource.}}{7}{figure.2.1}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces The first FlipIt game is one without virus propagation. The second one is with virus propagation and \textit {d} = 1. The delay is denoted with an arrow.}}{15}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Case 2 where d + deltaA < deltaD}}{18}{figure.3.2}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The first FlipIt game is one without virus propagation. The second one is with virus propagation and \textit {d} = 1. The delay is denoted with an arrow.}}{13}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Case 2 where d + deltaA < deltaD}}{16}{figure.3.2}
 \addvspace {10pt}
 \addvspace {10pt}
 \select@language {dutch}

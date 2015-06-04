@@ -34,53 +34,57 @@ first infected node to the farthest node. Rather than denoting the time needed f
 
 Assume that an attacker attacks at time \textit{t}, he doesn't get immediate control over the resource, but he only gains control at time \textit{t + d}, with $d$ denoting the time needed to infect a sufficiently number (or all) nodes. If the defender flips the network before the period $d$ has elapsed (so, somewhere between $t$ and $t + d$), then the attacker will never gain full control over the resource. This implies that the mathematical formulas for gain and benefit need to be adapted to the fact that the attacker loses part of its benefit because of this delay. In the remainder of this paper, we will adapt the formalization of the FlipIt game using the variable $d$. \\ 
 
-%------------------------------------------------%
-%            Intro Game Theory 					 %
-%------------------------------------------------%
-\subsection{Actions of the attacker}
-A virus has different kind of ways of making his way through a company network. We will describe the different ways of how the virus can propagate. For start we will say that the virus or worm will be dropped on Node i and that it has k numbers of neighbours. 
-\begin{enumerate}
-\item Node i is infected and will spread the virus or worm to every k neighbours and will stop infecting the neighbours in the next step
-\item Node i is infected and will spread the virus or worm to every k neighbours and will keep on spreading the virus to the same neighbours in every next step
-\item Node i is infected and will spread the virus to only one of the k neighbours and will stop infecting another neighbour in the next step
-\item Node i is infected and will spread the virus to only one of the k neighbours and in the next step it will infect another one of the k neighbours 
-\end{enumerate}
-
-In the game that will be modelled in the paper we will use the settings of the first spreading method. We will not use method 2 because this kind of propagation will float the network. Because we use the settings of a mail system and contact in a mailing list the method of 3 and 4 are not used. \\
-In the first method the node that has been infected can be again infected. If one of the neighbours infects the node again the node will infect his neighbours again. By using this spreading method we have three distinct states in which a node can be situated. An \textit{infected state}, a \textit{clean state} and a \textit{spreading state}. An infected state means that the node is infected and will not spread the virus to its neighbours, a clean state means that the node is not infected on that moment and a spreading state means that the node is infected and that it will spread the virus or worm to its neighbours in the next step.
-We can argument this kind of propagation through a mail worm. \todo{voorbeeld geven van zo een worm}
-%Another propagation method is that the virus works as a token. It will propagate to only one neighbour and continue to spread. 
-
-The Attacker itself has two different ways of attacking the company network. It will only infected one node of the network and will wait for the virus to spread itself through the network. We will model two ways of attacks of an Attacker:
-\begin{enumerate}
-\item The attacker drops the virus on a random node on the network
-\item The attacker drops the virus on a targeted node on the network
-\end{enumerate}
-The attacker in this game will put a virus or worm on one of the nodes in the network. (This will happen at random.) The attacker does not know on which node the virus will be dropped. We will use this randomness because \todo{feit uit security rapport symantec} most viruses are spread via a usb stick or a shared resource. If we use this spreading method where we have a targeted attack the attacker will have more information about the network. \\
-
-The attacker can choose at which rate it will drop a virus on one of the nodes on the network. The cost of dropping a virus will be the same. It will not increase. If it will increase this means that the attacker will eventually drop out of the game because it becomes to expensive.\\
-The attacker is in control over the game if it manages to infect a subset of all the resources of the company network.
-
-
-\subsection{Actions of the defender}
-The attacker wants to protect all the nodes of his network. It can do so by getting back control over the resources. We will assume that the defender of the network has knowledge over his own network. Which is convenient in the real world because a company has to know how his infrastructure looks like.\\
-
-The defender has two possible ways of defending its network:
-\begin{enumerate}
-\item The defender flips all the nodes of his network
-\item The defender will flip a subset of the nodes of his network
-\end{enumerate}
-
-The cost of flipping all the nods of the network will be greater than the cost of flipping a subset of nodes. We make this assumption because otherwise it will be beneficial for the defender to always flip all the nodes in the network.\\
-
-We will also make the assumption that as a defender flips a node the node can get infected again. A flip will not be  correlated to a patch but to a clean-up. \todo{waarom geen patch, wormen kunnen veranderen gaandeweg}
-\todo{andere mogelijkheid:} Another setting of the game can be that the flip of the defender is equal to a patch and that the resource cannot be infected any more. But with this case we deviate from the flipIt game, because the attacker cannot flip the resource any more. Unless we work with different virusses every time the attacker flips. We start with the less complex game of flipping is equal to a clean-up.
+%%------------------------------------------------%
+%%            Intro Game Theory 					 %
+%%------------------------------------------------%
+%\subsection{Actions of the attacker}
+%A virus has different kind of ways of making his way through a company network. We will describe the different ways of how the virus can propagate. For start we will say that the virus or worm will be dropped on Node i and that it has k numbers of neighbours. 
+%\begin{enumerate}
+%\item Node i is infected and will spread the virus or worm to every k neighbours and will stop infecting the neighbours in the next step
+%\item Node i is infected and will spread the virus or worm to every k neighbours and will keep on spreading the virus to the same neighbours in every next step
+%\item Node i is infected and will spread the virus to only one of the k neighbours and will stop infecting another neighbour in the next step
+%\item Node i is infected and will spread the virus to only one of the k neighbours and in the next step it will infect another one of the k neighbours 
+%\end{enumerate}
+%
+%In the game that will be modelled in the paper we will use the settings of the first spreading method. We will not use method 2 because this kind of propagation will float the network. Because we use the settings of a mail system and contact in a mailing list the method of 3 and 4 are not used. \\
+%In the first method the node that has been infected can be again infected. If one of the neighbours infects the node again the node will infect his neighbours again. By using this spreading method we have three distinct states in which a node can be situated. An \textit{infected state}, a \textit{clean state} and a \textit{spreading state}. An infected state means that the node is infected and will not spread the virus to its neighbours, a clean state means that the node is not infected on that moment and a spreading state means that the node is infected and that it will spread the virus or worm to its neighbours in the next step.
+%We can argument this kind of propagation through a mail worm. \todo{voorbeeld geven van zo een worm}
+%%Another propagation method is that the virus works as a token. It will propagate to only one neighbour and continue to spread. 
+%
+%The Attacker itself has two different ways of attacking the company network. It will only infected one node of the network and will wait for the virus to spread itself through the network. We will model two ways of attacks of an Attacker:
+%\begin{enumerate}
+%\item The attacker drops the virus on a random node on the network
+%\item The attacker drops the virus on a targeted node on the network
+%\end{enumerate}
+%The attacker in this game will put a virus or worm on one of the nodes in the network. (This will happen at random.) The attacker does not know on which node the virus will be dropped. We will use this randomness because \todo{feit uit security rapport symantec} most viruses are spread via a usb stick or a shared resource. If we use this spreading method where we have a targeted attack the attacker will have more information about the network. \\
+%
+%The attacker can choose at which rate it will drop a virus on one of the nodes on the network. The cost of dropping a virus will be the same. It will not increase. If it will increase this means that the attacker will eventually drop out of the game because it becomes to expensive.\\
+%The attacker is in control over the game if it manages to infect a subset of all the resources of the company network.
+%
+%
+%\subsection{Actions of the defender}
+%The attacker wants to protect all the nodes of his network. It can do so by getting back control over the resources. We will assume that the defender of the network has knowledge over his own network. Which is convenient in the real world because a company has to know how his infrastructure looks like.\\
+%
+%The defender has two possible ways of defending its network:
+%\begin{enumerate}
+%\item The defender flips all the nodes of his network
+%\item The defender will flip a subset of the nodes of his network
+%\end{enumerate}
+%
+%The cost of flipping all the nods of the network will be greater than the cost of flipping a subset of nodes. We make this assumption because otherwise it will be beneficial for the defender to always flip all the nodes in the network.\\
+%
+%We will also make the assumption that as a defender flips a node the node can get infected again. A flip will not be  correlated to a patch but to a clean-up. \todo{waarom geen patch, wormen kunnen veranderen gaandeweg}
+%\todo{andere mogelijkheid:} Another setting of the game can be that the flip of the defender is equal to a patch and that the resource cannot be infected any more. But with this case we deviate from the flipIt game, because the attacker cannot flip the resource any more. Unless we work with different virusses every time the attacker flips. We start with the less complex game of flipping is equal to a clean-up.
 
 
 \section{Formal definition Game}
 
 In this section we provide a formal definition of the game and the notation that we will use throughout the paper. 
 
+\begin{description}
+\item $\delta_{i}$
+\item 
+\end{description}
 
 \section*{Playing periodically with virus propagation}
 
