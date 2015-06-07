@@ -17,34 +17,34 @@
 \contentsline {subsubsection}{Situation}{1}{section*.10}
 \contentsline {subsubsection}{Complication}{2}{section*.12}
 \contentsline {subsubsection}{Research questions}{2}{section*.13}
-\contentsline {subsubsection}{Contributions}{3}{section*.14}
-\contentsline {subsubsection}{Overview of the thesis}{3}{section*.15}
+\contentsline {subsubsection}{Contributions}{2}{section*.14}
+\contentsline {subsubsection}{Overview of the thesis}{2}{section*.15}
 \contentsline {chapter}{\chapternumberline {2}Intoduction to GameTheory}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}A brief introduction in Game Theory}{5}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Best response and Nash Equilibrium}{6}{subsection.2.1.1}
-\contentsline {subsubsection}{List of terms}{6}{section*.16}
-\contentsline {section}{\numberline {2.2}The FlipIt game}{6}{section.2.2}
-\contentsline {subsubsection}{strategies}{8}{section*.17}
-\contentsline {subsubsection}{Results of the FlipIt game}{9}{section*.18}
-\contentsline {section}{\numberline {2.3}Extensions on FlipIt}{9}{section.2.3}
-\contentsline {chapter}{\chapternumberline {3}FlipIt game with virus propagation}{11}{chapter.3}
-\contentsline {section}{\numberline {3.1}Introduction}{11}{section.3.1}
-\contentsline {section}{\numberline {3.2}FlipIt game with virus propagation}{11}{section.3.2}
-\contentsline {section}{\numberline {3.3}Explaining difference between FlipIt with and without virus propagation}{11}{section.3.3}
-\contentsline {section}{\numberline {3.4}Formal definition Game}{12}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Formalization the benefit formula including the infection-delay}{13}{subsection.3.4.1}
-\contentsline {section}{\numberline {3.5}Nash Equilibria}{17}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}case: $\delta _{D} \leq \delta _{A} $ or $\alpha _{D} \geq \alpha _{A}$}{18}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}case 2: $\delta _{D} \geq \delta _{A} $ or $\alpha _{D} \leq \alpha _{A}$}{18}{subsection.3.5.2}
-\contentsline {chapter}{\chapternumberline {4}Virus Propagation }{21}{chapter.4}
-\contentsline {section}{\numberline {4.1}Methods of virus propagation}{21}{section.4.1}
-\contentsline {section}{\numberline {4.2}REpresenting Virus Propagation in a network}{21}{section.4.2}
-\contentsline {section}{\numberline {4.3}Related work}{21}{section.4.3}
-\contentsline {section}{\numberline {4.4}Representing Virus Propagation in a network}{22}{section.4.4}
-\contentsline {section}{\numberline {4.5}methode met matrixen}{22}{section.4.5}
-\contentsline {chapter}{\chapternumberline {5}Conclusion}{25}{chapter.5}
-\contentsline {section}{\numberline {5.1}trala}{25}{section.5.1}
-\contentsline {chapter}{Bibliografie}{27}{section*.25}
+\contentsline {section}{\numberline {2.1}What is cyber security?}{5}{section.2.1}
+\contentsline {subsubsection}{Equation}{6}{section*.18}
+\contentsline {subsubsection}{Regin}{6}{section*.19}
+\contentsline {subsubsection}{Flame}{6}{section*.20}
+\contentsline {subsubsection}{Black energy}{7}{section*.21}
+\contentsline {section}{\numberline {2.2}Intro game theory}{7}{section.2.2}
+\contentsline {section}{\numberline {2.3}A brief introduction in Game Theory}{7}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Best response and Nash Equilibrium}{8}{subsection.2.3.1}
+\contentsline {subsubsection}{List of terms}{8}{section*.24}
+\contentsline {section}{\numberline {2.4}The FlipIt game}{8}{section.2.4}
+\contentsline {subsubsection}{strategies}{10}{section*.25}
+\contentsline {subsubsection}{Results of the FlipIt game}{11}{section*.26}
+\contentsline {section}{\numberline {2.5}Extensions on FlipIt}{11}{section.2.5}
+\contentsline {chapter}{\chapternumberline {3}FlipIt game with virus propagation}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{13}{section.3.1}
+\contentsline {section}{\numberline {3.2}FlipIt game with virus propagation}{13}{section.3.2}
+\contentsline {section}{\numberline {3.3}Explaining difference between FlipIt with and without virus propagation}{13}{section.3.3}
+\contentsline {section}{\numberline {3.4}Formal definition Game}{14}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Formalization the benefit formula including the infection-delay}{15}{subsection.3.4.1}
+\contentsline {section}{\numberline {3.5}Nash Equilibria}{20}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}case: $\delta _{D} \leq \delta _{A} $ or $\alpha _{D} \geq \alpha _{A}$}{21}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}case 2: $\delta _{D} \geq \delta _{A} $ or $\alpha _{D} \leq \alpha _{A}$}{21}{subsection.3.5.2}
+\contentsline {chapter}{\chapternumberline {4}Conclusion}{23}{chapter.4}
+\contentsline {section}{\numberline {4.1}trala}{23}{section.4.1}
+\contentsline {chapter}{Bibliografie}{25}{section*.34}
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}

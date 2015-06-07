@@ -8,7 +8,53 @@
 %%%%%												%%%%%%
 %%%%%												%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{What is cyber security?}
 
+Cyber security is a part of security that focuses on securing computer controlled devices such as computers and smartphones, as well as public and private computer networks, including the entire Internet. A private network can be an enterprise network that is protected from the public network such as the internet.  The purpose of security is to give certainty that data will not be removed without authorization (Confidentiality) that the data is always accessible (Availability), and that data can not be read or altered by someone who does not have the authorization (Integrity). These are the 3 key attributes of security, also known as the CIA triad. \\
+ 
+
+In order to keep a system secure, it is important to mitigate the possible threats. A threat refers to anything that can breach the security and that can cause a possible harm. The some of the most common threats are spam, malware, spoofing, phishing and  DDoS attacks. 
+The biggest threat are caused by malware. 
+This is a piece of malicious program that is designed to penetrate unprotected systems or computers, and getting there to sensitive information. Malware can be divided into different subclasses. These subclasses are not mutually exclusive:
+
+\begin{description}
+\item Virus: This is a malicious piece of code that replicates and tries to spread to infect other systems or files. The "I love you" virus is an example of a virus that quickly spreads. This virus propagates via mail systems. If someone opens an email with "I love you" with the virus in the annex this virus spreads itself by sending a mail to everyone in your contact list. So the virus can multiply rapidly and eventually a business network might shut down by the heavy traffic. In this example, there is a need for human interaction to spread the virus. If no one opens the mail the virus can not infect other systems.
+Unfortunately, there are also viruses that can spread without human interaction. These viruses are referred to as worms. A worm is also a computer program that replicates itself to spread to other computers. Via a computer network, copies of the worm can be forwarded without an intermediary. The worm will use vulnerabilities of the system to infect other computers.
+The Stuxnetworm is a very famous worm. Initially this worm spread via infected USB sticks and from then it could spread through the Internet to other computers. The purpose of the Stuxnetworm was to harm the centrifuges in nuclear reactors. Many reactors have been infected. From the standpoint of the defender, it is very important to respond as quickly as possible so that the worm can not spread. 
+\item Rootkit:
+\item Trojan:
+\item Backdoors:
+\end{description}
+
+A security report of 2014 reveales that 61\% of the attacks on companies are caused by malware. A company can take different measures to defend himself against malware. 
+The threats caused by malware can be devided into 3 big groups: known threats (70\%), unknown threats (29\%) and advanced threats (1\%) [\todo{toevoegen referentie naar kaspersky APT report}]. 
+
+
+The known threats easy to defend against. Unkown also. Then the remaining 1\% are the advanced threats. These threats are also known as APT. APT's are ... 
+In this paper we focus on targeted attacks. Targeted attacks are malware designed to attack exclusively an organisation. Some examples of the biggest most rare APTs  to get an understanding of what APTs are capable of and how long they can stay unseen. [\todo{site kaspersky apt}] 
+
+An APT is a persistent targeted attack that tries to penetrate a network, harm and stays unseen for a long period of time. The motive of an APT is mostly cyber espionage, stealing sensitive data, sabotage or other ideological attacks. APT stands for Advanced persistant threat. Advanced stands for the fact that these attacks are well funded and that the attacker itself has a great expertise. These APT are not easy to protect against. Not all APTs are technical advanced. The attacker can also try to exploit existing vulnerabilities and hope that his target has not yet secured himself against these vulnerabilities. Persistent is the fact that the attacker keeps on trying to break in to his victim. He will not give up. The attack can be over various years and different steps. The threats stands for the fact that an APT is ..
+
+\subsubsection{Equation}
+Equation is a complex cyberattack platform where the first known sample is from 2002, but it was only discovered 12 years later in 2014. This APT propagates through usb drives, cd or physical media. It will search for exploits and will self-replicate itself to spread the infection. The purpose of this virus is to steal data and cyberespionage. 
+
+\subsubsection{Regin}
+
+\subsubsection{Flame}
+Way of propagation through USB drives, LAN spreading. purpose cyber espionage.
+
+\subsubsection{Black energy}
+ purpose cyber espionage and DDoS, data wiping. prop usb lan
+
+ 
+According to [\todo{APT report} ]  the damage of one successful target attack can exceed over 2.54 million dollar. a company needs a defense mechanism to defend itself against apt. Prevention more important than ..
+een van de manieren om dat te doen is via game theorie. 
+
+
+Security belangrijk. verschillende malware. uitleggen malware. verwijzen naar kaspersky security raport. APT grote threats. voorbeelden van APT's. waarom gametheory gebruiken. 
+
+
+\section{Intro game theory}
 Gametheory is a mathematical study to analyse interactions between independent and self-interested agents. To get an understanding of the most important concepts of game theory, a short introduction based on the work of 
 \cite{leyton2008essentials} and \cite{Coursera} is given in section \ref{Cha1:briefintro}  . For a more detailed and full introduction to game theory, the reader is referred to 
 \cite{leyton2008essentials}.  In section \ref{cha1:FlipItGame} an overview of the FlipIt game is given with the definitions and concepts that will be used throughout the paper. 
@@ -45,7 +91,7 @@ In a Decision Game Theoretic Approach an agent will try to act in such a way to 
 One of the solution concepts in Game Theory for non-cooperative games is a Nash Equilibrium that we will use in this paper. A Nash Equilibrium is a subset of outcomes that can be interesting to analyse a game. To define this concept we first introduce the concept of best response. The best response for a player is the action of a player that maximizes it's pay-off for any given action of the other player. We define $BR_{i}$ as the best response function for player \textit{i}. The best response for player \textit{1} is given by : $a_{1} = BR_{1}(a_{2})$. A 
 For a Nash Equilibrium each player has a consist list of actions and each player's action maximizes his or her pay-off given the actions of the other players. Nobody has the incentive to change his or her action if an equilibrium profile is played. We have a Nash Equilibrium for the pair $(a_{1}^{*},a_{2}^{*})$ where $a_{1}^{*} = BR_{1}(a_{2}^{*})$ and $a_{2}^{*} = BR_{2}(a_{1}^{*})$\\
 
- 
+ \todo{optimal strategy uitleggen}
 
 
 POSTCONDITION: Uitgelegd: Strategien, acties, strategien, spelers, rationeel, Nash, best response
