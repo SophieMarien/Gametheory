@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  6 JUN 2015 14:33
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  8 JUN 2015 17:50
 entering extended mode
 **masterproef.tex
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.tex
@@ -1175,7 +1175,16 @@ LaTeX Warning: Label `first' multiply defined.
 
 LaTeX Warning: Label `first' multiply defined.
 
-) (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\conclusion.aux))
+) (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\conclusion.aux)
+(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\optimum.aux
+
+LaTeX Warning: Label `chapter2:FlipIt with virus propagation' multiply defined.
+
+
+
+LaTeX Warning: Label `ch1:extendedWork' multiply defined.
+
+))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
 LaTeX Font Info:    ... okay on input line 88.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
@@ -1191,7 +1200,7 @@ LaTeX Font Info:    ... okay on input line 88.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 88.
 LaTeX Font Info:    ... okay on input line 88.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 88.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
@@ -1270,7 +1279,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-<logokuleng.pdf, id=90, 159.33528pt x 85.358pt>
+<logokuleng.pdf, id=98, 159.33528pt x 85.358pt>
 File: logokuleng.pdf Graphic file (type pdf)
  <use logokuleng.pdf>
 Package pdftex.def Info: logokuleng.pdf used on input line 88.
@@ -1407,7 +1416,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 146--147
 [5
 
 
-] <../../doc/template/Images/DefFlipit.png, id=174, 512.3943pt x 92.9874pt>
+] <../../doc/template/Images/DefFlipit.png, id=186, 512.3943pt x 92.9874pt>
 File: ../../doc/template/Images/DefFlipit.png Graphic file (type png)
 
 <use ../../doc/template/Images/DefFlipit.png>
@@ -1619,7 +1628,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 125--126
 
  []
 
-<../../doc/template/Images/FLipItCase1.pdf, id=349, 594.22pt x 316.18124pt>
+<../../doc/template/Images/FLipItCase1.pdf, id=361, 594.22pt x 316.18124pt>
 File: ../../doc/template/Images/FLipItCase1.pdf Graphic file (type pdf)
 
 <use ../../doc/template/Images/FLipItCase1.pdf>
@@ -1667,7 +1676,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 214--215
 
  []
 
-<../../doc/template/Images/FlipItCase2.png, id=381, 403.2666pt x 498.4221pt>
+<../../doc/template/Images/FlipItCase2.png, id=393, 403.2666pt x 498.4221pt>
 File: ../../doc/template/Images/FlipItCase2.png Graphic file (type png)
 
 <use ../../doc/template/Images/FlipItCase2.png>
@@ -1731,32 +1740,104 @@ Underfull \hbox (badness 10000) in paragraph at lines 306--307
 
 
 
-] [24
+] (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\optimum.tex
+[24
 
 
-]
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.bbl)
-[25
-
-] [26
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+
+ []
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 47--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--63
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--76
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+
+ []
+
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 86--88
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--94
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--98
+
+ []
+
+[27]
+
+Package natbib Warning: Citation `fengstealthy' on page 28 undefined on input l
+ine 102.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
+
+ []
+
+) [28]
+(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.bbl
+[29
+
+
+
+]) [30] [31
+
+]
+
+Package natbib Warning: There were undefined citations.
+
 \tf@toc=\write6
 \tf@tdo=\write7
 \tf@lof=\write8
 \tf@lot=\write9
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 303.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 303.
-
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 304.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 304.
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.aux
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-10.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-5.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-9.aux)
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\conclusion.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 303.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 303.
+(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\conclusion.aux)
+(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\optimum.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 304.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 304.
 Package rerunfilecheck Info: File `masterproef.out' has not changed.
-(rerunfilecheck)             Checksum: 5058C086976E7498098BCBDABD15CED0;1342.
+(rerunfilecheck)             Checksum: A7148C3FFFF0E165EE46966A02A82F76;1481.
 
 
 LaTeX Warning: There were undefined references.
@@ -1764,16 +1845,16 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 303.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 304.
  ) 
 Here is how much of TeX's memory you used:
- 25828 strings out of 493921
- 470708 string characters out of 3144864
- 710395 words of memory out of 3000000
- 28313 multiletter control sequences out of 15000+200000
- 82908 words of font info for 145 fonts, out of 3000000 for 9000
+ 25868 strings out of 493921
+ 471618 string characters out of 3144864
+ 712577 words of memory out of 3000000
+ 28327 multiletter control sequences out of 15000+200000
+ 83287 words of font info for 149 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 60i,12n,78p,1510b,866s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,12n,78p,1670b,866s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/
 MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files (x86)/MiKTeX 2.9/
@@ -1793,9 +1874,9 @@ X 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
 ic/lm/lmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt10
 .pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:
 /Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on masterproef.pdf (38 pages, 513932 bytes).
+Output written on masterproef.pdf (43 pages, 533805 bytes).
 PDF statistics:
- 540 PDF objects out of 1000 (max. 8388607)
- 150 named destinations out of 1000 (max. 500000)
- 21193 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 585 PDF objects out of 1000 (max. 8388607)
+ 161 named destinations out of 1000 (max. 500000)
+ 21209 words of extra memory for PDF output out of 24883 (max. 10000000)
 

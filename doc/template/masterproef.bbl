@@ -9,6 +9,15 @@ Standaard: Snowden bevestigt dat belgacom gehackt werd.
 \bibitem{Coursera}
 Gametheory, 2004.
 
+\bibitem{ApplyingFlipit}
+K.~Bowers, M.~van Dijk, R.~Griffin, A.~Juels, A.~Oprea, R.~Rivest, and
+  N.~Triandopoulos.
+\newblock Defending against the unknown enemy: Applying flipit to system
+  security.
+\newblock In J.~Grossklags and J.~Walrand, editors, {\em Decision and Game
+  Theory for Security}, volume 7638 of {\em Lecture Notes in Computer Science},
+  pages 248--263. Springer Berlin Heidelberg, 2012.
+
 \bibitem{FlipThem}
 A.~Laszka.
 \newblock Flipthem: Modeling targeted attacks with flipit for multiple

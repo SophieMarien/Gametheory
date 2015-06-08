@@ -44,7 +44,11 @@
 \contentsline {subsection}{\numberline {3.5.2}case 2: $\delta _{D} \geq \delta _{A} $ or $\alpha _{D} \leq \alpha _{A}$}{21}{subsection.3.5.2}
 \contentsline {chapter}{\chapternumberline {4}Conclusion}{23}{chapter.4}
 \contentsline {section}{\numberline {4.1}trala}{23}{section.4.1}
-\contentsline {chapter}{Bibliografie}{25}{section*.34}
+\contentsline {chapter}{\chapternumberline {5}FlipIt game with virus propagation}{25}{chapter.5}
+\contentsline {subsubsection}{$k_{D} \leq d$}{25}{section*.33}
+\contentsline {subsubsection}{$k_{D} > d$}{25}{section*.34}
+\contentsline {section}{\numberline {5.1}Extensions on FlipIt}{27}{section.5.1}
+\contentsline {chapter}{Bibliografie}{29}{section*.37}
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}

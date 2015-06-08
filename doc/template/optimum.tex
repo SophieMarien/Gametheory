@@ -1,0 +1,107 @@
+\chapter{FlipIt game with virus propagation}
+\label{chapter2:FlipIt with virus propagation}
+%\documentclass[10pt]{article}
+%\begin{document}
+
+The optimum functions will be piecewise functions. There will be different optimum functions depending on $k_{D}$ and $d$. Two cases are considered.
+\subsubsection{$k_{D} \leq d$}
+
+\begin{description}
+\item if $\delta_{A} < 2(k_{D} - d)$ \\
+For case 2.A it is decreasing. Because $k_{D} \leq d$ the term $2(k_{D} - d)$ will always be negative so $\delta_{A}$ will also be negative. This means for case 1 and case 2.b that $\delta_{D} = 0$ and so the defender will not play.
+\item $\delta_{A} = 2(k_{D} - d)$ \\
+$\delta_{A} = 0$ so the attacker will not play. For case 1 and case 2.b the defender will also not play.
+\item $\delta_{A} > 2(k_{D} - d)$ \\
+For case 2.b it is decreasing. Case 2.a it is increasing. For case 1 $2(k_{D} - d)$ is always negative so the minimum is 0. This means that $\delta_{D} \in [0, \sqrt{d^{2} + 2\delta_{A}k_{D}}]$
+\end{description}
+
+\subsubsection{$k_{D} > d$}
+\begin{description}
+\item if $\delta_{A} < 2(k_{D} - d)$ \\
+For case 2.A it is increasing. 
+\item $\delta_{A} = 2(k_{D} - d)$ \\
+\item $\delta_{A} > 2(k_{D} - d)$ \\
+In every case the function is decreasing so the defender will not play.
+\end{description}
+
+From this analyses we can compute $opt_{D}(\delta_{A})$ for two different cases as:
+ \begin{displaymath}
+  opt_{D}(\delta_{A}) = \left\{
+     \begin{array}{lr}
+       0, & \delta_{A} < 2(k_{D} - d)\\
+       0, & \delta_{A} = 2(k_{D} - d) \\
+       \big[0,\sqrt{d^{2} + 2\delta_{A}k_{D}}\big], & \delta_{A} > 2(k_{D} - d)
+     \end{array}
+   \right.
+\end{displaymath}
+
+For case :
+ \begin{displaymath}
+  opt_{D}(\delta_{A}) = \left\{
+     \begin{array}{lr}
+       0, & \delta_{A} < 2(k_{D} - d)\\
+       0, & \delta_{A} = 2(k_{D} - d) \\
+       \big[0,\sqrt{d^{2} + 2\delta_{A}k_{D}}\big], & \delta_{A} > 2(k_{D} - d)
+     \end{array}
+   \right.
+\end{displaymath}
+-------------------------------------------\\
+We still consider the case where $d < \delta_{D}$. \\
+To determine the Nash equilibria we also need to determine $opt_{1}(\delta_{D})$ by computing the derivative of $\beta_{A}(\delta_{D},\delta_{A})$ for a fixed $\delta_{D}$. We consider 2 cases: \\
+
+\textbf{Case 1: $\delta_{A} \geq \delta_{D}$}\\
+
+Since 
+\begin{equation*}
+\beta_{A}(\delta_{D},\delta_{A}) =\dfrac{\delta_{D}}{2\delta_{A}} - \dfrac{k_{A}}{\delta_{A}} + \dfrac{d^{2}}{2\delta_{D}\delta_{A}^{2}} - \dfrac{d}{\delta_{A}}
+\end{equation*}
+the derivative is:
+\begin{equation*}
+\dfrac{\partial \beta_{A}(\delta_{D},\delta_{A})}{\partial \delta_{A}} = -\dfrac{\delta_{D}}{2\delta_{A}^{2}} + \dfrac{k_{A}}{\delta_{A}^{2}} - \dfrac{d^{2}}{2\delta_{D}\delta_{A}^{2}} + \dfrac{d}{\delta_{A}^{2}}
+\end{equation*}
+it follows that $\beta_{A}(\delta_{D},\cdot)$ is increasing if $2k_{A} < (\delta_{D} - d)^{2} / \delta_{D}$ and decreasing if $2k_{A} > (\delta_{D} - d)^{2} / \delta_{D}$. \\
+
+\textbf{Case 2: $\delta_{A} \leq \delta_{D}$ } \\
+
+\textbf{A}: $\delta_{A} \leq d + \delta_{A} \leq \delta_{D}$ \\
+Since 
+\begin{equation*}
+\beta_{A}(\delta_{D},\delta_{A}) =1- \dfrac{\delta_{A}}{2\delta_{D}} - \dfrac{k_{A}}{\delta_{A}} - \dfrac{d}{\delta_{D}}
+\end{equation*}
+the derivative is:
+\begin{equation*}
+\dfrac{\partial \beta_{A}(\delta_{D},\delta_{A})}{\partial \delta_{A}} = \dfrac{-1}{2\delta_{D}} + \dfrac{k_{A}}{\delta_{A}^{2}}
+\end{equation*}
+it follows that $\beta_{A}(\delta_{D},\cdot)$ is increasing on $[0,\sqrt{2k_{A}\delta_{D}}]$ and decreasing on $[\sqrt{2k_{A}\delta_{D}}, \infty]$ and thus has a maximum on $\delta_{A} = maximum \{\delta_{D}, \sqrt{2k_{A}\delta_{D}} \} $. The maximum between $\delta_{D}$ and $ \sqrt{2k_{A}\delta_{D}}$ is needed because $\delta_{A} $ cannot exceed $\delta_{D}$ in this case. \\
+
+\textbf{B}: $\delta_{A}  \leq \delta_{D} \leq d + \delta_{A} $ \\
+
+Since 
+\begin{equation*}
+\beta_{A}(\delta_{D},\delta_{A}) = 1 - \dfrac{\delta_{A}}{2\delta_{D}} - \dfrac{d}{\delta_{A}} - \dfrac{k_{A}}{\delta_{A}} + \dfrac{(d-(\delta_{D}-\delta_{A})^{2}}{2\delta_{D}\delta_{A}} 
+\end{equation*}
+the derivative is:
+\begin{equation*}
+\dfrac{\partial \beta_{A}(\delta_{D},\delta_{A})}{\partial \delta_{A}} = -\dfrac{\delta_{D}}{2\delta_{A}^{2}} + \dfrac{k_{A}}{\delta_{A}^{2}} - \dfrac{d^{2}}{2\delta_{D}\delta_{A}^{2}} + \dfrac{d}{\delta_{A}^{2}}
+\end{equation*}
+it follows that $\beta_{A}(\delta_{D},\cdot)$ is increasing if $2k_{A} < (\delta_{D} - d)^{2} / \delta_{D}$ and decreasing if $2k_{A} > (\delta_{D} - d)^{2} / \delta_{D}$. This is the same result as in case 1.\\
+
+\section{Extensions on FlipIt}
+\label{ch1:extendedWork}
+
+Various possible ways to extend FlipIt have already been proposed. 
+Laszka et al. made a lot of additions and extensions to the original game of FlipIt. For instance Laszka et al. extended the basic FlipIt game to multiple resources. The rationale is that for compromising a system in real life, more than just one resource needs to be taken over. An example is that gaining access to deeper layers of a system may require breaking several passwords. The model is called FlipThem \cite{FlipThem}. Laszka et al. also use two ways to flip the multiple resources: the AND and the OR control model. In the AND model the attacker only controls the system if he controls all the resources of the system, whereas in the OR model the attacker only needs to compromise one resource to be in control of the entire system. \\
+
+Another addition of Laszka et al. to the game of FlipIt \cite{MitigationCovert} 
+is extending the game to also consider non-targeted attacks by non-strategic players. In this game the defender tries to maintain control over the resource that is subjected to both targeted and non-targeted attacks. Non-targeted attacks can include phishing, while targeted attacks may include threats delivered through zero day attack vulnerabilities. \\
+One of the last important additions from Laszka et al. \cite{MitigationNonTargeted} is to consider a game with targeted and non-targeted attacks where the moves made by the attacker do not succeed immediately. This is similar to this paper but it has still some major differences. First the moves by the attacker are still covert but the moves made by the defender are known to the attacker. This means that the attacker knows when the defender plays and can change its strategy depending on the moves of the defender. Our motivation for a defender with stealthy moves is that there is not always an intelligent individual that is behind an APT. Some APTs don't know if the computer is already been recovered. There purpose is to spread. Not to check if they have already infected. \todo{beter verwoorden}. The second difference is that even though both the targeted and non-targeted attacks do not succeed immediately, the delay is determined differently. For the targeted attack the time till it succeeds is given by an exponential distributed random variable with a known rate. The non-targeted attacks are modelled as a single attacker and the time till it succeeds is given by a Poisson process. In our paper the delay is given by one parameter, that can be the result of any virus propagation model. The third and last difference is that the paper of Laska has multiple attackers and they try to find the best strategy of the defender against both targeted and non-targeted attacks. The conclusion of this paper is that the optimal strategy for the defender is moving periodically. \\ 
+
+FlipIt has also been applied to several cases in system security. Reseachers explored different applications of FlipIt for real-world problems, like password reset policies, VM refresh, cloud auditing and key rotation \cite{ApplyingFlipit}. \\
+Other authors used the FlipIt game to apply it on a specific scenario. To be able to use the FlipIt game, modifications where required for the FlipIt model.
+One of the scenarios by Pham \cite{compromised} was to find out whether a resource was compromised or not by the attacker. This could be verified by the defender, who has an extra move "test" beside the flip move. The basic idea is to test with an extra action if the resource has been compromised or not. This move involves also an extra cost.\\
+A three-player game has also been investigated where the flipit framework of two players is extended by another player. This player represents an insider that trades value information with the attacker \cite{fengstealthy}.\\
+
+
+Finally researchers also have investigated the behaviour of humans playing FlipIt. A. Nochenson and Grossklags \cite{nochenson2013behavioral}  investigate how people really act when given temporal decisions. They found out that the results improves over time but that they are dependent on gender, age, and other individual difference variables. The result also shows that the participants perform generally better when they have more information about the strategy of the opponent which is a computerized player. Reitter et al. \cite{reitter2013risk} extended the work of A. Nochenson and Grossklags to include various visual presentation modalities for the available feedback during the investigation.\\
+
+
