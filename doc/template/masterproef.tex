@@ -133,23 +133,23 @@ delay for virus propagation into account. The goal of this thesis is to find out
 \begin{abstract*}
 Onlangs zijn er gerichte security aanvallen geweest op grote bedrijven, zoals de aanval op Belgacom (een grote Belgische telcom). Deze aanvallen hebben aangetoond dat zelfs de meest veilige
 bedrijven nog steeds gecompromitteerd kunnen worden, en dat bovendien dergelijke aanvallen onopgemerkt kunnen blijven voor een bepaalde tijd.
-Flipit is een model dat door onderzoekers van de RSA (van Dijk et al.) is voorgesteld om dergelijke aanvallen te modelleren. Het is een 2-spelers spel bestaat uit een aanvaller, een verdediger en een gedeelde bron.  De spelers proberen om controle te krijgen over de gedeelde bron en ze
+Flipit is een model dat door onderzoekers van de RSA (van Dijk et al.) is voorgesteld om dergelijke aanvallen te modelleren. Het is een 2-spelers spel bestaande uit een aanvaller, een verdediger en een gedeelde bron.  De spelers proberen om controle te krijgen over de gedeelde bron en ze
 doen dit op een heimelijke manier. Met FlipIt wordt echter geen rekening mee gehouden dat een aanval niet onmiddellijk is, maar dat dit kan gebeuren met een zekere vertraging. In dit artikel passen we het model van FlipIt zodanig aan dat we het kunnen gebruiken voor heimelijke aanvallen die onderheven zijn aan een vertraging.
 Resultaat :
 
-Flipit is een spel ge"introduceerd door Van Dijk et al. Om te begrijpen hoe we het FlipIt spel kunnen aanpassen om virus propagatie in acht te nemen, is het belangrijk om vertrouwd te raken met de concepten van het basische Flipit spel en de notaties. Daarom beginnen we eerst met een uitleg hoe het basische FlipIt spel werkt en de belangrijksete formules die we in de paper gebruiken. \\
+Flipit is een spel ge"introduceerd door Van Dijk et al. Om te begrijpen hoe we het FlipIt spel kunnen aanpassen om virus propagatie in acht te nemen, is het belangrijk om vertrouwd te raken met de concepten van het basische Flipit spel en de notaties. Daarom beginnen we eerst met een uitleg hoe het basische FlipIt spel werkt en de belangrijkste formules die we in de paper gebruiken. \\
 
-Flipit is een spel met twee spelers met een gedeelde bron die de spelers zo lang mogelijk willen beheren. De gedeelde bron kan een wachtwoord, een netwerk of een geheime sleutel zijn afhankelijk afhankelijk van welke situatie gemodelleerd wordt. In de rest van de paper noemen we de twee spelers de aanvaller, aangegeven met subscript \textit{A} en de verdediger, aangegeven met subscript \textit{D}.
+Flipit is een spel met twee spelers met een gedeelde bron die de spelers zo lang mogelijk willen beheren. De gedeelde bron kan een wachtwoord, een netwerk of een geheime sleutel zijn afhankelijk van welke situatie gemodelleerd wordt. In de rest van de paper noemen we de twee spelers de aanvaller, aangegeven met onderschrift  \textit{A} en de verdediger, aangegeven met onderschrift \textit{D}.
 
-Het spel begint op $ t = 0 $ en blijft voor onbepaalde tijd duren($ t \rightarrow \infty $). De tijd van het spel wordt aangenomen als zijnde continu. Om controle over de bron te krijgen kunnen de spelers $i$, met $ i \in \{A, D \} $ de bron flippen. Elke flip zal een zekere kost $ k_{i} $ impliceren en de kosten kunnen vari"eren voor elke speler. Beide spelers zullen proberen om hun kosten te minimaliseren. Door een kost in te voeren, voorkomt men dat de spelers te vaak bewegen. \\
+Het spel begint op tijdstip $ t = 0 $ en blijft voor onbepaalde tijd doorgaan ($ t \rightarrow \infty $). De tijd van het spel wordt aangenomen als continu. Om controle over de bron te krijgen kunnen de spelers $i$, met $ i \in \{A, D \} $ de bron flippen. Elke flip impliceert een zekere kost $ k_{i} $ en deze kosten kunnen vari"eren voor elke speler. Beide spelers proberen om hun kosten te minimaliseren. Door een kost in te voeren, voorkomt men dat de spelers te vaak bewegen. \\
 
-De unieke eigenschap van Flipit is dat elke flip zal gebeuren op een heimelijke manier, wat betekent dat de speler heeft geen idee dat de andere speler (zijn tegenstander) de bron heeft geflipt. Zo zal de verdediger niet kunnen achterhalen of de bron al is gefipt door de aanvaller tot hij de bron zelf flipt. Het doel van de speler is om zo lang mogelijk de controle te behouden over de bron en terwijl de kost minimaliseren. Een beweging kan ook leiden tot een "verloren beweging", genoemd een flop. Het kan gebeuren dat de bron reeds onder controle is van de speler. Als de speler flipt wanneer hij of zij al de controle  heeft over de bron, dan verspilt de speler een zet omdat het niet leidt tot een verandering van controle en dus een kost verspilt wordt. \\
+De unieke eigenschap van Flipit is dat elke flip gebeurt op een heimelijke manier, wat betekent dat de speler heeft geen idee dat de andere speler (zijn tegenstander) de bron heeft geflipt. Zo zal de verdediger niet kunnen achterhalen of de bron al is gefipt door de aanvaller tot hij de bron zelf flipt. Het doel van de speler is om zo lang mogelijk de controle te behouden over de bron en terwijl de kost minimaliseren. Een beweging kan ook leiden tot een "verloren beweging", genoemd een flop. Het kan gebeuren dat de bron reeds onder controle is van de speler. Als de speler flipt wanneer hij of zij al de controle  heeft over de bron, dan verspilt de speler een zet omdat het niet leidt tot een verandering van controle en dus een kost verspilt wordt. \\
 
 
 \begin{figure}[hbtp]
 \center
 \includegraphics[scale=0.5]{../../doc/template/Images/DefFlipit}
-\caption{Een afbeelding van een Flipit spel waarbij beide spelers periodiek spelen en discrete tijdsintervallen. Elke beweging of flip wordt aangegeven met een blauw of oranje cirkel. De aanvaller is vertegenwoordigd in oranje en speelt met een periode van $ \delta_{A} = 4 $. De verdediger is vertegenwoordigd in blauw en speelt met een periode van $ \delta_{D} = 3 $. De blauwe en oranje rechthoeken geven de hoeveelheid tijd die de betreffende speler is in de controle van de bron.}
+\caption{Een afbeelding van een Flipit spel met discrete tijdsintervallen waarbij beide spelers periodiek spelen. Elke beweging of flip wordt aangegeven met een blauw of oranje cirkel. De aanvaller is vertegenwoordigd in het oranje en speelt met een periode van $ \delta_{A} = 4 $. De verdediger is vertegenwoordigd in het blauw en speelt met een periode van $ \delta_{D} = 3 $. De blauwe en oranje rechthoeken geven de hoeveelheid tijd die de betreffende speler in de controle is van de bron.}
 \label{fig: FLipItDefault}
 \end{figure}
 
@@ -279,6 +279,7 @@ Niet zo lang geleden werden APT's ontdekt. (Introzin moet beter en anders). Bedr
 %\include{chap-3}
 %\include{chap-4}
 
+\include{nash}
 %\include{chap-6}
 %\include{chap-7}
 %\include{chap-8}
