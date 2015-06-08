@@ -1,7 +1,7 @@
 \BOOKMARK [0][-]{chapter*.1}{Voorwoord}{}% 1
 \BOOKMARK [0][-]{chapter*.3}{Samenvatting}{}% 2
 \BOOKMARK [0][-]{chapter*.5}{Samenvatting}{}% 3
-\BOOKMARK [0][-]{chapter*.7}{Lijst van figuren en tabellen}{}% 4
+\BOOKMARK [0][-]{chapter*.8}{Lijst van figuren en tabellen}{}% 4
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 5
 \BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}% 6
 \BOOKMARK [0][-]{chapter.2}{Intoduction to GameTheory}{}% 7
@@ -14,18 +14,9 @@
 \BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 14
 \BOOKMARK [1][-]{section.3.2}{FlipIt game with virus propagation}{chapter.3}% 15
 \BOOKMARK [1][-]{section.3.3}{Explaining difference between FlipIt with and without virus propagation}{chapter.3}% 16
-\BOOKMARK [1][-]{section.3.4}{Formal definition Game}{chapter.3}% 17
-<<<<<<< HEAD
-\BOOKMARK [1][-]{section.3.5}{Nash Equilibria}{chapter.3}% 18
-\BOOKMARK [0][-]{chapter.4}{Conclusion}{}% 19
-\BOOKMARK [1][-]{section.4.1}{trala}{chapter.4}% 20
-\BOOKMARK [0][-]{chapter.5}{FlipIt game with virus propagation}{}% 21
-\BOOKMARK [1][-]{section.5.1}{Extensions on FlipIt}{chapter.5}% 22
-\BOOKMARK [0][-]{section*.37}{Bibliografie}{}% 23
-=======
+\BOOKMARK [1][-]{section.3.4}{Playing periodically with virus propagation}{chapter.3}% 17
 \BOOKMARK [0][-]{chapter.4}{Nash Equilibria}{}% 18
 \BOOKMARK [1][-]{section.4.1}{Nash Equilibria}{chapter.4}% 19
 \BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 20
 \BOOKMARK [1][-]{section.5.1}{trala}{chapter.5}% 21
-\BOOKMARK [0][-]{section*.37}{Bibliografie}{}% 22
->>>>>>> origin/master
+\BOOKMARK [0][-]{section*.39}{Bibliografie}{}% 22

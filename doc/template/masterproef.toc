@@ -9,71 +9,45 @@
 \contentsline {chapter}{Samenvatting}{iv}{chapter*.3}
 \select@language {dutch}
 \contentsline {chapter}{Samenvatting}{v}{chapter*.5}
-\contentsline {subsubsection}{strategie"en}{vii}{section*.6}
+\contentsline {subsubsection}{strategie"en}{vii}{section*.7}
 \select@language {dutch}
-\contentsline {chapter}{L"yst van figuren en tabellen}{ix}{chapter*.7}
+\contentsline {chapter}{L"yst van figuren en tabellen}{ix}{chapter*.8}
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}
-\contentsline {subsubsection}{Situation}{1}{section*.10}
-\contentsline {subsubsection}{Complication}{2}{section*.12}
-\contentsline {subsubsection}{Research questions}{2}{section*.13}
-\contentsline {subsubsection}{Contributions}{2}{section*.14}
-\contentsline {subsubsection}{Overview of the thesis}{2}{section*.15}
+\contentsline {subsubsection}{Situation}{1}{section*.11}
+\contentsline {subsubsection}{Complication}{2}{section*.13}
+\contentsline {subsubsection}{Research questions}{2}{section*.14}
+\contentsline {subsubsection}{Contributions}{2}{section*.15}
+\contentsline {subsubsection}{Overview of the thesis}{2}{section*.16}
 \contentsline {chapter}{\chapternumberline {2}Intoduction to GameTheory}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}What is cyber security?}{5}{section.2.1}
-<<<<<<< HEAD
-\contentsline {subsubsection}{Equation}{6}{section*.18}
-\contentsline {subsubsection}{Regin}{6}{section*.19}
-\contentsline {subsubsection}{Flame}{6}{section*.20}
-\contentsline {subsubsection}{Black energy}{7}{section*.21}
-\contentsline {section}{\numberline {2.2}Intro game theory}{7}{section.2.2}
-\contentsline {section}{\numberline {2.3}A brief introduction in Game Theory}{7}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Best response and Nash Equilibrium}{8}{subsection.2.3.1}
-\contentsline {subsubsection}{List of terms}{8}{section*.24}
-\contentsline {section}{\numberline {2.4}The FlipIt game}{8}{section.2.4}
-\contentsline {subsubsection}{strategies}{10}{section*.25}
-\contentsline {subsubsection}{Results of the FlipIt game}{11}{section*.26}
-\contentsline {section}{\numberline {2.5}Extensions on FlipIt}{11}{section.2.5}
-\contentsline {chapter}{\chapternumberline {3}FlipIt game with virus propagation}{13}{chapter.3}
-\contentsline {section}{\numberline {3.1}Introduction}{13}{section.3.1}
-\contentsline {section}{\numberline {3.2}FlipIt game with virus propagation}{13}{section.3.2}
-\contentsline {section}{\numberline {3.3}Explaining difference between FlipIt with and without virus propagation}{13}{section.3.3}
-\contentsline {section}{\numberline {3.4}Formal definition Game}{14}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Formalization the benefit formula including the infection-delay}{15}{subsection.3.4.1}
-\contentsline {section}{\numberline {3.5}Nash Equilibria}{20}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}case: $\delta _{D} \leq \delta _{A} $ or $\alpha _{D} \geq \alpha _{A}$}{21}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}case 2: $\delta _{D} \geq \delta _{A} $ or $\alpha _{D} \leq \alpha _{A}$}{21}{subsection.3.5.2}
-\contentsline {chapter}{\chapternumberline {4}Conclusion}{23}{chapter.4}
-\contentsline {section}{\numberline {4.1}trala}{23}{section.4.1}
-\contentsline {chapter}{\chapternumberline {5}FlipIt game with virus propagation}{25}{chapter.5}
-\contentsline {subsubsection}{$k_{D} \leq d$}{25}{section*.33}
-\contentsline {subsubsection}{$k_{D} > d$}{25}{section*.34}
-\contentsline {section}{\numberline {5.1}Extensions on FlipIt}{27}{section.5.1}
-=======
-\contentsline {subsubsection}{Equation}{8}{section*.19}
-\contentsline {subsubsection}{Regin}{8}{section*.20}
-\contentsline {subsubsection}{Flame}{8}{section*.21}
-\contentsline {subsubsection}{Black energy}{8}{section*.22}
+\contentsline {subsubsection}{Equation}{8}{section*.20}
+\contentsline {subsubsection}{Regin}{8}{section*.21}
+\contentsline {subsubsection}{Flame}{8}{section*.22}
+\contentsline {subsubsection}{Black energy}{8}{section*.23}
 \contentsline {section}{\numberline {2.2}Intro game theory}{8}{section.2.2}
 \contentsline {section}{\numberline {2.3}A brief introduction in Game Theory}{8}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Best response and Nash Equilibrium}{9}{subsection.2.3.1}
-\contentsline {subsubsection}{List of terms}{9}{section*.25}
+\contentsline {subsubsection}{List of terms}{9}{section*.26}
 \contentsline {section}{\numberline {2.4}The FlipIt game}{10}{section.2.4}
-\contentsline {subsubsection}{strategies}{11}{section*.26}
-\contentsline {subsubsection}{Results of the FlipIt game}{12}{section*.27}
+\contentsline {subsubsection}{strategies}{11}{section*.27}
+\contentsline {subsubsection}{Results of the FlipIt game}{12}{section*.28}
 \contentsline {section}{\numberline {2.5}Extensions on FlipIt}{12}{section.2.5}
 \contentsline {chapter}{\chapternumberline {3}FlipIt game with virus propagation}{15}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introduction}{15}{section.3.1}
 \contentsline {section}{\numberline {3.2}FlipIt game with virus propagation}{15}{section.3.2}
 \contentsline {section}{\numberline {3.3}Explaining difference between FlipIt with and without virus propagation}{15}{section.3.3}
-\contentsline {section}{\numberline {3.4}Formal definition Game}{16}{section.3.4}
+\contentsline {section}{\numberline {3.4}Playing periodically with virus propagation}{16}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Formalization the benefit formula including the infection-delay}{17}{subsection.3.4.1}
 \contentsline {chapter}{\chapternumberline {4}Nash Equilibria}{23}{chapter.4}
 \contentsline {section}{\numberline {4.1}Nash Equilibria}{23}{section.4.1}
+\contentsline {subsubsection}{$k_{D} \leq d$}{25}{section*.36}
+\contentsline {subsection}{\numberline {4.1.1}Best responses}{25}{subsection.4.1.1}
+\contentsline {subsubsection}{$k_{D} > d$}{25}{section*.37}
+\contentsline {subsection}{\numberline {4.1.2}betaA}{25}{subsection.4.1.2}
 \contentsline {chapter}{\chapternumberline {5}Conclusion}{27}{chapter.5}
 \contentsline {section}{\numberline {5.1}trala}{27}{section.5.1}
->>>>>>> origin/master
-\contentsline {chapter}{Bibliografie}{29}{section*.37}
+\contentsline {chapter}{Bibliografie}{29}{section*.39}
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}

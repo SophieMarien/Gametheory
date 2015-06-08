@@ -11,17 +11,20 @@
 
 \section{Introduction}
 \label{Ch2:Intro}
+The game of FlipIt with virus propagation considers attackers where their moves are not instantaneous. This can be motivated by an example of a virus. A virus can be dropped on a network but it only compromises the whole network if every node in the network is infected. The basic FlipIt game does not take this into account. In this chapter the FlipIt game with virus propagation is explained and how it can be modelled. First the main differences with the basic FlipIt game are discussed in section \ref{ch2:diffFlip}. Next in section \ref{ch2:formal} the formal definition of the game with virus propagation is given. At last, in section \ref{ch2:periodicvirus} a periodic strategy game is considered and the formalization of the formulas with virus propagation are determined.\\
 
+This chapter explains how to model a FlipIt game with a virus propagation that infects a network. The first section explains the difference between a normal FlipIt game and a FlipIt game with virus propagation. The next section derives a formula to calculate the benefit for a FlipIt game with a virus propagation. In the last section we calculate the Nash equilibrium for the benefit formula.
 \section{FlipIt game with virus propagation}
 
-Motivatie voor het veranderen van FLipIt naar een FlipIt met viruspropagatie:
+Motivation
 
 \section{Explaining difference between FlipIt with and without virus propagation}
+\label{ch2:diffFlip}
 
 A FlipIt game consists of a single resource. To represent the security problem, the game now defines its single resource as a computer network with multiple
 nodes. One of the players, the defender, will try to defend his network. The defender
 will do this by flipping all the nodes of the network (i.e. the entire resource) in every move he plays. The
-attacker, the other player, will try to infect all the nodes in the network. The attacker
+attacker on the other hand will try to infect all the nodes in the network. The attacker
 will do this by flipping the node in the graph that can infect all the nodes in the
 shortest possible time. After dropping a virus on the first node, it takes a while for the virus to infect the entire network. Since the original FlipIt game works with a single resource that is always flipped entirely, the assumption is made that the attacker is considered to gain immediate full control over the resource when the network has been infected, even it is only one node that has been infected.\\
 
@@ -77,27 +80,12 @@ Assume that an attacker attacks at time \textit{t}, he doesn't get immediate con
 %\todo{andere mogelijkheid:} Another setting of the game can be that the flip of the defender is equal to a patch and that the resource cannot be infected any more. But with this case we deviate from the flipIt game, because the attacker cannot flip the resource any more. Unless we work with different virusses every time the attacker flips. We start with the less complex game of flipping is equal to a clean-up.
 
 
-\section{Formal definition Game}
 
-In this section we provide a formal definition of the game and the notation that we will use throughout the paper. 
 
-\begin{description}
-\item $i$: Defines the player. Different as in the FlipIt paper where the defender is denoted by the subscript 0 and the attacker by the subscript 1.
-\item $\delta_{i}$: The length of the interval between two consecutive moves of player \textit{i}. 
-\item $\alpha_{i}$: The average flip rate of player \textit{i}, given by $\alpha_{i}=1/\alpha_{i}$.
-\item $k_{i}$: The cost of player \textit{i}'s moves.
-\item $d$: The delay caused by the virus propagation.
-\item $G_{i}(t)$: The total gain of player \textit{i} denotes the amount of time player \textit{i} is in control over the resource up to time \textit{t}.
-\item $\gamma_{i}$: The average gain rate of player \textit{i} defined as $G_{i}(t)/t$
-\item $\beta_{i}$:  The average benefit rate up to time \textit{t} defined as  $\beta_{i} = \gamma_{i} -k_{i} \alpha_{i} $.
-\item $opt_{i}$: The optimum function.
-\end{description}
+\section{Playing periodically with virus propagation}
+\label{ch2:periodicvirus}
 
-\todo{tekening toevoegen waarop de delay staat aangeduid}
 
-\section*{Playing periodically with virus propagation}
-
-This chapter explains how to model a FlipIt game with a virus propagation that infects a network. The first section explains the difference between a normal FlipIt game and a FlipIt game with virus propagation. The next section derives a formula to calculate the benefit for a FlipIt game with a virus propagation. In the last section we calculate the Nash equilibrium for the benefit formula.
 
 
 The formalization starts from the model of the non-adaptive continuous basic FlipIt game where players use a periodic strategy with a random phase. This choice is motivated by the assumption that in most organisations, the defence strategy is to periodically defend the network. This corresponds to a periodic defender strategy.  A periodic attacker strategy is assumed as well, to be able to compare the results with the periodic strategy of the FlipIt game in \cite{FlipIt}. %, as this also corresponds to a common real life strategy. %nog eventueel verder te motiveren
@@ -110,8 +98,31 @@ Similarly as in \cite{FlipIt}, we split the formalization in two cases. The firs
 Intuitively we could assume that $d$ can never be bigger than $\delta_{A}$ because then the benefit for the defender would always be 1. This is not always true. It is only true if $d$ is bigger than $\delta_{D}$, because then the defender will always be in control. For this we only calculate the formulas for the cases where $d$ is smaller than $\delta_{D}$. We can already conclude that it is no use for the attacker to play when the delay is bigger than $\delta_{D}$. \\
 
 \subsection{Formalization the benefit formula including the infection-delay}
- A Periodic strategy is a non-adaptive renewal strategy where the time intervals between consecutive moves are a fixed period, denoted by $\delta$. Moreover it has a random phase, that is chosen uniformly and random in the interval $[0,\delta]$ for the first move. The average rate of play of a player is denoted by $\alpha_{i} = \dfrac{1}{\delta_{i}}$. \\
+
+
+
+ A Periodic strategy is a non-adaptive renewal strategy where the time intervals between consecutive moves are a fixed period, denoted by $\delta$. Moreover it has a random phase, that is chosen uniformly and random in the interval $[0,\delta]$ for the first move. The average rate of play of a player is denoted by $\alpha_{i} = \dfrac{1}{\delta_{i}}$. List of symbols that will be used throughout the paper. Figure \ref{FlipItDelay} represents a couple of the symbols for clarification.\\
 ~~\\
+\begin{figure}[hbtp]
+\caption{Formalization of a FlipIt game with delay: A representation of a FlipIt game where both players are playing periodically. Every move or flip is indicated by a blue or orange circle.  The defender is represented in blue and plays with a period of $\delta_{D}$. The flip of the attacker is represented by a white circle, but because there is a delay d, the attacker only controls the resource after time d represented by an orange circle. The attacker plays with a period of $\delta_{A}$. The blue and orange rectangles represent the amount of time the respective player is in control of the resource.}
+\centering
+\includegraphics[scale=0.7]{Images/DefFlip.png}
+\label{FlipItDelay}
+\end{figure}
+
+\begin{description}
+\item $i$: Defines the player. Different as in the FlipIt paper where the defender is denoted by the subscript 0 and the attacker by the subscript 1.
+\item $\delta_{i}$: The length of the interval between two consecutive moves of player \textit{i}. 
+\item $\alpha_{i}$: The average flip rate of player \textit{i}, given by $\alpha_{i}=1/\delta_{i}$.
+\item $k_{i}$: The cost of player \textit{i}'s moves.
+\item $d$: The delay caused by the virus propagation.
+\item $G_{i}(t)$: The total gain of player \textit{i} denotes the amount of time player \textit{i} is in control over the resource up to time \textit{t}.
+\item $\gamma_{i}$: The average gain rate of player \textit{i} defined as $G_{i}(t)/t$
+\item $\beta_{i}$:  The average benefit rate up to time \textit{t} defined as  $\beta_{i} = \gamma_{i} -k_{i} \alpha_{i} $.
+\item $opt_{i}$: The optimum function.
+\end{description}
+
+
 
 
 \subsection*{\textbf{Case 1:} $\delta_{D} \leq \delta_{A} $ (The defender plays at least as fast as the attacker.) }
@@ -120,41 +131,41 @@ Let $r = \dfrac{\delta_{D}}{ \delta_{A} }$. The intervals between two consecutiv
 
 The expected period of attacker control within the interval would be r/2, without considering the delay by a virus. Therefore the benefit for the attacker, without considering the delay, can be expressed as follows:
 
-\begin{equation}
+\begin{equation*}
 \beta_{A}(\alpha_{D},\alpha_{A}) =\dfrac {r} {2} - k_{A} \alpha_{A} = \dfrac {\delta_{D}} {2\delta_{A}} - k_{A} \alpha_{A}  
-\end{equation}\\
+\end{equation*}\\
 
 Correspondingly, the benefit for the defender can be expressed as:
-\begin{equation}
+\begin{equation*}
 \beta_{D}(\alpha_{D},\alpha_{A}) =1 -  \dfrac {r} {2} - k_{D} \alpha_{D} = 1 - \dfrac {\delta_{D}} {2\delta_{A}} - k_{D} \alpha_{D} 
-\end{equation}
+\end{equation*}
 
 \begin{figure}[hbtp]
-\caption{The first FlipIt game is one without virus propagation. The second one is with virus propagation and \textit{d} = 1. The delay is denoted with an arrow.}
+\caption{Case 1: Difference between a basic FlipIt game and a FlipIt game with a delay. (1) is the FlipIt game without a delay and (2) is with a delay. The delay is denoted with an arrow. The attacker is only in control when the circle becomes orange.}
 \centering
-\includegraphics[scale=0.4]{../../doc/template/Images/FLipItCase1.pdf}
+\includegraphics[scale=0.6]{../../doc/template/Images/DiffDelayCase1.png}
 \label{fig:delaycase1}
 \end{figure}
 
 
 However, because of the delay required for virus propagation, the maximal time of control is reduced to $\delta_{D}-d$ , see figure \ref{fig:delaycase1}. There is a probability of \textit{r} that the attacker will move in the interval of the defender. However, the gain will not be half of the interval. Indeed, the attacker has to play soon enough to gain control, meaning that the attacker has to play during the period of $\delta_{D}-d$ during the interval of the defender. The probability that the attacker plays soon enough is $\dfrac{\delta_{D}-d}{\delta_{D}}$ and this will give the attacker an average gain of $\dfrac{\delta_{D}-d}{2}$. If the attacker moves after the period of $\delta_{D}-d$, the gain of the attacker will be zero. The probability that this happens is  $\dfrac{d}{\delta_{D}}$. The average gain rate of the attacker can then be expressed as follows if we look at one interval of the defender:
-\begin{equation}
+\begin{equation*}
 \gamma_{A}(\alpha_{D},\alpha_{A}) = \dfrac {1}{\delta_{D}} [ \dfrac{\delta_{D}}{\delta_{A}} \cdot \dfrac{\delta_{D}-d}{\delta_{D}} \cdot \dfrac{\delta_{D}-d}{2} + \dfrac{\delta_{D}}{\delta_{A}} \cdot \dfrac{d}{\delta_{D}} \cdot 0 ]
-\end{equation}
+\end{equation*}
 
 To derive the benefit, the cost of moving is subtracted from the average gain. 
-\begin{equation}
+\begin{equation*}
 \beta_{A}(\alpha_{D},\alpha_{A}) = \dfrac { (\delta_{D}-d) ^{2}} {2 \cdot \delta_{D}  \delta_{A}} - k_{A} \alpha_{A}
-\end{equation}
-\begin{equation}
+\end{equation*}
+\begin{equation*}
 \beta_{A}(\alpha_{D},\alpha_{A}) = \dfrac { \delta_{D}} {2 \cdot \delta_{A}} - k_{A} \alpha_{A} - ( \dfrac{d^{2}}{2 \cdot \delta_{A} \delta_{D}} - \dfrac{d}{\delta_{A}} )
-\end{equation}
+\end{equation*}
  
  
  The benefit of the defender is expressed as follows:
-\begin{equation}
+\begin{equation*}
 \beta_{D}(\alpha_{D},\alpha_{A}) = 1 - \dfrac { (\delta_{D}-d) ^{2}} {2 \cdot \delta_{D}  \delta_{A}} - k_{D} \alpha_{D}
-\end{equation}
+\end{equation*}
 ~~\\
 We can easily see that when $d$=0, we obtain the formula of the original FlipIt game.\\
 
@@ -168,17 +179,17 @@ First let $r = \dfrac{\delta_{D}}{ \delta_{A} }$. The intervals between two cons
 
 A similar analysis as in case 1 for a FlipIt game without virus propagation yields the following benefits:
 
-\begin{equation}
+\begin{equation*}
 \beta_{D}(\alpha_{D},\alpha_{A}) = \dfrac {1} {2r} - k_{D} \alpha_{D} = \dfrac {\delta_{A}} {2\delta_{D}} - k_{D} \alpha_{D} 
-\end{equation}
-\begin{equation}
+\end{equation*}
+\begin{equation*}
 \beta_{A}(\alpha_{D},\alpha_{A}) =1 - \dfrac {1} {2r} - k_{A} \alpha_{A} = 1- \dfrac {\delta_{A}} {2\delta_{D}} - k_{A} \alpha_{A}  
-\end{equation}\\
+\end{equation*}\\
 
 An intuitive solution for the case with a virus would be to subtract the benefit of the attacker received in each interval with the delay similarly as in case 1. This would give us the following formula if we derive it in the same way:
-\begin{equation}
+\begin{equation*}
 \beta_{A}=\dfrac{(\delta_{A} - d)^2}{2\delta_{A}\delta_{D}} - \dfrac{k_{A}}{\delta_{A}}
-\end{equation}
+\end{equation*}
 
 But this results in an overestimation. How closer $\delta_{A}/\delta_{D}$ is equal to one, the better the approximation. If $\delta_{A}/\delta_{D} = 1$ the result is correct. This formula does not take into account that if the attacker was in control in the previous interval, the delay should not be subtracted, because the delay will not be in control of the defender. This means that we have to look at what happens in the previous interval. \\
 
@@ -197,21 +208,21 @@ For the case with a virus we consider two cases, Case a and Case b, depending on
 
 The total gain  rate of the defender is then the probability that the defender will move during an interval of the attacker multiplied by the total average gain per interval: 
 
-\begin{equation}\label{first}
+\begin{equation*}\label{first}
 \gamma_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta_{A}}{\delta_{D}} \cdot \dfrac{(d+\dfrac{\delta_{A}}{2})}{\delta_{A}} 
-\end{equation}
-\begin{equation}\label{first}
+\end{equation*}
+\begin{equation*}\label{first}
 \gamma_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} 
-\end{equation}\\
+\end{equation*}\\
 This yields in the following benefit formula:
-\begin{equation}\label{first}
+\begin{equation*}\label{first}
 \beta_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - k_{D} \alpha_{D} 
-\end{equation}\\
+\end{equation*}\\
 
 The benefit for the attacker will be as follows:
-\begin{equation}\label{first}
+\begin{equation*}\label{first}
 \beta_{A}(\alpha_{D},\alpha_{A}) = 1 -\dfrac{\delta_{A}}{2\delta_{D}} - \dfrac{d}{\delta_{D}} - k_{A} \alpha_{A} 
-\end{equation}\\
+\end{equation*}\\
 
 \begin{figure}[hbtp]
 \caption{Case 2 where d + deltaA < deltaD}
@@ -231,25 +242,25 @@ It is crucial that $ \delta_{D}$ is at least as large as $d + \delta_{A}$. If no
 To obtain the formula in case of a too long delay, we therefore need to subtract this overlapping gain from the above formula. 
 Since $\delta_{D} \geq \delta_{A}$, if the defender enters the interval immediately after the attacker has played, then the defender cannot have played in the previous interval. In that case, there is no overlap. So the problem of the overlap only appears if the defenders enters late enough and thus only the last part of the delay is subject to overlap. The larger the difference between the interval of the defender and the attacker, the smaller the risk of overlap. Concretely, only the last part of length $d - (\delta_{D} - \delta_{A})$ is subject to overlap. Hence, the probability of overlap is $\dfrac{ d - (\delta_{D} - \delta_{A})}{\delta_{D}}$ and the gain will be half of this interval:  $\dfrac{ d - (\delta_{D} - \delta_{A})}{2}$.  The gain rate to be subtracted is therefore:\\
 
-\begin{equation}\label{first}
+\begin{equation*}
 \dfrac{1} {\delta_{A}} \cdot \dfrac{d - (\delta_{D} - \delta_{A})}{\delta_{D}} \cdot \dfrac{d - (\delta_{D} - \delta_{A})}{\delta_{D}}
-\end{equation}
+\end{equation*}
 
 The total gain  rate of the defender is obtained by subtracting this term from the gain rate of case a:
- \begin{equation}\label{first}
+ \begin{equation*}
 \gamma_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta_{A}}{\delta_{D}} \cdot \dfrac{(d+\dfrac{\delta_{A}}{2})}{\delta_{A}} - \dfrac{(d - (\delta_{D} - \delta_{A}))^{2}}{2 \delta_{D} \delta_{A}}
-\end{equation}
-\begin{equation}\label{first}
+\end{equation*}
+\begin{equation*}
 \gamma_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - \dfrac{(d - (\delta_{D} - \delta_{A}))^{2}}{2 \delta_{D} \delta_{A}}
-\end{equation}\\
+\end{equation*}\\
 This yields in the following benefit formula:
-\begin{equation}\label{first}
+\begin{equation*}
 \beta_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - k_{D} \alpha_{D} - \dfrac{(d - (\delta_{D} - \delta_{A}))^{2}}{2 \delta_{D} \delta_{A}}
-\end{equation}\\
+\end{equation*}\\
  
 The benefit for the attacker will be as follows:
-\begin{equation}\label{first}
+\begin{equation*}
 \beta_{A}(\alpha_{D},\alpha_{A}) = 1 -\dfrac{\delta_{A}}{2\delta_{D}} - \dfrac{d}{\delta_{D}} - k_{A} \alpha_{A} + \dfrac{(d - (\delta_{D} - \delta_{A}))^{2}}{2 \delta_{D} \delta_{A}}
-\end{equation}\\
+\end{equation*}\\
 
 
