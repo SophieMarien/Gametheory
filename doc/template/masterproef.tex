@@ -156,20 +156,20 @@ De unieke eigenschap van Flipit is dat elke flip gebeurt op een heimelijke manie
 
 
 De staat van de bron wordt aangeduid als een tijdsafhankelijke variabele $ C = C_{i}(t) $.
-$ C_{D}(t) $ 1 is als het spel onder controle is van de verdediger en 0 als het spel onder controle is door de aanvaller. Omgekeerd, zal $ C_{A}(t) $ 1 zijn als het spel onder controle is door de aanvaller en 0 als onder controle door de verdediger. Dus, $ C_{A}(t) = 1 - C_{D}(t) $.
-Het spel begint met de verdediger in control: $ C_{D}(0) = 1 $. \\
+$ C_{D}(t) $ 1 is als het spel onder controle is van de verdediger en 0 als het spel onder controle is van de aanvaller. Omgekeerd, zal $ C_{A}(t) $ 1 zijn als het spel onder controle is van de aanvaller en 0 als onder controle van de verdediger. Dus, $ C_{A}(t) = 1 - C_{D}(t) $.
+Het spel begint met de verdediger in controle: $ C_{D}(0) = 1 $. \\
 
 
-De spelers krijgen een uitkering gelijk aan de tijd eenheden zij in het bezit van de bron minus de kosten van het maken van hun bewegingen waren. De kosten van een speler \textit{i} wordt aangegeven met $ k_{i} $.
-De totale winst van de speler \textit{i} is gelijk aan de totale hoeveelheid tijd die een speler \textit{i} de bron van het begin van het spel is in handen tot tijd \textit{t}. Dit wordt als volgt uitgedrukt:
+De spelers krijgen een benefit gelijk aan de hoeveelheid tijd dat ze in het bezit zijn van de bron min de kosten voor het maken van de bewegingen. De kosten van een speler \textit{i} worden aangegeven met $ k_{i} $.
+De totale winst van de speler \textit{i} is gelijk aan de totale hoeveelheid tijd waarbij een speler \textit{i} in controle is can de bron vanaf het begin van het spel tot de huidige tijd \textit{t}. Dit wordt als volgt uitgedrukt:
 \begin{equation}
 G_{i}(t) = \int_0^t \! C_{i}(x) dx.
 \end{equation}
-Als we de winst van de verdediger en de versterking van de aanvaller moet samenvatten tot t:
+De totale winst van de verdediger opgeteld bij de totale winst van de aanvaller telt op tot \textit{t}:
 \begin{equation} 
 G_{D}(t) + G_{A}(t) = t
 \end{equation}
-De gemiddelde winst tarief van speler \textit{i} wordt gedefinieerd als:
+De gemiddelde winst van speler \textit{i} wordt gedefinieerd als volgt:
 \begin{equation}
 \gamma_{i}(t) = G_{i}(t) / t.
 \end{equation}
@@ -177,17 +177,17 @@ En daarmee voor alle $ t> 0 $:
 \begin{equation} 
 \gamma_{D}(t) + \gamma_{A}(t) = 1
 \end{equation}
-Laat $ \beta_{i}(t) $ duiden speler \textit{i} gemiddelde voordeel upto tijd \textit{t}:
+Laat $ \beta_{i}(t) $ is de gemiddelde benefit van een speler \textit{i} tot aan tijd \textit{t}:
 \begin{equation}
 \beta_{i}(t) = \gamma_{i}(t) - k_{i} \alpha_{i}.
 \end{equation}
-Dit is gelijk aan de fractie van de tijd de bron is in handen van speler \textit{i}, minus de kosten van het maken van de bewegingen. ~ $ \alpha_{i} $ definieert het gemiddelde zet koers door speler \textit{i} tot tijd \textit{t}.
-In een bepaalde wedstrijd zal asymptotische benefit ratio (of eenvoudig gebruikmaken) worden gedefinieerd als lim inf van het gemiddelde voordeel omdat de tijd t toeneemt tot oneindig en de gemiddelde voordeel niet beperkend waarden.
+Dit is gelijk aan de fractie van de tijd waarbij de bron in handen is van speler \textit{i}, minus de kosten van het maken van de bewegingen. ~ $ \alpha_{i} $ definieert het gemiddeld aantal flippen door speler \textit{i} tot tijd \textit{t}.
+De asymptotische benefit ratio wordt gedefinieerd als lim inf van de gemiddelde benefit omdat de tijd t toeneemt tot oneindig en de gemiddelde benefit niet beperkend waarden.
 \begin{equation}
 \beta_{i} (t) = \lim_{t \to \infty } inf \beta_{i}(t)
 \end{equation}
 \\
-
+\todo{laatset zinnen niet correct}
 
 \subsubsection{strategie"en}
 Omdat de spelers bewegen in een sluipende manier, zijn er verschillende soorten feedback die een speler kan krijgen tijdens het rijden. Dergelijke feedback kan worden verdeeld in twee groepen van strategie"en. De niet-adaptieve strategie"en en de adaptieve strategie\"en. Deze worden beschreven in de tabel \ref{tabel: Strategies}. \\
@@ -287,7 +287,6 @@ Niet zo lang geleden werden APT's ontdekt. (Introzin moet beter en anders). Bedr
 % ... en zo verder tot
 %\include{chap-n}
 \include{conclusion}
-\include{optimum}
 
 % Indien er bijlagen zijn:
 %\appendixpage*          % indien gewenst
