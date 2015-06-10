@@ -14,12 +14,23 @@ assistant={Ir. Jonathan Merlevede, \and Ir. Kristof Coninx}}
 % 
 % De volgende \setup mag verwijderd worden als geen fiche gewenst is.
 \setup{filingcard,
-  translatedtitle={Beste masterproef ooit al geschreven},
+  translatedtitle={Flip the virus:  Modelling targeted attacks using FlipIt with propagation delay},
   udc=621.3,
-  shortabstract={Hier komt een heel bondig abstract van hooguit 500
-    woorden. \LaTeX\ commando's mogen hier gebruikt worden. Blanco lijnen
-    (of het commando \texttt{\string\pa r}) zijn wel niet toegelaten!
-    \endgraf \lipsum[2]}}
+  shortabstract={Recently, high profile targeted attacks such as the
+attack on Belgacom (a major Belgian telcom), have demonstrated
+that even the most secure companies can still be compromised,
+and that moreover such attacks can go undetected for a while. These kind of attacks are called APT, advanced persistent threats, which are designed to penetrate secretly a computer network, collect sensitive data and stay hidden for many years. A company has every interest to mitigate the risks of an APT and the consequences that it can cause.  Because of the stealthyness fighting against these attacks requires methods that go beyond the standard tools against malware.
+A group of researchers at the RSA, van Dijk et al., proposed the game FlipIt (The game of ``stealthy takeover'') to model stealthy takeovers. It is a 2-players game composed of
+a single attacker, a single defender and a single shared resource.
+The players will 
+compete to get control over the shared resource. Every move of the players will involve a cost and
+these moves happen in a stealthy way. The objective of the game for each player is to maximise the fraction of time of controlling the resource and minimise the total move cost.  \\
+FlipIt does however not take into
+account that a move may not be instantaneous, but has a certain
+delay.  We adapt FlipIt such that we can use it to
+model the game of defending a company network that is attacked
+by a virus. The FlipIt formulas are adapted such as to take the
+delay for virus propagation into account, which in our case will be a delay for the attacker. In this paper, we restrict ourselves to games where both the defender and the attacker play with a periodic strategy. The goal of this thesis is to find out if their are interesting Nash Equilibria for a game with a virus propagation delay and if we can learn some lessons out of it. }}
 % Verwijder de "%" op de volgende lijn als je de kaft wil afdrukken
 %\setup{coverpageonly}
 % Verwijder de "%" op de volgende lijn als je enkel de eerste pagina's wil
@@ -110,9 +121,9 @@ assistant={Ir. Jonathan Merlevede, \and Ir. Kristof Coninx}}
 %  The \texttt{abstract} environment contains a more extensive overview of  the work. But it should be limited to one page.
   
 Recently, high profile targeted attacks such as the
-attack on Belgacom \cite{BelgacomGehackt} (a major Belgian telcom), have demonstrated
+attack on Belgacom (a major Belgian telcom), have demonstrated
 that even the most secure companies can still be compromised,
-and that moreover such attacks can go undetected for a while. These kind of attacks are called APT, advanced persistent threats, which are designed to penetrate secretly a computer network, collect sensitive data and stay hidden for many years. A company has every interest to mitigate the risks of an APT and the consequences that it can cause. Fighting against these attacks requires methods that go beyond the standard tools against malware. Because of the stealthyness it is better to prevent the attack than detection and recover after it has done some damage. \\
+and that moreover such attacks can go undetected for a while. These kind of attacks are called APT, advanced persistent threats, which are designed to penetrate secretly a computer network, collect sensitive data and stay hidden for many years. A company has every interest to mitigate the risks of an APT and the consequences that it can cause.  Because of the stealthyness fighting against these attacks requires methods that go beyond the standard tools against malware.\\
 A group of researchers at the RSA, van Dijk et al., proposed the game FlipIt (The game of ``stealthy takeover'') to model stealthy takeovers. It is a 2-players game composed of
 a single attacker, a single defender and a single shared resource.
 The players will 
@@ -120,13 +131,13 @@ compete to get control over the shared resource. Every move of the players will 
 these moves happen in a stealthy way. The objective of the game for each player is to maximise the fraction of time of controlling the resource and minimise the total move cost.  \\
 FlipIt does however not take into
 account that a move may not be instantaneous, but has a certain
-delay. In this paper, we restrict ourselves to games where both the defender and the attacker play with a periodic strategy. We adapt FlipIt such that we can use it to
+delay.  We adapt FlipIt such that we can use it to
 model the game of defending a company network that is attacked
 by a virus. The FlipIt formulas are adapted such as to take the
-delay for virus propagation into account. The goal of this thesis is to find out if their are interesting Nash Equilibria for a game with a virus propagation delay and if we can learn some lessons out of it. 
+delay for virus propagation into account, which in our case will be a delay for the attacker. In this paper, we restrict ourselves to games where both the defender and the attacker play with a periodic strategy. The goal of this thesis is to find out if their are interesting Nash Equilibria for a game with a virus propagation delay and if we can learn some lessons out of it. 
 \todo{Results toevoegen} \\
 
-\textbf{Keywords}: Game theory, Advanced persistant threats, cyber security, FlipIt, stealthy takeovers.
+\textbf{Keywords}: Game theory, Advanced persistent threats, cyber security, FlipIt, stealthy takeovers.
 
 \end{abstract}
 
@@ -297,7 +308,7 @@ Niet zo lang geleden werden APT's ontdekt. (Introzin moet beter en anders). Bedr
 
 \backmatter
 % Na de bijlagen plaatst men nog de bibliografie.
-% Je kan de  standaard "abbrv" bibliografiestijl vervangen door een andere.
+% Je kan de  standaard "abbrv" bibliografiestijl vervangen door een andere. plainnat
 \bibliographystyle{abbrv}
 \bibliography{reffiess}
 

@@ -1,13 +1,7 @@
 \begin{thebibliography}{10}
 
-\bibitem{APTBruce}
-Advanced persistant threats (apt).
-
 \bibitem{BelgacomGehackt}
-Standaard: Snowden bevestigt dat belgacom gehackt werd.
-
-\bibitem{Coursera}
-Gametheory, 2004.
+Standaard: Snowden bevestigt dat belgacom gehackt werd, 17/05/15.
 
 \bibitem{ApplyingFlipit}
 K.~Bowers, M.~van Dijk, R.~Griffin, A.~Juels, A.~Oprea, R.~Rivest, and
@@ -17,6 +11,20 @@ K.~Bowers, M.~van Dijk, R.~Griffin, A.~Juels, A.~Oprea, R.~Rivest, and
 \newblock In J.~Grossklags and J.~Walrand, editors, {\em Decision and Game
   Theory for Security}, volume 7638 of {\em Lecture Notes in Computer Science},
   pages 248--263. Springer Berlin Heidelberg, 2012.
+
+\bibitem{fengstealthy}
+X.~Feng, Z.~Zheng, P.~Hu, D.~Cansever, and P.~Mohapatra.
+\newblock Stealthy attacks meets insider threats: A three-player game model.
+
+\bibitem{SurveyKaspersky}
+Kaspersky.
+\newblock A business approach to managing data security threats.
+\newblock In {\em IT security risk survey 2014}, 2014.
+
+\bibitem{APTKaspersky}
+Kaspersky.
+\newblock Special report on mittigation strategies for advanced threats.
+\newblock In {\em The power of protection}, 2014.
 
 \bibitem{FlipThem}
 A.~Laszka.
@@ -42,6 +50,11 @@ K.~Leyton-Brown and Y.~Shoham.
   Introduction}.
 \newblock Synthesis lectures on artificial intelligence and machine learning.
   Morgan \& Claypool Publishers, 2008.
+
+\bibitem{Coursera}
+Y.~S. M.~Jackson, K.~Brown.
+\newblock Coursera game theory.
+\newblock Stanford University and The university of Britsh Columbia, 2004.
 
 \bibitem{nochenson2013behavioral}
 A.~Nochenson, J.~Grossklags, et~al.

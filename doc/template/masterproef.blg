@@ -1,16 +1,59 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: masterproef.aux
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: masterproef.aux
 A level-1 auxiliary file: chap-10.aux
 A level-1 auxiliary file: chap-5.aux
 A level-1 auxiliary file: chap-9.aux
+A level-1 auxiliary file: nash.aux
 A level-1 auxiliary file: conclusion.aux
-A level-1 auxiliary file: optimum.aux
 The style file: abbrv.bst
 Database file #1: reffiess.bib
-Warning--entry type for "Coursera" isn't style-file defined
---line 196 of file reffiess.bib
-Warning--I didn't find a database entry for "fengstealthy"
+Warning--entry type for "BelgacomGehackt" isn't style-file defined
+--line 258 of file reffiess.bib
 Warning--to sort, need author or key in BelgacomGehackt
-Warning--to sort, need author or key in APTBruce
-Warning--to sort, need author or key in Coursera
+Warning--empty journal in fengstealthy
+Warning--empty year in fengstealthy
 Warning--empty journal in MitigationNonTargeted
+Warning--empty booktitle in Coursera
+You've used 14 entries,
+            2118 wiz_defined-function locations,
+            587 strings with 6262 characters,
+and the built_in function-call counts, 4818 in all, are:
+= -- 447
+> -- 232
+< -- 5
++ -- 92
+- -- 76
+* -- 322
+:= -- 782
+add.period$ -- 42
+call.type$ -- 14
+change.case$ -- 76
+chr.to.int$ -- 0
+cite$ -- 19
+duplicate$ -- 201
+empty$ -- 405
+format.name$ -- 76
+if$ -- 1034
+int.to.chr$ -- 0
+int.to.str$ -- 14
+missing$ -- 14
+newline$ -- 70
+num.names$ -- 30
+pop$ -- 106
+preamble$ -- 1
+purify$ -- 63
+quote$ -- 0
+skip$ -- 136
+stack$ -- 0
+substring$ -- 248
+swap$ -- 47
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 54
+warning$ -- 5
+while$ -- 40
+width$ -- 16
+write$ -- 146
 (There were 6 warnings)

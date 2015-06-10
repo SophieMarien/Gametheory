@@ -13,74 +13,81 @@ This chapter provides the reader with an introduction to the general context of 
 
 \section{What is cyber security?}
 
-Before the digitalization of documents, information was kept on paper and the security of this information was ensured by administrative and physical means. For example, you needed a key to access documents stored in a room full of cabinets where the files were kept. In today's digital era more and more information is kept in a digital format, stored on a computer.  As digitalization progressed, the need for ensuring the security of digital information arose and automated tools where developed for protecting files stored on a computer.  The generic name to protect data stored on a computer controlled device such as computers and smartphones, as well as public and private computer networks, including the entire Internet is called computer security. \\
-
+Before the digitalization of documents, information was kept on paper and the security of this information was ensured by administrative and physical means. For example, you needed a key to access documents stored in a room full of cabinets where the files were kept. In today's digital era more and more information is kept in a digital format, stored on a computer.  As digitalization progressed, the need for ensuring the security of digital information arose and automated tools where developed for protecting files stored on a computer.  The generic name to protect data stored on a computer controlled device such as computers and smartphones, as well as public and private computer networks, including the entire Internet is called computer security. 
 Security is a general term that encompasses several dimensions. More specifically, computer security has tree key objectives that are fundamental to computer security:
-\begin{description}
-\item Confidentiality: This assures that the confidential of private data is not disclosed or made available to users that do not have the authorization. 
-\item Integrity: This assures that data can not be altered by an unauthorized individual.
-\item Availability: This assures that data is always accessible and that the service is not denied to authorized individuals.
-\end{description}
 
- the purpose of security is to give certainty that data will not be removed without authorization (Confidentiality) that the data is always accessible (Availability), and that data can not be read or altered by someone who does not have the authorization (Integrity). 
- 
+~~\\
+ \textit{Confidentiality}: This assures that the confidential of private data is not disclosed or made available to users that do not have the authorization. \\
+ \textit{Integrity:} This assures that data can not be altered by an unauthorized individual.\\
+ \textit{Availability:} This assures that data is always accessible and that the service is not denied to authorized individuals.\\
+
+
+ %The purpose of security is to give certainty that data will not be removed without authorization (Confidentiality) that the data is always accessible (Availability), and that data can not be read or altered by someone who does not have the authorization (Integrity). 
  These are the 3 key attributes of security, also known as the CIA triad. The tree concepts are fundamental security objectives for the securing of data, information and computing services. \\
+Cyber security is the process of applying security tools to ensure confidentiality, integrity, and availability of data. It is an attempt to protect websites, servers, data, applications, operating systems and all assets that need protection in a computer system.  Some of these tools may include detection, identification or removal tools. A detection tool will determine if an infection has taken place and will trace the threat. An identification tool will try to identify the threat to be able to know how to remove it. The removal tool will once the threat has been identified, remove the threat from the system so that it cannot spread any further. 
 
-''Cyber security is the process of applying security tools to ensure confidentiality, integrity, and availability of data. Cybersecurity attempts to ensure the protection of assets, which includes data, desktops, servers, buildings, and most importantly, humans. The goal of cyber security is to protect data both in transit and at rest. Countermeasures can be put in place in order to increase the security of data. Some of these measures include, but are not limited to, access control, awareness training, audit and accountability, risk assessment, penetration testing, vulnerability management, and security assessment and authorization.'' \todo{tekst overgenomen van wikipedia} \\
+%Cybersecurity attempts to ensure the protection of assets, which includes data, desktops, servers, buildings, and most importantly, humans. The goal of cyber security is to protect data both in transit and at rest. Countermeasures can be put in place in order to increase the security of data. Some of these measures include, but are not limited to, access control, awareness training, audit and accountability, risk assessment, penetration testing, vulnerability management, and security assessment and authorization.'' \todo{tekst overgenomen van wikipedia} \\
 
-In the context of cyber security, the terms ' threat and attack' are often used interchangeably, referring to more or less the same thing. They however have a slightly different meaning. A threat refers to anything that can breach the security and that can cause a possible harm. It is a possible danger that can exploit a vulnerability. An attack is an assault on computer security that comes from a threat. It is an intelligent act that tries deliberately to breach security through vulnerabilities.  \\
+\subsubsection{Threats to computer systems}
 
-In order to keep a system secure, it is important to mitigate the possible threats. The possible threats can take many forms, the most commen being spam, malware, spoofing, phishing and  DDoS attacks. 
-A security report of 2014 reveals that 61\% of the attacks on companies are caused by malware. This is a piece of malicious program that is designed to penetrate unprotected systems or computers, and getting there to sensitive information. Malware can be divided into different subclasses that are not mutually exclusive:
+
+In order to keep a system secure and to be able to apply security tools, it is important to mitigate the possible threats. The possible threats can take many forms, the most common being spam, malware, spoofing, phishing and  DDoS attacks.  In the context of cyber security, the terms ' threat and attack' are often used interchangeably, referring to more or less the same thing. They however have a slightly different meaning. A threat refers to anything that can breach the security and that can cause a possible harm. It is a possible danger that can exploit a vulnerability. An attack is an assault on computer security that comes from a threat. It is an intelligent act that tries deliberately to breach security through vulnerabilities.  \\
+
+The most noteworthy group and biggest group of threats to computer systems is malware. 
+This is a piece of malicious software that is designed to penetrate unprotected systems or computers, with the intent to get sensitive information, destroy data, or compromise the confidentiality, integrity or availability of the data or applications of the victim. A security report of 2014 \cite{SurveyKaspersky} reveals that 61\% of the attacks on companies are caused by malware. For this reason this section will examine the categories of malware threats. Different types of malware exist such as virusses, worms, flooders, rootkits, bots, spyware, adware and many more. This broad range of different types can be classified into two main categories, the first one based on the propagation method that is used and the second one for the payload or the variety of actions that the malware performs. Propagation methods include virusses, worms and trojans. Payload includes flooders, rootkits, bots, spyware and adware. In this paper we focus on the category of propagation methods and not on the actions that the malware performs. We give a brief explanation of the three main propagation methods of malware. \todo{opsplitsing uit het boek van network security genomen}
+
 
 \begin{description}
-\item Virus: This is a malicious piece of code that replicates and tries to spread to infect other systems or files. The "I love you" virus is an example of a virus that quickly spreads. This virus propagates via mail systems. If someone opens an email with "I love you" with the virus in the annex this virus spreads itself by sending a mail to everyone in your contact list. So the virus can multiply rapidly and eventually a business network might shut down by the heavy traffic. In this example, there is a need for human interaction to spread the virus. If no one opens the mail the virus can not infect other systems.
-Unfortunately, there are also viruses that can spread without human interaction. These viruses are referred to as worms. A worm is also a computer program that replicates itself to spread to other computers. Via a computer network, copies of the worm can be forwarded without an intermediary. The worm will use vulnerabilities of the system to infect other computers.
-The Stuxnetworm is a very famous worm. Initially this worm spread via infected USB sticks and from then it could spread through the Internet to other computers. The purpose of the Stuxnetworm was to harm the centrifuges in nuclear reactors. Many reactors have been infected. From the standpoint of the defender, it is very important to respond as quickly as possible so that the worm can not spread. 
-\item Rootkit: A rootkit is designed to be stealthy and hide a set of programs installed on a system from methods of detection.  The programs have administrator or root privileges to that system, which makes it possible to access the functions and services of the operating system, change files, take control over the monitor processes and send and receive network traffic.  A rootkit can make changes to the system to keep itself concealed from detection.
-\item Trojan: This is a malicious program that disguises itself as something normal, so that users won't be suspicious of installing it.  
-\item Backdoors: Also know as trapdoor, is a whole in the system or program that allows access 
+\item \textit{Virus}: This is a malicious piece of code that replicates itself and tries to spread in order  to infect other systems or files. A typical virus will attach itself to a program, or an executable content on a computer. The ''I love you'' virus is an example of a virus where the virus attached itself as an executable to a mail. To propagate it used the mail systems. If someone opens an email with the "I love you"  in the annex, the virus will spread itself by sending a mail to everyone in the victim's contact list. So the virus can multiply rapidly and eventually a business network might shut down by the heavy traffic. In this example, there is a need for human interaction to spread the virus. If no one opens the mail the virus can not spread itself and infect other systems.
+
+\item \textit{Worm:} A worm is a virus that can spread without human interaction. A worm is a computer program that replicates itself in order to spread to other hosts on a network. Copies of the worm can be forwarded via a computer network without an intermediary. The worm will use vulnerabilities of the system to infect other computers.
+The Stuxnetworm is a very prominent example of a worm. Initially this worm was spread via infected USB sticks and from there it could spread itself without any further human intervention through the Internet to other hosts on the network. The purpose of the Stuxnetworm was to harm the centrifuges in nuclear reactors and many reactors have been infected.  
+
+\item \textit{Trojan:} This is a malicious program that disguises itself as something normal and useful, so that users won't be suspicious of installing it, but it has a malicious function hidden inside that can avoid security measures and cause harm.  A notable trojan horse is Koobface, that targeted users of facebook, skype, yahoo, gmail and AOL mail. To spread itself the worm sended a mail or friend request with a message that directed the recipients to another third party website. This site tried to put the reciepient into downloading an update of Adobe Flash Player. Once downloaded and executed, Koobface could infect the host. 
+
 \end{description}
 
-A company can take different measures to defend itself against malware. The threats caused by malware can be divided into three main categories: known threats (70\%), unknown threats (29\%) and advanced threats (1\%) as proposed by Kasperksy [\todo{toevoegen referentie naar kaspersky APT report}]. 
+A company can take different measures to defend itself against malware. The threats caused by malware can be divided into three main categories: known threats (70\%), unknown threats (29\%) and advanced threats (1\%) as proposed by Kasperksy \cite{APTKaspersky}. 
 
-The known threats are the easiest to  defend oneself against. Standard malware protection tools like firewalls and virus scanners can keep these kind of malware out of the system. Installing protection against unkown is also relatively easy. Then the remaining 1\% are the advanced threats, also known as APT. APT's are ... 
-In this paper we focus on targeted attacks. Targeted attacks are malware designed to attack exclusively an organisation. 
+The known threats are the easiest to defend oneself against. Standard malware protection tools like firewalls and virus scanners can keep these kind of malware out of the system. Installing protection against unkown is also relatively easy, but this will need tools that go beyond the standard methods like dynamic whitelisting. The remaining 1\% are the advanced threats, also known as APT.
 
-An APT is a persistent targeted attack that tries to penetrate a network to harm it while staying unseen for a long period of time. The motive of an APT is mostly cyber espionage, stealing sensitive data, sabotage or some other kind of ideological attacks. Advanced Persistent Threat are called  'Advanced' for the fact that these attacks are well funded and that (usually) the attacker itself needs a great expertise to successfully penetrate a network. Not all APTs are technical advanced though. The attacker can also try to exploit existing vulnerabilities simply based in the hope that his target has not yet secured himself against these vulnerabilities. 'Persistent' refers to the fact that the attacker keeps on trying to break in to his victim. He will not give up. The attack can be over various years and different steps. The threats stands for the fact that an APT is attempting to break the protection of valuable data the leakage of which outside the secure environment may severely damage the organisation owning the data.
+\subsubsection{Advanced threats to computer systems}
+%\item Backdoors: Also know as trapdoor, is a whole in the system or program that allows access 
+%\item Rootkit: A rootkit is designed to be stealthy and hide a set of programs installed on a system from methods of detection.  The programs have administrator or root privileges to that system, which makes it possible to access the functions and services of the operating system, change files, take control over the monitor processes and send and receive network traffic.  A rootkit can make changes to the system to keep itself concealed from detection.
 
-Some examples of the biggest most rare APTs are listed to get an understanding of what APTs are capable of and how long they can stay unseen. [\todo{site kaspersky apt}] 
-
-\subsubsection{Equation}
-Equation is a complex cyberattack platform where the first known sample is from 2002, but it was only discovered 12 years later in 2014. This APT propagates through usb drives, cd or physical media. It will search for exploits and will self-replicate itself to spread the infection. The purpose of this virus is to steal data and cyberespionage. 
-
-\subsubsection{Regin}
-
-\subsubsection{Flame}
-Way of propagation through USB drives, LAN spreading. purpose cyber espionage.
-
-\subsubsection{Black energy}
- purpose cyber espionage and DDoS, data wiping. prop usb lan
+ An APT is a persistent targeted attack that tries to penetrate a network to cause harm while staying unseen for a long period of time. The motive of an APT is mostly cyber espionage, stealing sensitive data, sabotage or some other kind of ideological attacks. Advanced Persistent Threat are called  'Advanced' for the fact that these attacks are well funded and that (usually) the attacker itself needs a great expertise to successfully penetrate a network. Not all APTs are technical advanced though. The attacker can also try to exploit existing vulnerabilities simply based in the hope that his target has not yet secured himself against these vulnerabilities. 'Persistent' refers to the fact that the attacker keeps on trying to attack his target. The attack can be over various years and different steps can be taken. The 'threats' stands for the fact that an intelligent act tries deliberately to breach security through vulnerabilities which may severely damage the target organisation. 
+An APT can be a mix of different types of malware and will use different kinds of propagation methods. \\
+%
+%Some examples of the biggest most rare APTs are listed to get an understanding of what APTs are capable of and how long they can stay unseen. [\todo{site kaspersky apt}] 
+%
+%\subsubsection{Equation}
+%Equation is a complex cyberattack platform where the first known sample is from 2002, but it was only discovered 12 years later in 2014. This APT propagates through usb drives, cd or physical media. It will search for exploits and will self-replicate itself to spread the infection. The purpose of this virus is to steal data and cyberespionage. 
+%
+%\subsubsection{Regin}
+%
+%\subsubsection{Flame}
+%Way of propagation through USB drives, LAN spreading. purpose cyber espionage.
+%
+%\subsubsection{Black energy}
+% purpose cyber espionage and DDoS, data wiping. prop usb lan
 
  
-According to [\todo{APT report} ]  the damage of one successful target attack can exceed over 2.54 million dollar. a company needs a defense mechanism to defend itself against apt. Prevention more important than ..
-een van de manieren om dat te doen is via game theorie. 
+According to a security survey of Kaspersky \cite{SurveyKaspersky}  the damage of one successful target attack against a large company can exceed over 2.54 million dollar. A company needs a defence mechanism to defend itself against APTs. As previously said, detection and identification tools will not work against APTs. The removal tool will only work if the threat has been identified. To mitigate these kind of attacks there is a need for another security countermeasures. Here is where the researchers of RSA fall in. They have investigated through game theory how to model targeted attacks and what the best defend strategy is according to the information that is available. 
 
 
-Security belangrijk. verschillende malware. uitleggen malware. verwijzen naar kaspersky security raport. APT grote threats. voorbeelden van APT's. waarom gametheory gebruiken. 
 
 
-\section{Intro game theory}
+\section{A brief introduction in Game Theory}
+\label{Cha1:briefintro}
 Gametheory is a mathematical study to analyse interactions between independent and self-interested agents. To get an understanding of the most important concepts of game theory, a short introduction based on the work of 
-\cite{leyton2008essentials} and \cite{Coursera} is given in section \ref{Cha1:briefintro}  . For a more detailed and full introduction to game theory, the reader is referred to 
-\cite{leyton2008essentials}.  In section \ref{cha1:FlipItGame} an overview of the FlipIt game is given with the definitions and concepts that will be used throughout the paper. 
-The last section \ref{ch1:extendedWork} will cover the extensions and additions already made on FlipIt.
-
+\cite{leyton2008essentials} and \cite{Coursera} is given in this section. For a more detailed and full introduction to game theory, the reader is referred to 
+\cite{leyton2008essentials}.  \\
+%In section \ref{cha1:FlipItGame} an overview of the FlipIt game is given with the definitions and concepts that will be used throughout the paper. 
+%The last section \ref{ch1:extendedWork} will cover the extensions and additions already made on FlipIt. \\
 %------------------------------------------------%
 %            Intro Game Theory 					 %
 %------------------------------------------------%
-\section{A brief introduction in Game Theory}
-\label{Cha1:briefintro}
+
 
 
 
@@ -103,14 +110,12 @@ In a Decision Game Theoretic Approach an agent will try to act in such a way to 
 %Nash equilibrium
 
 %John Nash speelde ook een grote rol in de geschiedenis van de speltheorie. Hij is een van de wiskundigen geweest die speltheorie geformaliseerd heeft. Het Nash evenwicht werd naar hem vernoemd. Een Nash evenwicht wordt gezien als een evenwicht tussen beide spelers zodat ze allebei de beste tactiek kiezen en niet meer veranderen als de andere van tactiek veranderen. John Nash breide de theorie over het Nash evenwicht in een paper nog uit met gemengde strategieën. In 1994 kreeg John Nash samen met twee andere wiskundigen gespecialiseerd op het vlak van speltheorie de Nobelprijs voor de economie op basis van hun prestaties in de niet-coöperatieve speltheorie. . Over John Nash is een prachtige film 
-\subsection{Best response and Nash Equilibrium}
-One of the solution concepts in Game Theory for non-cooperative games is a Nash Equilibrium that we will use in this paper. A Nash Equilibrium is a subset of outcomes that can be interesting to analyse a game. To define this concept we first introduce the concept of best response. The best response for a player is the action of a player that maximizes it's pay-off for any given action of the other player. We define $BR_{i}$ as the best response function for player \textit{i}. The best response for player \textit{1} is given by : $a_{1} = BR_{1}(a_{2})$. A 
-For a Nash Equilibrium each player has a consist list of actions and each player's action maximizes his or her pay-off given the actions of the other players. Nobody has the incentive to change his or her action if an equilibrium profile is played. We have a Nash Equilibrium for the pair $(a_{1}^{*},a_{2}^{*})$ where $a_{1}^{*} = BR_{1}(a_{2}^{*})$ and $a_{2}^{*} = BR_{2}(a_{1}^{*})$\\
+\subsubsection{Best response and Nash Equilibrium}
+One of the solution concepts in Game Theory for non-cooperative games is a Nash Equilibrium that will be used in this paper. A Nash Equilibrium is a subset of outcomes that can be interesting to analyse a game. To define this concept we first introduce the concept of best response. The best response for a player is the action of a player that maximizes it's pay-off for any given action of the other player. We define $Opt_{i}$ as the best response function for player \textit{i}. The best response for player \textit{1} is given by : $a_{1} = Opt_{1}(a_{2})$. A 
+For a Nash Equilibrium each player has a consist list of actions and each player's action maximizes his or her pay-off given the actions of the other players. Nobody has the incentive to change his or her action if an equilibrium profile is played. We have a Nash Equilibrium for the pair $(a_{1}^{*},a_{2}^{*})$ where $a_{1}^{*} = Opt_{1}(a_{2}^{*})$ and $a_{2}^{*} = Opt_{2}(a_{1}^{*})$\\
 
- \todo{optimal strategy uitleggen}
+\todo{optimal function same as best response ?}
 
-
-POSTCONDITION: Uitgelegd: Strategien, acties, strategien, spelers, rationeel, Nash, best response
 %In game theory, the Nash equilibrium is a solution concept of a non-cooperative game involving two or more players, in which each player is assumed to know the equilibrium strategies of the other players, and no player has anything to gain by changing only their own strategy.[1] If each player has chosen a strategy and no player can benefit by changing strategies while the other players keep theirs unchanged, then the current set of strategy choices and the corresponding payoffs constitutes a Nash equilibrium. The reality of the Nash equilibrium of a game can be tested using experimental economics method.
 
 %In de speltheorie, een deelgebied van de wiskunde, is een Nash-evenwicht een oplossingsconcept voor een niet-coooperatief spel, waar twee of meer spelers aan meedoen. In een Nash-evenwicht wordt elke speler geacht de evenwichtsstrategieeen van de andere spelers te kennen en heeft geen van de spelers er voordeel bij om zijn of haar strategie eenzijdig te wijzigen. Als elke speler een strategie heeft gekozen en geen enkele speler kan profiteren door zijn strategie te veranderen, terwijl de andere spelers dat ook niet doen, dan vormt de huidige verzameling van strategiekeuzes plus de bijbehorende uitbetalingen een Nash-evenwicht. 
@@ -123,9 +128,9 @@ POSTCONDITION: Uitgelegd: Strategien, acties, strategien, spelers, rationeel, Na
 In the following list a couple of terms that will be used throughout the paper.
 \begin{description}
 \item \textit{Players}: Players are referred as the ones who are the decision makers. It can be a person, a company or an animal.  (they will act rational )
-\item \textit{Actions}: Every player has actions that he or he can do. 
+\item \textit{Actions}: Every player has actions that he or she can do. 
 \item \textit{Strategies}: A strategy is the combination of different actions. A pure strategy is only one action.
-\item \textit{Utility function}: The utility function is the mapping of the level of happiness of an agent about the state of the world to natural numbers.
+\item \textit{Utility}: The utility function or also known as the pay-of is the mapping of the level of happiness of an agent about the state of the world to natural numbers.
 
 \end{description}
 
@@ -145,8 +150,8 @@ The unique feature of FlipIt is that every move happens in a stealthy way, meani
 
 \begin{figure}[hbtp]
 \centering
-\includegraphics[scale=0.5]{../../doc/template/Images/DefFlipit}
-\caption{A representation of a FlipIt game where both players are playing periodically and at discrete time intervals. Every move or flip is indicated by a blue or orange circle. The attacker is represented in orange and plays with a period of $\delta_{A}=4$. The defender is represented in blue and plays with a period of $\delta_{D}=3$. The blue and orange rectangles represent the amount of time the respective player is in control of the resource.}
+\includegraphics[scale=0.7]{../../doc/template/Images/FLipi.png}
+\caption{A representation of a FlipIt game where both players are playing periodically. Every move or flip is indicated by a blue or orange circle. The attacker is represented in orange and plays with a period of $\delta_{A}=4$. The defender is represented in blue and plays with a period of $\delta_{D}=3$. The blue and orange rectangles represent the amount of time the respective player is in control of the resource.}
 \label{fig:FLipItDefault}
 \end{figure}
 
