@@ -20,6 +20,7 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Case 1: Difference between a basic FlipIt game and a FlipIt game with a delay. (1) is the FlipIt game without a delay and (2) is with a delay. The delay is denoted with an arrow. The attacker is only in control when the circle becomes orange.}}{19}{figure.3.2}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Case 2 where d + deltaA < deltaD}}{21}{figure.3.3}
 \addvspace {10pt}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces This figure shows the three subcategories of each case. 'A' stands for Case 2.A: $\delta _{D} \geq d+\delta _{A} \geq \delta _{A}$ and 'B' stands for Case 2.B: $d+\delta _{A} \geq \delta _{D} \geq \delta _{A} $ }}{24}{figure.4.1}
 \addvspace {10pt}
 \select@language {dutch}
 \select@language {dutch}

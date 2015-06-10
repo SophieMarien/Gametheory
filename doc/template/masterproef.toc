@@ -38,6 +38,7 @@
 \contentsline {subsection}{\numberline {3.4.1}Formalization the benefit formula including the infection-delay}{17}{subsection.3.4.1}
 \contentsline {chapter}{\chapternumberline {4}Nash Equilibria}{23}{chapter.4}
 \contentsline {section}{\numberline {4.1}Nash Equilibria}{23}{section.4.1}
+<<<<<<< HEAD
 \contentsline {subsubsection}{$k_{D} \leq d$}{25}{section*.32}
 \contentsline {subsection}{\numberline {4.1.1}Best responses}{25}{subsection.4.1.1}
 \contentsline {subsubsection}{$k_{D} > d$}{25}{section*.33}
@@ -45,6 +46,16 @@
 \contentsline {chapter}{\chapternumberline {5}Conclusion}{27}{chapter.5}
 \contentsline {section}{\numberline {5.1}trala}{27}{section.5.1}
 \contentsline {chapter}{Bibliografie}{29}{section*.35}
+=======
+\contentsline {subsection}{\numberline {4.1.1}Determining the piecewise functions $opt_{D}(\delta _{A})$}{23}{subsection.4.1.1}
+\contentsline {subsubsection}{Best responses}{25}{section*.37}
+\contentsline {subsubsection}{$k_{D} > d$}{26}{section*.39}
+\contentsline {subsection}{\numberline {4.1.2}Determining the piecewise functions $opt_{A}(\delta _{D})$}{27}{subsection.4.1.2}
+\contentsline {subsubsection}{Best responses}{28}{section*.44}
+\contentsline {chapter}{\chapternumberline {5}Conclusion}{29}{chapter.5}
+\contentsline {section}{\numberline {5.1}trala}{29}{section.5.1}
+\contentsline {chapter}{Bibliografie}{31}{section*.46}
+>>>>>>> FETCH_HEAD
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}
