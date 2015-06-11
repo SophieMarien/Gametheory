@@ -2,20 +2,30 @@
 \BOOKMARK [0][-]{chapter*.3}{Samenvatting}{}% 2
 \BOOKMARK [0][-]{chapter*.5}{Samenvatting}{}% 3
 \BOOKMARK [0][-]{chapter*.8}{Lijst van figuren en tabellen}{}% 4
-\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 5
-\BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}% 6
-\BOOKMARK [0][-]{chapter.2}{Intoduction to GameTheory}{}% 7
-\BOOKMARK [1][-]{section.2.1}{What is cyber security?}{chapter.2}% 8
-\BOOKMARK [1][-]{section.2.2}{A brief introduction in Game Theory}{chapter.2}% 9
-\BOOKMARK [1][-]{section.2.3}{The FlipIt game}{chapter.2}% 10
-\BOOKMARK [1][-]{section.2.4}{Extensions on FlipIt}{chapter.2}% 11
-\BOOKMARK [0][-]{chapter.3}{FlipIt game with virus propagation}{}% 12
-\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 13
-\BOOKMARK [1][-]{section.3.2}{FlipIt game with virus propagation}{chapter.3}% 14
-\BOOKMARK [1][-]{section.3.3}{Explaining difference between FlipIt with and without virus propagation}{chapter.3}% 15
-\BOOKMARK [1][-]{section.3.4}{Playing periodically with virus propagation}{chapter.3}% 16
-\BOOKMARK [0][-]{chapter.4}{Nash Equilibria}{}% 17
-\BOOKMARK [1][-]{section.4.1}{Nash Equilibria}{chapter.4}% 18
-\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 19
-\BOOKMARK [1][-]{section.5.1}{trala}{chapter.5}% 20
-\BOOKMARK [0][-]{section*.45}{Bibliografie}{}% 21
+\BOOKMARK [0][-]{chapter*.11}{List of Abbreviations and Symbols}{}% 5
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 6
+\BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}% 7
+\BOOKMARK [0][-]{chapter.2}{Intoduction to GameTheory}{}% 8
+\BOOKMARK [1][-]{section.2.1}{What is cyber security?}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.2}{A brief introduction in Game Theory}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.3}{The FlipIt game}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.4}{Extensions on FlipIt}{chapter.2}% 12
+\BOOKMARK [0][-]{chapter.3}{FlipIt game with virus propagation}{}% 13
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.2}{FlipIt game with virus propagation}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.3}{Explaining difference between FlipIt with and without virus propagation}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.4}{Playing periodically with virus propagation}{chapter.3}% 17
+\BOOKMARK [0][-]{chapter.4}{Nash Equilibria}{}% 18
+\BOOKMARK [1][-]{section.4.1}{Nash Equilibria}{chapter.4}% 19
+\BOOKMARK [0][-]{chapter.5}{Virus Propagation }{}% 20
+\BOOKMARK [1][-]{section.5.1}{Methods of virus propagation}{chapter.5}% 21
+\BOOKMARK [1][-]{section.5.2}{REpresenting Virus Propagation in a network}{chapter.5}% 22
+\BOOKMARK [1][-]{section.5.3}{Related work}{chapter.5}% 23
+\BOOKMARK [1][-]{section.5.4}{Representing Virus Propagation in a network}{chapter.5}% 24
+\BOOKMARK [1][-]{section.5.5}{methode met matrixen}{chapter.5}% 25
+\BOOKMARK [0][-]{chapter.6}{Related work}{}% 26
+\BOOKMARK [1][-]{section.6.1}{Related work}{chapter.6}% 27
+\BOOKMARK [1][-]{section.6.2}{Why Game Theory to model security problem}{chapter.6}% 28
+\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 29
+\BOOKMARK [1][-]{section.7.1}{trala}{chapter.7}% 30
+\BOOKMARK [0][-]{section*.49}{Bibliografie}{}% 31

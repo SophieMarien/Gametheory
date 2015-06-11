@@ -274,28 +274,31 @@ Niet zo lang geleden werden APT's ontdekt. (Introzin moet beter en anders). Bedr
 \listoffiguresandtables
 % De lijst van symbolen is eveneens optioneel.
 % Deze lijst moet wel manueel aangemaakt worden, bv. als volgt:
-%\chapter{List of Abbreviations and Symbols}
-%\section*{Abbreviations}
-%\begin{flushleft}
-%  \renewcommand{\arraystretch}{1.1}
-%  \begin{tabularx}{\textwidth}{@{}p{12mm}X@{}}
-%    LoG   & Laplacian-of-Gaussian \\
-%    MSE   & Mean Square error \\
-%    PSNR  & Peak Signal-to-Noise ratio \\
-%  \end{tabularx}
-%\end{flushleft}
-%\section*{Symbols}
-%\begin{flushleft}
-%  \renewcommand{\arraystretch}{1.1}
-%  \begin{tabularx}{\textwidth}{@{}p{12mm}X@{}}
-%    42    & ``The Answer to the Ultimate Question of Life, the Universe,
-%            and Everything'' according to \cite{h2g2} \\
-%    $c$   & Speed of light \\
-%    $E$   & Energy \\
-%    $m$   & Mass \\
-%    $\pi$ & The number pi \\
-%  \end{tabularx}
-%\end{flushleft}
+\chapter{List of Abbreviations and Symbols}
+\section*{Abbreviations}
+\begin{flushleft}
+  \renewcommand{\arraystretch}{1.1}
+  \begin{tabularx}{\textwidth}{@{}p{12mm}X@{}}
+    APT   & Advanced Persistent Threat \\
+    SIR & Susceptible - Infected - Recovered \\
+    SIS & Susceptible - Infected - Susceptible \\
+  \end{tabularx}
+\end{flushleft}
+\section*{Symbols}
+\begin{flushleft}
+  \renewcommand{\arraystretch}{1.1}
+  \begin{tabularx}{\textwidth}{@{}p{12mm}X@{}}
+ $i$ & Defines the player. Different as in the FlipIt paper where the defender is denoted by the subscript 0 and the attacker by the subscript 1. \\
+ $\delta_{i}$ & The length of the interval between two consecutive moves of player \textit{i}. \\
+ $\alpha_{i}$ & The average flip rate of player \textit{i}, given by $\alpha_{i}=1/\delta_{i}$. \\
+$k_{i}$ & The cost of player \textit{i}'s moves. \\
+$d$ & The delay caused by the virus propagation. \\
+ $G_{i}(t)$ & The total gain of player \textit{i} denotes the amount of time player \textit{i} is in control over the resource up to time \textit{t}. \\
+$\gamma_{i}$ & The average gain rate of player \textit{i} defined as $G_{i}(t)/t$. \\
+$\beta_{i}$ &  The average benefit rate up to time \textit{t} defined as  $\beta_{i} = \gamma_{i} -k_{i} \alpha_{i} $. \\
+$opt_{i}$ & The optimum function. \\
+  \end{tabularx}
+\end{flushleft}
 
 % Nu begint de eigenlijke tekst
 \mainmatter
@@ -307,10 +310,12 @@ Niet zo lang geleden werden APT's ontdekt. (Introzin moet beter en anders). Bedr
 %\include{chap-1}
 \include{chap-5}
 \include{chap-9}
-%\include{chap-3}
-%\include{chap-4}
+
+
 
 \include{nash}
+\include{chap-4}
+\include{chap-3}
 %\include{chap-6}
 %\include{chap-7}
 %\include{chap-8}

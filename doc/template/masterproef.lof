@@ -9,8 +9,9 @@
 \addvspace {10pt}
 \select@language {dutch}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {1}{\ignorespaces Een afbeelding van een Flipit spel met discrete tijdsintervallen waarbij beide spelers periodiek spelen. Elke beweging of flip wordt aangegeven met een blauw of oranje cirkel. De aanvaller is vertegenwoordigd in het oranje en speelt met een periode van $ \delta _{A} = 4 $. De verdediger is vertegenwoordigd in het blauw en speelt met een periode van $ \delta _{D} = 3 $. De blauwe en oranje rechthoeken geven de hoeveelheid tijd die de betreffende speler in de controle is van de bron.}}{vi}{figure.0.1}
+\contentsline {figure}{\numberline {1}{\ignorespaces Een afbeelding van een Flipit spel met discrete tijdsintervallen waarbij beide spelers periodiek spelen. Elke beweging of flip wordt aangegeven met een blauw of oranje cirkel. De aanvaller is vertegenwoordigd in het oranje en speelt met een periode van $ \delta _{A} = 4 $. De verdediger is vertegenwoordigd in het blauw en speelt met een periode van $ \delta _{D} = 3 $. De blauwe en oranje rechthoeken geven de hoeveelheid tijd die de betreffende speler in de controle is van de bron.}}{vii}{figure.0.1}
 \select@language {dutch}
+\addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
@@ -23,6 +24,8 @@
 \contentsline {figure}{\numberline {3.4}{\ignorespaces All possible cases for the attacker and the defender in Case 2.A where $d + delta_{A} < delta_{D}$. As can be seen, the defender will have control during a period of \textit {d} over the resource when the defender has flipped in the previous interval.}}{24}{figure.3.4}
 \addvspace {10pt}
 \contentsline {figure}{\numberline {4.1}{\ignorespaces This figure shows the three subcategories of each case. 'A' stands for Case 2.A: $\delta _{D} \geq d+\delta _{A} \geq \delta _{A}$ and 'B' stands for Case 2.B: $d+\delta _{A} \geq \delta _{D} \geq \delta _{A} $ }}{28}{figure.4.1}
+\addvspace {10pt}
+\addvspace {10pt}
 \addvspace {10pt}
 \select@language {dutch}
 \select@language {dutch}
