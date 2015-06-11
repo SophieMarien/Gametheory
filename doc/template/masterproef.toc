@@ -24,28 +24,28 @@
 \contentsline {subsubsection}{Threats to computer systems}{6}{section*.18}
 \contentsline {subsubsection}{Advanced threats to computer systems}{7}{section*.20}
 \contentsline {section}{\numberline {2.2}A brief introduction in Game Theory}{8}{section.2.2}
-\contentsline {subsubsection}{Best response and Nash Equilibrium}{9}{section*.22}
-\contentsline {subsubsection}{List of terms}{9}{section*.24}
+\contentsline {subsubsection}{Best response and Nash Equilibrium}{9}{section*.23}
+\contentsline {subsubsection}{List of terms}{9}{section*.25}
 \contentsline {section}{\numberline {2.3}The FlipIt game}{10}{section.2.3}
-\contentsline {subsubsection}{strategies}{12}{section*.25}
-\contentsline {subsubsection}{Results of the FlipIt game}{12}{section*.26}
+\contentsline {subsubsection}{strategies}{12}{section*.26}
+\contentsline {subsubsection}{Results of the FlipIt game}{13}{section*.27}
 \contentsline {section}{\numberline {2.4}Extensions on FlipIt}{13}{section.2.4}
-\contentsline {chapter}{\chapternumberline {3}FlipIt game with virus propagation}{15}{chapter.3}
-\contentsline {section}{\numberline {3.1}Introduction}{15}{section.3.1}
-\contentsline {section}{\numberline {3.2}FlipIt game with virus propagation}{15}{section.3.2}
-\contentsline {section}{\numberline {3.3}Explaining difference between FlipIt with and without virus propagation}{15}{section.3.3}
-\contentsline {section}{\numberline {3.4}Playing periodically with virus propagation}{16}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Formalization the benefit formula including the infection-delay}{17}{subsection.3.4.1}
-\contentsline {chapter}{\chapternumberline {4}Nash Equilibria}{23}{chapter.4}
-\contentsline {section}{\numberline {4.1}Nash Equilibria}{23}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Determining the piecewise functions $opt_{D}(\delta _{A})$}{23}{subsection.4.1.1}
-\contentsline {subsubsection}{Best responses}{25}{section*.35}
-\contentsline {subsubsection}{$k_{D} > d$}{26}{section*.37}
-\contentsline {subsection}{\numberline {4.1.2}Determining the piecewise functions $opt_{A}(\delta _{D})$}{27}{subsection.4.1.2}
-\contentsline {subsubsection}{Best responses}{28}{section*.42}
-\contentsline {chapter}{\chapternumberline {5}Conclusion}{29}{chapter.5}
-\contentsline {section}{\numberline {5.1}trala}{29}{section.5.1}
-\contentsline {chapter}{Bibliografie}{31}{section*.44}
+\contentsline {chapter}{\chapternumberline {3}FlipIt game with virus propagation}{17}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{17}{section.3.1}
+\contentsline {section}{\numberline {3.2}FlipIt game with virus propagation}{17}{section.3.2}
+\contentsline {section}{\numberline {3.3}Explaining difference between FlipIt with and without virus propagation}{17}{section.3.3}
+\contentsline {section}{\numberline {3.4}Playing periodically with virus propagation}{19}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Formalization the benefit formula including the infection-delay}{19}{subsection.3.4.1}
+\contentsline {chapter}{\chapternumberline {4}Nash Equilibria}{27}{chapter.4}
+\contentsline {section}{\numberline {4.1}Nash Equilibria}{27}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Determining the piecewise functions $opt_{D}(\delta _{A})$}{27}{subsection.4.1.1}
+\contentsline {subsubsection}{Best responses}{29}{section*.36}
+\contentsline {subsubsection}{$k_{D} > d$}{30}{section*.38}
+\contentsline {subsection}{\numberline {4.1.2}Determining the piecewise functions $opt_{A}(\delta _{D})$}{31}{subsection.4.1.2}
+\contentsline {subsubsection}{Best responses}{32}{section*.43}
+\contentsline {chapter}{\chapternumberline {5}Conclusion}{35}{chapter.5}
+\contentsline {section}{\numberline {5.1}trala}{35}{section.5.1}
+\contentsline {chapter}{Bibliografie}{37}{section*.45}
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}

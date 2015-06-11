@@ -122,7 +122,7 @@ Gametheory is a mathematical study to analyse interactions between independent a
 %            Intro Game Theory 					 %
 %------------------------------------------------%
 
-
+\todo{stukje geschiedenis toevoegen}
 
 
 
@@ -149,13 +149,17 @@ One of the solution concepts in Game Theory for non-cooperative games is a Nash 
 For a Nash Equilibrium each player has a consist list of actions and each player's action maximizes his or her pay-off given the actions of the other players. Nobody has the incentive to change his or her action if an equilibrium profile is played. We have a Nash Equilibrium for the pair $(a_{1}^{*},a_{2}^{*})$ where $a_{1}^{*} = Opt_{1}(a_{2}^{*})$ and $a_{2}^{*} = Opt_{2}(a_{1}^{*})$\\
 
 
-An example to explain a nash equilibrium of a two-player game, for example, is the prison dilemma. In this game there are two players who are both rational and both of them have committed a crime. 'Rational' means that they want the best for themselves and it is not their purpose to do harm to others. Both are locked in a separate room and they cannot tell in advance to each other what they are going to say. Each of them can betray the other or they can support each other and remain silent. If a player confesses, he will, depending on what the other does, go for three years in prison or he is free to go. If the player is silent, he will, depending on what the other player does, go for five years in jail or only one year. \\
-Figure 1 shows the various combinations of the possible actions of the two players. The Nash equilibrium of the game is that they both remain silent, but perfectly rational players still choose to confess both. This is because this is the dominant strategy. A dominant strategy is a strategy that is better than all other strategies of a player regardless of the opponent. Here it is advantageous for each player to confess. This gives them three years in prison instead of a year. Why players choose one or the other action can be explained by means of game theory.
+An example to explain a Nash equilibrium of a two-player game, for example, is the prison dilemma. In this game there are two players who are both rational and both of them have committed a crime. 'Rational' means that they want the best for themselves and it is not their purpose to do harm to others. Both are locked in a separate room and they cannot tell in advance to each other what they are going to say. Each of them can betray the other or they can support each other and remain silent. If a player confesses, he will, depending on what the other does, go for three years in prison or he is free to go. If the player is silent, he will, depending on what the other player does, go for five years in jail or only one year. \\
+
+%Because betraying a partner offers a greater reward than cooperating with him, all purely rational self-interested prisoners would betray the other, and so the only possible outcome for two purely rational prisoners is for them to betray each other.[1] The interesting part of this result is that pursuing individual reward logically leads both of the prisoners to betray, when they would get a better reward if they both cooperated. 
+
+Figure \ref{Prison} shows the rewards of the possible actions of the two players. Because betraying the other player gives a greater reward than remaining silent, all prisoners will betray each other which leads to the outcome that both of them will betray each other. This is because this is the dominant strategy. A dominant strategy is a strategy that is better than all other strategies of a player regardless of the opponent. Here it is advantageous for each player to confess. This gives them three years in prison instead of five year or they will be free instead of being in prison for one year. The Nash equilibrium of the game is that they both confess even though that it would be better if they both cooperated and chose to stay silent.  
 
 \begin{figure}[hbtp]
-\caption{The prison dilemma: P1 corresponds to the first column, P2 corresponds to the second column.}
+\caption{Prisoners dilemma: An example from the field of Game Theory. It is a game between two perfectly rational prisoners who don not know what the other one will do. Each can confess or stay silent. The outcomes can be seen in the picture. Prisoner 1 corresponds to each first column, Prisoner 2 corresponds to each second column. }
 \centering
-\includegraphics[scale=1]{Images/PrisDilemma.jpg}
+\includegraphics[scale=0.6]{Images/PrisDilemma}
+\label{Prison}
 \end{figure}
 
 \todo{optimal function same as best response ?}

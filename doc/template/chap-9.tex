@@ -20,6 +20,12 @@ Motivation
 
 \section{Explaining difference between FlipIt with and without virus propagation}
 \label{ch2:diffFlip}
+\begin{figure}[hbtp]
+\caption{The first game is the basic FlipIt game. The second is a FlipIt game with a delay. During the first flip of the attacker, the defender moves after the delay, causing the attacker to get control over the resource. During the second flip of the attacker, the defender flips at time t+d, causing the defender to take control over the resource before the attacker. During the third and final flip of the attacker, the defender flips during time t+d, causing the attacker to never gain control over the resource. }
+\centering
+\includegraphics[scale=0.7]{Images/dtFlip.png}
+\label{dt}
+\end{figure}
 
 A FlipIt game consists of a single resource. To represent the security problem, the game now defines its single resource as a computer network with multiple
 nodes. One of the players, the defender, will try to defend his network. The defender
@@ -35,7 +41,8 @@ denoted as an infection-delay variable \textit{d} (called 'delay' for short in t
 infect all the nodes in the network, we have to calculate the shortest path from the
 first infected node to the farthest node. Rather than denoting the time needed for infecting \textit{all} the nodes, the variable $d$ can also be used to denote the time needed to infect \textit{a sufficient number} of nodes.
 
-Assume that an attacker attacks at time \textit{t}, he doesn't get immediate control over the resource, but he only gains control at time \textit{t + d}, with $d$ denoting the time needed to infect a sufficiently number (or all) nodes. If the defender flips the network before the period $d$ has elapsed (so, somewhere between $t$ and $t + d$), then the attacker will never gain full control over the resource. This implies that the mathematical formulas for gain and benefit need to be adapted to the fact that the attacker loses part of its benefit because of this delay. In the remainder of this paper, we will adapt the formalization of the FlipIt game using the variable $d$. \\ 
+Assume that an attacker attacks at time \textit{t}, he doesn't get immediate control over the resource, but he only gains control at time \textit{t + d}, with $d$ denoting the time needed to infect a sufficiently number (or all) nodes. If the defender flips the network before the period $d$ has elapsed (so, somewhere between $t$ and $t + d$), then the attacker will never gain full control over the resource. See figure \ref{dt}. This implies that the mathematical formulas for gain and benefit need to be adapted to the fact that the attacker loses part of its benefit because of this delay. In the remainder of this paper, we will adapt the formalization of the FlipIt game using the variable $d$. \\ 
+
 
 %%------------------------------------------------%
 %%            Intro Game Theory 					 %
@@ -225,9 +232,9 @@ The benefit for the attacker will be as follows:
 \end{equation*}\\
 
 \begin{figure}[hbtp]
-\caption{Case 2 where d + deltaA < deltaD}
+\caption{All possible cases for the attacker and the defender in Case 2.A where $d + delta_{A} < delta_{D}$. As can be seen, the defender will have control during a period of \textit{d} over the resource when the defender has flipped in the previous interval.}
 \centering
-\includegraphics[scale=0.5]{../../doc/template/Images/FlipItCase2.png}
+\includegraphics[scale=0.7]{../../doc/template/Images/FlipItCase2a.png}
 \label{fig:case2}
 \end{figure}
 
