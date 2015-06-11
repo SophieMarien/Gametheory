@@ -101,13 +101,7 @@ The formalization starts from the model of the non-adaptive continuous basic Fli
 Further research can investigate the effect of relaxing this assumption. \\
 
 
-
-Similarly as in \cite{FlipIt}, we split the formalization in two cases. The first case is where the defender plays at least as fast as the attacker, the second case is where the attacker plays at least as fast as the defender. For each of these cases, first the benefit formula of the basic case without delay is presented, and then the delay is introduced.  \\
-
-Intuitively we could assume that $d$ can never be bigger than $\delta_{A}$ because then the benefit for the defender would always be 1. This is not always true. It is only true if $d$ is bigger than $\delta_{D}$, because then the defender will always be in control. For this we only calculate the formulas for the cases where $d$ is smaller than $\delta_{D}$. We can already conclude that it is no use for the attacker to play when the delay is bigger than $\delta_{D}$. \\
-
 \subsection{Formalization the benefit formula including the infection-delay}
-
 
 
  A Periodic strategy is a non-adaptive renewal strategy where the time intervals between consecutive moves are a fixed period, denoted by $\delta$. Moreover it has a random phase, that is chosen uniformly and random in the interval $[0,\delta]$ for the first move. The average rate of play of a player is denoted by $\alpha_{i} = \dfrac{1}{\delta_{i}}$. List of symbols that will be used throughout the paper. Figure \ref{FlipItDelay} represents a couple of the symbols for clarification.\\
@@ -130,6 +124,23 @@ Intuitively we could assume that $d$ can never be bigger than $\delta_{A}$ becau
 \item $\beta_{i}$:  The average benefit rate up to time \textit{t} defined as  $\beta_{i} = \gamma_{i} -k_{i} \alpha_{i} $.
 \item $opt_{i}$: The optimum function.
 \end{description}
+
+
+Similarly as in \cite{FlipIt}, we split the formalization in two cases. The first case is where the defender plays at least as fast as the attacker, the second case is where the attacker plays at least as fast as the defender. For each of these cases, first the benefit formula of the basic case without delay is presented, and then the delay is introduced.  \\
+
+Intuitively we could assume that $d$ can never be bigger than $\delta_{A}$ because then the benefit for the defender would always be 1. This is not always true. It is only true if $d$ is bigger than $\delta_{D}$, because then the defender will always be in control. For this we only calculate the formulas for the cases where $d$ is smaller than $\delta_{D}$. We can already conclude that it is no use for the attacker to play when the delay is bigger than $\delta_{D}$. see figure \ref{delaye}\\
+
+\todo{figuur juist maken}
+\begin{figure}[hbtp]
+\caption{Delay bigger than deltaA and delay bigger than deltaD}
+\centering
+\includegraphics[scale=0.7]{Images/DiffDelayCase1.png}
+\label{delaye}
+\end{figure}
+
+
+
+
 
 
 
@@ -214,7 +225,7 @@ For the case with a virus we consider two cases, Case a and Case b, depending on
 
 
 \subsubsection*{\textbf{Case a:} $d + \delta_{A} \leq \delta_{D}$}
-
+The first case is where the delay is shorter than the difference between the attacker's and the defender's period so their is no problem of counting the delay twice. To determine the total gain rate of the defender we need to know what the probability is that the defender will move during an interval and what the average time is that the defender controls the resource. \todo{beter verwoorden}.
 The total gain  rate of the defender is then the probability that the defender will move during an interval of the attacker multiplied by the total average gain per interval: 
 
 \begin{equation*}\label{first}

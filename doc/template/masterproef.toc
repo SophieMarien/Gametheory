@@ -6,27 +6,27 @@
 \select@language {dutch}
 \select@language {dutch}
 \contentsline {chapter}{Voorwoord}{i}{chapter*.1}
-\contentsline {chapter}{Samenvatting}{v}{chapter*.3}
+\contentsline {chapter}{Samenvatting}{iv}{chapter*.3}
 \select@language {dutch}
-\contentsline {chapter}{Samenvatting}{vi}{chapter*.5}
-\contentsline {subsubsection}{strategie"en}{viii}{section*.7}
+\contentsline {chapter}{Samenvatting}{v}{chapter*.5}
+\contentsline {subsubsection}{strategie"en}{vii}{section*.7}
 \select@language {dutch}
-\contentsline {chapter}{L"yst van figuren en tabellen}{x}{chapter*.8}
-\contentsline {chapter}{List of Abbreviations and Symbols}{xii}{chapter*.11}
+\contentsline {chapter}{L"yst van figuren en tabellen}{ix}{chapter*.8}
+\contentsline {chapter}{List of Abbreviations and Symbols}{xi}{chapter*.11}
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}
 \contentsline {subsubsection}{Situation}{1}{section*.14}
 \contentsline {subsubsection}{Complication}{1}{section*.15}
 \contentsline {subsubsection}{Research questions}{2}{section*.16}
 \contentsline {subsubsection}{Contributions}{2}{section*.17}
-\contentsline {subsubsection}{Overview of the thesis}{2}{section*.18}
-\contentsline {chapter}{\chapternumberline {2}Intoduction to GameTheory}{5}{chapter.2}
+\contentsline {subsubsection}{Overview of the thesis}{3}{section*.19}
+\contentsline {chapter}{\chapternumberline {2}Intoduction to the general context of the work}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}What is cyber security?}{5}{section.2.1}
-\contentsline {subsubsection}{Threats to computer systems}{6}{section*.21}
-\contentsline {subsubsection}{Advanced threats to computer systems}{7}{section*.23}
+\contentsline {subsubsection}{Threats to computer systems}{6}{section*.22}
+\contentsline {subsubsection}{Advanced threats to computer systems}{8}{section*.24}
 \contentsline {section}{\numberline {2.2}A brief introduction in Game Theory}{8}{section.2.2}
 \contentsline {subsubsection}{Best response and Nash Equilibrium}{9}{section*.26}
-\contentsline {subsubsection}{List of terms}{9}{section*.28}
+\contentsline {subsubsection}{List of terms}{10}{section*.28}
 \contentsline {section}{\numberline {2.3}The FlipIt game}{10}{section.2.3}
 \contentsline {subsubsection}{strategies}{12}{section*.29}
 \contentsline {subsubsection}{Results of the FlipIt game}{13}{section*.30}
@@ -40,23 +40,20 @@
 \contentsline {chapter}{\chapternumberline {4}Nash Equilibria}{27}{chapter.4}
 \contentsline {section}{\numberline {4.1}Nash Equilibria}{27}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Determining the piecewise functions $opt_{D}(\delta _{A})$}{27}{subsection.4.1.1}
-\contentsline {subsubsection}{Best responses}{29}{section*.39}
-\contentsline {subsubsection}{$k_{D} > d$}{30}{section*.41}
+\contentsline {subsubsection}{Best responses}{29}{section*.41}
+\contentsline {subsubsection}{$k_{D} > d$}{30}{section*.43}
 \contentsline {subsection}{\numberline {4.1.2}Determining the piecewise functions $opt_{A}(\delta _{D})$}{31}{subsection.4.1.2}
-\contentsline {subsubsection}{Best responses}{32}{section*.46}
+\contentsline {subsubsection}{Best responses}{32}{section*.48}
 \contentsline {chapter}{\chapternumberline {5}Virus Propagation }{35}{chapter.5}
 \contentsline {section}{\numberline {5.1}Methods of virus propagation}{35}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Models of graph representing the network}{35}{subsection.5.1.1}
-\contentsline {section}{\numberline {5.2}REpresenting Virus Propagation in a network}{36}{section.5.2}
-\contentsline {section}{\numberline {5.3}Related work}{36}{section.5.3}
-\contentsline {section}{\numberline {5.4}Representing Virus Propagation in a network}{36}{section.5.4}
-\contentsline {section}{\numberline {5.5}methode met matrixen}{36}{section.5.5}
+\contentsline {section}{\numberline {5.2}methode met matrixen}{36}{section.5.2}
 \contentsline {chapter}{\chapternumberline {6}Related work}{41}{chapter.6}
 \contentsline {section}{\numberline {6.1}Related work}{41}{section.6.1}
 \contentsline {section}{\numberline {6.2}Why Game Theory to model security problem}{41}{section.6.2}
 \contentsline {chapter}{\chapternumberline {7}Conclusion}{43}{chapter.7}
 \contentsline {section}{\numberline {7.1}trala}{43}{section.7.1}
-\contentsline {chapter}{Bibliografie}{45}{section*.49}
+\contentsline {chapter}{Bibliografie}{45}{section*.55}
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}

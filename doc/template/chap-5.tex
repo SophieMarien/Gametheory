@@ -1,4 +1,4 @@
-\chapter{Intoduction to GameTheory}
+\chapter{Intoduction to the general context of the work}
 \label{Chapter1:Intro.Game.Theory}
 %\documentclass[10pt]{article}
 %\begin{document}
@@ -15,8 +15,8 @@ This chapter provides the reader with an introduction to the general context of 
 
 Before the digitalization of documents, information was kept on paper and the security of this information was ensured by administrative and physical means. For example, you needed a key to access documents stored in a room full of cabinets where the files were kept. In today's digital era more and more information is kept in a digital format, stored on a computer.  As digitalization progressed, the need for ensuring the security of digital information arose and automated tools were developed to protect files stored on a computer.  
 
-The generic term for data protection stored on a computer controlled device such as computers and smartphones, as well as public and private computer networks, including the entire Internet is called computer security. 
-Security is a general term that encompasses several dimensions. More specifically, computer security has three key objectives that are fundamental to computer security:
+The generic term for data protection stored on a computer controlled device such as computers and smartphones, as well as public and private computer networks, including the entire Internet is called information security. 
+Security is a general term that encompasses several dimensions. More specifically, information security has three key objectives that are fundamental to information security:
 
 \begin{enumerate}
 \item  \textit{Confidentiality}: assuring that the confidentiality of private data is not disclosed or made available to users that do not have proper authorization.
@@ -30,7 +30,7 @@ Security is a general term that encompasses several dimensions. More specificall
  ~~\\
  These key attributes are also known as the CIA triad. They are the fundamental security objectives for securing data, information and computing services. \\
  \\
-A subset of computer security is cyber security. This is the process of applying security tools to ensure confidentiality, integrity, and availability of data.\todo{what is cyber security? In deze tekst lijkt het op computer security} 
+Information security is divided into two main areas of security. One of them is cyber security also known as computer security. This is the process of applying security tools to ensure confidentiality, integrity, and availability of data. the other area is Network or Internet security.. The difference between these two terms has been lost over time. \todo{what is cyber security? In deze tekst lijkt het op computer security} 
 
 %hieronder is wel okee
 It is an attempt to protect websites, servers, data, applications, operating systems and all assets that need protection in a computer system.  Some of these tools may include detection, identification or removal tools. A detection tool will determine if an infection has taken place and will trace the threat. An identification tool will try to identify the threat to be able to know how to remove it. The removal tool will remove the threat from the system (once it has been identified) so that it cannot spread any further. 
@@ -44,6 +44,12 @@ In order to keep a system secure and to be able to apply security tools, it is i
 
 The most noteworthy and biggest group of threats to computer systems is malware. 
 This is a piece of malicious software that is designed to penetrate unprotected systems or computers, with the intent to retrieve sensitive information, destroy data, or compromise the confidentiality, integrity or availability of the data or applications of the victim. A security report of 2014 \cite{SurveyKaspersky} reveals that 61\% of the attacks on companies are caused by malware. For this reason this section will examine the categories of malware threats. Different types of malware exist: virusses, worms, flooders, rootkits, bots, spyware, adware and many more. This broad range of different types can be classified into two main categories, the first one based on the propagation method that is used and the second one for the payload or the variety of actions that the malware performs. Propagation methods include virusses, worms and trojans. Payload includes e.g. flooders, rootkits, bots, spyware and adware. This paper focuses on the category of propagation methods and not on the actions that the malware performs. A brief explanation of the three main propagation methods of malware is given below. \todo{opsplitsing uit het boek van network security genomen}
+
+%\begin{figure}[hbtp]
+%\caption{2014 survey results by Kaspersky}
+%\centering
+%\includegraphics[scale=0.5]{Images/kaspmalware.png}
+%\end{figure}
 
 %\begin{table}
 %\begin{tabular}{|r|l|}
@@ -106,7 +112,7 @@ An APT can be a mix of different types of malware and may use various propagatio
 % purpose cyber espionage and DDoS, data wiping. prop usb lan
 
  
-According to a security survey of Kaspersky \cite{SurveyKaspersky}  the damage of one successful targeted attack against a large company can exceed over 2.54 million dollar. Companies need a defence mechanism to defend themselves against APT's. As previously stated, simple detection and identification tools are insufficient to protect oneself against APT's, and a removal tool will only work if the threat has been identified. To mitigate these kind of attacks another security countermeasure is needed. This is where the researchers of RSA come into the picture. They have modelled these targeted attacks using Game Theory, and - given a certain amount of information - determined optimal defence strategies.\todo{bekijk dit}
+According to a security survey of Kaspersky \cite{SurveyKaspersky}  the damage of one successful targeted attack against a large company can exceed over 2.54 million dollar. Companies need a defence mechanism to defend themselves against APT's. As previously stated, simple detection and identification tools are insufficient to protect oneself against APT's, and a removal tool will only work if the threat has been identified. To mitigate these kind of attacks another security countermeasures are needed. This is where the researchers of RSA come into the picture. They have modelled the situation where targeted attacks are taking over a system and are not immediately detected by the defender. 
 
 
 

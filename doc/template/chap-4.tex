@@ -1,59 +1,6 @@
 \chapter{Virus Propagation }
 \label{chapter4: Virus propagation}
-%\documentclass[10pt]{article}
-%
-%\usepackage{graphicx}
-%\usepackage{amsmath}
-%\usepackage{listings}
-%\usepackage{color}
-%\usepackage{soul}
-%\usepackage{tikz}
-%\usepackage{parskip}
-%\usepackage{todonotes}
-%\usepackage{url}
-%\usepackage{natbib} 
-%\usepackage{pgf}
-%\usepackage{tikz}
-%\usetikzlibrary{arrows,automata}
-%%\usepackage[latin1]{inputenc}
-%\definecolor{dkgreen}{rgb}{0,0.6,0}
-%\definecolor{gray}{rgb}{0.5,0.5,0.5}
-%\definecolor{mauve}{rgb}{0.58,0,0.82}
-%
-%\lstset{frame=tb,
-%  language=Java,
-%  aboveskip=3mm,
-%  belowskip=3mm,
-%  showstringspaces=false,
-%  columns=flexible,
-%  basicstyle={\small\ttfamily},
-%  numbers=none,
-%  numberstyle=\tiny\color{gray},
-%  keywordstyle=\color{blue},
-%  commentstyle=\color{green},
-%  stringstyle=\color{black},
-%  breaklines=true,
-%  breakatwhitespace=true
-%  tabsize=3
-%}
-%
-%%\newcommand{\todo}[1]{{\huge \textcolor{green}{#1}}\\}
-%\newcommand{\com}[1]{\textcolor{red}{#1}\\}
-%\newcommand{\viscomment}[1]{\textcolor{red}{#1}}
-%\newcommand{\flip}[1] {\textcolor{black}{#1}}
-%
-%% Tenslotte wordt hyperref gebruikt voor pdf bestanden.
-%% Dit mag verwijderd worden voor de af te drukken versie.
-%\usepackage[pdfusetitle,colorlinks,plainpages=false]{hyperref}
-%
-%%%%%%%%
-%% Om wat tekst te genereren wordt hier het lipsum pakket gebruikt.
-%% Bij een echte masterproef heb je dit natuurlijk nooit nodig!
-%\IfFileExists{lipsum.sty}%
-% {\usepackage{lipsum}\setlipsumdefault{11-13}}%
-% {\newcommand{\lipsum}[1][11-13]{\par Hier komt wat tekst: lipsum ##1.\par}}
-%
-%\begin{document}
+
 \section{Methods of virus propagation}
 
 The spreading of worms has already been extensivly researched [beter schrijven]. Because of all the different types of propagation it is hard to pick out one model that can model all of them. Modelling the spread of malware depends on two great factors: the method used for the propagation and the graph where the malware will spread itself. Viruses and worms are the types of malware that are the most researched. Under we list a couple of examples to model virus and worm propagation. In this text worm and virus will be used intermediate. 
@@ -64,16 +11,28 @@ The spreading of worms has already been extensivly researched [beter schrijven].
 
 \begin{description}
 \item Random scanning: Some worms propagate by using the method of random scanning 
-IP addresses.  Rate of terms of succeeded randwomly choosen IP adresses -> maximise good ip adresses. After a while the remaining nodes will be les likely to be reached. An example of such a worm is `Code Red' 
+IP addresses.  Rate of terms of succeeded randwomly choosen IP adresses -> maximise good ip adresses. After a while the remaining nodes will be les likely to be reached. An example of such a worm is `Code Red' .
+\item Routing worms: they use BGP routing tables to scan the routable address space. 3 times faster than traditional worm that uses random scanning. Spyb0t or network bluepill.
+\item email worms: use the email systems to propagate. The Kak worm is a Javascript computer worm that spread itself by exploiting a bug in Outlook Express. 
+%Pikachu worm: The virus was mainly spread through Microsoft Outlook email attachments. The email containing the attached virus propagated through infected users by sending itself to all contacts in the user's Outlook address book. [5]
+\item self stopping worm: reduces speed to avoid detection. Atak worm or self stopping worm
 \end{description}
-Kinds of worms: random scanning, email worm internet worms. 
 
-Routing worms: use BGP routing tables to scan the routable address space. 3 times faster than traditional worm. Spyb0t or network bluepill.
-Another propagation method: worms that stop for a while and then continue. Atak worm
+The start of such a propagation can be different. Either it is a targeted attack or a random attack. For example a usb stick or other shared resources can be used to start the spreading. It can be given to some special person or it can just be left behind in a parking lot. This can still be a targeted attack if it is the parking lot of a targeted company but there is more insecurity of where the usb stick will end. Another way is by sending an email. It can also start from one computer that is connected directly to the internet. Downloading malicious programs. 
+
+\subsection*{Models for worm propagation}
+To use the models for worm propagation in our model of the FlipIt game it is suffi"ent to know the propagation speed of the worm and define after how many time units the network is defected. This will be equal to the \textit{d} parameter in our model.  
 Stackelberg game: first move is from attacker, defender is follower. 
 
 Kind of network model: 
 Kind of model: SIS, SIR
+
+\subsubsection*{SIS}
+
+\subsubsection*{SIR}
+
+\subsubsection*{self disciplinary worms}
+Model for self disciplinary worms and counter measures ... []
 
 Popular mechanism that worms use to detect vulnerable targets by random ip scanning probing. Feasible due to use 32-bit addresses. 128-bit adresses life harder for worms, except the ones that use email systems to propagate. two new strategies: uniformly distributed random number generator to select new target. :spread locally, by biasing the search space towards addresses within the same subnet or network. 
 The second strategy is almost the same as what email virusses would get. For this reason we work an example out .. 
@@ -81,23 +40,6 @@ The second strategy is almost the same as what email virusses would get. For thi
 
 
 A method to calculate the propagation of the virus in an easy way. Google page ranking algorithm. 
-
-\section{REpresenting Virus Propagation in a network}
-\section{Related work}
-Verschillende soorten threats: known, unknown, targeted.
-APT is het soort threat waar er zeker naar gekeken moet worden. Ge weet niet wanneer ze toeslaan. Normaal gezien bestaat de security van een bedrijf in verschillende lagen. Malware detection, firewalls, application whitelisting, .. Maar APT glippen daar tussendoor. Het kost het bedrijf veel minder om zich ertegen te verdedigen dan alles op te lossen als een aPT heeft kunnen toeslaan. 
-Voorbeelden van APT's die uiteindelijk ontdekt zijn en welke schade ze hebben toegedaan. 
-
--- Related work --
-
-There are various different ways for a virus to propagate through a network.
-Virus, what is a virus ?
-
-The "I love you" virus is an example of a virus that spreads quickly. This virus propagates via mail systems. If someone opens an email with "I love you" virus in annex this virus spreads itself by sending a mail itself to everyone in your contact list. So the virus can multiply rapidly and eventually a business network shut down by the heavy traffic. In this example, there is a need human interaction to spread the virus to do. If no one opens the virus can not spread the mail.
-Unfortunately, there are viruses that can spread without human interaction. These viruses are referred to as worms. A worm is also a computer program that replicates itself to spread to other computers so. Via a computer network, copies of the worm forwarded without an intermediary is used for. The worm will use vulnerabilities to infect other computers.
-Most worms are designed to spread out and just try not to make any changes to the systems that they pass. These worms can still inflict damage by increased network traffic they generate. Worms that contain Harm damage a program to install a backdoor or a rootkit on the infected computers. Backdoors and rootkits ensure that future use can be made of the infected computers.
-The Stuxnetworm is a very famous worm. Initially this worm spread via infected USB sticks and from then it could spread through the Internet to other computers. The purpose of the Stuxnetworm was broken to run the centrifuges in nuclear reactors. Many reactors have been infected. From the standpoint of the defender, it is very important to respond as quickly as possible so that the worm can not spread quickly.
-\section{Representing Virus Propagation in a network}
 
 
 
