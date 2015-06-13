@@ -1,4 +1,4 @@
-\chapter{Intoduction to the general context of the work}
+\chapter{General context}
 \label{Chapter1:Intro.Game.Theory}
 %\documentclass[10pt]{article}
 %\begin{document}
@@ -9,7 +9,7 @@
 %%%%%												%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-This chapter provides the reader with an introduction to the general context of the work presented in this paper.  Section 2.1 introduces the reader into the basic concepts of cyber security and the kind of cyber security threats that are in the scope for this work. Section 2.2 then introduces the reader into the main principles of game theory. Subsequently, section 2.3 introduces the reader to the FlipIt game: the game that will be used to model cyber security attacks of a periodic nature, including a delay.  Finally, section 2.4 gives an overview of the related work, and how the research presented in this paper compares to existing results.
+This chapter provides the reader with an introduction to the general context of the work presented in this paper.  Section 2.1 introduces the reader into the basic concepts of cyber security and the kind of cyber security threats that are in scope for this work. Section 2.2 then introduces the reader into the main principles of game theory. Subsequently, section 2.3 introduces the reader to the FlipIt game: the game that will be used to model cyber security attacks of a periodic nature, including a delay.  Finally, section 2.4 gives an overview of the related work, and how the research presented in this paper compares to existing results.
 
 \section{What is security?}
 
@@ -30,8 +30,8 @@ Security is a general term that encompasses several dimensions. More specificall
  ~~\\
  These key attributes are also known as the CIA triad. They are the fundamental security objectives for securing data, information and computing services. \\
  \\
-Information security can be divided into two main areas of security. One of them is cyber security also known as computer security. This is the process of applying security tools to ensure confidentiality, integrity, and availability of data. It is an attempt to protect websites, servers, data, applications, operating systems and all assets that need protection in a computer system.  Some of these tools may include detection, identification or removal tools. A detection tool will determine if an infection has taken place and will trace the threat. An identification tool will try to identify the threat to be able to know how to remove it. The removal tool will remove the threat from the system (once it has been identified) so that it cannot spread any further. \\
-The other area is Network or Internet security. This area of security protect data during transmission. There is no clear distinction between these two areas of security. For example a worm can be physically dropped on a computer network using a usb stick, but it can also arrive over the internet. Either way the internal computer security measurements have to be taken to recover from the virus. This paper focusses on cyber security.
+Information security can be divided into two main sub categories. One of them is cyber security also known as computer security. This is the process of applying security tools to ensure confidentiality, integrity, and availability of data. It is an attempt to protect websites, servers, data, applications, operating systems and all assets that need protection in a computer system.  Some of these tools may include detection, identification or removal tools. A detection tool will determine if an infection has taken place and will trace the threat. An identification tool will try to identify the threat to be able to know how to remove it. The removal tool will remove the threat from the system (once it has been identified) so that it cannot spread any further. \\
+The other category is network or internet security. This sub category of information security protects data during transmission. While cyber security and network security address different aspects, they partially overlap as well. For example a worm can be physically dropped on a computer network using a USB stick, but it can also arrive over the internet. Either way the internal computer security measurements have to be taken to recover from the virus. In this paper we focus on scenarios where a network has to be defended against attacks to ensure confidentiality, integrity and availability of data. The work presented in this paper therefore belongs to the domain of cyber security.
 
 %hieronder is wel okee
 
@@ -44,7 +44,7 @@ The other area is Network or Internet security. This area of security protect da
 In order to keep a system secure and to be able to apply security tools, it is important to mitigate the possible threats. The possible threats can take many forms, the most common being: spam, malware, spoofing, phishing and  DDoS attacks.  In the context of cyber security, the terms `threat'  and `attack' are often used interchangeably, referring to more or less the same thing. The meaning of these two terms, however, differ slightly from one another. The former refers to anything that can breach security and cause possible harm. It is a possible danger that can exploit a vulnerability. The latter is an assault on computer security that originates from a threat. It is an intelligent act that deliberately tries to breach security through vulnerabilities.  \\
 
 The most noteworthy and biggest group of threats to computer systems is malware. 
-This is a piece of malicious software that is designed to penetrate unprotected systems or computers, with the intent to retrieve sensitive information, destroy data, or compromise the confidentiality, integrity or availability of the data or applications of the victim. A security report of 2014 \cite{SurveyKaspersky} reveals that 61\% of the attacks on companies are caused by malware. For this reason this section will examine the categories of malware threats. Different types of malware exist: viruses, worms, flooders, rootkits, bots, spyware, adware and many more. This broad range of different types can be classified into two main categories, the first one based on the propagation method that is used and the second one for the payload or the variety of actions that the malware performs \cite{stallings2007network}. Propagation methods include viruses, worms and trojans. Payload includes e.g. flooders, rootkits, bots, spyware and adware. This paper focuses on the category of propagation methods and not on the actions that the malware performs. A brief explanation of the three main propagation methods of malware is given below.  
+This is a piece of malicious software that is designed to penetrate unprotected or vulnerable systems or computers, with the intent to retrieve sensitive information, destroy data, or compromise the confidentiality, integrity or availability of the data or applications of the victim. A security report of 2014 \cite{SurveyKaspersky} reveals that 61\% of the attacks on companies are caused by malware. For this reason this section will examine the categories of malware threats. Different types of malware exist: viruses, worms, flooders, rootkits, bots, spyware, adware and many more. This broad range of different types can be classified into two main categories, the first one based on the propagation method that is used and the second one based on the payload or the variety of actions that the malware performs \cite{stallings2007network}. Propagation methods include viruses, worms and trojans. Payload includes e.g. flooders, rootkits, bots, spyware and adware. This paper focuses on the category of propagation methods and not on the actions that the malware performs. A brief explanation of the three main propagation methods of malware is given below.  
 
 %\begin{figure}[hbtp]
 %\caption{2014 survey results by Kaspersky}
@@ -83,11 +83,11 @@ Using this method, a virus can multiply rapidly, possibly even causing a busines
 \item \textit{Worm:} A worm is a virus that can spread without human interaction. It is a computer program that replicates itself in order to spread to other hosts on a network. Copies of the worm can be forwarded via a computer network without an intermediary. The worm will use vulnerabilities of the system to infect other computers.
 The Stuxnetworm is a very prominent example of a worm. Initially this worm was spread via infected USB sticks and from there on it could spread itself to other hosts on the network through the Internet, without any further human intervention. The purpose of the Stuxnetworm was to harm the centrifuges in nuclear reactors; many reactors have been infected.  
 
-\item \textit{Trojan:} This is a malicious program that disguises itself as something normal and useful, so that users won't be suspicious of installing it, but it has a malicious function hidden inside that can avoid security measures and cause harm.  A notable trojan horse is Koobface, that targeted users of facebook, skype, yahoo, gmail and AOL mail. To spread itself the worm sent a mail or friend request with a message that directed the recipients to a third party website. This site would then convince the recipient into downloading an update of Adobe Flash Player. Once downloaded and executed, Koobface could infect the host.
+\item \textit{Trojan:} This is a malicious program that disguises itself as something normal and useful, so that users won't be suspicious of installing it, but it has a malicious function hidden inside that can circumvent security measures and cause harm.  A notable trojan horse is Koobface, that targeted users of Facebook, Skype, Yahoo, Gmail and AOL mail. To spread itself the worm sent a mail or friend request with a message that directed the recipients to a third party website. This site would then convince the recipient into downloading an update of Adobe Flash Player. Once downloaded and executed, Koobface could infect the host.
 
 \end{description}
 ~~\\
-The threats caused by the malware described above can be divided into three main categories: known threats (70\%), unknown threats (29\%) and advanced threats (1\%) as proposed by Kasperksy \cite{APTKaspersky}. 
+As proposed by Kasperksy \cite{APTKaspersky} ,threats caused by the malware described above can be divided into three main categories: known threats (70\%), unknown threats (29\%) and advanced threats (1\%). 
 
 The known threats are the easiest to defend oneself against. Standard malware protection tools like firewalls and virus scanners can keep these kind of malware out of the system. Installing protection against unkown threats is also relatively easy, but this requires tools that go beyond the standard methods, e.g. dynamic whitelisting. The remaining 1\% are the advanced threats, also known as APT. They are the most difficult to deal with.
 
@@ -128,7 +128,7 @@ Gametheory is a mathematical study to analyse interactions between independent a
 %------------------------------------------------%
 %            Intro Game Theory 					 %
 %------------------------------------------------%
-Game theory studies the interaction between independent and self-interested agents. It is a mathematical way of modelling the interactions between two or more agents where the outcomes depend on what everybody does and how it should be structured to lead to good outcomes. It has therefore important applications in many area's such as economics, politics, biology, computer science, philosophy and a variety of other disciplines. It has come only in ascent during the Second World War with Oskar Morgenstern and John von Neumann both publishing a book on game theory, entitled "Theory of Games and Economic Behavior" (Game theory and economic behavior) in 1944. This book was about the mathematical analysis of a series of thinking games. It was a distinction made between games in which the strategies and the utility factor of the opponent has no effect on finding the best strategies such as chess and games in which it has an influence like poker. John Nash also played a major role in the history of game theory. He was one of the mathematicians who has formalized game theory. The Nash equilibrium was named after him.
+Game theory is a mathematical way of modelling the interactions between two or more agents where the outcomes depend on what everybody does and how it should be structured to lead to good outcomes. Game theory has therefore important applications in many area's such as economics, politics, biology, computer science, philosophy and a variety of other disciplines. It has come only in ascent during the Second World War with Oskar Morgenstern and John von Neumann both publishing a book on game theory, entitled "Theory of Games and Economic Behavior" (Game theory and economic behaviour) in 1944. This book was about the mathematical analysis of a series of thinking games. The book described a series of games making a distinction between games in which the strategies and the utility factor of the opponent have no effect on finding the best strategies such (e.g. chess) and games in which this has an influence (e.g. poker). John Nash also played a major role in the history of game theory. He was one of the mathematicians who has formalized game theory. The Nash equilibrium was named after him.
 ~~\\
 %Every agent has different levels of happiness for the different outcomes.
 %self interested meaning
@@ -137,7 +137,7 @@ One of the assumptions underlying game theory is that the players of the game, t
 %utility function meaning 
 Instead it means that each agent has preferences about the states of the world he likes. These preferences are mapped to natural numbers and are called the utility function. The numbers are interpreted as a mathematical measure that tells how much an agent likes or dislikes the states of the world. \\
 %Cooperative and non cooperative games
-In a Decision Game Theoretic Approach an agent will try to act in such a way to maximise his expected or average utility function. It becomes more complicated when two or more agents want to maximise their utility and when actions of the agents can affect each other's utilities. This kind of games are referred to as non-cooperative game theory, where the basic modelling unit is the group of agents. The individualistic approach, where the basic modelling is only one agent, is referred as cooperative game theory. 
+In a Decision Game Theoretic Approach an agent will try to act in such a way to maximise his expected or average utility function. It becomes more complicated when two or more agents want to maximise their utility and when actions of the agents can affect each other's utilities. This kind of games are referred to as non-cooperative game theory, where the basic modelling unit is the group of agents. The individualistic approach, where the basic modelling is only one agent, is referred to as cooperative game theory. 
 
 %There are two standard representations for games. The first one is the Normal Form. The second one is the Extensive Form.
  
@@ -147,19 +147,19 @@ In a Decision Game Theoretic Approach an agent will try to act in such a way to 
 %John Nash speelde ook een grote rol in de geschiedenis van de speltheorie. Hij is een van de wiskundigen geweest die speltheorie geformaliseerd heeft. Het Nash evenwicht werd naar hem vernoemd. Een Nash evenwicht wordt gezien als een evenwicht tussen beide spelers zodat ze allebei de beste tactiek kiezen en niet meer veranderen als de andere van tactiek veranderen. John Nash breide de theorie over het Nash evenwicht in een paper nog uit met gemengde strategieën. In 1994 kreeg John Nash samen met twee andere wiskundigen gespecialiseerd op het vlak van speltheorie de Nobelprijs voor de economie op basis van hun prestaties in de niet-coöperatieve speltheorie. . Over John Nash is een prachtige film 
 \subsubsection{Best response and Nash Equilibrium}
 One of the solution concepts in Game Theory for non-cooperative games is a Nash Equilibrium that will be used in this paper. A Nash Equilibrium is a subset of outcomes that can be interesting to analyse a game. To define this concept we first introduce the concept of best response. The best response for a player is the action of a player that maximizes it's pay-off for any given action of the other player. We define $Opt_{i}$ as the best response function for player \textit{i}. The best response for player \textit{1} is given by : $a_{1} = Opt_{1}(a_{2})$. A 
-For a Nash Equilibrium each player has a consist list of actions and each player's action maximizes his or her pay-off given the actions of the other players. Nobody has the incentive to change his or her action if an equilibrium profile is played. We have a Nash Equilibrium for the pair $(a_{1}^{*},a_{2}^{*})$ where $a_{1}^{*} = Opt_{1}(a_{2}^{*})$ and $a_{2}^{*} = Opt_{2}(a_{1}^{*})$\\
+For a Nash Equilibrium each player has a consist list of actions and each player's action maximizes his or her pay-off given the actions of the other players. Nobody has the incentive to change his or her action if an equilibrium profile is played. We have a Nash Equilibrium for the pair $(a_{1}^{*},a_{2}^{*})$ when $a_{1}^{*} = Opt_{1}(a_{2}^{*})$ and $a_{2}^{*} = Opt_{2}(a_{1}^{*})$\\
 
 
-An example to explain a Nash equilibrium of a two-player game, for example, is the prison dilemma. In this game there are two players who are both rational and both of them have committed a crime. `Rational' means that they want the best for themselves and it is not their purpose to do harm to others. Both are locked in a separate room and they cannot tell in advance to each other what they are going to say. Each of them can betray the other or they can support each other and remain silent. If a player confesses, he will, depending on what the other does, go for three years in prison or he is free to go. If the player is silent, he will, depending on what the other player does, go for five years in jail or only one year. \\
+An example to explain a Nash equilibrium of a two-player game is the prison dilemma. In this game there are two players who are both rational and both of them have committed a crime. `Rational' means that they want the best for themselves and it is not their purpose to do harm to others. Both are locked in a separate room and they cannot tell in advance to each other what they are going to say. Each of them can betray the other or they can support each other and remain silent. If a player confesses, he will, depending on what the other does, go for three years in prison or he is free to go. If the player is silent, he will, depending on what the other player does, go for five years in jail or only one year. \\
 
 %Because betraying a partner offers a greater reward than cooperating with him, all purely rational self-interested prisoners would betray the other, and so the only possible outcome for two purely rational prisoners is for them to betray each other.[1] The interesting part of this result is that pursuing individual reward logically leads both of the prisoners to betray, when they would get a better reward if they both cooperated. 
 
-Figure \ref{Prison} shows the rewards of the possible actions of the two players. Because betraying the other player gives a greater reward than remaining silent, all prisoners will betray each other which leads to the outcome that both of them will betray each other. This is because this is the dominant strategy. A dominant strategy is a strategy that is better than all other strategies of a player regardless of the opponent. Here it is advantageous for each player to confess. This gives them three years in prison instead of five year or they will be free instead of being in prison for one year. The Nash equilibrium of the game is that they both confess even though that it would be better if they both cooperated and chose to stay silent.  
+Figure \ref{Prison} shows the rewards of the possible actions of the two players. The figure shows that it is advantageous for each player to confess. If prisoner 1 talks and the other prisoner remains silent, prisoner 1 will be free. If prisoner 1 remains silent and the other prisoner talks, prisoner 1 gets 5 years in prison. If the prisoners cooperate and talk, both of them get three years in prison. If they both remain silent they will both get one year in prison. So this means that talking is the dominant strategy. A dominant strategy is a strategy that is better than all other strategies regardless of what the opponent does. The Nash equilibrium of the game is that they both confess even though it would be better if both prisoners cooperated and chose to stay silent. 
 
 \begin{figure}[hbtp]
-\caption{Prisoners dilemma: An example from the field of Game Theory. It is a game between two perfectly rational prisoners who don not know what the other one will do. Each can confess or stay silent. The outcomes can be seen in the picture. Prisoner 1 corresponds to each first column, Prisoner 2 corresponds to each second column. }
 \centering
 \includegraphics[scale=0.6]{Images/PrisDilemma}
+\caption{Prisoners dilemma: An example from the field of Game Theory. It is a game between two perfectly rational prisoners who don not know what the other one will do. Each can confess or stay silent. The outcomes are shown below each prisoner. }
 \label{Prison}
 \end{figure}
 
@@ -173,34 +173,34 @@ Figure \ref{Prison} shows the rewards of the possible actions of the two players
 
 %Het Nash-evenwichtsconcept is een begrip dat vooral toepassing vindt in de economie.
 
-\subsubsection{List of terms}
-In the following list a couple of terms that will be used throughout the paper.
-\begin{description}
-\item \textit{Players}: Players are referred as the ones who are the decision makers. It can be a person, a company or an animal.  (they will act rational )
-\item \textit{Actions}: Every player has actions that he or she can do. 
-\item \textit{Strategies}: A strategy is the combination of different actions. A pure strategy is only one action.
-\item \textit{Utility}: The utility function or also known as the pay-of is the mapping of the level of happiness of an agent about the state of the world to natural numbers.
-
-\end{description}
-
-A game in game theory consists of multiple agents and every agent has a set of actions that he can play.
+%\subsubsection{List of terms}
+%The following is a list with the main terms of game theory that will be used throughout the paper.
+%\begin{description}
+%\item \textit{Players}: Players are referred as the ones who are the decision makers. It can be a person, a company or an animal.  (they are assumed to act rational )
+%\item \textit{Actions}: Every player has actions that he or she can do. 
+%\item \textit{Strategies}: A strategy is the combination of different actions. A pure strategy consists of only one action.
+%\item \textit{Utility}: The utility function or also known as the pay-off is the mapping of the level of happiness of an agent about the state of the world to natural numbers.
+%
+%\end{description}
+%
+%A game in game theory consists of multiple agents and every agent has a set of actions that he can play.
 \section{The FlipIt game}
 \label{cha1:FlipItGame}
 FlipIt is a game introduced by van Dijk et al. To understand how to model a FlipIt game with virus propagation it is important to get familiar with the concepts of the normal FlipIt game and its notations.  Therefore, we first explain the framework of FlipIt and introduce the most important formulas that will be used throughout the paper. \\
 
-FlipIt is a two-players game with a shared single resource that the players want to control as long as possible. The shared resource can be a password, a network or a secret key depending on the setting being modelled. In the remainder of the paper we name the two players the attacker, denoted by the subscript \textit{A} and the defender, denoted by subscript \textit{D}. 
+FlipIt is a two-players game with a shared single resource that the players want to control as much as possible, see \ref{fig:FLipItDefault}. The shared resource can be a password, a network or a secret key depending on the setting being modelled. In the remainder of the paper we name the two players the attacker, denoted by the subscript \textit{A} and the defender, denoted by subscript \textit{D}. 
 
-The game begins at $t=0$ and continues indefinitely ($t \rightarrow \infty $). The time in the game is assumed as being continuous. To get control over the resource, the players $i$, with $i \in \{A,D\}$, can flip the resource at any given time. 
+The game begins at $t=0$ and continues indefinitely ($t \rightarrow \infty $). The time in the game is assumed to be continuous. To get control over the resource, the players $i$, with $i \in \{A,D\}$, can flip the resource at any given time. 
 %A flip will be regarded as a move from a player \textit{i}. 
 Each move implies a certain cost $k_{i}$ and can vary for each player. Both players try to minimize their cost. Adding a cost prevents players to move too frequently. \\
 
-The unique feature of FlipIt is that every move happens in a stealthy way, meaning that the player has no clue that the other player (his adversary) has flipped the resource. For instance, the defender does not find out if the resource has been compromised by the attacker until he flips the resource himself. The goal of the player is to maximize the time that he or she has control over the resource while minimizing the total cost of the moves. A move can also result in a "wasted move", called a flop. It may happen that the resource was already under control by the player. If the player moves when he or she has already control over the resource, he or she would have wasted a move since it does not result in a change of ownership, so the cost is wasted. \\
+The unique feature of FlipIt is that every move happens in a stealthy way, meaning that the player has no clue whether the other player (his adversary) has flipped the resource or not. For instance, the defender does not know if the resource has been compromised by the attacker until he flips the resource himself. The goal of the player is to maximize the time that he or she has control over the resource while minimizing the total cost of the moves. A move can also result in a "wasted move", called a flop. It may happen that the resource was already under control by the player. If the player moves when he or she has already control over the resource, he or she would have wasted a move since this does not result in a change of ownership, so the cost is wasted. \\
 
 
 \begin{figure}[hbtp]
 \centering
-\includegraphics[scale=0.7]{../../doc/template/Images/FLipi.png}
-\caption{A representation of a FlipIt game where both players are playing periodically. Every move or flip is indicated by a blue or orange circle. The attacker is represented in orange and plays with a period of $\delta_{A}=4$. The defender is represented in blue and plays with a period of $\delta_{D}=3$. The blue and orange rectangles represent the amount of time the respective player is in control of the resource.}
+\includegraphics[scale=0.7]{../../doc/template/Images/DefFlipItt.png}
+\caption{A representation of a FlipIt game where both players are playing periodically. Every move or flip is indicated by a blue or orange circle. The attacker is represented in orange and the defender is represented in blue. The blue and orange rectangles represent the amount of time the respective player is in control of the resource.}
 \label{fig:FLipItDefault}
 \end{figure}
 
@@ -228,11 +228,12 @@ And thus for all $t > 0$ :
 \begin{equation}\label{first}
 \gamma_{D}(t) + \gamma_{A}(t) = 1
 \end{equation}
+~$ \alpha_{i}$ defines the average move rate by player \textit{i} up to time \textit{t}.
 Let $\beta_{i}(t)$ denote player's \textit{i} average benefit upto time \textit{t}:
 \begin{equation}\label{first}
 \beta_{i}(t) = \gamma_{i}(t) - k_{i}\alpha_{i}.
 \end{equation}
-This is equal to the fraction of time the resource has been owned by player \textit{i}, minus the cost of making the moves. ~$ \alpha_{i}$ defines the average move rate by player \textit{i} up to time \textit{t}.
+This is equal to the fraction of time the resource has been owned by player \textit{i}, minus the cost of making the moves.
 In a given game, the asymptotic benefit rate (or simply benefit) will be defined as the lim inf of the average benefit because time\textit{ t} will increase to infinity and the average benefit may not have limiting values.
 \begin{equation}
 \beta_{i}(t)  = \lim_{t \to \infty} inf \beta_{i}(t) 
@@ -240,11 +241,13 @@ In a given game, the asymptotic benefit rate (or simply benefit) will be defined
 \\
 
 
-\subsubsection{strategies}
-Because the players move in a stealthy way, there are different types of feedback that a player can get while moving. These types of feedback can be divided into two groups of strategies. The non-adaptive strategies and the adaptive strategies. These are described in table \ref{table:Strategies}. \\
+\subsubsection{Strategies}
+Because the players move in a stealthy way, there are different types of feedback that a player can get while moving. These types of feedback can be divided into two groups of strategies. The non-adaptive strategies and the adaptive strategies. These are described in table \ref{table:Strategies}.\\
 
 If there is no feedback for either player, we have a non-adaptive strategy. Because a player does not receive any feedback during the game he will play in the same manner against every opponent. The strategy is called non-adaptive because the playing strategy is not dependent on the opponents movements. An interesting subclass of the non-adaptive strategies is the one where the time intervals between two consecutive moves are generated by a renewal process. An example of such renewal strategy is the periodic strategy where the time between two consecutive moves of the players are a fixed interval. An exponential strategy is a renewal strategy in which the interval between two consecutive moves is exponentially distributed. \\
+
 In case there is feedback, a player can adapt his strategy to the information received about the opponent's moves. Depending on the amount of information received, two subclasses of adaptive strategies can be identified. The Last Move (LM) strategies represent the class where whenever a player flips he will find out the exact time that the opponent played the last time. In the second class, called Full History (FH), whenever a player flips he will find out the whole history of the opponent's move. \\
+
 In this paper we restrict ourselves to periodic strategies. This choice is motivated by the fact that in a security game a player (defender or attacker) rarely has information about the moves (last move or full history) of his opponent.  \\
 
 
@@ -283,13 +286,13 @@ Another addition of Laszka et al. to the game of FlipIt \cite{MitigationCovert}
 is extending the game to also consider non-targeted attacks by non-strategic players. In this game the defender tries to maintain control over the resource that is subjected to both targeted and non-targeted attacks. Non-targeted attacks can include phishing, while targeted attacks may include threats delivered through zero day attack vulnerabilities. \\
 One of the last important additions from Laszka et al. \cite{MitigationNonTargeted} is to consider a game with targeted and non-targeted attacks where the moves made by the attacker do not succeed immediately. This is similar to this paper but it has still some major differences. First the moves by the attacker are still covert but the moves made by the defender are known to the attacker. This means that the attacker knows when the defender plays and can change its strategy depending on the moves of the defender. Our motivation for a defender with stealthy moves is that not every APT is given feedback to one place. Some ATP's are designed only to cause harm on the systems that are infected e.g. the Stuxnetworm that was developed to destroy nuclear reactors. The only way that the attacker got feedback was through the news. There purpose is to spread and cause harm. Another example are APT's that get onto isolated networks through usb stick or cd's. There is no way for the worm to communicate back on an isolated network. The second difference is that even though both the targeted and non-targeted attacks do not succeed immediately, the delay is determined differently. For the targeted attack the time till it succeeds is given by an exponential distributed random variable with a known rate. The non-targeted attacks are modelled as a single attacker and the time till it succeeds is given by a Poisson process. In our paper the delay is given by one parameter, that can be the result of any virus propagation model. The third and last difference is that the paper of Laska has multiple attackers and they try to find the best strategy of the defender against both targeted and non-targeted attacks. The conclusion of this paper is that the optimal strategy for the defender is moving periodically. \\ 
 
-FlipIt has also been applied to several cases in system security. Reseachers explored different applications of FlipIt for real-world problems, like password reset policies, VM refresh, cloud auditing and key rotation \cite{ApplyingFlipit}. \\
-Other authors used the FlipIt game to apply it on a specific scenario. To be able to use the FlipIt game, modifications where required for the FlipIt model.
-One of the scenarios by Pham \cite{compromised} was to find out whether a resource was compromised or not by the attacker. This could be verified by the defender, who has an extra move "test" beside the flip move. The basic idea is to test with an extra action if the resource has been compromised or not. This move involves also an extra cost.\\
+FlipIt also has been applied to several cases in computer security. Reseachers explored different applications of FlipIt for real-world problems, like password reset policies, VM refresh, cloud auditing and key rotation \cite{ApplyingFlipit}. \\
+Other authors used the FlipIt game to apply it to a specific scenario. To be able to use the FlipIt game, modifications where required for the FlipIt model.
+One of the scenarios by Pham \cite{compromised} was to find out whether a resource was compromised or not by the attacker. This could be verified by the defender, who has an extra move "test" beside the flip move. The basic idea is to test with an extra action if the resource has been compromised or not. This move also involves an extra cost.\\
 A three-player game has also been investigated where the FlipIt framework of two players is extended by another player. This player represents an insider that trades value information with the attacker \cite{fengstealthy}.\\
 
 
-Finally researchers also have investigated the behaviour of humans playing FlipIt. A. Nochenson and Grossklags \cite{nochenson2013behavioral}  investigate how people really act when given temporal decisions. They found out that the results improves over time but that they are dependent on gender, age, and other individual difference variables. The result also shows that the participants perform generally better when they have more information about the strategy of the opponent which is a computerized player. Reitter et al. \cite{reitter2013risk} extended the work of A. Nochenson and Grossklags to include various visual presentation modalities for the available feedback during the investigation.\\
+Finally researchers also have investigated the behaviour of humans playing FlipIt. A. Nochenson and Grossklags \cite{nochenson2013behavioral}  investigate how people really act when given temporal decisions. They found out that the results improve over time but that they are dependent on gender, age, and other individual difference variables. The result also shows that the participants perform generally better when they have more information about the strategy of the opponent which is a computerized player. Reitter et al. \cite{reitter2013risk} extended the work of A. Nochenson and Grossklags to include various visual presentation modalities for the available feedback during the investigation.\\
 
 
 
