@@ -1,8 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{BelgacomGehackt}
-Standaard: Snowden bevestigt dat belgacom gehackt werd, 17/05/15.
-
 \bibitem{ApplyingFlipit}
 K.~Bowers, M.~van Dijk, R.~Griffin, A.~Juels, A.~Oprea, R.~Rivest, and
   N.~Triandopoulos.
@@ -74,6 +71,11 @@ D.~Reitter, J.~Grossklags, and A.~Nochenson.
 \newblock Risk-seeking in a continuous game of timing.
 \newblock In {\em Proceedings of the 13th International Conference on Cognitive
   Modeling (ICCM)}, pages 397--403, 2013.
+
+\bibitem{stallings2007network}
+W.~Stallings.
+\newblock {\em Network security essentials: applications and standards}.
+\newblock Pearson Education India, 2007.
 
 \bibitem{FlipIt}
 M.~van Dijk, A.~Juels, A.~Oprea, and R.~Rivest.

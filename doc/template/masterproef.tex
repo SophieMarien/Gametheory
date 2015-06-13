@@ -119,6 +119,7 @@ delay for virus propagation into account, which in our case will be a delay for 
 \begin{document}
 
 \begin{preface}
+%Thank you !
  Many people have helped in the realization of this thesis. 
   I would like to thank everybody who kept me busy the last year and made it possible for me to finish my thesis.\\
   
@@ -154,7 +155,7 @@ account that a move may not be instantaneous, but has a certain
 delay.  We adapt FlipIt such that we can use it to
 model the game of defending a company network that is attacked
 by a virus. The FlipIt formulas are adapted such as to take the
-delay for virus propagation into account, which in our case will be a delay for the attacker. In this paper, we restrict ourselves to games where both the defender and the attacker play with a periodic strategy. The goal of this thesis is to find out if their are interesting Nash Equilibria for a game with a virus propagation delay and if we can learn some lessons out of it. 
+delay for virus propagation into account, which in our case will be a delay for the attacker. In this paper, we restrict ourselves to games where both the defender and the attacker play with a periodic strategy. The goal of this thesis is to find out if their are interesting lessons that can be deduces for security measures against APT's. 
 \todo{Results toevoegen} \\
 
 \textbf{Keywords}: Game theory, Advanced persistent threats, cyber security, FlipIt, stealthy takeovers, propagation methods.
@@ -162,6 +163,7 @@ delay for virus propagation into account, which in our case will be a delay for 
 \end{abstract}
 
 \begin{abstract*}
+---TODO dit stuk moet nog geschreven worden ---
 Onlangs zijn er gerichte security aanvallen geweest op grote bedrijven, zoals de aanval op Belgacom (een grote Belgische telcom). Deze aanvallen hebben aangetoond dat zelfs de meest veilige
 bedrijven nog steeds gecompromitteerd kunnen worden, en dat bovendien dergelijke aanvallen onopgemerkt kunnen blijven voor een bepaalde tijd.
 Flipit is een model dat door onderzoekers van de RSA (van Dijk et al.) is voorgesteld om dergelijke aanvallen te modelleren. Het is een 2-spelers spel bestaande uit een aanvaller, een verdediger en een gedeelde bron.  De spelers proberen om controle te krijgen over de gedeelde bron en ze
@@ -288,11 +290,11 @@ Niet zo lang geleden werden APT's ontdekt. (Introzin moet beter en anders). Bedr
 \begin{flushleft}
   \renewcommand{\arraystretch}{1.1}
   \begin{tabularx}{\textwidth}{@{}p{12mm}X@{}}
- $i$ & Defines the player. Different as in the FlipIt paper where the defender is denoted by the subscript 0 and the attacker by the subscript 1. \\
+ $i$ & $i \in \{D,A\}$, defines the player. `D' is the defender and `A' is the attacker. \\
  $\delta_{i}$ & The length of the interval between two consecutive moves of player \textit{i}. \\
  $\alpha_{i}$ & The average flip rate of player \textit{i}, given by $\alpha_{i}=1/\delta_{i}$. \\
 $k_{i}$ & The cost of player \textit{i}'s moves. \\
-$d$ & The delay caused by the virus propagation. \\
+$d$ & The delay caused by the propagation of a threat. \\
  $G_{i}(t)$ & The total gain of player \textit{i} denotes the amount of time player \textit{i} is in control over the resource up to time \textit{t}. \\
 $\gamma_{i}$ & The average gain rate of player \textit{i} defined as $G_{i}(t)/t$. \\
 $\beta_{i}$ &  The average benefit rate up to time \textit{t} defined as  $\beta_{i} = \gamma_{i} -k_{i} \alpha_{i} $. \\
