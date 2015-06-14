@@ -35,16 +35,16 @@ Nash equilibria are points with the property that neither player benefits by dev
 \subsection*{Case 1: $\delta_{D} \leq \delta_{A} $}
 The benefit formula obtained previously for this case is as follows:
 \begin{equation*}
-\beta_{D}(\alpha_{D},\alpha_{A}) = 1 - \dfrac{\delta_{D}}{2\delta_{A}} - \dfrac{k_{D}}{\delta_{D}} - \dfrac{d^{2}}{2\delta_{D}\delta_{A}} + \dfrac{d}{\delta_{A}}
+\beta_{D}(\delta_{D},\delta_{A}) = 1 - \dfrac{\delta_{D}}{2\delta_{A}} - \dfrac{k_{D}}{\delta_{D}} - \dfrac{d^{2}}{2\delta_{D}\delta_{A}} + \dfrac{d}{\delta_{A}}
 \end{equation*}
 If we take the partial derivative for a fixed $\delta_{1}$ we get the following result:
 \begin{equation*}\label{formdelta}
-\frac{\partial \beta_{D}(\alpha_{D},\alpha_{A})}{\partial \alpha_{D}} = - \dfrac{1}{2\delta_{A}} + \dfrac{k_{D}}{\delta_{D}^{2}} + \dfrac{d^{2}}{2\delta_{D}^{2}\delta_{A}}
+\frac{\partial \beta_{D}(\delta_{D},\delta_{A})}{\partial \delta_{D}} = - \dfrac{1}{2\delta_{A}} + \dfrac{k_{D}}{\delta_{D}^{2}} + \dfrac{d^{2}}{2\delta_{D}^{2}\delta_{A}}
 \end{equation*}
 
 The stationary points (maximum, minimum) can be found by setting the first derivative equal to zero and finding the roots of the resulting equation:
 \begin{equation*}
-\frac{\partial \beta_{D}(\alpha_{D},\alpha_{A})}{\partial \alpha_{D}} =0 ~~~~~~ =>~~~~~~ \delta_{D} = \sqrt{2\delta_{A}k_{D} + d^{2}}
+\frac{\partial \beta_{D}(\delta_{D},\delta_{A})}{\partial \alpha_{D}} =0 ~~~~~~ =>~~~~~~ \delta_{D} = \sqrt{2\delta_{A}k_{D} + d^{2}}
 \end{equation*}
 
 This leads to the following deduction: The function increases on $[0, \sqrt{2\delta_{A}k_{D} + d^{2}}]$ and is decreasing on $[\sqrt{2\delta_{A}k_{D} + d^{2}}, \infty]$ So we got a maximum on $\delta_{D} = min \{ \delta_{A}, \sqrt{2\delta_{A}k_{D} + d^{2}} \} $. The minimum of the two values is needed because $\delta_{D}$ cannot be bigger than $\delta_{A}$. \\
@@ -55,16 +55,16 @@ This leads to the following deduction: The function increases on $[0, \sqrt{2\de
 
 The benefit formula obtained previously for this case is as follows:
 \begin{equation*}
-\dfrac{t \beta_{D}(\alpha_{D},\alpha_{A})}{\partial \alpha_{D}} = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - \dfrac{k_{D}}{\delta_{D}}
+\beta_{D}(\delta_{D},\delta_{A})= \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - \dfrac{k_{D}}{\delta_{D}}
 \end{equation*}
 
 The derivative of the above formula for a fixed $\delta_{A}$ results in the following:
 \begin{equation*}
-\frac{\partial \beta_{D}(\alpha_{D},\alpha_{A})}{\partial \alpha_{D}} = -\dfrac{\delta_{A}}{2\delta_{D}^{2}} - \dfrac{d}{\delta_{D}^{2}} + \dfrac{k_{D}}{\delta_{D}^{2}}
+\frac{\partial \beta_{D}(\delta_{D},\delta_{A})}{\partial \delta_{D}} = -\dfrac{\delta_{A}}{2\delta_{D}^{2}} - \dfrac{d}{\delta_{D}^{2}} + \dfrac{k_{D}}{\delta_{D}^{2}}
 \end{equation*}
 The obtain the stationary points the first derivative is set equal to zero and the roots of the resulting equation are found:
 \begin{equation*}
-\frac{\partial \beta_{D}(\alpha_{D},\alpha_{A})}{\partial \alpha_{D}} =0 ~~~~~~ =>~~~~~~ \delta_{A} = 2(k_{D}-d) = dk_{D} - 2d
+\frac{\partial \beta_{D}(\delta_{D},\delta_{A})}{\partial \delta_{D}} =0 ~~~~~~ =>~~~~~~ \delta_{A} = 2(k_{D}-d) = dk_{D} - 2d
 \end{equation*}
 
 This leads to the following deduction:
@@ -98,7 +98,7 @@ The derivative of the above formula for a fixed $\delta_{A}$ results in the foll
 The stationary points (maximum, minimum) can be found by setting the first derivative equal to zero and finding the roots of the resulting equation:
 
 \begin{equation*}
-\frac{\partial \beta_{D}(\alpha_{D},\alpha_{A})}{\partial \alpha_{D}} =0 ~~~~~~ =>~~~~~~ \delta_{D} = \sqrt{2\delta_{A}k_{D} + d^{2}}
+\frac{\partial \beta_{D}(\delta_{D},\delta_{A})}{\partial \delta_{D}} =0 ~~~~~~ =>~~~~~~ \delta_{D} = \sqrt{2\delta_{A}k_{D} + d^{2}}
 \end{equation*}
 
 
@@ -175,7 +175,7 @@ The derivative for a fixed $\delta_{D}$ is as follows:
 \end{equation*}
 The stationary points (maximum, minimum) can be found by setting the first derivative equal to zero and finding the roots of the resulting equation:
 \begin{equation*}
-\frac{\partial \beta_{A}(\alpha_{D},\alpha_{A})}{\partial \alpha_{D}} =0 ~~~~~~ =>~~~~~~ 2k_{A} = \dfrac{(\delta_{D}-d)^{2}}{\delta_{D}}
+\frac{\partial \beta_{A}(\delta_{D},\delta_{A})}{\partial \delta_{D}} =0 ~~~~~~ =>~~~~~~ 2k_{A} = \dfrac{(\delta_{D}-d)^{2}}{\delta_{D}}
 \end{equation*}
 
 It follows that $\beta_{A}(\delta_{D},\cdot)$ is increasing if $2k_{A} < (\delta_{D} - d)^{2} / \delta_{D}$ and decreasing if $2k_{A} > (\delta_{D} - d)^{2} / \delta_{D}$. \\
@@ -191,7 +191,7 @@ The derivative for a fixed $\delta_{D}$ is as follows:
 \end{equation*}
 The stationary points (maximum, minimum) can be found by setting the first derivative equal to zero and finding the roots of the resulting equation:
 \begin{equation*}
-\frac{\partial \beta_{A}(\alpha_{D},\alpha_{A})}{\partial \alpha_{D}} =0 ~~~~~~ =>~~~~~~ \delta_{A} = \sqrt{2\delta_{D}k_{A}}
+\frac{\partial \beta_{A}(\delta_{D},\delta_{A})}{\partial \delta_{D}} =0 ~~~~~~ =>~~~~~~ \delta_{A} = \sqrt{2\delta_{D}k_{A}}
 \end{equation*}
 it follows that $\beta_{A}(\delta_{D},\cdot)$ is increasing on $[0,\sqrt{2k_{A}\delta_{D}}]$ and decreasing on $[\sqrt{2k_{A}\delta_{D}}, \infty]$ and thus has a maximum on $\delta_{A} = maximum \{\delta_{D}, \sqrt{2k_{A}\delta_{D}} \} $. The maximum between $\delta_{D}$ and $ \sqrt{2k_{A}\delta_{D}}$ is needed because $\delta_{A} $ cannot exceed $\delta_{D}$ in this case. \\
 
@@ -207,7 +207,7 @@ The derivative for a fixed $\delta_{D}$ is as follows:
 \end{equation*}
 The stationary points (maximum, minimum) can be found by setting the first derivative equal to zero and finding the roots of the resulting equation:
 \begin{equation*}
-\frac{\partial \beta_{A}(\alpha_{D},\alpha_{A})}{\partial \alpha_{D}} =0 ~~~~~~ =>~~~~~~ 2k_{A} = \dfrac{(\delta_{D}-d)^{2}}{\delta_{D}}
+\frac{\partial \beta_{A}(\alpha_{D},\alpha_{A})}{\partial \delta_{D}} =0 ~~~~~~ =>~~~~~~ 2k_{A} = \dfrac{(\delta_{D}-d)^{2}}{\delta_{D}}
 \end{equation*}
 
 it follows that $\beta_{A}(\delta_{D},\cdot)$ is increasing if $2k_{A} < (\delta_{D} - d)^{2} / \delta_{D}$ and decreasing if $2k_{A} > (\delta_{D} - d)^{2} / \delta_{D}$. This is the same result as in case 1.\\
