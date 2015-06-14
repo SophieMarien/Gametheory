@@ -11,9 +11,7 @@
 
 \section{Introduction}
 \label{Ch2:Intro}
-The game of FlipIt with propagation delay considers attackers where their moves are not instantaneous. This can be motivated by an example of a virus. A virus can be dropped on a network but it only compromises the whole network if every node in the network is infected. The basic FlipIt game does not take this into account. In this chapter the FlipIt game with propagation delay is explained and how it can be modelled. First the main differences with the basic FlipIt game are discussed in section \ref{ch2:diffFlip}. Next in section \ref{ch2:formal} the formal definition of the game with propagation delay is given. At last, in section \ref{ch2:periodicvirus} a periodic strategy game is considered and the formalization of the formulas with propagation delay are determined. The use of the word virus or worm will be used interchangeably in this paper. \todo{EEN van de twee intros nemen, virus term gebruiken ?}\\
-
-This chapter explains how to model a FlipIt game with a propagation delay that infects a network. The first section explains the difference between a normal FlipIt game and a FlipIt game with propagation delay. The next section derives a formula to calculate the benefit for a FlipIt game with a  propagation delay. In the last section we calculate the Nash equilibrium for the benefit formula.
+The game of FlipIt with propagation delay considers a game where the moves of the attacker are not instantaneous. This corresponds to the case of APT's where attacks are performed by means of malware, such as viruses, worms and trojan horses and the malware needs time to propagate. A virus, for example, can be dropped on a network but it only compromises the whole network if every node in the network is infected. So there is a certain delay between the moment of attack and the moment the attacker has control over the resource, called the propagation delay. The basic FlipIt game does not take this propagation delay into account. In this chapter explains how the FlipIt game with propagation delay can be modelled. Section \ref{ch2:diffFlip} explains the difference between a basic FlipIt game and a FlipIt game with propagation delay. Next section \ref{ch2:periodicvirus} derives a formula to calculate the benefit for a FlipIt game with propagation delay. Section \todo{nash} presents the Nash equilibrium for the benefit formula. The chapter concludes in section \todo{section toevoegen} with lessons learned en practical implications for cyber security.
 %
 %\section{FlipIt game with virus propagation}
 %
@@ -23,15 +21,17 @@ This chapter explains how to model a FlipIt game with a propagation delay that i
 
 \section{Difference between FlipIt with and without propagation delay}
 \label{ch2:diffFlip}
+
+\textbf{Section:Required adaptations to the FlipIt game}
+
 \begin{figure}[hbtp]
-\caption{The first game is the basic FlipIt game. The second is a FlipIt game with a delay. During the first flip of the attacker, the defender moves after the delay, causing the attacker to get control over the resource. During the second flip of the attacker, the defender flips at time t+d, causing the defender to take control over the resource before the attacker. During the third and final flip of the attacker, the defender flips during time t+d, causing the attacker to never gain control over the resource. }
 \centering
 \includegraphics[scale=0.7]{Images/dtFlip.png}
+\caption{The first game is the basic FlipIt game. The second is a FlipIt game with a delay. During the first flip of the attacker, the defender moves after the delay, causing the attacker to get control over the resource. During the second flip of the attacker, the defender flips at time t+d, causing the defender to take control over the resource before the attacker. During the third and final flip of the attacker, the defender flips during time t+d, causing the attacker to never gain control over the resource. }
 \label{dt}
 \end{figure}
 
-The framework of FLipIt is used to model targeted attacks. In FlipIt when an attacker attacks, he will get immediately control over the resource. One of the differences is that FlipIt does not consider that moves of the attacker might not be instantaneous. With FlipIt with a propagation delay we model the fact that if the attacker flips, he does not get immediate control over the resource.  This is motivated by the fact that it takes a while before a targeted attack can compromise a computer network. The virus or worm has to spread to infect every computer controlled device in the network. This propagation make take a while. \\
-
+\subsubsection{Only one action per player}
 Another difference is that the FlipIt game consists of a single resource. To represent the security problem of the propagation of a virus in a network, the game now defines its single resource as a computer network with multiple
 nodes. One of the players, the defender, will try to defend his network. The defender
 will do this by flipping all the nodes of the network (i.e. the entire resource) in every move he plays. The
@@ -39,15 +39,31 @@ attacker on the other hand will try to infect all the nodes in the network. The 
 will do this by flipping the node in the graph that can infect all the nodes in the
 shortest possible time. After dropping a virus on the first node, it takes a while for the virus to infect the entire network. Since the original FlipIt game works with a single resource that is always flipped entirely, the assumption is made that the attacker is considered to gain immediate full control over the resource when the network has been infected, even it is only one node that has been infected.\\
 
+The action of the defender consist of defending his network. In this context it will be defending every computer controlled device in a network. To make the network clean the defender can patch the systems with the latest security bulletins or reinstall the software or even wipe out the computer. All these different actions can imply other costs. The cost of patching a system will be smaller than the cost of wiping out a computer. \\
+The defender has only one action. Sending different viruses and worms to a computer network. Every time the attacker flips the resource, he does this by sending a new virus to the system. The attacker does not send the same virus again, because if the computers are patched, the virus cannot get in any more. 
+\subsubsection{Immediate effect of the move}
+The framework of FLipIt is used to model targeted attacks. In FlipIt when an attacker attacks, he will get immediately control over the resource. One of the differences is that FlipIt does not consider that moves of the attacker might not be instantaneous. With FlipIt with a propagation delay we model the fact that if the attacker flips, he does not get immediate control over the resource.  This is motivated by the fact that it takes a while before a targeted attack can compromise a computer network. The virus or worm has to spread to infect every computer controlled device in the network. This propagation make take a while. \\
 In reality however, after dropping a virus on the first node, it takes a while for the virus to infect
 the entire network. So, the assumption that the attacker has full control over the resource as soon as a node has been infected, is not realistic. The attacker has only control of the network once all or a sufficient number of nodes are infected. 
 The time that it takes for the virus to infect every node (or a sufficient number of nodes) will be
 denoted as an infection-delay variable \textit{d} (called 'delay' for short in the remainder of this paper). If we want to measure how long it takes for the virus to
 infect all the nodes in the network, we have to calculate the shortest path from the
 first infected node to the farthest node. Rather than denoting the time needed for infecting \textit{all} the nodes, the variable $d$ can also be used to denote the time needed to infect \textit{a sufficient number} of nodes. \\
+\subsubsection{Stealth character of the move}
+\subsubsection{Cost associated with the move}
+\subsubsection{Renewal strategies}
+The formalization starts from the model of the non-adaptive continuous basic FlipIt game where players use a periodic strategy with a random phase. This choice is motivated by the assumption that in most organisations, the defence strategy is to periodically defend the network.  This is true for the example of patching. Companies like Microsoft en Google release at a specific moment patches. So companies will apply these patches when they come out. Microsoft security bulletins are released on the Second Tuesday of each month. 
+%\source{https://technet.microsoft.com/en-us/security/bulletin/dn602597.aspx} 
+This corresponds to a periodic defender strategy.  A periodic attacker strategy is assumed as well, to be able to compare the results with the periodic strategy of the FlipIt game in \cite{FlipIt}. %, as this also corresponds to a common real life strategy. %nog eventueel verder te motiveren
+Further research can investigate the effect of relaxing this assumption. \\
 
-The action of the defender consist of defending his network. In this context it will be defending every computer controlled device in a network. To make the network clean the defender can patch the systems with the latest security bulletins or reinstall the software or even wipe out the computer. All these different actions can imply other costs. The cost of patching a system will be smaller than the cost of wiping out a computer. \\
-The defender has only one action. Sending different viruses and worms to a computer network. Every time the attacker flips the resource, he does this by sending a new virus to the system. The attacker does not send the same virus again, because if the computers are patched, the virus cannot get in anymore. 
+
+
+
+
+
+
+
 
 \subsubsection{Motivation Application}
 \subsubsection*{Wormlike ATP}
@@ -104,10 +120,7 @@ The worm can use the computers on the network as botnets or steal sensitive data
 
 
 
-The formalization starts from the model of the non-adaptive continuous basic FlipIt game where players use a periodic strategy with a random phase. This choice is motivated by the assumption that in most organisations, the defence strategy is to periodically defend the network.  This is true for the example of patching. Companies like microsoft en google release at a specific moment patches. So companies will apply these patches when they come out. Microsoft security bulletins are released on the Second Tuesday of each month. 
-%\source{https://technet.microsoft.com/en-us/security/bulletin/dn602597.aspx} 
-This corresponds to a periodic defender strategy.  A periodic attacker strategy is assumed as well, to be able to compare the results with the periodic strategy of the FlipIt game in \cite{FlipIt}. %, as this also corresponds to a common real life strategy. %nog eventueel verder te motiveren
-Further research can investigate the effect of relaxing this assumption. \\
+
 
 
 \subsection{Formalization the benefit formula including the infection-delay}
