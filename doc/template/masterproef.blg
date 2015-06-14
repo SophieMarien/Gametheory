@@ -1,6 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2013)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: masterproef.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: masterproef.aux
 A level-1 auxiliary file: chap-10.aux
 A level-1 auxiliary file: chap-5.aux
 A level-1 auxiliary file: chap-9.aux
@@ -14,45 +12,4 @@ Warning--empty journal in fengstealthy
 Warning--empty year in fengstealthy
 Warning--empty journal in MitigationNonTargeted
 Warning--empty booktitle in Coursera
-You've used 14 entries,
-            2118 wiz_defined-function locations,
-            590 strings with 6310 characters,
-and the built_in function-call counts, 4881 in all, are:
-= -- 453
-> -- 238
-< -- 5
-+ -- 94
-- -- 78
-* -- 324
-:= -- 805
-add.period$ -- 44
-call.type$ -- 14
-change.case$ -- 76
-chr.to.int$ -- 0
-cite$ -- 18
-duplicate$ -- 206
-empty$ -- 404
-format.name$ -- 78
-if$ -- 1042
-int.to.chr$ -- 0
-int.to.str$ -- 14
-missing$ -- 16
-newline$ -- 72
-num.names$ -- 32
-pop$ -- 105
-preamble$ -- 1
-purify$ -- 64
-quote$ -- 0
-skip$ -- 134
-stack$ -- 0
-substring$ -- 248
-swap$ -- 47
-text.length$ -- 5
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 52
-warning$ -- 4
-while$ -- 42
-width$ -- 16
-write$ -- 150
 (There were 4 warnings)
