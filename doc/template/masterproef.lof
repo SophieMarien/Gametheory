@@ -25,9 +25,9 @@
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Case 1: Difference between a basic FlipIt game and a FlipIt game with a delay. Case (1) is the FlipIt game without a propagation delay and case (2) is with a propagation delay. The delay is denoted with an arrow. The attacker is only in control when the circle becomes orange (light grey).\relax }}{23}{figure.caption.48}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Attacker playing to late. If the attacker enters the defender's interval after $\delta _{D} -d$, he can not get in control in that interval.\relax }}{23}{figure.caption.49}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces All possible cases for the attacker and the defender in Case 2.A where $d + \delta _{A} < \delta _{D}$. As can be seen in cases (1) to (4), the defender will have control during a period of \textit {d} over the resource in the next interval when the defender has flipped in the previous interval.\relax }}{26}{figure.caption.52}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Cases where the delay would be counted twice.\relax }}{27}{figure.caption.55}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Cases where the delay would be counted twice.\relax }}{27}{figure.caption.54}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces This figure shows the three subcategories of each case. 'A' stands for Case 2.A: $\delta _{D} \geq d+\delta _{A} \geq \delta _{A}$ and 'B' stands for Case 2.B: $d+\delta _{A} \geq \delta _{D} \geq \delta _{A} $ \relax }}{30}{figure.caption.57}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces This figure shows the three subcategories of each case. 'A' stands for Case 2.A: $\delta _{D} \geq d+\delta _{A} \geq \delta _{A}$ and 'B' stands for Case 2.B: $d+\delta _{A} \geq \delta _{D} \geq \delta _{A} $ \relax }}{32}{figure.caption.56}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}

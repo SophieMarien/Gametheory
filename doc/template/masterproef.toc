@@ -41,24 +41,25 @@
 \contentsline {subsubsection}{Motivation Application}{19}{section*.39}
 \contentsline {section}{\numberline {3.3}Playing periodically with propagation delay}{20}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Formalization the benefit formula including the infection-delay}{20}{subsection.3.3.1}
-\contentsline {chapter}{\chapternumberline {4}Nash Equilibria}{29}{chapter.4}
-\contentsline {section}{\numberline {4.1}Nash Equilibria}{29}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Determining the piecewise functions $opt_{D}(\delta _{A})$}{29}{subsection.4.1.1}
-\contentsline {subsubsection}{Best responses}{31}{section*.61}
-\contentsline {subsubsection}{$k_{D} > d$}{32}{section*.63}
-\contentsline {subsection}{\numberline {4.1.2}Determining the piecewise functions $opt_{A}(\delta _{D})$}{33}{subsection.4.1.2}
-\contentsline {subsubsection}{Best responses}{34}{section*.68}
-\contentsline {chapter}{\chapternumberline {5}Virus Propagation }{37}{chapter.5}
-\contentsline {section}{\numberline {5.1}Methods of virus propagation}{37}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Models of graph representing the network}{37}{subsection.5.1.1}
-\contentsline {section}{\numberline {5.2}methode met matrixen}{38}{section.5.2}
-\contentsline {chapter}{\chapternumberline {6}Related work}{43}{chapter.6}
-\contentsline {section}{\numberline {6.1}Related work}{43}{section.6.1}
-\contentsline {section}{\numberline {6.2}Why Game Theory to model security problem}{43}{section.6.2}
-\contentsline {chapter}{\chapternumberline {7}Conclusion}{45}{chapter.7}
-\contentsline {subsection}{\numberline {7.0.1}Further work}{45}{subsection.7.0.1}
-\contentsline {section}{\numberline {7.1}trala}{45}{section.7.1}
-\contentsline {chapter}{Bibliografie}{47}{section*.80}
+\contentsline {subsection}{\numberline {3.3.2}Conclusion of this chapter}{29}{subsection.3.3.2}
+\contentsline {chapter}{\chapternumberline {4}Nash Equilibria}{31}{chapter.4}
+\contentsline {section}{\numberline {4.1}Nash Equilibria}{31}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Determining the piecewise functions $opt_{D}(\delta _{A})$}{31}{subsection.4.1.1}
+\contentsline {subsubsection}{Best responses}{33}{section*.60}
+\contentsline {subsubsection}{$k_{D} > d$}{34}{section*.62}
+\contentsline {subsection}{\numberline {4.1.2}Determining the piecewise functions $opt_{A}(\delta _{D})$}{35}{subsection.4.1.2}
+\contentsline {subsubsection}{Best responses}{36}{section*.67}
+\contentsline {chapter}{\chapternumberline {5}Virus Propagation }{39}{chapter.5}
+\contentsline {section}{\numberline {5.1}Methods of virus propagation}{39}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Models of graph representing the network}{39}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.2}methode met matrixen}{40}{section.5.2}
+\contentsline {chapter}{\chapternumberline {6}Related work}{45}{chapter.6}
+\contentsline {section}{\numberline {6.1}Related work}{45}{section.6.1}
+\contentsline {section}{\numberline {6.2}Why Game Theory to model security problem}{45}{section.6.2}
+\contentsline {chapter}{\chapternumberline {7}Conclusion}{47}{chapter.7}
+\contentsline {subsection}{\numberline {7.0.1}Further work}{47}{subsection.7.0.1}
+\contentsline {section}{\numberline {7.1}trala}{47}{section.7.1}
+\contentsline {chapter}{Bibliografie}{49}{section*.79}
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}

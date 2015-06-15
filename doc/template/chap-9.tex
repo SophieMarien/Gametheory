@@ -276,23 +276,22 @@ For the case with a virus we consider two cases, Case a and Case b, depending on
 \end{figure}
 
 \subsubsection*{\textbf{Case a:} $d + \delta_{A} \leq \delta_{D}$}
-The first case is where the delay is shorter than the difference between the attacker's and the defender's period so their is no problem of counting the delay twice. To determine the total gain rate of the defender we need to know what the probability is that the defender will move during an interval and what the average time is that the defender controls the resource. \todo{beter verwoorden}.
-The total gain  rate of the defender is then the probability that the defender will move during an interval of the attacker multiplied by the total average gain per interval: 
+The first case is where the defender's period is larger than the sum of the delay and the attacker's period. In that case there is no problem of counting the delay twice. To determine the total gain rate of the defender we need to know what the probability is that the defender will move during an interval and what the average time is that the defender controls the resource. Given that if the defender moves he will always benefit entirely from a period of delay in the next interval of the attacker, his total gain is $\dfrac{(d+\dfrac{\delta_{A}}{2})}{\delta_{A}}$ in one interval. The total gain  rate of the defender is then the probability that the defender will move during an interval of the attacker multiplied by the total average gain per interval: 
 
 \begin{equation*}\label{first}
-\gamma_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta_{A}}{\delta_{D}} \cdot \dfrac{(d+\dfrac{\delta_{A}}{2})}{\delta_{A}} 
+\gamma_{D}(\delta_{D},\delta_{A}) = \dfrac{\delta_{A}}{\delta_{D}} \cdot \dfrac{(d+\dfrac{\delta_{A}}{2})}{\delta_{A}} 
 \end{equation*}
 \begin{equation*}\label{first}
-\gamma_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} 
+\gamma_{D}(\delta_{D},\delta_{A}) = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} 
 \end{equation*}\\
 This yields in the following benefit formula:
 \begin{equation*}\label{first}
-\beta_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - k_{D} \alpha_{D} 
+\beta_{D}(\delta_{D},\delta_{A}) = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - \dfrac{k_{D}}{ \delta_{D}}
 \end{equation*}\\
 
 The benefit for the attacker will be as follows:
 \begin{equation*}\label{first}
-\beta_{A}(\alpha_{D},\alpha_{A}) = 1 -\dfrac{\delta_{A}}{2\delta_{D}} - \dfrac{d}{\delta_{D}} - k_{A} \alpha_{A} 
+\beta_{A}(\delta_{D},\delta_{A}) = 1 -\dfrac{\delta_{A}}{2\delta_{D}} - \dfrac{d}{\delta_{D}} - \dfrac{k_{A}}{ \delta_{A}}
 \end{equation*}\\
 
 
@@ -319,19 +318,25 @@ Since $\delta_{D} \geq \delta_{A}$, if the defender enters the interval immediat
 
 The total gain  rate of the defender is obtained by subtracting this term from the gain rate of case a:
  \begin{equation*}
-\gamma_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta_{A}}{\delta_{D}} \cdot \dfrac{(d+\dfrac{\delta_{A}}{2})}{\delta_{A}} - \dfrac{(d - (\delta_{D} - \delta_{A}))^{2}}{2 \delta_{D} \delta_{A}}
+\gamma_{D}(\delta_{D},\delta_{A}) = \dfrac{\delta_{A}}{\delta_{D}} \cdot \dfrac{(d+\dfrac{\delta_{A}}{2})}{\delta_{A}} - \dfrac{(d - (\delta_{D} - \delta_{A}))^{2}}{2 \delta_{D} \delta_{A}}
 \end{equation*}
 \begin{equation*}
-\gamma_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - \dfrac{(d - (\delta_{D} - \delta_{A}))^{2}}{2 \delta_{D} \delta_{A}}
+\gamma_{D}(\delta_{D},\delta_{A}) = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - \dfrac{(d - (\delta_{D} - \delta_{A}))^{2}}{2 \delta_{D} \delta_{A}}
 \end{equation*}\\
 This yields in the following benefit formula:
 \begin{equation*}
-\beta_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - k_{D} \alpha_{D} - \dfrac{(d - (\delta_{D} - \delta_{A}))^{2}}{2 \delta_{D} \delta_{A}}
+\beta_{D}(\delta_{D},\delta_{A}) = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - \dfrac{k_{D}}{ \delta_{D}} - \dfrac{(d - (\delta_{D} - \delta_{A}))^{2}}{2 \delta_{D} \delta_{A}}
 \end{equation*}\\
  
 The benefit for the attacker will be as follows:
 \begin{equation*}
-\beta_{A}(\alpha_{D},\alpha_{A}) = 1 -\dfrac{\delta_{A}}{2\delta_{D}} - \dfrac{d}{\delta_{D}} - k_{A} \alpha_{A} + \dfrac{(d - (\delta_{D} - \delta_{A}))^{2}}{2 \delta_{D} \delta_{A}}
+\beta_{A}(\delta_{D},\delta_{A}) = 1 -\dfrac{\delta_{A}}{2\delta_{D}} - \dfrac{d}{\delta_{D}} - \dfrac{k_{A}}{ \delta_{A}} + \dfrac{(d - (\delta_{D} - \delta_{A}))^{2}}{2 \delta_{D} \delta_{A}}
 \end{equation*}\\
 
-
+%~~\\
+%\subsection{Conclusion of this chapter}
+%\begin{description}
+%\item[-]
+%\item[-]
+%\item[-]
+%\end{description}
