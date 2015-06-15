@@ -25,12 +25,7 @@ The game of FlipIt with propagation delay considers a game where the moves of th
 
 \textbf{Section:Required adaptations to the FlipIt game}
 
-\begin{figure}[hbtp]
-\centering
-\includegraphics[scale=0.7]{Images/dtFlip.png}
-\caption{The first game is the basic FlipIt game. The second is a FlipIt game with a delay. During the first flip of the attacker, the defender moves after the delay, causing the attacker to get control over the resource. During the second flip of the attacker, the defender flips at time t+d, causing the defender to take control over the resource before the attacker. During the third and final flip of the attacker, the defender flips during time t+d, causing the attacker to never gain control over the resource. }
-\label{dt}
-\end{figure}
+
 \subsubsection{Single resource}
 The basic FlipIt game consists of a single resource. To represent the security problem of the propagation of an APT in a network, the game now defines its single resource as a computer network with multiple
 nodes. One of the players, the defender, will try to defend his network. The defender
@@ -134,7 +129,7 @@ The worm can use the computers on the network as botnets or steal sensitive data
 \todo{kleuren van de tekening aanpassen zodat ze zichtbaar zijn in een zwartwit paper}
 \begin{figure}[hbtp]
 \centering
-\includegraphics[scale=0.7]{Images/DefFlip.png}
+\includegraphics[scale=0.7]{Images/DefFlip.pdf}
 \caption{Formalization of a FlipIt game with delay: A representation of a FlipIt game where both players are playing periodically. Every move or flip is indicated by a blue or orange circle, respectively dark gray and light grey.  The defender is represented in blue (dark grey) and plays with a period of $\delta_{D}$. The flip of the attacker is represented by a white circle, but because there is a delay d, the attacker only controls the resource after time d represented by an orange circle (light grey). The attacker plays with a period of $\delta_{A}$. The blue and orange rectangles represent the amount of time the respective player is in control of the resource.}
 \label{FlipItDelay}
 \end{figure}
@@ -151,40 +146,38 @@ The worm can use the computers on the network as botnets or steal sensitive data
 \item $opt_{i}$: The optimum function for player \textit{i}. \todo{optimum function equal or not with best response ?}
 \end{description}
 
-The adaptation of the FlipIt model starts from the assumption that when an attacker attacks at time \textit{t}, he doesn't get immediate control over the resource, but he only gains control at time \textit{t + d}, with $d$ denoting the time needed to infect a sufficient number of (or all) nodes. If the defender flips the network before the period $d$ has elapsed (so, somewhere between $t$ and $t + d$), then the attacker will never gain full control over the resource. (See figure \ref{dt} at point 4). This implies that the mathematical formulas for gain and benefit need to be adapted to the fact that the attacker loses part of its benefit because of this delay. In the remainder of this paper, we will adapt the formalization of the FlipIt game using the delay variable $d$. \\ 
+The adaptation of the FlipIt model starts from the assumption that when an attacker attacks at time \textit{t}, he doesn't get immediate control over the resource, but he only gains control at time \textit{t + d}, with $d$ denoting the time needed to infect a sufficient number of (or all) nodes. If the defender flips the network before the period $d$ has elapsed (so, somewhere between $t$ and $t + d$), then the attacker will never gain full control over the resource. (See figure \ref{dt} at point 3 and 4). This implies that the mathematical formulas for gain and benefit need to be adapted to the fact that the attacker loses part of its benefit because of this delay. In the remainder of this paper, we will adapt the formalization of the FlipIt game using the delay variable $d$. \\ 
 
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=0.7]{Images/Delayuitgelegd.pdf}
+\caption{The first game is the basic FlipIt game. The second is a FlipIt game with a delay. During the first flip of the attacker, the defender moves after the delay, causing the attacker to get control over the resource. During the second flip of the attacker, the defender flips at time t+d, causing the defender to take control over the resource before the attacker. During the third and final flip of the attacker, the defender flips during time t+d, causing the attacker to never gain control over the resource. }
+\label{dt}
+\end{figure}
 
 Similarly as in \cite{FlipIt}, we split the formalization in two cases. The first case is where the defender plays at least as fast as the attacker, the second case is where the attacker plays at least as fast as the defender. For each of these cases, first the benefit formula of the basic case without delay is presented, and subsequently the delay is introduced.  \\
 
-Intuitively we could assume that $d$ can never be bigger than $\delta_{A}$ because then the benefit for the defender would always be 1, but this is not always true. Assume for example that an attacker plays with an interval of 3 units, the delay is equal to 4 units and that the defender only plays every 8 units. This situation is represented in figure \todo{figuur maken en refereren}. Since the delay is shorter that the period of the defender, the attacker takes control of the resource once the delay has elapsed, until the defender plays. However, if the delay is larger that the period of the defender, then the defender will always be in control. This situation is represented in figure \todo{figuur maken en refereren}, where the attacker plays with an interval of 5 units, the delay is equal to 6 units and the defender plays with an interval of 4 units. From this we can conclude that it only makes sence to calculate the formulas for the cases where $d$ is smaller than $\delta_{D}$. We can already conclude that it is no use for the attacker to play when the delay is bigger than $\delta_{D}$. (see figure \todo{refereren naar de juiste figuur die nog aangemaakt moet worden})\\ 
-\todo{bovenstaande tekst beter uitleggen}
+Intuitively, we could assume that $d$ can never be bigger than $\delta_{A}$ because then the benefit for the defender would always be 1, but this is not always true. Assume for example that an attacker plays with an interval of 3 units, the delay is equal to 4 units and that the defender only plays every 8 units. This situation is represented in figure \ref{langedelay}. Since the delay is shorter that the period of the defender, the attacker takes control of the resource once the delay has elapsed, until the defender plays. However, if the delay is larger that the period of the defender, then the defender will always be in control. This situation is represented in figure \ref{langeredelay}, where the attacker plays with an interval of 5 units, the delay is equal to 6 units and the defender plays with an interval of 4 units. From this we can conclude that it only makes sense to calculate the formulas for the cases where $d$ is smaller than $\delta_{D}$. We can already conclude that it is no use for the attacker to play when the delay is bigger than $\delta_{D}$. 
 
 
 
 
 \begin{figure}[hbtp]
-\caption{Delay bigger than deltaA and delay bigger than deltaD}
 \centering
 \includegraphics[scale=0.7]{Images/FlipItCase1delay.pdf} 
+\caption{FlipIt with delay propagation where $\delta_{D} > d > \delta_{A}$.   }
+\label{langedelay}
 \end{figure}
 
 \begin{figure}[hbtp]
-\caption{Delay bigger than deltaA and delay bigger than deltaD}
 \centering
 \includegraphics[scale=0.7]{Images/FlipItCase1delaytobig.pdf} 
+\caption{FlipIt with delay propagation where $ d > \delta_{D}$ }
+\label{langeredelay}
 \end{figure}
 
 
-\todo{figuur juist maken}
-\begin{figure}[hbtp]
-\caption{Delay bigger than deltaA and delay bigger than deltaD}
-\centering
-\includegraphics[scale=0.7]{Images/DiffDelayCase1.png}
-\label{delaye}
-\end{figure}
-
-
-In the original model of FLipIt \cite{FlipIt}, the authors express the formulas in terms of $\alpha_{D}$ and $\alpha_{A}$. However, when introducing the delay, some formulas become much simpler when expressed in terms of $\delta_{D}$ and $\delta_{A}$. Therefore in the remainder of this paper, we will formulate the model using both $\alpha_{i}$ and $\delta_{i}$, depending on what result is the simplest formula.
+In the original model of FlipIt \cite{FlipIt}, the authors express the formulas in terms of $\alpha_{D}$ and $\alpha_{A}$. However, when introducing the delay, some formulas become much simpler when expressed in terms of $\delta_{D}$ and $\delta_{A}$. Therefore in the remainder of this paper, we will formulate the model using both $\alpha_{i}$ and $\delta_{i}$, depending on what result is the simplest formula.
 
 \subsection*{\textbf{Case 1:} $\delta_{D} \leq \delta_{A} $ (The defender plays at least as fast as the attacker.) }
 
@@ -202,14 +195,14 @@ Correspondingly, the benefit for the defender can be expressed as:
 \end{equation*}
 
 \begin{figure}[hbtp]
-\caption{Case 1: Difference between a basic FlipIt game and a FlipIt game with a delay. (1) is the FlipIt game without a delay and (2) is with a delay. The delay is denoted with an arrow. The attacker is only in control when the circle becomes orange.}
 \centering
-\includegraphics[scale=0.6]{../../doc/template/Images/DiffDelayCase1.png}
+\includegraphics[scale=0.7]{../../doc/template/Images/DiffDelayCase1.pdf}
+\caption{Case 1: Difference between a basic FlipIt game and a FlipIt game with a delay. Case (1) is the FlipIt game without a propagation delay and case (2) is with a propagation delay. The delay is denoted with an arrow. The attacker is only in control when the circle becomes orange (light grey).}
 \label{fig:delaycase1}
 \end{figure}
 
 
-However, because of the delay required for virus propagation, the maximal time of control is reduced to $\delta_{D}-d$ , see figure \ref{fig:delaycase1}. While the probability of \textit{r} that the attacker will move in the interval of the defender is still \textit{r}, the gain will not be half of the interval. Indeed, if the attacker plays after $\delta_{D}-d$, given the delay \textit{d}, he will never get in control in that interval (see figure \todo{figure 3.5}). The probability that the attacker plays soon enough is $\dfrac{\delta_{D}-d}{\delta_{D}}$ and this will give the attacker an average gain of $\dfrac{\delta_{D}-d}{2}$. If the attacker moves after the period of $\delta_{D}-d$, the gain of the attacker will be zero. The probability that this happens is  $\dfrac{d}{\delta_{D}}$. Looking at one interval of the defender, the average gain rate of the attacker can thus be expressed as follows:
+However, because of the delay required for virus propagation, the maximal time of control is reduced to $\delta_{D}-d$ , see figure \ref{fig:delaycase1}. While the probability that the attacker will move in the interval of the defender is still \textit{r}, the gain will not be half of the interval. Indeed, if the attacker plays after $\delta_{D}-d$, given the delay \textit{d}, he will never get in control in that interval (see figure \todo{figure 3.5}). The probability that the attacker plays soon enough is $\dfrac{\delta_{D}-d}{\delta_{D}}$ and this will give the attacker an average gain of $\dfrac{\delta_{D}-d}{2}$. If the attacker moves after the period of $\delta_{D}-d$, the gain of the attacker will be zero. The probability that this happens is  $\dfrac{d}{\delta_{D}}$. Looking at one interval of the defender, the average gain rate of the attacker can thus be expressed as follows:
 \begin{equation*}
 \gamma_{A}(\delta_{D},\delta_{A}) = \dfrac {1}{\delta_{D}} [ \dfrac{\delta_{D}}{\delta_{A}} \cdot \big[ \dfrac{\delta_{D}-d}{\delta_{D}} \cdot \dfrac{\delta_{D}-d}{2} + \dfrac{d}{\delta_{D}} \cdot 0 \big] ]
 \end{equation*}
@@ -298,7 +291,7 @@ It is crucial that $ \delta_{D}$ is at least as large as $d + \delta_{A}$. If no
 \begin{figure}[hbtp]
 \caption{Cases where the delay would be counted twice.}
 \centering
-\includegraphics[scale=0.7]{Images/FlipItcase2b.png}
+\includegraphics[scale=0.7]{Images/flipcase2nb.pdf}
 \end{figure}
 
 
