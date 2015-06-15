@@ -55,6 +55,7 @@ delay for virus propagation into account, which in our case will be a delay for 
 \usepackage{pgf}
 \usepackage{tikz}
 \usepackage{hyperref}
+\usepackage[font={small,it}]{caption}
 %\headstyles{kulemtman}
 
 
@@ -81,22 +82,22 @@ delay for virus propagation into account, which in our case will be a delay for 
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
 \definecolor{mauve}{rgb}{0.58,0,0.82}
 
-\lstset{frame=tb,
-  language=Java,
-  aboveskip=3mm,
-  belowskip=3mm,
-  showstringspaces=false,
-  columns=flexible,
-  basicstyle={\small\ttfamily},
-  numbers=none,
-  numberstyle=\tiny\color{gray},
-  keywordstyle=\color{blue},
-  commentstyle=\color{green},
-  stringstyle=\color{black},
-  breaklines=true,
-  breakatwhitespace=true
-  tabsize=3
-}
+%\lstset{frame=tb,
+%  language=Java,
+%  aboveskip=3mm,
+%  belowskip=3mm,
+%  showstringspaces=false,
+%  columns=flexible,
+%  basicstyle={\small\ttfamily},
+%  numbers=none,
+%  numberstyle=\tiny\color{gray},
+%  keywordstyle=\color{blue},
+%  commentstyle=\color{green},
+%  stringstyle=\color{black},
+%  breaklines=true,
+%  breakatwhitespace=true
+%  tabsize=3
+%}
 
 %\newcommand{\todo}[1]{{\huge \textcolor{green}{#1}}\\}
 %\newcommand{\com}[1]{\textcolor{red}{#1}\\}
@@ -280,7 +281,8 @@ Niet zo lang geleden werden APT's ontdekt. (Introzin moet beter en anders). Bedr
 \begin{flushleft}
   \renewcommand{\arraystretch}{1.1}
   \begin{tabularx}{\textwidth}{@{}p{12mm}X@{}}
-    APT   & Advanced Persistent Threat \\
+    APT & Advanced Persistent Threat \\
+    CIA & Confidentiality , Integrity and Availability \\
     SIR & Susceptible - Infected - Recovered \\
     SIS & Susceptible - Infected - Susceptible \\
   \end{tabularx}

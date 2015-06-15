@@ -27,9 +27,10 @@ A particular kind of threat is an Advanced Persistent Threat (APT). An APT is a 
 %\subsubsection{Complication}
 %Since it is so difficult to protect a system or a network against APT's, researchers have been looking for effective ways to predict in advance which defence strategy might be the better one. 
 There are a number of key strategies that an organisation can apply to defend themselves against APT's: awareness, whitelisting, system administration, network segregation, dynamic content checking and patch management. Nevertheless the combination of all these elements benefits from being complemented by other defence strategies to protect one selves against stealthy takeovers. A way to study the impact of stealthy takeovers and to determine practical recommendations for defenders is through game theory.\\
-Game theory is gaining increasing interest as an effective technique to model and study cyber security problems. It is common to model cyber security games as a game with two players, an attacker and a defender. However, there are games that have more players \cite{fengstealthy}. In this paper we focus on the game with two players. The actions available to the attacker and the defender correspond to respectively to the attacks on the system and taking defensive measures that protect the system. \\
+Game theory is gaining increasing interest as an effective technique to model and study cyber security problems. It is common to model cyber security games as a game with two players, an attacker and a defender. However, there are games that have more players, for example when there is a third party involved \cite{fengstealthy}. In this paper we focus on the game with two players. The actions available to the attacker and the defender correspond to respectively to the attacks on the system and taking defensive measures that protect the system. \\
 
- Researchers at RSA, van Dijk et al,  presented a game-theoretic framework to model computer security scenarios called ``FlipIt'' \cite{FlipIt}. They study the specific scenario where a system or network is repeatedly taken over completely by an attacker and not immediately being detected by the defender of the system or network. This is a two-player game where the attacker and the defender are competing to get control over a shared resource. Neither player knows who is currently in control of the resource until they move. In FlipIt every move gives them immediate control over the resource. \\
+Many security games bridging game theory and cyber security have already been investigated and finding a new game is not convenient. In this paper we choose to extend another quite relatively new paper where the assumption of stealthiness is fairly unique and the paper had some interesting results.\\ 
+ The paper is from researchers at RSA, van Dijk et al,  who presented a game-theoretic framework to model computer security scenarios called ``FlipIt'' \cite{FlipIt}. They study the specific scenario where a system or network is repeatedly taken over completely by an attacker and not immediately being detected by the defender of the system or network. This is a two-player game where the attacker and the defender are competing to get control over a shared resource. Neither player knows who is currently in control of the resource until they move. In FlipIt every move involves a cost and gives them immediate control over the resource. The attacker will try to maximise the time that he has control over the network, while the defender will try to maximise the time that the network is free of malware. \\
  But what if the attacker moves and it takes a while before the attacker gets full control over the resource? FlipIt does not take into account that a move may not be instantaneous, but has a certain delay. Consider for example a network with different nodes (laptops, datacenters) as a resource. The attacker drops a virus on one of the nodes and then wait till this virus infects the whole network. The attacker will only be in control of the resource when a sufficient large amount of nodes of the network are infected. In this paper we present FlipIt with propagation delay to model a game where the moves of the attacker are not instantaneous. A formalization for this game starts from the model of non-adaptive continuous basic FlipIt game where players use a periodic strategy with a random phase.   \\
 
 \subsubsection{Research questions}
@@ -39,22 +40,21 @@ Game theory is gaining increasing interest as an effective technique to model an
 This paper adapts the model presented in \cite{FlipIt} so as to take the delay for virus propagation into account.
 This leads us to the following research questions:
 \begin{itemize}
-\item How can we incorporate the notion of delay in the game-theoretical analysis of the Flip-It game for a periodic strategy ?
-\item Does the resulting model allow an optimal defence strategy against an attacker ? 
+\item How can we incorporate the notion of delay in the game-theoretical analysis of the Flip-It game for a periodic strategy?
+\item Does the resulting model allow an optimal defence strategy against an attacker? 
 \end{itemize}
 
 \subsubsection{Contributions and results}
 The following contributions are made in this paper:
 \begin{itemize}
-\item[-] We propose an addition to the basic FlipIt model to model a scenario where the moves by the attacker will not be instantaneous. We extend the FlipIt game where the attacker flips with a delay. The attacker only compromises the system if suffi"ent nodes in the network are infected. 
-\item[-] Another derivation of the method to calculate the benefit of the basic FlipIt game is given.
+\item[-] We propose an addition to the basic FlipIt model to model a scenario where the moves by the attacker will not be instantaneous. We extend the FlipIt game where the attacker flips with a delay. The attacker only compromises the system if sufficient nodes in the network are infected. 
 \item[-] The periodic case of FlipIt is modelled with a delay, resulting in optimum functions and Nash equilibria. 
-\item[-] Based on our results we can give practical recommendations to take measures against advanced attacks. 
+\item[-] Based on our results we can give practical recommendations to take measures against advanced attacks.  The modelling of FlipIt with a propagation delay will give a guideline for both the attacker and the defender in when they should attack the network or how regularly should they clean the network.
+\item[--] Related work is added about different techniques to calculate propagation delays of malware depending on the graph. 
 \end{itemize}
- Next we analyse what the new Nash equilibria will be and .. \\
- The modelling of FlipIt with a delay will give a guideline for both the attacker and the defender in when they should attack the network or how regularly should they clean the network.
 
-While it seems maybe trivial to extend FlipIt with a delay it is not so straightforward. First a formula to calculate the benefit of a basic FlipIt was derived to introduce the delay. To calculate the benefit for each case \todo{cases misschien uitleggen?}, the intervals where not independant anymore as in the basic FlipIt game. Er moest rekening gehouden worden met de vorige intervallen om de benefit te berekenen in het eigen interval. 
+
+While it seems maybe trivial to extend FlipIt with a propagation delay it is not so straightforward. Even though the basic model of FlipIt looks simple, it's mathematical treatment is not. In the paper of Laznka et all. \citep{FlipThem} it seems that even a small extension adds to the already significant mathematical complexity. While the FlipIt game is quite symmetric, by adding a propagation delay the mathematical complexity rises. First a formula to calculate the benefit of a basic FlipIt was derived to introduce the propagation delay. To calculate the benefit for each case depending on the periods of the attacker, defender and the delay, the intervals where not independent any more as in the basic FlipIt game. The previous intervals had to be taken into account to calculate the benefit of the players in its own interval. 
 
 \subsubsection{Conjunctures and open problems}
 
@@ -62,7 +62,6 @@ While it seems maybe trivial to extend FlipIt with a delay it is not so straight
 \item[-] Analyse other strategies like renewal strategies instead of only periodic strategies.
 \item[-] The defender can chose to Flip one node of the network or a subset instead of all the nodes.
 \item[-] Give the defender a delay. It takes a while before a patch is made after the discovery of a vulnerability.
-\item[-]
 \end{description}
 
 \subsubsection{Overview of the thesis}
