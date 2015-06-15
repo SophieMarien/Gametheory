@@ -159,6 +159,22 @@ Similarly as in \cite{FlipIt}, we split the formalization in two cases. The firs
 Intuitively we could assume that $d$ can never be bigger than $\delta_{A}$ because then the benefit for the defender would always be 1, but this is not always true. Assume for example that an attacker plays with an interval of 3 units, the delay is equal to 4 units and that the defender only plays every 8 units. This situation is represented in figure \todo{figuur maken en refereren}. Since the delay is shorter that the period of the defender, the attacker takes control of the resource once the delay has elapsed, until the defender plays. However, if the delay is larger that the period of the defender, then the defender will always be in control. This situation is represented in figure \todo{figuur maken en refereren}, where the attacker plays with an interval of 5 units, the delay is equal to 6 units and the defender plays with an interval of 4 units. From this we can conclude that it only makes sence to calculate the formulas for the cases where $d$ is smaller than $\delta_{D}$. We can already conclude that it is no use for the attacker to play when the delay is bigger than $\delta_{D}$. (see figure \todo{refereren naar de juiste figuur die nog aangemaakt moet worden})\\ 
 \todo{bovenstaande tekst beter uitleggen}
 
+
+
+
+\begin{figure}[hbtp]
+\caption{Delay bigger than deltaA and delay bigger than deltaD}
+\centering
+\includegraphics[scale=0.7]{Images/FlipItCase1delay.pdf} 
+\end{figure}
+
+\begin{figure}[hbtp]
+\caption{Delay bigger than deltaA and delay bigger than deltaD}
+\centering
+\includegraphics[scale=0.7]{Images/FlipItCase1delaytobig.pdf} 
+\end{figure}
+
+
 \todo{figuur juist maken}
 \begin{figure}[hbtp]
 \caption{Delay bigger than deltaA and delay bigger than deltaD}
@@ -273,7 +289,7 @@ The benefit for the attacker will be as follows:
 \begin{figure}[hbtp]
 \caption{All possible cases for the attacker and the defender in Case 2.A where $d + delta_{A} < delta_{D}$. As can be seen, the defender will have control during a period of \textit{d} over the resource when the defender has flipped in the previous interval.}
 \centering
-\includegraphics[scale=0.7]{../../doc/template/Images/FlipItCase2a.png}
+\includegraphics[scale=0.7]{../../doc/template/Images/FlipIt2.pdf}
 \label{fig:case2}
 \end{figure}
 

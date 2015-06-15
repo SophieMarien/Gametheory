@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  15 JUN 2015 17:58
+=======
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.27)  14 JUN 2015 23:04
+>>>>>>> Stashed changes
 entering extended mode
 **masterproef.tex
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.tex
@@ -1511,7 +1515,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 153--154
 
  []
 
+<<<<<<< Updated upstream
 [9] <Images/PrisDilemma.png, id=415, 466.3824pt x 318.9516pt>
+=======
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 157.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 157.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 157.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 157.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 157.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 157.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 157.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 157.
+[9] <Images/PrisDilemma.png, id=423, 466.3824pt x 318.9516pt>
+>>>>>>> Stashed changes
 File: Images/PrisDilemma.png Graphic file (type png)
 
 <use Images/PrisDilemma.png>
@@ -1533,7 +1557,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
  []
 
+<<<<<<< Updated upstream
 <../../doc/template/Images/DefFlipItt.png, id=421, 512.3943pt x 92.9874pt>
+=======
+<../../doc/template/Images/DefFlipItt.png, id=429, 512.3943pt x 92.9874pt>
+>>>>>>> Stashed changes
 File: ../../doc/template/Images/DefFlipItt.png Graphic file (type png)
 
 <use ../../doc/template/Images/DefFlipItt.png>
@@ -1582,6 +1610,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 287--291
  []
 
 
+<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 293--294
 
  []
@@ -1593,6 +1622,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 293--294
 
 
 ] <Images/dtFlip.png, id=473, 512.3943pt x 215.6055pt>
+=======
+]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 12.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 12.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 12.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 12.
+
+
+LaTeX Warning: Marginpar on page 17 moved by 15.58636pt.
+
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 22.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 22.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 22.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 22.
+<Images/dtFlip.png, id=483, 512.3943pt x 215.6055pt>
+>>>>>>> Stashed changes
 File: Images/dtFlip.png Graphic file (type png)
 
 <use Images/dtFlip.png>
@@ -1604,6 +1665,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--41
  []
 
 [17]
+<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 47--54
 
  []
@@ -1615,6 +1677,59 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--62
  []
 
 [19] <Images/DefFlip.png, id=497, 512.3943pt x 108.405pt>
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 46--53
+
+ []
+
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 53.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 53.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 53.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 53.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 53.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 53.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 53.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 53.
+[18 <./Images/dtFlip.png>]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 58.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 58.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 58.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 58.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 58.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 58.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 58.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 58.
+ [19]
+Underfull \hbox (badness 10000) in paragraph at lines 59--61
+
+ []
+
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 119.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 119.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 119.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 119.
+<Images/DefFlip.png, id=506, 512.3943pt x 108.405pt>
+>>>>>>> Stashed changes
 File: Images/DefFlip.png Graphic file (type png)
 
 <use Images/DefFlip.png>
@@ -1640,14 +1755,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--158
 
 LaTeX Warning: Marginpar on page 22 moved by 69.98639pt.
 
+<<<<<<< Updated upstream
 <Images/DiffDelayCase1.png, id=512, 512.3943pt x 215.6055pt>
 File: Images/DiffDelayCase1.png Graphic file (type png)
 
 <use Images/DiffDelayCase1.png>
 Package pdftex.def Info: Images/DiffDelayCase1.png used on input line 166.
 (pdftex.def)             Requested size: 358.67357pt x 150.9228pt.
+=======
+<Images/FlipItCase1delay.pdf, id=522, 519.29205pt x 87.99817pt>
+File: Images/FlipItCase1delay.pdf Graphic file (type pdf)
 
+<use Images/FlipItCase1delay.pdf>
+Package pdftex.def Info: Images/FlipItCase1delay.pdf used on input line 167.
+(pdftex.def)             Requested size: 363.50195pt x 61.59828pt.
+>>>>>>> Stashed changes
 
+<Images/FlipItCase1delaytobig.pdf, id=523, 512.38626pt x 77.18385pt>
+File: Images/FlipItCase1delaytobig.pdf Graphic file (type pdf)
+
+<<<<<<< Updated upstream
 LaTeX Warning: Marginpar on page 22 moved by 114.90192pt.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1657,11 +1784,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 175--176
 
  []
 
+=======
+<use Images/FlipItCase1delaytobig.pdf>
+Package pdftex.def Info: Images/FlipItCase1delaytobig.pdf used on input line 17
+3.
+(pdftex.def)             Requested size: 358.66794pt x 54.0283pt.
+
+<Images/DiffDelayCase1.png, id=524, 512.3943pt x 215.6055pt>
+File: Images/DiffDelayCase1.png Graphic file (type png)
+
+<use Images/DiffDelayCase1.png>
+Package pdftex.def Info: Images/DiffDelayCase1.png used on input line 181.
+(pdftex.def)             Requested size: 358.67357pt x 150.9228pt.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 187.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 187.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 187.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 187.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 187.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 187.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 187.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 187.
+ [22 <./Images/FlipItCase1delay.pdf> <./Images/FlipItCase1delaytobig.pdf> <./Im
+ages/DiffDelayCase1.png>]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 188.
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
+>>>>>>> Stashed changes
 
 Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
+<<<<<<< Updated upstream
 [22 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/DiffDel
 ayCase1.png>]
 <../../doc/template/Images/DiffDelayCase1.png, id=520, 512.3943pt x 215.6055pt>
@@ -1672,10 +1835,42 @@ nput line 191.
 (pdftex.def)             Requested size: 307.43895pt x 129.36429pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 214--217
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
 
  []
 
 
+<../../doc/template/Images/DiffDelayCase1.png, id=579, 512.3943pt x 215.6055pt>
+File: ../../doc/template/Images/DiffDelayCase1.png Graphic file (type png)
+<use ../../doc/template/Images/DiffDelayCase1.png>
+Package pdftex.def Info: ../../doc/template/Images/DiffDelayCase1.png used on i
+nput line 206.
+(pdftex.def)             Requested size: 307.43895pt x 129.36429pt.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 212.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 212.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 212.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 212.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 212.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 212.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 212.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 212.
+ [23 <../../doc/template/Images/DiffDelayCase1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 229--232
+>>>>>>> Stashed changes
+
+ []
+
+
+<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 224--225
 
  []
@@ -1683,10 +1878,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 224--225
 [23 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/DiffDel
 ayCase1.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 233--234
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 239--240
 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
+>>>>>>> Stashed changes
+
+ []
+
+
+<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 238--241
 
  []
@@ -1698,6 +1902,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 242--244
 
 [24]
 Underfull \hbox (badness 10000) in paragraph at lines 250--251
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 253--256
+
+ []
+
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 256.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 256.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 256.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 256.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 256.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 256.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 256.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 256.
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 257--259
+>>>>>>> Stashed changes
 
  []
 
@@ -1706,6 +1934,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 266--267
 
  []
 
+<<<<<<< Updated upstream
 
 Underfull \hbox (badness 10000) in paragraph at lines 271--272
 
@@ -1727,41 +1956,166 @@ File: Images/FlipItcase2b.png Graphic file (type png)
 
 <use Images/FlipItcase2b.png>
 Package pdftex.def Info: Images/FlipItcase2b.png used on input line 285.
+=======
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 271.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 271.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 271.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 271.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 271.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 271.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 271.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 271.
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 281--282
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
+
+ []
+
+<../../doc/template/Images/FlipIt2.pdf, id=599, 403.371pt x 683.10506pt>
+File: ../../doc/template/Images/FlipIt2.pdf Graphic file (type pdf)
+
+<use ../../doc/template/Images/FlipIt2.pdf>
+Package pdftex.def Info: ../../doc/template/Images/FlipIt2.pdf used on input li
+ne 291.
+(pdftex.def)             Requested size: 282.35777pt x 478.17029pt.
+
+<Images/FlipItcase2b.png, id=601, 403.2666pt x 213.1965pt>
+File: Images/FlipItcase2b.png Graphic file (type png)
+
+<use Images/FlipItcase2b.png>
+Package pdftex.def Info: Images/FlipItcase2b.png used on input line 300.
+>>>>>>> Stashed changes
 (pdftex.def)             Requested size: 282.28468pt x 149.23653pt.
  [25] [26 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/F
 lipItCase2a.png
 
+<<<<<<< Updated upstream
 pdfTeX warning: pdflatex (file C:/Users/ECONGUEST/Documents/GitHub/Gametheory/d
 oc/template/Images/FlipItCase2a.png): large interlaced PNG might cause out of m
 emory (use non-interlaced PNG to fix this)
 >]
 Underfull \hbox (badness 10000) in paragraph at lines 289--290
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 305--306
+>>>>>>> Stashed changes
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
+Underfull \hbox (badness 10000) in paragraph at lines 307--308
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--295
+Underfull \hbox (badness 10000) in paragraph at lines 309--311
 
  []
 
+<<<<<<< Updated upstream
 [27 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/FlipItc
 ase2b.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 310--311
+=======
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 311.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 311.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 311.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 311.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 311.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 311.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 311.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 311.
+[26]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 311.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 311.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 311.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 311.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 311.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 311.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 311.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 311.
+ [27 <../../doc/template/Images/FlipIt2.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 326--327
+>>>>>>> Stashed changes
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--316
+Underfull \hbox (badness 10000) in paragraph at lines 331--332
 
  []
 
+<<<<<<< Updated upstream
 ) [28] (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\nash.tex
 <Images/bestresp.png, id=553, 963.6pt x 722.7pt>
+=======
+)
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 313.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 313.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 313.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 313.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 313.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 313.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 313.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 313.
+ [28 <./Images/FlipItcase2b.png>]
+\openout2 = `nash.aux'.
+
+ (./nash.tex
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 12.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 12.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 12.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 12.
+
+<Images/bestresp.png, id=641, 963.6pt x 722.7pt>
+>>>>>>> Stashed changes
 File: Images/bestresp.png Graphic file (type png)
  <use Images/bestresp.png>
 Package pdftex.def Info: Images/bestresp.png used on input line 27.
@@ -1929,6 +2283,7 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 343.
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< Updated upstream
  27159 strings out of 493921
  496310 string characters out of 3144864
  756588 words of memory out of 3000000
@@ -1961,4 +2316,39 @@ PDF statistics:
  773 PDF objects out of 1000 (max. 8388607)
  205 named destinations out of 1000 (max. 500000)
  27932 words of extra memory for PDF output out of 29859 (max. 10000000)
+=======
+ 24488 strings out of 493315
+ 423273 string characters out of 6137903
+ 711300 words of memory out of 5000000
+ 27044 multiletter control sequences out of 15000+600000
+ 79912 words of font info for 145 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 61i,12n,78p,1877b,931s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
+texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2013/t
+exmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2013/texmf-dist/
+fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2013/texmf-dist/fonts/enc/
+dvips/lm/lm-mathex.enc}{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base
+/8r.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/
+texlive/2013/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2
+013/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2013/texmf-
+dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2013/texmf-dist/fonts
+/type1/public/lm/lmmi12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/pub
+lic/lm/lmmi8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmr1
+0.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr
+/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texli
+ve/2013/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2013/te
+xmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2013/texmf-dist/f
+onts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/
+public/lm/lmtt10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvet
+ic/uhvb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvr
+8a.pfb>
+Output written on masterproef.pdf (63 pages, 1353631 bytes).
+PDF statistics:
+ 862 PDF objects out of 1000 (max. 8388607)
+ 710 compressed objects within 8 object streams
+ 209 named destinations out of 1000 (max. 500000)
+ 20774 words of extra memory for PDF output out of 24883 (max. 10000000)
+>>>>>>> Stashed changes
 

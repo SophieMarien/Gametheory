@@ -44,7 +44,7 @@ If we take the partial derivative for a fixed $\delta_{1}$ we get the following 
 
 The stationary points (maximum, minimum) can be found by setting the first derivative equal to zero and finding the roots of the resulting equation:
 \begin{equation*}
-\frac{\partial \beta_{D}(\delta_{D},\delta_{A})}{\partial \alpha_{D}} =0 ~~~~~~ =>~~~~~~ \delta_{D} = \sqrt{2\delta_{A}k_{D} + d^{2}}
+\frac{\partial \beta_{D}(\delta_{D},\delta_{A})}{\partial \delta_{D}} =0 ~~~~~~ =>~~~~~~ \delta_{D} = \sqrt{2\delta_{A}k_{D} + d^{2}}
 \end{equation*}
 
 This leads to the following deduction: The function increases on $[0, \sqrt{2\delta_{A}k_{D} + d^{2}}]$ and is decreasing on $[\sqrt{2\delta_{A}k_{D} + d^{2}}, \infty]$ So we got a maximum on $\delta_{D} = min \{ \delta_{A}, \sqrt{2\delta_{A}k_{D} + d^{2}} \} $. The minimum of the two values is needed because $\delta_{D}$ cannot be bigger than $\delta_{A}$. \\
@@ -86,12 +86,12 @@ This leads to the following deduction:
 
 The benefit formula obtained previously for this case is as follows:
 \begin{equation*}
-\dfrac{\beta_{D}(\alpha_{D},\alpha_{A})}{\partial \alpha_{D}} = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - \dfrac{k_{D}}{\delta_{D}} - \dfrac{(d-(\delta_{D} - \delta_{A}))^{2}}{d\delta_{D}\delta_{A}}
+\dfrac{\beta_{D}(\alpha_{D},\alpha_{A})}{\partial \delta_{D}} = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - \dfrac{k_{D}}{\delta_{D}} - \dfrac{(d-(\delta_{D} - \delta_{A}))^{2}}{d\delta_{D}\delta_{A}}
 \end{equation*}
 
 The derivative of the above formula for a fixed $\delta_{A}$ results in the following:
 \begin{equation*}
-\frac{\partial \beta_{D}(\alpha_{D},\alpha_{A})}{\partial \alpha_{D}} =  - \dfrac{1}{2\delta_{D}} + \dfrac{k_{D}}{\delta_{D}^{2}} + \dfrac{d^{2}}{2\delta_{D}^{2}\delta_{A}}
+\frac{\partial \beta_{D}(\alpha_{D},\alpha_{A})}{\partial \delta_{D}} =  - \dfrac{1}{2\delta_{D}} + \dfrac{k_{D}}{\delta_{D}^{2}} + \dfrac{d^{2}}{2\delta_{D}^{2}\delta_{A}}
 \end{equation*}
 
 
