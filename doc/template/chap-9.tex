@@ -202,7 +202,17 @@ Correspondingly, the benefit for the defender can be expressed as:
 \end{figure}
 
 
-However, because of the delay required for virus propagation, the maximal time of control is reduced to $\delta_{D}-d$ , see figure \ref{fig:delaycase1}. While the probability that the attacker will move in the interval of the defender is still \textit{r}, the gain will not be half of the interval. Indeed, if the attacker plays after $\delta_{D}-d$, given the delay \textit{d}, he will never get in control in that interval (see figure \todo{figure 3.5}). The probability that the attacker plays soon enough is $\dfrac{\delta_{D}-d}{\delta_{D}}$ and this will give the attacker an average gain of $\dfrac{\delta_{D}-d}{2}$. If the attacker moves after the period of $\delta_{D}-d$, the gain of the attacker will be zero. The probability that this happens is  $\dfrac{d}{\delta_{D}}$. Looking at one interval of the defender, the average gain rate of the attacker can thus be expressed as follows:
+
+
+However, because of the delay required for virus propagation, the maximal time of control is reduced to $\delta_{D}-d$ , see figure \ref{fig:delaycase1}. While the probability that the attacker will move in the interval of the defender is still \textit{r}, the gain will not be half of the interval. Indeed, if the attacker plays after $\delta_{D}-d$, given the delay \textit{d}, he will never get in control in that interval (see figure \ref{tijdens interval}). 
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=0.7]{../../doc/template/Images/delaydtijdens.pdf}
+\caption{Attacker playing to late. If the attacker enters the defender's interval after $\delta_{D} -d$, he can not get in control in that interval.}
+\label{tijdens interval}
+\end{figure}The probability that the attacker plays soon enough is $\dfrac{\delta_{D}-d}{\delta_{D}}$ and this will give the attacker an average gain of $\dfrac{\delta_{D}-d}{2}$. If the attacker moves after the period of $\delta_{D}-d$, the gain of the attacker will be zero. The probability that this happens is  $\dfrac{d}{\delta_{D}}$. Looking at one interval of the defender, the average gain rate of the attacker can thus be expressed as follows:
+
+
 \begin{equation*}
 \gamma_{A}(\delta_{D},\delta_{A}) = \dfrac {1}{\delta_{D}} [ \dfrac{\delta_{D}}{\delta_{A}} \cdot \big[ \dfrac{\delta_{D}-d}{\delta_{D}} \cdot \dfrac{\delta_{D}-d}{2} + \dfrac{d}{\delta_{D}} \cdot 0 \big] ]
 \end{equation*}
@@ -246,10 +256,10 @@ An intuitive solution for the case with a virus would be to subtract the benefit
 \beta_{A}(\delta_{D},\delta_{A})=\dfrac{(\delta_{A} - d)^2}{2\delta_{A}\delta_{D}} - \dfrac{k_{D}}{\delta_{A}}
 \end{equation*}
 \todo{formule nog eens nakijken}
-This however results in an overestimation. By simulation the game, it can be notices that the closer $\delta_{A}/\delta_{D}$ is equal to one, the better the approximation. If $\delta_{A}/\delta_{D} = 1$ the result is correct. The reason this formula overestimates the benefit of the attacker is that it assumes that the defender is always in control during the delay. However, if the attacker was in control in the previous interval, then he continuous to be in control during the period of the delay, see figure \todo{figuur weer toevoegen}. This means that to find the correct formula, what happens in the previous interval needs to be taken into account. \\
+This however results in an overestimation. By simulation the game, it can be notices that the closer $\delta_{A}/\delta_{D}$ is equal to one, the better the approximation. If $\delta_{A}/\delta_{D} = 1$ the result is correct. The reason this formula overestimates the benefit of the attacker is that it assumes that the defender is always in control during the delay. However, if the attacker was in control in the previous interval, then he continuous to be in control during the period of the delay, see figure \ref{fig:case2}. This means that to find the correct formula, what happens in the previous interval needs to be taken into account. \\
 
 We know that the defender's moves are instantaneous. Therefore, it is easier in this case to calculate the benefit of the defender. Because the defender moves slower than the attacker we know that if the defender moves during the interval of the attacker, he only moves once within this interval.
-The defender will move during the interval of the attacker with a probability of $\dfrac{\delta_{A}}{\delta_{D}} $. When this happens, the defender will be in control for the remainder of this interval. In the next interval the attacker will have to regain control, meaning that during the delay, the defender stays in control, see figure \ref{fig:case2} cases (1) and \todo{through4} (2). The defender will keep the control over the resource in the next interval over a period of the delay, namely \textit{d}. \\
+The defender will move during the interval of the attacker with a probability of $\dfrac{\delta_{A}}{\delta_{D}} $. When this happens, the defender will be in control for the remainder of this interval. In the next interval the attacker will have to regain control, meaning that during the delay, the defender stays in control, see figure \ref{fig:case2} cases (1) to (4). The defender will keep the control over the resource in the next interval over a period of the delay, namely \textit{d}. \\
 
 Consider a timespan $\delta_{A} + d$, representing the attacker's interval followed by the delay period in his next interval. If we assume that $\delta_{A}+d<\delta_{D}$, we can infer that the defender will never move twice during this timespan.
 Because $d + \delta_{A} \leq \delta_{D}$ the next move of the defender in this second interval will never occur during the delay, meaning that the entire delay can be considered as an extra benefit resulting of a play in the previous interval. 
@@ -258,6 +268,12 @@ $\dfrac{(d+\dfrac{\delta_{A}}{2})}{\delta_{A}}$
 
 For the case with a virus we consider two cases, Case a and Case b, depending on whether the delay is shorter or longer than the difference between the attacker's and the defender's period.  \\
 
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=0.7]{../../doc/template/Images/FlipIt2.pdf}
+\caption{All possible cases for the attacker and the defender in Case 2.A where $d + \delta_{A} < \delta_{D}$. As can be seen in cases (1) to (4), the defender will have control during a period of \textit{d} over the resource in the next interval when the defender has flipped in the previous interval.}
+\label{fig:case2}
+\end{figure}
 
 \subsubsection*{\textbf{Case a:} $d + \delta_{A} \leq \delta_{D}$}
 The first case is where the delay is shorter than the difference between the attacker's and the defender's period so their is no problem of counting the delay twice. To determine the total gain rate of the defender we need to know what the probability is that the defender will move during an interval and what the average time is that the defender controls the resource. \todo{beter verwoorden}.
@@ -279,21 +295,16 @@ The benefit for the attacker will be as follows:
 \beta_{A}(\alpha_{D},\alpha_{A}) = 1 -\dfrac{\delta_{A}}{2\delta_{D}} - \dfrac{d}{\delta_{D}} - k_{A} \alpha_{A} 
 \end{equation*}\\
 
+
+
+It is crucial that $ \delta_{D}$ is at least as large as $d + \delta_{A}$. If not, this would mean that the defender can move during the delay in the interval following the interval where the defender already moved. This would mean that there can be an overlap between the average gain of $\dfrac{\delta_{A}}{2} +d$ and the delay. The above benefit formula would then include to much gain for the defender: the potential overlap during the delay would be counted twice. See figure \ref{countedtwice}\\
+
 \begin{figure}[hbtp]
-\caption{All possible cases for the attacker and the defender in Case 2.A where $d + delta_{A} < delta_{D}$. As can be seen, the defender will have control during a period of \textit{d} over the resource when the defender has flipped in the previous interval.}
 \centering
-\includegraphics[scale=0.7]{../../doc/template/Images/FlipIt2.pdf}
-\label{fig:case2}
-\end{figure}
-
-
-It is crucial that $ \delta_{D}$ is at least as large as $d + \delta_{A}$. If not, this would mean that the defender can move during the delay in the interval following the interval where the defender already moved. This would mean that there can be an overlap between the average gain of $\dfrac{\delta_{A}}{2}$ and the delay. The above benefit formula would then include to much gain for the defender: the potential overlap during the delay would be counted twice. See figure \ref{overlap}\\
-\begin{figure}[hbtp]
 \caption{Cases where the delay would be counted twice.}
-\centering
 \includegraphics[scale=0.7]{Images/flipcase2nb.pdf}
+\label{countedtwice}
 \end{figure}
-
 
 ~~ \\
 \subsubsection*{\textbf{Case b:} $d + \delta_{A} \geq \delta_{D}$}
