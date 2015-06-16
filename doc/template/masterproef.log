@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.27)  15 JUN 2015 23:44
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.27)  16 JUN 2015 09:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1486,7 +1486,7 @@ Package babel Info: Redefining dutch shorthand "Y
 [5
 
 
-] <../../doc/template/Images/DefFlipit.png, id=222, 512.3943pt x 92.9874pt>
+] <../../doc/template/Images/DefFlipit.png, id=220, 512.3943pt x 92.9874pt>
 File: ../../doc/template/Images/DefFlipit.png Graphic file (type png)
 
 <use ../../doc/template/Images/DefFlipit.png>
@@ -1921,7 +1921,7 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 157.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 157.
-[9] <Images/PrisDilemma.png, id=407, 466.3824pt x 318.9516pt>
+[9] <Images/PrisDilemma.png, id=405, 466.3824pt x 318.9516pt>
 File: Images/PrisDilemma.png Graphic file (type png)
 
 <use Images/PrisDilemma.png>
@@ -1966,7 +1966,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
  []
 
-<../../doc/template/Images/DefFlipItt.png, id=413, 512.3943pt x 92.9874pt>
+<../../doc/template/Images/DefFlipItt.png, id=411, 512.3943pt x 92.9874pt>
 File: ../../doc/template/Images/DefFlipItt.png Graphic file (type png)
 
 <use ../../doc/template/Images/DefFlipItt.png>
@@ -2158,268 +2158,270 @@ Package babel Info: Redefining dutch shorthand "y
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 23.
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--36
+Underfull \hbox (badness 10000) in paragraph at lines 31--37
 
  []
 
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 37.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 37.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 37.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 37.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 37.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 37.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 37.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 37.
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 42--49
+Underfull \hbox (badness 10000) in paragraph at lines 43--50
+
+ []
+
+
+Underfull \vbox (badness 5417) has occurred while \output is active []
+
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 54.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 54.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 54.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 54.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 54.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 54.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 54.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 54.
+ [18]
+Underfull \hbox (badness 10000) in paragraph at lines 58--60
 
  []
 
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 51.
+(babel)             in language  on input line 114.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 51.
+(babel)             in language  on input line 114.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 51.
+(babel)             in language  on input line 114.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 51.
+(babel)             in language  on input line 114.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 51.
+(babel)             in language  on input line 114.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 51.
+(babel)             in language  on input line 114.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 51.
+(babel)             in language  on input line 114.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 51.
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 55--57
-
- []
-
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 111.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 111.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 111.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 111.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 111.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 111.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 111.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 111.
+(babel)             in language  on input line 114.
 [19]
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 115.
+(babel)             in language  on input line 118.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 115.
+(babel)             in language  on input line 118.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 115.
+(babel)             in language  on input line 118.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 115.
- <Images/DefFlip.pdf, id=491, 512.38626pt x 108.42407pt>
+(babel)             in language  on input line 118.
+ <Images/DefFlip.pdf, id=487, 512.38626pt x 108.42407pt>
 File: Images/DefFlip.pdf Graphic file (type pdf)
 
 <use Images/DefFlip.pdf>
-Package pdftex.def Info: Images/DefFlip.pdf used on input line 132.
+Package pdftex.def Info: Images/DefFlip.pdf used on input line 135.
 (pdftex.def)             Requested size: 358.66794pt x 75.89632pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--136
+Underfull \hbox (badness 10000) in paragraph at lines 130--139
 
  []
 
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 145.
+(babel)             in language  on input line 148.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 145.
+(babel)             in language  on input line 148.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 145.
+(babel)             in language  on input line 148.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 145.
+(babel)             in language  on input line 148.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 145.
+(babel)             in language  on input line 148.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 145.
+(babel)             in language  on input line 148.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 145.
+(babel)             in language  on input line 148.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 145.
-[20 <./Images/DefFlip.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 149--150
+(babel)             in language  on input line 148.
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
 
  []
 
-<Images/Delayuitgelegd.pdf, id=524, 512.38626pt x 236.17334pt>
+<Images/Delayuitgelegd.pdf, id=497, 512.38626pt x 236.17334pt>
 File: Images/Delayuitgelegd.pdf Graphic file (type pdf)
 
 <use Images/Delayuitgelegd.pdf>
-Package pdftex.def Info: Images/Delayuitgelegd.pdf used on input line 153.
+Package pdftex.def Info: Images/Delayuitgelegd.pdf used on input line 156.
 (pdftex.def)             Requested size: 358.66794pt x 165.32019pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
  []
 
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 161.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 161.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 161.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 161.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 161.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 161.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 161.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 161.
-[21 <./Images/Delayuitgelegd.pdf>]
-<Images/FlipItCase1delay.pdf, id=557, 519.29205pt x 87.99817pt>
+<Images/FlipItCase1delay.pdf, id=501, 519.29205pt x 87.99817pt>
 File: Images/FlipItCase1delay.pdf Graphic file (type pdf)
 
 <use Images/FlipItCase1delay.pdf>
-Package pdftex.def Info: Images/FlipItCase1delay.pdf used on input line 167.
+Package pdftex.def Info: Images/FlipItCase1delay.pdf used on input line 170.
 (pdftex.def)             Requested size: 363.50195pt x 61.59828pt.
-
-<Images/FlipItCase1delaytobig.pdf, id=558, 512.38626pt x 77.18385pt>
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 173.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 173.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 173.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 173.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 173.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 173.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 173.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 173.
+ [21 <./Images/DefFlip.pdf>]
+<Images/FlipItCase1delaytobig.pdf, id=531, 512.38626pt x 77.18385pt>
 File: Images/FlipItCase1delaytobig.pdf Graphic file (type pdf)
 
 <use Images/FlipItCase1delaytobig.pdf>
 Package pdftex.def Info: Images/FlipItCase1delaytobig.pdf used on input line 17
-4.
+7.
 (pdftex.def)             Requested size: 358.66794pt x 54.0283pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 182.
+(Font)              <12> on input line 185.
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--185
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 188.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 188.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 188.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 188.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 188.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 188.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 188.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 188.
+ [22 <./Images/Delayuitgelegd.pdf> <./Images/FlipItCase1delay.pdf> <./Images/Fl
+ipItCase1delaytobig.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--191
-
- []
-
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 195.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 195.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 195.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 195.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 195.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 195.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 195.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 195.
-[22 <./Images/FlipItCase1delay.pdf> <./Images/FlipItCase1delaytobig.pdf>]
-<../../doc/template/Images/DiffDelayCase1.pdf, id=615, 512.38626pt x 236.17334p
+<../../doc/template/Images/DiffDelayCase1.pdf, id=611, 512.38626pt x 236.17334p
 t>
 File: ../../doc/template/Images/DiffDelayCase1.pdf Graphic file (type pdf)
  <use ../../doc/template/Images/DiffDelayCase1.pdf>
 Package pdftex.def Info: ../../doc/template/Images/DiffDelayCase1.pdf used on i
-nput line 199.
+nput line 202.
 (pdftex.def)             Requested size: 358.66794pt x 165.32019pt.
 
-<../../doc/template/Images/delaydtijdens.pdf, id=618, 512.38626pt x 113.75499pt
+<../../doc/template/Images/delaydtijdens.pdf, id=614, 512.38626pt x 113.75499pt
 >
 File: ../../doc/template/Images/delaydtijdens.pdf Graphic file (type pdf)
  <use ../../doc/template/Images/delaydtijdens.pdf>
 Package pdftex.def Info: ../../doc/template/Images/delaydtijdens.pdf used on in
-put line 210.
+put line 213.
 (pdftex.def)             Requested size: 358.66794pt x 79.62793pt.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 222.
+(babel)             in language  on input line 217.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 222.
+(babel)             in language  on input line 217.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 222.
+(babel)             in language  on input line 217.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 222.
+(babel)             in language  on input line 217.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 222.
+(babel)             in language  on input line 217.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 222.
+(babel)             in language  on input line 217.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 222.
+(babel)             in language  on input line 217.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 222.
- [23 <../../doc/template/Images/DiffDelayCase1.pdf> <../../doc/template/Images/
-delaydtijdens.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 233--236
+(babel)             in language  on input line 217.
+ [23 <../../doc/template/Images/DiffDelayCase1.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 236--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--244
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 257--260
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
 
  []
 
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 261.
+(babel)             in language  on input line 255.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 261.
+(babel)             in language  on input line 255.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 261.
+(babel)             in language  on input line 255.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 261.
+(babel)             in language  on input line 255.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 261.
+(babel)             in language  on input line 255.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 261.
+(babel)             in language  on input line 255.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 261.
+(babel)             in language  on input line 255.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 261.
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 261--263
+(babel)             in language  on input line 255.
+[24 <../../doc/template/Images/delaydtijdens.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 255--256
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--270
+Underfull \hbox (badness 10000) in paragraph at lines 260--263
 
  []
 
-<../../doc/template/Images/FlipIt2.pdf, id=688, 403.371pt x 683.10506pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--266
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--273
+
+ []
+
+<../../doc/template/Images/FlipIt2.pdf, id=686, 403.371pt x 683.10506pt>
 File: ../../doc/template/Images/FlipIt2.pdf Graphic file (type pdf)
 
 <use ../../doc/template/Images/FlipIt2.pdf>
 Package pdftex.def Info: ../../doc/template/Images/FlipIt2.pdf used on input li
-ne 273.
+ne 276.
 (pdftex.def)             Requested size: 282.35777pt x 478.17029pt.
-
-Underfull \vbox (badness 7486) has occurred while \output is active []
-
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 283.
 Package babel Info: Redefining dutch shorthand "~
@@ -2453,91 +2455,85 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 283.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 283.
-
-[26 <../../doc/template/Images/FlipIt2.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 290--291
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 295--296
+ [26 <../../doc/template/Images/FlipIt2.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 293--294
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--300
+Underfull \hbox (badness 10000) in paragraph at lines 298--299
 
  []
 
-<Images/flipcase2nb.pdf, id=725, 403.371pt x 213.21759pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
+
+ []
+
+<Images/flipcase2nb.pdf, id=722, 403.371pt x 213.21759pt>
 File: Images/flipcase2nb.pdf Graphic file (type pdf)
 
 <use Images/flipcase2nb.pdf>
-Package pdftex.def Info: Images/flipcase2nb.pdf used on input line 304.
+Package pdftex.def Info: Images/flipcase2nb.pdf used on input line 307.
 (pdftex.def)             Requested size: 282.35777pt x 149.25128pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 308--309
+Underfull \hbox (badness 10000) in paragraph at lines 311--312
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--311
+Underfull \hbox (badness 10000) in paragraph at lines 313--314
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--314
-
- []
-
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 314.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 314.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 314.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 314.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 314.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 314.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 314.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 314.
-[27 <./Images/flipcase2nb.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 329--330
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 334--335
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 336--337
+Underfull \hbox (badness 10000) in paragraph at lines 315--317
 
  []
 
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 342.
+(babel)             in language  on input line 317.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 342.
+(babel)             in language  on input line 317.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 342.
+(babel)             in language  on input line 317.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 342.
+(babel)             in language  on input line 317.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 342.
+(babel)             in language  on input line 317.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 342.
+(babel)             in language  on input line 317.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 342.
+(babel)             in language  on input line 317.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 342.
-[28])
+(babel)             in language  on input line 317.
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 332--333
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 337--338
+
+ []
+
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 338.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 338.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 338.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 338.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 338.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 338.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 338.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 338.
+[28 <./Images/flipcase2nb.pdf>])
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 315.
 Package babel Info: Redefining dutch shorthand "~
@@ -2595,10 +2591,10 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 12.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 12.
- <Images/bestresp.png, id=771, 963.6pt x 722.7pt>
-File: Images/bestresp.png Graphic file (type png)
 
-<use Images/bestresp.png>
+<Images/bestresp.png, id=768, 963.6pt x 722.7pt>
+File: Images/bestresp.png Graphic file (type png)
+ <use Images/bestresp.png>
 Package pdftex.def Info: Images/bestresp.png used on input line 27.
 (pdftex.def)             Requested size: 385.43317pt x 289.07487pt.
 
@@ -3176,7 +3172,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 343.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 343.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 343.
 Package rerunfilecheck Info: File `masterproef.out' has not changed.
-(rerunfilecheck)             Checksum: F6818C635DB6E138DFD718571563C1FB;1679.
+(rerunfilecheck)             Checksum: 9F1963AC74BB484E789F6CF2A5BE56E6;1679.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -3184,13 +3180,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 343.
  ) 
 Here is how much of TeX's memory you used:
- 25455 strings out of 493315
- 440651 string characters out of 6137903
- 710547 words of memory out of 5000000
- 27987 multiletter control sequences out of 15000+600000
+ 25448 strings out of 493315
+ 440484 string characters out of 6137903
+ 711661 words of memory out of 5000000
+ 27982 multiletter control sequences out of 15000+600000
  100518 words of font info for 172 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 61i,12n,92p,2023b,931s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,12n,92p,2214b,931s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
 texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2013/t
 exmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2013/texmf-dist/
@@ -3211,10 +3207,10 @@ nts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/
 public/lm/lmsy8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/l
 mtt10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.p
 fb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on masterproef.pdf (65 pages, 2501725 bytes).
+Output written on masterproef.pdf (65 pages, 2502278 bytes).
 PDF statistics:
- 993 PDF objects out of 1000 (max. 8388607)
- 757 compressed objects within 8 object streams
- 202 named destinations out of 1000 (max. 500000)
+ 990 PDF objects out of 1000 (max. 8388607)
+ 754 compressed objects within 8 object streams
+ 200 named destinations out of 1000 (max. 500000)
  27942 words of extra memory for PDF output out of 29859 (max. 10000000)
 

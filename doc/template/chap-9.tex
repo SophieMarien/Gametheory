@@ -23,16 +23,17 @@ The game of FlipIt with propagation delay considers a game where the moves of th
 \section{Difference between FlipIt with and without propagation delay}
 \label{ch2:diffFlip}
 
-\textbf{Section:Required adaptations to the FlipIt game}
+%\textbf{Section:Required adaptations to the FlipIt game}
 
+Below a list of required adaptations that should be made to the FlipIt game to model a game with propagation delay or motivations to keep the assumptions made by FlipIt.
 
 \subsubsection{Single resource}
-The basic FlipIt game consists of a single resource. To represent the security problem of the propagation of an APT in a network, the game now defines its single resource as a computer network with multiple
-nodes. One of the players, the defender, will try to defend his network. The defender
+The basic FlipIt game consists of a single resource. To represent the security problem of the propagation of an APT in a network, the adapted game defines its single resource as a computer network with multiple
+nodes. One of the players, the defender, will also try to defend his network. The defender
 will do this by flipping all the nodes of the network (i.e. the entire resource) in every move he plays. The
-attacker on the other hand will try to infect all the nodes in the network. The attacker
-will do this by flipping the node in the graph that can infect all the nodes in the
-shortest possible time. After dropping a virus on the first node, it takes a while for the virus to infect the entire network. Since the original FlipIt game works with a single resource that is always flipped entirely, the assumption is made that the attacker is considered to gain immediate full control over the resource when the network has been infected, even it is only one node that has been infected.\\
+attacker on the other hand will try to infect all the nodes in the network. For an attacker on the other hand, it is quite impossible to infect all computers in a network at once. Rather, the attacker will try to identify the node in the graph that can infect all the nodes in the
+shortest possible time. Then, after dropping a virus on this first node, it takes a while for the virus to infect the entire network. 
+%Since the original FlipIt game works with a single resource that is always flipped entirely, the assumption is made that the attacker is considered to gain immediate full control over the resource when the network has been infected, even it is only one node that has been infected.\\
 \subsubsection{Only one action per player}
 
 
@@ -48,6 +49,8 @@ infect all the nodes in the network, we have to calculate the shortest path from
 first infected node to the farthest node. Rather than denoting the time needed for infecting \textit{all} the nodes, the variable $d$ can also be used to denote the time needed to infect \textit{a sufficient number} of nodes. \\
 \subsubsection{Stealth character of the move}
 Moves in the basic FlipIt game are stealthy or covert and not immediately detected by the other payer. The attacker attacker's moves are stealthy because we want to model a scenario where a computer network is attacker by an APT. The main characteristic of an APT is that the attack is stealthy. Depending on how the attacker has set up his attack, and depending on the network if it is connected with the Internet or not, the moves of the defender are stealthy or not stealthy. For example, if the attacker launches an APT only to harm the system and not to receive feedback, the moves of the defender are stealthy. If the attacker launches an APT to steal sensitive information, the moves of the defender are non stealthy because the attacker can see that he doesnt receive information anymore. But the defender can also setup a honey pot, making the attacker believe that he is stealing sensitive information, but the information in the honeypot is all fake. In thesis we assume that both moves of the attacker and the defender are stealthy. -- kunnen enerzijds niet stealthy zijn als the apt informatie steelt depending how he setup his attacker. depending on network connected. in this a thesis assumed, non stealthy is..
+\\
+Our motivation for a defender with stealthy moves is that it can not be assumed that every attacker can receive feedback from an APT. Some ATP's are designed only to cause harm on the systems that are infected e.g. the Stuxnetworm that was developed to destroy nuclear reactors. The Stuxnetworm was resident on a isolated network, meaning that there was no way to connect to the internet. Another example is by the use of honeypots. Honeypots emulate services or creates multiple instances of real operating systems and can pretend to have sensitive information.  Honeypots do not detect all malicious attacks so the attacker can stay unnoticed and can still provide information as feedback. This is a way how the defender can also be stealthy by providing  false information through the honeypot. 
 \subsubsection{Cost associated with the move}
 \subsubsection{Renewal strategies}
 The formalization starts from the model of the non-adaptive continuous basic FlipIt game where players use a periodic strategy with a random phase. The basic FlipIt game concluded that periodic strategy is the dominant strategy against all renewal strategies. \todo{zelfde paper conclusie}. Furthermore, this choice is motivated by the assumption that in most organisations, the defence strategy is to periodically defend the network.  This is true for the example of patching. Companies like Microsoft en Google release at a specific moment patches. So companies will apply these patches when they come out. Microsoft security bulletins are released on the Second Tuesday of each month. \cite{MicroPatch}
