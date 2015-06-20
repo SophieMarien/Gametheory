@@ -265,14 +265,15 @@ In case there is feedback, a player can adapt his strategy to the information re
 \subsubsection{Results of the FlipIt game}
 The study of the different strategies by means of FlipIt framework allows to derive a number of interesting results:  
 \begin{itemize}
-\item periodic games dominate the other renewal strategies, meaning that it is always advantageous to play periodically against an opponent with a renewal strategy;
+\item periodic strategy strongly dominates the other renewal strategies if the opponent has a periodic or non-arithmetic renewal strategy, meaning that it is always advantageous for the opponent to play periodically against a player with a non-adaptive strategy;
 \item periodic games are disadvantageous against players following a Last Move adaptive strategy;
-\item if the defender plays with a periodic rate that is fast enough he'll force the attacker to drop out;
+\item if a defender facing an LM attacker and with a cost much lower than the attacker, he can play with a periodic rate that is fast enough he'll force the attacker to drop out;
+\item a defender facing an LM attacker has to play with a randomized strategy e.g. exponential strategy;
 \item any amount of feedback about the opponent received during the game, benefits to a player.
 \end{itemize}
  
- In this paper we restrict ourselves to non-adaptive periodic strategies. This choice is motivated by the fact that in a security game a player (defender or attacker) rarely has information about the moves (last move or full history) of his opponent. The results also indicate that the periodic strategy might be the dominant strategy.  \\
-\todo{dit stuk tekst hierboven meer motiveren}
+% In this paper we restrict ourselves to non-adaptive periodic strategies. This choice is motivated by the fact that in a security game a player (defender or attacker) rarely has information about the moves (last move or full history) of his opponent. The results \cite{FlipIt} also indicate that the periodic strategy might be the dominant strategy.  \\
+
  
 \section{Extensions on FlipIt}
 \label{ch1:extendedWork}
