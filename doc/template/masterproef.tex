@@ -116,6 +116,7 @@ delay for virus propagation into account, which in our case will be a delay for 
  {\newcommand{\lipsum}[1][11-13]{\par Hier komt wat tekst: lipsum ##1.\par}}
 %%%%%%%
 
+
 %\includeonly{chap-n}
 \begin{document}
 
@@ -163,110 +164,111 @@ delay for virus propagation into account, which in our case will be a delay for 
 \end{abstract}
 
 \begin{abstract*}
----TODO dit stuk moet nog geschreven worden ---
-Onlangs zijn er gerichte security aanvallen geweest op grote bedrijven, zoals de aanval op Belgacom (een grote Belgische telcom). Deze aanvallen hebben aangetoond dat zelfs de meest veilige
-bedrijven nog steeds gecompromitteerd kunnen worden, en dat bovendien dergelijke aanvallen onopgemerkt kunnen blijven voor een bepaalde tijd.
-Flipit is een model dat door onderzoekers van de RSA (van Dijk et al.) is voorgesteld om dergelijke aanvallen te modelleren. Het is een 2-spelers spel bestaande uit een aanvaller, een verdediger en een gedeelde bron.  De spelers proberen om controle te krijgen over de gedeelde bron en ze
-doen dit op een heimelijke manier. Met FlipIt wordt echter geen rekening mee gehouden dat een aanval niet onmiddellijk is, maar dat dit kan gebeuren met een zekere vertraging. In dit artikel passen we het model van FlipIt zodanig aan dat we het kunnen gebruiken voor heimelijke aanvallen die onderheven zijn aan een vertraging.
-Resultaat :
-
-Flipit is een spel ge"introduceerd door Van Dijk et al. Om te begrijpen hoe we het FlipIt spel kunnen aanpassen om virus propagatie in acht te nemen, is het belangrijk om vertrouwd te raken met de concepten van het basische Flipit spel en de notaties. Daarom beginnen we eerst met een uitleg hoe het basische FlipIt spel werkt en de belangrijkste formules die we in de paper gebruiken. \\
-
-Flipit is een spel met twee spelers met een gedeelde bron die de spelers zo lang mogelijk willen beheren. De gedeelde bron kan een wachtwoord, een netwerk of een geheime sleutel zijn afhankelijk van welke situatie gemodelleerd wordt. In de rest van de paper noemen we de twee spelers de aanvaller, aangegeven met onderschrift  \textit{A} en de verdediger, aangegeven met onderschrift \textit{D}.
-
-Het spel begint op tijdstip $ t = 0 $ en blijft voor onbepaalde tijd doorgaan ($ t \rightarrow \infty $). De tijd van het spel wordt aangenomen als continu. Om controle over de bron te krijgen kunnen de spelers $i$, met $ i \in \{A, D \} $ de bron flippen. Elke flip impliceert een zekere kost $ k_{i} $ en deze kosten kunnen vari"eren voor elke speler. Beide spelers proberen om hun kosten te minimaliseren. Door een kost in te voeren, voorkomt men dat de spelers te vaak bewegen. \\
-
-De unieke eigenschap van Flipit is dat elke flip gebeurt op een heimelijke manier, wat betekent dat de speler heeft geen idee dat de andere speler (zijn tegenstander) de bron heeft geflipt. Zo zal de verdediger niet kunnen achterhalen of de bron al is gefipt door de aanvaller tot hij de bron zelf flipt. Het doel van de speler is om zo lang mogelijk de controle te behouden over de bron en terwijl de kost minimaliseren. Een beweging kan ook leiden tot een "verloren beweging", genoemd een flop. Het kan gebeuren dat de bron reeds onder controle is van de speler. Als de speler flipt wanneer hij of zij al de controle  heeft over de bron, dan verspilt de speler een zet omdat het niet leidt tot een verandering van controle en dus een kost verspilt wordt. \\
-
-
-\begin{figure}[hbtp]
-\center
-\includegraphics[scale=0.5]{../../doc/template/Images/DefFlipit}
-\caption{Een afbeelding van een Flipit spel met discrete tijdsintervallen waarbij beide spelers periodiek spelen. Elke beweging of flip wordt aangegeven met een blauw of oranje cirkel. De aanvaller is vertegenwoordigd in het oranje en speelt met een periode van $ \delta_{A} = 4 $. De verdediger is vertegenwoordigd in het blauw en speelt met een periode van $ \delta_{D} = 3 $. De blauwe en oranje rechthoeken geven de hoeveelheid tijd die de betreffende speler in de controle is van de bron.}
-\label{fig: FLipItDefault}
-\end{figure}
-
-
-
-De staat van de bron wordt aangeduid als een tijdsafhankelijke variabele $ C = C_{i}(t) $.
-$ C_{D}(t) $ 1 is als het spel onder controle is van de verdediger en 0 als het spel onder controle is van de aanvaller. Omgekeerd, zal $ C_{A}(t) $ 1 zijn als het spel onder controle is van de aanvaller en 0 als onder controle van de verdediger. Dus, $ C_{A}(t) = 1 - C_{D}(t) $.
-Het spel begint met de verdediger in controle: $ C_{D}(0) = 1 $. \\
-
-
-De spelers krijgen een benefit gelijk aan de hoeveelheid tijd dat ze in het bezit zijn van de bron min de kosten voor het maken van de bewegingen. De kosten van een speler \textit{i} worden aangegeven met $ k_{i} $.
-De totale winst van de speler \textit{i} is gelijk aan de totale hoeveelheid tijd waarbij een speler \textit{i} in controle is can de bron vanaf het begin van het spel tot de huidige tijd \textit{t}. Dit wordt als volgt uitgedrukt:
-\begin{equation}
-G_{i}(t) = \int_0^t \! C_{i}(x) dx.
-\end{equation}
-De totale winst van de verdediger opgeteld bij de totale winst van de aanvaller telt op tot \textit{t}:
-\begin{equation} 
-G_{D}(t) + G_{A}(t) = t
-\end{equation}
-De gemiddelde winst van speler \textit{i} wordt gedefinieerd als volgt:
-\begin{equation}
-\gamma_{i}(t) = G_{i}(t) / t.
-\end{equation}
-En daarmee voor alle $ t> 0 $:
-\begin{equation} 
-\gamma_{D}(t) + \gamma_{A}(t) = 1
-\end{equation}
-Laat $ \beta_{i}(t) $ is de gemiddelde benefit van een speler \textit{i} tot aan tijd \textit{t}:
-\begin{equation}
-\beta_{i}(t) = \gamma_{i}(t) - k_{i} \alpha_{i}.
-\end{equation}
-Dit is gelijk aan de fractie van de tijd waarbij de bron in handen is van speler \textit{i}, minus de kosten van het maken van de bewegingen. ~ $ \alpha_{i} $ definieert het gemiddeld aantal flippen door speler \textit{i} tot tijd \textit{t}.
-De asymptotische benefit ratio wordt gedefinieerd als lim inf van de gemiddelde benefit omdat de tijd t toeneemt tot oneindig en de gemiddelde benefit niet beperkend waarden.
-\begin{equation}
-\beta_{i} (t) = \lim_{t \to \infty } inf \beta_{i}(t)
-\end{equation}
-\\
-\todo{laatset zinnen niet correct}
-
-\subsubsection{strategie"en}
-Omdat de spelers bewegen in een sluipende manier, zijn er verschillende soorten feedback die een speler kan krijgen tijdens het rijden. Dergelijke feedback kan worden verdeeld in twee groepen van strategie"en. De niet-adaptieve strategie"en en de adaptieve strategie\"en. Deze worden beschreven in de tabel \ref{tabel: Strategies}. \\
-
-Als er geen feedback voor geen van beide spelers, hebben wij een niet-adaptieve strategie. Omdat een speler geen feedback tijdens het spel zal hij spelen op dezelfde manier tegen elke tegenstander. De strategie die niet-adaptieve omdat de speelstrategie niet afhankelijk is van de tegenstander bewegingen. Een interessante subklasse van de niet-adaptieve strategie"en die waar de tijdsintervallen tussen twee opeenvolgende bewegingen worden gegenereerd door een vernieuwingsproces. Een voorbeeld hiervan werd strategie is de periodieke strategie waarbij het tijdsverloop tussen twee opeenvolgende bewegingen van de spelers een vast interval. Een exponenti"ele strategie is vernieuwingsstrategie waarbij het interval tussen twee opeenvolgende zetten exponentieel verdeeld. \\
-In het geval dat er feedback, een speler kan zijn strategie aanpassen aan de ontvangen over de bewegingen van de tegenstander informatie. Afhankelijk van de hoeveelheid informatie ontvangen, kunnen twee subklassen van adaptieve strategie"en worden ge"identificeerd. The Last Move (LM) strategie"en vertegenwoordigen de klasse waarin wanneer een speler flips zal hij vinden van de exacte tijd dat de tegenstander speelde de laatste keer. In de tweede klasse, genaamd Full History (FH), wanneer een speler flips zal hij vinden van de hele geschiedenis van de beweging van de tegenstander. \\
-In dit artikel zullen we ons richten op de niet-adaptieve strategie"en. Deze keuze is ingegeven door het feit dat in een zekerheid spel een speler (verdediger of aanvaller) zelden informatie over de bewegingen (laatste zet of volledige geschiedenis) van zijn tegenstander. \\
-
-
- \begin{table}
- \center
- \begin {tabular} {l | c}
-  \textbf{Categories} & \textbf{Klassen Strategies} \\
-  \hline Non-adaptieve (NA) & Vernieuwing \\
-  & - Periodieke \\
-  & ~~~ - Exponenti"ele \\
-  & General non-adaptieve \\
-  \hline Adaptive (AD) & Laatste move (LM) \\
-  & Full History (FH) \\
-\end{tabular}
- \caption{hi"erarchie van de klassen van de strategie"en in Flipit}
- \label{tabel: Strategies}
- \end{table}
-
-
-Het onderzoek van de verschillende strategie"en middels Flipit framework stelt een aantal interessante resultaten leiden:
-\begin{itemize}
-\item periodieke spellen domineren de andere vernieuwing strategie"en, wat betekent dat het altijd voordelig om periodiek tegen een tegenstander met een vernieuwing van de strategie te spelen;
-\item periodieke games zijn nadelig tegen spelers na een laatste zet adaptieve strategie;
-\item als de verdediger speelt met een periodieke tarief dat snel genoeg is zal hij de aanvaller te dwingen uit te vallen;
-\item  
-%item een ​​bedrag van feedback over de tegenstander ontving tijdens het spel, de voordelen aan een speler.
-\end{itemize}
-
-In dit \textit{abstract} environment wordt een al dan niet uitgebreide
-Nederlandse samenvatting van het werk gegeven.
-Wanneer de tekst voor een Nederlandstalige master in het Engels wordt
-geschreven, wordt hier normaal een uitgebreide samenvatting verwacht,
-bijvoorbeeld een tiental bladzijden. \\
-  
-Dit is het kort geschreven.\\ Eigenlijk paper in het nederlands schrijven \\
-Intro -- positionering -- vraagstelling -- oplossingen en contributies \\
-Flipit en cybersecurity\\
-Flipit met delay \\
-Berekeningen \\
-Niet zo lang geleden werden APT's ontdekt. (Introzin moet beter en anders). Bedrijven worden door APTs aangevallen. Belangrijk om APTs tegen te gaan. Geven een grote kost aan de bedrijven. Hun stealthy aspect is vervelend en moeilijk aan te pakken. Preventie is beter dan detectie. Eens ze binnen zijn kunnen we veel schade veroorzaken. Conventionele middelen zoals firewalls, malware detection helpen hier niet tegen. Nieuwe methode nodig. Gametheory FlipIt. FlipIt uitleggen. Deze formules gaan we dan omvormen tot ze wel propagatie delay kunnen modelleren. Hiervan berekenen we ook het Nash equilibrium. 
+Nederlandse abstract
+%---TODO dit stuk moet nog geschreven worden ---
+%Onlangs zijn er gerichte security aanvallen geweest op grote bedrijven, zoals de aanval op Belgacom (een grote Belgische telcom). Deze aanvallen hebben aangetoond dat zelfs de meest veilige
+%bedrijven nog steeds gecompromitteerd kunnen worden, en dat bovendien dergelijke aanvallen onopgemerkt kunnen blijven voor een bepaalde tijd.
+%Flipit is een model dat door onderzoekers van de RSA (van Dijk et al.) is voorgesteld om dergelijke aanvallen te modelleren. Het is een 2-spelers spel bestaande uit een aanvaller, een verdediger en een gedeelde bron.  De spelers proberen om controle te krijgen over de gedeelde bron en ze
+%doen dit op een heimelijke manier. Met FlipIt wordt echter geen rekening mee gehouden dat een aanval niet onmiddellijk is, maar dat dit kan gebeuren met een zekere vertraging. In dit artikel passen we het model van FlipIt zodanig aan dat we het kunnen gebruiken voor heimelijke aanvallen die onderheven zijn aan een vertraging.
+%Resultaat :
+%
+%Flipit is een spel ge"introduceerd door Van Dijk et al. Om te begrijpen hoe we het FlipIt spel kunnen aanpassen om virus propagatie in acht te nemen, is het belangrijk om vertrouwd te raken met de concepten van het basische Flipit spel en de notaties. Daarom beginnen we eerst met een uitleg hoe het basische FlipIt spel werkt en de belangrijkste formules die we in de paper gebruiken. \\
+%
+%Flipit is een spel met twee spelers met een gedeelde bron die de spelers zo lang mogelijk willen beheren. De gedeelde bron kan een wachtwoord, een netwerk of een geheime sleutel zijn afhankelijk van welke situatie gemodelleerd wordt. In de rest van de paper noemen we de twee spelers de aanvaller, aangegeven met onderschrift  \textit{A} en de verdediger, aangegeven met onderschrift \textit{D}.
+%
+%Het spel begint op tijdstip $ t = 0 $ en blijft voor onbepaalde tijd doorgaan ($ t \rightarrow \infty $). De tijd van het spel wordt aangenomen als continu. Om controle over de bron te krijgen kunnen de spelers $i$, met $ i \in \{A, D \} $ de bron flippen. Elke flip impliceert een zekere kost $ k_{i} $ en deze kosten kunnen vari"eren voor elke speler. Beide spelers proberen om hun kosten te minimaliseren. Door een kost in te voeren, voorkomt men dat de spelers te vaak bewegen. \\
+%
+%De unieke eigenschap van Flipit is dat elke flip gebeurt op een heimelijke manier, wat betekent dat de speler heeft geen idee dat de andere speler (zijn tegenstander) de bron heeft geflipt. Zo zal de verdediger niet kunnen achterhalen of de bron al is gefipt door de aanvaller tot hij de bron zelf flipt. Het doel van de speler is om zo lang mogelijk de controle te behouden over de bron en terwijl de kost minimaliseren. Een beweging kan ook leiden tot een "verloren beweging", genoemd een flop. Het kan gebeuren dat de bron reeds onder controle is van de speler. Als de speler flipt wanneer hij of zij al de controle  heeft over de bron, dan verspilt de speler een zet omdat het niet leidt tot een verandering van controle en dus een kost verspilt wordt. \\
+%
+%
+%\begin{figure}[hbtp]
+%\center
+%\includegraphics[scale=0.5]{../../doc/template/Images/DefFlipit}
+%\caption{Een afbeelding van een Flipit spel met discrete tijdsintervallen waarbij beide spelers periodiek spelen. Elke beweging of flip wordt aangegeven met een blauw of oranje cirkel. De aanvaller is vertegenwoordigd in het oranje en speelt met een periode van $ \delta_{A} = 4 $. De verdediger is vertegenwoordigd in het blauw en speelt met een periode van $ \delta_{D} = 3 $. De blauwe en oranje rechthoeken geven de hoeveelheid tijd die de betreffende speler in de controle is van de bron.}
+%\label{fig: FLipItDefault}
+%\end{figure}
+%
+%
+%
+%De staat van de bron wordt aangeduid als een tijdsafhankelijke variabele $ C = C_{i}(t) $.
+%$ C_{D}(t) $ 1 is als het spel onder controle is van de verdediger en 0 als het spel onder controle is van de aanvaller. Omgekeerd, zal $ C_{A}(t) $ 1 zijn als het spel onder controle is van de aanvaller en 0 als onder controle van de verdediger. Dus, $ C_{A}(t) = 1 - C_{D}(t) $.
+%Het spel begint met de verdediger in controle: $ C_{D}(0) = 1 $. \\
+%
+%
+%De spelers krijgen een benefit gelijk aan de hoeveelheid tijd dat ze in het bezit zijn van de bron min de kosten voor het maken van de bewegingen. De kosten van een speler \textit{i} worden aangegeven met $ k_{i} $.
+%De totale winst van de speler \textit{i} is gelijk aan de totale hoeveelheid tijd waarbij een speler \textit{i} in controle is can de bron vanaf het begin van het spel tot de huidige tijd \textit{t}. Dit wordt als volgt uitgedrukt:
+%\begin{equation}
+%G_{i}(t) = \int_0^t \! C_{i}(x) dx.
+%\end{equation}
+%De totale winst van de verdediger opgeteld bij de totale winst van de aanvaller telt op tot \textit{t}:
+%\begin{equation} 
+%G_{D}(t) + G_{A}(t) = t
+%\end{equation}
+%De gemiddelde winst van speler \textit{i} wordt gedefinieerd als volgt:
+%\begin{equation}
+%\gamma_{i}(t) = G_{i}(t) / t.
+%\end{equation}
+%En daarmee voor alle $ t> 0 $:
+%\begin{equation} 
+%\gamma_{D}(t) + \gamma_{A}(t) = 1
+%\end{equation}
+%Laat $ \beta_{i}(t) $ is de gemiddelde benefit van een speler \textit{i} tot aan tijd \textit{t}:
+%\begin{equation}
+%\beta_{i}(t) = \gamma_{i}(t) - k_{i} \alpha_{i}.
+%\end{equation}
+%Dit is gelijk aan de fractie van de tijd waarbij de bron in handen is van speler \textit{i}, minus de kosten van het maken van de bewegingen. ~ $ \alpha_{i} $ definieert het gemiddeld aantal flippen door speler \textit{i} tot tijd \textit{t}.
+%De asymptotische benefit ratio wordt gedefinieerd als lim inf van de gemiddelde benefit omdat de tijd t toeneemt tot oneindig en de gemiddelde benefit niet beperkend waarden.
+%\begin{equation}
+%\beta_{i} (t) = \lim_{t \to \infty } inf \beta_{i}(t)
+%\end{equation}
+%\\
+%\todo{laatset zinnen niet correct}
+%
+%\subsubsection{strategie"en}
+%Omdat de spelers bewegen in een sluipende manier, zijn er verschillende soorten feedback die een speler kan krijgen tijdens het rijden. Dergelijke feedback kan worden verdeeld in twee groepen van strategie"en. De niet-adaptieve strategie"en en de adaptieve strategie\"en. Deze worden beschreven in de tabel \ref{tabel: Strategies}. \\
+%
+%Als er geen feedback voor geen van beide spelers, hebben wij een niet-adaptieve strategie. Omdat een speler geen feedback tijdens het spel zal hij spelen op dezelfde manier tegen elke tegenstander. De strategie die niet-adaptieve omdat de speelstrategie niet afhankelijk is van de tegenstander bewegingen. Een interessante subklasse van de niet-adaptieve strategie"en die waar de tijdsintervallen tussen twee opeenvolgende bewegingen worden gegenereerd door een vernieuwingsproces. Een voorbeeld hiervan werd strategie is de periodieke strategie waarbij het tijdsverloop tussen twee opeenvolgende bewegingen van de spelers een vast interval. Een exponenti"ele strategie is vernieuwingsstrategie waarbij het interval tussen twee opeenvolgende zetten exponentieel verdeeld. \\
+%In het geval dat er feedback, een speler kan zijn strategie aanpassen aan de ontvangen over de bewegingen van de tegenstander informatie. Afhankelijk van de hoeveelheid informatie ontvangen, kunnen twee subklassen van adaptieve strategie"en worden ge"identificeerd. The Last Move (LM) strategie"en vertegenwoordigen de klasse waarin wanneer een speler flips zal hij vinden van de exacte tijd dat de tegenstander speelde de laatste keer. In de tweede klasse, genaamd Full History (FH), wanneer een speler flips zal hij vinden van de hele geschiedenis van de beweging van de tegenstander. \\
+%In dit artikel zullen we ons richten op de niet-adaptieve strategie"en. Deze keuze is ingegeven door het feit dat in een zekerheid spel een speler (verdediger of aanvaller) zelden informatie over de bewegingen (laatste zet of volledige geschiedenis) van zijn tegenstander. \\
+%
+%
+% \begin{table}
+% \center
+% \begin {tabular} {l | c}
+%  \textbf{Categories} & \textbf{Klassen Strategies} \\
+%  \hline Non-adaptieve (NA) & Vernieuwing \\
+%  & - Periodieke \\
+%  & ~~~ - Exponenti"ele \\
+%  & General non-adaptieve \\
+%  \hline Adaptive (AD) & Laatste move (LM) \\
+%  & Full History (FH) \\
+%\end{tabular}
+% \caption{hi"erarchie van de klassen van de strategie"en in Flipit}
+% \label{tabel: Strategies}
+% \end{table}
+%
+%
+%Het onderzoek van de verschillende strategie"en middels Flipit framework stelt een aantal interessante resultaten leiden:
+%\begin{itemize}
+%\item periodieke spellen domineren de andere vernieuwing strategie"en, wat betekent dat het altijd voordelig om periodiek tegen een tegenstander met een vernieuwing van de strategie te spelen;
+%\item periodieke games zijn nadelig tegen spelers na een laatste zet adaptieve strategie;
+%\item als de verdediger speelt met een periodieke tarief dat snel genoeg is zal hij de aanvaller te dwingen uit te vallen;
+%\item  
+%%item een ​​bedrag van feedback over de tegenstander ontving tijdens het spel, de voordelen aan een speler.
+%\end{itemize}
+%
+%In dit \textit{abstract} environment wordt een al dan niet uitgebreide
+%Nederlandse samenvatting van het werk gegeven.
+%Wanneer de tekst voor een Nederlandstalige master in het Engels wordt
+%geschreven, wordt hier normaal een uitgebreide samenvatting verwacht,
+%bijvoorbeeld een tiental bladzijden. \\
+%  
+%Dit is het kort geschreven.\\ Eigenlijk paper in het nederlands schrijven \\
+%Intro -- positionering -- vraagstelling -- oplossingen en contributies \\
+%Flipit en cybersecurity\\
+%Flipit met delay \\
+%Berekeningen \\
+%Niet zo lang geleden werden APT's ontdekt. (Introzin moet beter en anders). Bedrijven worden door APTs aangevallen. Belangrijk om APTs tegen te gaan. Geven een grote kost aan de bedrijven. Hun stealthy aspect is vervelend en moeilijk aan te pakken. Preventie is beter dan detectie. Eens ze binnen zijn kunnen we veel schade veroorzaken. Conventionele middelen zoals firewalls, malware detection helpen hier niet tegen. Nieuwe methode nodig. Gametheory FlipIt. FlipIt uitleggen. Deze formules gaan we dan omvormen tot ze wel propagatie delay kunnen modelleren. Hiervan berekenen we ook het Nash equilibrium. 
 \end{abstract*}
 
 % Een lijst van figuren en tabellen is optioneel

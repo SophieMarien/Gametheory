@@ -5,24 +5,73 @@
 
 The spreading of malware has already been extensively researched. Because of all the different types of propagation it is hard to pick out one model that can model all of them. Modelling the spread of malware depends on two great factors: the method used for the propagation and the graph where the malware will spread itself. Viruses and worms are the types of malware that are the most researched. \\
 In this chapter we focus on the propagation models of worms. The propagation of a worm is not depending on the human interaction as it is with viruses. In section [] we present an overview of the most used propagation methods by worms. Next, in section [] different kind of graphs to model a computer network are introduced. Section [] lists all the kind of models to determine the time a worm needs to infect a sufficient number of nodes. These results can be used for the completion of parameter \textit{d}. Finally we introduce an easy method to calculate the delay of the propagation of a worm. 
-\subsection{Introduction to this chapter}
 
+This related work is based on the following paper: [importance journal], 
 Advanced Persistent Threads propagation koppelen met die van een worm.
-A virus infects one node on the network and has to wait for human interaction to spread. So the spreading speed depends on the human interaction. 
-\subsection*{Methods of propagation}
+
+\subsection{Methods of propagation}
+
+There exist two kinds of APT's in the context of propagation. There are APT's that only launch an attack on just one target. The mechanism they use to propagate is the dropper mechanism. The dropper is the initial attack vector that compromises the system. The other kind of APT's target multiple victims. They also use a dropper mechanism and have an additional mechanism for self-propagation. It can be either the virus propagation or the worm like propagation. A virus infects one node on the network and has to wait for human interaction to spread. So the spreading speed depends on the human interaction. If an APT uses a worm propagation method it will spread by itself after it has been dropped on the network. Because it is not easy to incorporate the human factor in a spreading method we will only examine the worm propagation models for our APT. \\
+
+Below is a list of several common propagation methods:
 
 \begin{description}
-\item Random scanning: Some worms propagate by using the method of random scanning 
-IP addresses.  Rate of terms of succeeded randwomly choosen IP adresses -> maximise good ip adresses. After a while the remaining nodes will be les likely to be reached. An example of such a worm is `Code Red' .
-\item Routing worms: they use BGP routing tables to scan the routable address space. 3 times faster than traditional worm that uses random scanning. Spyb0t or network bluepill.
-\item email worms: use the email systems to propagate. The Kak worm is a Javascript computer worm that spread itself by exploiting a bug in Outlook Express. 
+\item Scanning methods: A worm can use distinct ways of scanning: random, localized, topological or hit-list scanning.
+\begin{itemize}
+\item Random scanning: Some worms propagate by using the method of random targeting IP addresses. Rate of terms of succeeded randomly chosen IP addresses is very low. An example of such a worm is `Code Red' ans 'Slammer'.
+\item Localized scanning: --Localized scanning,
+used by the Code Red II and Nimda worms, preferentially
+scans for hosts in the ''local'' address space.--
+\item Topological scanning: --Topological scanning, used by the Morris worm, relies
+on the ''address'' information contained in the victim
+machines to locate new targets.--
+\item Hit-list scanning: With the method of hit-list scanning, before hand a short-list of vulnerable systems are made. --to speed up
+the spread of worms at the initial stage. This list consists
+of potentially vulnerable machines that are gathered
+beforehand and targeted first when the worm
+is released. An extreme case for the hit-list-scanning
+worms is a flash worm, which gathers all vulnerable
+machines into the list.--
+\end{itemize}   
+\item Routing worms: they use BGP routing tables to scan the routable address space. 3 times faster than traditional worm that uses random scanning. Spyb0t or network Bluepill. --a ''routing worm'' [20]. Zou et al. designed two types
+of routing worms [20]. One type, based on Class-A
+(x.0.0.0/8) address allocations, is thus called 'ClassA
+routing worms.'' Such worms can reduce the scanning
+space to 45.3\% of the entire IPv4 address space.
+The other type, based on BGP routing tables, is thus
+called''BGP routing worms'' Such worms can reduce
+the scanning space to only about 28.6\% of the entire
+IPv4 address space.--
+\item email worms: use the email systems to propagate. The Kak worm is a Javascript computer worm that spread itself by exploiting a bug in Outlook Express.  GhostNet
+\item DNS random scanning: --Another strategy that a worm
+can potentially employ is DNS random scanning [5],
+in which a worm uses the DNS infrastructure to locate
+likely targets by guessing DNS names instead of
+IP addresses. Such a worm in the IPv6 Internet is
+shown to exhibit a propagation speed comparable to
+that of an IPv4 random-scanning worm--
 %Pikachu worm: The virus was mainly spread through Microsoft Outlook email attachments. The email containing the attached virus propagated through infected users by sending itself to all contacts in the user's Outlook address book. [5]
 \item self stopping worm: reduces speed to avoid detection. Atak worm or self stopping worm
+\item network sharing Shamoon
+\item shared files or spreading through SMB (shared message block or  Common Internet File System (CIFS)) Flame
+\item zero-day vulnerabilities
 \end{description}
 
+--dit stuk tekst overbodig--
 The start of such a propagation can be different. Either it is a targeted attack or a random attack. For example a usb stick or other shared resources can be used to start the spreading. It can be given to some special person or it can just be left behind in a parking lot. This can still be a targeted attack if it is the parking lot of a targeted company but there is more insecurity of where the usb stick will end. Another way is by sending an email. It can also start from one computer that is connected directly to the internet. Downloading malicious programs. 
 
-\subsection*{Models for worm propagation}
+\subsection{Graph models}
+For some of the spreading methods, the graph of the network matters. It is important to have the right topology for the right method. Email worms need a topology that represent a social network, BGP routing worms need a topology on network level. 
+--iets zeggen dat het ook belangrijk is voor de defender om zijn netwerk zo aan te passen dat het virus moeilijker kan verspreiden. Network segregation mss aanhalen ?--
+
+\begin{description}
+\item Power law
+\item Small world topology
+\item random graph
+\item ..
+\end{description}
+
+\subsection{Models for worm propagation}
 To use the models for worm propagation in our model of the FlipIt game it is suffi"ent to know the propagation speed of the worm and define after how many time units the network is defected. This will be equal to the \textit{d} parameter in our model.  
 Stackelberg game: first move is from attacker, defender is follower. 
 
@@ -157,61 +206,61 @@ So for $A^{N}$ every $a_{ij}$ entry gives the number of paths with N steps from 
 
 With this knowledge we can calculate in how many steps a node is infected. $A$ calculates which nodes are infected after 1 step, $A^{N}$ calculates which nodes are infected in N steps.. So if we want to know how many nodes are infected after 3 steps we have to add every matrix $(A + A^{2} + A^{3}) $ and see which entry is a non zero entry. 
 
-What do we need for an algorithm
-\begin{description}
-\item Graph network $G = < V, E>$
-\item Graph matrix $[A]$ which is $|V| \times |V| $
-\item Attack vector $[X]$ which is $1 \times |V|$
-\item cummulative matrix $[M]$ which is $|V| \times |V|$
-\item state matrix $[T]$  which is $|V| \times |V|$
-\item Reset vector $[R]$
-\item duration \textit{d}
-\item time \textit{n}
-\item rate $\delta _{0}$ of defender and $\delta _{1}$ of attacker
-\end{description}
-
-
-
-Initialisation algorithm:
-
-
-\begin{verbatim}
-initialisatie
-	d=0
-	A=basismatrix
-	M=A^{0}
-	n=0
-	\delta_{0}
-	\delta_{1}
-	X
-	R
-	controller = defender
-	
-	
-
-	Algorithm
-	n:= n + 1;
-	Check who is in control? ( through modulo )
-	if ( defender & controller=defender)
-				d:= d + 1;
-	
-	if ( defender & controller=attacker )
-				G = X \times R  (flippen ten voordele van defender)
-				d = 0
-				controller = defender
-				
-	if ( attacker & controller=defender )
-				controller=attacker
-				..
-				
-	if ( attacker & contoller=attacker )
-				d:= d + 1
-				M = M x A
-				T = T + M
-				G = X x T
-				
-		
-\end{verbatim}
+%What do we need for an algorithm
+%\begin{description}
+%\item Graph network $G = < V, E>$
+%\item Graph matrix $[A]$ which is $|V| \times |V| $
+%\item Attack vector $[X]$ which is $1 \times |V|$
+%\item cummulative matrix $[M]$ which is $|V| \times |V|$
+%\item state matrix $[T]$  which is $|V| \times |V|$
+%\item Reset vector $[R]$
+%\item duration \textit{d}
+%\item time \textit{n}
+%\item rate $\delta _{0}$ of defender and $\delta _{1}$ of attacker
+%\end{description}
+%
+%
+%
+%Initialisation algorithm:
+%
+%
+%\begin{verbatim}
+%initialisatie
+%	d=0
+%	A=basismatrix
+%	M=A^{0}
+%	n=0
+%	\delta_{0}
+%	\delta_{1}
+%	X
+%	R
+%	controller = defender
+%	
+%	
+%
+%	Algorithm
+%	n:= n + 1;
+%	Check who is in control? ( through modulo )
+%	if ( defender & controller=defender)
+%				d:= d + 1;
+%	
+%	if ( defender & controller=attacker )
+%				G = X \times R  (flippen ten voordele van defender)
+%				d = 0
+%				controller = defender
+%				
+%	if ( attacker & controller=defender )
+%				controller=attacker
+%				..
+%				
+%	if ( attacker & contoller=attacker )
+%				d:= d + 1
+%				M = M x A
+%				T = T + M
+%				G = X x T
+%				
+%		
+%\end{verbatim}
 
 
 %\end{document}

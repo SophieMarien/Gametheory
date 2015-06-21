@@ -1,5 +1,13 @@
 \begin{thebibliography}{10}
 
+\bibitem{NPhard}
+J.~Aspnes, K.~Chang, and A.~Yampolskiy.
+\newblock Inoculation strategies for victims of viruses and the sum-of-squares
+  partition problem.
+\newblock In {\em Proceedings of the sixteenth annual ACM-SIAM symposium on
+  Discrete algorithms}, pages 43--52. Society for Industrial and Applied
+  Mathematics, 2005.
+
 \bibitem{ApplyingFlipit}
 K.~Bowers, M.~van Dijk, R.~Griffin, A.~Juels, A.~Oprea, R.~Rivest, and
   N.~Triandopoulos.
