@@ -17,6 +17,12 @@ K.~Bowers, M.~van Dijk, R.~Griffin, A.~Juels, A.~Oprea, R.~Rivest, and
   Theory for Security}, volume 7638 of {\em Lecture Notes in Computer Science},
   pages 248--263. Springer Berlin Heidelberg, 2012.
 
+\bibitem{importantjournal}
+Z.~Chen and C.~Ji.
+\newblock Optimal worm-scanning method using vulnerable-host distributions.
+\newblock {\em International Journal of Security and Networks}, 2(1-2):71--80,
+  2007.
+
 \bibitem{fengstealthy}
 X.~Feng, Z.~Zheng, P.~Hu, D.~Cansever, and P.~Mohapatra.
 \newblock Stealthy attacks meets insider threats: A three-player game model.
@@ -78,11 +84,25 @@ V.~Pham and C.~Cid.
   Theory for Security}, volume 7638 of {\em Lecture Notes in Computer Science},
   pages 234--247. Springer Berlin Heidelberg, 2012.
 
+\bibitem{OnWorms2005survey}
+S.~Qing and W.~Wen.
+\newblock A survey and trends on internet worms.
+\newblock {\em Computers \& Security}, 24(4):334--346, 2005.
+
 \bibitem{reitter2013risk}
 D.~Reitter, J.~Grossklags, and A.~Nochenson.
 \newblock Risk-seeking in a continuous game of timing.
 \newblock In {\em Proceedings of the 13th International Conference on Cognitive
   Modeling (ICCM)}, pages 397--403, 2013.
+
+\bibitem{GameTheorApprCostBenefitAnalyses}
+T.~Spyridopoulos, G.~Oikonomou, T.~Tryfonas, and M.~Ge.
+\newblock Game theoretic approach for cost-benefit analysis of malware
+  proliferation prevention.
+\newblock In L.~Janczewski, H.~Wolfe, and S.~Shenoi, editors, {\em Security and
+  Privacy Protection in Information Processing Systems}, volume 405 of {\em
+  IFIP Advances in Information and Communication Technology}, pages 28--41.
+  Springer Berlin Heidelberg, 2013.
 
 \bibitem{stallings2007network}
 W.~Stallings.
@@ -93,5 +113,19 @@ W.~Stallings.
 M.~van Dijk, A.~Juels, A.~Oprea, and R.~Rivest.
 \newblock Flipit: The game of ''stealthy takeover''.
 \newblock {\em Journal of Cryptology}, 26(4):655--713, 2013.
+
+\bibitem{wikimatrix}
+t.~f.~e. Wikipedia.
+\newblock Adjacency matrix, 2015.
+
+\bibitem{VirusChangePropSpeed}
+W.~Yu, N.~Zhang, X.~Fu, and W.~Zhao.
+\newblock Self-disciplinary worms and countermeasures: Modeling and analysis.
+\newblock {\em IEEE Transactions on Parallel and Distributed Systems},
+  21(10):1501--1514, 2010.
+
+\bibitem{SecurelistAPT}
+K.~L. ZAO.
+\newblock Securelist: Targeted cyberattacks logbook, 1997-2015.
 
 \end{thebibliography}

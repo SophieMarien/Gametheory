@@ -2,39 +2,38 @@
 \label{chapter4: Worm propagation}
 
 
-\todo{nog uitleggen wat dit hoofdstuk hier staat te doen.
-The formalisation of the FlipIt game with delay relies on some value "d" that represents the time needed to infect a sufficient number of nodes in a network after the initial infection. This chapter provides the reader with more insight on how to calculate the value of this parameter d. 
-}
-The  spreading of malware has already been extensively researched. Because of the many different types of propagation it is hard to defined a single model that can model all of them. Modelling the spread of malware depends on two key factors: the method used for the propagation and the graph where the malware will spread itself. \\
-Viruses and worms are the types of malware that are the most researched. Since the spreading of viruses requires human interaction, their propagation delay is depending on (hard to predict) human behaviour. Worms on the other hand, spread without human intervention, and are their propagation is therefore easier to model. Since the purpose of this chapter is only to illustrate how a delay can be calculated, we will limit the presentation to propagation models of worms . Section []  presents an overview of the most frequently used propagation methods by worms. Next, section [] introduces  different kind of graphs to model a computer network are introduced. Section [] presents    different kinds of models to determine the time a worm needs to infect a sufficient number of nodes. These results can be used for the completion of parameter \textit{d}. Finally we introduce an easy method to calculate the delay of the propagation of a worm. 
 
-This related work is based on the following paper: [importance journal], 
-Advanced Persistent Threads propagation koppelen met die van een worm.
+The formalisation of the FlipIt game with delay relies on some value  \textit{d} that represents the time needed to infect a sufficient number of nodes in a network after the initial infection. This chapter provides the reader with more insight on how to calculate the value of this parameter \textit{d}.  \\
+
+The  spreading of malware has already been extensively researched. Because of the many different types of propagation it is hard to defined a single model that can model all of them. Modelling the spread of malware depends on two key factors: the method used for the propagation and the graph where the malware will spread itself. \\
+Viruses and worms are the types of malware that are the most researched. Since the spreading of viruses requires human interaction, their propagation delay is depending on (hard to predict) human behaviour. Worms on the other hand, spread without human intervention, and are their propagation is therefore easier to model. Since the purpose of this chapter is only to illustrate how a delay can be calculated, we will limit the presentation to propagation models of worms . Section \ref{methodsofpropagation} presents an overview of the most frequently used propagation methods by worms. These propagation methods will be covered by different kinds of models in section \ref{modelsforpropagation} that presents models to determine the time a worm needs to infect a sufficient number of nodes. These results can be used for the completion of parameter \textit{d}. Finally, in section \ref{eigenmatrixmethode},  we introduce an easy method to calculate the delay of the propagation of a worm.  Different kind of graphs to model a computer network are introduced. 
+
+This chapter is based on the following papers: \cite{importantjournal}, \cite{OnWorms2005survey}, \cite{GameTheorApprCostBenefitAnalyses} and \cite{SecurelistAPT}.
+
 
 \section{Methods of propagation}
+\label{methodsofpropagation}
 
-In the context of malware propagation, there exists two kinds of APT's . First, there are APTs that launch an attack on just one target node of a network. The mechanism these APT's use to propagate malware is the dropper mechanism. The dropper is the initial attack vector that compromises the single targeted node of the system. The second kind of APTs target multiple victims. These APTs also use a dropper mechanism but have an additional mechanism for self-propagation in order to propagate themselves to the multiple targeted nodes of the system. This mechanism can either be a virus propagation or a worm propagation. A virus infects one node on the network and has to wait for human interaction to spread. So the spreading speed depends on the human interaction, and modeling virus propagation therefore requires modeling human behavior. If an APT uses a worm propagation method it will spread by itself after it has been dropped on the network. Given the additional complexity of incorporating the human factor in a spreading method and that this chapter is merely meant as illustration on calculating the delay for use in the game theoretic approach, we will limit the presentation to worm propagation models for APT's. \\
+In the context of malware propagation, there exists two kinds of APT's . First, there are APT's that launch an attack on just one target node of a network. The mechanism these APT's use to propagate malware is the dropper mechanism. The dropper is the initial attack vector that compromises the single targeted node of the system. The second kind of APT's target multiple victims. These APT's also use a dropper mechanism but have an additional mechanism for self-propagation in order to propagate themselves to the multiple targeted nodes of the system. This mechanism can either be a virus propagation or a worm propagation. A virus infects one node on the network and has to wait for human interaction to spread. So the spreading speed depends on the human interaction, and modelling virus propagation therefore requires modelling human behaviour. If an APT uses a worm propagation method it will spread by itself after it has been dropped on the network. Given the additional complexity of incorporating the human factor in a spreading method and that this chapter is merely meant as illustration on calculating the delay for use in the game theoretic approach, we will limit the presentation to worm propagation models for APT's. \\
 
-Infection by worms start with dropping the work on the network. Different dropping mechanisms can be used, whereby the initial attack can be random or targeted at a specific node. Frequently used mechanisms are USB sticks (given to a specific person or left behind for pick up by a random person), email, or malicious software. More important for determining our delay is the propagation strategy. Propagation is performed by determining the next nodes to spread the worm to. The following are common propagation methods: 
+Infection by worms start with dropping the work on the network. Different dropping mechanisms can be used, whereby the initial attack can be random or targeted at a specific node. Frequently used mechanisms are USB sticks (given to a specific person or left behind for pick up by a random person), email, or malicious software through phising or trojan horses. More important for determining our delay is the propagation strategy. Propagation is performed by determining the next nodes to spread the worm to. The following are common propagation methods: 
 \begin{description}
-\item Scanning methods: A worm tries to guess (scan) the address of potential target nodes to infect. It can use distinct ways of scanning: random, localized, topological or hit-list scanning.
-\begin{itemize}
-\item Random scanning: Some worms propagate by using the method of random targeting IP addresses. The rate of success for randomly chosen IP addresses is very low. Example of such worms are `Code Red' and 'Slammer '.
-\item Localized scanning: --Localized scanning,
-used by the Code Red II and Nimda worms, preferentially
-scans for hosts in the ''local'' address space.--
-\item Topological scanning: --Topological scanning, used by the Morris worm, relies
-on the ''address'' information contained in the victim
-machines to locate new targets.--
-\item Hit-list scanning: With the method of hit-list scanning, a short-list of vulnerable systems is made beforehand. --to speed up
-the spread of worms at the initial stage. This list consists
+%\item Scanning methods: A worm tries to guess (scan) the address of potential target nodes to infect. It can use distinct ways of scanning.
+%% random, localized, topological or hit-list scanning.
+%\begin{itemize}
+\item \textbf{Selective Random scanning:} Some worms propagate by using the method of selective random targeting IP addresses. The worm selects randomly a part of the selected address space instead of scanning the whole address space. The reserved address blocks and the unassigned address are excluded from the address space. The rate of success for randomly chosen IP addresses is very low, but it is easy to implement. Example of such worms are `Code Red' and `Slammer'.
+\item \textbf{Localized scanning:} A worm that uses localized scanning will scan for hosts in the local address space. This method is used by the `Code Red II' and `Nimda' worm.
+\item \textbf{Topological scanning:} Address information stored in the victim machines are used to locate new targets. This method used by the `Morris' worm.
+\item \textbf{Hit-list scanning:} With the method of hit-list scanning, a short-list of vulnerable systems is made beforehand.  This is done to speed up
+the spread of worms at the initial stage. --This list consists
 of potentially vulnerable machines that are gathered
 beforehand and targeted first when the worm
 is released. An extreme case for the hit-list-scanning
 worms is a flash worm, which gathers all vulnerable
 machines into the list.--
-\end{itemize}   
-\item Routing worms: they use BGP routing tables to scan the routable address space. 3 times faster than traditional worm that uses random scanning. Spyb0t or network Bluepill. --a ''routing worm'' [20]. Zou et al. designed two types
+\item \textbf{Sequential scanning:}
+\item \textbf{DNS random scanning:} Another strategy is a kind of strategy in which the DNS infrastructure is used to locate a new target address. The IP address table from a DNS server is acquired from DNS records. The speed of a DNS scanning worm in the IPv6 internet is comparable to the speed of an IPv4 random scanning worm. There are some difficulties with this scanning technique. First it is difficult to obtain the whole address space from the DNS records. Secondly, the worm has to carry the database, which can slow down the propagation if the database is to big. Last, the IP addresses stored in the address table are only hosts with public domain names.
+\item \textbf{Routable scanning:} they use BGP routing tables to scan the routable address space. This method is three times faster than a traditional worm that uses random scanning. Examples are `Spyb0t' or `network Bluepill'. --a ''routing worm'' [20]. Zou et al. designed two types
 of routing worms [20]. One type, based on Class-A
 (x.0.0.0/8) address allocations, is thus called 'ClassA
 routing worms.'' Such worms can reduce the scanning
@@ -43,45 +42,38 @@ The other type, based on BGP routing tables, is thus
 called''BGP routing worms'' Such worms can reduce
 the scanning space to only about 28.6\% of the entire
 IPv4 address space.--
-\item email worms: use the email systems to propagate. The Kak worm is a Javascript computer worm that spread itself by exploiting a bug in Outlook Express.  GhostNet
-\item DNS random scanning: --Another strategy that a worm
-can potentially employ is DNS random scanning [5],
-in which a worm uses the DNS infrastructure to locate
-likely targets by guessing DNS names instead of
-IP addresses. Such a worm in the IPv6 Internet is
-shown to exhibit a propagation speed comparable to
-that of an IPv4 random-scanning worm--
+%\end{itemize}   
+
+\item \textbf{Email worms:} use the email systems to propagate. The Kak worm is a Javascript computer worm that spread itself by exploiting a bug in Outlook Express.  Another example is `GhostNet'
+
 %Pikachu worm: The virus was mainly spread through Microsoft Outlook email attachments. The email containing the attached virus propagated through infected users by sending itself to all contacts in the user's Outlook address book. [5]
-\item self stopping worm: reduces speed to avoid detection. Atak worm or self stopping worm
-\item network sharing Shamoon
-\item shared files or spreading through SMB (shared message block or  Common Internet File System (CIFS)) Flame
-\item zero-day vulnerabilities
+\item \textbf{self stopping worm:} reduces speed to avoid detection. Atak worm or self stopping worm \cite{VirusChangePropSpeed}.
+\item \textbf{network sharing} `Shamoon'
+\item \textbf{shared files or spreading through SMB} (shared message block or  Common Internet File System (CIFS)) Flame
+\item \textbf{Zero-day vulnerabilities} \begin{description}
+\item Crouching Yeti is hardly a sophisticated campaign. For example, the attackers used no zero-day exploits, only exploits that are widely available on the Internet. But that did not prevent the campaign from staying under the radar for several years. \url{http://www.kaspersky.com/internet-security-center/threats/crouching-yeti-energetic-bear-malware-threat}
+\end{description}
 \end{description}
 
---dit stuk tekst overbodig--
  
 
-\section{Graph models}
-For some of the spreading methods, the graph of the network matters. It is important to have the right topology for the right method. Email worms need a topology that represent a social network, BGP routing worms need a topology on network level. 
---iets zeggen dat het ook belangrijk is voor de defender om zijn netwerk zo aan te passen dat het virus moeilijker kan verspreiden. Network segregation mss aanhalen ?--
-
-\begin{description}
-\item Power law
-\item Small world topology
-\item random graph
-\item ..
-\end{description}
-
 \section{Models for worm propagation}
+\label{modelsforpropagation}
 To use the models for worm propagation in our model of the FlipIt game it is suffi"ent to know the propagation speed of the worm and define after how many time units the network is defected. This will be equal to the \textit{d} parameter in our model.  
 Stackelberg game: first move is from attacker, defender is follower. 
 
 Kind of network model: 
 Kind of model: SIS, SIR
 
+\subsubsection{Simple Epidemic model}
+
+\subsubsection{Kermack-Mckendrick model}
+
 \subsubsection*{SIS}
 
 \subsubsection*{SIR}
+
+\subsubsection{Two-Factor model}
 
 \subsubsection*{self disciplinary worms}
 Model for self disciplinary worms and counter measures ... []
@@ -95,24 +87,36 @@ A method to calculate the propagation of the virus in an easy way. Google page r
 
 \todo{toch eigen methode introduceren}
 
-\subsection{Weetjes}
-\begin{description}
-\item Crouching Yeti is hardly a sophisticated campaign. For example, the attackers used no zero-day exploits, only exploits that are widely available on the Internet. But that did not prevent the campaign from staying under the radar for several years. \url{http://www.kaspersky.com/internet-security-center/threats/crouching-yeti-energetic-bear-malware-threat}
-\end{description}
+
+
 
 \section{methode met matrixen}
+\label{eigenmatrixmethode}
 
+or some of the spreading methods, the graph of the network matters. It is important to have the right topology for the right method. Email worms need a topology that represent a social network, BGP routing worms need a topology on network level. 
+--iets zeggen dat het ook belangrijk is voor de defender om zijn netwerk zo aan te passen dat het virus moeilijker kan verspreiden. Network segregation mss aanhalen ?--
+
+\begin{description}
+\item Power law
+\item Small world topology
+\item random graph
+\item ..
+\end{description}
+
+The usefulness of this method is that it is graph model independent. The topology of the network has to be in the form of a square matrix. Each connection is determined by the entries on the matrix. 
 %$N_{0}$ denotes the initially infected resources at the beginning of the virus propagation. 
 %$P_{x}(R_{n},t|R_{0},r,t_{0})$ denotes the chance that resource $R_{n}$ is infected at time $t$ after dropping virus number x on to resource $R_{0}$ at $t_{0}$ with rate $r$. \\
 
 %$S(R_{n},R_{0})$ denotes the shortest path from the infected resource $R_{0}$ to resource $R_{n}$. It gives back a value with the distance measured with how many resources are in between including the end resource. \\
 
 %So the chance that a resource is infected after time t is the chance that the resource is infected by all the previous infections and that the defender has not flipped the resource.
-source: \url{http://en.wikipedia.org/wiki/Adjacency_matrix} \\
-We model the network through an undirected Graph $G = < V, E> $ where $|V|$ denotes the number of resources in the network and $|E|$ the number of connections. We can convert this to an adjacency matrix which represents which vertices of the graph are neighbors of other vertices. \\
-The graph is represented as a $|V| \times |V|$ matrix with for every entry $a_{ij}$ a 1 as value if there is a connection between node $V_{i}$ and $V_{j}$ and 0 otherwise, and with 0's for every $a_{ii}$. Because the graph is undirected we have a symmetric matrix. 
+
+The computer network can be modelled by an undirected Graph $G = < V, E> $ where $|V|$ denotes the number of resources in the network and $|E|$ the number of connections. We can convert this to an adjacency matrix which represents which vertices of the graph are neighbours of other vertices. \\
+The graph is represented as a $|V| \times |V|$ matrix with for every entry $a_{ij}$ a 1 as value if there is a connection between node $V_{i}$ and $V_{j}$ and 0 otherwise, and with 0's for every $a_{ii}$. Because the graph is undirected we have a symmetric matrix.  \\ 
+
 Adjacency matrices have many interesting applications, amongst which calculating the paths between vertices:
-\textit{"If \textit{A} is the adjacency matrix of the directed or undirected graph \textit{G}, then the matrix $A^{n}$ (i.e., the matrix product of n copies of \textit{A}) has an interesting interpretation: the entry in row i and column j gives the number of (directed or undirected) walks of length n from vertex i to vertex j. If n is the smallest nonnegative integer, such that for all i ,j , the (i,j)-entry of $A^{n} > 0$, then n is the distance between vertex i and vertex j."} [Wikipedia]
+\textit{``If \textit{A} is the adjacency matrix of the directed or undirected graph \textit{G}, then the matrix $A^{n}$ (i.e., the matrix product of \textit{n} copies of \textit{A}) has an interesting interpretation: the entry in row \textit{i} and column \textit{j} gives the number of (directed or undirected) walks of length \textit{n} from vertex \textit{i} to vertex \textit{j}. If n is the smallest nonnegative integer, such that for all i ,j , the (i,j)-entry of $A^{n} > 0$, then n is the distance between vertex i and vertex \textit{j}.''}  source: \cite{wikimatrix} .\\
+
 
 %%% Local Variables: 
 %%% mode: latex
@@ -206,10 +210,13 @@ $
 ~~\\
 So, in $A^{N}$ every $a_{ij}$ entry gives the number of paths with N steps from $N_{i}$ to $N_{j}$.\\
 
-Using this knowledge we can calculate in how many steps a node is infected: 
-The infection vector or start vector I0 of lenght $|V|$ indicates which node is infected and which not. Multiplying the infection vector with $A$ results in a vector I1, which represents which nodes are infected after 1 step. Multiplying the start vector I0 with $A^{N}$ calculates which nodes are infected in N steps: each non zero entry represents an node infected after N steps. In the context of the FlipIt game, it is safe to assume that once a node is infected, it stays infected until the defender Flips the node. This means that after d steps, it is assumed that all nodes that could be reached in less than d steps from the node where the worm was dropped, are infected. In order to know how many nodes are infected after (for example) at most 3 steps, we have to consider nodes that are infected initially (step 1), or after 2 steps, or after 3 steps.  Calculating the sum of the three matrices $(A + A^{2} + A^{3}) $ results in a matrix that indicates for each node, the number of paths of length 1, 2 or 3 from i to j. Multiplying the start vector with this matrix, results in a vector that indicates which nodes will be infected in at most 3 steps . This technique can be applied to calculate the state of the network after any number of steps. 
-Determining the length of the delay boils down to determining which configuration of infected nodes is considered as corresponding to the attacker having flipped the resource. It may be that all nodes need to be flipped, a sufficient amount of nodes, or a (set of) particular nodes.
---Hier nog een beetje verder uitschrijven hoe je exact de d dan moet bepalen, gegeven dat je niet weet in welke knoop het virus gedropt wordt--
+Using this knowledge we can calculate in how many steps a node is infected: \\
+The infection vector or start vector I0 of lenght $|V|$ indicates which node is infected and which not. Multiplying the infection vector with $A$ results in a vector I1, which represents which nodes are infected after 1 step. Multiplying the start vector I0 with $A^{N}$ calculates which nodes are infected in N steps: each non zero entry represents an node infected after N steps. In the context of the FlipIt game, it is safe to assume that once a node is infected, it stays infected until the defender Flips the node. This means that after d steps, it is assumed that all nodes that could be reached in less than d steps from the node where the worm was dropped, are infected. In order to know how many nodes are infected after (for example) at most 3 steps, we have to consider nodes that are infected initially (step 1), or after 2 steps, or after 3 steps.  Calculating the sum of the three matrices $(A + A^{2} + A^{3}) $ results in a matrix that indicates for each node, the number of paths of length 1, 2 or 3 from i to j. Multiplying the start vector with this matrix, results in a vector that indicates which nodes will be infected in at most 3 steps . This technique can be applied to calculate the state of the network after any number of steps. \\
+
+Determining the length of the delay boils down to determining which configuration of infected nodes is considered as corresponding to the attacker having flipped the resource. It may be that all nodes need to be flipped, a sufficient amount of nodes, or a (set of) particular nodes.\\
+
+--Hier nog een beetje verder uitschrijven hoe je exact de d dan moet bepalen, gegeven dat je niet weet in welke knoop het virus gedropt wordt-- \\
+
 
 %What do we need for an algorithm
 %\begin{description}

@@ -1,4 +1,6 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: masterproef.aux
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: masterproef.aux
 A level-1 auxiliary file: chap-10.aux
 A level-1 auxiliary file: chap-5.aux
 A level-1 auxiliary file: chap-9.aux
@@ -8,8 +10,53 @@ A level-1 auxiliary file: chap-3.aux
 A level-1 auxiliary file: conclusion.aux
 The style file: abbrv.bst
 Database file #1: reffiess.bib
+Warning--entry type for "SecurelistAPT" isn't style-file defined
+--line 290 of file reffiess.bib
+Warning--entry type for "wikimatrix" isn't style-file defined
+--line 297 of file reffiess.bib
 Warning--empty journal in fengstealthy
 Warning--empty year in fengstealthy
 Warning--empty journal in MitigationNonTargeted
 Warning--empty booktitle in Coursera
-(There were 4 warnings)
+You've used 22 entries,
+            2118 wiz_defined-function locations,
+            646 strings with 7813 characters,
+and the built_in function-call counts, 7532 in all, are:
+= -- 708
+> -- 360
+< -- 8
++ -- 142
+- -- 117
+* -- 501
+:= -- 1230
+add.period$ -- 67
+call.type$ -- 22
+change.case$ -- 118
+chr.to.int$ -- 0
+cite$ -- 26
+duplicate$ -- 304
+empty$ -- 629
+format.name$ -- 117
+if$ -- 1613
+int.to.chr$ -- 0
+int.to.str$ -- 22
+missing$ -- 21
+newline$ -- 109
+num.names$ -- 50
+pop$ -- 160
+preamble$ -- 1
+purify$ -- 98
+quote$ -- 0
+skip$ -- 213
+stack$ -- 0
+substring$ -- 404
+swap$ -- 72
+text.length$ -- 8
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 84
+warning$ -- 4
+while$ -- 69
+width$ -- 24
+write$ -- 231
+(There were 6 warnings)
