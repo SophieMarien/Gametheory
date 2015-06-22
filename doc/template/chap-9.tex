@@ -48,7 +48,7 @@ The framework of FLipIt is used to model targeted attacks. In FlipIt when an att
 %In reality however, after dropping a virus on the first node, it takes a while for the virus to infect
 %the entire network. So, the assumption that the attacker has full control over the resource as soon as a node has been infected, is not realistic. The attacker has only control of the network once all or a sufficient number of nodes are infected. 
 The time that it takes for the virus to infect every node (or a sufficient number of nodes) will be
-denoted as an infection-delay variable \textit{d} (called 'delay' for short in the remainder of this paper). If we want to measure how long it takes for the virus to
+denoted as an propagation delay variable \textit{d} (called 'delay' for short in the remainder of this paper). If we want to measure how long it takes for the virus to
 infect all the nodes in the network, we have to calculate the shortest path from the
 first infected node to the farthest node. Rather than denoting the time needed for infecting \textit{all} the nodes, the variable $d$ can also be used to denote the time needed to infect \textit{a sufficient number} of nodes. \\
 The moves of the defender are immediate. It is assumed that if a defender tries to clean the network that this will happen without a delay. The defender can de-plug the computer from the network, or just clean a pc. 
@@ -141,17 +141,8 @@ The worm can use the computers on the network as botnets or steal sensitive data
 
 
 
-\section{Playing periodically with propagation delay}
+\section{Formalization of the periodic game with propagation delay}
 \label{ch2:periodicvirus}
-
-
-
-
-
-
-
-\subsection{Formalization the benefit formula including the infection-delay}
-
 
  A Periodic strategy is a non-adaptive renewal strategy where the time intervals between consecutive moves are a fixed period, denoted by $\delta$. Moreover it has a random phase, that is chosen uniformly and random in the interval $[0,\delta]$ for the first move. The average rate of play of a player is denoted by $\alpha_{i} = \dfrac{1}{\delta_{i}}$. Stated below a list of symbols that will be used throughout the paper. Figure \ref{FlipItDelay} represents the main symbols for clarification.\\
 ~~\\

@@ -7,4 +7,5 @@
 \contentsline {todo}{juiste resultaten hier nog invullen}{36}{section*.53}
 \contentsline {todo}{ kA met kD vergelijken en nash evenwichten vinden}{37}{section*.54}
 \contentsline {todo}{ een voorbeeld invullen met specifieke waarden}{37}{section*.55}
-\contentsline {todo}{toch eigen methode introduceren}{42}{section*.59}
+\contentsline {todo}{nog uitleggen wat dit hoofdstuk hier staat te doen. The formalisation of the FlipIt game with delay relies on some value "d" that represents the time needed to infect a sufficient number of nodes in a network after the initial infection. This chapter provides the reader with more insight on how to calculate the value of this parameter d. }{39}{section*.56}
+\contentsline {todo}{toch eigen methode introduceren}{42}{section*.60}
