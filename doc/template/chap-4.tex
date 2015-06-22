@@ -1,4 +1,4 @@
-\chapter{Models for the Delay }
+\chapter{Models for the Delay}
 \label{chapter4: Worm propagation}
 
 
@@ -11,7 +11,7 @@ Viruses and worms are the types of malware that are the most researched. Since t
 This related work is based on the following paper: [importance journal], 
 Advanced Persistent Threads propagation koppelen met die van een worm.
 
-\subsection {Methods of propagation}
+\section{Methods of propagation}
 
 In the context of malware propagation, there exists two kinds of APT's . First, there are APTs that launch an attack on just one target node of a network. The mechanism these APT's use to propagate malware is the dropper mechanism. The dropper is the initial attack vector that compromises the single targeted node of the system. The second kind of APTs target multiple victims. These APTs also use a dropper mechanism but have an additional mechanism for self-propagation in order to propagate themselves to the multiple targeted nodes of the system. This mechanism can either be a virus propagation or a worm propagation. A virus infects one node on the network and has to wait for human interaction to spread. So the spreading speed depends on the human interaction, and modeling virus propagation therefore requires modeling human behavior. If an APT uses a worm propagation method it will spread by itself after it has been dropped on the network. Given the additional complexity of incorporating the human factor in a spreading method and that this chapter is merely meant as illustration on calculating the delay for use in the game theoretic approach, we will limit the presentation to worm propagation models for APT's. \\
 
@@ -61,7 +61,7 @@ that of an IPv4 random-scanning worm--
 --dit stuk tekst overbodig--
  
 
-\subsection{Graph models}
+\section{Graph models}
 For some of the spreading methods, the graph of the network matters. It is important to have the right topology for the right method. Email worms need a topology that represent a social network, BGP routing worms need a topology on network level. 
 --iets zeggen dat het ook belangrijk is voor de defender om zijn netwerk zo aan te passen dat het virus moeilijker kan verspreiden. Network segregation mss aanhalen ?--
 
@@ -72,7 +72,7 @@ For some of the spreading methods, the graph of the network matters. It is impor
 \item ..
 \end{description}
 
-\subsection{Models for worm propagation}
+\section{Models for worm propagation}
 To use the models for worm propagation in our model of the FlipIt game it is suffi"ent to know the propagation speed of the worm and define after how many time units the network is defected. This will be equal to the \textit{d} parameter in our model.  
 Stackelberg game: first move is from attacker, defender is follower. 
 
@@ -95,7 +95,7 @@ A method to calculate the propagation of the virus in an easy way. Google page r
 
 \todo{toch eigen methode introduceren}
 
-\section{Weetjes}
+\subsection{Weetjes}
 \begin{description}
 \item Crouching Yeti is hardly a sophisticated campaign. For example, the attackers used no zero-day exploits, only exploits that are widely available on the Internet. But that did not prevent the campaign from staying under the radar for several years. \url{http://www.kaspersky.com/internet-security-center/threats/crouching-yeti-energetic-bear-malware-threat}
 \end{description}
