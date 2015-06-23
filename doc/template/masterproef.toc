@@ -34,24 +34,24 @@
 \contentsline {subsection}{\numberline {3.2.1}Single resource}{17}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Actions of the players}{18}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Immediate effect of the move}{18}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Stealth character of the move}{19}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.4}Stealth character of the move}{18}{subsection.3.2.4}
 \contentsline {subsection}{\numberline {3.2.5}Cost associated with the move}{19}{subsection.3.2.5}
 \contentsline {subsection}{\numberline {3.2.6}Strategies}{19}{subsection.3.2.6}
-\contentsline {subsubsection}{Motivation Application: Wormlike ATP}{20}{section*.27}
+\contentsline {subsubsection}{Motivation Application: Wormlike ATP}{20}{section*.29}
 \contentsline {section}{\numberline {3.3}Formalization of the periodic game with propagation delay}{20}{section.3.3}
 \contentsline {chapter}{\chapternumberline {4}Nash Equilibria}{31}{chapter.4}
 \contentsline {section}{\numberline {4.1}Nash Equilibria}{31}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Determining the piecewise functions $opt_{D}(\delta _{A})$}{31}{subsection.4.1.1}
-\contentsline {subsubsection}{Best responses}{33}{section*.46}
-\contentsline {subsubsection}{$k_{D} > d$}{34}{section*.48}
+\contentsline {subsubsection}{Best responses}{33}{section*.48}
+\contentsline {subsubsection}{$k_{D} > d$}{34}{section*.50}
 \contentsline {subsection}{\numberline {4.1.2}Determining the piecewise functions $opt_{A}(\delta _{D})$}{35}{subsection.4.1.2}
-\contentsline {subsubsection}{Best responses}{36}{section*.53}
+\contentsline {subsubsection}{Best responses}{36}{section*.55}
 \contentsline {chapter}{\chapternumberline {5}Models for the Delay}{39}{chapter.5}
 \contentsline {section}{\numberline {5.1}Methods of propagation}{39}{section.5.1}
 \contentsline {section}{\numberline {5.2}Models for worm propagation}{41}{section.5.2}
-\contentsline {subsubsection}{Simple Epidemic model}{42}{section*.57}
-\contentsline {subsubsection}{Kermack-Mckendrick model}{42}{section*.58}
-\contentsline {subsubsection}{Two-Factor model}{42}{section*.61}
+\contentsline {subsubsection}{Simple Epidemic model}{42}{section*.59}
+\contentsline {subsubsection}{Kermack-Mckendrick model}{42}{section*.60}
+\contentsline {subsubsection}{Two-Factor model}{42}{section*.63}
 \contentsline {section}{\numberline {5.3}methode met matrixen}{42}{section.5.3}
 \contentsline {chapter}{\chapternumberline {6}Related work}{45}{chapter.6}
 \contentsline {section}{\numberline {6.1}Related work}{45}{section.6.1}
@@ -59,7 +59,7 @@
 \contentsline {chapter}{\chapternumberline {7}Conclusion}{47}{chapter.7}
 \contentsline {subsection}{\numberline {7.0.1}Further work}{47}{subsection.7.0.1}
 \contentsline {section}{\numberline {7.1}trala}{47}{section.7.1}
-\contentsline {chapter}{Bibliografie}{49}{section*.65}
+\contentsline {chapter}{Bibliografie}{49}{section*.67}
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}
