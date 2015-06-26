@@ -21,45 +21,33 @@ Infection by worms start with dropping the work on the network. Different droppi
 %\item Scanning methods: A worm tries to guess (scan) the address of potential target nodes to infect. It can use distinct ways of scanning.
 %% random, localized, topological or hit-list scanning.
 %\begin{itemize}
-\item \textbf{Selective Random scanning:} Some worms propagate by using the method of selective random targeting IP addresses. The worm selects randomly a part of the selected address space instead of scanning the whole address space. The reserved address blocks and the unassigned address are excluded from the address space. The rate of success for randomly chosen IP addresses is very low, but it is easy to implement. Example of such worms are `Code Red' and `Slammer'.
+\item \textbf{Selective Random scanning:} Some worms propagate by using the method of selective random targeting IP addresses. The worm selects randomly a part of the selected address space instead of scanning the whole address space. The reserved address blocks and the unassigned addresses are excluded from the address space. The rate of success for randomly chosen IP addresses is very low, but it is easy to implement. Example of such worms are `Code Red' and `Slammer'.
 \item \textbf{Localized scanning:} A worm that uses localized scanning will scan for hosts in the local address space. This method is used by the `Code Red II' and `Nimda' worm.
 \item \textbf{Topological scanning:} Address information stored in the victim machines are used to locate new targets. This method used by the `Morris' worm.
-\item \textbf{Hit-list scanning:} With the method of hit-list scanning, a short-list of vulnerable systems is made beforehand.  This is done to speed up
-the spread of worms at the initial stage. --This list consists
-of potentially vulnerable machines that are gathered
-beforehand and targeted first when the worm
-is released. An extreme case for the hit-list-scanning
-worms is a flash worm, which gathers all vulnerable
-machines into the list.--
+%\item \textbf{Hit-list scanning:} With the method of hit-list scanning, a short-list of vulnerable systems is made beforehand.  This is done to speed up the spread of worms at the initial stage. --This list consists of potentially vulnerable machines that are gathered beforehand and targeted first when the worm is released. An extreme case for the hit-list-scanning worms is a flash worm, which gathers all vulnerable machines into the list.--
 \item \textbf{Sequential scanning:}
+With sequential scanning, the worm will scan the IP addresses sequentially. This means that once a vulnerable host is compromised, it will look for IP addresses that are near to this host. For example, the address of the host is A, the next addresses that the worm will scan are A+1, or A-1. This method is used by the `Blaster worm'.
 \item \textbf{DNS random scanning:} Another strategy is a kind of strategy in which the DNS infrastructure is used to locate a new target address. The IP address table from a DNS server is acquired from DNS records. The speed of a DNS scanning worm in the IPv6 internet is comparable to the speed of an IPv4 random scanning worm. There are some difficulties with this scanning technique. First it is difficult to obtain the whole address space from the DNS records. Secondly, the worm has to carry the database, which can slow down the propagation if the database is to big. Last, the IP addresses stored in the address table are only hosts with public domain names.
-\item \textbf{Routable scanning:} they use BGP routing tables to scan the routable address space. This method is three times faster than a traditional worm that uses random scanning. Examples are `Spyb0t' or `network Bluepill'. --a ''routing worm'' [20]. Zou et al. designed two types
-of routing worms [20]. One type, based on Class-A
-(x.0.0.0/8) address allocations, is thus called 'ClassA
-routing worms.'' Such worms can reduce the scanning
-space to 45.3\% of the entire IPv4 address space.
-The other type, based on BGP routing tables, is thus
-called''BGP routing worms'' Such worms can reduce
-the scanning space to only about 28.6\% of the entire
-IPv4 address space.--
+\item \textbf{Routable scanning:} The worms using routable scanning acquire target IP addresses based on the routing information in a network. Through  the BGP routing tables they can scan the routable address space. This method is three times faster than a traditional worm that uses random scanning. Examples are `Spyb0t' or `network Bluepill'. 
+%--a ''routing worm'' [20]. Zou et al. designed two types of routing worms [20]. One type, based on Class-A (x.0.0.0/8) address allocations, is thus called 'ClassA routing worms.'' Such worms can reduce the scanning space to 45.3\% of the entire IPv4 address space. The other type, based on BGP routing tables, is thus called''BGP routing worms'' Such worms can reduce the scanning space to only about 28.6\% of the entire IPv4 address space.--
 %\end{itemize}   
 
-\item \textbf{Email worms:} use the email systems to propagate. The Kak worm is a Javascript computer worm that spread itself by exploiting a bug in Outlook Express.  Another example is `GhostNet'
+\item \textbf{Email and other client application worms:} An email worms uses the email systems to find email addresses to propagate. Other client applications can include: Internet Relay Chat (IRC), Instant Messenger (IM), and a variety of peer-to-peer
+file sharing systems, which have been used by worms to propagate in a similar way as email worms. For example, the Kak worm is a Javascript computer worm that spread itself by exploiting a bug in Outlook Express. % Another example is `GhostNet'
 
 %Pikachu worm: The virus was mainly spread through Microsoft Outlook email attachments. The email containing the attached virus propagated through infected users by sending itself to all contacts in the user's Outlook address book. [5]
-\item \textbf{self stopping worm:} reduces speed to avoid detection. Atak worm or self stopping worm \cite{VirusChangePropSpeed}.
-\item \textbf{network sharing} `Shamoon'
-\item \textbf{shared files or spreading through SMB} (shared message block or  Common Internet File System (CIFS)) Flame
-\item \textbf{Zero-day vulnerabilities} \begin{description}
-\item Crouching Yeti is hardly a sophisticated campaign. For example, the attackers used no zero-day exploits, only exploits that are widely available on the Internet. But that did not prevent the campaign from staying under the radar for several years. \url{http://www.kaspersky.com/internet-security-center/threats/crouching-yeti-energetic-bear-malware-threat}
-\end{description}
+%\item \textbf{self stopping worm:} reduces speed to avoid detection. Atak worm or self stopping worm \cite{VirusChangePropSpeed}.
+%\item \textbf{network sharing} `Shamoon'
+%\item \textbf{shared files or spreading through SMB} (shared message block or  Common Internet File System (CIFS)) Flame
+%\item \textbf{Zero-day vulnerabilities} \begin{description}
+%\item Crouching Yeti is hardly a sophisticated campaign. For example, the attackers used no zero-day exploits, only exploits that are widely available on the Internet. But that did not prevent the campaign from staying under the radar for several years. \url{http://www.kaspersky.com/internet-security-center/threats/crouching-yeti-energetic-bear-malware-threat}
 \end{description}
 
  
 
 \section{Models for worm propagation}
 \label{modelsforpropagation}
-To use the models for worm propagation in our model of the FlipIt game it is suffi"ent to know the propagation speed of the worm and define after how many time units the network is defected. This will be equal to the \textit{d} parameter in our model.  
+To use the models for worm propagation in our model of the FlipIt game it is sufficient to know the propagation speed of the worm and define after how many time units the network is defected. This will be equal to the \textit{d} parameter in our model.  
 Stackelberg game: first move is from attacker, defender is follower. 
 
 Kind of network model: 
@@ -78,7 +66,7 @@ Kind of model: SIS, SIR
 \subsubsection*{self disciplinary worms}
 Model for self disciplinary worms and counter measures ... []
 
-Popular mechanism that worms use to detect vulnerable targets by random ip scanning probing. Feasible due to use 32-bit addresses. 128-bit adresses life harder for worms, except the ones that use email systems to propagate. two new strategies: uniformly distributed random number generator to select new target. :spread locally, by biasing the search space towards addresses within the same subnet or network.  
+Popular mechanism that worms use to detect vulnerable targets by random ip scanning probing. Feasible due to use 32-bit addresses. 128-bit addresses life harder for worms, except the ones that use email systems to propagate. two new strategies: uniformly distributed random number generator to select new target. :spread locally, by biasing the search space towards addresses within the same subnet or network.  
 The second strategy is almost the same as what email virusses would get. For this reason we work an example out .. 
 
 
@@ -93,6 +81,7 @@ A method to calculate the propagation of the virus in an easy way. Google page r
 \section{methode met matrixen}
 \label{eigenmatrixmethode}
 
+All of the above models for modelling the mechanism of the spreading of a worm depend on the kind of topology of the network. In this chapter we propose a method to calculate the spread of the worm in way where the topology of the network is easily integrated. The method will give an approximation of how fast a worm can infect a network. The method is based on the method for Google Page Ranking \todo{ref} []. 
 or some of the spreading methods, the graph of the network matters. It is important to have the right topology for the right method. Email worms need a topology that represent a social network, BGP routing worms need a topology on network level. 
 --iets zeggen dat het ook belangrijk is voor de defender om zijn netwerk zo aan te passen dat het virus moeilijker kan verspreiden. Network segregation mss aanhalen ?--
 
@@ -103,7 +92,7 @@ or some of the spreading methods, the graph of the network matters. It is import
 \item ..
 \end{description}
 
-The usefulness of this method is that it is graph model independent. The topology of the network has to be in the form of a square matrix. Each connection is determined by the entries on the matrix. 
+%The usefulness of this method is that it is graph model independent. The topology of the network has to be in the form of a square matrix. Each connection is determined by the entries on the matrix. 
 %$N_{0}$ denotes the initially infected resources at the beginning of the virus propagation. 
 %$P_{x}(R_{n},t|R_{0},r,t_{0})$ denotes the chance that resource $R_{n}$ is infected at time $t$ after dropping virus number x on to resource $R_{0}$ at $t_{0}$ with rate $r$. \\
 
@@ -115,13 +104,15 @@ The computer network can be modelled by an undirected Graph $G = < V, E> $ where
 The graph is represented as a $|V| \times |V|$ matrix with for every entry $a_{ij}$ a 1 as value if there is a connection between node $V_{i}$ and $V_{j}$ and 0 otherwise, and with 0's for every $a_{ii}$. Because the graph is undirected we have a symmetric matrix.  \\ 
 
 Adjacency matrices have many interesting applications, amongst which calculating the paths between vertices:
-\textit{``If \textit{A} is the adjacency matrix of the directed or undirected graph \textit{G}, then the matrix $A^{n}$ (i.e., the matrix product of \textit{n} copies of \textit{A}) has an interesting interpretation: the entry in row \textit{i} and column \textit{j} gives the number of (directed or undirected) walks of length \textit{n} from vertex \textit{i} to vertex \textit{j}. If n is the smallest nonnegative integer, such that for all i ,j , the (i,j)-entry of $A^{n} > 0$, then n is the distance between vertex i and vertex \textit{j}.''}  source: \cite{wikimatrix} .\\
+\textit{``If \textit{A} is the adjacency matrix of the directed or undirected graph \textit{G}, then the matrix $A^{n}$ (i.e., the matrix product of \textit{n} copies of \textit{A}) has an interesting interpretation: the entry in row \textit{i} and column \textit{j} gives the number of (directed or undirected) walks of length \textit{n} from vertex \textit{i} to vertex \textit{j}. If \textit{n} is the smallest nonnegative integer, such that for all i ,j , the (i,j)-entry of $A^{n} > 0$, then n is the distance between vertex i and vertex \textit{j}.''}  source: \cite{wikimatrix} .\\
 
 
 %%% Local Variables: 
 %%% mode: latex
 %%% TeX-master: "thesis"
 %%% End: 
+\begin{figure}
+\centering
 \begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
                     semithick]
   \tikzstyle{every state}=[fill=blue,draw=none,text=white]
@@ -146,7 +137,10 @@ Adjacency matrices have many interesting applications, amongst which calculating
         (E) edge 			  node {} (C)
     	(F)	edge			  node {} (C);
 \end{tikzpicture}
-\\
+\caption{Network with 6 nodes. The arrows represent the connections between the nodes. The start point is were the worm has been dropped, here node 1.}
+\label{netwerkfiguur}
+\end{figure}
+
 %\[
 %\begin{bmatrix}
 %    x_{11}       & x_{12} & x_{13} & \dots & x_{1n} \\
@@ -162,7 +156,7 @@ Adjacency matrices have many interesting applications, amongst which calculating
 %    x_{d1} & x_{d2} & x_{d3} & \dots  & x_{dn}
 %\end{bmatrix}
 %\] 
-Assuming a network like in Fig, the corresponding adjacency matrix is the  matrix $[A]$: \\
+Assuming a network like in figure \ref{netwerkfiguur}, the corresponding adjacency matrix is the  matrix $[A]$: \\
 
 
 $
@@ -211,7 +205,8 @@ $
 So, in $A^{N}$ every $a_{ij}$ entry gives the number of paths with N steps from $N_{i}$ to $N_{j}$.\\
 
 Using this knowledge we can calculate in how many steps a node is infected: \\
-The infection vector or start vector I0 of lenght $|V|$ indicates which node is infected and which not. Multiplying the infection vector with $A$ results in a vector I1, which represents which nodes are infected after 1 step. Multiplying the start vector I0 with $A^{N}$ calculates which nodes are infected in N steps: each non zero entry represents an node infected after N steps. In the context of the FlipIt game, it is safe to assume that once a node is infected, it stays infected until the defender Flips the node. This means that after d steps, it is assumed that all nodes that could be reached in less than d steps from the node where the worm was dropped, are infected. In order to know how many nodes are infected after (for example) at most 3 steps, we have to consider nodes that are infected initially (step 1), or after 2 steps, or after 3 steps.  Calculating the sum of the three matrices $(A + A^{2} + A^{3}) $ results in a matrix that indicates for each node, the number of paths of length 1, 2 or 3 from i to j. Multiplying the start vector with this matrix, results in a vector that indicates which nodes will be infected in at most 3 steps . This technique can be applied to calculate the state of the network after any number of steps. \\
+The infection vector or start vector $I_{0}$ of lenght $|V|$ indicates which node is infected and which not. Multiplying the infection vector with $A$ results in a vector $I_{1}$, which represents which nodes are infected after 1 step. Multiplying the start vector $I_{0}$ with $A^{N}$ calculates which nodes are infected in \textit{N} steps: each non zero entry represents an node infected after \textit{N} steps. \\
+In the context of the FlipIt game, it is safe to assume that once a node is infected, it stays infected until the defender Flips the node. This means that after d steps, it is assumed that all nodes that could be reached in less than \textit{d} steps from the node where the worm was dropped, are infected. In order to know how many nodes are infected after (for example) at most 3 steps, we have to consider nodes that are infected initially (step 1), or after 2 steps, or after 3 steps.  Calculating the sum of the three matrices $(A + A^{2} + A^{3}) $ results in a matrix that indicates for each node, the number of paths of length 1, 2 or 3 from \textit{i} to \textit{ j}. Multiplying the start vector with this matrix, results in a vector that indicates which nodes will be infected in at most 3 steps . This technique can be applied to calculate the state of the network after any number of steps. \\
 
 Determining the length of the delay boils down to determining which configuration of infected nodes is considered as corresponding to the attacker having flipped the resource. It may be that all nodes need to be flipped, a sufficient amount of nodes, or a (set of) particular nodes.\\
 
