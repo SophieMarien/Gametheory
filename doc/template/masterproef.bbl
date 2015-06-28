@@ -95,6 +95,12 @@ D.~Reitter, J.~Grossklags, and A.~Nochenson.
 \newblock In {\em Proceedings of the 13th International Conference on Cognitive
   Modeling (ICCM)}, pages 397--403, 2013.
 
+\bibitem{serazzi2004computer}
+G.~Serazzi and S.~Zanero.
+\newblock Computer virus propagation models.
+\newblock In {\em Performance Tools and Applications to Networked Systems},
+  pages 26--50. Springer, 2004.
+
 \bibitem{GameTheorApprCostBenefitAnalyses}
 T.~Spyridopoulos, G.~Oikonomou, T.~Tryfonas, and M.~Ge.
 \newblock Game theoretic approach for cost-benefit analysis of malware
@@ -109,23 +115,40 @@ W.~Stallings.
 \newblock {\em Network security essentials: applications and standards}.
 \newblock Pearson Education India, 2007.
 
+\bibitem{OwnInternetSI}
+S.~Staniford, V.~Paxson, N.~Weaver, et~al.
+\newblock How to own the internet in your spare time.
+\newblock In {\em USENIX Security Symposium}, pages 149--167, 2002.
+
 \bibitem{FlipIt}
 M.~van Dijk, A.~Juels, A.~Oprea, and R.~Rivest.
 \newblock Flipit: The game of ''stealthy takeover''.
 \newblock {\em Journal of Cryptology}, 26(4):655--713, 2013.
 
+\bibitem{wang2014modeling}
+Y.~Wang, S.~Wen, Y.~Xiang, and W.~Zhou.
+\newblock Modeling the propagation of worms in networks: A survey.
+\newblock {\em Communications Surveys \& Tutorials, IEEE}, 16(2):942--960,
+  2014.
+
 \bibitem{wikimatrix}
-t.~f.~e. Wikipedia.
+Wikipedia.
 \newblock Adjacency matrix, 2015.
 
-\bibitem{VirusChangePropSpeed}
-W.~Yu, N.~Zhang, X.~Fu, and W.~Zhao.
-\newblock Self-disciplinary worms and countermeasures: Modeling and analysis.
-\newblock {\em IEEE Transactions on Parallel and Distributed Systems},
-  21(10):1501--1514, 2010.
+\bibitem{xiang2009propagation}
+Y.~Xiang, X.~Fan, and W.~Zhu.
+\newblock Propagation of active worms: a survey.
+\newblock {\em International Journal of Computer Systems Science \&
+  Engineering}, 24(3):157--172, 2009.
 
 \bibitem{SecurelistAPT}
 K.~L. ZAO.
 \newblock Securelist: Targeted cyberattacks logbook, 1997-2015.
+
+\bibitem{CodeRed}
+C.~C. Zou, W.~Gong, and D.~Towsley.
+\newblock Code red worm propagation modeling and analysis.
+\newblock In {\em Proceedings of the 9th ACM conference on Computer and
+  communications security}, pages 138--147. ACM, 2002.
 
 \end{thebibliography}

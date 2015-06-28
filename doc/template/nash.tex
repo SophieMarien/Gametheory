@@ -22,22 +22,22 @@ attacker. Similarly, we denote by opt1($\alpha_{0}$) the set of values (rates of
 the benefit of the attacker for a fixed rate of play $\alpha_{0}$ of the defender. The following
 theorem specifies Nash equilibria for the periodic game and is proven in Appendix A. \\
 \begin{figure}[hbtp]
-\caption{This figure shows the three subcategories of each case. 'A' stands for Case 2.A: $\delta_{D} \geq d+\delta_{A} \geq \delta_{A}$ and 'B' stands for Case 2.B: $d+\delta_{A} \geq \delta_{D} \geq  \delta_{A} $ }
 \centering
 \includegraphics[scale=0.4]{Images/bestresp.png}
+\caption{This figure shows the three subcategories of each case. 'A' stands for Case 2.A: $\delta_{D} \geq d+\delta_{A} \geq \delta_{A}$ and 'B' stands for Case 2.B: $d+\delta_{A} \geq \delta_{D} \geq  \delta_{A} $ }
 \label{grafiekbestr}
 \end{figure}
 
 \subsection{Determining the piecewise functions $opt_{D}(\delta_{A})$}
 
-Nash equilibria are points with the property that neither player benefits by deviating in isolation form equilibrium. We can compute Nash Equilibria for the periodic game as an intersection points of curvest opt0 and opt1. To determine opt0(a0) we need to compute the derivative of  $\beta_{0}(\alpha_{0},\alpha_{1}) $ for a fixed $\alpha_{1}$. We consider two cases:\\
+Nash equilibria are points with the property that neither player benefits by deviating in isolation from the equilibrium. We can compute Nash Equilibria for the periodic game as an intersection point of curves $opt_{D}$ and $opt_{A}$. To determine $opt_{D}(\alpha_{A})$ we need to compute the derivative of  $\beta_{D}(\alpha_{D},\alpha_{A}) $ for a fixed $\alpha_{A}$. We consider two cases:\\
 
 \subsection*{Case 1: $\delta_{D} \leq \delta_{A} $}
-The benefit formula obtained previously for this case is as follows:
+The benefit formula obtained in the previous chapter for this case is as follows:
 \begin{equation*}
 \beta_{D}(\delta_{D},\delta_{A}) = 1 - \dfrac{\delta_{D}}{2\delta_{A}} - \dfrac{k_{D}}{\delta_{D}} - \dfrac{d^{2}}{2\delta_{D}\delta_{A}} + \dfrac{d}{\delta_{A}}
 \end{equation*}
-If we take the partial derivative for a fixed $\delta_{1}$ we get the following result:
+If we take the partial derivative for a fixed $\delta_{A}$ we get the following result:
 \begin{equation*}\label{formdelta}
 \frac{\partial \beta_{D}(\delta_{D},\delta_{A})}{\partial \delta_{D}} = - \dfrac{1}{2\delta_{A}} + \dfrac{k_{D}}{\delta_{D}^{2}} + \dfrac{d^{2}}{2\delta_{D}^{2}\delta_{A}}
 \end{equation*}
@@ -47,31 +47,48 @@ The stationary points (maximum, minimum) can be found by setting the first deriv
 \frac{\partial \beta_{D}(\delta_{D},\delta_{A})}{\partial \delta_{D}} =0 ~~~~~~ =>~~~~~~ \delta_{D} = \sqrt{2\delta_{A}k_{D} + d^{2}}
 \end{equation*}
 
-This leads to the following deduction: The function increases on $[0, \sqrt{2\delta_{A}k_{D} + d^{2}}]$ and is decreasing on $[\sqrt{2\delta_{A}k_{D} + d^{2}}, \infty]$ So we got a maximum on $\delta_{D} = min \{ \delta_{A}, \sqrt{2\delta_{A}k_{D} + d^{2}} \} $. The minimum of the two values is needed because $\delta_{D}$ cannot be bigger than $\delta_{A}$. \\
+This leads to the following deduction given the sign of the coefficient of $\delta_{D}^{2}$: The function increases on $[0, \sqrt{2\delta_{A}k_{D} + d^{2}}]$ and is decreasing on $[\sqrt{2\delta_{A}k_{D} + d^{2}}, \infty]$. So we have a maximum at $\delta_{D} = min \{ \delta_{A}, \sqrt{2\delta_{A}k_{D} + d^{2}} \} $. Taking the minimum of the two values is needed because $\delta_{D}$ cannot be larger than $\delta_{A}$. \\
 ~~\\
 
 
 \subsection*{Case 2.A: $\delta_{D} \geq d+\delta_{A} \geq \delta_{A} $ }
 
-The benefit formula obtained previously for this case is as follows:
+The benefit formula obtained in the previous chapter for this case is as follows:
 \begin{equation*}
-\beta_{D}(\delta_{D},\delta_{A})= \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - \dfrac{k_{D}}{\delta_{D}}
+\beta_{D}(\delta_{D},\delta_{A})= \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - \dfrac{k_{D}}{\delta_{D}} = \dfrac{\delta_{A} + 2 (d-k_{D})}{\delta_{D}}
 \end{equation*}
 
-The derivative of the above formula for a fixed $\delta_{A}$ results in the following:
-\begin{equation*}
-\frac{\partial \beta_{D}(\delta_{D},\delta_{A})}{\partial \delta_{D}} = -\dfrac{\delta_{A}}{2\delta_{D}^{2}} - \dfrac{d}{\delta_{D}^{2}} + \dfrac{k_{D}}{\delta_{D}^{2}}
-\end{equation*}
-The obtain the stationary points the first derivative is set equal to zero and the roots of the resulting equation are found:
-\begin{equation*}
-\frac{\partial \beta_{D}(\delta_{D},\delta_{A})}{\partial \delta_{D}} =0 ~~~~~~ =>~~~~~~ \delta_{A} = 2(k_{D}-d) = dk_{D} - 2d
-\end{equation*}
+Given that $\delta_{D}$ is always positive, the benefit function can be either positive or negative depending on the numerator of the above fraction. For $\delta_{A} + 2(d-k_{D}) > 0$ the benefit will be always positive but decreasing, see figure \ref{ShapeUp}. \\
+The defender will play if $ \delta_{A} > 2(k_{D} -d)$ and $k_{D} > d$. The defender will not play if $k_{D} < d$ because then $ \delta_{A}$ is negative.\\
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{Images/ShapesUp.png} 
+\caption{The benefit function is of the shape of 1/x if $\delta_{D}$ is always positive and if $\delta_{A} + 2(d-k_{D}) > 0$. }
+\label{ShapeUp}
+\end{figure}
 
+For $\delta_{A} + 2(d-k_{D}) < 0$, the benefit will always be negative so the defender will not play. See figure \ref{ShapeDown}. This is independent of the value of $k_{D}$ and $ d$. 
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{Images/ShapeDown.png} 
+\caption{The benefit function is of the shape of -1/x if $\delta_{D}$ is always positive and if $\delta_{A} + 2(d-k_{D}) < 0$.}
+\label{ShapeDown}
+\end{figure}
+%The derivative of the above formula for a fixed $\delta_{A}$ results in the following:
+%\begin{equation*}
+%\frac{\partial \beta_{D}(\delta_{D},\delta_{A})}{\partial \delta_{D}} = -\dfrac{\delta_{A}}{2\delta_{D}^{2}} - \dfrac{d}{\delta_{D}^{2}} + \dfrac{k_{D}}{\delta_{D}^{2}}
+%\end{equation*}
+%The obtain the stationary points the first derivative is set equal to zero and the roots of the resulting equation are found:
+%\begin{equation*}
+%\frac{\partial \beta_{D}(\delta_{D},\delta_{A})}{\partial \delta_{D}} =0 ~~~~~~ =>~~~~~~ \delta_{A} = 2(k_{D}-d) = dk_{D} - 2d
+%\end{equation*}
+%
 This leads to the following deduction:
 \begin{description}
 \item If $k_{D} \leq d$ 
 \begin{description}
-\item decreasing $ \delta_{A} < 2(k_{D} -d)$
+\item decreasing $ \delta_{A} < 2(k_{D} -d)$, $ \delta_{A}$ is negative
 \item increasing  $\delta_{A} > 2(k_{D} -d)$ 
 \end{description}
 \item If $k_{D} > d$ 
@@ -86,7 +103,7 @@ This leads to the following deduction:
 
 The benefit formula obtained previously for this case is as follows:
 \begin{equation*}
-\dfrac{\beta_{D}(\alpha_{D},\alpha_{A})}{\partial \delta_{D}} = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - \dfrac{k_{D}}{\delta_{D}} - \dfrac{(d-(\delta_{D} - \delta_{A}))^{2}}{d\delta_{D}\delta_{A}}
+\dfrac{\beta_{D}(\alpha_{D},\alpha_{A})}{\partial \delta_{D}} = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - \dfrac{k_{D}}{\delta_{D}} - \dfrac{(d-(\delta_{D} - \delta_{A}))^{2}}{2\delta_{D}\delta_{A}}
 \end{equation*}
 
 The derivative of the above formula for a fixed $\delta_{A}$ results in the following:
@@ -102,7 +119,7 @@ The stationary points (maximum, minimum) can be found by setting the first deriv
 \end{equation*}
 
 
-This leads to the following deduction: The function increases on $[0, \sqrt{2\delta_{A}k_{D} + d^{2}}]$ and is decreasing on $[\sqrt{2\delta_{A}k_{D} + d^{2}}, \infty]$ So we got a maximum on $\delta_{D} = minimum \{ \delta_{A}, \sqrt{2\delta_{A}k_{D} + d^{2}} \} $ \\
+This leads to the following deduction: The function increases on $[0, \sqrt{2\delta_{A}k_{D} + d^{2}}]$ and is decreasing on $[\sqrt{2\delta_{A}k_{D} + d^{2}}, \infty]$. So there is a maximum on $\delta_{D} = minimum \{ \delta_{A}, \sqrt{2\delta_{A}k_{D} + d^{2}} \} $ \\
 
 \subsubsection{Best responses}
 The optimum functions will be piecewise functions. There will be different optimum functions depending on $k_{D}$ and $d$. We distinguish for these two cases, three sub cases for different values of $\delta_{A}$. 

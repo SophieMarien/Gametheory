@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  28 JUN 2015 16:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  28 JUN 2015 22:27
 entering extended mode
 **masterproef.tex
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.tex
@@ -1183,9 +1183,11 @@ LaTeX Warning: Label `first' multiply defined.
 LaTeX Warning: Label `first' multiply defined.
 
 ) (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\nash.aux)
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-4.aux)
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-3.aux)
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\conclusion.aux))
+(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-4.aux
+
+LaTeX Warning: Label `ShapeUp' multiply defined.
+
+) (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\conclusion.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 121.
 LaTeX Font Info:    ... okay on input line 121.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 121.
@@ -1201,7 +1203,6 @@ LaTeX Font Info:    ... okay on input line 121.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 121.
 LaTeX Font Info:    ... okay on input line 121.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 121.
-
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1284,7 +1285,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-<logokuleng.pdf, id=118, 159.33528pt x 85.358pt>
+<logokuleng.pdf, id=106, 159.33528pt x 85.358pt>
 File: logokuleng.pdf Graphic file (type pdf)
  <use logokuleng.pdf>
 Package pdftex.def Info: logokuleng.pdf used on input line 121.
@@ -1432,10 +1433,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--34
 Underfull \vbox (badness 1057) has occurred while \output is active []
 
  [2]
-
-LaTeX Warning: Reference `chapter4: Virus propagation' on page 3 undefined on i
-nput line 72.
-
 [3]) [4]
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-5.tex
 Underfull \hbox (badness 10000) in paragraph at lines 30--35
@@ -1471,7 +1468,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 153--154
 
  []
 
-[9] <Images/PrisDilemma.png, id=376, 466.3824pt x 318.9516pt>
+[9] <Images/PrisDilemma.png, id=371, 466.3824pt x 318.9516pt>
 File: Images/PrisDilemma.png Graphic file (type png)
 
 <use Images/PrisDilemma.png>
@@ -1493,7 +1490,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
  []
 
-<../../doc/template/Images/DefFlipItt.png, id=382, 512.3943pt x 92.9874pt>
+<../../doc/template/Images/DefFlipItt.png, id=378, 512.3943pt x 92.9874pt>
 File: ../../doc/template/Images/DefFlipItt.png Graphic file (type png)
 
 <use ../../doc/template/Images/DefFlipItt.png>
@@ -1587,7 +1584,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 145--147
 
  []
 
-<Images/DefFlip.pdf, id=461, 512.38626pt x 108.42407pt>
+<Images/DefFlip.pdf, id=459, 512.38626pt x 108.42407pt>
 File: Images/DefFlip.pdf Graphic file (type pdf)
 
 <use Images/DefFlip.pdf>
@@ -1605,7 +1602,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 167--168
 
  []
 
-<Images/Delayuitgelegd.pdf, id=495, 512.38626pt x 236.17334pt>
+<Images/Delayuitgelegd.pdf, id=494, 512.38626pt x 236.17334pt>
 File: Images/Delayuitgelegd.pdf Graphic file (type pdf)
 
 <use Images/Delayuitgelegd.pdf>
@@ -1617,14 +1614,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 176--177
  []
 
 [21 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/Delayui
-tgelegd.pdf>] <Images/FlipItCase1delay.pdf, id=529, 519.29205pt x 87.99817pt>
+tgelegd.pdf>] <Images/FlipItCase1delay.pdf, id=530, 519.29205pt x 87.99817pt>
 File: Images/FlipItCase1delay.pdf Graphic file (type pdf)
 
 <use Images/FlipItCase1delay.pdf>
 Package pdftex.def Info: Images/FlipItCase1delay.pdf used on input line 185.
 (pdftex.def)             Requested size: 363.50195pt x 61.59828pt.
 
-<Images/FlipItCase1delaytobig.pdf, id=530, 512.38626pt x 77.18385pt>
+<Images/FlipItCase1delaytobig.pdf, id=531, 512.38626pt x 77.18385pt>
 File: Images/FlipItCase1delaytobig.pdf Graphic file (type pdf)
 
 <use Images/FlipItCase1delaytobig.pdf>
@@ -1646,7 +1643,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 208--209
  []
 
 
-<../../doc/template/Images/DiffDelayCase1.pdf, id=586, 512.38626pt x 236.17334p
+<../../doc/template/Images/DiffDelayCase1.pdf, id=587, 512.38626pt x 236.17334p
 t>
 File: ../../doc/template/Images/DiffDelayCase1.pdf Graphic file (type pdf)
  <use ../../doc/template/Images/DiffDelayCase1.pdf>
@@ -1654,7 +1651,7 @@ Package pdftex.def Info: ../../doc/template/Images/DiffDelayCase1.pdf used on i
 nput line 217.
 (pdftex.def)             Requested size: 358.66794pt x 165.32019pt.
 
-<../../doc/template/Images/delaydtijdens.pdf, id=589, 512.38626pt x 113.75499pt
+<../../doc/template/Images/delaydtijdens.pdf, id=590, 512.38626pt x 113.75499pt
 >
 File: ../../doc/template/Images/delaydtijdens.pdf Graphic file (type pdf)
  <use ../../doc/template/Images/delaydtijdens.pdf>
@@ -1693,7 +1690,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 287--288
 
  []
 
-<../../doc/template/Images/FlipIt2.pdf, id=658, 403.371pt x 683.10506pt>
+<../../doc/template/Images/FlipIt2.pdf, id=660, 403.371pt x 683.10506pt>
 File: ../../doc/template/Images/FlipIt2.pdf Graphic file (type pdf)
 
 <use ../../doc/template/Images/FlipIt2.pdf>
@@ -1716,7 +1713,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 317--318
 
  []
 
-<Images/flipcase2nb.pdf, id=695, 403.371pt x 213.21759pt>
+<Images/flipcase2nb.pdf, id=699, 403.371pt x 213.21759pt>
 File: Images/flipcase2nb.pdf Graphic file (type pdf)
 
 <use Images/flipcase2nb.pdf>
@@ -1750,10 +1747,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 352--353
 ) [28 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/flipc
 ase2nb.pdf>]
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\nash.tex
-<Images/bestresp.png, id=732, 963.6pt x 722.7pt>
+<Images/bestresp.png, id=737, 963.6pt x 722.7pt>
 File: Images/bestresp.png Graphic file (type png)
  <use Images/bestresp.png>
-Package pdftex.def Info: Images/bestresp.png used on input line 27.
+Package pdftex.def Info: Images/bestresp.png used on input line 26.
 (pdftex.def)             Requested size: 385.43317pt x 289.07487pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 33--34
@@ -1765,15 +1762,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
 
 ]
-Overfull \hbox (38.96552pt too wide) in paragraph at lines 50--52
-\T1/lmr/m/n/10.95 (-20) and is de-cre-a-sing on $\OT1/lmr/m/n/10.95 (-20) [[]\O
-ML/lmm/m/it/10.95 ; \OMS/lmsy/m/n/10.95 1\OT1/lmr/m/n/10.95 (-20) ]$ \T1/lmr/m/
-n/10.95 (-20) So we got a maxi-mum on $\OML/lmm/m/it/10.95 [] \OT1/lmr/m/n/10.
-95 (-20) = \OML/lmm/m/it/10.95 min\OMS/lmsy/m/n/10.95 f\OML/lmm/m/it/10.95 [];
- []\OMS/lmsy/m/n/10.95 g$\T1/lmr/m/n/10.95 (-20) .
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 50--52
 
  []
@@ -1783,43 +1771,58 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--52
 
  []
 
-[30 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/bestres
-p.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
+<Images/ShapesUp.png, id=746, 446.41782pt x 315.42844pt>
+File: Images/ShapesUp.png Graphic file (type png)
+
+<use Images/ShapesUp.png>
+Package pdftex.def Info: Images/ShapesUp.png used on input line 65.
+(pdftex.def)             Requested size: 223.20836pt x 157.71382pt.
+ [30 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/bestre
+sp.png>]
+<Images/ShapeDown.png, id=755, 444.91219pt x 312.41719pt>
+File: Images/ShapeDown.png Graphic file (type png)
+
+<use Images/ShapeDown.png>
+Package pdftex.def Info: Images/ShapeDown.png used on input line 74.
+(pdftex.def)             Requested size: 222.45554pt x 156.2082pt.
+ [31 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/Shapes
+Up.png> <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/Sha
+peDown.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
 
-Overfull \hbox (67.37831pt too wide) in paragraph at lines 105--106
+Overfull \hbox (76.35776pt too wide) in paragraph at lines 122--123
 \T1/lmr/m/n/10.95 (-20) and is de-cre-a-sing on $\OT1/lmr/m/n/10.95 (-20) [[]\O
-ML/lmm/m/it/10.95 ; \OMS/lmsy/m/n/10.95 1\OT1/lmr/m/n/10.95 (-20) ]$ \T1/lmr/m/
-n/10.95 (-20) So we got a maxi-mum on $\OML/lmm/m/it/10.95 [] \OT1/lmr/m/n/10.
-95 (-20) = \OML/lmm/m/it/10.95 minimum\OMS/lmsy/m/n/10.95 f\OML/lmm/m/it/10.95 
-[]; []\OMS/lmsy/m/n/10.95 g$ 
+ML/lmm/m/it/10.95 ; \OMS/lmsy/m/n/10.95 1\OT1/lmr/m/n/10.95 (-20) ]$\T1/lmr/m/n
+/10.95 (-20) . So there is a maxi-mum on $\OML/lmm/m/it/10.95 [] \OT1/lmr/m/n/
+10.95 (-20) = \OML/lmm/m/it/10.95 minimum\OMS/lmsy/m/n/10.95 f\OML/lmm/m/it/10.
+95 []; []\OMS/lmsy/m/n/10.95 g$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
-
- []
-
-[31]
-Underfull \hbox (badness 10000) in paragraph at lines 163--165
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
  []
 
 [32]
-Underfull \hbox (badness 10000) in paragraph at lines 181--182
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 195--197
+Underfull \hbox (badness 10000) in paragraph at lines 180--182
 
  []
 
 [33]
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--214
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
 
  []
 
@@ -1838,183 +1841,242 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
 [37] [38]
-Underfull \hbox (badness 10000) in paragraph at lines 68--71
+
+LaTeX Warning: Reference `tree' on page 39 undefined on input line 59.
+
+<Images/TreeModel.png, id=816, 751.30687pt x 475.02469pt>
+File: Images/TreeModel.png Graphic file (type png)
+
+<use Images/TreeModel.png>
+Package pdftex.def Info: Images/TreeModel.png used on input line 63.
+(pdftex.def)             Requested size: 375.65251pt x 237.51175pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--83
 
  []
 
-<Images/SEMmodel.png, id=798, 685.8122pt x 461.47406pt>
+[39] <Images/SEMmodel.png, id=829, 685.8122pt x 461.47406pt>
 File: Images/SEMmodel.png Graphic file (type png)
 
 <use Images/SEMmodel.png>
-Package pdftex.def Info: Images/SEMmodel.png used on input line 75.
+Package pdftex.def Info: Images/SEMmodel.png used on input line 87.
 (pdftex.def)             Requested size: 342.90526pt x 230.73645pt.
-
-
-Package natbib Warning: Citation `OwnInternetSI' on page 39 undefined on input 
-line 81.
-
-
-Package natbib Warning: Citation `CodeRed' on page 39 undefined on input line 8
-1.
-
-[39]
-Underfull \vbox (badness 7451) has occurred while \output is active []
-
- [40 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/SEMmod
-el.png>]
-<Images/KMmodel.png, id=816, 671.50874pt x 464.4853pt>
+ [40 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/TreeMo
+del.png>]
+<Images/KMmodel.png, id=844, 671.50874pt x 464.4853pt>
 File: Images/KMmodel.png Graphic file (type png)
 
 <use Images/KMmodel.png>
-Package pdftex.def Info: Images/KMmodel.png used on input line 100.
+Package pdftex.def Info: Images/KMmodel.png used on input line 112.
 (pdftex.def)             Requested size: 335.75356pt x 232.24208pt.
- [41 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/KMmode
-l.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 182--184
+ [41 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/SEMmod
+el.png>] [42 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Image
+s/KMmodel.png>]
 
- []
-
-[42]
-Underfull \hbox (badness 10000) in paragraph at lines 185--187
-
- []
+LaTeX Warning: Marginpar on page 43 moved by 0.39275pt.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--239
+Underfull \hbox (badness 10000) in paragraph at lines 194--196
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--252
+Underfull \hbox (badness 10000) in paragraph at lines 197--199
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--254
+Underfull \hbox (badness 10000) in paragraph at lines 250--251
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--267
+Underfull \hbox (badness 10000) in paragraph at lines 253--264
+
+ []
+
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
 
  []
 
 
-Underfull \vbox (badness 3460) has occurred while \output is active []
-
- [43]
-Underfull \hbox (badness 10000) in paragraph at lines 268--269
+Underfull \hbox (badness 10000) in paragraph at lines 268--279
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 283--285
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 286--289
+Underfull \hbox (badness 10000) in paragraph at lines 295--297
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--291
+Underfull \hbox (badness 10000) in paragraph at lines 298--301
+
+ []
+
+[44]
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--293
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
 
  []
 
-) [44] [45]
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-3.tex
+) [45]
+(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\conclusion.tex
 [46
 
 
 
-]) [47]
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\conclusion.tex
-[48
-
-
-
-]) [49] [50
+]) [47] [48
 
 
 ]
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.bbl
-[51
+[49
 
-]) [52] [53
+] [50]) [51] [52
 
 ]
-
-Package natbib Warning: There were undefined citations.
-
 \tf@toc=\write6
 \tf@tdo=\write7
 \tf@lof=\write8
 \tf@lot=\write9
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 351.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 351.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 363.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 363.
+
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.aux
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-10.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-5.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-9.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\nash.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-4.aux)
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-3.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\conclusion.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 351.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 351.
-Package rerunfilecheck Info: File `masterproef.out' has not changed.
-(rerunfilecheck)             Checksum: 504541EB173360F6C6BFEC6A7EA9CA50;1805.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 363.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 363.
 
+
+Package rerunfilecheck Warning: File `masterproef.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `masterproef.out':
+(rerunfilecheck)             Before: 9AC5601057D46D9882AD109C2C24055D;1607
+(rerunfilecheck)             After:  F40242A8283A58189FA7DFEFF52C73E2;1607.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 351.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 363.
  ) 
 Here is how much of TeX's memory you used:
- 27141 strings out of 493921
- 495756 string characters out of 3144864
- 746807 words of memory out of 3000000
- 29510 multiletter control sequences out of 15000+200000
- 101002 words of font info for 175 fonts, out of 3000000 for 9000
+ 27181 strings out of 493921
+ 496201 string characters out of 3144864
+ 756334 words of memory out of 3000000
+ 29525 multiletter control sequences out of 15000+200000
+ 101381 words of font info for 179 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  60i,12n,92p,2214b,920s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files (x86)/MiKT
-eX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/MiKTeX 2.9/font
-s/enc/dvips/lm/lm-mathex.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips
-/lm/lm-mathsy.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8
-r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
-nts/type1/public/lm/lmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
-ublic/lm/lmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lm
-mi7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/
-Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files (x86)/MiKT
-eX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
-type1/public/lm/lmri10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publi
-c/lm/lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.
-pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Pro
-gram Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on masterproef.pdf (63 pages, 2640230 bytes).
+pdfTeX warning (dest): name{table.caption.24} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.68} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.62} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.60} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.58} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.45} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.41} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.39} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.37} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.34} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.31} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.27} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.22} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.67} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.57} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.36} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.28} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.26} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.70} has been referenced but does not exist
+, replaced by a fixed one
+
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/
+enc/dvips/lm/lm-mathex.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/l
+m/lm-mathsy.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.
+enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
+s/type1/public/lm/lmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
+lic/lm/lmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi
+7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
+pe1/public/lm/lmri10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
+lm/lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pf
+b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on masterproef.pdf (62 pages, 2804412 bytes).
 PDF statistics:
- 989 PDF objects out of 1000 (max. 8388607)
- 197 named destinations out of 1000 (max. 500000)
- 27955 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 1024 PDF objects out of 1200 (max. 8388607)
+ 218 named destinations out of 1000 (max. 500000)
+ 27946 words of extra memory for PDF output out of 29859 (max. 10000000)
 
