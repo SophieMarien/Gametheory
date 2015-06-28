@@ -28,7 +28,9 @@
 \addvspace {10pt}
 \contentsline {figure}{\numberline {4.1}{\ignorespaces This figure shows the three subcategories of each case. 'A' stands for Case 2.A: $\delta _{D} \geq d+\delta _{A} \geq \delta _{A}$ and 'B' stands for Case 2.B: $d+\delta _{A} \geq \delta _{D} \geq \delta _{A} $ \relax }}{30}{figure.caption.41}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Network with 6 nodes. The arrows represent the connections between the nodes. The start point is were the worm has been dropped, here node 1.\relax }}{41}{figure.caption.64}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Simple Epidemic Model. The x-coordinate is the propagation time and the y-coordinate is the infected percentage of the whole network. Original image from \cite {OnWorms2005survey}\relax }}{40}{figure.caption.57}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces KM Model. The x-coordinate is the propagation time and the y-coordinate is the infected percentage of the whole network. Original image from \cite {OnWorms2005survey}. $N=10000, \beta = 1/10000000$.\relax }}{41}{figure.caption.59}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Network with 6 nodes. The arrows represent the connections between the nodes. The start point is were the worm has been dropped, here node 1.\relax }}{43}{figure.caption.65}
 \addvspace {10pt}
 \addvspace {10pt}
 \select@language {dutch}

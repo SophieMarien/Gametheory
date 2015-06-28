@@ -16,7 +16,7 @@ This chapter is based on the following papers: \cite{importantjournal}, \cite{On
 
 In the context of malware propagation, there exists two kinds of APT's . First, there are APT's that launch an attack on just one target node of a network. The mechanism these APT's use to propagate malware is the dropper mechanism. The dropper is the initial attack vector that compromises the single targeted node of the system. The second kind of APT's target multiple victims. These APT's also use a dropper mechanism but have an additional mechanism for self-propagation in order to propagate themselves to the multiple targeted nodes of the system. This mechanism can either be a virus propagation or a worm propagation. A virus infects one node on the network and has to wait for human interaction to spread. So the spreading speed depends on the human interaction, and modelling virus propagation therefore requires modelling human behaviour. If an APT uses a worm propagation method it will spread by itself after it has been dropped on the network. Given the additional complexity of incorporating the human factor in a spreading method and that this chapter is merely meant as illustration on calculating the delay for use in the game theoretic approach, we will limit the presentation to worm propagation models for APT's. \\
 
-Infection by worms start with dropping the work on the network. Different dropping mechanisms can be used, whereby the initial attack can be random or targeted at a specific node. Frequently used mechanisms are USB sticks (given to a specific person or left behind for pick up by a random person), email, or malicious software through phising or trojan horses. More important for determining our delay is the propagation strategy. Propagation is performed by determining the next nodes to spread the worm to. The following are common propagation methods: 
+Infection by worms start with dropping the work on the network. Different dropping mechanisms can be used, whereby the initial attack can be random or targeted at a specific node. Frequently used mechanisms are USB sticks (given to a specific person or left behind for pick up by a random person), email, or malicious software through fishing or trojan horses. More important for determining our delay is the propagation strategy. Propagation is performed by determining the next nodes to spread the worm to. The following are common propagation methods: 
 \begin{description}
 %\item Scanning methods: A worm tries to guess (scan) the address of potential target nodes to infect. It can use distinct ways of scanning.
 %% random, localized, topological or hit-list scanning.
@@ -32,7 +32,7 @@ With sequential scanning, the worm will scan the IP addresses sequentially. This
 %--a ''routing worm'' [20]. Zou et al. designed two types of routing worms [20]. One type, based on Class-A (x.0.0.0/8) address allocations, is thus called 'ClassA routing worms.'' Such worms can reduce the scanning space to 45.3\% of the entire IPv4 address space. The other type, based on BGP routing tables, is thus called''BGP routing worms'' Such worms can reduce the scanning space to only about 28.6\% of the entire IPv4 address space.--
 %\end{itemize}   
 
-\item \textbf{Email and other client application worms:} An email worms uses the email systems to find email addresses to propagate. Other client applications can include: Internet Relay Chat (IRC), Instant Messenger (IM), and a variety of peer-to-peer
+\item \textbf{Topology-based Wroms} Email and other client application worms:An email worms uses the email systems to find email addresses to propagate. Other client applications can include: Internet Relay Chat (IRC), Instant Messenger (IM), and a variety of peer-to-peer
 file sharing systems, which have been used by worms to propagate in a similar way as email worms. For example, the Kak worm is a Javascript computer worm that spread itself by exploiting a bug in Outlook Express. % Another example is `GhostNet'
 
 %Pikachu worm: The virus was mainly spread through Microsoft Outlook email attachments. The email containing the attached virus propagated through infected users by sending itself to all contacts in the user's Outlook address book. [5]
@@ -50,23 +50,102 @@ file sharing systems, which have been used by worms to propagate in a similar wa
 To use the models for worm propagation in our model of the FlipIt game it is sufficient to know the propagation speed of the worm and define after how many time units the network is defected. This will be equal to the \textit{d} parameter in our model.  
 Stackelberg game: first move is from attacker, defender is follower. 
 
-Kind of network model: 
-Kind of model: SIS, SIR
+SI, SIR, SIS assume $\beta$ to be constant.
 
+Continious-time model
 \subsubsection{Simple Epidemic model}
+%Codered paper gebruikt voor model
+A Simple epidemic model is SI model. Nodes in the network can be either susceptible or infected.
+Once a node is infected it will stay infected. 
+The simple epidemic model is considered to be of a fixed size. The model for a fixed population is as follows:
+\begin{equation}
+\dfrac{d I(t)}{dt} = \beta I(t)[N-I(t)]
+\end{equation} 
+where I(t) is the number of infected hosts at time t; $\beta$ is the propagation rate; and N is the number of nodes in the network. In the beginning, $t=0$, I(0) hosts are infected. All the other nodes, $N - I(0)$, in the network are susceptible. 
+The solution of this equation is the following logistic curve:
+\begin{equation}
+I = \dfrac{e^{\beta(t-T)}}{1+e^{\beta(t-T)}}
+\end{equation}
+where T is a time parameter representing the point of maximum increase in the
+growth.\\
 
-\subsubsection{Kermack-Mckendrick model}
 
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=0.5]{Images/SEMmodel.png}
+\caption{Simple Epidemic Model. The x-coordinate is the propagation time and the y-coordinate is the infected percentage of the whole network. Original image from \cite{OnWorms2005survey}}
+\label{SEMmodel}
+\end{figure}
+
+Figuur \ref{SEMmodel} laat het SEM model zien.
+This Simple epidemic model has been used in various papers \cite{OwnInternetSI} \cite{CodeRed} to model random scanning worm such as Code Red and Slammer. \\
+For our paper we have to approximate the propagation speed en Infect gelijkstellen aan het aantal genoeg nodes die geinfecteerd moeten zijn door de APT om de controle te hebben. Dan weten we hoelang het duurt. In het begin zullen er ook geen geinfecteerde hosts zijn, dus de vergelijking kan opgelost worden.\\
+Er wordt geen rekening gehouden met de topology ? nog uitzoeken.
+\subsubsection{Kermack-Mckendrick model: SIR}
+In the Kermack-Mckendrick model, also known as SIR model, nodes can have three states: susceptible, infected or removed. Once a node of the network has been recovered from a worm, the node will stay in the removed mode and never becomes infected again. These nodes are not able to infect other nodes and can no longer be infected. \\
+Let I(t) be the number of infectious hosts at time \textit{t}, R(t) be the number of removed hosts at time \textit{t} and J(t) is the number of infected hosts by time \textit{i}, regardless the fact that a node can be in a removed state.
+\begin{equation}
+J(t) = I(t) + R(t).
+\end{equation} 
+The Kermack-McKendrick model can be represented as follows:
+\begin{equation}
+\begin{Bmatrix} \dfrac{d J(t)}{dt} = \beta J(t) \big[N- J(t) \\
+\dfrac{d R(t)}{dt} = \gamma I(t) \\
+J(t) = I(t) + R(t) = N - S(t)
+ \end{Bmatrix}
+\end{equation}
+Parameter $\beta$ is again the rate of infection and $\gamma$ is the rate of removal of infected hosts. S(T) is the number of susceptible hosts at time t.
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=0.5]{Images/KMmodel.png}
+\caption{KM Model. The x-coordinate is the propagation time and the y-coordinate is the infected percentage of the whole network. Original image from \cite{OnWorms2005survey}. $N=10000, \beta = 1/10000000$.}
+\label{KMmodel}
+\end{figure}
+
+%codered%
+--Define $\rho = \gamma/\beta$ to be the relative removal rate [3]. One
+interesting result coming out of this model is
+dI(t)
+dt > 0 if and only if S(t) > p. (6)
+Since there is no new susceptible host to be generated,
+the number of susceptible hosts S(t) is a monotonically decreasing
+function of time t. If S(t0) < p, then S(t) < p and
+dI(t)/dt < 0 for all future time t>t0. In other words, if the
+initial number of susceptible hosts is smaller than some critical
+value, S(0) < p, there will be no epidemic and outbreak
+[15].
+The Kermack-Mckendrick model improves the classical
+simple epidemic model by considering that some infectious
+hosts either recover or die after some time. However, this
+model is still not suitable for modeling Internet worm propagation.
+First, in the Internet, cleaning, patching, and filtering
+countermeasures against worms will remove both susceptible
+hosts and infectious hosts from circulation, but KermackMckendrick
+model only accounts for the removal of infectious
+hosts. Second, this model assumes the infection rate
+to be constant, which isn't true for a rampantly spreading
+Internet worm such as the Code Red worm--
 \subsubsection*{SIS}
 
-\subsubsection*{SIR}
 
 \subsubsection{Two-Factor model}
-
+%distributed worm simulation
+--Zou et
+al. [15] present a ''two-factor'' model that extends SIR
+epidemiological model to capture the effects of human
+countermeasures and the congestion due to the worm
+spread. Shen et al. [16] provide a discrete-time worm
+model that considers patching and cleaning effect and can
+model worms with local scanning techniques. All these
+approaches abstract specifics of the Internet topology,
+change in the size of vulnerable population as the worm
+spreads, and the effect of the individual host and network
+defenses (except for patching, in case of [16]) on the
+spread--
 \subsubsection*{self disciplinary worms}
 Model for self disciplinary worms and counter measures ... []
 
-Popular mechanism that worms use to detect vulnerable targets by random ip scanning probing. Feasible due to use 32-bit addresses. 128-bit addresses life harder for worms, except the ones that use email systems to propagate. two new strategies: uniformly distributed random number generator to select new target. :spread locally, by biasing the search space towards addresses within the same subnet or network.  
+Popular mechanism that worms use to detect vulnerable targets by random IP scanning probing. Feasible due to use 32-bit addresses. 128-bit addresses life harder for worms, except the ones that use email systems to propagate. two new strategies: uniformly distributed random number generator to select new target. :spread locally, by biasing the search space towards addresses within the same subnet or network.  
 The second strategy is almost the same as what email virusses would get. For this reason we work an example out .. 
 
 

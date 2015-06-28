@@ -49,16 +49,16 @@
 \contentsline {section}{\numberline {5.1}Methods of propagation}{37}{section.5.1}
 \contentsline {section}{\numberline {5.2}Models for worm propagation}{39}{section.5.2}
 \contentsline {subsubsection}{Simple Epidemic model}{39}{section*.56}
-\contentsline {subsubsection}{Kermack-Mckendrick model}{39}{section*.57}
-\contentsline {subsubsection}{Two-Factor model}{39}{section*.60}
-\contentsline {section}{\numberline {5.3}methode met matrixen}{40}{section.5.3}
-\contentsline {chapter}{\chapternumberline {6}Related work}{43}{chapter.6}
-\contentsline {section}{\numberline {6.1}Related work}{43}{section.6.1}
-\contentsline {section}{\numberline {6.2}Why Game Theory to model security problem}{43}{section.6.2}
-\contentsline {chapter}{\chapternumberline {7}Conclusion}{45}{chapter.7}
-\contentsline {subsection}{\numberline {7.0.1}Further work}{45}{subsection.7.0.1}
-\contentsline {section}{\numberline {7.1}trala}{45}{section.7.1}
-\contentsline {chapter}{Bibliografie}{47}{section*.66}
+\contentsline {subsubsection}{Kermack-Mckendrick model: SIR}{40}{section*.58}
+\contentsline {subsubsection}{Two-Factor model}{42}{section*.61}
+\contentsline {section}{\numberline {5.3}methode met matrixen}{42}{section.5.3}
+\contentsline {chapter}{\chapternumberline {6}Related work}{47}{chapter.6}
+\contentsline {section}{\numberline {6.1}Related work}{47}{section.6.1}
+\contentsline {section}{\numberline {6.2}Why Game Theory to model security problem}{47}{section.6.2}
+\contentsline {chapter}{\chapternumberline {7}Conclusion}{49}{chapter.7}
+\contentsline {subsection}{\numberline {7.0.1}Further work}{49}{subsection.7.0.1}
+\contentsline {section}{\numberline {7.1}trala}{49}{section.7.1}
+\contentsline {chapter}{Bibliografie}{51}{section*.67}
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}
