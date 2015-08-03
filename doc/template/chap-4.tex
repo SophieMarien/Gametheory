@@ -5,7 +5,7 @@
 
 The formalisation of the FlipIt game with delay relies on some value  \textit{d} that represents the time needed to infect a sufficient number of nodes in a network after the initial infection. This chapter provides the reader with more insight on how to calculate the value of this parameter \textit{d}.  \\
 
-The  spreading of malware has already been extensively researched. Because of the many different types of propagation it is hard to define a single model that can model all of them. Modelling the spread of malware depends on two key factors: the method used for the propagation and the graph where the malware will spread itself. \\
+The  spreading of malware has already been extensively researched. Because of the many different types of propagation it is hard to define a single model that can model all of them. Modelling the spread of malware depends on two key factors: the method used for the propagation and the graph of the network where the malware will spread itself. \\
 Viruses and worms are the types of malware that are the most researched. Since the spreading of viruses requires human interaction, their propagation delay is depending on (hard to predict) human behaviour. Worms on the other hand, spread without human intervention, and their propagation is therefore easier to model. Since the purpose of this chapter is only to illustrate how a delay can be calculated, we will limit the presentation to propagation models of worms. \\
 
 The overview of this chapter will be as follow: Section \ref{methodsofpropagation} presents an overview of the most frequently used propagation methods by worms. These propagation methods will be covered by different kinds of models in section \ref{modelsforpropagation} that presents models to determine the time a worm needs to infect a sufficient number of nodes. These results can be used for the completion of parameter \textit{d}. Finally, in section \ref{eigenmatrixmethode},  we introduce an easy method to calculate the delay of the propagation of a worm. % Different kind of graphs to model a computer network are introduced. 
@@ -23,19 +23,27 @@ Infection by worms start by dropping the worm on the network. Different dropping
 %\item Scanning methods: A worm tries to guess (scan) the address of potential target nodes to infect. It can use distinct ways of scanning.
 %% random, localized, topological or hit-list scanning.
 %\begin{itemize}
-\item \textbf{Selective Random scanning:} Some worms propagate by using the method of selective random targeting IP addresses. The worm selects randomly a part of the selected address space instead of scanning the whole address space. The reserved address blocks and the unassigned addresses are excluded from the address space. The rate of success for randomly chosen IP addresses is very low, but it is easy to implement. Example of such worms are `Code Red' and `Slammer'.
-\item \textbf{Localized scanning:} A worm that uses localized scanning will scan for hosts in the local address space. This method is used by the `Code Red II' and `Nimda' worm.
-\item \textbf{Topological scanning:} Address information stored in the victim machines are used to locate new targets. This method used by the `Morris' worm.
+
+\item \textbf{Selective Random scanning:} Some worms propagate by using the method of selective random targeting IP addresses. The worm selects randomly a part of the selected address space instead of scanning the whole address space. The reserved address blocks and the unassigned addresses are excluded from the address space. The rate of success for randomly chosen IP addresses is very low, but it is easy to implement. Example of such worms are \textit{ Code Red} and \textit{ Slammer}.
+
+\item \textbf{Localized scanning:} A worm that uses localized scanning will scan for hosts in the local address space. This method is used by the \textit{Code Red II} and \textit{Nimda worm}.
+%\item \textbf{Topological scanning:} Address information stored in the victim machines are used to locate new targets. This method used by the `Morris' worm.
+
 %\item \textbf{Hit-list scanning:} With the method of hit-list scanning, a short-list of vulnerable systems is made beforehand.  This is done to speed up the spread of worms at the initial stage. --This list consists of potentially vulnerable machines that are gathered beforehand and targeted first when the worm is released. An extreme case for the hit-list-scanning worms is a flash worm, which gathers all vulnerable machines into the list.--
+
 \item \textbf{Sequential scanning:}
-With sequential scanning, the worm will scan the IP addresses sequentially. This means that once a vulnerable host is compromised, it will look for IP addresses that are near to this host. For example, the address of the host is A, the next addresses that the worm will scan are A+1, or A-1. This method is used by the `Blaster worm'.
-\item \textbf{DNS random scanning:} Another strategy is a kind of strategy in which the DNS infrastructure is used to locate a new target address. The IP address table from a DNS server is acquired from DNS records. The speed of a DNS scanning worm in the IPv6 internet is comparable to the speed of an IPv4 random scanning worm. There are some difficulties with this scanning technique. First it is difficult to obtain the whole address space from the DNS records. Secondly, the worm has to carry the database, which can slow down the propagation if the database is to big. Last, the IP addresses stored in the address table are only hosts with public domain names.
-\item \textbf{Routable scanning:} The worms using routable scanning acquire target IP addresses based on the routing information in a network. Through  the BGP routing tables they can scan the routable address space. This method is three times faster than a traditional worm that uses random scanning. Examples are `Spyb0t' or `network Bluepill'. 
+With sequential scanning, the worm will scan the IP addresses sequentially. This means that once a vulnerable host is compromised, it will look for IP addresses that are near to this host. For example, the address of the host is A, the next addresses that the worm will scan are A+1, or A-1. This method is used by the \textit{Blaster worm}.
+
+\item \textbf{DNS random scanning:} Another strategy is a kind of strategy in which the DNS infrastructure is used to locate a new target address. The IP address table from a DNS server is acquired from DNS records. 
+%The speed of a DNS scanning worm in the IPv6 internet is comparable to the speed of an IPv4 random scanning worm. There are some difficulties with this scanning technique. First it is difficult to obtain the whole address space from the DNS records. Secondly, the worm has to carry the database, which can slow down the propagation if the database is to big. Last, t
+The IP addresses stored in the address table are only hosts with public domain names. This propagation method is used by \todo{aanvullen}.
+
+\item \textbf{Routable scanning:} The worms using routable scanning acquire target IP addresses based on the routing information in a network. Through  the BGP routing tables they can scan the routable address space. This method is three times faster than a traditional worm that uses random scanning. Examples are \textit{Spyb0t} or \textit{network Bluepill}. 
 %--a ''routing worm'' [20]. Zou et al. designed two types of routing worms [20]. One type, based on Class-A (x.0.0.0/8) address allocations, is thus called 'ClassA routing worms.'' Such worms can reduce the scanning space to 45.3\% of the entire IPv4 address space. The other type, based on BGP routing tables, is thus called''BGP routing worms'' Such worms can reduce the scanning space to only about 28.6\% of the entire IPv4 address space.--
 %\end{itemize}   
 
 \item \textbf{Topology-based Wroms} Email and other client application worms:An email worms uses the email systems to find email addresses to propagate. Other client applications can include: Internet Relay Chat (IRC), Instant Messenger (IM), and a variety of peer-to-peer
-file sharing systems, which have been used by worms to propagate in a similar way as email worms. For example, the `Kak worm' is a Javascript computer worm that spread itself by exploiting a bug in Outlook Express. % Another example is `GhostNet'
+file sharing systems, which have been used by worms to propagate in a similar way as email worms. For example, the \textit{Kak worm} is a Javascript computer worm that spread itself by exploiting a bug in Outlook Express. % Another example is `GhostNet'
 
 %Pikachu worm: The virus was mainly spread through Microsoft Outlook email attachments. The email containing the attached virus propagated through infected users by sending itself to all contacts in the user's Outlook address book. [5]
 %\item \textbf{self stopping worm:} reduces speed to avoid detection. Atak worm or self stopping worm \cite{VirusChangePropSpeed}.
@@ -62,7 +70,12 @@ For more information about other models the reader is refered to the following p
 \begin{figure}
 \centering
 \includegraphics[scale=0.4]{Images/tabel3.png} 
+<<<<<<< Updated upstream
 \includegraphics[scale=0.55]{Images/tableworms.png}
+=======
+\centering
+\includegraphics[scale=0.55]{Images/tableworms.png} 
+>>>>>>> Stashed changes
 \caption{Taxonomy of worm modelling. Image based on taxonomy given in \cite{wang2014modeling}}.
 \label{tree}
 \end{figure}
@@ -72,8 +85,13 @@ For more information about other models the reader is refered to the following p
 \subsubsection{Simple Epidemic model}
 %Codered paper gebruikt voor model
 A Simple epidemic model is SI model. Nodes in the network can be either susceptible or infected.
+<<<<<<< Updated upstream
 Once a node is infected it will stay infected. Every node has the same
 chance to be infected. The simple epidemic model is considered to be of a fixed size. The model for a fixed population is as follows:
+=======
+Once a node is infected it will stay infected. Every node has the same chance to be infected
+The simple epidemic model is considered to be of a fixed size. The model for a fixed population is as follows:
+>>>>>>> Stashed changes
 \begin{equation}
 \dfrac{d I(t)}{dt} = \beta I(t)[N-I(t)]
 \end{equation} 
@@ -159,10 +177,28 @@ Internet worm such as the Code Red worm--
 \subsubsection*{self disciplinary worms}
 Model for self disciplinary worms and counter measures ... []
 
+<<<<<<< Updated upstream
 %Popular mechanism that worms use to detect vulnerable targets by random IP scanning probing. Feasible due to use 32-bit addresses. 128-bit addresses life harder for worms, except the ones that use email systems to propagate. two new strategies: uniformly distributed random number generator to select new target. :spread locally, by biasing the search space towards addresses within the same subnet or network.  
 %The second strategy is almost the same as what email virusses would get. For this reason we work an example out .. 
 %
 %
+=======
+\subsection{OSN worms model}
+OSN worms stands for Online Social Network worms. This model is based on worms that propagate through the use of social media, like Facebook. The difference between an email worm and a social network worms is that the topology of the network is different. 
+
+\subsubsection{AAWP model}
+AAWP stands for Analytic Active Worm Propagation. The AAWP model is a discrete time propagation model. This model is used for worms that propagate through uniform scanning. When uniform scanning is used, each IP address 
+
+Popular mechanism that worms use to detect vulnerable targets by random IP scanning probing. Feasible due to use 32-bit addresses. 128-bit addresses life harder for worms, except the ones that use email systems to propagate. two new strategies: uniformly distributed random number generator to select new target. :spread locally, by biasing the search space towards addresses within the same subnet or network.  
+The second strategy is almost the same as what email virusses would get. For this reason we work an example out .. 
+
+
+
+A method to calculate the propagation of the virus in an easy way. Google page ranking algorithm. 
+
+\todo{toch eigen methode introduceren}
+
+>>>>>>> Stashed changes
 
 \subsection{Continious-time models}
 -- notities hier op overschrijven --
