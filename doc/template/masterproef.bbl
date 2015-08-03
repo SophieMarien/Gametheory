@@ -17,11 +17,9 @@ K.~Bowers, M.~van Dijk, R.~Griffin, A.~Juels, A.~Oprea, R.~Rivest, and
   Theory for Security}, volume 7638 of {\em Lecture Notes in Computer Science},
   pages 248--263. Springer Berlin Heidelberg, 2012.
 
-\bibitem{importantjournal}
-Z.~Chen and C.~Ji.
-\newblock Optimal worm-scanning method using vulnerable-host distributions.
-\newblock {\em International Journal of Security and Networks}, 2(1-2):71--80,
-  2007.
+\bibitem{GoogleRank}
+Cornell.
+\newblock Google page rank, 2009.
 
 \bibitem{fengstealthy}
 X.~Feng, Z.~Zheng, P.~Hu, D.~Cansever, and P.~Mohapatra.
@@ -101,15 +99,6 @@ G.~Serazzi and S.~Zanero.
 \newblock In {\em Performance Tools and Applications to Networked Systems},
   pages 26--50. Springer, 2004.
 
-\bibitem{GameTheorApprCostBenefitAnalyses}
-T.~Spyridopoulos, G.~Oikonomou, T.~Tryfonas, and M.~Ge.
-\newblock Game theoretic approach for cost-benefit analysis of malware
-  proliferation prevention.
-\newblock In L.~Janczewski, H.~Wolfe, and S.~Shenoi, editors, {\em Security and
-  Privacy Protection in Information Processing Systems}, volume 405 of {\em
-  IFIP Advances in Information and Communication Technology}, pages 28--41.
-  Springer Berlin Heidelberg, 2013.
-
 \bibitem{stallings2007network}
 W.~Stallings.
 \newblock {\em Network security essentials: applications and standards}.
@@ -140,10 +129,6 @@ Y.~Xiang, X.~Fan, and W.~Zhu.
 \newblock Propagation of active worms: a survey.
 \newblock {\em International Journal of Computer Systems Science \&
   Engineering}, 24(3):157--172, 2009.
-
-\bibitem{SecurelistAPT}
-K.~L. ZAO.
-\newblock Securelist: Targeted cyberattacks logbook, 1997-2015.
 
 \bibitem{CodeRed}
 C.~C. Zou, W.~Gong, and D.~Towsley.

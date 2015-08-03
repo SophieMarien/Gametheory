@@ -7,14 +7,14 @@ A level-1 auxiliary file: chap-4.aux
 A level-1 auxiliary file: conclusion.aux
 The style file: abbrv.bst
 Database file #1: reffiess.bib
-Warning--entry type for "SecurelistAPT" isn't style-file defined
---line 280 of file reffiess.bib
 Warning--entry type for "wikimatrix" isn't style-file defined
 --line 287 of file reffiess.bib
 Repeated entry---line 378 of file reffiess.bib
  : @article{xiang2009propagation
  :                              ,
 I'm skipping whatever remains of this entry
+Warning--entry type for "GoogleRank" isn't style-file defined
+--line 388 of file reffiess.bib
 Warning--empty journal in fengstealthy
 Warning--empty year in fengstealthy
 Warning--empty journal in MitigationNonTargeted

@@ -161,7 +161,7 @@ Further research can investigate the effect of relaxing this assumption. \\
 \item $G_{i}(t)$: The total gain of player \textit{i}, which is the amount of time player \textit{i} is in control over the resource up to time \textit{t}.
 \item $\gamma_{i}$: The average gain rate of player \textit{i}, defined as $G_{i}(t)/t$
 \item $\beta_{i}$:  The average benefit rate up to time \textit{t}, defined as  $\beta_{i} = \gamma_{i} -k_{i} \alpha_{i} $.
-\item $opt_{i}$: The optimum function for player \textit{i}. \todo{optimum function equal or not with best response ?}
+\item $opt_{i}$: The optimum function for player \textit{i}. 
 \end{description}
 
 The adaptation of the FlipIt model starts from the assumption that when an attacker attacks at time \textit{t}, he doesn't get immediate control over the resource, but he only gains control at time \textit{t + d}, with $d$ denoting the time needed to infect a sufficient number of (or all) nodes. If the defender flips the network before the period $d$ has elapsed (so, somewhere between $t$ and $t + d$), then the attacker will never gain full control over the resource. (See figure \ref{dt} at point 3 and 4). This implies that the mathematical formulas for gain and benefit need to be adapted to the fact that the attacker loses part of its benefit because of this delay. In the remainder of this paper, we will adapt the formalization of the FlipIt game using the delay variable $d$. \\ 
@@ -273,7 +273,7 @@ An intuitive solution for the case with a virus would be to subtract the benefit
 \begin{equation*}
 \beta_{A}(\delta_{D},\delta_{A})=\dfrac{(\delta_{A} - d)^2}{2\delta_{A}\delta_{D}} - \dfrac{k_{D}}{\delta_{A}}
 \end{equation*}
-\todo{formule nog eens nakijken}
+
 This however results in an overestimation. By simulation the game, it can be notices that the closer $\delta_{A}/\delta_{D}$ is equal to one, the better the approximation. If $\delta_{A}/\delta_{D} = 1$ the result is correct. The reason this formula overestimates the benefit of the attacker is that it assumes that the defender is always in control during the delay. However, if the attacker was in control in the previous interval, then he continuous to be in control during the period of the delay, see figure \ref{fig:case2}. This means that to find the correct formula, what happens in the previous interval needs to be taken into account. \\
 
 We know that the defender's moves are instantaneous. Therefore, it is easier in this case to calculate the benefit of the defender. Because the defender moves slower than the attacker we know that if the defender moves during the interval of the attacker, he only moves once within this interval.

@@ -5,20 +5,20 @@
 
 The formalisation of the FlipIt game with delay relies on some value  \textit{d} that represents the time needed to infect a sufficient number of nodes in a network after the initial infection. This chapter provides the reader with more insight on how to calculate the value of this parameter \textit{d}.  \\
 
-The  spreading of malware has already been extensively researched. Because of the many different types of propagation it is hard to defined a single model that can model all of them. Modelling the spread of malware depends on two key factors: the method used for the propagation and the graph where the malware will spread itself. \\
-Viruses and worms are the types of malware that are the most researched. Since the spreading of viruses requires human interaction, their propagation delay is depending on (hard to predict) human behaviour. Worms on the other hand, spread without human intervention, and are their propagation is therefore easier to model. Since the purpose of this chapter is only to illustrate how a delay can be calculated, we will limit the presentation to propagation models of worms. \\
+The  spreading of malware has already been extensively researched. Because of the many different types of propagation it is hard to define a single model that can model all of them. Modelling the spread of malware depends on two key factors: the method used for the propagation and the graph where the malware will spread itself. \\
+Viruses and worms are the types of malware that are the most researched. Since the spreading of viruses requires human interaction, their propagation delay is depending on (hard to predict) human behaviour. Worms on the other hand, spread without human intervention, and their propagation is therefore easier to model. Since the purpose of this chapter is only to illustrate how a delay can be calculated, we will limit the presentation to propagation models of worms. \\
 
-The overview of this chapter will be as follow: Section \ref{methodsofpropagation} presents an overview of the most frequently used propagation methods by worms. These propagation methods will be covered by different kinds of models in section \ref{modelsforpropagation} that presents models to determine the time a worm needs to infect a sufficient number of nodes. These results can be used for the completion of parameter \textit{d}. Finally, in section \ref{eigenmatrixmethode},  we introduce an easy method to calculate the delay of the propagation of a worm.  Different kind of graphs to model a computer network are introduced. 
+The overview of this chapter will be as follow: Section \ref{methodsofpropagation} presents an overview of the most frequently used propagation methods by worms. These propagation methods will be covered by different kinds of models in section \ref{modelsforpropagation} that presents models to determine the time a worm needs to infect a sufficient number of nodes. These results can be used for the completion of parameter \textit{d}. Finally, in section \ref{eigenmatrixmethode},  we introduce an easy method to calculate the delay of the propagation of a worm. % Different kind of graphs to model a computer network are introduced. 
 
-This chapter is based on the following papers: \cite{importantjournal}, \cite{OnWorms2005survey}, \cite{GameTheorApprCostBenefitAnalyses} and \cite{SecurelistAPT}.
+%This chapter is based on the following papers: \cite{importantjournal}, \cite{OnWorms2005survey}, \cite{GameTheorApprCostBenefitAnalyses} and \cite{SecurelistAPT}.
 
 
 \section{Methods of propagation}
 \label{methodsofpropagation}
 
-In the context of malware propagation, there exists two kinds of APT's . First, there are APT's that launch an attack on just one target node of a network. The mechanism these APT's use to propagate malware is the dropper mechanism. The dropper is the initial attack vector that compromises the single targeted node of the system. The second kind of APT's target multiple victims. These APT's also use a dropper mechanism but have an additional mechanism for self-propagation in order to propagate themselves to the multiple targeted nodes of the system. This mechanism can either be a virus propagation or a worm propagation. A virus infects one node on the network and has to wait for human interaction to spread. So the spreading speed depends on the human interaction, and modelling virus propagation therefore requires modelling human behaviour. If an APT uses a worm propagation method it will spread by itself after it has been dropped on the network. Given the additional complexity of incorporating the human factor in a spreading method and that this chapter is merely meant as illustration on calculating the delay for use in the game theoretic approach, we will limit the presentation to worm propagation models for APT's. \\
+In the context of malware propagation, there are two kinds of APT's. First, there are APT's that launch an attack on just one target node of a network. The mechanism these APT's use to propagate malware is the dropper mechanism. The dropper is the initial attack vector that compromises the single targeted node of the system. The second kind of APT's target multiple victims. These APT's also use a dropper mechanism but have an additional mechanism for self-propagation in order to propagate themselves to the multiple targeted nodes of the system. If the APT uses virus spreading, the virus infects one node on the network and has to wait for human interaction to spread. So the spreading speed depends on the human interaction, and modelling virus propagation therefore requires modelling human behaviour. If an APT uses a worm propagation method it will spread by itself after it has been dropped on the network. Given the additional complexity of incorporating the human factor in a spreading method and that this chapter is merely meant as illustration on calculating the delay for use in the game theoretic approach, we will limit the presentation to worm propagation models for APT's. \\
 
-Infection by worms start with dropping the work on the network. Different dropping mechanisms can be used, whereby the initial attack can be random or targeted at a specific node. Frequently used mechanisms are USB sticks (given to a specific person or left behind for pick up by a random person), email, or malicious software through fishing or trojan horses. More important for determining our delay is the propagation strategy. Propagation is performed by determining the next nodes to spread the worm to. The following are common propagation methods: 
+Infection by worms start by dropping the worm on the network. Different dropping mechanisms can be used, whereby the initial attack can be random or targeted at a specific node. Frequently used mechanisms are USB sticks (given to a specific person or left behind for pick up by a random person), email, or malicious software through fishing or trojan horses. More important for determining our delay is the propagation strategy. Propagation is performed by determining the next nodes to spread the worm to. The following are common propagation methods: 
 \begin{description}
 %\item Scanning methods: A worm tries to guess (scan) the address of potential target nodes to infect. It can use distinct ways of scanning.
 %% random, localized, topological or hit-list scanning.
@@ -35,7 +35,7 @@ With sequential scanning, the worm will scan the IP addresses sequentially. This
 %\end{itemize}   
 
 \item \textbf{Topology-based Wroms} Email and other client application worms:An email worms uses the email systems to find email addresses to propagate. Other client applications can include: Internet Relay Chat (IRC), Instant Messenger (IM), and a variety of peer-to-peer
-file sharing systems, which have been used by worms to propagate in a similar way as email worms. For example, the Kak worm is a Javascript computer worm that spread itself by exploiting a bug in Outlook Express. % Another example is `GhostNet'
+file sharing systems, which have been used by worms to propagate in a similar way as email worms. For example, the `Kak worm' is a Javascript computer worm that spread itself by exploiting a bug in Outlook Express. % Another example is `GhostNet'
 
 %Pikachu worm: The virus was mainly spread through Microsoft Outlook email attachments. The email containing the attached virus propagated through infected users by sending itself to all contacts in the user's Outlook address book. [5]
 %\item \textbf{self stopping worm:} reduces speed to avoid detection. Atak worm or self stopping worm \cite{VirusChangePropSpeed}.
@@ -49,27 +49,31 @@ file sharing systems, which have been used by worms to propagate in a similar wa
 
 \section{Models for worm propagation}
 \label{modelsforpropagation}
-To use the models for worm propagation in our model of the FlipIt game it is sufficient to know the propagation speed of the worm and define after how many time units the network is defected. This will be equal to the \textit{d} parameter in our model.  
-Stackelberg game: first move is from attacker, defender is follower. 
+To use the models for worm propagation in our model of the FlipIt game it is sufficient to know the propagation speed of the worm and define after how many time units the network is defected. This will be equal to the \textit{d} parameter in our model. \\
 
-The following papers cover the most common propagation models: \cite{wang2014modeling}, \cite{OnWorms2005survey}, \cite{xiang2009propagation} and \cite{serazzi2004computer}.
-In this section we only list the models that are the most interesting from the perspective of calculating the delay.
-SI, SIR, SIS assume $\beta$ to be constant.
+The methods of propagation can be divided into different model types. We are only interested in models that are based on SI model type (Susceptible-Infected), because in our model every node that is infected will stay infected. In table \ref{tree} the taxonomy of the propagation methods are given and the type of model. \\
 
-Tree model figure \ref{tree}. We introduce homogeneous models. Network topology is mixed. 
+For more information about other models the reader is refered to the following papers with other most common propagation models: \cite{wang2014modeling}, \cite{OnWorms2005survey}, \cite{xiang2009propagation} and \cite{serazzi2004computer}.
+%In this section we only list the models that are the most interesting from the perspective of calculating the delay, namely the SI type models.
+%SI, SIR, SIS assume $\beta$ to be constant.
+
+%Tree model figure \ref{tree}. We introduce homogeneous models. Network topology is mixed. 
 
 \begin{figure}
 \centering
 \includegraphics[scale=0.4]{Images/tabel3.png} 
+\includegraphics[scale=0.55]{Images/tableworms.png}
 \caption{Taxonomy of worm modelling. Image based on taxonomy given in \cite{wang2014modeling}}.
-\label{ShapeUp}
+\label{tree}
 \end{figure}
-Continious-time model
+
+
+\subsection{Continious-time models}
 \subsubsection{Simple Epidemic model}
 %Codered paper gebruikt voor model
 A Simple epidemic model is SI model. Nodes in the network can be either susceptible or infected.
-Once a node is infected it will stay infected. 
-The simple epidemic model is considered to be of a fixed size. The model for a fixed population is as follows:
+Once a node is infected it will stay infected. Every node has the same
+chance to be infected. The simple epidemic model is considered to be of a fixed size. The model for a fixed population is as follows:
 \begin{equation}
 \dfrac{d I(t)}{dt} = \beta I(t)[N-I(t)]
 \end{equation} 
@@ -137,51 +141,49 @@ model only accounts for the removal of infectious
 hosts. Second, this model assumes the infection rate
 to be constant, which isn't true for a rampantly spreading
 Internet worm such as the Code Red worm--
-\subsubsection*{SIS}
 
-
-\subsubsection{Two-Factor model}
-%distributed worm simulation
---Zou et
-al. [15] present a ''two-factor'' model that extends SIR
-epidemiological model to capture the effects of human
-countermeasures and the congestion due to the worm
-spread. Shen et al. [16] provide a discrete-time worm
-model that considers patching and cleaning effect and can
-model worms with local scanning techniques. All these
-approaches abstract specifics of the Internet topology,
-change in the size of vulnerable population as the worm
-spreads, and the effect of the individual host and network
-defenses (except for patching, in case of [16]) on the
-spread--
+%\subsubsection{Two-Factor model}
+%%distributed worm simulation
+%--Zou et
+%al. [15] present a ''two-factor'' model that extends SIR
+%epidemiological model to capture the effects of human
+%countermeasures and the congestion due to the worm
+%spread. Shen et al. [16] provide a discrete-time worm
+%model that considers patching and cleaning effect and can
+%model worms with local scanning techniques. All these
+%approaches abstract specifics of the Internet topology,
+%change in the size of vulnerable population as the worm
+%spreads, and the effect of the individual host and network
+%defenses (except for patching, in case of [16]) on the
+%spread--
 \subsubsection*{self disciplinary worms}
 Model for self disciplinary worms and counter measures ... []
 
-Popular mechanism that worms use to detect vulnerable targets by random IP scanning probing. Feasible due to use 32-bit addresses. 128-bit addresses life harder for worms, except the ones that use email systems to propagate. two new strategies: uniformly distributed random number generator to select new target. :spread locally, by biasing the search space towards addresses within the same subnet or network.  
-The second strategy is almost the same as what email virusses would get. For this reason we work an example out .. 
+%Popular mechanism that worms use to detect vulnerable targets by random IP scanning probing. Feasible due to use 32-bit addresses. 128-bit addresses life harder for worms, except the ones that use email systems to propagate. two new strategies: uniformly distributed random number generator to select new target. :spread locally, by biasing the search space towards addresses within the same subnet or network.  
+%The second strategy is almost the same as what email virusses would get. For this reason we work an example out .. 
+%
+%
 
-
-
-A method to calculate the propagation of the virus in an easy way. Google page ranking algorithm. 
-
-\todo{toch eigen methode introduceren}
-
-
+\subsection{Continious-time models}
+-- notities hier op overschrijven --
+\subsubsection{OSN worms model}
+\subsubsection{Email worms simulation model}
 
 
 \section{methode met matrixen}
 \label{eigenmatrixmethode}
 
-All of the above models for modelling the mechanism of the spreading of a worm depend on the kind of topology of the network. In this chapter we propose a method to calculate the spread of the worm in way where the topology of the network is easily integrated. The method will give an approximation of how fast a worm can infect a network. The method is based on the method for Google Page Ranking \todo{ref} []. 
-or some of the spreading methods, the graph of the network matters. It is important to have the right topology for the right method. Email worms need a topology that represent a social network, BGP routing worms need a topology on network level. 
---iets zeggen dat het ook belangrijk is voor de defender om zijn netwerk zo aan te passen dat het virus moeilijker kan verspreiden. Network segregation mss aanhalen ?--
-
-\begin{description}
-\item Power law
-\item Small world topology
-\item random graph
-\item ..
-\end{description}
+%All of the above models for modelling the mechanism of the spreading of a worm depend on the kind of topology of the network. 
+In this chapter we propose a method to calculate the spread of the worm in way that the topology of the network can be easily integrated. The method will give an approximation of how fast a worm can infect a network. The method is based on the method for Google Page Ranking \cite{GoogleRank}. 
+For some of the spreading methods, the graph of the network matters. It is important to have the right topology for the right method. Email worms need a topology that represent a social network, BGP routing worms need a topology on network level. \\
+%--iets zeggen dat het ook belangrijk is voor de defender om zijn netwerk zo aan te passen dat het virus moeilijker kan verspreiden. Network segregation mss aanhalen ?--
+%
+%\begin{description}
+%\item Power law
+%\item Small world topology
+%\item random graph
+%\item ..
+%\end{description}
 
 %The usefulness of this method is that it is graph model independent. The topology of the network has to be in the form of a square matrix. Each connection is determined by the entries on the matrix. 
 %$N_{0}$ denotes the initially infected resources at the beginning of the virus propagation. 
