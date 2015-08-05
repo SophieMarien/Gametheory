@@ -61,9 +61,14 @@ file sharing systems, which have been used by worms to propagate in a similar wa
 \label{modelsforpropagation}
 To use the models for worm propagation in our model of the FlipIt game it is sufficient to know the propagation speed of the worm and define after how many time units the network is defected. This will be equal to the \textit{d} parameter in our model. \\
 
-The methods of propagation can be divided into different model types. We are only interested in models that are based on SI model type (Susceptible-Infected), because in our model every node that is infected will stay infected. In table \ref{tree} the taxonomy of the propagation methods are given and the type of model. \\
 
-For more information about other models the reader is refered to the following papers with other most common propagation models: \cite{wang2014modeling}, \cite{OnWorms2005survey}, \cite{xiang2009propagation} and \cite{serazzi2004computer}.
+Scan based or Topology based
+A node in a network can be in three different states: susceptible, infected or removed. A susceptible node is a node that is vulnerable to infection. An infected node is a node that has been compromised and can infect other nodes. A removed node is dead or immune, which means it cannot be infected again by worms. With these three states three main propagation models are proposed: SI, SIR and SIS. SI model is a model where a node once infected stays infected. In an SIR model a node can once it is infected become removed. In an SIS model a node can become again susceptible after it has been infected. Based on these three models various other models have been proposed. We are only interested in models where we can find the time that it takes for a worm to infect a sufficient amount of nodes. All models that are based on SI model type (Susceptible-Infected) are good, because in our model every node that is infected will stay infected. In SIR and SIS models .. kunnen we het ook vinden (AAWP). \\
+
+In this chapter we gaan dieper op sommige models and toepassen the models on the delay. We can divide the propagation models in continuous and discrete time models. Continious time models are .. Discrete time models are ..
+ Table \ref{tree} gives an overview of the taxonomy of the propagation methods are given and the type of model. \todo{deze figuur moet aangepast worden want niet elk model wordt uitgelegd}.\\ 
+
+For more information about other models the reader is refered to the following papers with other common propagation models: \cite{wang2014modeling}, \cite{OnWorms2005survey}, \cite{xiang2009propagation} and \cite{serazzi2004computer}.
 %In this section we only list the models that are the most interesting from the perspective of calculating the delay, namely the SI type models.
 %SI, SIR, SIS assume $\beta$ to be constant.
 
@@ -237,7 +242,7 @@ A method to calculate the propagation of the virus in an easy way. Google page r
 
 \section{methode met matrixen}
 \label{eigenmatrixmethode}
-
+As can be seen in table \ref{tree} most propagation models are for a specific network topology. What we want to have is to have a method to calculate the delay that is independent of the network topology.
 %All of the above models for modelling the mechanism of the spreading of a worm depend on the kind of topology of the network. 
 In this chapter we propose a method to calculate the spread of the worm in way that the topology of the network can be easily integrated. The method will give an approximation of how fast a worm can infect a network. The method is based on the method for Google Page Ranking \cite{GoogleRank}. 
 For some of the spreading methods, the graph of the network matters. It is important to have the right topology for the right method. Email worms need a topology that represent a social network, BGP routing worms need a topology on network level. \\

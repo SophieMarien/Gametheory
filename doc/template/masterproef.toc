@@ -52,17 +52,17 @@
 \contentsline {chapter}{\chapternumberline {5}Models for the Delay}{37}{chapter.5}
 \contentsline {section}{\numberline {5.1}Methods of propagation}{37}{section.5.1}
 \contentsline {section}{\numberline {5.2}Models for worm propagation}{39}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Continious-time models}{39}{subsection.5.2.1}
-\contentsline {subsubsection}{Simple Epidemic model}{39}{section*.71}
-\contentsline {subsubsection}{RCS model}{41}{section*.73}
-\contentsline {subsection}{\numberline {5.2.2}Discrete-time models}{42}{subsection.5.2.2}
-\contentsline {subsubsection}{Bluetooth worm model}{42}{section*.75}
-\contentsline {subsubsection}{OSN worms model}{43}{section*.77}
-\contentsline {section}{\numberline {5.3}methode met matrixen}{43}{section.5.3}
+\contentsline {subsection}{\numberline {5.2.1}Continious-time models}{41}{subsection.5.2.1}
+\contentsline {subsubsection}{Simple Epidemic model}{41}{section*.72}
+\contentsline {subsubsection}{RCS model}{42}{section*.74}
+\contentsline {subsection}{\numberline {5.2.2}Discrete-time models}{43}{subsection.5.2.2}
+\contentsline {subsubsection}{Bluetooth worm model}{43}{section*.76}
+\contentsline {subsubsection}{OSN worms model}{43}{section*.78}
+\contentsline {section}{\numberline {5.3}methode met matrixen}{44}{section.5.3}
 \contentsline {chapter}{\chapternumberline {6}Conclusion}{47}{chapter.6}
 \contentsline {subsection}{\numberline {6.0.1}Further work}{47}{subsection.6.0.1}
 \contentsline {section}{\numberline {6.1}trala}{47}{section.6.1}
-\contentsline {chapter}{Bibliografie}{49}{section*.80}
+\contentsline {chapter}{Bibliografie}{49}{section*.81}
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}
