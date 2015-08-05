@@ -36,8 +36,9 @@ With sequential scanning, the worm will scan the IP addresses sequentially. This
 
 \item \textbf{DNS random scanning:} Another strategy is a kind of strategy in which the DNS infrastructure is used to locate a new target address. The IP address table from a DNS server is acquired from DNS records. 
 The speed of a DNS scanning worm in the IPv6 internet is comparable to the speed of an IPv4 random scanning worm. 
-%There are some difficulties with this scanning technique. First it is difficult to obtain the whole address space from the DNS records. Secondly, the worm has to carry the database, which can slow down the propagation if the database is to big. Last, t
-The IP addresses stored in the address table are only hosts with public domain names. This propagation method is used by \todo{aanvullen}.
+%There are some difficulties with this scanning technique. 
+%First it is difficult to obtain the whole address space from the DNS records. Secondly, the worm has to carry the database, which can slow down the propagation if the database is to big. Last, t
+The IP addresses stored in the address table are only hosts with public domain names. This propagation method is used by \textit{MyDoom}.
 
 \item \textbf{Routable scanning:} The worms using routable scanning acquire target IP addresses based on the routing information in a network. Through  the BGP routing tables they can scan the routable address space. This method is three times faster than a traditional worm that uses random scanning. Examples are \textit{Spyb0t} or \textit{network Bluepill}. 
 %--a ''routing worm'' [20]. Zou et al. designed two types of routing worms [20]. One type, based on Class-A (x.0.0.0/8) address allocations, is thus called 'ClassA routing worms.'' Such worms can reduce the scanning space to 45.3\% of the entire IPv4 address space. The other type, based on BGP routing tables, is thus called''BGP routing worms'' Such worms can reduce the scanning space to only about 28.6\% of the entire IPv4 address space.--
@@ -134,92 +135,104 @@ a = \dfrac{e^{K(t-T)}}{1+e^{K(t-T)}}
 
 To to apply this formula for the case of FlipIt we need to know the maximum numbers of hosts that can be infected before the total system is compromised. The initial compromise rate has to be approximated. \textit{t} is the variable in our formula and says how many time has passed. If a passes a certain value we know the value of t which is the same as d in our FlipIt game.
 
-\subsubsection{Kermack-Mckendrick model: SIR}
-In the Kermack-Mckendrick model, also known as SIR model, nodes can have three states: susceptible, infected or removed. Once a node of the network has been recovered from a worm, the node will stay in the removed mode and never becomes infected again. These nodes are not able to infect other nodes and can no longer be infected. \\
-Let I(t) be the number of infectious hosts at time \textit{t}, R(t) be the number of removed hosts at time \textit{t} and J(t) is the number of infected hosts by time \textit{i}, regardless the fact that a node can be in a removed state.
-\begin{equation}
-J(t) = I(t) + R(t).
-\end{equation} 
-The Kermack-McKendrick model can be represented as follows:
-\begin{equation}
-\begin{Bmatrix} \dfrac{d J(t)}{dt} = \beta J(t) \big[N- J(t) \\
-\dfrac{d R(t)}{dt} = \gamma I(t) \\
-J(t) = I(t) + R(t) = N - S(t)
- \end{Bmatrix}
-\end{equation}
-Parameter $\beta$ is again the rate of infection and $\gamma$ is the rate of removal of infected hosts. S(T) is the number of susceptible hosts at time t.
-\begin{figure}[hbtp]
-\centering
-\includegraphics[scale=0.5]{Images/KMmodel.png}
-\caption{KM Model. The x-coordinate is the propagation time and the y-coordinate is the infected percentage of the whole network. Original image from \cite{OnWorms2005survey}. $N=10000, \beta = 1/10000000$.}
-\label{KMmodel}
-\end{figure}
-
-%codered%
---Define $\rho = \gamma/\beta$ to be the relative removal rate [3]. One
-interesting result coming out of this model is
-dI(t)
-dt > 0 if and only if S(t) > p. (6)
-Since there is no new susceptible host to be generated,
-the number of susceptible hosts S(t) is a monotonically decreasing
-function of time t. If S(t0) < p, then S(t) < p and
-dI(t)/dt < 0 for all future time t>t0. In other words, if the
-initial number of susceptible hosts is smaller than some critical
-value, S(0) < p, there will be no epidemic and outbreak
-[15].
-The Kermack-Mckendrick model improves the classical
-simple epidemic model by considering that some infectious
-hosts either recover or die after some time. However, this
-model is still not suitable for modeling Internet worm propagation.
-First, in the Internet, cleaning, patching, and filtering
-countermeasures against worms will remove both susceptible
-hosts and infectious hosts from circulation, but KermackMckendrick
-model only accounts for the removal of infectious
-hosts. Second, this model assumes the infection rate
-to be constant, which isn't true for a rampantly spreading
-Internet worm such as the Code Red worm--
-
-%\subsubsection{Two-Factor model}
-%%distributed worm simulation
-%--Zou et
-%al. [15] present a ''two-factor'' model that extends SIR
-%epidemiological model to capture the effects of human
-%countermeasures and the congestion due to the worm
-%spread. Shen et al. [16] provide a discrete-time worm
-%model that considers patching and cleaning effect and can
-%model worms with local scanning techniques. All these
-%approaches abstract specifics of the Internet topology,
-%change in the size of vulnerable population as the worm
-%spreads, and the effect of the individual host and network
-%defenses (except for patching, in case of [16]) on the
-%spread--
+%\subsubsection{Kermack-Mckendrick model: SIR}
+%In the Kermack-Mckendrick model, also known as SIR model, nodes can have three states: susceptible, infected or removed. Once a node of the network has been recovered from a worm, the node will stay in the removed mode and never becomes infected again. These nodes are not able to infect other nodes and can no longer be infected. \\
+%Let I(t) be the number of infectious hosts at time \textit{t}, R(t) be the number of removed hosts at time \textit{t} and J(t) is the number of infected hosts by time \textit{i}, regardless the fact that a node can be in a removed state.
+%\begin{equation}
+%J(t) = I(t) + R(t).
+%\end{equation} 
+%The Kermack-McKendrick model can be represented as follows:
+%\begin{equation}
+%\begin{Bmatrix} \dfrac{d J(t)}{dt} = \beta J(t) \big[N- J(t) \\
+%\dfrac{d R(t)}{dt} = \gamma I(t) \\
+%J(t) = I(t) + R(t) = N - S(t)
+% \end{Bmatrix}
+%\end{equation}
+%Parameter $\beta$ is again the rate of infection and $\gamma$ is the rate of removal of infected hosts. S(T) is the number of susceptible hosts at time t.
+%\begin{figure}[hbtp]
+%\centering
+%\includegraphics[scale=0.5]{Images/KMmodel.png}
+%\caption{KM Model. The x-coordinate is the propagation time and the y-coordinate is the infected percentage of the whole network. Original image from \cite{OnWorms2005survey}. $N=10000, \beta = 1/10000000$.}
+%\label{KMmodel}
+%\end{figure}
+%
+%%codered%
+%--Define $\rho = \gamma/\beta$ to be the relative removal rate [3]. One
+%interesting result coming out of this model is
+%dI(t)
+%dt > 0 if and only if S(t) > p. (6)
+%Since there is no new susceptible host to be generated,
+%the number of susceptible hosts S(t) is a monotonically decreasing
+%function of time t. If S(t0) < p, then S(t) < p and
+%dI(t)/dt < 0 for all future time t>t0. In other words, if the
+%initial number of susceptible hosts is smaller than some critical
+%value, S(0) < p, there will be no epidemic and outbreak
+%[15].
+%The Kermack-Mckendrick model improves the classical
+%simple epidemic model by considering that some infectious
+%hosts either recover or die after some time. However, this
+%model is still not suitable for modeling Internet worm propagation.
+%First, in the Internet, cleaning, patching, and filtering
+%countermeasures against worms will remove both susceptible
+%hosts and infectious hosts from circulation, but KermackMckendrick
+%model only accounts for the removal of infectious
+%hosts. Second, this model assumes the infection rate
+%to be constant, which isn't true for a rampantly spreading
+%Internet worm such as the Code Red worm--
+%
+%%\subsubsection{Two-Factor model}
+%%%distributed worm simulation
+%%--Zou et
+%%al. [15] present a ''two-factor'' model that extends SIR
+%%epidemiological model to capture the effects of human
+%%countermeasures and the congestion due to the worm
+%%spread. Shen et al. [16] provide a discrete-time worm
+%%model that considers patching and cleaning effect and can
+%%model worms with local scanning techniques. All these
+%%approaches abstract specifics of the Internet topology,
+%%change in the size of vulnerable population as the worm
+%%spreads, and the effect of the individual host and network
+%%defenses (except for patching, in case of [16]) on the
+%%spread--
 \subsubsection*{self disciplinary worms}
 Model for self disciplinary worms and counter measures ... []
 
-<<<<<<< Updated upstream
+
 %Popular mechanism that worms use to detect vulnerable targets by random IP scanning probing. Feasible due to use 32-bit addresses. 128-bit addresses life harder for worms, except the ones that use email systems to propagate. two new strategies: uniformly distributed random number generator to select new target. :spread locally, by biasing the search space towards addresses within the same subnet or network.  
 %The second strategy is almost the same as what email virusses would get. For this reason we work an example out .. 
+\subsection{Discrete-time models}
+\subsubsection{Bluetooth worm model}
+\todo{ref:Modeling Propagation Dynamics of Bluetooth Worms}
 
+The Bluetooth worm model is introduced by Yan and Eidenbenz []. The model captures the behavior of the propagation of a worm that spreads through the Bluetooth protocol. 
+A Bluetooth device that is compromised can only infect neighbour devices that are in its radio range
+Let \textit{i(t)} be the average density of infected hosts in the network at time \textit{t}.
 
-\subsection{OSN worms model}
+Formula is as follows: 
+\begin{equation}
+i(t_{k+1})=i(t_{k}) \cdot \dfrac{\rho(t_{k})}{i'(t_{k}) + (\rho(t_{k}) - i'(t_{k}))e^{-\alpha' \cdot \rho(t_{k}) / (\rho(t_{k}) - i'(t_{k}))}}
+\end{equation}
+where $\rho$(t) and $\beta$(t) are the average device density and the pairwise infection rate at time \textit{t} respectively. The number of new infections out of the infection cycle is denoted by $\alpha$(t).\\
+
+The formula for a better estimation of the worm propagation
+\begin{equation}
+\alpha'=\dfrac{\rho(t_{k})-t(t_{k})}{\rho(t_{k})} \cdot \alpha(t_{k}) + \dfrac{i(t_{k})}{\rho(t_{k})} \cdot \alpha(t_{x})
+\end{equation}
+
+To apply this model on FlipIt we again set up a threshold value for i(t) and see how long it took to compromise this amount of hosts.  The paper concluded in their work  that after setting model parameters accordingly ($\lambda_{ne} = 0.2108$ the average node degree and $J_{in}= 0.2372$ the average meeting rate of neighbours), the model predicts that the time it would take to infect 99$\%$ of the devices is slightly less than one hour. So in this case the delay is equal to an hour and the amount of hosts that has to be infected by the attacker before the network is compromised is 99$\%$ of the hosts in the network.
+
+\subsubsection{OSN worms model}
 OSN worms stands for Online Social Network worms. This model is based on worms that propagate through the use of social media, like Facebook. The difference between an email worm and a social network worms is that the topology of the network is different. 
 
-\subsubsection{AAWP model}
-AAWP stands for Analytic Active Worm Propagation. The AAWP model is a discrete time propagation model. This model is used for worms that propagate through uniform scanning. When uniform scanning is used, each IP address 
-
-Popular mechanism that worms use to detect vulnerable targets by random IP scanning probing. Feasible due to use 32-bit addresses. 128-bit addresses life harder for worms, except the ones that use email systems to propagate. two new strategies: uniformly distributed random number generator to select new target. :spread locally, by biasing the search space towards addresses within the same subnet or network.  
-The second strategy is almost the same as what email virusses would get. For this reason we work an example out .. 
+%\subsubsection{AAWP model}
+%SIR AAWP stands for Analytic Active Worm Propagation. The AAWP model is a discrete time propagation model. This model is used for worms that propagate through uniform scanning. When uniform scanning is used, each IP address 
+%
+%Popular mechanism that worms use to detect vulnerable targets by random IP scanning probing. Feasible due to use 32-bit addresses. 128-bit addresses life harder for worms, except the ones that use email systems to propagate. two new strategies: uniformly distributed random number generator to select new target. :spread locally, by biasing the search space towards addresses within the same subnet or network.  
+%The second strategy is almost the same as what email virusses would get. For this reason we work an example out .. \\
 
 
 
 A method to calculate the propagation of the virus in an easy way. Google page ranking algorithm. 
-
-\todo{toch eigen methode introduceren}
-
-
-
-\subsubsection{OSN worms model}
-\subsubsection{Email worms simulation model}
 
 
 \section{methode met matrixen}
