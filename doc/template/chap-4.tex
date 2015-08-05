@@ -71,12 +71,7 @@ For more information about other models the reader is refered to the following p
 \begin{figure}
 \centering
 \includegraphics[scale=0.4]{Images/tabel3.png} 
-<<<<<<< Updated upstream
 \includegraphics[scale=0.55]{Images/tableworms.png}
-=======
-\centering
-\includegraphics[scale=0.55]{Images/tableworms.png} 
->>>>>>> Stashed changes
 \caption{Taxonomy of worm modelling. Image based on taxonomy given in \cite{wang2014modeling}}.
 \label{tree}
 \end{figure}
@@ -85,14 +80,10 @@ For more information about other models the reader is refered to the following p
 \subsection{Continious-time models}
 \subsubsection{Simple Epidemic model}
 %Codered paper gebruikt voor model
-A Simple epidemic model is SI model. Nodes in the network can be either susceptible or infected.
-<<<<<<< Updated upstream
-Once a node is infected it will stay infected. Every node has the same
-chance to be infected. The simple epidemic model is considered to be of a fixed size. The model for a fixed population is as follows:
-=======
+A Simple epidemic model is an SI model. Nodes in the network can be either susceptible or infected. 
 Once a node is infected it will stay infected. Every node has the same chance to be infected
 The simple epidemic model is considered to be of a fixed size. The model for a fixed population is as follows:
->>>>>>> Stashed changes
+
 \begin{equation}
 \dfrac{d I(t)}{dt} = \beta I(t)[N-I(t)]
 \end{equation} 
@@ -115,7 +106,34 @@ growth.\\
 Figuur \ref{SEMmodel} laat het SEM model zien.
 This Simple epidemic model has been used in various papers \cite{OwnInternetSI}, \cite{CodeRed} to model random scanning worm such as Code Red and Slammer. \\
 For our paper we have to approximate the propagation speed en Infect gelijkstellen aan het aantal genoeg nodes die geinfecteerd moeten zijn door de APT om de controle te hebben. Dan weten we hoelang het duurt. In het begin zullen er ook geen geinfecteerde hosts zijn, dus de vergelijking kan opgelost worden.\\
-Er wordt geen rekening gehouden met de topology ? nog uitzoeken.
+%Er wordt geen rekening gehouden met de topology ? nog uitzoeken.
+
+\subsubsection{RCS model}
+
+RCS model stands for Random Constant Spread model and is developed by Paxson and Weaver at Stanford \citep{OwnInternetSI}. It is a model derived from the classical Simple Epidemic Model. They used this model to analyse the Code Red I worm. For this model it is assumed that the worm owns a good random number generator that is properly seeded. \\
+Let N be the total of vulnerable hosts in the network that can be potentially infected. It is assumed that no system is patched, shut down, deployed or disconnected, which means that the number of hosts in the system stay constant. The model also ignores spreads of the worm behind firewalls on private networks. \\
+Let K be the initial compromise rate. This is the rate of hosts that the worm can find and compromise per hour at the beginning of the infection. K is a global constant and therefore does not depend on the speed of the network or the processor speed.  Every machine can infect only one other machine after it has been compromised. It cannot increase the rate that a worm can find new hosts. 
+The internet topology is considered as a complete undirected graph.  The model type is SI, so the state of the host can only be infected or suspected. Once the host is compromised it stays that way.  
+Let T be the moment of the start of the infection. Variable \textit{a} is the proportion of vulnerable hosts that has been compromised. Variable \textit{t} is the time in hours. \\
+
+The formula to model the spread of the worm is as follows:
+\begin{equation}
+N da = (N a)K(1 - a)dt
+\end{equation}
+It tells how many vulnerable machines will be compromised in the next amount of time \textit{dt}, when it is known the proportion of machines \text{a} that already have been compromised.\\
+
+From this, it follows the simple differential equation:
+\begin{equation}
+\dfrac{d a}{dt} = Ka(1-a)
+\end{equation}
+With the following solution:
+\begin{equation}
+a = \dfrac{e^{K(t-T)}}{1+e^{K(t-T)}}
+\end{equation}
+\\
+
+To to apply this formula for the case of FlipIt we need to know the maximum numbers of hosts that can be infected before the total system is compromised. The initial compromise rate has to be approximated. \textit{t} is the variable in our formula and says how many time has passed. If a passes a certain value we know the value of t which is the same as d in our FlipIt game.
+
 \subsubsection{Kermack-Mckendrick model: SIR}
 In the Kermack-Mckendrick model, also known as SIR model, nodes can have three states: susceptible, infected or removed. Once a node of the network has been recovered from a worm, the node will stay in the removed mode and never becomes infected again. These nodes are not able to infect other nodes and can no longer be infected. \\
 Let I(t) be the number of infectious hosts at time \textit{t}, R(t) be the number of removed hosts at time \textit{t} and J(t) is the number of infected hosts by time \textit{i}, regardless the fact that a node can be in a removed state.
@@ -181,9 +199,8 @@ Model for self disciplinary worms and counter measures ... []
 <<<<<<< Updated upstream
 %Popular mechanism that worms use to detect vulnerable targets by random IP scanning probing. Feasible due to use 32-bit addresses. 128-bit addresses life harder for worms, except the ones that use email systems to propagate. two new strategies: uniformly distributed random number generator to select new target. :spread locally, by biasing the search space towards addresses within the same subnet or network.  
 %The second strategy is almost the same as what email virusses would get. For this reason we work an example out .. 
-%
-%
-=======
+
+
 \subsection{OSN worms model}
 OSN worms stands for Online Social Network worms. This model is based on worms that propagate through the use of social media, like Facebook. The difference between an email worm and a social network worms is that the topology of the network is different. 
 
@@ -199,10 +216,8 @@ A method to calculate the propagation of the virus in an easy way. Google page r
 
 \todo{toch eigen methode introduceren}
 
->>>>>>> Stashed changes
 
-\subsection{Continious-time models}
--- notities hier op overschrijven --
+
 \subsubsection{OSN worms model}
 \subsubsection{Email worms simulation model}
 

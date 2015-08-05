@@ -35,8 +35,8 @@
 \addvspace {10pt}
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Taxonomy of worm modelling. Image based on taxonomy given in \cite {wang2014modeling}\relax }}{40}{figure.caption.70}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Simple Epidemic Model. The x-coordinate is the propagation time and the y-coordinate is the infected percentage of the whole network. Original image from \cite {OnWorms2005survey}\relax }}{41}{figure.caption.72}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces KM Model. The x-coordinate is the propagation time and the y-coordinate is the infected percentage of the whole network. Original image from \cite {OnWorms2005survey}. $N=10000, \beta = 1/10000000$.\relax }}{42}{figure.caption.74}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Network with 6 nodes. The arrows represent the connections between the nodes. The start point is were the worm has been dropped, here node 1.\relax }}{44}{figure.caption.80}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces KM Model. The x-coordinate is the propagation time and the y-coordinate is the infected percentage of the whole network. Original image from \cite {OnWorms2005survey}. $N=10000, \beta = 1/10000000$.\relax }}{43}{figure.caption.75}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Network with 6 nodes. The arrows represent the connections between the nodes. The start point is were the worm has been dropped, here node 1.\relax }}{45}{figure.caption.81}
 \addvspace {10pt}
 \select@language {dutch}
 \select@language {dutch}
