@@ -1,61 +1,52 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  5 AUG 2015 12:41
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.27)  5 AUG 2015 13:21
 entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
 **masterproef.tex
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.tex
+(./masterproef.tex
 LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
- lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
-ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
-an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
-ishmax, welsh, loaded.
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\kulemt.cls
+Babel <3.9f> and hyphenation patterns for 78 languages loaded.
+(./kulemt.cls
 Document Class: kulemt 2013/05/01 v1.7 KU Leuven engineering master thesis docu
 ment class
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
 \kulemt@bind=\dimen102
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks15
 \inpenc@posthook=\toks16
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ascii.def"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ascii.def
 File: ascii.def 2008/03/30 v1.1d Input encoding file
 ))
 \kulemt@facnum=\count79
-
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\kulemt.cfg
+ (./kulemt.cfg
 File: kulemt.cfg 2013/05/01
 )
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\memoir\memoir.cls
-Document Class: memoir 2013/05/30 v3.7b configurable book, report, article docu
-ment class
+(/usr/local/texlive/2013/texmf-dist/tex/latex/memoir/memoir.cls
+Document Class: memoir 2013/05/22 v3.7 configurable book, report, article docum
+ent class
 \onelineskip=\skip41
 \lxvchars=\skip42
 \xlvchars=\skip43
 \@memcnta=\count80
 \c@@memmarkcntra=\count81
-\l@nohyphenation=\language69
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\ifetex\ifetex.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/ifetex/ifetex.sty
 Package: ifetex 2011/12/15 v1.2 ifetex
 
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\plain\ifetex\ifetex.tex))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/plain/ifetex/ifetex.tex))
+(/usr/local/texlive/2013/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -64,11 +55,11 @@ Package ifluatex Info: LuaTeX not detected.
 \trimtop=\skip46
 \trimedge=\skip47
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\misc\etex.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/etex-pkg/etex.sty
 Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
 \et@xins=\count82
 )
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\memoir\mem11.clo
+(/usr/local/texlive/2013/texmf-dist/tex/latex/memoir/mem11.clo
 File: mem11.clo 2008/01/30 v0.3 memoir class 11pt size option
 )
 \binding=\skip48
@@ -221,8 +212,8 @@ File: mem11.clo 2008/01/30 v0.3 memoir class 11pt size option
 \afterepigraphskip=\skip125
 \epigraphwidth=\skip126
 \epigraphrule=\skip127
-LaTeX Info: Redefining \em on input line 7492.
-LaTeX Info: Redefining \emph on input line 7500.
+LaTeX Info: Redefining \em on input line 7491.
+LaTeX Info: Redefining \emph on input line 7499.
 \tocentryskip=\skip128
 \tocbaseline=\skip129
 \cftparskip=\skip130
@@ -305,8 +296,8 @@ LaTeX Info: Redefining \emph on input line 7500.
 \FrameRule=\dimen146
 \FrameSep=\dimen147
 \c@cp@cntr=\count120
-LaTeX Info: Redefining \: on input line 11958.
-LaTeX Info: Redefining \! on input line 11960.
+LaTeX Info: Redefining \: on input line 11957.
+LaTeX Info: Redefining \! on input line 11959.
 \c@ism@mctr=\count121
 \c@xsm@mctr=\count122
 \c@csm@mctr=\count123
@@ -367,23 +358,17 @@ Package tocvsec2 [2008/07/23] emulated by memoir.
 Package verbatim [2008/07/23] emulated by memoir.
 Package verse [2008/07/23] emulated by memoir.
 
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\memoir\mempatch.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/memoir/mempatch.sty
 Package: mempatch 2009/07/24 v6.0f Patches for memoir class v1.6180339
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
-Package: babel 2008/07/08 v3.8m The Babel package
+(/usr/local/texlive/2013/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2013/05/16 v3.9f The Babel package
 
-*************************************
-* Local config file bblopts.cfg used
-*
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
-File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\english.ldf"
-Language: english 2005/03/30 v3.3o English support from the babel system
+(/usr/local/texlive/2013/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2012/08/20 v3.3p English support from the babel system
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
-File: babel.def 2008/07/08 v3.8m Babel common definitions
+(/usr/local/texlive/2013/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2013/05/16 v3.9f Babel common definitions
 \babel@savecnt=\count139
 \U@D=\dimen148
 )
@@ -391,31 +376,31 @@ File: babel.def 2008/07/08 v3.8m Babel common definitions
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\dutch.ldf"
+(/usr/local/texlive/2013/texmf-dist/tex/generic/babel-dutch/dutch.ldf
 Language: dutch 2005/03/30 v3.8i Dutch support from the babel system
 Package babel Info: Making " an active character on input line 132.
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count140
@@ -423,33 +408,33 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen149
 \Gin@req@width=\dimen150
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ot1enc.def"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ot1enc.def
 File: ot1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding OT1 on input line 43.
 )))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\lmodern.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/lm/lmodern.sty
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -484,8 +469,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 )
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\microtype.st
-y
+(/usr/local/texlive/2013/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
 \MT@toks=\toks25
 \MT@count=\count141
@@ -494,8 +478,7 @@ LaTeX Info: Redefining \textls on input line 766.
 LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
 \MT@listname@count=\count142
 
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\microtype-pd
-ftex.def
+(/usr/local/texlive/2013/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
 
 LaTeX Info: Redefining \lsstyle on input line 915.
@@ -504,27 +487,27 @@ LaTeX Info: Redefining \lslig on input line 915.
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\microtype.cf
-g
+(/usr/local/texlive/2013/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
-)) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip186
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks26
 \ex@=\dimen152
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen153
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count143
@@ -565,17 +548,17 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count155
 \lst@gtempboxa=\box31
 \lst@token=\toks31
@@ -589,17 +572,18 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 \lst@lineno=\count160
 \lst@maxwidth=\dimen164
 
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
-File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 \c@lstnumber=\count161
 \lst@skipnumbers=\count162
 \lst@framebox=\box32
 )
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
-File: listings.cfg 2014/09/06 1.5e listings configuration
+(/usr/local/texlive/2013/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
 ))
-Package: listings 2014/09/06 1.5e (Carsten Heinz)
- (C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\soul\soul.sty
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/soul/soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@word=\toks32
 \SOUL@lasttoken=\toks33
@@ -611,96 +595,75 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@uldp=\dimen166
 \SOUL@ulht=\dimen167
 )
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\frontendlayer\tikz
-.sty
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\basiclayer\pgf.sty
-
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgfrcs.s
-ty
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfuti
-l-common.tex
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x
 \pgfutil@everybye=\toks37
-\pgfutil@tempdima=\dimen168
-\pgfutil@tempdimb=\dimen169
-
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfuti
-l-common-lists.tex))
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfuti
-l-latex.def
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box33
-
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\ms\everyshi.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfrcs
-.code.tex
-Package: pgfrcs 2013/12/20 v3.0.0 (rcs-revision 1.28)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2010/10/25 v2.10 (rcs-revision 1.24)
 ))
-Package: pgf 2013/12/18 v3.0.0 (rcs-revision 1.14)
-
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\basiclayer\pgfcore
-.sty
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\systemlayer\pgfsys
-.sty
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfs
-ys.code.tex
-Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
-
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkey
-s.code.tex
+Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks38
 \pgfkeys@temptoks=\toks39
 
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkey
-sfiltered.code.tex
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
+ode.tex
 \pgfkeys@tmptoks=\toks40
 ))
-\pgf@x=\dimen170
-\pgf@y=\dimen171
-\pgf@xa=\dimen172
-\pgf@ya=\dimen173
-\pgf@xb=\dimen174
-\pgf@yb=\dimen175
-\pgf@xc=\dimen176
-\pgf@yc=\dimen177
+\pgf@x=\dimen168
+\pgf@y=\dimen169
+\pgf@xa=\dimen170
+\pgf@ya=\dimen171
+\pgf@xb=\dimen172
+\pgf@yb=\dimen173
+\pgf@xc=\dimen174
+\pgf@yc=\dimen175
 \w@pgf@writea=\write4
 \r@pgf@reada=\read2
 \c@pgf@counta=\count163
 \c@pgf@countb=\count164
 \c@pgf@countc=\count165
 \c@pgf@countd=\count166
-\t@pgf@toka=\toks41
-\t@pgf@tokb=\toks42
-\t@pgf@tokc=\toks43
 
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgf.
-cfg
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
-Driver file for pgf: pgfsys-pdftex.def
+Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 900.
 
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfs
-ys-pdftex.def
-File: pgfsys-pdftex.def 2013/07/18  (rcs-revision 1.33)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
+ef
+File: pgfsys-pdftex.def 2009/05/22  (rcs-revision 1.26)
 
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfs
-ys-common-pdf.def
-File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
+df.def
+File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
 )))
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfs
-yssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+code.tex
+File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
 \pgfsyssoftpath@smallbuffer@items=\count167
 \pgfsyssoftpath@bigbuffer@items=\count168
 )
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfs
-ysprotocol.code.tex
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
+code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
-))
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
+)) (/usr/local/texlive/2013/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -715,244 +678,222 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfco
-re.code.tex
-Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
-
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.cod
-e.tex
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathcalc
-.code.tex
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathutil
-.code.tex)
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathpars
-er.code.tex
-\pgfmath@dimen=\dimen178
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen176
 \pgfmath@count=\count169
 \pgfmath@box=\box34
-\pgfmath@toks=\toks44
-\pgfmath@stack@operand=\toks45
-\pgfmath@stack@operation=\toks46
+\pgfmath@toks=\toks41
+\pgfmath@stack@operand=\toks42
+\pgfmath@stack@operation=\toks43
 )
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunc
-tions.code.tex
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunc
-tions.basic.code.tex)
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunc
-tions.trigonometric.code.tex)
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunc
-tions.random.code.tex)
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunc
-tions.comparison.code.tex)
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunc
-tions.base.code.tex)
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunc
-tions.round.code.tex)
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunc
-tions.misc.code.tex)
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunc
-tions.integerarithmetics.code.tex)))
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfloa
-t.code.tex
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+tex
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+.code.tex)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)))
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count170
 ))
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfco
-repoints.code.tex
-File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen179
-\pgf@picmaxx=\dimen180
-\pgf@picminy=\dimen181
-\pgf@picmaxy=\dimen182
-\pgf@pathminx=\dimen183
-\pgf@pathmaxx=\dimen184
-\pgf@pathminy=\dimen185
-\pgf@pathmaxy=\dimen186
-\pgf@xx=\dimen187
-\pgf@xy=\dimen188
-\pgf@yx=\dimen189
-\pgf@yy=\dimen190
-\pgf@zx=\dimen191
-\pgf@zy=\dimen192
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
+de.tex
+File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
+\pgf@picminx=\dimen177
+\pgf@picmaxx=\dimen178
+\pgf@picminy=\dimen179
+\pgf@picmaxy=\dimen180
+\pgf@pathminx=\dimen181
+\pgf@pathmaxx=\dimen182
+\pgf@pathminy=\dimen183
+\pgf@pathmaxy=\dimen184
+\pgf@xx=\dimen185
+\pgf@xy=\dimen186
+\pgf@yx=\dimen187
+\pgf@yy=\dimen188
+\pgf@zx=\dimen189
+\pgf@zy=\dimen190
 )
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfco
-repathconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen193
-\pgf@path@lasty=\dimen194
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
+ruct.code.tex
+File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
+\pgf@path@lastx=\dimen191
+\pgf@path@lasty=\dimen192
 )
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfco
-repathusage.code.tex
-File: pgfcorepathusage.code.tex 2013/12/13  (rcs-revision 1.23)
-\pgf@shorten@end@additional=\dimen195
-\pgf@shorten@start@additional=\dimen196
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
+.code.tex
+File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
+\pgf@shorten@end@additional=\dimen193
+\pgf@shorten@start@additional=\dimen194
 )
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfco
-rescopes.code.tex
-File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
+de.tex
+File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
 \pgfpic=\box35
 \pgf@hbox=\box36
 \pgf@layerbox@main=\box37
 \pgf@picture@serial@count=\count171
 )
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfco
-regraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
-\pgflinewidth=\dimen197
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
+ate.code.tex
+File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
+\pgflinewidth=\dimen195
 )
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfco
-retransformations.code.tex
-File: pgfcoretransformations.code.tex 2013/10/10  (rcs-revision 1.17)
-\pgf@pt@x=\dimen198
-\pgf@pt@y=\dimen199
-\pgf@pt@temp=\dimen200
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
+ations.code.tex
+File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
+\pgf@pt@x=\dimen196
+\pgf@pt@y=\dimen197
+\pgf@pt@temp=\dimen198
 )
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfco
-requick.code.tex
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
+e.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 )
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfco
-reobjects.code.tex
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+ode.tex
 File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 )
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfco
-repathprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
+ssing.code.tex
+File: pgfcorepathprocessing.code.tex 2008/10/09  (rcs-revision 1.8)
 )
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfco
-rearrows.code.tex
-File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
-\pgfarrowsep=\dimen201
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
+de.tex
+File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
 )
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfco
-reshade.code.tex
-File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen202
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+e.tex
+File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
+\pgf@max=\dimen199
 \pgf@sys@shading@range@num=\count172
 )
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfco
-reimage.code.tex
-File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+e.tex
+File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
 
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfco
-reexternal.code.tex
-File: pgfcoreexternal.code.tex 2013/07/15  (rcs-revision 1.20)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
+code.tex
+File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
 \pgfexternal@startupbox=\box38
 ))
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfco
-relayers.code.tex
-File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
+de.tex
+File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
 )
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfco
-retransparency.code.tex
-File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
+ncy.code.tex
+File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
 )
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfco
-repatterns.code.tex
-File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
+code.tex
+File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
 )))
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmodul
-eshapes.code.tex
-File: pgfmoduleshapes.code.tex 2013/10/31  (rcs-revision 1.34)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex
+File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
 \pgfnodeparttextbox=\box39
 )
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmodul
-eplot.code.tex
-File: pgfmoduleplot.code.tex 2013/07/31  (rcs-revision 1.12)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex
+File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
 )
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfc
-omp-version-0-65.sty
-Package: pgfcomp-version-0-65 2007/07/03 v3.0.0 (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen203
-\pgf@nodesepend=\dimen204
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen200
+\pgf@nodesepend=\dimen201
 )
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfc
-omp-version-1-18.sty
-Package: pgfcomp-version-1-18 2007/07/23 v3.0.0 (rcs-revision 1.1)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
 ))
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgffor.s
-ty
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgfkeys.
-sty
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkey
-s.code.tex))
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\math\pgfmath.sty
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.cod
-e.tex))
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgffor
-.code.tex
-Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
-
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.cod
-e.tex)
-\pgffor@iter=\dimen205
-\pgffor@skip=\dimen206
-\pgffor@stack=\toks47
-\pgffor@toks=\toks48
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+) (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
+\pgffor@iter=\dimen202
+\pgffor@skip=\dimen203
+\pgffor@stack=\toks44
+\pgffor@toks=\toks45
 ))
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\ti
-kz\tikz.code.tex
-Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
 
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflib
-raryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex
+File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
 \pgf@plot@mark@count=\count173
-\pgfplotmarksize=\dimen207
+\pgfplotmarksize=\dimen204
 )
-\tikz@lastx=\dimen208
-\tikz@lasty=\dimen209
-\tikz@lastxsaved=\dimen210
-\tikz@lastysaved=\dimen211
-\tikzleveldistance=\dimen212
-\tikzsiblingdistance=\dimen213
+\tikz@lastx=\dimen205
+\tikz@lasty=\dimen206
+\tikz@lastxsaved=\dimen207
+\tikz@lastysaved=\dimen208
+\tikzleveldistance=\dimen209
+\tikzsiblingdistance=\dimen210
 \tikz@figbox=\box40
-\tikz@figbox@bg=\box41
-\tikz@tempbox=\box42
-\tikz@tempbox@bg=\box43
+\tikz@tempbox=\box41
 \tikztreelevel=\count174
 \tikznumberofchildren=\count175
 \tikznumberofcurrentchild=\count176
 \tikz@fig@count=\count177
 
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmodul
-ematrix.code.tex
-File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex
+File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
 \pgfmatrixcurrentrow=\count178
 \pgfmatrixcurrentcolumn=\count179
 \pgf@matrix@numberofcolumns=\count180
 )
 \tikz@expandcount=\count181
 
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\ti
-kz\libraries\tikzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
 )))
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\todonotes\todonotes.st
-y
+(/usr/local/texlive/2013/texmf-dist/tex/latex/todonotes/todonotes.sty
 Package: todonotes 2012/07/25 .dtx Todonotes source and documentation.
 Package: todonotes 2012/07/25
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2012/10/14 v2.6b package option processing (HA)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
-\XKV@toks=\toks49
-\XKV@tempa@toks=\toks50
+(/usr/local/texlive/2013/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+\XKV@toks=\toks46
+\XKV@tempa@toks=\toks47
 \XKV@depth=\count182
 File: xkeyval.tex 2012/10/14 v2.6b key=value parser (HA)
 ))
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\ti
-kz\libraries\tikzlibrarypositioning.code.tex
-File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.0 (rcs-revision 1.7)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2008/10/06 v2.10 (rcs-revision 1.7)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count183
 \calc@Bcount=\count184
-\calc@Adimen=\dimen214
-\calc@Bdimen=\dimen215
+\calc@Adimen=\dimen211
+\calc@Bdimen=\dimen212
 \calc@Askip=\skip190
 \calc@Bskip=\skip191
 LaTeX Info: Redefining \setlength on input line 76.
@@ -962,27 +903,27 @@ LaTeX Info: Redefining \addtolength on input line 77.
 )
 \c@@todonotes@numberoftodonotes=\count186
 )
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\natbib\natbib.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip193
 \bibsep=\skip194
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count187
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
-Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
-Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
 Package hobsub Info: Skipping package `ltxcmds' (already loaded).
 Package hobsub Info: Skipping package `ifluatex' (already loaded).
@@ -1011,7 +952,7 @@ Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
 )
 Package hobsub Info: Skipping package `hobsub' (already loaded).
 Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
-Package: hopatch 2011/06/24 v1.1 Wrapper for package hooks (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
 Package: xcolor-patch 2011/01/30 xcolor patch
 Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
@@ -1019,22 +960,22 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen216
+\@linkdim=\dimen213
 \Hy@linkcounter=\count188
 \Hy@pagecounter=\count189
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count190
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4443.
@@ -1046,10 +987,10 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count191
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen217
+\XeTeXLinkMargin=\dimen214
 \Fld@menulength=\count192
-\Field@Width=\dimen218
-\Fld@charsize=\dimen219
+\Field@Width=\dimen215
+\Fld@charsize=\dimen216
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -1063,8 +1004,8 @@ LaTeX Info: Redefining \pageref on input line 6369.
 \c@Item=\count194
 \c@Hfootnote=\count195
 )
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\memoir\memhfixc.sty
-Package: memhfixc 2013/05/30 v1.17 nameref/hyperref package fixes for memoir cl
+(/usr/local/texlive/2013/texmf-dist/tex/latex/memoir/memhfixc.sty
+Package: memhfixc 2013/05/16 v1.16 nameref/hyperref package fixes for memoir cl
 ass
 \c@memhycontfloat=\count196
 \c@Hpagenote=\count197
@@ -1072,12 +1013,12 @@ ass
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count198
 \c@bookmark@seq@number=\count199
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
@@ -1090,71 +1031,70 @@ To prepare we will now reset all captioning macros and configurations to kernel
  defaults, and then let the caption package take over. Please remember to use t
 he caption package interfaces in order to configure your captions. .
 
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
-\captionmargin=\dimen220
-\captionmargin@=\dimen221
-\captionwidth=\dimen222
-\caption@tempdima=\dimen223
-\caption@indent=\dimen224
-\caption@parindent=\dimen225
-\caption@hangindent=\dimen226
+\captionmargin=\dimen217
+\captionmargin@=\dimen218
+\captionwidth=\dimen219
+\caption@tempdima=\dimen220
+\caption@indent=\dimen221
+\caption@parindent=\dimen222
+\caption@hangindent=\dimen223
 )
 \c@ContinuedFloat=\count200
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 )
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\ti
-kz\libraries\tikzlibraryarrows.code.tex
-File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflib
-raryarrows.code.tex
-File: pgflibraryarrows.code.tex 2013/09/23 v3.0.0 (rcs-revision 1.16)
-\arrowsize=\dimen227
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
+code.tex
+File: pgflibraryarrows.code.tex 2008/10/27 v2.10 (rcs-revision 1.9)
+\arrowsize=\dimen224
 ))
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\ti
-kz\libraries\tikzlibraryautomata.code.tex
-File: tikzlibraryautomata.code.tex 2008/07/14 v3.0.0 (rcs-revision 1.3)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryautomata.code.tex
+File: tikzlibraryautomata.code.tex 2008/07/14 v2.10 (rcs-revision 1.3)
 
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\ti
-kz\libraries\tikzlibraryshapes.multipart.code.tex
-File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 
-
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\shapes
-\pgflibraryshapes.multipart.code.tex
-File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.0 (rcs-revision 1.2)
-\pgfnodepartlowerbox=\box44
-\pgfnodeparttwobox=\box45
-\pgfnodepartthreebox=\box46
-\pgfnodepartfourbox=\box47
-\pgfnodeparttwentybox=\box48
-\pgfnodepartnineteenbox=\box49
-\pgfnodeparteighteenbox=\box50
-\pgfnodepartseventeenbox=\box51
-\pgfnodepartsixteenbox=\box52
-\pgfnodepartfifteenbox=\box53
-\pgfnodepartfourteenbox=\box54
-\pgfnodepartthirteenbox=\box55
-\pgfnodeparttwelvebox=\box56
-\pgfnodepartelevenbox=\box57
-\pgfnodeparttenbox=\box58
-\pgfnodepartninebox=\box59
-\pgfnodeparteightbox=\box60
-\pgfnodepartsevenbox=\box61
-\pgfnodepartsixbox=\box62
-\pgfnodepartfivebox=\box63
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
+shapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2010/01/07 v2.10 (rcs-revision 1.2)
+\pgfnodepartlowerbox=\box42
+\pgfnodeparttwobox=\box43
+\pgfnodepartthreebox=\box44
+\pgfnodepartfourbox=\box45
+\pgfnodeparttwentybox=\box46
+\pgfnodepartnineteenbox=\box47
+\pgfnodeparteighteenbox=\box48
+\pgfnodepartseventeenbox=\box49
+\pgfnodepartsixteenbox=\box50
+\pgfnodepartfifteenbox=\box51
+\pgfnodepartfourteenbox=\box52
+\pgfnodepartthirteenbox=\box53
+\pgfnodeparttwelvebox=\box54
+\pgfnodepartelevenbox=\box55
+\pgfnodeparttenbox=\box56
+\pgfnodepartninebox=\box57
+\pgfnodeparteightbox=\box58
+\pgfnodepartsevenbox=\box59
+\pgfnodepartsixbox=\box60
+\pgfnodepartfivebox=\box61
 )))
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\lipsum\lipsum.sty
-Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
+(/usr/local/texlive/2013/texmf-dist/tex/latex/lipsum/lipsum.sty
+Package: lipsum 2011/04/14 v1.2 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count201
 )
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.aux
+(./masterproef.aux
 
 LaTeX Warning: Label `first' multiply defined.
 
@@ -1203,8 +1143,7 @@ LaTeX Warning: Label `first' multiply defined.
 
 LaTeX Warning: Label `first' multiply defined.
 
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-10.aux)
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-5.aux
+(./chap-10.aux) (./chap-5.aux
 
 LaTeX Warning: Label `first' multiply defined.
 
@@ -1220,7 +1159,7 @@ LaTeX Warning: Label `first' multiply defined.
 
 LaTeX Warning: Label `first' multiply defined.
 
-) (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-9.aux
+) (./chap-9.aux
 
 LaTeX Warning: Label `fig:delaycase1' multiply defined.
 
@@ -1239,9 +1178,9 @@ LaTeX Warning: Label `first' multiply defined.
 
 LaTeX Warning: Label `first' multiply defined.
 
-) (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\nash.aux)
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-4.aux)
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\conclusion.aux))
+) (./nash.aux) (./chap-4.aux) (./conclusion.aux))
+\openout1 = `masterproef.aux'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 121.
 LaTeX Font Info:    ... okay on input line 121.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 121.
@@ -1258,24 +1197,37 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 121.
 LaTeX Font Info:    ... okay on input line 121.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 121.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+(/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count202
-\scratchdimen=\dimen228
-\scratchbox=\box64
+\scratchdimen=\dimen225
+\scratchbox=\box62
 \nofMPsegments=\count203
 \nofMParguments=\count204
-\everyMPshowfont=\toks51
+\everyMPshowfont=\toks48
 \MPscratchCnt=\count205
-Normal \dimen register pool exhausted, switching to extended pool.
-\MPscratchDim=\dimen256
+\MPscratchDim=\dimen226
 \MPnumerator=\count206
 \makeMPintoPDFobject=\count207
-\everyMPtoPDFconversion=\toks52
+\everyMPtoPDFconversion=\toks49
+) (/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 
 ******************************************************
 Stock height and width: 845.04684pt by 597.50787pt
@@ -1306,20 +1258,20 @@ Package microtype Info: Using default expansion set `basictext'.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\mt-cmr.cfg
+(/usr/local/texlive/2013/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
 \c@lstlisting=\count208
 
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box65
+\AtBeginShipoutBox=\box63
 Package hyperref Info: Link coloring OFF on input line 121.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count209
@@ -1330,9 +1282,10 @@ LaTeX Info: Redefining \nameref on input line 121.
 LaTeX Info: Redefining \ref on input line 121.
 LaTeX Info: Redefining \pageref on input line 121.
 LaTeX Info: Redefining \nameref on input line 121.
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.out)
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.out)
+(./masterproef.out) (./masterproef.out)
 \@outlinefile=\write5
+\openout5 = `masterproef.out'.
+
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 Package microtype Info: Loading generic settings for font family
@@ -1340,26 +1293,41 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-<logokuleng.pdf, id=118, 159.33528pt x 85.358pt>
+<logokuleng.pdf, id=119, 159.33528pt x 85.358pt>
 File: logokuleng.pdf Graphic file (type pdf)
  <use logokuleng.pdf>
 Package pdftex.def Info: logokuleng.pdf used on input line 121.
 (pdftex.def)             Requested size: 159.33542pt x 85.3617pt.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 121.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 121.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 121.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 121.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 121.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 121.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 121.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 121.
  [-1
 
 
-{C:/Users/ECONGUEST/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/User
-s/ECONGUEST/Documents/GitHub/Gametheory/doc/template/logokuleng.pdf>]
+{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./logok
+uleng.pdf>]
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 121.
 
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
+ (/usr/local/texlive/2013/texmf-dist/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 121
 .
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
@@ -1367,35 +1335,75 @@ LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 121.
 
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 121.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 121.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 121.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 121.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 121.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 121.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 121.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 121.
  [0
 
 
-] [1
+]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 124.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 124.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 124.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 124.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 143.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 143.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 143.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 143.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 143.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 143.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 143.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 143.
+ [1
 
 
 
 ]
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.toc
+(./masterproef.toc
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 8.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
+ (/usr/local/texlive/2013/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OML+lmm on input line 8.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OMX+lmex on input line 8.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1406,32 +1414,72 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 8.
 LaTeX Font Info:    Try loading font information for U+msa on input line 8.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\mt-msa.cfg
+(/usr/local/texlive/2013/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 8.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-(C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\mt-msb.cfg
+(/usr/local/texlive/2013/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 Overfull \hbox (6.8136pt too wide) detected at line 19
  \T1/lmr/bx/n/10.95 xviii
  []
 
-) [2
+)
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 147.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 147.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 147.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 147.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 147.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 147.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 147.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 147.
+ [2
 
+
+] (./masterproef.tdo)
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 147.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 147.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 147.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 147.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 147.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 147.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 147.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 147.
+ [3
 
 ]
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.tdo)
-[3
-
-]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 147.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 147.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 147.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 147.
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
 ine 166.
 
@@ -1439,9 +1487,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--167
 
  []
 
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 170.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 170.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 170.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 170.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 170.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 170.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 170.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 170.
 [4
 
 ]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 173.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 173.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 173.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 173.
+
 Underfull \hbox (badness 10000) in paragraph at lines 173--175
 
  []
@@ -1466,6 +1539,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 187--188
 
  []
 
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 188.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 188.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 188.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 188.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 188.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 188.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 188.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 188.
 [5
 
 
@@ -1479,7 +1568,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
  []
 
-<../../doc/template/Images/DefFlipit.png, id=217, 512.3943pt x 92.9874pt>
+<../../doc/template/Images/DefFlipit.png, id=219, 512.3943pt x 92.9874pt>
 File: ../../doc/template/Images/DefFlipit.png Graphic file (type png)
 
 <use ../../doc/template/Images/DefFlipit.png>
@@ -1500,8 +1589,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 205--208
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-[6 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/DefFlipi
-t.png>]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 212.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 212.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 212.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 212.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 212.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 212.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 212.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 212.
+[6 <../../doc/template/Images/DefFlipit.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 236--238
 
  []
@@ -1516,16 +1620,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 243--245
 
  []
 
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 245.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 245.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 245.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 245.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 245.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 245.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 245.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 245.
 [7]
 Underfull \hbox (badness 10000) in paragraph at lines 246--248
 
  []
 
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 276.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 276.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 276.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 276.
 
 Underfull \hbox (badness 10000) in paragraph at lines 278--284
 
  []
 
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 284.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 284.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 284.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 284.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 284.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 284.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 284.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 284.
 [8]
 Underfull \hbox (badness 10000) in paragraph at lines 292--293
 
@@ -1545,6 +1689,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 297--298
 
  []
 
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 298.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 298.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 298.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 298.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 298.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 298.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 298.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 298.
 [9]
 Underfull \hbox (badness 10000) in paragraph at lines 300--302
 
@@ -1567,13 +1727,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 311--312
 
  []
 
-<../../doc/template/Images/FLipItCase1.pdf, id=254, 594.22pt x 316.18124pt>
+<../../doc/template/Images/FLipItCase1.pdf, id=256, 594.22pt x 316.18124pt>
 File: ../../doc/template/Images/FLipItCase1.pdf Graphic file (type pdf)
 
 <use ../../doc/template/Images/FLipItCase1.pdf>
 Package pdftex.def Info: ../../doc/template/Images/FLipItCase1.pdf used on inpu
 t line 321.
 (pdftex.def)             Requested size: 237.68379pt x 126.47025pt.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 327.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 327.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 327.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 327.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 327.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 327.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 327.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 327.
  [10]
 Underfull \hbox (badness 10000) in paragraph at lines 343--346
 
@@ -1584,8 +1760,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 350--351
 
  []
 
-[11 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/FLipItC
-ase1.pdf>]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 359.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 359.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 359.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 359.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 359.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 359.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 359.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 359.
+[11 <../../doc/template/Images/FLipItCase1.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 359--360
 
  []
@@ -1600,12 +1791,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 382--383
 
  []
 
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 384.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 384.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 384.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 384.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 384.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 384.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 384.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 384.
 [12]
 Underfull \hbox (badness 10000) in paragraph at lines 387--388
 
  []
 
-<../../doc/template/Images/FlipItCase2.png, id=300, 403.2666pt x 498.4221pt>
+<../../doc/template/Images/FlipItCase2.png, id=302, 403.2666pt x 498.4221pt>
 File: ../../doc/template/Images/FlipItCase2.png Graphic file (type png)
 
 <use ../../doc/template/Images/FlipItCase2.png>
@@ -1632,12 +1839,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 404--406
 
  []
 
-[13 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/FlipItC
-ase2.png
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 406.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 406.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 406.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 406.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 406.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 406.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 406.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 406.
+[13 <../../doc/template/Images/FlipItCase2.png
 
-pdfTeX warning: pdflatex (file C:/Users/ECONGUEST/Documents/GitHub/Gametheory/d
-oc/template/Images/FlipItCase2.png): large interlaced PNG might cause out of me
-mory (use non-interlaced PNG to fix this)
+pdfTeX warning: /usr/texbin/pdflatex (file ../../doc/template/Images/FlipItCase
+2.png): large interlaced PNG might cause out of memory (use non-interlaced PNG 
+to fix this)
 >]
 Underfull \hbox (badness 10000) in paragraph at lines 421--422
 
@@ -1648,25 +1870,192 @@ Underfull \hbox (badness 10000) in paragraph at lines 426--427
 
  []
 
-[14] [15]
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.lof
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 429.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 429.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 429.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 429.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 432.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 432.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 432.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 432.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 448.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 448.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 448.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 448.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 448.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 448.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 448.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 448.
+[14]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 448.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 448.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 448.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 448.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 448.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 448.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 448.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 448.
+ [15]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 454.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 454.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 454.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 454.
+ (./masterproef.lof
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 25.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 25.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 25.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 25.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 25.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 25.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 25.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 25.
  [16
 
 
 ])
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.lot)
-[17]
+(./masterproef.lot)
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 457.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 457.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 457.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 457.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 457.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 457.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 457.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 457.
+ [17]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 457.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 457.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 457.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 457.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 494.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 494.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 494.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 494.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 494.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 494.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 494.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 494.
  [18
 
 ]
-[19] [20
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 498.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 498.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 498.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 498.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 498.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 498.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 498.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 498.
+
+[19]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 498.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 498.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 498.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 498.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 498.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 498.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 498.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 498.
+ [20
 
 ]
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-10.tex
+\openout2 = `chap-10.aux'.
+
+ (./chap-10.tex
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 12.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 12.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 12.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 12.
+
 Underfull \hbox (badness 10000) in paragraph at lines 14--16
 
  []
@@ -1681,6 +2070,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--30
 
  []
 
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 30.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 30.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 30.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 30.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 30.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 30.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 30.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 30.
 [1
 
 
@@ -1692,32 +2097,174 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--34
 
 Underfull \vbox (badness 1057) has occurred while \output is active []
 
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 49.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 49.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 49.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 49.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 49.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 49.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 49.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 49.
  [2])
-[3] (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-5.tex
-[4
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 500.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 500.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 500.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 500.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 500.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 500.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 500.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 500.
+
+[3]
+\openout2 = `chap-5.aux'.
+
+ (./chap-5.tex
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 1.
+ [4
 
 
 
 ]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 14.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 14.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 14.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 14.
+
 Underfull \hbox (badness 10000) in paragraph at lines 30--35
 
  []
 
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 35.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 35.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 35.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 35.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 35.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 35.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 35.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 35.
 [5]
 Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
-[6] [7]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 48.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 48.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 48.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 48.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 48.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 48.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 48.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 48.
+[6]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 93.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 93.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 93.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 93.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 93.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 93.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 93.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 93.
+ [7]
 Underfull \hbox (badness 10000) in paragraph at lines 98--114
 
  []
 
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 121.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 121.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 121.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 121.
 
 Underfull \hbox (badness 10000) in paragraph at lines 123--135
 
  []
 
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 135.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 135.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 135.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 135.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 135.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 135.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 135.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 135.
 [8]
 Underfull \hbox (badness 10000) in paragraph at lines 149--151
 
@@ -1728,19 +2275,58 @@ Underfull \hbox (badness 10000) in paragraph at lines 153--154
 
  []
 
-[9] <Images/PrisDilemma.png, id=503, 466.3824pt x 318.9516pt>
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 157.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 157.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 157.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 157.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 157.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 157.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 157.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 157.
+[9] <Images/PrisDilemma.png, id=507, 466.3824pt x 318.9516pt>
 File: Images/PrisDilemma.png Graphic file (type png)
 
 <use Images/PrisDilemma.png>
 Package pdftex.def Info: Images/PrisDilemma.png used on input line 161.
 (pdftex.def)             Requested size: 279.83159pt x 191.37242pt.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 185.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 185.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 185.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 185.
 
 Underfull \hbox (badness 10000) in paragraph at lines 187--188
 
  []
 
-[10 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/PrisDil
-emma.png>]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 191.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 191.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 191.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 191.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 191.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 191.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 191.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 191.
+[10 <./Images/PrisDilemma.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 191--194
 
  []
@@ -1750,7 +2336,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
  []
 
-<../../doc/template/Images/DefFlipItt.png, id=509, 512.3943pt x 92.9874pt>
+<../../doc/template/Images/DefFlipItt.png, id=513, 512.3943pt x 92.9874pt>
 File: ../../doc/template/Images/DefFlipItt.png Graphic file (type png)
 
 <use ../../doc/template/Images/DefFlipItt.png>
@@ -1762,8 +2348,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 207--210
 
  []
 
-[11 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/DefFlip
-Itt.png>]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 224.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 224.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 224.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 224.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 224.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 224.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 224.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 224.
+[11 <../../doc/template/Images/DefFlipItt.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 238--240
 
  []
@@ -1783,7 +2384,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 247--248
 
  []
 
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 268.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 268.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 268.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 268.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 268.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 268.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 268.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 268.
 [12]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 278.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 278.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 278.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 278.
+
 Underfull \hbox (badness 10000) in paragraph at lines 281--283
 
  []
@@ -1793,6 +2419,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 284--287
 
  []
 
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 287.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 287.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 287.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 287.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 287.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 287.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 287.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 287.
 [13]
 Underfull \hbox (badness 10000) in paragraph at lines 288--292
 
@@ -1803,13 +2445,122 @@ Underfull \hbox (badness 10000) in paragraph at lines 294--295
 
  []
 
-[14]) [15]
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-9.tex
-[16
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 295.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 295.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 295.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 295.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 295.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 295.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 295.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 295.
+[14])
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 504.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 504.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 504.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 504.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 504.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 504.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 504.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 504.
+ [15]
+\openout2 = `chap-9.aux'.
+
+ (./chap-9.tex
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 1.
+ [16
 
 
 
-] [17] [18]
+]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 12.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 12.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 12.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 12.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 23.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 23.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 23.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 23.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 41.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 41.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 41.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 41.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 41.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 41.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 41.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 41.
+ [17]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 60.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 60.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 60.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 60.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 60.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 60.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 60.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 60.
+ [18]
 Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
@@ -1824,6 +2575,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 72--74
 
  []
 
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 74.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 74.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 74.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 74.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 74.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 74.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 74.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 74.
 [19]
 Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
@@ -1834,6 +2601,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--80
 
  []
 
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 142.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 142.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 142.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 142.
 
 Underfull \hbox (badness 10000) in paragraph at lines 145--147
 
@@ -1844,19 +2619,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 145--147
 
  []
 
-<Images/DefFlip.pdf, id=586, 512.38626pt x 108.42407pt>
+<Images/DefFlip.pdf, id=591, 512.38626pt x 108.42407pt>
 File: Images/DefFlip.pdf Graphic file (type pdf)
 
 <use Images/DefFlip.pdf>
 Package pdftex.def Info: Images/DefFlip.pdf used on input line 150.
 (pdftex.def)             Requested size: 358.66794pt x 75.89632pt.
- [20 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/DefFli
-p.pdf>]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 158.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 158.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 158.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 158.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 158.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 158.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 158.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 158.
+ [20 <./Images/DefFlip.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 167--168
 
  []
 
-<Images/Delayuitgelegd.pdf, id=619, 512.38626pt x 236.17334pt>
+<Images/Delayuitgelegd.pdf, id=624, 512.38626pt x 236.17334pt>
 File: Images/Delayuitgelegd.pdf Graphic file (type pdf)
 
 <use Images/Delayuitgelegd.pdf>
@@ -1867,15 +2657,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 176--177
 
  []
 
-[21 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/Delayui
-tgelegd.pdf>] <Images/FlipItCase1delay.pdf, id=653, 519.29205pt x 87.99817pt>
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 177.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 177.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 177.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 177.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 177.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 177.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 177.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 177.
+[21 <./Images/Delayuitgelegd.pdf>]
+<Images/FlipItCase1delay.pdf, id=658, 519.29205pt x 87.99817pt>
 File: Images/FlipItCase1delay.pdf Graphic file (type pdf)
 
 <use Images/FlipItCase1delay.pdf>
 Package pdftex.def Info: Images/FlipItCase1delay.pdf used on input line 185.
 (pdftex.def)             Requested size: 363.50195pt x 61.59828pt.
 
-<Images/FlipItCase1delaytobig.pdf, id=654, 512.38626pt x 77.18385pt>
+<Images/FlipItCase1delaytobig.pdf, id=659, 512.38626pt x 77.18385pt>
 File: Images/FlipItCase1delaytobig.pdf Graphic file (type pdf)
 
 <use Images/FlipItCase1delaytobig.pdf>
@@ -1887,15 +2693,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 202--203
 
  []
 
-[22 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/FlipItC
-ase1delay.pdf> <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Ima
-ges/FlipItCase1delaytobig.pdf>]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 203.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 203.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 203.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 203.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 203.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 203.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 203.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 203.
+[22 <./Images/FlipItCase1delay.pdf> <./Images/FlipItCase1delaytobig.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 208--209
 
  []
 
 
-<../../doc/template/Images/DiffDelayCase1.pdf, id=709, 512.38626pt x 236.17334p
+<../../doc/template/Images/DiffDelayCase1.pdf, id=714, 512.38626pt x 236.17334p
 t>
 File: ../../doc/template/Images/DiffDelayCase1.pdf Graphic file (type pdf)
  <use ../../doc/template/Images/DiffDelayCase1.pdf>
@@ -1903,15 +2723,30 @@ Package pdftex.def Info: ../../doc/template/Images/DiffDelayCase1.pdf used on i
 nput line 217.
 (pdftex.def)             Requested size: 358.66794pt x 165.32019pt.
 
-<../../doc/template/Images/delaydtijdens.pdf, id=712, 512.38626pt x 113.75499pt
+<../../doc/template/Images/delaydtijdens.pdf, id=717, 512.38626pt x 113.75499pt
 >
 File: ../../doc/template/Images/delaydtijdens.pdf Graphic file (type pdf)
  <use ../../doc/template/Images/delaydtijdens.pdf>
 Package pdftex.def Info: ../../doc/template/Images/delaydtijdens.pdf used on in
 put line 228.
 (pdftex.def)             Requested size: 358.66794pt x 79.62793pt.
- [23 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/DiffDe
-layCase1.pdf>]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 240.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 240.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 240.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 240.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 240.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 240.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 240.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 240.
+ [23 <../../doc/template/Images/DiffDelayCase1.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 251--254
 
  []
@@ -1926,8 +2761,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 270--271
 
  []
 
-[24 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/delaydt
-ijdens.pdf>]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 275.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 275.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 275.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 275.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 275.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 275.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 275.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 275.
+[24 <../../doc/template/Images/delaydtijdens.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 277--278
 
  []
@@ -1942,15 +2792,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 287--288
 
  []
 
-<../../doc/template/Images/FlipIt2.pdf, id=781, 403.371pt x 683.10506pt>
+<../../doc/template/Images/FlipIt2.pdf, id=787, 403.371pt x 683.10506pt>
 File: ../../doc/template/Images/FlipIt2.pdf Graphic file (type pdf)
 
 <use ../../doc/template/Images/FlipIt2.pdf>
 Package pdftex.def Info: ../../doc/template/Images/FlipIt2.pdf used on input li
 ne 291.
 (pdftex.def)             Requested size: 282.35777pt x 478.17029pt.
- [25] [26 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/F
-lipIt2.pdf>]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 298.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 298.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 298.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 298.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 298.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 298.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 298.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 298.
+ [25]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 298.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 298.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 298.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 298.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 298.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 298.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 298.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 298.
+ [26 <../../doc/template/Images/FlipIt2.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 308--309
 
  []
@@ -1965,7 +2847,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 317--318
 
  []
 
-<Images/flipcase2nb.pdf, id=818, 403.371pt x 213.21759pt>
+<Images/flipcase2nb.pdf, id=824, 403.371pt x 213.21759pt>
 File: Images/flipcase2nb.pdf Graphic file (type pdf)
 
 <use Images/flipcase2nb.pdf>
@@ -1986,6 +2868,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 330--332
 
  []
 
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 332.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 332.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 332.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 332.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 332.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 332.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 332.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 332.
 [27]
 Underfull \hbox (badness 10000) in paragraph at lines 347--348
 
@@ -1996,9 +2894,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 352--353
 
  []
 
-) [28 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/flipc
-ase2nb.pdf>]
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\nash.tex
+)
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 505.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 505.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 505.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 505.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 505.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 505.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 505.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 505.
+ [28 <./Images/flipcase2nb.pdf>]
+\openout2 = `nash.aux'.
+
+ (./nash.tex
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 12.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 12.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 12.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 12.
+
 Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
@@ -2008,11 +2941,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--28
 
  []
 
-<Images/bestresp.png, id=855, 963.6pt x 722.7pt>
+<Images/bestresp.png, id=861, 963.6pt x 722.7pt>
 File: Images/bestresp.png Graphic file (type png)
  <use Images/bestresp.png>
 Package pdftex.def Info: Images/bestresp.png used on input line 33.
 (pdftex.def)             Requested size: 385.43317pt x 289.07487pt.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 49.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 49.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 49.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 49.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 49.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 49.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 49.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 49.
 
 [29
 
@@ -2031,24 +2980,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--58
 
 Underfull \vbox (badness 3396) has occurred while \output is active []
 
- [30 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/bestre
-sp.png>]
-<Images/ShapesUp.png, id=869, 446.41782pt x 315.42844pt>
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 65.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 65.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 65.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 65.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 65.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 65.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 65.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 65.
+ [30 <./Images/bestresp.png>] <Images/ShapesUp.png, id=875, 446.41782pt x 315.4
+2844pt>
 File: Images/ShapesUp.png Graphic file (type png)
 
 <use Images/ShapesUp.png>
 Package pdftex.def Info: Images/ShapesUp.png used on input line 71.
 (pdftex.def)             Requested size: 223.20836pt x 157.71382pt.
 
-<Images/ShapeDown.png, id=871, 444.91219pt x 312.41719pt>
+<Images/ShapeDown.png, id=877, 444.91219pt x 312.41719pt>
 File: Images/ShapeDown.png Graphic file (type png)
 
 <use Images/ShapeDown.png>
 Package pdftex.def Info: Images/ShapeDown.png used on input line 80.
 (pdftex.def)             Requested size: 222.45554pt x 156.2082pt.
- [31 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/Shapes
-Up.png> <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/Sha
-peDown.png>]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 97.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 97.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 97.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 97.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 97.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 97.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 97.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 97.
+ [31 <./Images/ShapesUp.png> <./Images/ShapeDown.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 106--107
 
  []
@@ -2058,6 +3036,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--129
 
  []
 
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 140.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 140.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 140.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 140.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 140.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 140.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 140.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 140.
 [32]
 Underfull \hbox (badness 10000) in paragraph at lines 157--158
 
@@ -2068,6 +3062,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 188--190
 
  []
 
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 196.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 196.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 196.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 196.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 196.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 196.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 196.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 196.
 [33]
 Underfull \hbox (badness 10000) in paragraph at lines 206--207
 
@@ -2078,6 +3088,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 220--222
 
  []
 
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 236.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 236.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 236.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 236.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 236.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 236.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 236.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 236.
 [34]
 Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
@@ -2088,11 +3114,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 265--267
 
  []
 
-) [35]
+)
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 509.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 509.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 509.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 509.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 509.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 509.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 509.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 509.
+ [35]
 
 LaTeX Warning: Marginpar on page 36 moved by 69.98639pt.
 
-[36] (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-4.tex
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 509.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 509.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 509.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 509.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 509.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 509.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 509.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 509.
+[36]
+\openout2 = `chap-4.aux'.
+
+ (./chap-4.tex
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 1.
+
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
@@ -2102,16 +3173,66 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
  []
 
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 16.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 16.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 16.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 16.
 
 Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 20.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 20.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 20.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 20.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 20.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 20.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 20.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 20.
 [37
 
 
 
-] [38]
+]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 45.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 45.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 45.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 45.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 45.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 45.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 45.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 45.
+ [38]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 59.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 59.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 59.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 59.
+
 Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
@@ -2121,13 +3242,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
-<Images/tabel3.png, id=925, 947.54pt x 748.7975pt>
+<Images/tabel3.png, id=932, 947.54pt x 748.7975pt>
 File: Images/tabel3.png Graphic file (type png)
  <use Images/tabel3.png>
 Package pdftex.def Info: Images/tabel3.png used on input line 73.
 (pdftex.def)             Requested size: 379.00928pt x 299.51369pt.
 
-<Images/tableworms.png, id=926, 811.53188pt x 342.5297pt>
+<Images/tableworms.png, id=933, 811.53188pt x 342.5297pt>
 File: Images/tableworms.png Graphic file (type png)
 
 <use Images/tableworms.png>
@@ -2143,15 +3264,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 94--97
 
  []
 
-<Images/SEMmodel.png, id=929, 685.8122pt x 461.47406pt>
+<Images/SEMmodel.png, id=936, 685.8122pt x 461.47406pt>
 File: Images/SEMmodel.png Graphic file (type png)
 
 <use Images/SEMmodel.png>
 Package pdftex.def Info: Images/SEMmodel.png used on input line 101.
 (pdftex.def)             Requested size: 342.90526pt x 230.73645pt.
- [39] [40 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/t
-abel3.png> <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/
-tableworms.png>]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 104.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 104.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 104.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 104.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 104.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 104.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 104.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 104.
+ [39]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 104.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 104.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 104.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 104.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 104.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 104.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 104.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 104.
+ [40 <./Images/tabel3.png> <./Images/tableworms.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 106--110
 
  []
@@ -2161,8 +3313,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--118
 
  []
 
-[41 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/SEMmode
-l.png>]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 118.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 118.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 118.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 118.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 118.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 118.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 118.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 118.
+[41 <./Images/SEMmodel.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 122--124
 
  []
@@ -2172,14 +3339,54 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--134
 
  []
 
-[42] <Images/KMmodel.png, id=968, 671.50874pt x 464.4853pt>
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 149.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 149.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 149.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 149.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 149.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 149.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 149.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 149.
+[42] <Images/KMmodel.png, id=975, 671.50874pt x 464.4853pt>
 File: Images/KMmodel.png Graphic file (type png)
 
 <use Images/KMmodel.png>
 Package pdftex.def Info: Images/KMmodel.png used on input line 153.
 (pdftex.def)             Requested size: 335.75356pt x 232.24208pt.
- [43 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/KMmode
-l.png>]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 199.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 199.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 199.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 199.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 199.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 199.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 199.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 199.
+ [43 <./Images/KMmodel.png>]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 225.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 225.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 225.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 225.
+
 Underfull \hbox (badness 10000) in paragraph at lines 229--239
 
  []
@@ -2189,6 +3396,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 248--250
 
  []
 
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 250.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 250.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 250.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 250.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 250.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 250.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 250.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 250.
 [44]
 Underfull \hbox (badness 10000) in paragraph at lines 251--253
 
@@ -2217,6 +3440,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 322--333
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 333.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 333.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 333.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 333.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 333.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 333.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 333.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 333.
  [45]
 Underfull \hbox (badness 10000) in paragraph at lines 334--335
 
@@ -2242,94 +3481,244 @@ Underfull \hbox (badness 10000) in paragraph at lines 358--359
 
  []
 
-) [46] [47]
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\conclusion.tex
-[48
+)
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 510.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 510.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 510.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 510.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 510.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 510.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 510.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 510.
+ [46]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 510.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 510.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 510.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 510.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 510.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 510.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 510.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 510.
+ [47]
+\openout2 = `conclusion.aux'.
 
+ (./conclusion.tex
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 1.
+ [48
 
-
-]) [49] [50
 
 
 ]
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.bbl
-[51
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 16.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 16.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 16.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 16.
+)
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 518.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 518.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 518.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 518.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 518.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 518.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 518.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 518.
+ [49]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 527.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 527.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 527.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 527.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 527.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 527.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 527.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 527.
+ [50
 
-]) [52] [53
+
+] (./masterproef.bbl
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 1.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 77.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 77.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 77.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 77.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 77.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 77.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 77.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 77.
+ [51
+
+])
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 533.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 533.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 533.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 533.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 533.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 533.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 533.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 533.
+ [52]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 533.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 533.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 533.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 533.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 533.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 533.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 533.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 533.
+
+[53
 
 ]
 
 Package natbib Warning: There were undefined citations.
 
 \tf@toc=\write6
+\openout6 = `masterproef.toc'.
+
 \tf@tdo=\write7
+\openout7 = `masterproef.tdo'.
+
 \tf@lof=\write8
+\openout8 = `masterproef.lof'.
+
 \tf@lot=\write9
+\openout9 = `masterproef.lot'.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 533.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 533.
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.aux
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-10.aux)
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-5.aux)
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-9.aux)
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\nash.aux)
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-4.aux)
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\conclusion.aux))
+(./masterproef.aux (./chap-10.aux) (./chap-5.aux) (./chap-9.aux) (./nash.aux)
+(./chap-4.aux) (./conclusion.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 533.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 533.
+Package rerunfilecheck Info: File `masterproef.out' has not changed.
+(rerunfilecheck)             Checksum: CA98FED680E19A40550CEA8FA0CB1B55;1801.
 
-
-Package rerunfilecheck Warning: File `masterproef.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `masterproef.out':
-(rerunfilecheck)             Before: C1539B13DDE6534AA41336F0E05FEE63;1829
-(rerunfilecheck)             After:  9B1DD7A3D2761C6AC45943B1F4D5C018;1829.
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 533.
  ) 
 Here is how much of TeX's memory you used:
- 27252 strings out of 493921
- 497329 string characters out of 3144864
- 750786 words of memory out of 3000000
- 29543 multiletter control sequences out of 15000+200000
- 102020 words of font info for 185 fonts, out of 3000000 for 9000
- 841 hyphenation exceptions out of 8191
- 60i,12n,92p,2214b,920s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{figure.caption.82} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.74} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.84} has been referenced but does not exist
-, replaced by a fixed one
-
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files (x86)/MiKTeX
- 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/
-enc/dvips/lm/lm-mathsy.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/l
-m/lm-mathex.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.
-enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Pro
-gram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files (x86)/MiKT
-eX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
-s/type1/public/lm/lmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
-lic/lm/lmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi
-7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files (x86)/MiKTeX
- 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmri10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
-lm/lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pf
-b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on masterproef.pdf (75 pages, 2968040 bytes).
+ 25578 strings out of 493315
+ 442756 string characters out of 6137903
+ 713610 words of memory out of 5000000
+ 28032 multiletter control sequences out of 15000+600000
+ 102020 words of font info for 185 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 61i,12n,92p,2214b,871s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
+texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2013/t
+exmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2013/texmf-dist/
+fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2013/texmf-dist/fonts/enc/
+dvips/lm/lm-mathex.enc}{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base
+/8r.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/
+texlive/2013/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2
+013/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2013/texmf-
+dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2013/texmf-dist/fonts
+/type1/public/lm/lmmi12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/pub
+lic/lm/lmmi7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmmi
+8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr
+/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texl
+ive/2013/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2013/tex
+mf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2013/texmf-dist/fo
+nts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/
+public/lm/lmsy8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/l
+mtt10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.p
+fb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on masterproef.pdf (75 pages, 2849965 bytes).
 PDF statistics:
- 1154 PDF objects out of 1200 (max. 8388607)
- 255 named destinations out of 1000 (max. 500000)
+ 1162 PDF objects out of 1200 (max. 8388607)
+ 899 compressed objects within 9 object streams
+ 253 named destinations out of 1000 (max. 500000)
  27990 words of extra memory for PDF output out of 29859 (max. 10000000)
 
