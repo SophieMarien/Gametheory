@@ -265,25 +265,186 @@ Dit artikel focust op de niet-adaptieve strategie"en.  \\
 
 Het onderzoek van de verschillende strategie"en middels Flipit framework stelt een aantal interessante resultaten leiden:
 \begin{itemize}
-\item periodieke spellen domineren de andere vernieuwing strategie"en, wat betekent dat het altijd voordelig om periodiek tegen een tegenstander met een vernieuwing van de strategie te spelen;
-\item periodieke games zijn nadelig tegen spelers na een laatste zet adaptieve strategie;
-\item als de verdediger speelt met een periodieke tarief dat snel genoeg is zal hij de aanvaller te dwingen uit te vallen;
-\item  
+\item periodieke spellen domineren de andere Renewal strategie"en. Dit Dit betekent dat het altijd voordeliger is om een periodieke strategie te spelen tegen een tegenstander met een Renewal strategie;
+\item periodieke spellen zijn nadelig tegen spelers die de Last Move adaptieve strategie gebruiken;
+\item als de verdediger speelt met een periodieke snelheid die snel genoeg is dan zal hij de aanvaller dwingen te stoppen met het spel;
+\item elke hoeveelheid van feedback ontvangen over de tegenstander tijdens het spel, geeft een voordeel aan een speler.
 %item een ​​bedrag van feedback over de tegenstander ontving tijdens het spel, de voordelen aan een speler.
 \end{itemize}
 
-In dit \textit{abstract} environment wordt een al dan niet uitgebreide
-Nederlandse samenvatting van het werk gegeven.
-Wanneer de tekst voor een Nederlandstalige master in het Engels wordt
-geschreven, wordt hier normaal een uitgebreide samenvatting verwacht,
-bijvoorbeeld een tiental bladzijden. \\
-  
-Dit is het kort geschreven.\\ Eigenlijk paper in het nederlands schrijven \\
-Intro -- positionering -- vraagstelling -- oplossingen en contributies \\
-Flipit en cybersecurity\\
-Flipit met delay \\
-Berekeningen \\
-Niet zo lang geleden werden APT's ontdekt. (Introzin moet beter en anders). Bedrijven worden door APTs aangevallen. Belangrijk om APTs tegen te gaan. Geven een grote kost aan de bedrijven. Hun stealthy aspect is vervelend en moeilijk aan te pakken. Preventie is beter dan detectie. Eens ze binnen zijn kunnen we veel schade veroorzaken. Conventionele middelen zoals firewalls, malware detection helpen hier niet tegen. Nieuwe methode nodig. Gametheory FlipIt. FlipIt uitleggen. Deze formules gaan we dan omvormen tot ze wel propagatie delay kunnen modelleren. Hiervan berekenen we ook het Nash equilibrium. 
+
+\section {Flipit Met viruspropagatie}
+\label{ch: flipitvirus}
+Een Flipit spel bestaat uit een enkele bron. Om de veiligheid probleem vertegenwoordigen, het spel nu STD defini"eren als een enkele bron met meerdere computernetwerk
+geef niet. Een van de spelers, de verdediging, zal proberen om zijn netwerk te verdedigen. De verdedigende
+esta zal doen omkeren door alle knooppunten van het netwerk (dwz De gehele bron) in elke beweging die ik toneelstukken. De
+aanvaller de andere spelers zullen proberen om alle knooppunten in het netwerk infecteren. De aanvaller
+Zal dit doen door flipping het knooppunt in de grafiek Dat kan alle knooppunten in het infecteren
+kortst mogelijke tijd. Na het laten vallen van een virus op het eerste knooppunt, het duurt een tijdje voor het virus om het gehele netwerk te infecteren. Omdat de Flipit spel Original werkt met een enkele bron die altijd volledig wordt omgedraaid, wordt de aanname gemaakt van oordeel dat de aanvaller is om onmiddellijk de volledige controle te krijgen over de bron Wanneer het netwerk is ge"infecteerd, ook al is het maar een knooppunt Dat heeft besmet . \\
+
+In werkelijkheid echter, na het laten vallen van een virus op het eerste knooppunt, het duurt een tijdje voor het virus te infecteren
+Het gehele netwerk. Dus de veronderstelling dat de aanvaller volledige controle over de bron zodra een knooppunt is-besmet, is niet realistisch. De aanvaller heeft slechts 11:00 controleren alle van het netwerk of een voldoende aantal knooppunten zijn besmet.
+De tijd die nodig is om het virus infecteren elk knooppunt (of een voldoende aantal knooppunten) wordt
+aangeduid als een infectie-vertraging Variable \textit{d} (de zogenaamde "vertraging" voor kort in de rest van esta papier). Als we willen om te meten hoe lang het duurt voor het virus om
+infecteren alle knooppunten in het netwerk, moeten we de kortste weg van de berekening
+eerste besmette knooppunt naar de verste knooppunt. In plaats aanduiding van de tijd die nodig is voor het infecteren alle knooppunten, kan de variabele $ d $ ook worden gebruikt om de tijd die nodig is om \textit{a} voldoende aantal knooppunten infecteren duiden.
+
+Veronderstel dat een aanvaller aanvallen op het moment \ textit {t}, ik niet onmiddellijke controle over de bron te krijgen, maar ik alleen maar winst beheersen op het moment \ textit {t + d} Met $ d $ aanduiding van de tijd die nodig is om een te infecteren Voldoende nummer (of alle) knooppunten. Als de klep te verdedigen het netwerk voordat de periode $ d $ verstreken is (dus ergens tussen de $ t $ en $ t + d $), Dan is de aanvaller zal nooit volledige controle over de bron te krijgen. Dit impliceert dat de wiskundige formules voor de winst en voordeel moeten worden aangepast aan het feit dat de aanvaller verliest een deel van zijn voordeel esta Vanwege vertraging. In de rest van esta papier, zullen we de formalisering van de Flipit spel aan te passen met behulp van de variabele $ d $. \\
+
+Formalisering begint bij het model van de niet-adaptieve Wanneer continue basis Flipit spelers gebruiken periodieke strategie met willekeurige fase. Deze keuze wordt ingegeven door de veronderstelling dat in de meeste organisaties, de verdediging strategie is om het netwerk Periodiek verdedigen. Deze periodieke komt overeen met een defensiestrategie. Een periodieke aanvaller strategie wordt ook uitgegaan In staat om de resultaten te vergelijken met de periodieke strategie van het spel Flipit in \cite{Flipit}. %, As esta ook overeen met een real-life gemeenschappelijke strategie. % Nog verder Eventueel je motiveren
+Verder onderzoek kan het effect van ontspannende esta veronderstelling te onderzoeken. \\
+
+Op dezelfde manier als in cite{}Flipit, we deelden de formalisering in twee gevallen. Het eerste geval is waar het verdedigen speelt Minstens zo snel als de aanvaller, het tweede geval is wanneer de aanvaller speelt Minstens zo snel als de te verdedigen. Voor elk van deze gevallen eerst het voordeel formule van de fundamentele zaak zonder vertraging wordt gepresenteerd, en dan de vertraging wordt ge"introduceerd. \\
+
+\subsection{Formalization the benefit formula including the infection-delay}
+ A Periodic strategy is a non-adaptive renewal strategy where the time intervals between consecutive moves are a fixed period, denoted by $\delta$. Moreover it has a random phase, that is chosen uniformly and random in the interval $[0,\delta]$ for the first move. The average rate of play of a player is denoted by $\alpha_{i} = \dfrac{1}{\delta_{i}}$. \\
+~~\\
+
+\subsection*{\textbf{Case 1:} $\delta_{D} \leq \delta_{A} $ (The defender plays at least as fast as the attacker.) }
+
+Let $r = \dfrac{\delta_{D}}{ \delta_{A} }$. The intervals between two consecutive defender's moves have length $\delta_{D}$. Consider a given defender move interval. The probability over the attacker's phase selection that the attacker moves in this interval is r. Given that the attacker moves within the interval, he moves exactly once within the interval (since $\delta_{D} \leq \delta_{A} $) and his move is distributed uniformly at random. \\
+
+The expected period of attacker control within the interval would be r/2, without considering the delay by a virus. Therefore the benefit for the attacker, without considering the delay, can be expressed as follows:
+
+\begin{equation}\label{first}
+\beta_{A}(\alpha_{D},\alpha_{A}) =\dfrac {r} {2} - k_{A} \alpha_{A} = \dfrac {\delta_{D}} {2\delta_{A}} - k_{A} \alpha_{A}  
+\end{equation}\\
+
+Correspondingly, the benefit for the defender can be expressed as:
+\begin{equation}\label{first}
+\beta_{D}(\alpha_{D},\alpha_{A}) =1 -  \dfrac {r} {2} - k_{D} \alpha_{D} = 1 - \dfrac {\delta_{D}} {2\delta_{A}} - k_{D} \alpha_{D} 
+\end{equation}
+
+\begin{figure}[hbtp]
+\caption{The first FlipIt game is one without virus propagation. The second one is with virus propagation and \textit{d} = 1. The delay is denoted with an arrow.}
+\centering
+\includegraphics[scale=0.4]{../../doc/template/Images/FLipItCase1.pdf}
+\label{fig:delaycase1}
+\end{figure}
+
+
+However, because of the delay required for virus propagation, the maximal time of control is reduced to $\delta_{D}-d$ , see figure \ref{fig:delaycase1}. There is a probability of \textit{r} that the attacker will move in the interval of the defender. However, the gain will not be half of the interval. Indeed, the attacker has to play soon enough to gain control, meaning that the attacker has to play during the period of $\delta_{D}-d$ during the interval of the defender. The probability that the attacker plays soon enough is $\dfrac{\delta_{D}-d}{\delta_{D}}$ and this will give the attacker an average gain of $\dfrac{\delta_{D}-d}{2}$. If the attacker moves after the period of $\delta_{D}-d$, the gain of the attacker will be zero. The probability that this happens is  $\dfrac{d}{\delta_{D}}$. The average gain rate of the attacker can then be expressed as follows if we look at one interval of the defender:
+\begin{equation}\label{first}
+\gamma_{A}(\alpha_{D},\alpha_{A}) = \dfrac {1}{\delta_{D}} [ \dfrac{\delta_{D}}{\delta_{A}} \cdot \dfrac{\delta_{D}-d}{\delta_{D}} \cdot \dfrac{\delta_{D}-d}{2} + \dfrac{\delta_{D}}{\delta_{A}} \cdot \dfrac{d}{\delta_{D}} \cdot 0 ]
+\end{equation}
+
+To derive the benefit, the cost of moving is subtracted from the average gain. 
+\begin{equation}\label{first}
+\beta_{A}(\alpha_{D},\alpha_{A}) = \dfrac { (\delta_{D}-d) ^{2}} {2 \cdot \delta_{D}  \delta_{A}} - k_{A} \alpha_{A}
+\end{equation}
+\begin{equation}\label{first}
+\beta_{A}(\alpha_{D},\alpha_{A}) = \dfrac { \delta_{D}} {2 \cdot \delta_{A}} - k_{A} \alpha_{A} - ( \dfrac{d^{2}}{2 \cdot \delta_{A} \delta_{D}} - \dfrac{d}{\delta_{A}} )
+\end{equation}
+ 
+ 
+ The benefit of the defender is expressed as follows:
+ \begin{equation}\label{first}
+\beta_{D}(\alpha_{D},\alpha_{A}) = 1 - \dfrac { (\delta_{D}-d) ^{2}} {2 \cdot \delta_{D}  \delta_{A}} - k_{D} \alpha_{D}
+\end{equation}
+~~\\
+We can easily see that when $d$=0, we obtain the formula of the original FlipIt game.\\
+
+
+\subsection*{\textbf{Case 2:} $\delta_{A} \leq \delta_{D} $ (The attacker plays at least as fast as the defender.) }
+
+First let $r = \dfrac{\delta_{D}}{ \delta_{A} }$. The intervals between two consecutive attacker's moves have length $\delta_{A}$. Consider a given attackers move interval. The probability over the attacker's phase selection that the defender moves in this interval is $\dfrac{\delta_{A}}{ \delta_{D} } = (1/r)$. Given that the defender moves within the interval of the attacker, he moves exactly once within this interval (since $\delta_{A} \leq \delta_{D} $) and his move is distributed uniformly at random. \\
+
+A similar analysis as in case 1 for a FlipIt game without virus propagation yields the following benefits:
+
+\begin{equation}\label{first}
+\beta_{D}(\alpha_{D},\alpha_{A}) = \dfrac {1} {2r} - k_{D} \alpha_{D} = \dfrac {\delta_{A}} {2\delta_{D}} - k_{D} \alpha_{D} 
+\end{equation}
+\begin{equation}\label{first}
+\beta_{A}(\alpha_{D},\alpha_{A}) =1 - \dfrac {1} {2r} - k_{A} \alpha_{A} = 1- \dfrac {\delta_{A}} {2\delta_{D}} - k_{A} \alpha_{A}  
+\end{equation}\\
+
+
+For the case with a virus we consider two cases, Case a and Case b, depending on whether the delay is shorter or longer than the difference between the attacker's and the defender's period.  \\
+
+
+\subsubsection*{\textbf{Case a:} $d + \delta_{A} \leq \delta_{D}$}
+~~\\
+Consider a timespan $\delta_{A} + d$, representing the attacker's interval followed by the delay period in his next interval. The defender will never move twice during this timespan because $\delta_{A} + d \leq \delta_{D}$. The defender will move during the interval of the attacker with a probability of $\dfrac{\delta_{A}}{\delta_{D}} $. When this happens the defender will end with being in control at the end of the interval. In the next interval the attacker will have to regain control, meaning that during the delay, the defender stays in control, see figure \ref{fig:case2} cases (1) and (2). This means that the defender will keep the control over the resource in the next interval over a period of the delay, namely \textit{d}. Because $d + \delta_{A} \leq \delta_{D}$ the next move of the defender in this second interval will never occur during the delay, meaning that the entire delay can be considered as an extra benefit resulting of a play in the previous interval. 
+So, every time the defender plays, he will get an average gain of $\dfrac{\delta_{A}}{2}$ in the interval where he plays and in the next interval will always receive a extra gain of $d$, yielding a total average gain per interval of
+$\dfrac{(d+\dfrac{\delta_{A}}{2})}{\delta_{A}}$
+
+The total gain  rate of the defender is then the probability that the defender will move during an interval of the attacker multiplied by the total average gain per interval: 
+
+\begin{equation}\label{first}
+\gamma_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta_{A}}{\delta_{D}} \cdot \dfrac{(d+\dfrac{\delta_{A}}{2})}{\delta_{A}} 
+\end{equation}
+\begin{equation}\label{first}
+\gamma_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} 
+\end{equation}\\
+This yields in the following benefit formula:
+\begin{equation}\label{first}
+\beta_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - k_{D} \alpha_{D} 
+\end{equation}\\
+
+The benefit for the attacker will be as follows:
+\begin{equation}\label{first}
+\beta_{A}(\alpha_{D},\alpha_{A}) = 1 -\dfrac{\delta_{A}}{2\delta_{D}} - \dfrac{d}{\delta_{D}} - k_{A} \alpha_{A} 
+\end{equation}\\
+
+\begin{figure}[hbtp]
+\caption{Case 2 where d + deltaA < deltaD}
+\centering
+\includegraphics[scale=0.5]{../../doc/template/Images/FlipItCase2.png}
+\label{fig:case2}
+\end{figure}
+
+
+It is crucial that $ \delta_{D}$ is at least as large as $d + \delta_{A}$. If not, this would mean that the defender can move during the delay in the interval following the interval where the defender already moved. This would mean that there can be an overlap between the average gain of $\dfrac{\delta_{A}}{2}$ and the delay. The above benefit formula would then include to much gain for the defender: the potential overlap during the delay would be counted twice. \\
+
+
+~~ \\
+\subsubsection*{\textbf{Case b:} $d + \delta_{A} \geq \delta_{D}$}
+~~~\\
+
+To obtain the formula in case of a too long delay, we therefore need to subtract this overlapping gain from the above formula. 
+Since $\delta_{D} \geq \delta_{A}$, if the defender enters the interval immediately after the attacker has played, then the defender cannot have played in the previous interval. In that case, there is no overlap. So the problem of the overlap only appears if the defenders enters late enough and thus only the last part of the delay is subject to overlap. The larger the difference between the interval of the defender and the attacker, the smaller the risk of overlap. Concretely, only the last part of length $d - (\delta_{D} - \delta_{A})$ is subject to overlap. Hence, the probability of overlap is $\dfrac{ d - (\delta_{D} - \delta_{A})}{\delta_{D}}$ and the gain will be half of this interval:  $\dfrac{ d - (\delta_{D} - \delta_{A})}{2}$.  The gain rate to be subtracted is therefore:\\
+
+\begin{equation}\label{first}
+\dfrac{1} {\delta_{A}} \cdot \dfrac{d - (\delta_{D} - \delta_{A})}{\delta_{D}} \cdot \dfrac{d - (\delta_{D} - \delta_{A})}{\delta_{D}}
+\end{equation}
+
+The total gain  rate of the defender is obtained by subtracting this term from the gain rate of case a:
+ \begin{equation}\label{first}
+\gamma_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta_{A}}{\delta_{D}} \cdot \dfrac{(d+\dfrac{\delta_{A}}{2})}{\delta_{A}} - \dfrac{(d - (\delta_{D} - \delta_{A}))^{2}}{2 \delta_{D} \delta_{A}}
+\end{equation}
+\begin{equation}\label{first}
+\gamma_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - \dfrac{(d - (\delta_{D} - \delta_{A}))^{2}}{2 \delta_{D} \delta_{A}}
+\end{equation}\\
+This yields in the following benefit formula:
+\begin{equation}\label{first}
+\beta_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - k_{D} \alpha_{D} - \dfrac{(d - (\delta_{D} - \delta_{A}))^{2}}{2 \delta_{D} \delta_{A}}
+\end{equation}\\
+ 
+The benefit for the attacker will be as follows:
+\begin{equation}\label{first}
+\beta_{A}(\alpha_{D},\alpha_{A}) = 1 -\dfrac{\delta_{A}}{2\delta_{D}} - \dfrac{d}{\delta_{D}} - k_{A} \alpha_{A} + \dfrac{(d - (\delta_{D} - \delta_{A}))^{2}}{2 \delta_{D} \delta_{A}}
+\end{equation}\\
+
+
+\section{Nash Equilibrium}
+Verder door schrijven
+
+\section{Conclusions and Further Research}
+\label{ch:conclusion}
+In this paper we presented an adaptation of the FlipIt game to the situation of virus propagation, such as to take the delay for network infection into account. We discerned two cases. In the case the defender plays faster than the attacker, the attacker simply looses the delay. In the case the attacker plays faster, each time the defender plays in an interval, he will gain extra time of the delay. The delay is therefore always detrimental to the benefit of the attacker. 
+This demonstrates that the FlipIt game can be adapted to a game with virus propagation. Further research needs to be performed to calculate the impact of the delay on Nash equilibria and the determination of optimal defender and attacker strategies.
+%In dit \textit{abstract} environment wordt een al dan niet uitgebreide
+%Nederlandse samenvatting van het werk gegeven.
+%Wanneer de tekst voor een Nederlandstalige master in het Engels wordt
+%geschreven, wordt hier normaal een uitgebreide samenvatting verwacht,
+%bijvoorbeeld een tiental bladzijden. \\
+%  
+%Dit is het kort geschreven.\\ Eigenlijk paper in het nederlands schrijven \\
+%Intro -- positionering -- vraagstelling -- oplossingen en contributies \\
+%Flipit en cybersecurity\\
+%Flipit met delay \\
+%Berekeningen \\
+%Niet zo lang geleden werden APT's ontdekt. (Introzin moet beter en anders). Bedrijven worden door APTs aangevallen. Belangrijk om APTs tegen te gaan. Geven een grote kost aan de bedrijven. Hun stealthy aspect is vervelend en moeilijk aan te pakken. Preventie is beter dan detectie. Eens ze binnen zijn kunnen we veel schade veroorzaken. Conventionele middelen zoals firewalls, malware detection helpen hier niet tegen. Nieuwe methode nodig. Gametheory FlipIt. FlipIt uitleggen. Deze formules gaan we dan omvormen tot ze wel propagatie delay kunnen modelleren. Hiervan berekenen we ook het Nash equilibrium. 
 \end{abstract*}
 
 % Een lijst van figuren en tabellen is optioneel

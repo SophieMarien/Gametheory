@@ -24,7 +24,7 @@ Infection by worms start by dropping the worm on the network. Different dropping
 %% random, localized, topological or hit-list scanning.
 %\begin{itemize}
 
-\item \textbf{Selective Random scanning:} Some worms propagate by using the method of selective random targeting IP addresses. The worm selects randomly a part of the selected address space instead of scanning the whole address space. The reserved address blocks and the unassigned addresses are excluded from the address space. The rate of success for randomly chosen IP addresses is very low, but it is easy to implement. Example of such worms are \textit{ Code Red} and \textit{ Slammer}.
+\item \textbf{Selective Random scanning:} Some worms propagate by using the method of selective random targeting IP addresses. The worm selects randomly a part of the selected address space instead of scanning the whole address space. The reserved address blocks and the unassigned addresses are excluded from the address space. The rate of success for randomly chosen IP addresses is very low, but it is easy to implement. Example of such worms are \textit{Code Red} and \textit{Slammer}.
 
 \item \textbf{Localized scanning:} A worm that uses localized scanning will scan for hosts in the local address space. This method is used by the \textit{Code Red II} and \textit{Nimda worm}.
 %\item \textbf{Topological scanning:} Address information stored in the victim machines are used to locate new targets. This method used by the `Morris' worm.
@@ -35,15 +35,16 @@ Infection by worms start by dropping the worm on the network. Different dropping
 With sequential scanning, the worm will scan the IP addresses sequentially. This means that once a vulnerable host is compromised, it will look for IP addresses that are near to this host. For example, the address of the host is A, the next addresses that the worm will scan are A+1, or A-1. This method is used by the \textit{Blaster worm}.
 
 \item \textbf{DNS random scanning:} Another strategy is a kind of strategy in which the DNS infrastructure is used to locate a new target address. The IP address table from a DNS server is acquired from DNS records. 
-%The speed of a DNS scanning worm in the IPv6 internet is comparable to the speed of an IPv4 random scanning worm. There are some difficulties with this scanning technique. First it is difficult to obtain the whole address space from the DNS records. Secondly, the worm has to carry the database, which can slow down the propagation if the database is to big. Last, t
+The speed of a DNS scanning worm in the IPv6 internet is comparable to the speed of an IPv4 random scanning worm. 
+%There are some difficulties with this scanning technique. First it is difficult to obtain the whole address space from the DNS records. Secondly, the worm has to carry the database, which can slow down the propagation if the database is to big. Last, t
 The IP addresses stored in the address table are only hosts with public domain names. This propagation method is used by \todo{aanvullen}.
 
 \item \textbf{Routable scanning:} The worms using routable scanning acquire target IP addresses based on the routing information in a network. Through  the BGP routing tables they can scan the routable address space. This method is three times faster than a traditional worm that uses random scanning. Examples are \textit{Spyb0t} or \textit{network Bluepill}. 
 %--a ''routing worm'' [20]. Zou et al. designed two types of routing worms [20]. One type, based on Class-A (x.0.0.0/8) address allocations, is thus called 'ClassA routing worms.'' Such worms can reduce the scanning space to 45.3\% of the entire IPv4 address space. The other type, based on BGP routing tables, is thus called''BGP routing worms'' Such worms can reduce the scanning space to only about 28.6\% of the entire IPv4 address space.--
 %\end{itemize}   
 
-\item \textbf{Topology-based Wroms} Email and other client application worms:An email worms uses the email systems to find email addresses to propagate. Other client applications can include: Internet Relay Chat (IRC), Instant Messenger (IM), and a variety of peer-to-peer
-file sharing systems, which have been used by worms to propagate in a similar way as email worms. For example, the \textit{Kak worm} is a Javascript computer worm that spread itself by exploiting a bug in Outlook Express. % Another example is `GhostNet'
+\item \textbf{Topology-based Worms} Email and other client application worms:An email worms uses the email systems to find email addresses to propagate. Other client applications can include: Internet Relay Chat (IRC), Instant Messenger (IM), and a variety of peer-to-peer
+file sharing systems, which have been used by worms to propagate in a similar way as email worms. For example, the \textit{Kak worm} is a JavaScript computer worm that spread itself by exploiting a bug in Outlook Express. % Another example is `GhostNet'
 
 %Pikachu worm: The virus was mainly spread through Microsoft Outlook email attachments. The email containing the attached virus propagated through infected users by sending itself to all contacts in the user's Outlook address book. [5]
 %\item \textbf{self stopping worm:} reduces speed to avoid detection. Atak worm or self stopping worm \cite{VirusChangePropSpeed}.
@@ -244,7 +245,7 @@ Adjacency matrices have many interesting applications, amongst which calculating
 \centering
 \begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
                     semithick]
-  \tikzstyle{every state}=[fill=blue,draw=none,text=white]
+  \tikzstyle{every state}=[fill=black!60!green,draw=none,text=white]
 
   \node[initial,state] (A)                    {$N_1$};
   \node[state]         (B) [above right of=A] {$N_2$};
