@@ -30,7 +30,7 @@
 \contentsline {subsubsection}{Best response and Nash Equilibrium}{9}{section*.33}
 \contentsline {section}{\numberline {2.3}The FlipIt game}{10}{section.2.3}
 \contentsline {subsubsection}{Strategies}{12}{section*.37}
-\contentsline {subsubsection}{Results of the FlipIt game}{13}{section*.39}
+\contentsline {subsubsection}{Results of the FlipIt game}{13}{section*.40}
 \contentsline {section}{\numberline {2.4}Related Work on Extensions to FlipIt}{13}{section.2.4}
 \contentsline {chapter}{\chapternumberline {3}FlipIt with propagation delay}{17}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introduction}{17}{section.3.1}
@@ -45,24 +45,25 @@
 \contentsline {chapter}{\chapternumberline {4}Nash Equilibria}{29}{chapter.4}
 \contentsline {section}{\numberline {4.1}Nash Equilibria}{29}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Determining the piecewise functions $opt_{D}(\delta _{A})$}{29}{subsection.4.1.1}
-\contentsline {subsubsection}{Best responses}{32}{section*.60}
-\contentsline {subsubsection}{$k_{D} > d$}{33}{section*.62}
+\contentsline {subsubsection}{Best responses}{32}{section*.61}
+\contentsline {subsubsection}{$k_{D} > d$}{33}{section*.63}
 \contentsline {subsection}{\numberline {4.1.2}Determining the piecewise functions $opt_{A}(\delta _{D})$}{33}{subsection.4.1.2}
-\contentsline {subsubsection}{Best responses}{35}{section*.68}
+\contentsline {subsubsection}{Best responses}{35}{section*.69}
 \contentsline {chapter}{\chapternumberline {5}Models for the Delay}{37}{chapter.5}
 \contentsline {section}{\numberline {5.1}Methods of propagation}{37}{section.5.1}
 \contentsline {section}{\numberline {5.2}Models for worm propagation}{39}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Continious-time models}{39}{subsection.5.2.1}
-\contentsline {subsubsection}{Simple Epidemic model}{39}{section*.73}
-\contentsline {subsubsection}{RCS model}{41}{section*.75}
-\contentsline {subsection}{\numberline {5.2.2}Discrete-time models}{42}{subsection.5.2.2}
-\contentsline {subsubsection}{Bluetooth worm model}{42}{section*.77}
-\contentsline {subsubsection}{OSN worms model}{43}{section*.79}
-\contentsline {section}{\numberline {5.3}methode met matrixen}{43}{section.5.3}
+\contentsline {subsection}{\numberline {5.2.1}Continuous-time models}{39}{subsection.5.2.1}
+\contentsline {subsubsection}{Simple Epidemic model}{39}{section*.74}
+\contentsline {subsubsection}{RCS model}{42}{section*.76}
+\contentsline {subsection}{\numberline {5.2.2}Discrete-time models}{43}{subsection.5.2.2}
+\contentsline {subsubsection}{Bluetooth worm model}{43}{section*.79}
+\contentsline {subsubsection}{OSN worm model}{43}{section*.81}
+\contentsline {subsubsection}{AAWP model}{43}{section*.82}
+\contentsline {section}{\numberline {5.3}Matrix worm model}{44}{section.5.3}
 \contentsline {chapter}{\chapternumberline {6}Conclusion}{47}{chapter.6}
 \contentsline {subsection}{\numberline {6.0.1}Further work}{47}{subsection.6.0.1}
 \contentsline {section}{\numberline {6.1}trala}{47}{section.6.1}
-\contentsline {chapter}{Bibliografie}{49}{section*.82}
+\contentsline {chapter}{Bibliografie}{49}{section*.85}
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}

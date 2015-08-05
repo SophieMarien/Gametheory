@@ -76,20 +76,20 @@ This is a piece of malicious software that is designed to penetrate unprotected 
 % 
  
 \begin{description}
-\item \textit{Virus}: This is a malicious piece of code that replicates itself and tries to spread in order  to infect other systems or files. A typical virus will attach itself to a program, or an executable content on a computer. The ``I love you'' virus is an example of a virus where the virus attached itself as an executable to a mail. It propagated by using the mailing systems. When a victim opened an email with the ``I love you'' virus in the annex, the virus spread itself by sending a mail to everyone in the victim's contact list. 
+\item \textit{Virus}: This is a malicious piece of code that replicates itself and tries to spread in order  to infect other systems or files. A typical virus will attach itself to a program, or an executable content on a computer. The \textit{I love you} virus is an example of a virus where the virus attached itself as an executable to a mail. It propagated by using the mailing systems. When a victim opened an email with the \textit{I love you} virus in the annex, the virus spread itself by sending a mail to everyone in the victim's contact list. 
 
 Using this method, a virus can multiply rapidly, possibly even causing a business network to shut down by the heavy traffic. A virus needs human interaction to spread. In the example above: if no one were to open the mail, the virus would not be able to spread itself and infect other systems.
 
 \item \textit{Worm:} A worm is a virus that can spread without human interaction. It is a computer program that replicates itself in order to spread to other hosts on a network. Copies of the worm can be forwarded via a computer network without an intermediary. The worm will use vulnerabilities of the system to infect other computers.
-The Stuxnetworm is a very prominent example of a worm. Initially this worm was spread via infected USB sticks and from there on it could spread itself to other hosts on the network through the Internet, without any further human intervention. The purpose of the Stuxnetworm was to harm the centrifuges in nuclear reactors; many reactors have been infected.  
+The \textit{Stuxnetworm} is a very prominent example of a worm. Initially this worm was spread via infected USB sticks and from there on it could spread itself to other hosts on the network through the Internet, without any further human intervention. The purpose of the \textit{Stuxnetworm} was to harm the centrifuges in nuclear reactors; many reactors have been infected.  
 
-\item \textit{Trojan:} This is a malicious program that disguises itself as something normal and useful, so that users won't be suspicious of installing it, but it has a malicious function hidden inside that can circumvent security measures and cause harm.  A notable trojan horse is Koobface, that targeted users of Facebook, Skype, Yahoo, Gmail and AOL mail. To spread itself the trojan sent a mail or friend request with a message that directed the recipients to a third party website. This site would then convince the recipient into downloading an update of Adobe Flash Player. Once downloaded and executed, Koobface could infect the host.
+\item \textit{Trojan:} This is a malicious program that disguises itself as something normal and useful, so that users won't be suspicious of installing it, but it has a malicious function hidden inside that can circumvent security measures and cause harm.  A notable trojan horse is \textit{Koobface}, that targeted users of Facebook, Skype, Yahoo, Gmail and AOL mail. To spread itself the trojan sent a mail or friend request with a message that directed the recipients to a third party website. This site would then convince the recipient into downloading an update of Adobe Flash Player. Once downloaded and executed, \textit{Koobface }could infect the host.
 
 \end{description}
 ~~\\
 As proposed by Kasperksy \cite{APTKaspersky} ,threats caused by the malware described above can be divided into three main categories: known threats (70\%), unknown threats (29\%) and advanced threats (1\%). 
 
-The known threats are the easiest to defend oneself against. Standard malware protection tools like firewalls and virus scanners can keep these kind of malware out of the system. Installing protection against unkown threats is also relatively easy, but this requires tools that go beyond the standard methods, e.g. dynamic whitelisting. The remaining 1\% are the advanced threats, also known as APT. They are the most difficult to deal with.
+The known threats are the easiest to defend oneself against. Standard malware protection tools like firewalls and virus scanners can keep these kind of malware out of the system. Installing protection against unknown threats is also relatively easy, but this requires tools that go beyond the standard methods, e.g. dynamic whitelisting. The remaining 1\% are the advanced threats, also known as APT. They are the most difficult to deal with.
 
 \subsubsection{Advanced threats to computer systems}
 %\item Backdoors: Also know as trapdoor, is a whole in the system or program that allows access 
@@ -116,7 +116,7 @@ An APT can be a mix of different types of malware and may use various propagatio
  
 According to a security survey of Kaspersky \cite{SurveyKaspersky}  the damage of one successful targeted attack against a large company can exceed 2.5 million dollars. As such, companies need a defence mechanism to defend themselves against APT's. As previously stated, simple detection and identification tools are insufficient to protect oneself against APT's, and a removal tool will only work if the threat has been identified. To mitigate these kind of attacks another security countermeasure is needed. \\
 %This is where the researchers of RSA come into the picture. \todo{deze paper gaat zien of de game theoretische model kan leiden tot resultaten die kunnen helpen in het verdedigen tegen APTs}
-This paper proposes an appropriate game-theoretical modelling of defending a network against APTs and will analyse it in order to draw the necessary strategic conclusions to mitigate these kind of attacks.
+This paper proposes an appropriate game-theoretical modelling of defending a network against APT's and will analyse it in order to draw the necessary strategic conclusions to mitigate these kind of attacks.
 
 
 \section{A Brief Introduction in Game Theory}
@@ -226,7 +226,11 @@ And thus for all $t > 0$ :
 \begin{equation}\label{first}
 \gamma_{D}(t) + \gamma_{A}(t) = 1
 \end{equation}
-~Let $ \alpha_{i}$ defines the average move rate by player \textit{i} up to time \textit{t} and let $\beta_{i}(t)$ denote player's \textit{i} average benefit rate upto time \textit{t}:
+$\alpha_{i}$ defines the average move rate by player \textit{i} up to time \textit{t} with $n_{i}(t)$ the amount of moves made by player \textit{i} up to time \textit{t}:
+\begin{equation}
+\alpha_{i}(t) = \dfrac{n_{i}(t)}{t}
+\end{equation}
+Let $\beta_{i}(t)$ denote player's \textit{i} average benefit rate up to and including time \textit{t}:
 \begin{equation}\label{first}
 \beta_{i}(t) = \gamma_{i}(t) - k_{i}\alpha_{i}.
 \end{equation}
@@ -284,7 +288,7 @@ Another addition of Laszka et al. to the game of FlipIt \cite{MitigationCovert}
 is extending the game to also consider non-targeted attacks by non-strategic players. In this game the defender tries to maintain control over the resource that is subjected to both targeted and non-targeted attacks. Non-targeted attacks can include phishing, while targeted attacks may include threats delivered through zero day attack vulnerabilities. \\
 One of the last important additions from Laszka et al. \cite{MitigationNonTargeted} is to consider a game with targeted and non-targeted attacks where the moves made by the attacker do not succeed immediately. This approach is similar to what will be done in this paper, but nevertheless has some major differences. Firstly, in Laszka's paper, the moves by the attacker are still covert but the moves made by the defender are known to the attacker. This means that the attacker knows when the defender plays and can change its strategy depending on the moves of the defender. Our motivation for a defender with stealthy moves is that it can not be assumed that every attacker can receive feedback from an APT. Some ATP's are designed only to cause harm on the systems that are infected e.g. the Stuxnetworm that was developed to destroy nuclear reactors. The Stuxnetworm was resident on a isolated network, meaning that there was no way to connect to the internet. Another example is the use of honeypots. Honeypots emulate services or create multiple instances of real operating systems and can pretend to have sensitive information.  Honeypots do not detect all malicious attacks so the attacker can stay unnoticed and can still provide information as feedback. By providing false information through honeypots, the defender can also remain stealthy. The second difference is that even though both the targeted and non-targeted attacks do not succeed immediately, the delay is determined differently. For the targeted attack the time till it succeeds is given by an exponential distributed random variable with a known rate. The non-targeted attacks are modelled as a single attacker and the time until it succeeds is given by a Poisson process. In this paper the delay is given by one parameter, which can be the result of any virus propagation model. The third and last difference is that the paper of Laska has multiple attackers who try to find the best strategy of the defender against both targeted and non-targeted attacks. The conclusion of this paper is that the optimal strategy for the defender is moving periodically. \\ 
 
-FlipIt also has been applied to several cases in computer security. Reseachers explored different applications of FlipIt for real-world problems, like password reset policies, VM refresh, cloud auditing and key rotation \cite{ApplyingFlipit}. \\
+FlipIt also has been applied to several cases in computer security. Researchers explored different applications of FlipIt for real-world problems, like password reset policies, VM refresh, cloud auditing and key rotation \cite{ApplyingFlipit}. \\
 Other authors used the FlipIt game to apply it to a specific scenario. To be able to use the FlipIt game, modifications were required for the FlipIt model.
 One of the scenarios by Pham \cite{compromised} was to find out whether a resource was compromised or not by the attacker. This could be verified by the defender, who has an extra move ``test'' beside the flip move. The basic idea is to test with an extra action if the resource has been compromised or not. This move also involves an extra cost.\\
 A three-player game has also been investigated where the FlipIt framework of two players is extended by another player. This player represents an insider that trades value information with the attacker \cite{fengstealthy}.\\
