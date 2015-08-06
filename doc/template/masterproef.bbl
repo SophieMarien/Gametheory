@@ -25,6 +25,13 @@ Cornell.
 X.~Feng, Z.~Zheng, P.~Hu, D.~Cansever, and P.~Mohapatra.
 \newblock Stealthy attacks meets insider threats: A three-player game model.
 
+\bibitem{kamra2005effect}
+A.~Kamra, H.~Feng, V.~Misra, and A.~D. Keromytis.
+\newblock The effect of dns delays on worm propagation in an ipv6 internet.
+\newblock In {\em INFOCOM 2005. 24th Annual Joint Conference of the IEEE
+  Computer and Communications Societies. Proceedings IEEE}, volume~4, pages
+  2405--2414. IEEE, 2005.
+
 \bibitem{SurveyKaspersky}
 Kaspersky.
 \newblock A business approach to managing data security threats.
@@ -69,6 +76,11 @@ Y.~S. M.~Jackson, K.~Brown.
 Microsoft.
 \newblock security bulletin release.
 
+\bibitem{moore2003inside}
+D.~Moore, V.~Paxson, S.~Savage, C.~Shannon, S.~Staniford, and N.~Weaver.
+\newblock Inside the slammer worm.
+\newblock {\em IEEE Security \& Privacy}, (4):33--39, 2003.
+
 \bibitem{nochenson2013behavioral}
 A.~Nochenson, J.~Grossklags, et~al.
 \newblock A behavioral investigation of the flipit game.
@@ -93,6 +105,12 @@ D.~Reitter, J.~Grossklags, and A.~Nochenson.
 \newblock In {\em Proceedings of the 13th International Conference on Cognitive
   Modeling (ICCM)}, pages 397--403, 2013.
 
+\bibitem{Kakworm}
+D.~Salomon.
+\newblock Examples of malware.
+\newblock In {\em Elements of Computer Security}, Undergraduate Topics in
+  Computer Science, pages 137--149. Springer London, 2010.
+
 \bibitem{serazzi2004computer}
 G.~Serazzi and S.~Zanero.
 \newblock Computer virus propagation models.
@@ -114,6 +132,11 @@ M.~van Dijk, A.~Juels, A.~Oprea, and R.~Rivest.
 \newblock Flipit: The game of ''stealthy takeover''.
 \newblock {\em Journal of Cryptology}, 26(4):655--713, 2013.
 
+\bibitem{von1944theory}
+J.~Von~Neumann and O.~Morgenstern.
+\newblock {\em Theory of games and economic behavior}.
+\newblock Oxford UP, 1944.
+
 \bibitem{wang2014modeling}
 Y.~Wang, S.~Wen, Y.~Xiang, and W.~Zhou.
 \newblock Modeling the propagation of worms in networks: A survey.
@@ -130,10 +153,14 @@ Y.~Xiang, X.~Fan, and W.~Zhu.
 \newblock {\em International Journal of Computer Systems Science \&
   Engineering}, 24(3):157--172, 2009.
 
-\bibitem{CodeRed}
-C.~C. Zou, W.~Gong, and D.~Towsley.
-\newblock Code red worm propagation modeling and analysis.
-\newblock In {\em Proceedings of the 9th ACM conference on Computer and
-  communications security}, pages 138--147. ACM, 2002.
+\bibitem{yan2009modeling}
+G.~Yan and S.~Eidenbenz.
+\newblock Modeling propagation dynamics of bluetooth worms (extended version).
+\newblock {\em Mobile Computing, IEEE Transactions on}, 8(3):353--368, 2009.
+
+\bibitem{zou2006performance}
+C.~C. Zou, D.~Towsley, and W.~Gong.
+\newblock On the performance of internet worm scanning strategies.
+\newblock {\em Performance Evaluation}, 63(7):700--723, 2006.
 
 \end{thebibliography}

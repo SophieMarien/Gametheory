@@ -1,4 +1,9 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: masterproef.aux
+Case mismatch error between cite keys Flipit and FlipIt
+---line 83 of file masterproef.aux
+ : \citation{Flipit
+ :                 }
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: chap-10.aux
 A level-1 auxiliary file: chap-5.aux
 A level-1 auxiliary file: chap-9.aux
@@ -19,4 +24,5 @@ Warning--empty journal in fengstealthy
 Warning--empty year in fengstealthy
 Warning--empty journal in MitigationNonTargeted
 Warning--empty booktitle in Coursera
-(There was 1 error message)
+Warning--there's a number but no volume in moore2003inside
+(There were 2 error messages)

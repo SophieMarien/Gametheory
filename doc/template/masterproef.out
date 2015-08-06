@@ -1,16 +1,16 @@
-\BOOKMARK [0][-]{chapter*.1}{Voorwoord}{}% 1
-\BOOKMARK [0][-]{chapter*.3}{Samenvatting}{}% 2
+\BOOKMARK [0][-]{chapter*.1}{Preface}{}% 1
+\BOOKMARK [0][-]{chapter*.3}{Abstract}{}% 2
 \BOOKMARK [0][-]{chapter*.5}{Samenvatting}{}% 3
 \BOOKMARK [1][-]{section*.9}{Flipit Met viruspropagatie}{chapter*.5}% 4
 \BOOKMARK [1][-]{section*.17}{Nash Equilibrium}{chapter*.5}% 5
 \BOOKMARK [1][-]{section*.18}{Conclusions and Further Research}{chapter*.5}% 6
-\BOOKMARK [0][-]{chapter*.19}{Lijst van figuren en tabellen}{}% 7
+\BOOKMARK [0][-]{chapter*.19}{List of Figures and Tables}{}% 7
 \BOOKMARK [0][-]{chapter*.22}{List of Abbreviations and Symbols}{}% 8
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 9
 \BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}% 10
 \BOOKMARK [0][-]{chapter.2}{General context}{}% 11
 \BOOKMARK [1][-]{section.2.1}{What is security?}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.2}{A brief introduction in Game Theory}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.2}{A Brief Introduction in Game Theory}{chapter.2}% 13
 \BOOKMARK [1][-]{section.2.3}{The FlipIt game}{chapter.2}% 14
 \BOOKMARK [1][-]{section.2.4}{Related Work on Extensions to FlipIt}{chapter.2}% 15
 \BOOKMARK [0][-]{chapter.3}{FlipIt with propagation delay}{}% 16
@@ -22,7 +22,7 @@
 \BOOKMARK [0][-]{chapter.5}{Models for the Delay}{}% 22
 \BOOKMARK [1][-]{section.5.1}{Methods of propagation}{chapter.5}% 23
 \BOOKMARK [1][-]{section.5.2}{Models for worm propagation}{chapter.5}% 24
-\BOOKMARK [1][-]{section.5.3}{methode met matrixen}{chapter.5}% 25
+\BOOKMARK [1][-]{section.5.3}{Matrix worm model}{chapter.5}% 25
 \BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 26
 \BOOKMARK [1][-]{section.6.1}{trala}{chapter.6}% 27
-\BOOKMARK [0][-]{section*.81}{Bibliografie}{}% 28
+\BOOKMARK [0][-]{section*.78}{Bibliography}{}% 28

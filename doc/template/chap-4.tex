@@ -24,28 +24,28 @@ Infection by worms start by dropping the worm on the network. Different dropping
 %% random, localized, topological or hit-list scanning.
 %\begin{itemize}
 
-\item \textbf{Selective Random scanning:} Some worms propagate by using the method of selective random targeting IP addresses. The worm selects randomly a part of the selected address space instead of scanning the whole address space. The reserved address blocks and the unassigned addresses are excluded from the address space. The rate of success for randomly chosen IP addresses is very low, but it is easy to implement. Example of such worms are \textit{Code Red} and \textit{Slammer}.
+\item \textbf{Selective Random scanning:} Some worms propagate by using the method of selective random targeting IP addresses. The worm selects randomly a part of the selected address space instead of scanning the whole address space. The reserved address blocks and the unassigned addresses are excluded from the address space. The rate of success for randomly chosen IP addresses is very low, but it is easy to implement. Example of such worms are \textit{Code Red} \citep{OwnInternetSI} and \textit{Slammer} \citep{moore2003inside}.
 
-\item \textbf{Localized scanning:} A worm that uses localized scanning will scan for hosts in the local address space. This method is used by the \textit{Code Red II} and \textit{Nimda worm}.
+\item \textbf{Localized scanning:} A worm that uses localized scanning will scan for hosts in the local address space. This method is used by the \textit{Code Red II} \citep{OwnInternetSI} and \textit{Nimda worm} \citep{OwnInternetSI}.
 %\item \textbf{Topological scanning:} Address information stored in the victim machines are used to locate new targets. This method used by the `Morris' worm.
 
 %\item \textbf{Hit-list scanning:} With the method of hit-list scanning, a short-list of vulnerable systems is made beforehand.  This is done to speed up the spread of worms at the initial stage. --This list consists of potentially vulnerable machines that are gathered beforehand and targeted first when the worm is released. An extreme case for the hit-list-scanning worms is a flash worm, which gathers all vulnerable machines into the list.--
 
 \item \textbf{Sequential scanning:}
-With sequential scanning, the worm will scan the IP addresses sequentially. This means that once a vulnerable host is compromised, it will look for IP addresses that are near to this host. For example, the address of the host is A, the next addresses that the worm will scan are A+1, or A-1. This method is used by the \textit{Blaster worm}.
+With sequential scanning, the worm will scan the IP addresses sequentially. This means that once a vulnerable host is compromised, it will look for IP addresses that are near to this host. For example, the address of the host is A, the next addresses that the worm will scan are A+1, or A-1. This method is used by the \textit{Blaster worm} \citep{zou2006performance}.
 
 \item \textbf{DNS random scanning:} Another strategy is a kind of strategy in which the DNS infrastructure is used to locate a new target address. The IP address table from a DNS server is acquired from DNS records. 
 The speed of a DNS scanning worm in the IPv6 internet is comparable to the speed of an IPv4 random scanning worm. 
 %There are some difficulties with this scanning technique. 
 %First it is difficult to obtain the whole address space from the DNS records. Secondly, the worm has to carry the database, which can slow down the propagation if the database is to big. Last, t
-The IP addresses stored in the address table are only hosts with public domain names. This propagation method is used by \textit{MyDoom}.
+The IP addresses stored in the address table are only hosts with public domain names. This propagation method is used by \textit{MyDoom} \citep{kamra2005effect}.
 
 \item \textbf{Routable scanning:} The worms using routable scanning acquire target IP addresses based on the routing information in a network. Through  the BGP routing tables they can scan the routable address space. This method is three times faster than a traditional worm that uses random scanning. Examples are \textit{Spyb0t} or \textit{network Bluepill}. 
 %--a ''routing worm'' [20]. Zou et al. designed two types of routing worms [20]. One type, based on Class-A (x.0.0.0/8) address allocations, is thus called 'ClassA routing worms.'' Such worms can reduce the scanning space to 45.3\% of the entire IPv4 address space. The other type, based on BGP routing tables, is thus called''BGP routing worms'' Such worms can reduce the scanning space to only about 28.6\% of the entire IPv4 address space.--
 %\end{itemize}   
 
 \item \textbf{Topology-based Worms} Email and other client application worms:An email worms uses the email systems to find email addresses to propagate. Other client applications can include: Internet Relay Chat (IRC), Instant Messenger (IM), and a variety of peer-to-peer
-file sharing systems, which have been used by worms to propagate in a similar way as email worms. For example, the \textit{Kak worm} is a JavaScript computer worm that spread itself by exploiting a bug in Outlook Express. % Another example is `GhostNet'
+file sharing systems, which have been used by worms to propagate in a similar way as email worms. For example, the \textit{Kak worm} \citep{Kakworm} is a JavaScript computer worm that spread itself by exploiting a bug in Outlook Express. % Another example is `GhostNet'
 
 %Pikachu worm: The virus was mainly spread through Microsoft Outlook email attachments. The email containing the attached virus propagated through infected users by sending itself to all contacts in the user's Outlook address book. [5]
 %\item \textbf{self stopping worm:} reduces speed to avoid detection. Atak worm or self stopping worm \cite{VirusChangePropSpeed}.
@@ -59,24 +59,22 @@ file sharing systems, which have been used by worms to propagate in a similar wa
 
 \section{Models for worm propagation}
 \label{modelsforpropagation}
-To use the models for worm propagation in our model of the FlipIt game it is sufficient to know the propagation speed of the worm and define after how many time units a sufficient number of hosts of the network is infected. This will be equal to the \textit{d} parameter in our model. \\
+To use the models for worm propagation in our model of the FlipIt game it is sufficient to know the propagation speed of the worm and define after how many time units a sufficient number of nodes in the network are infected. This will be equal to the \textit{d} parameter in our FlipIt model. \\
 
 
-Scan based or Topology based
-A node in a network can be in three different states: susceptible, infected or removed. A susceptible node is a node that is vulnerable to infection. An infected node is a node that has been compromised and can infect other nodes. A removed node is dead or immune, which means it cannot be infected again by worms. With these three states three main propagation models are proposed: SI, SIR and SIS. SI model is a model where a node once infected stays infected. In an SIR model a node can once it is infected become removed. In an SIS model a node can become again susceptible after it has been infected. Based on these three models various other models have been proposed. We are only interested in models where we can find the time that it takes for a worm to infect a sufficient amount of nodes. All models that are based on SI model type (Susceptible-Infected) are good, because in our model every node that is infected will stay infected. In SIR and SIS models .. kunnen we het ook vinden (AAWP). \\
+%Scan based or Topology based
+A node in a network can be in three different states: susceptible, infected or removed. A susceptible node is a node that is vulnerable to infection. An infected node is a node that has been compromised and can infect other nodes. A removed node is dead or immune, which means it cannot be infected again by worms. With these three states three main propagation models are proposed: SI, SIR and SIS. SI model is a model where a node once infected stays infected. In an SIR model a node can once it is infected become removed. In an SIS model a node can become again susceptible after it has been infected. Based on these three models various other models have been proposed. We are only interested in models where we can find the time that it takes for a worm to infect a sufficient amount of nodes.
+Table \ref{tree} gives an overview of the most common propagation methods with the given type. This table comes from the most recent survey \citep{wang2014modeling}, which encompasses results of older surveys. Moreover, the survey explicitly focuses on propagation methods, while other papers also focus on other aspects such as  detection mechanisms and containment systems. All models that are based on SI model type (Susceptible-Infected) are good, because in our model every node that is infected will stay infected. Only models Local Preference and Email worms model will not be explained because it involves human interaction. OSN model is done by means of simulation. The SIR AAWP model is also interesting to explain because the parameter that involves the R part of the model can be deleted.  \\
 
-In this chapter we gaan dieper op sommige models and toepassen the models on the delay. We can divide the propagation models in continuous and discrete time models. Continious time models are .. Discrete time models are ..
- Table \ref{tree} gives an overview of the taxonomy of the propagation methods are given and the type of model. \todo{deze figuur moet aangepast worden want niet elk model wordt uitgelegd}.\\ 
 
-For more information about other models the reader is refered to the following papers with other common propagation models: \cite{wang2014modeling}, \cite{OnWorms2005survey}, \cite{xiang2009propagation} and \cite{serazzi2004computer}.
 
 %The methods of propagation can be divided into different model types. SI, SIS and SIS... uitbreiden.. We are only interested in models that are based on SI model type (Susceptible-Infected), because in our model every node that is infected will stay infected. 
 
 
-The propagation models of diseases are applicable to the propagation of worms. SI, SIS and SIR. The SI model or also SEM (Simple Epidemic Model) is a model where the hosts in the network only have two states: Susceptible or Infected. Once they are infected they stay that way. The second model, SIS, is a model where the hosts can return to the Susceptible state, which in turn can become infected again. SIR is a model where the hosts can go in a Removed state. Once it is in a Removed state the hosts can not be infected any more. \\
+%The propagation models of diseases are applicable to the propagation of worms. SI, SIS and SIR. The SI model or also SEM (Simple Epidemic Model) is a model where the hosts in the network only have two states: Susceptible or Infected. Once they are infected they stay that way. The second model, SIS, is a model where the hosts can return to the Susceptible state, which in turn can become infected again. SIR is a model where the hosts can go in a Removed state. Once it is in a Removed state the hosts can not be infected any more. \\
 
 
-In this chapter we are only interested in the SI model. To apply the propagation models on FlipIt we need to know the propagation speed of the virus, without hosts becoming susceptible again. All hosts must stay infected. For this we only look at SI models. In table \ref{tree} the taxonomy of the propagation methods are given and the type of model. The General Epidemic model and Two-factor model are based on the Simple Epidemic Model with the difference that they both have extra parameters to model the Removed state.  We discuss a couple of SI models and then introduce a method of out own.\\
+%In this chapter we are only interested in the SI model. To apply the propagation models on FlipIt we need to know the propagation speed of the virus, without hosts becoming susceptible again. All hosts must stay infected. For this we only look at SI models. In table \ref{tree} the taxonomy of the propagation methods are given and the type of model. The General Epidemic model and Two-factor model are based on the Simple Epidemic Model with the difference that they both have extra parameters to model the Removed state.  We discuss a couple of SI models and then introduce a method of out own.\\
 
 For more information about other models the reader is referred to the following papers with other most common propagation models: \cite{wang2014modeling}, \cite{OnWorms2005survey}, \cite{xiang2009propagation} and \cite{serazzi2004computer}.
 
@@ -87,45 +85,48 @@ For more information about other models the reader is referred to the following 
 
 \begin{figure}
 \centering
-\includegraphics[scale=0.4]{Images/tabel3.png} 
+%\includegraphics[scale=0.4]{Images/tabel3.png} 
+%\caption{Taxonomy of worm modelling. Image based on taxonomy given in \cite{wang2014modeling}}.
+%\label{tree}
+%\end{figure}
 \includegraphics[scale=0.55]{Images/tableworms.png}
 \caption{Taxonomy of worm modelling. Image based on taxonomy given in \cite{wang2014modeling}}.
 \label{tree}
 \end{figure}
 
 
-\subsection{Continuous-time models}
-\subsubsection{Simple Epidemic model}
+\subsection{Simple Epidemic Model}
 %Codered paper gebruikt voor model
-A Simple epidemic model is an SI model. Nodes in the network can be either susceptible or infected. 
-Once a node is infected it will stay infected. Every node has the same chance to be infected
-The simple epidemic model is considered to be of a fixed size. The model for a fixed population is as follows:
+A Simple epidemic model is another name for the general SI model. This model assumes that each node in the network can be either susceptible or infected. 
+Once a node is infected it will stay infected. Every node in the network has the same chance to be infected. 
+The simple epidemic model is considered to be of a fixed size, meaning that no nodes are added to the network or removed. The model for a fixed population is as follows:
 
 \begin{equation}
 \dfrac{d I(t)}{dt} = \beta I(t)[N-I(t)]
 \end{equation} 
-where I(t) is the number of infected hosts at time t; $\beta$ is the propagation rate; and N is the number of nodes in the network. In the beginning, $t=0$, I(0) hosts are infected. All the other nodes, $N - I(0)$, in the network are susceptible. 
+where \textit{I(t)} is the number of infected nodes at time \textit{t}, $\beta$ is the propagation rate, and \textit{N} is the number of nodes in the network. In the beginning, $t=0$, \textit{I(0)} nodes are infected. All the other nodes, $N - I(0)$, in the network are susceptible. 
 The solution of this equation is the following logistic curve:
 \begin{equation}
 I = \dfrac{e^{\beta(t-T)}}{1+e^{\beta(t-T)}}
+\label{SIdelay}
 \end{equation}
-where T is a time parameter representing the point of maximum increase in the
-growth.\\
+where \textit{T} is a time parameter representing the point of maximum increase in the growth.\\
 
 
-\begin{figure}[hbtp]
-\centering
-\includegraphics[scale=0.5]{Images/SEMmodel.png}
-\caption{Simple Epidemic Model. The x-coordinate is the propagation time and the y-coordinate is the infected percentage of the whole network. Original image from \cite{OnWorms2005survey}}
-\label{SEMmodel}
-\end{figure}
+%\begin{figure}[hbtp]
+%\centering
+%\includegraphics[scale=0.5]{Images/SEMmodel.png}
+%\caption{Simple Epidemic Model. The x-coordinate is the propagation time and the y-coordinate is the infected percentage of the whole network. Original image from \cite{OnWorms2005survey}}
+%\label{SEMmodel}
+%\end{figure}
 
-Figuur \ref{SEMmodel} laat het SEM model zien.
-This Simple epidemic model has been used in various papers \cite{OwnInternetSI}, \cite{CodeRed} to model random scanning worm such as \textit{Code Red} and \textit{Slammer}. \\
-For our paper we have to approximate the propagation speed en Infect gelijkstellen aan het aantal genoeg nodes die geinfecteerd moeten zijn door de APT om de controle te hebben. Dan weten we hoelang het duurt. In het begin zullen er ook geen geinfecteerde hosts zijn, dus de vergelijking kan opgelost worden.\\
-%Er wordt geen rekening gehouden met de topology ? nog uitzoeken.
+%Figure \ref{SEMmodel} laat het SEM model zien.
+%This simple epidemic model has been used in various papers \cite{OwnInternetSI}, \cite{CodeRed} to model random scanning worm such as \textit{Code Red} and \textit{Slammer}. \\
+%For our paper we have to approximate the propagation speed en Infect gelijkstellen aan het aantal genoeg nodes die geinfecteerd moeten zijn door de APT om de controle te hebben. Dan weten we hoelang het duurt. In het begin zullen er ook geen geinfecteerde hosts zijn, dus de vergelijking kan opgelost worden.\\
+%%Er wordt geen rekening gehouden met de topology ? nog uitzoeken.
+To extract the delay from the formula we need the total amount of nodes in the network. If formula \ref{SIdelay} is equal to this amount, variable \textit{t} will be the value of the delay that we need. This is only applicable to nodes in a homogeneous network. A homogeneous network is a network where every node has approximately the same degree. This model is thus suitable for propagation of worms that are topology independent (e.g scan-based worms), because every node has the same chance to be infected by another node in the network. The \textit{Code Red} worm, which is a random scan based worm, has been analysed by this kind of model in \cite{OwnInternetSI}.
 
-\subsubsection{RCS model}
+\subsection{RCS model}
 
 RCS model stands for Random Constant Spread model and is developed by Paxson and Weaver at Stanford \citep{OwnInternetSI}. It is a model derived from the classical Simple Epidemic Model. They used this model to analyse the \textit{Code Red I} worm. For this model it is assumed that the worm owns a good random number generator that is properly seeded. \\
 Let\textit{ N} be the total of vulnerable hosts in the network that can be potentially infected. It is assumed that no system is patched, shut down, deployed or disconnected, which means that the number of hosts in the system stay constant. The model also ignores spreads of the worm behind firewalls on private networks. \\
@@ -149,7 +150,7 @@ a = \dfrac{e^{K(t-T)}}{1+e^{K(t-T)}}
 \end{equation}
 \\
 
-To to apply this formula for the case of FlipIt we need to know the maximum numbers of hosts that can be infected before the total system is compromised. The initial compromise rate has to be approximated. \textit{t} is the variable in our formula and says how many time has passed. If a passes a certain value we know the value of t which is the same as d in our FlipIt game.
+Toextract form this formula the delay for the case of FlipIt with a propagation delay, we need to know the maximum numbers of hosts that can be infected before the total system is compromised. The initial compromise rate has to be approximated. \textit{t} is the variable in our formula and says how many time has passed. If \textit{a} passes the proportion of nodes that have to be compromised before the whole system is compromised by the attacker, value \textit{t}  is the value of \textit{d} in our FlipIt game.
 
 %\subsubsection{Kermack-Mckendrick model: SIR}
 %In the Kermack-Mckendrick model, also known as SIR model, nodes can have three states: susceptible, infected or removed. Once a node of the network has been recovered from a worm, the node will stay in the removed mode and never becomes infected again. These nodes are not able to infect other nodes and can no longer be infected. \\
@@ -210,17 +211,15 @@ To to apply this formula for the case of FlipIt we need to know the maximum numb
 %%spreads, and the effect of the individual host and network
 %%defenses (except for patching, in case of [16]) on the
 %%spread--
-\subsubsection*{self disciplinary worms}
+\subsection*{self disciplinary worms}
 Model for self disciplinary worms and counter measures ... []  \todo{verder uitwerken ? ja of nee? }
 
 
 %Popular mechanism that worms use to detect vulnerable targets by random IP scanning probing. Feasible due to use 32-bit addresses. 128-bit addresses life harder for worms, except the ones that use email systems to propagate. two new strategies: uniformly distributed random number generator to select new target. :spread locally, by biasing the search space towards addresses within the same subnet or network.  
 %The second strategy is almost the same as what email virusses would get. For this reason we work an example out .. 
-\subsection{Discrete-time models}
-\subsubsection{Bluetooth worm model}
-\todo{ref:Modeling Propagation Dynamics of Bluetooth Worms}
+\subsection{Bluetooth worm model}
 
-The Bluetooth worm model is introduced by Yan and Eidenbenz []. The model captures the behavior of the propagation of a worm that spreads through the Bluetooth protocol. 
+The Bluetooth worm model is introduced by Yan and Eidenbenz \citep{yan2009modeling}. The model captures the behaviour of the propagation of a worm that spreads through the Bluetooth protocol. 
 A Bluetooth device that is compromised can only infect neighbour devices that are in its radio range
 Let \textit{i(t)} be the average density of infected hosts in the network at time \textit{t}.
 
@@ -237,24 +236,34 @@ The formula for a better estimation of the worm propagation
 
 To apply this model on FlipIt we again set up a threshold value for i(t) and see how long it took to compromise this amount of hosts.  The paper concluded in their work  that after setting model parameters accordingly ($\lambda_{ne} = 0.2108$ the average node degree and $J_{in}= 0.2372$ the average meeting rate of neighbours), the model predicts that the time it would take to infect 99$\%$ of the devices is slightly less than one hour. So in this case the delay is equal to an hour and the amount of hosts that has to be infected by the attacker before the network is compromised is 99$\%$ of the hosts in the network.
 
-\subsubsection{OSN worm model}
-OSN worms stands for Online Social Network worms. This model is based on worms that propagate through the use of social media, like Facebook. The difference between an email worm and a social network worms is that the topology of the network is different. 
+%\subsubsection{OSN worm model}
+%OSN worms stands for Online Social Network worms. This model is based on worms that propagate through the use of social media, like Facebook. The difference between an email worm and a social network worms is that the topology of the network is different. 
 
-\subsubsection{AAWP model}
-SIR AAWP stands for Analytic Active Worm Propagation. The AAWP model is a SIR model which uses a death rate in the formula to calculate the amount of hosts that become Removed. Yet this model is still analysed because if the death rate is removed, this model becomes a SI mode. The model is different from other SI models because it includes the time that it takes to infect a host. A hosts cannot infect another hosts before it is completely compromised. The model also considers the fact that a hosts can be scanned and hit by multiple worms at the same time. The Epidemiological model ignores the case. %This model is used for worms that propagate through uniform scanning. When uniform scanning is used, each IP address 
+\subsection{AAWP model}
+SIR AAWP stands for Analytic Active Worm Propagation. The AAWP model is a SIR model which uses a death rate in the formula to calculate the amount of hosts that become Removed. Yet this model is still analysed because if the death rate is removed, this model becomes a SI mode. The model is different from other SI models because it includes the time that it takes to infect a host. A hosts cannot infect another hosts before it is completely compromised. The model also considers the fact that a hosts can be scanned and hit by multiple worms at the same time. %This model is used for worms that propagate through uniform scanning. When uniform scanning is used, each IP address 
+
+The spread of the AAWP model is characterized as follows:
+\begin{equation}
+I_{t+1}=I_{t}+(N-I_{t})[1-(1-\dfrac{1}{\Omega})^{sI_{t}}]
+\end{equation}
+where $I_{t}$ is the amount of infected hosts at time \textit{t}, \textit{N} is the number of vulnerable hosts, \textit{s} is
+the scanning rate of the worm and $\Omega$ is the scanning
+space.
+
 
 %Popular mechanism that worms use to detect vulnerable targets by random IP scanning probing. Feasible due to use 32-bit addresses. 128-bit addresses life harder for worms, except the ones that use email systems to propagate. two new strategies: uniformly distributed random number generator to select new target. :spread locally, by biasing the search space towards addresses within the same subnet or network.  
 %The second strategy is almost the same as what email virusses would get. For this reason we work an example out .. \\
 
 
 
-A method to calculate the propagation of the virus in an easy way. Google page ranking algorithm. 
+%A method to calculate the propagation of the virus in an easy way. Google page ranking algorithm. 
 
 
 \section{Matrix worm model}
 \label{eigenmatrixmethode}
-As can be seen in table \ref{tree} most propagation models are for a specific network topology. What we want to have is to have a method to calculate the delay that is independent of the network topology.
-%All of the above models for modelling the mechanism of the spreading of a worm depend on the kind of topology of the network. 
+As can be seen in table \ref{tree} most propagation models are for a specific network topology. The different kinds of network topology of each system is either homogeneous, small-world network, random network or power-law network. A homogeneous network is a network where every node has about the same degree of connectivity. This means that every node can infect each node with the same opportunity. A small-world topology is a network where most nodes are not connected with each other but they can all reach each other in a few steps. Social networks are an example of a small-world network. A random network is a topology where each connection is chosen at random with equal probability. In a power law network the degrees of each node in the network follow the power law. That is that some of the nodes have a small degree and other have a very large degree of connection. What we want to have is to have a method to calculate the delay that is independent of the network topology. A method where we can chose in the beginning which topology we have and then calculate the delay.\\
+
+%All of the above models for modelling the mechanism of the spreading of a worm depend on the kind of topology of the network.  
 In this chapter we propose a method to calculate the spread of the worm in way that the topology of the network can be easily integrated. The method will give an approximation of how fast a worm can infect a network. The method is based on the method for Google Page Ranking \cite{GoogleRank}. 
 For some of the spreading methods, the graph of the network matters. It is important to have the right topology for the right method. Email worms need a topology that represent a social network, BGP routing worms need a topology on network level. \\
 %--iets zeggen dat het ook belangrijk is voor de defender om zijn netwerk zo aan te passen dat het virus moeilijker kan verspreiden. Network segregation mss aanhalen ?--
