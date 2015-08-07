@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  6 AUG 2015 21:19
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  7 AUG 2015 11:22
 entering extended mode
 **masterproef.tex
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.tex
@@ -1420,12 +1420,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 (C:\Users\ECONGUEST\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-Overfull \hbox (6.8136pt too wide) detected at line 21
- \T1/lmr/bx/n/10.95 xviii
- []
-
-) [2
+)) [2
 
 
 ]
@@ -1503,96 +1498,101 @@ Package microtype Info: Character `029' is missing
 (microtype)             Ignoring protrusion settings for this character.
 [6 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/DefFlipi
 t.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 237--239
+Underfull \hbox (badness 10000) in paragraph at lines 240--242
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--243
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--246
-
- []
-
-[7]
 Underfull \hbox (badness 10000) in paragraph at lines 247--249
 
  []
 
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 250--252
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--285
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--283
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 293--294
+Underfull \hbox (badness 10000) in paragraph at lines 284--289
 
  []
 
 
 Package natbib Warning: Citation `Flipit' on page ix undefined on input line 29
-5.
+0.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--297
+Underfull \hbox (badness 10000) in paragraph at lines 290--292
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 298--299
+Underfull \hbox (badness 10000) in paragraph at lines 293--294
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 301--303
+Underfull \hbox (badness 10000) in paragraph at lines 296--298
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 301--303
+Underfull \hbox (badness 10000) in paragraph at lines 296--298
 
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 304.
+(Font)              <12> on input line 299.
 
-Underfull \hbox (badness 10000) in paragraph at lines 306--307
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 312--313
+Underfull \hbox (badness 10000) in paragraph at lines 301--302
 
  []
 
-<../../doc/template/Images/FLipItCase1.pdf, id=258, 594.22pt x 316.18124pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--308
+
+ []
+
+<../../doc/template/Images/FLipItCase1.pdf, id=259, 594.22pt x 316.18124pt>
 File: ../../doc/template/Images/FLipItCase1.pdf Graphic file (type pdf)
 
 <use ../../doc/template/Images/FLipItCase1.pdf>
 Package pdftex.def Info: ../../doc/template/Images/FLipItCase1.pdf used on inpu
-t line 322.
+t line 317.
 (pdftex.def)             Requested size: 237.68379pt x 126.47025pt.
  [10]
-Underfull \hbox (badness 10000) in paragraph at lines 344--347
+Underfull \hbox (badness 10000) in paragraph at lines 339--342
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 351--352
+Underfull \hbox (badness 10000) in paragraph at lines 346--347
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--356
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
 
  []
 
 [11 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/FLipItC
 ase1.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 360--361
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 363--364
+Underfull \hbox (badness 10000) in paragraph at lines 378--379
 
  []
 
@@ -1601,35 +1601,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 383--384
 
  []
 
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 388--389
-
- []
-
-<../../doc/template/Images/FlipItCase2.png, id=304, 403.2666pt x 498.4221pt>
+<../../doc/template/Images/FlipItCase2.png, id=296, 403.2666pt x 498.4221pt>
 File: ../../doc/template/Images/FlipItCase2.png Graphic file (type png)
 
 <use ../../doc/template/Images/FlipItCase2.png>
 Package pdftex.def Info: ../../doc/template/Images/FlipItCase2.png used on inpu
-t line 393.
+t line 388.
 (pdftex.def)             Requested size: 201.6328pt x 249.21043pt.
+ [12]
+Underfull \hbox (badness 10000) in paragraph at lines 393--394
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 396--397
+
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 398--399
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--402
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 403--404
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 405--407
+Underfull \hbox (badness 10000) in paragraph at lines 400--402
 
  []
 
@@ -1640,34 +1635,31 @@ pdfTeX warning: pdflatex (file C:/Users/ECONGUEST/Documents/GitHub/Gametheory/d
 oc/template/Images/FlipItCase2.png): large interlaced PNG might cause out of me
 mory (use non-interlaced PNG to fix this)
 >]
+Underfull \hbox (badness 10000) in paragraph at lines 417--418
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 422--423
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 427--428
-
- []
-
-[14] [15]
+[14]
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.lof
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16
+ [15
 
 
 ])
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.lot)
-[17]
+[16]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18
+ [17
 
 ]
-[19] [20
-
-]
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-10.tex
+[18] (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-10.tex
 Underfull \hbox (badness 10000) in paragraph at lines 14--16
 
  []
@@ -1683,6 +1675,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--30
  []
 
 [1
+
 
 
 ]
@@ -1724,7 +1717,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
-[9] <Images/PrisDilemma.png, id=498, 466.3824pt x 318.9516pt>
+[9] <Images/PrisDilemma.png, id=487, 466.3824pt x 318.9516pt>
 File: Images/PrisDilemma.png Graphic file (type png)
 
 <use Images/PrisDilemma.png>
@@ -1746,7 +1739,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
  []
 
-<../../doc/template/Images/DefFlipItt.png, id=504, 512.3943pt x 92.9874pt>
+<../../doc/template/Images/DefFlipItt.png, id=493, 512.3943pt x 92.9874pt>
 File: ../../doc/template/Images/DefFlipItt.png Graphic file (type png)
 
 <use ../../doc/template/Images/DefFlipItt.png>
@@ -1840,7 +1833,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 145--147
 
  []
 
-<Images/DefFlip.pdf, id=583, 512.38626pt x 108.42407pt>
+<Images/DefFlip.pdf, id=573, 512.38626pt x 108.42407pt>
 File: Images/DefFlip.pdf Graphic file (type pdf)
 
 <use Images/DefFlip.pdf>
@@ -1852,7 +1845,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 167--168
 
  []
 
-<Images/Delayuitgelegd.pdf, id=616, 512.38626pt x 236.17334pt>
+<Images/Delayuitgelegd.pdf, id=606, 512.38626pt x 236.17334pt>
 File: Images/Delayuitgelegd.pdf Graphic file (type pdf)
 
 <use Images/Delayuitgelegd.pdf>
@@ -1864,14 +1857,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 176--177
  []
 
 [21 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/Delayui
-tgelegd.pdf>] <Images/FlipItCase1delay.pdf, id=650, 519.29205pt x 87.99817pt>
+tgelegd.pdf>] <Images/FlipItCase1delay.pdf, id=639, 519.29205pt x 87.99817pt>
 File: Images/FlipItCase1delay.pdf Graphic file (type pdf)
 
 <use Images/FlipItCase1delay.pdf>
 Package pdftex.def Info: Images/FlipItCase1delay.pdf used on input line 185.
 (pdftex.def)             Requested size: 363.50195pt x 61.59828pt.
 
-<Images/FlipItCase1delaytobig.pdf, id=651, 512.38626pt x 77.18385pt>
+<Images/FlipItCase1delaytobig.pdf, id=640, 512.38626pt x 77.18385pt>
 File: Images/FlipItCase1delaytobig.pdf Graphic file (type pdf)
 
 <use Images/FlipItCase1delaytobig.pdf>
@@ -1891,7 +1884,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 208--209
  []
 
 
-<../../doc/template/Images/DiffDelayCase1.pdf, id=706, 512.38626pt x 236.17334p
+<../../doc/template/Images/DiffDelayCase1.pdf, id=695, 512.38626pt x 236.17334p
 t>
 File: ../../doc/template/Images/DiffDelayCase1.pdf Graphic file (type pdf)
  <use ../../doc/template/Images/DiffDelayCase1.pdf>
@@ -1899,7 +1892,7 @@ Package pdftex.def Info: ../../doc/template/Images/DiffDelayCase1.pdf used on i
 nput line 217.
 (pdftex.def)             Requested size: 358.66794pt x 165.32019pt.
 
-<../../doc/template/Images/delaydtijdens.pdf, id=709, 512.38626pt x 113.75499pt
+<../../doc/template/Images/delaydtijdens.pdf, id=698, 512.38626pt x 113.75499pt
 >
 File: ../../doc/template/Images/delaydtijdens.pdf Graphic file (type pdf)
  <use ../../doc/template/Images/delaydtijdens.pdf>
@@ -1917,42 +1910,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 261--262
 
  []
 
-
+[24 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/delaydt
+ijdens.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 270--271
 
  []
 
-[24 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/delaydt
-ijdens.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 277--278
+
+Underfull \hbox (badness 10000) in paragraph at lines 277--280
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--281
+Underfull \hbox (badness 10000) in paragraph at lines 283--284
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--288
+Underfull \hbox (badness 10000) in paragraph at lines 290--291
 
  []
 
-<../../doc/template/Images/FlipIt2.pdf, id=778, 403.371pt x 683.10506pt>
+<../../doc/template/Images/FlipIt2.pdf, id=769, 403.371pt x 683.10506pt>
 File: ../../doc/template/Images/FlipIt2.pdf Graphic file (type pdf)
 
 <use ../../doc/template/Images/FlipIt2.pdf>
 Package pdftex.def Info: ../../doc/template/Images/FlipIt2.pdf used on input li
-ne 291.
+ne 294.
 (pdftex.def)             Requested size: 282.35777pt x 478.17029pt.
  [25] [26 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/F
 lipIt2.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 308--309
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 313--314
+Underfull \hbox (badness 10000) in paragraph at lines 312--313
 
  []
 
@@ -1961,40 +1949,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 317--318
 
  []
 
-<Images/flipcase2nb.pdf, id=815, 403.371pt x 213.21759pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--322
+
+ []
+
+<Images/flipcase2nb.pdf, id=805, 403.371pt x 213.21759pt>
 File: Images/flipcase2nb.pdf Graphic file (type pdf)
 
 <use Images/flipcase2nb.pdf>
-Package pdftex.def Info: Images/flipcase2nb.pdf used on input line 322.
+Package pdftex.def Info: Images/flipcase2nb.pdf used on input line 326.
 (pdftex.def)             Requested size: 282.35777pt x 149.25128pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--327
+Underfull \hbox (badness 10000) in paragraph at lines 330--331
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--329
+Underfull \hbox (badness 10000) in paragraph at lines 332--333
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 330--332
+Underfull \hbox (badness 10000) in paragraph at lines 334--336
 
  []
 
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 347--348
+Underfull \hbox (badness 10000) in paragraph at lines 351--352
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 352--353
+Underfull \hbox (badness 10000) in paragraph at lines 356--357
 
  []
 
 ) [28 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/flipc
-ase2nb.pdf>]
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\nash.tex
+ase2nb.pdf>] [29]
+(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\nash.tex [30
+
+
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
@@ -2004,91 +2001,81 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--28
 
  []
 
-<Images/bestresp.png, id=852, 963.6pt x 722.7pt>
-File: Images/bestresp.png Graphic file (type png)
- <use Images/bestresp.png>
-Package pdftex.def Info: Images/bestresp.png used on input line 33.
-(pdftex.def)             Requested size: 385.43317pt x 289.07487pt.
-
-[29
-
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 56--58
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 57--59
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--58
+Underfull \hbox (badness 10000) in paragraph at lines 57--59
 
  []
 
-
-Underfull \vbox (badness 3396) has occurred while \output is active []
-
- [30 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/bestre
-sp.png>]
-<Images/ShapesUp.png, id=866, 446.41782pt x 315.42844pt>
+<Images/ShapesUp.png, id=859, 446.41782pt x 315.42844pt>
 File: Images/ShapesUp.png Graphic file (type png)
 
 <use Images/ShapesUp.png>
-Package pdftex.def Info: Images/ShapesUp.png used on input line 71.
+Package pdftex.def Info: Images/ShapesUp.png used on input line 72.
 (pdftex.def)             Requested size: 223.20836pt x 157.71382pt.
 
-<Images/ShapeDown.png, id=868, 444.91219pt x 312.41719pt>
+<Images/ShapeDown.png, id=861, 444.91219pt x 312.41719pt>
 File: Images/ShapeDown.png Graphic file (type png)
 
 <use Images/ShapeDown.png>
-Package pdftex.def Info: Images/ShapeDown.png used on input line 80.
+Package pdftex.def Info: Images/ShapeDown.png used on input line 81.
 (pdftex.def)             Requested size: 222.45554pt x 156.2082pt.
- [31 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/Shapes
-Up.png> <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/Sha
-peDown.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
+ [32 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/Shapes
+Up.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 128--129
-
- []
-
-[32]
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 188--190
-
- []
-
-[33]
-Underfull \hbox (badness 10000) in paragraph at lines 206--207
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 220--222
+[33 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/ShapeDo
+wn.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
 
  []
 
 [34]
-Underfull \hbox (badness 10000) in paragraph at lines 238--239
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--267
+Underfull \hbox (badness 10000) in paragraph at lines 192--194
 
  []
 
-) [35]
 
-LaTeX Warning: Marginpar on page 36 moved by 69.98639pt.
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
 
-[36] (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-4.tex
+ []
+
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 224--226
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 242--243
+
+ []
+
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 269--271
+
+ []
+
+)
+
+LaTeX Warning: Marginpar on page 37 moved by 69.98639pt.
+
+[37] (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-4.tex
+[38
+
+
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
@@ -2103,11 +2090,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
-[37
-
-
-
-] [38]
+[39] [40]
 Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
@@ -2117,7 +2100,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--68
 
  []
 
-<Images/tableworms.png, id=934, 811.53188pt x 342.5297pt>
+<Images/tableworms.png, id=931, 811.53188pt x 342.5297pt>
 File: Images/tableworms.png Graphic file (type png)
 
 <use Images/tableworms.png>
@@ -2131,12 +2114,12 @@ Overfull \hbox (48.3439pt too wide) in paragraph at lines 92--93
 
 Underfull \vbox (badness 6995) has occurred while \output is active []
 
- [39]
+ [41]
 Underfull \hbox (badness 10000) in paragraph at lines 112--114
 
  []
 
-[40 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/tablewo
+[42 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/tablewo
 rms.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 131--136
 
@@ -2152,7 +2135,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 150--152
 
  []
 
-[41]
+[43]
 Underfull \hbox (badness 10000) in paragraph at lines 229--231
 
  []
@@ -2162,7 +2145,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 264--265
 
  []
 
-[42]
+[44]
 Underfull \hbox (badness 10000) in paragraph at lines 267--277
 
  []
@@ -2190,7 +2173,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 345--356
 
 Underfull \vbox (badness 3612) has occurred while \output is active []
 
- [43]
+ [45]
 Underfull \hbox (badness 10000) in paragraph at lines 357--358
 
  []
@@ -2215,7 +2198,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 390--393
 
  []
 
-[44]
+[46]
 Underfull \hbox (badness 10000) in paragraph at lines 394--395
 
  []
@@ -2225,20 +2208,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 396--397
 
  []
 
-) [45]
+) [47]
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\conclusion.tex
-[46
+[48
 
 
 
-]) [47] [48
+]) [49] [50
 
 
 ]
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.bbl
-[49
+[51
 
-] [50]) [51] [52
+] [52]) [53] [54
 
 ]
 
@@ -2248,8 +2231,8 @@ Package natbib Warning: There were undefined citations.
 \tf@tdo=\write7
 \tf@lof=\write8
 \tf@lot=\write9
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 538.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 538.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 533.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 533.
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.aux
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-10.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-5.aux)
@@ -2257,22 +2240,22 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 538.
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\nash.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\chap-4.aux)
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\conclusion.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 538.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 538.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 533.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 533.
 Package rerunfilecheck Info: File `masterproef.out' has not changed.
-(rerunfilecheck)             Checksum: D2F88B488A2FFC3A6B0A34359E10D6AA;1817.
+(rerunfilecheck)             Checksum: 2B6A5214CEE3E419EEB905307FCABFEB;1817.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 538.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 533.
  ) 
 Here is how much of TeX's memory you used:
- 27266 strings out of 493921
- 497795 string characters out of 3144864
- 751203 words of memory out of 3000000
- 29558 multiletter control sequences out of 15000+200000
- 102150 words of font info for 186 fonts, out of 3000000 for 9000
+ 27259 strings out of 493921
+ 497664 string characters out of 3144864
+ 755372 words of memory out of 3000000
+ 29554 multiletter control sequences out of 15000+200000
+ 102067 words of font info for 185 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  60i,12n,92p,2193b,918s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program F
@@ -2297,9 +2280,9 @@ ram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files (x
 86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Program Files (x86)/MiKTeX 
 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
 s/type1/urw/helvetic/uhvr8a.pfb>
-Output written on masterproef.pdf (74 pages, 2876598 bytes).
+Output written on masterproef.pdf (74 pages, 2857048 bytes).
 PDF statistics:
- 1156 PDF objects out of 1200 (max. 8388607)
+ 1153 PDF objects out of 1200 (max. 8388607)
  255 named destinations out of 1000 (max. 500000)
- 27975 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 27970 words of extra memory for PDF output out of 29859 (max. 10000000)
 

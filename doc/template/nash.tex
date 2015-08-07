@@ -27,13 +27,14 @@ attacker. Similarly, we denote by $opt_{D}(\delta_{D}$) the set of values (rates
 the benefit of the attacker for a fixed rate of play $\delta_{D}$ of the defender. \\
 
 To determine $opt_{D}(\delta_{A})$ we need to compute the derivative of  $\beta_{D}(\delta_{D},\delta_{A}) $ for a fixed $\delta_{A}$.
- We consider two cases, where case 2 is divided into two subcategories. Fig \todo{fig} shows all the cases.\\
-\begin{figure}[hbtp]
-\centering
-\includegraphics[scale=0.4]{Images/bestresp.png}
-\caption{This figure shows the all the cases with their subcategories. 'A' stands for Case 2.A: $\delta_{D} \geq d+\delta_{A} \geq \delta_{A}$ and 'B' stands for Case 2.B: $d+\delta_{A} \geq \delta_{D} \geq  \delta_{A} $ }
-\label{grafiekbestr}
-\end{figure}
+ We consider two cases, where case 2 is divided into two subcategories. 
+% Fig \todo{fig} shows all the cases.\\
+%\begin{figure}[hbtp]
+%\centering
+%\includegraphics[scale=0.4]{Images/bestresp.png}
+%\caption{This figure shows the all the cases with their subcategories. 'A' stands for Case 2.A: $\delta_{D} \geq d+\delta_{A} \geq \delta_{A}$ and 'B' stands for Case 2.B: $d+\delta_{A} \geq \delta_{D} \geq  \delta_{A} $ }
+%\label{grafiekbestr}
+%\end{figure}
 
 \subsection{Determining the piecewise functions $opt_{D}(\delta_{A})$}
 
@@ -64,12 +65,12 @@ The benefit formula obtained in the previous chapter for this case is as follows
 \beta_{D}(\delta_{D},\delta_{A})= \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - \dfrac{k_{D}}{\delta_{D}} = \dfrac{\delta_{A} + 2 (d-k_{D})}{\delta_{D}}
 \end{equation*}
 
-Given that $\delta_{D}$ is always positive, the benefit function can be either positive or negative depending on the numerator of the above fraction. For $\delta_{A} + 2(d-k_{D}) > 0$ the benefit will be always positive but decreasing, see figure \ref{ShapeUp}. \\
-The defender will play if $ \delta_{A} > 2(k_{D} -d)$ and $k_{D} > d$. The defender will not play if $k_{D} < d$ because then $ \delta_{A}$ is negative.\\
+Given that $\delta_{D}$ is always positive, the benefit function can be either increasing or decreasing depending on the numerator of the above fraction. For $\delta_{A} + 2(d-k_{D}) > 0$ the benefit will be always positive but decreasing, see figure \ref{ShapeUp}. \\
+The defender will always play if $ \delta_{A} > 2(k_{D} -d)$ for $k_{D} < d$ or $k_{D} > d$ because $\delta_{A}$ will be positive in either case. Their is an edge case if $d=k_{D}$. The benefit will result in $\beta_{D}(\delta_{D},\delta_{A})= \dfrac{\delta_{A}}{\delta_{D}}$.4 \\
 \begin{figure}
 \centering
 \includegraphics[scale=0.5]{Images/ShapesUp.png} 
-\caption{The benefit function is of the shape of 1/x if $\delta_{D}$ is always positive and if $\delta_{A} + 2(d-k_{D}) > 0$. }
+\caption{The benefit function is of the shape of 1/x if $\delta_{D}$ is always decreasing and if $\delta_{A} + 2(d-k_{D}) > 0$. }
 \label{ShapeUp}
 \end{figure}
 
@@ -78,7 +79,7 @@ For $\delta_{A} + 2(d-k_{D}) < 0$, the benefit will always be negative so the de
 \begin{figure}
 \centering
 \includegraphics[scale=0.5]{Images/ShapeDown.png} 
-\caption{The benefit function is of the shape of -1/x if $\delta_{D}$ is always positive and if $\delta_{A} + 2(d-k_{D}) < 0$.}
+\caption{The benefit function is of the shape of -1/x if $\delta_{D}$ is always increasing and if $\delta_{A} + 2(d-k_{D}) < 0$.}
 \label{ShapeDown}
 \end{figure}
 %The derivative of the above formula for a fixed $\delta_{A}$ results in the following:
@@ -94,13 +95,16 @@ This leads to the following deduction:
 \begin{description}
 \item If $k_{D} \leq d$ 
 \begin{description}
-\item decreasing $ \delta_{A} < 2(k_{D} -d)$, $ \delta_{A}$ is negative
-\item increasing  $\delta_{A} > 2(k_{D} -d)$ 
+ \item $\beta_{D}$ will be decreasing but always positive. If we minimize $\delta_{D}$ the value of $\beta_{D}$ will be higher. 
 \end{description}
 \item If $k_{D} > d$ 
 \begin{description}
-\item increasing $ \delta_{A} < 2(k_{D} -d)$
-\item decreasing  $\delta_{A} > 2(k_{D} -d)$ 
+\item if $ \delta_{A} > 2(k_{D} -d)$, \\
+$\beta_{D}$ will be decreasing but always positive. If we minimize $\delta_{D}$ the value of $\beta_{D}$ will be higher. 
+\item if  $\delta_{A} = 2(k_{D} -d)$, \\
+the benefit of the defender will be $\beta_{D}=0$.
+\item if $\delta_{A} > 2(k_{D} -d)$, \\
+$\beta_{D}$ will be increasing but always negative. In this case the defender will not play. 
 \end{description}
 \end{description}
 ~~\\
@@ -125,7 +129,7 @@ The stationary points (maximum, minimum) can be found by setting the first deriv
 \end{equation*}
 
 
-For case 2.B this leads to the following deduction, which results in the same formula as for case 1: The function increases on $[0, \sqrt{2\delta_{A}k_{D} + d^{2}}]$ and is decreasing on $[\sqrt{2\delta_{A}k_{D} + d^{2}}, \infty]$. So there is a maximum on $\delta_{D} = minimum \{ \delta_{A}, \sqrt{2\delta_{A}k_{D} + d^{2}} \} $ \\
+For case 2.B this leads to the following deduction, which results in the same formula as for case 1: The function increases on $[0, \sqrt{2\delta_{A}k_{D} + d^{2}}]$ and is decreasing on $[\sqrt{2\delta_{A}k_{D} + d^{2}}, \infty]$. So there is a maximum on $\delta_{D} = minimum \{ \delta_{A}+d, \sqrt{2\delta_{A}k_{D} + d^{2}} \} $ \\
 
 \subsubsection{Best responses}
 The optimum functions will be piecewise functions. There will be different optimum functions depending on $k_{D}$ and $d$. We distinguish for these two cases, three sub cases for different values of $\delta_{A}$. 
