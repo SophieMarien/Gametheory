@@ -40,11 +40,12 @@ To determine $opt_{D}(\delta_{A})$ we need to compute the derivative of  $\beta_
 
 
 \subsection*{Case 1: $\delta_{D} \leq \delta_{A} $}
-The benefit formula obtained in the previous chapter for this case is as follows:
+The benefit formula obtained in the previous chapter (formula \ref{Benfcase1:defender}) for the defender in this case is as follows:
 \begin{equation*}
-\beta_{D}(\delta_{D},\delta_{A}) = 1 - \dfrac{\delta_{D}}{2\delta_{A}} - \dfrac{k_{D}}{\delta_{D}} - \dfrac{d^{2}}{2\delta_{D}\delta_{A}} + \dfrac{d}{\delta_{A}}
+\beta_{D}(\delta_{D},\delta_{A}) = 1 - \dfrac{\delta_{D}}{2\delta_{A}} - \dfrac{d^{2}}{2\delta_{D}\delta_{A}} + \dfrac{d}{\delta_{A}}  - \dfrac{k_{D}}{\delta_{D}}
 \end{equation*}
-If we take the partial derivative of this formula for a fixed $\delta_{A}$ we get the following:
+
+To know if the function decreases or increases we take the partial derivative of this formula for a fixed $\delta_{A}$:
 \begin{equation*}\label{formdelta}
 \frac{\partial \beta_{D}(\delta_{D},\delta_{A})}{\partial \delta_{D}} = - \dfrac{1}{2\delta_{A}} + \dfrac{k_{D}}{\delta_{D}^{2}} + \dfrac{d^{2}}{2\delta_{D}^{2}\delta_{A}}
 \end{equation*}
@@ -60,13 +61,15 @@ This leads to the following deduction given the sign of the coefficient of $\del
 
 \subsection*{Case 2.A: $\delta_{D} \geq d+\delta_{A} \geq \delta_{A} $ }
 
-The benefit formula obtained in the previous chapter for this case is as follows:
+The benefit formula obtained in the previous chapter (formula \ref{benfcase2a:defender}) for the defender in this case is as follows:
 \begin{equation*}
 \beta_{D}(\delta_{D},\delta_{A})= \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - \dfrac{k_{D}}{\delta_{D}} = \dfrac{\delta_{A} + 2 (d-k_{D})}{\delta_{D}}
 \end{equation*}
 
-Given that $\delta_{D}$ is always positive, the benefit function can be either increasing or decreasing depending on the numerator of the above fraction. For $\delta_{A} + 2(d-k_{D}) > 0$ the benefit will be always positive but decreasing, see figure \ref{ShapeUp}. \\
-The defender will always play if $ \delta_{A} > 2(k_{D} -d)$ for $k_{D} < d$ or $k_{D} > d$ because $\delta_{A}$ will be positive in either case. Their is an edge case if $d=k_{D}$. The benefit will result in $\beta_{D}(\delta_{D},\delta_{A})= \dfrac{\delta_{A}}{\delta_{D}}$.4 \\
+Given that $\delta_{D}$ is always positive, the benefit function can be either increasing or decreasing depending on the numerator of the above fraction. \\
+
+For $\delta_{A} + 2(d-k_{D}) > 0$ the benefit will be always positive but decreasing, see figure \ref{ShapeUp}. 
+The defender will always play if $\delta_{A} + 2(d-k_{D}) > 0$ for $k_{D} < d$ or $k_{D} > d$ because $\delta_{A}$ will be positive in either case. There is an edge case if $d=k_{D}$, which results in a benefit of $\beta_{D}(\delta_{D},\delta_{A})= \dfrac{\delta_{A}}{\delta_{D}}$. \\
 \begin{figure}
 \centering
 \includegraphics[scale=0.5]{Images/ShapesUp.png} 
@@ -74,7 +77,7 @@ The defender will always play if $ \delta_{A} > 2(k_{D} -d)$ for $k_{D} < d$ or 
 \label{ShapeUp}
 \end{figure}
 
-For $\delta_{A} + 2(d-k_{D}) < 0$, the benefit will always be negative so the defender will not play. See figure \ref{ShapeDown}. This is independent of the value of $k_{D}$ and $ d$. 
+For $\delta_{A} + 2(d-k_{D}) < 0$, the benefit will always be negative so the defender will not play. See figure \ref{ShapeDown}. This is independent of the value of $k_{D}$ and $ d$. \\
 
 \begin{figure}
 \centering
@@ -91,27 +94,27 @@ For $\delta_{A} + 2(d-k_{D}) < 0$, the benefit will always be negative so the de
 %\frac{\partial \beta_{D}(\delta_{D},\delta_{A})}{\partial \delta_{D}} =0 ~~~~~~ =>~~~~~~ \delta_{A} = 2(k_{D}-d) = dk_{D} - 2d
 %\end{equation*}
 %
-This leads to the following deduction:
-\begin{description}
-\item If $k_{D} \leq d$ 
-\begin{description}
- \item $\beta_{D}$ will be decreasing but always positive. If we minimize $\delta_{D}$ the value of $\beta_{D}$ will be higher. 
-\end{description}
-\item If $k_{D} > d$ 
-\begin{description}
-\item if $ \delta_{A} > 2(k_{D} -d)$, \\
-$\beta_{D}$ will be decreasing but always positive. If we minimize $\delta_{D}$ the value of $\beta_{D}$ will be higher. 
-\item if  $\delta_{A} = 2(k_{D} -d)$, \\
-the benefit of the defender will be $\beta_{D}=0$.
-\item if $\delta_{A} > 2(k_{D} -d)$, \\
-$\beta_{D}$ will be increasing but always negative. In this case the defender will not play. 
-\end{description}
-\end{description}
+%This leads to the following deduction:
+%\begin{description}
+%\item If $k_{D} \leq d$ 
+%\begin{description}
+% \item $\beta_{D}$ will be decreasing but always positive. If we minimize $\delta_{D}$ the value of $\beta_{D}$ will be higher. 
+%\end{description}
+%\item If $k_{D} > d$ 
+%\begin{description}
+%\item if $ \delta_{A} > 2(k_{D} -d)$, \\
+%$\beta_{D}$ will be decreasing but always positive. If we minimize $\delta_{D}$ the value of $\beta_{D}$ will be higher. 
+%\item if  $\delta_{A} = 2(k_{D} -d)$, \\
+%the benefit of the defender will be $\beta_{D}=0$.
+%\item if $\delta_{A} < 2(k_{D} -d)$, \\
+%$\beta_{D}$ will be increasing but always negative. In this case the defender will not play. 
+%\end{description}
+%\end{description}
 ~~\\
 
 \subsection*{Case 2.B: $d+\delta_{A} \geq \delta_{D} \geq  \delta_{A} $} 
 
-The benefit formula obtained in the previous chapter for this case is as follows:
+The benefit formula obtained in the previous chapter  (formula \ref{benfcase2b:defender}) for the defender in this case is as follows:
 \begin{equation*}
 \dfrac{\beta_{D}(\alpha_{D},\alpha_{A})}{\partial \delta_{D}} = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - \dfrac{k_{D}}{\delta_{D}} - \dfrac{(d-(\delta_{D} - \delta_{A}))^{2}}{2\delta_{D}\delta_{A}}
 \end{equation*}
@@ -129,7 +132,7 @@ The stationary points (maximum, minimum) can be found by setting the first deriv
 \end{equation*}
 
 
-For case 2.B this leads to the following deduction, which results in the same formula as for case 1: The function increases on $[0, \sqrt{2\delta_{A}k_{D} + d^{2}}]$ and is decreasing on $[\sqrt{2\delta_{A}k_{D} + d^{2}}, \infty]$. So there is a maximum on $\delta_{D} = minimum \{ \delta_{A}+d, \sqrt{2\delta_{A}k_{D} + d^{2}} \} $ \\
+For case 2.B this leads to the following deduction, which results in the same formula as for case 1 but with a small difference for the value of $\delta_{D}$: The function increases on $[0, \sqrt{2\delta_{A}k_{D} + d^{2}}]$ and is decreasing on $[\sqrt{2\delta_{A}k_{D} + d^{2}}, \infty]$. Because $\delta_{D} \geq \delta_{A}$ there is a maximum on $\delta_{D} = maximum \{ \delta_{A}, \sqrt{2\delta_{A}k_{D} + d^{2}} \} $ or because $d+\delta_{A} \geq \delta_{D}$ there is also on $\delta_{D} = minimum \{ \delta_{A}+d, \sqrt{2\delta_{A}k_{D} + d^{2}} \} $. \todo{beter uitschrijven, deltaD moet tussen die twee waarden liggen}\\
 
 \subsubsection{Best responses}
 The optimum functions will be piecewise functions. There will be different optimum functions depending on $k_{D}$ and $d$. We distinguish for these two cases, three sub cases for different values of $\delta_{A}$. 

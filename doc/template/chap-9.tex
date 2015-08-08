@@ -240,15 +240,17 @@ As the formula above is valid for each defender interval, the average gain rate 
 \end{equation*}
 
 To find the benefit, the cost of moving is subtracted from the average gain. 
-\begin{equation*}
+\begin{equation}
 \beta_{A}(\delta_{D},\delta_{A}) = \dfrac { (\delta_{D}-d) ^{2}} {2 \delta_{D}  \delta_{A}} - \dfrac{k_{A}}{\delta_{A}}
-\end{equation*}
+\label{Benfcase1:attacker}
+\end{equation}
 
  
  The benefit of the defender is then as follows:
-\begin{equation*}
+\begin{equation}
 \beta_{D}(\delta_{D},\delta_{A}) = 1 - \dfrac { (\delta_{D}-d) ^{2}} {2 \cdot \delta_{D}  \delta_{A}} - \dfrac{k_{D}}{ \delta_{D}}
-\end{equation*}
+\label{Benfcase1:defender}
+\end{equation}
 ~~\\
 For this case where $d$=0, we this equals the formula of the original FlipIt game \citep{FlipIt} [p675].\\
 
@@ -296,7 +298,7 @@ For the case with a delay we consider two cases, Case a and Case b, depending on
 \label{fig:case2}
 \end{figure}
 
-\subsubsection*{\textbf{Case a:} $d + \delta_{A} \leq \delta_{D}$}
+\subsubsection*{\textbf{Case 2.a:} $ \delta_{D} \geq d + \delta_{A} \geq \delta_{A}$}
 %The first case is where the defender's period is larger than the sum of the delay and the attacker's period. 
 In this case the delay will never be counted twice in the defender's  benefit formula. To determine the total gain rate of the defender we need to know the probability that the defender will move during an interval and what the average time is that the defender controls the resource. Given that if the defender moves he will always benefit entirely from a period of delay in the next interval of the attacker, his total gain is $\dfrac{(d+\dfrac{\delta_{A}}{2})}{\delta_{A}}$ \todo{formule valt uit de lucht} in one interval. The total gain  rate of the defender is then the probability that the defender will move during an interval of the attacker multiplied by the total average gain per interval: 
 
@@ -307,14 +309,14 @@ In this case the delay will never be counted twice in the defender's  benefit fo
 \gamma_{D}(\delta_{D},\delta_{A}) = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} 
 \end{equation*}\\
 This yields the following benefit formula:
-\begin{equation*}\label{first}
+\begin{equation}\label{benfcase2a:defender}
 \beta_{D}(\delta_{D},\delta_{A}) = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - \dfrac{k_{D}}{ \delta_{D}}
-\end{equation*}\\
+\end{equation}\\
 
 The benefit for the attacker will be as follows:
-\begin{equation*}\label{first}
+\begin{equation}\label{benfcase2a:attacker}
 \beta_{A}(\delta_{D},\delta_{A}) = 1 -\dfrac{\delta_{A}}{2\delta_{D}} - \dfrac{d}{\delta_{D}} - \dfrac{k_{A}}{ \delta_{A}}
-\end{equation*}\\
+\end{equation}\\
 
 
 
@@ -328,7 +330,7 @@ It is crucial that $ \delta_{D}$ is at least as large as $d + \delta_{A}$. If no
 \end{figure}
 
 ~~ \\
-\subsubsection*{\textbf{Case b:} $d + \delta_{A} \geq \delta_{D}$}
+\subsubsection*{\textbf{Case 2.b:} $d + \delta_{A} \geq \delta_{D} \geq \delta_{A}$}
 ~~~\\
 
 To obtain the formula in case of a too long delay, we therefore need to subtract this overlapping gain from the above formula. 
@@ -346,14 +348,14 @@ The total gain rate for the defender is obtained by subtracting this term from t
 \gamma_{D}(\delta_{D},\delta_{A}) = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - \dfrac{(d - (\delta_{D} - \delta_{A}))^{2}}{2 \delta_{D} \delta_{A}}
 \end{equation*}\\
 This yields in the following benefit formula:
-\begin{equation*}
+\begin{equation}\label{benfcase2b:defender}
 \beta_{D}(\delta_{D},\delta_{A}) = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - \dfrac{k_{D}}{ \delta_{D}} - \dfrac{(d - (\delta_{D} - \delta_{A}))^{2}}{2 \delta_{D} \delta_{A}}
-\end{equation*}\\
+\end{equation}\\
  
 Consequently, the benefit for the attacker will be:
-\begin{equation*}
+\begin{equation}\label{benfcase2b:attacker}
 \beta_{A}(\delta_{D},\delta_{A}) = 1 -\dfrac{\delta_{A}}{2\delta_{D}} - \dfrac{d}{\delta_{D}} - \dfrac{k_{A}}{ \delta_{A}} + \dfrac{(d - (\delta_{D} - \delta_{A}))^{2}}{2 \delta_{D} \delta_{A}}
-\end{equation*}\\
+\end{equation}\\
 
 %~~\\
 %\subsection{Conclusion of this chapter}
