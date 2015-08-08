@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  8 AUG 2015 10:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.25)  8 AUG 2015 17:27
 entering extended mode
 **masterproef.tex
 (C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\masterproef.tex
@@ -1474,7 +1474,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 194--195
 
  []
 
-<../../doc/template/Images/DefFlipit.png, id=223, 512.3943pt x 92.9874pt>
+<../../doc/template/Images/DefFlipit.png, id=225, 512.3943pt x 92.9874pt>
 File: ../../doc/template/Images/DefFlipit.png Graphic file (type png)
 
 <use ../../doc/template/Images/DefFlipit.png>
@@ -1567,7 +1567,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 308--309
 
  []
 
-<../../doc/template/Images/FLipItCase1.pdf, id=261, 594.22pt x 316.18124pt>
+<../../doc/template/Images/FLipItCase1.pdf, id=263, 594.22pt x 316.18124pt>
 File: ../../doc/template/Images/FLipItCase1.pdf Graphic file (type pdf)
 
 <use ../../doc/template/Images/FLipItCase1.pdf>
@@ -1605,7 +1605,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 384--385
 
  []
 
-<../../doc/template/Images/FlipItCase2.png, id=307, 403.2666pt x 498.4221pt>
+<../../doc/template/Images/FlipItCase2.png, id=309, 403.2666pt x 498.4221pt>
 File: ../../doc/template/Images/FlipItCase2.png Graphic file (type png)
 
 <use ../../doc/template/Images/FlipItCase2.png>
@@ -1723,7 +1723,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
-[9] <Images/PrisDilemma.png, id=498, 466.3824pt x 318.9516pt>
+[9] <Images/PrisDilemma.png, id=500, 466.3824pt x 318.9516pt>
 File: Images/PrisDilemma.png Graphic file (type png)
 
 <use Images/PrisDilemma.png>
@@ -1745,7 +1745,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
  []
 
-<../../doc/template/Images/DefFlipItt.png, id=504, 512.3943pt x 92.9874pt>
+<../../doc/template/Images/DefFlipItt.png, id=506, 512.3943pt x 92.9874pt>
 File: ../../doc/template/Images/DefFlipItt.png Graphic file (type png)
 
 <use ../../doc/template/Images/DefFlipItt.png>
@@ -1839,7 +1839,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 145--147
 
  []
 
-<Images/DefFlip.pdf, id=583, 512.38626pt x 108.42407pt>
+<Images/DefFlip.pdf, id=585, 512.38626pt x 108.42407pt>
 File: Images/DefFlip.pdf Graphic file (type pdf)
 
 <use Images/DefFlip.pdf>
@@ -1851,7 +1851,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 167--168
 
  []
 
-<Images/Delayuitgelegd.pdf, id=616, 512.38626pt x 236.17334pt>
+<Images/Delayuitgelegd.pdf, id=618, 512.38626pt x 236.17334pt>
 File: Images/Delayuitgelegd.pdf Graphic file (type pdf)
 
 <use Images/Delayuitgelegd.pdf>
@@ -1863,14 +1863,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 176--177
  []
 
 [21 <C:/Users/ECONGUEST/Documents/GitHub/Gametheory/doc/template/Images/Delayui
-tgelegd.pdf>] <Images/FlipItCase1delay.pdf, id=650, 519.29205pt x 87.99817pt>
+tgelegd.pdf>] <Images/FlipItCase1delay.pdf, id=652, 519.29205pt x 87.99817pt>
 File: Images/FlipItCase1delay.pdf Graphic file (type pdf)
 
 <use Images/FlipItCase1delay.pdf>
 Package pdftex.def Info: Images/FlipItCase1delay.pdf used on input line 185.
 (pdftex.def)             Requested size: 363.50195pt x 61.59828pt.
 
-<Images/FlipItCase1delaytobig.pdf, id=651, 512.38626pt x 77.18385pt>
+<Images/FlipItCase1delaytobig.pdf, id=653, 512.38626pt x 77.18385pt>
 File: Images/FlipItCase1delaytobig.pdf Graphic file (type pdf)
 
 <use Images/FlipItCase1delaytobig.pdf>
@@ -1890,7 +1890,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 208--209
  []
 
 
-<../../doc/template/Images/DiffDelayCase1.pdf, id=706, 512.38626pt x 236.17334p
+<../../doc/template/Images/DiffDelayCase1.pdf, id=708, 512.38626pt x 236.17334p
 t>
 File: ../../doc/template/Images/DiffDelayCase1.pdf Graphic file (type pdf)
  <use ../../doc/template/Images/DiffDelayCase1.pdf>
@@ -1898,7 +1898,7 @@ Package pdftex.def Info: ../../doc/template/Images/DiffDelayCase1.pdf used on i
 nput line 217.
 (pdftex.def)             Requested size: 358.66794pt x 165.32019pt.
 
-<../../doc/template/Images/delaydtijdens.pdf, id=709, 512.38626pt x 113.75499pt
+<../../doc/template/Images/delaydtijdens.pdf, id=711, 512.38626pt x 113.75499pt
 >
 File: ../../doc/template/Images/delaydtijdens.pdf Graphic file (type pdf)
  <use ../../doc/template/Images/delaydtijdens.pdf>
@@ -1937,7 +1937,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 292--293
 
  []
 
-<../../doc/template/Images/FlipIt2.pdf, id=781, 403.371pt x 683.10506pt>
+<../../doc/template/Images/FlipIt2.pdf, id=783, 403.371pt x 683.10506pt>
 File: ../../doc/template/Images/FlipIt2.pdf Graphic file (type pdf)
 
 <use ../../doc/template/Images/FlipIt2.pdf>
@@ -1960,7 +1960,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 323--324
 
  []
 
-<Images/flipcase2nb.pdf, id=817, 403.371pt x 213.21759pt>
+<Images/flipcase2nb.pdf, id=819, 403.371pt x 213.21759pt>
 File: Images/flipcase2nb.pdf Graphic file (type pdf)
 
 <use Images/flipcase2nb.pdf>
@@ -2022,7 +2022,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
-<Images/ShapesUp.png, id=877, 446.41782pt x 315.42844pt>
+<Images/ShapesUp.png, id=879, 446.41782pt x 315.42844pt>
 File: Images/ShapesUp.png Graphic file (type png)
 
 <use Images/ShapesUp.png>
@@ -2033,7 +2033,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
-<Images/ShapeDown.png, id=879, 444.91219pt x 312.41719pt>
+<Images/ShapeDown.png, id=881, 444.91219pt x 312.41719pt>
 File: Images/ShapeDown.png Graphic file (type png)
 
 <use Images/ShapeDown.png>
@@ -2115,7 +2115,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--68
 
  []
 
-<Images/tableworms.png, id=952, 811.53188pt x 342.5297pt>
+<Images/tableworms.png, id=953, 811.53188pt x 342.5297pt>
 File: Images/tableworms.png Graphic file (type png)
 
 <use Images/tableworms.png>
@@ -2161,75 +2161,75 @@ Underfull \hbox (badness 10000) in paragraph at lines 264--265
  []
 
 [44]
-Underfull \hbox (badness 10000) in paragraph at lines 267--277
+Underfull \hbox (badness 10000) in paragraph at lines 279--288
+
+ []
+
+[45]
+Underfull \hbox (badness 10000) in paragraph at lines 297--299
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 286--288
+Underfull \hbox (badness 10000) in paragraph at lines 300--302
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 289--291
+Underfull \hbox (badness 10000) in paragraph at lines 353--354
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 342--343
+Underfull \hbox (badness 10000) in paragraph at lines 356--367
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--356
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46]
+Underfull \hbox (badness 10000) in paragraph at lines 368--369
 
  []
 
 
-Underfull \vbox (badness 3612) has occurred while \output is active []
-
- [45]
-Underfull \hbox (badness 10000) in paragraph at lines 357--358
+Underfull \hbox (badness 10000) in paragraph at lines 371--382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--371
+Underfull \hbox (badness 10000) in paragraph at lines 383--384
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 372--373
+Underfull \hbox (badness 10000) in paragraph at lines 398--400
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 387--389
+Underfull \hbox (badness 10000) in paragraph at lines 401--404
+
+ []
+
+[47]
+Underfull \hbox (badness 10000) in paragraph at lines 405--406
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--393
+Underfull \hbox (badness 10000) in paragraph at lines 407--408
 
  []
 
-[46]
-Underfull \hbox (badness 10000) in paragraph at lines 394--395
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 396--397
-
- []
-
-) [47]
-(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\conclusion.tex
-[48
+) [48]
+(C:\Users\ECONGUEST\Documents\GitHub\Gametheory\doc\template\conclusion.tex)
+[49
 
 
 
-]) [49] [50
+] [50
 
 
 ]
@@ -2264,28 +2264,25 @@ Package rerunfilecheck Warning: File `masterproef.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `masterproef.out':
-(rerunfilecheck)             Before: 92BEEA85A2370EC4501940B069BD2195;1817
-(rerunfilecheck)             After:  B3D38F3D475605A3721249B7AF5DDBE7;1817.
+(rerunfilecheck)             Before: B3D38F3D475605A3721249B7AF5DDBE7;1817
+(rerunfilecheck)             After:  1E35F359622A239CF58456A20E4C4687;1817.
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 534.
  ) 
 Here is how much of TeX's memory you used:
- 27290 strings out of 493921
- 498250 string characters out of 3144864
- 753676 words of memory out of 3000000
+ 27292 strings out of 493921
+ 498269 string characters out of 3144864
+ 749519 words of memory out of 3000000
  29570 multiletter control sequences out of 15000+200000
  102103 words of font info for 186 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  60i,12n,92p,2193b,977s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{figure.caption.76} has been referenced but does n
+pdfTeX warning (dest): name{figure.caption.77} has been referenced but does n
 ot exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.73} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.78} has been referenced but does not exist
+pdfTeX warning (dest): name{section*.79} has been referenced but does not exist
 , replaced by a fixed one
 
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Fil
@@ -2310,9 +2307,9 @@ m Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files (x86
 )/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Program Files (x86)/MiKTeX 2.
 9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
 type1/urw/helvetic/uhvr8a.pfb>
-Output written on masterproef.pdf (76 pages, 2861009 bytes).
+Output written on masterproef.pdf (76 pages, 2864884 bytes).
 PDF statistics:
- 1178 PDF objects out of 1200 (max. 8388607)
- 268 named destinations out of 1000 (max. 500000)
+ 1181 PDF objects out of 1200 (max. 8388607)
+ 270 named destinations out of 1000 (max. 500000)
  27970 words of extra memory for PDF output out of 29859 (max. 10000000)
 

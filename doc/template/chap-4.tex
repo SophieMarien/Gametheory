@@ -265,6 +265,17 @@ As can be seen in table \ref{tree} most propagation models are for a specific ne
 
 %All of the above models for modelling the mechanism of the spreading of a worm depend on the kind of topology of the network.  
 In this chapter we propose a method to calculate the spread of the worm in way that the topology of the network can be easily integrated. The method will give an approximation of how fast a worm can infect a network. The method is based on the method for Google Page Ranking \cite{GoogleRank}. 
+
+\subsubsection{Google PageRank algorithm}
+The PageRank algorithm is introduced by Page and Brin in 1998 as one of the main features of the search engine Google to improve the search results. PageRank models the human behaviour when users surf through the net. It can also model \textit{random surfers}. A random surfer is the probability that a surfer gets bored and randomly visits another page which is not linked with the initial page. The probability that he will visit a random page is the PageRank of that page. A page will have a high PageRank if many pages will point to this page. This means that this page is well cited through other pages and maybe an important one to look at.    The main idea of the PageRank algorithm is to look at the number of (important) web pages that point to a particular page. The ranking of this page depends than on the number of out coming links and the importance of the pages that link to this page. With a probability of $P$ the surfer will follow a link of the page to another page, and with a probability of $1-P$ the surfer will surf to a random page. The PageRank algorithm is expressed as follows:
+\begin{equation}
+PageRank(A)=P \sum \dfrac{PageRank(i)}{d_{out,i}} + (1-P) \cdot e_{A}
+\end{equation}
+where $N_{A}$ is the number of pages, $PR(i)$ is the ranking of web page $i$, $D_{out,i}$ is the number of outgoing links of page $i$, $(1-P)$ the probability that a random page is searched, and $e_{A}$ the restart value for web page A which is often uniformly distributed among all web pages.
+
+\subsubsection{Model with matrix}
+
+
 For some of the spreading methods, the graph of the network matters. It is important to have the right topology for the right method. Email worms need a topology that represent a social network, BGP routing worms need a topology on network level. \\
 %--iets zeggen dat het ook belangrijk is voor de defender om zijn netwerk zo aan te passen dat het virus moeilijker kan verspreiden. Network segregation mss aanhalen ?--
 %
