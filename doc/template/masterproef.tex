@@ -1,4 +1,4 @@
-\documentclass[master=cws, masteroption=vs,english]{kulemt}
+ \documentclass[master=cws, masteroption=vs,english]{kulemt}
 
 % Vul de titel van jouw masterproef hieronder in tussen { en }.
 
@@ -291,36 +291,36 @@ Veronderstel dat een aanvaller aanvalt op moment \ textit {t}. Hij krijgt niet o
 De formalisering begint bij het model van de niet-adaptieve continue basis FlipIt spel waarbij spelers een periodieke strategie gebruiken met willekeurige fase. Deze keuze wordt gemotiveerd door de veronderstelling dat in de meeste bedrijven, de verdediging strategie is om het netwerk periodiek verdedigen. Deze periodieke komt overeen met een defensiestrategie. Een periodieke aanvaller strategie wordt ook uitgegaan In staat om de resultaten te vergelijken met de periodieke strategie van het spel Flipit in \cite{Flipit}. %, As esta ook overeen met een real-life gemeenschappelijke strategie. % Nog verder Eventueel je motiveren
 Verder onderzoek kan het effect van ontspannende esta veronderstelling te onderzoeken. \\
 
-Op dezelfde manier als in cite{}Flipit,delen we de formalisering in twee gevallen. Het eerste geval is waarbij de verdediger minstens zo snel speelt als de aanvaller. Het tweede geval is wanneer de aanvaller minstens zo snel speelt als de verdediger. Voor elk van deze gevallen presenteren we eerst de \textit{gain} formule van een FlipIt spel zonder vertraging, en daarna introduceren we de vertraging. \\
+Op dezelfde manier als in Flipit \citep{FlipIt}, delen we de formalisering in twee gevallen. In het eerste geval speelt de verdediger minstens zo snel als de aanvaller en in het tweede geval speelt de aanvaller minstens zo snel als de verdediger. Voor beide gevallen presenteren we eerst de \textit{gain} formule van een FlipIt spel zonder vertraging, en daarna introduceren we de vertraging. \\
 
 \subsection{ Formalisatie van de benefit formule met een vertraging}
-Een periodische strategie is een niet-adaptieve renewal strategie waarbij de tijdsintervallen tussen twee opeenvolgende bewegingen van een vaste waarde zijn, weergegeven als $\delta$. Bovendien heeft het een random fase die uniform en random gekozen is in het eerste interval tijdens de eerste beweging $[0,\delta]$. De gemiddelde snelheid van spelen van een speler wordt als volgt uitgedrukt: $\alpha_{i} = \dfrac{1}{\delta_{i}}$. \\
+Een periodische strategie is een niet-adaptieve renewal strategie waarbij de tijdsintervallen tussen twee opeenvolgende bewegingen van een vaste waarde zijn, weergegeven als $\delta$. Bovendien heeft het een random fase die uniform en random gekozen is in het eerste interval tijdens de eerste beweging $[0,\delta]$. De gemiddelde snelheid van de bewegingen van een speler wordt als volgt uitgedrukt: $\alpha_{i} = \dfrac{1}{\delta_{i}}$. \\
 ~~\\
 
-\subsection*{\textbf{Case 1:} $\delta_{D} \leq \delta_{A} $ (The verdediger speelt minstens zo snel als de aanvaller.) }
+\subsection*{\textbf{Case 1:} $\delta_{D} \leq \delta_{A} $ (De verdediger speelt minstens zo snel als de aanvaller.) }
 
-Let $r = \dfrac{\delta_{D}}{ \delta_{A} }$. The intervals between two consecutive defender's moves have length $\delta_{D}$. Consider a given defender move interval. The probability over the attacker's phase selection that the attacker moves in this interval is r. Given that the attacker moves within the interval, he moves exactly once within the interval (since $\delta_{D} \leq \delta_{A} $) and his move is distributed uniformly at random. \\
+Stel $r = \dfrac{\delta_{D}}{ \delta_{A} }$. The intervallen tussen twee opeenvolgende bewegingen hebben lengte $\delta_{D}$. Beschouw een interval van de verdediger. De waarschijnlijkheids-verdeling over de fase van de aanvaller dat de aanvaller beweegt in het interval is r. De aanvaller zal exact een keer bewegen in het interval, gegeven dat hij beweegt in dit interval (omdat $\delta_{D} \leq \delta_{A} $) en omdat zijn bewegingen uniform en random gedistribueerd zijn. \\
 
-The expected period of attacker control within the interval would be r/2, without considering the delay by a virus. Therefore the benefit for the attacker, without considering the delay, can be expressed as follows:
+De verwachte periode dat de aanvaller controle heeft in dit interval is r/2, zonder de vertraging door een virus in acht te nemen. Daarom kan de benefit voor de aanvaller, zonder de vertraging, als volgt uitgeschreven worden:
 
 \begin{equation}\label{first}
 \beta_{A}(\alpha_{D},\alpha_{A}) =\dfrac {r} {2} - k_{A} \alpha_{A} = \dfrac {\delta_{D}} {2\delta_{A}} - k_{A} \alpha_{A}  
 \end{equation}\\
 
-Correspondingly, the benefit for the defender can be expressed as:
+Bijgevolg is de benefit voor de verdediger:
 \begin{equation}\label{first}
 \beta_{D}(\alpha_{D},\alpha_{A}) =1 -  \dfrac {r} {2} - k_{D} \alpha_{D} = 1 - \dfrac {\delta_{D}} {2\delta_{A}} - k_{D} \alpha_{D} 
 \end{equation}
 
 \begin{figure}[hbtp]
-\caption{The first FlipIt game is one without virus propagation. The second one is with virus propagation and \textit{d} = 1. The delay is denoted with an arrow.}
+\caption{Het eerste spel is een spel zonder virus propagatie. Het tweede spel is een spel met virus propagatie en \textit{d} = 1. De vertraging wordt aangeduid met een pijl.}
 \centering
 \includegraphics[scale=0.4]{../../doc/template/Images/FLipItCase1.pdf}
 \label{fig:delaycase1}
 \end{figure}
 
 
-However, because of the delay required for virus propagation, the maximal time of control is reduced to $\delta_{D}-d$ , see figure \ref{fig:delaycase1}. There is a probability of \textit{r} that the attacker will move in the interval of the defender. However, the gain will not be half of the interval. Indeed, the attacker has to play soon enough to gain control, meaning that the attacker has to play during the period of $\delta_{D}-d$ during the interval of the defender. The probability that the attacker plays soon enough is $\dfrac{\delta_{D}-d}{\delta_{D}}$ and this will give the attacker an average gain of $\dfrac{\delta_{D}-d}{2}$. If the attacker moves after the period of $\delta_{D}-d$, the gain of the attacker will be zero. The probability that this happens is  $\dfrac{d}{\delta_{D}}$. The average gain rate of the attacker can then be expressed as follows if we look at one interval of the defender:
+Echter, omwille van de vertraging die nodig is door de virus propagatie, is de maxinale tijd dat de aanvaller in controle kan zijn verminderd naar $\delta_{D}-d$. Zie figuur \ref{fig:delaycase1}. There is a probability of \textit{r} that the attacker will move in the interval of the defender. However, the gain will not be half of the interval. Indeed, the attacker has to play soon enough to gain control, meaning that the attacker has to play during the period of $\delta_{D}-d$ during the interval of the defender. The probability that the attacker plays soon enough is $\dfrac{\delta_{D}-d}{\delta_{D}}$ and this will give the attacker an average gain of $\dfrac{\delta_{D}-d}{2}$. If the attacker moves after the period of $\delta_{D}-d$, the gain of the attacker will be zero. The probability that this happens is  $\dfrac{d}{\delta_{D}}$. The average gain rate of the attacker can then be expressed as follows if we look at one interval of the defender:
 \begin{equation}\label{first}
 \gamma_{A}(\alpha_{D},\alpha_{A}) = \dfrac {1}{\delta_{D}} [ \dfrac{\delta_{D}}{\delta_{A}} \cdot \dfrac{\delta_{D}-d}{\delta_{D}} \cdot \dfrac{\delta_{D}-d}{2} + \dfrac{\delta_{D}}{\delta_{A}} \cdot \dfrac{d}{\delta_{D}} \cdot 0 ]
 \end{equation}
