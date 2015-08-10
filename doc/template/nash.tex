@@ -132,7 +132,7 @@ The stationary points (maximum, minimum) can be found by setting the first deriv
 \end{equation*}
 
 
-For case 2.B this leads to the following deduction, which results in the same formula as for case 1 but with a small difference for the value of $\delta_{D}$: The function increases on $[0, \sqrt{2\delta_{A}k_{D} + d^{2}}]$ and is decreasing on $[\sqrt{2\delta_{A}k_{D} + d^{2}}, \infty]$. Because $\delta_{D} \geq \delta_{A}$ there is a maximum on $\delta_{D} = maximum \{ \delta_{A}, \sqrt{2\delta_{A}k_{D} + d^{2}} \} $ or because $d+\delta_{A} \geq \delta_{D}$ there is also on $\delta_{D} = minimum \{ \delta_{A}+d, \sqrt{2\delta_{A}k_{D} + d^{2}} \} $. \todo{beter uitschrijven, deltaD moet tussen die twee waarden liggen}\\
+For case 2.B this leads to the following deduction, which results in the same formula as for case 1 but with a small difference for the value of $\delta_{D}$: The function increases on $[0, \sqrt{2\delta_{A}k_{D} + d^{2}}]$ and is decreasing on $[\sqrt{2\delta_{A}k_{D} + d^{2}}, \infty]$. Because $\delta_{D} \geq \delta_{A}$ there is a maximum on $\delta_{D} = maximum \{ \delta_{A}, \sqrt{2\delta_{A}k_{D} + d^{2}} \} $ or because $d+\delta_{A} \geq \delta_{D}$ there is also on $\delta_{D} = minimum \{ \delta_{A}+d, \sqrt{2\delta_{A}k_{D} + d^{2}} \} $. %-Remark- \todo{beter uitschrijven, deltaD moet tussen die twee waarden liggen}\\
 
 \subsubsection{Best responses}
 The optimum functions will be piecewise functions. We distinguish three cases for different values of $\delta_{A}$ depending on the values of $k_{D}$ and $d$. 
@@ -187,7 +187,7 @@ The stationary points (maximum, minimum) can be found by setting the first deriv
 \frac{\partial \beta_{A}(\delta_{D},\delta_{A})}{\partial \delta_{D}} =0 ~~~~~~ =>~~~~~~  \delta_{D}= \dfrac{(\delta_{D}-d)^{2}}{2k_{A}}
 \end{equation*}
 
-It follows that $\beta_{A}(\delta_{D},\cdot)$ is increasing if $\delta_{D}> \dfrac{(\delta_{D}-d)^{2}}{2k_{A}}$ and decreasing if $\delta_{D} < \dfrac{(\delta_{D}-d)^{2}}{2k_{A}}$  \\
+It follows that $\beta_{A}(\delta_{D},\cdot)$ is increasing and non-positive if $\delta_{D}> \dfrac{(\delta_{D}-d)^{2}}{2k_{A}}$ and decreasing and positive if $\delta_{D} < \dfrac{(\delta_{D}-d)^{2}}{2k_{A}}$  \\
 
 \subsection*{Case 2.A: $\delta_{D} \geq d+\delta_{A} \geq \delta_{A} $ }
 The benefit formula obtained from the previous chapter \ref{benfcase2a:attacker} for this case is as follows:
@@ -220,7 +220,7 @@ The stationary points (maximum, minimum) can be found by setting the first deriv
 \end{equation*}
 
 
-It follows that $\beta_{A}(\delta_{D},\cdot)$ is increasing if $\delta_{D} > \dfrac{(\delta_{D}-d)^{2}}{2k_{A}}$ and decreasing if $\delta_{D} < \dfrac{(\delta_{D}-d)^{2}}{2k_{A}}$. This is the same result as in case 1.\\
+It follows that $\beta_{A}(\delta_{D},\cdot)$ is increasing and non-positif if $\delta_{D} > \dfrac{(\delta_{D}-d)^{2}}{2k_{A}}$ and decreasing and positive if $\delta_{D} < \dfrac{(\delta_{D}-d)^{2}}{2k_{A}}$. This is the same result as in case 1.\\
 
 
 \subsubsection{Best responses}
@@ -235,16 +235,17 @@ From case 1 and case 2.b above, it follows that the benefit is decreasing but po
 \subsubsection*{$\delta_{D} = \dfrac{(\delta_{D}-d)^{2}}{2k_{A}}$} 
 The benefit $\beta_{A}(\delta_{D},\delta_{A})=0$ for case 1 and case 2.b for all $\delta_{D}$ in $[0, \infty [$. For case 2.a it follows that the benefit is increasing. The attacker's maximum benefit is achieved at any $\delta_{A} $ in 
 \subsubsection*{$\delta_{D} > \dfrac{(\delta_{D}-d)^{2}}{2k_{A}}$} 
-For case 1 and case 2.b the benefit is increasing but non-positive. This means that the attacker won't play ($delta_{A} = \infty$). 
+For case 1 and case 2.b the benefit is increasing but non-positive. This means that the attacker won't play ($\delta_{A} = \infty$). 
+\\
+~~\\
+From this analyses we can compute $opt_{A}(\delta_{D})$ : 
 
-This brings us to the following opt function for : \todo{juiste resultaten hier nog invullen}
-From this analyses we can compute $opt_{D}(\delta_{A})$ for two different cases as:
  \begin{displaymath}
   opt_{A}(\delta_{D}) = \left\{
      \begin{array}{lr}
-       \delta_{D}, & \delta_{A} < 2(k_{D} - d)\\
-       \left[ 0, \delta_{D} \right],  & \delta_{A} = 2(k_{D} - d) \\
-       0 & \delta_{A} > 2(k_{D} - d)
+       \sqrt{d k_{A}\delta_{D}}, & \delta_{D} > \dfrac{(\delta_{D}-d)^{2}}{2k_{A}}\\
+       \left[ \sqrt{d k_{A}\delta_{D}}, \infty\right],  & \delta_{D} = \dfrac{(\delta_{D}-d)^{2}}{2k_{A}} \\
+       \infty & \delta_{D} < \dfrac{(\delta_{D}-d)^{2}}{2k_{A}}
      \end{array}
    \right.
 \end{displaymath}

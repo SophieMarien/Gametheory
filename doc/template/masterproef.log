@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.27)  10 AUG 2015 22:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.27)  10 AUG 2015 22:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1446,13 +1446,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 192--193
 
  []
 
-<../../doc/template/Images/DefFlipit.png, id=236, 512.3943pt x 92.9874pt>
-File: ../../doc/template/Images/DefFlipit.png Graphic file (type png)
+<../../doc/template/Images/FlipBasic.pdf, id=232, 512.38626pt x 108.42407pt>
+File: ../../doc/template/Images/FlipBasic.pdf Graphic file (type pdf)
 
-<use ../../doc/template/Images/DefFlipit.png>
-Package pdftex.def Info: ../../doc/template/Images/DefFlipit.png used on input 
+<use ../../doc/template/Images/FlipBasic.pdf>
+Package pdftex.def Info: ../../doc/template/Images/FlipBasic.pdf used on input 
 line 197.
-(pdftex.def)             Requested size: 358.67357pt x 65.09073pt.
+(pdftex.def)             Requested size: 358.66794pt x 75.89632pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 198.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1468,22 +1468,22 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 210.
+(babel)             in language  on input line 207.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 210.
+(babel)             in language  on input line 207.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 210.
+(babel)             in language  on input line 207.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 210.
+(babel)             in language  on input line 207.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 210.
+(babel)             in language  on input line 207.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 210.
+(babel)             in language  on input line 207.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 210.
+(babel)             in language  on input line 207.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 210.
-[6 <../../doc/template/Images/DefFlipit.png>]
+(babel)             in language  on input line 207.
+[6 <../../doc/template/Images/FlipBasic.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 239--241
 
  []
@@ -1607,13 +1607,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 307--308
 
  []
 
-<../../doc/template/Images/FLipItCase1.pdf, id=277, 594.22pt x 316.18124pt>
-File: ../../doc/template/Images/FLipItCase1.pdf Graphic file (type pdf)
 
-<use ../../doc/template/Images/FLipItCase1.pdf>
-Package pdftex.def Info: ../../doc/template/Images/FLipItCase1.pdf used on inpu
-t line 316.
-(pdftex.def)             Requested size: 297.10927pt x 158.09023pt.
+<../../doc/template/Images/Delayuitgelegd.pdf, id=295, 512.38626pt x 236.17334p
+t>
+File: ../../doc/template/Images/Delayuitgelegd.pdf Graphic file (type pdf)
+ <use ../../doc/template/Images/Delayuitgelegd.pdf>
+Package pdftex.def Info: ../../doc/template/Images/Delayuitgelegd.pdf used on i
+nput line 316.
+(pdftex.def)             Requested size: 307.43413pt x 141.70508pt.
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 323.
 Package babel Info: Redefining dutch shorthand "~
@@ -1656,7 +1657,7 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 347.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 347.
-[11 <../../doc/template/Images/FLipItCase1.pdf>]
+[11 <../../doc/template/Images/Delayuitgelegd.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 355--356
 
  []
@@ -1697,13 +1698,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 383--384
 
  []
 
-<../../doc/template/Images/FlipItCase2.png, id=322, 403.2666pt x 498.4221pt>
-File: ../../doc/template/Images/FlipItCase2.png Graphic file (type png)
+<../../doc/template/Images/FlipIt2.pdf, id=354, 403.371pt x 683.10506pt>
+File: ../../doc/template/Images/FlipIt2.pdf Graphic file (type pdf)
 
-<use ../../doc/template/Images/FlipItCase2.png>
-Package pdftex.def Info: ../../doc/template/Images/FlipItCase2.png used on inpu
-t line 388.
-(pdftex.def)             Requested size: 201.6328pt x 249.21043pt.
+<use ../../doc/template/Images/FlipIt2.pdf>
+Package pdftex.def Info: ../../doc/template/Images/FlipIt2.pdf used on input li
+ne 387.
+(pdftex.def)             Requested size: 201.685pt x 341.5517pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 393--394
 
@@ -1736,32 +1737,28 @@ Package babel Info: Redefining dutch shorthand "y
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 402.
 [13]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 413.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 413.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 413.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 413.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 413.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 413.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 413.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 413.
+ [14 <../../doc/template/Images/FlipIt2.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 417--418
 
  []
 
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 422.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 422.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 422.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 422.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 422.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 422.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 422.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 422.
-[14 <../../doc/template/Images/FlipItCase2.png
 
-pdfTeX warning: /usr/texbin/pdflatex (file ../../doc/template/Images/FlipItCase
-2.png): large interlaced PNG might cause out of memory (use non-interlaced PNG 
-to fix this)
->]
 Underfull \hbox (badness 10000) in paragraph at lines 422--423
 
  []
@@ -1875,7 +1872,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
 
-[9] <Images/PrisDilemma.png, id=517, 466.3824pt x 318.9516pt>
+[9] <Images/PrisDilemma.png, id=575, 466.3824pt x 318.9516pt>
 File: Images/PrisDilemma.png Graphic file (type png)
 
 <use Images/PrisDilemma.png>
@@ -1896,19 +1893,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 209--210
 
  []
 
-<../../doc/template/Images/DefFlipItt.png, id=523, 512.3943pt x 92.9874pt>
-File: ../../doc/template/Images/DefFlipItt.png Graphic file (type png)
-
-<use ../../doc/template/Images/DefFlipItt.png>
-Package pdftex.def Info: ../../doc/template/Images/DefFlipItt.png used on input
- line 214.
-(pdftex.def)             Requested size: 358.67357pt x 65.09073pt.
+File: ../../doc/template/Images/FlipBasic.pdf Graphic file (type pdf)
+<use ../../doc/template/Images/FlipBasic.pdf>
+Package pdftex.def Info: ../../doc/template/Images/FlipBasic.pdf used on input 
+line 214.
+(pdftex.def)             Requested size: 358.66794pt x 75.89632pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 221--224
 
  []
 
-[11 <../../doc/template/Images/DefFlipItt.png>]
+[11]
 Underfull \hbox (badness 10000) in paragraph at lines 255--257
 
  []
@@ -1990,7 +1985,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 145--147
 
  []
 
-<Images/DefFlip.pdf, id=603, 512.38626pt x 108.42407pt>
+<Images/DefFlip.pdf, id=659, 512.38626pt x 108.42407pt>
 File: Images/DefFlip.pdf Graphic file (type pdf)
 
 <use Images/DefFlip.pdf>
@@ -2001,7 +1996,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 167--168
 
  []
 
-<Images/Delayuitgelegd.pdf, id=636, 512.38626pt x 236.17334pt>
+<Images/Delayuitgelegd.pdf, id=692, 512.38626pt x 236.17334pt>
 File: Images/Delayuitgelegd.pdf Graphic file (type pdf)
 
 <use Images/Delayuitgelegd.pdf>
@@ -2013,14 +2008,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 176--177
  []
 
 [21 <./Images/Delayuitgelegd.pdf>]
-<Images/FlipItCase1delay.pdf, id=670, 519.29205pt x 87.99817pt>
+<Images/FlipItCase1delay.pdf, id=726, 519.29205pt x 87.99817pt>
 File: Images/FlipItCase1delay.pdf Graphic file (type pdf)
 
 <use Images/FlipItCase1delay.pdf>
 Package pdftex.def Info: Images/FlipItCase1delay.pdf used on input line 185.
 (pdftex.def)             Requested size: 363.50195pt x 61.59828pt.
 
-<Images/FlipItCase1delaytobig.pdf, id=671, 512.38626pt x 77.18385pt>
+<Images/FlipItCase1delaytobig.pdf, id=727, 512.38626pt x 77.18385pt>
 File: Images/FlipItCase1delaytobig.pdf Graphic file (type pdf)
 
 <use Images/FlipItCase1delaytobig.pdf>
@@ -2038,7 +2033,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 208--209
  []
 
 
-<../../doc/template/Images/DiffDelayCase1.pdf, id=726, 512.38626pt x 236.17334p
+<../../doc/template/Images/DiffDelayCase1.pdf, id=783, 512.38626pt x 236.17334p
 t>
 File: ../../doc/template/Images/DiffDelayCase1.pdf Graphic file (type pdf)
  <use ../../doc/template/Images/DiffDelayCase1.pdf>
@@ -2046,7 +2041,7 @@ Package pdftex.def Info: ../../doc/template/Images/DiffDelayCase1.pdf used on i
 nput line 217.
 (pdftex.def)             Requested size: 358.66794pt x 165.32019pt.
 
-<../../doc/template/Images/delaydtijdens.pdf, id=729, 512.38626pt x 113.75499pt
+<../../doc/template/Images/delaydtijdens.pdf, id=786, 512.38626pt x 113.75499pt
 >
 File: ../../doc/template/Images/delaydtijdens.pdf Graphic file (type pdf)
  <use ../../doc/template/Images/delaydtijdens.pdf>
@@ -2083,14 +2078,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 292--293
 
  []
 
-<../../doc/template/Images/FlipIt2.pdf, id=802, 403.371pt x 683.10506pt>
 File: ../../doc/template/Images/FlipIt2.pdf Graphic file (type pdf)
-
 <use ../../doc/template/Images/FlipIt2.pdf>
 Package pdftex.def Info: ../../doc/template/Images/FlipIt2.pdf used on input li
 ne 296.
 (pdftex.def)             Requested size: 282.35777pt x 478.17029pt.
- [25] [26 <../../doc/template/Images/FlipIt2.pdf>]
+ [25] [26]
 Underfull \hbox (badness 10000) in paragraph at lines 314--315
 
  []
@@ -2105,7 +2098,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 323--324
 
  []
 
-<Images/flipcase2nb.pdf, id=838, 403.371pt x 213.21759pt>
+<Images/flipcase2nb.pdf, id=867, 403.371pt x 213.21759pt>
 File: Images/flipcase2nb.pdf Graphic file (type pdf)
 
 <use Images/flipcase2nb.pdf>
@@ -2168,7 +2161,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
-<Images/ShapesUp.png, id=898, 446.41782pt x 315.42844pt>
+<Images/ShapesUp.png, id=927, 446.41782pt x 315.42844pt>
 File: Images/ShapesUp.png Graphic file (type png)
 
 <use Images/ShapesUp.png>
@@ -2179,7 +2172,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
-<Images/ShapeDown.png, id=900, 444.91219pt x 312.41719pt>
+<Images/ShapeDown.png, id=930, 444.91219pt x 312.41719pt>
 File: Images/ShapeDown.png Graphic file (type png)
 
 <use Images/ShapeDown.png>
@@ -2190,12 +2183,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
-[32]
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
-
- []
-
-[33 <./Images/ShapesUp.png> <./Images/ShapeDown.png>]
+[32] [33 <./Images/ShapesUp.png> <./Images/ShapeDown.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
@@ -2225,8 +2213,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 223--224
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--242
+
+ []
+
 [36]
-Underfull \hbox (badness 10000) in paragraph at lines 250--252
+Underfull \hbox (badness 10000) in paragraph at lines 251--253
 
  []
 
@@ -2261,7 +2254,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
-<Images/tableworms.png, id=980, 811.53188pt x 342.5297pt>
+<Images/tableworms.png, id=1010, 811.53188pt x 342.5297pt>
 File: Images/tableworms.png Graphic file (type png)
 
 <use Images/tableworms.png>
@@ -2403,7 +2396,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 533.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 533.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 533.
 Package rerunfilecheck Info: File `masterproef.out' has not changed.
-(rerunfilecheck)             Checksum: 903DE18646945C0ED66D2A4B11703F17;1796.
+(rerunfilecheck)             Checksum: FFE98574B6D4BD74953CE103581AB6EA;1796.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2411,11 +2404,11 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 533.
  ) 
 Here is how much of TeX's memory you used:
- 25654 strings out of 493315
- 444324 string characters out of 6137903
- 716020 words of memory out of 5000000
- 28065 multiletter control sequences out of 15000+600000
- 103392 words of font info for 197 fonts, out of 8000000 for 9000
+ 25629 strings out of 493315
+ 443612 string characters out of 6137903
+ 714262 words of memory out of 5000000
+ 28047 multiletter control sequences out of 15000+600000
+ 103262 words of font info for 196 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  61i,12n,92p,2193b,944s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
@@ -2440,10 +2433,10 @@ msy6.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></
 usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/
 texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive
 /2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on masterproef.pdf (76 pages, 2748807 bytes).
+Output written on masterproef.pdf (76 pages, 3106798 bytes).
 PDF statistics:
- 1211 PDF objects out of 1440 (max. 8388607)
- 952 compressed objects within 10 object streams
- 276 named destinations out of 1000 (max. 500000)
- 27970 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 1241 PDF objects out of 1440 (max. 8388607)
+ 957 compressed objects within 10 object streams
+ 274 named destinations out of 1000 (max. 500000)
+ 27960 words of extra memory for PDF output out of 29859 (max. 10000000)
 
