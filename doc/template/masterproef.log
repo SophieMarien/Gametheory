@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.27)  10 AUG 2015 18:13
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.27)  10 AUG 2015 19:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2232,36 +2232,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 223--224
 
  []
 
-! Missing } inserted.
-<inserted text> 
-                }
-l.233 ...for $\delta_{A} = \sqrt{dk_{A}\delta_{D}$
-                                                  .
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.234 ...A} = \delta_{A} = \sqrt{dk_{A}\delta_{D}$
-                                                    .
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.237 \subsubsection
-                    *{$\delta_{D} > \dfrac{(\delta_{D}-d)^{2}}{2k_{A}}$}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
 [36]
 Underfull \hbox (badness 10000) in paragraph at lines 250--252
 
@@ -2452,7 +2422,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 531.
 Here is how much of TeX's memory you used:
  25655 strings out of 493315
  444332 string characters out of 6137903
- 716310 words of memory out of 5000000
+ 717306 words of memory out of 5000000
  28066 multiletter control sequences out of 15000+600000
  103345 words of font info for 197 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -2479,7 +2449,7 @@ msy6.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></
 usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/
 texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive
 /2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on masterproef.pdf (76 pages, 2749580 bytes).
+Output written on masterproef.pdf (76 pages, 2749719 bytes).
 PDF statistics:
  1211 PDF objects out of 1440 (max. 8388607)
  952 compressed objects within 10 object streams
