@@ -49,8 +49,9 @@
 \contentsline {section}{\numberline {4.1}Nash Equilibria}{31}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Determining the piecewise functions $opt_{D}(\delta _{A})$}{31}{subsection.4.1.1}
 \contentsline {subsubsection}{Best responses}{34}{section*.63}
-\contentsline {subsubsection}{$k_{D} > d$}{34}{section*.65}
-\contentsline {subsection}{\numberline {4.1.2}Determining the piecewise functions $opt_{A}(\delta _{D})$}{35}{subsection.4.1.2}
+\contentsline {subsubsection}{$\delta _{A} = 2(k_{D} - d)$}{34}{section*.65}
+\contentsline {subsubsection}{$\delta _{A} > 2(k_{D} - d)$ }{34}{section*.66}
+\contentsline {subsection}{\numberline {4.1.2}Determining the piecewise functions $opt_{A}(\delta _{D})$}{34}{subsection.4.1.2}
 \contentsline {subsubsection}{Best responses}{36}{section*.71}
 \contentsline {chapter}{\chapternumberline {5}Models for the Delay}{39}{chapter.5}
 \contentsline {section}{\numberline {5.1}Methods of propagation}{39}{section.5.1}
@@ -60,12 +61,12 @@
 \contentsline {subsection}{\numberline {5.2.3}Bluetooth worm model}{44}{subsection.5.2.3}
 \contentsline {subsection}{\numberline {5.2.4}AAWP model}{44}{subsection.5.2.4}
 \contentsline {section}{\numberline {5.3}Matrix worm model}{45}{section.5.3}
-\contentsline {subsubsection}{Google PageRank algorithm}{45}{section*.82}
-\contentsline {subsubsection}{Model with matrix}{46}{section*.83}
+\contentsline {subsubsection}{Google PageRank algorithm}{45}{section*.85}
+\contentsline {subsubsection}{Model with matrix}{46}{section*.86}
 \contentsline {chapter}{\chapternumberline {6}Conclusion}{49}{chapter.6}
 \contentsline {subsection}{\numberline {6.0.1}Further work}{49}{subsection.6.0.1}
 \contentsline {section}{\numberline {6.1}trala}{49}{section.6.1}
-\contentsline {chapter}{Bibliography}{51}{section*.86}
+\contentsline {chapter}{Bibliography}{51}{section*.89}
 \select@language {dutch}
 \select@language {english}
 \select@language {dutch}
