@@ -12,14 +12,14 @@
 \section{Nash Equilibria}
 %TODO-- rechtstreeks uit FlipIt paper --\\
 
-In this chapter we are interested in finding the optimal strategies. To calculate the optimal strategies of both players we have to find the Nash Equilibria of the game. First the optimal functions are derived from the formulas in the previous chapter. From these piecewise functions we can derive the Nash Equilibria. \\
+In this chapter we are interested in finding the optimal strategies. To calculate the optimal strategies of both players we have to find the Nash equilibria of the game. First the optimal functions are derived from the formulas in the previous chapter. From these piecewise functions we can derive the Nash equilibria. \\
 
-Nash equilibria are points with the property that neither player benefits by deviating in isolation from the equilibrium. We can compute Nash Equilibria for the periodic game as an intersection point of curves $opt_{D}$ and $opt_{A}$. 
+Nash equilibria are points with the property that neither player benefits by deviating in isolation from the equilibrium. We can compute Nash equilibria for the periodic game as an intersection point of curves $opt_{D}$ and $opt_{A}$. 
 \\
 %As a second step, we are interested in finding Nash equilibria, points
 %for which neither player will increase his benefit by changing his rate of play. 
 More formally, a Nash equilibrium for the periodic game is a point $(\delta_{D}^{*},\delta_{A}^{*})$ such that
-the defender's benefit $\beta_{D}(\alpha_{D},\delta_{A}^{*}) $is maximized at $\delta_{D}= \delta_{D}^{*}$ and the attacker's benefit
+the defender's benefit $\beta_{D}(\delta_{D},\delta_{A}^{*}) $is maximized at $\delta_{D}= \delta_{D}^{*}$ and the attacker's benefit
 $\beta_{A}(\delta_{D}^{*},\delta_{A}) $ is maximized at $\delta_{A}= \delta_{A}^{*}$.
 To begin with, some useful notation. We denote by $opt_{D}(\delta_{A}$) the set of values (rates
 of play $\delta_{D}$) that optimize the benefit of the defender for a fixed rate of play $\delta_{A}$ of the
@@ -69,7 +69,7 @@ The benefit formula obtained in the previous chapter (formula \ref{benfcase2a:de
 Given that $\delta_{D}$ is always positive, the benefit function can be either increasing or decreasing depending on the numerator of the above fraction. \\
 
 For $\delta_{A} + 2(d-k_{D}) > 0$ the benefit will be always positive but decreasing, see figure \ref{ShapeUp}. 
-The defender will always play if $\delta_{A} + 2(d-k_{D}) > 0$ for $k_{D} < d$ or $k_{D} > d$ because $\delta_{A}$ will be positive in either case. There is an edge case if $d=k_{D}$, which results in a benefit of $\beta_{D}(\delta_{D},\delta_{A})= \dfrac{\delta_{A}}{\delta_{D}}$. \\
+The defender will always play as fast as he can if $\delta_{A} + 2(d-k_{D}) > 0$ for $k_{D} < d$ or $k_{D} > d$ because $\delta_{A}$ will be positive in either case. There is an edge case if $d=k_{D}$, which results in a benefit of $\beta_{D}(\delta_{D},\delta_{A})= \dfrac{\delta_{A}}{\delta_{D}}$. \\
 \begin{figure}
 \centering
 \includegraphics[scale=0.5]{Images/ShapesUp.png} 
@@ -77,7 +77,7 @@ The defender will always play if $\delta_{A} + 2(d-k_{D}) > 0$ for $k_{D} < d$ o
 \label{ShapeUp}
 \end{figure}
 
-For $\delta_{A} + 2(d-k_{D}) < 0$, the benefit will always be negative so the defender will not play. See figure \ref{ShapeDown}. This is independent of the value of $k_{D}$ and $ d$. \\
+For $\delta_{A} + 2(d-k_{D}) < 0$, the benefit will always be increasing but negative so the defender will not play. See figure \ref{ShapeDown}.  \\
 
 \begin{figure}
 \centering
@@ -116,12 +116,12 @@ For $\delta_{A} + 2(d-k_{D}) < 0$, the benefit will always be negative so the de
 
 The benefit formula obtained in the previous chapter  (formula \ref{benfcase2b:defender}) for the defender in this case is as follows:
 \begin{equation*}
-\dfrac{\beta_{D}(\alpha_{D},\alpha_{A})}{\partial \delta_{D}} = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - \dfrac{k_{D}}{\delta_{D}} - \dfrac{(d-(\delta_{D} - \delta_{A}))^{2}}{2\delta_{D}\delta_{A}}
+\beta_{D}(\delta_{D},\delta_{A}) = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - \dfrac{k_{D}}{\delta_{D}} - \dfrac{(d-(\delta_{D} - \delta_{A}))^{2}}{2\delta_{D}\delta_{A}}
 \end{equation*}
 
 The derivative of the above formula for a fixed $\delta_{A}$ results in the following:
 \begin{equation*}
-\beta_{D}(\alpha_{D},\alpha_{A}) =  - \dfrac{1}{2\delta_{A}} + \dfrac{k_{D}}{\delta_{D}^{2}} + \dfrac{d^{2}}{2\delta_{D}^{2}\delta_{A}}
+\beta_{D}(\delta_{D},\delta_{A}) =  - \dfrac{1}{2\delta_{A}} + \dfrac{k_{D}}{\delta_{D}^{2}} + \dfrac{d^{2}}{2\delta_{D}^{2}\delta_{A}}
 \end{equation*}
 
 
@@ -239,7 +239,7 @@ The derivative for a fixed $\delta_{D}$ is as follows:
 \end{equation*}
 The stationary points (maximum, minimum) can be found by setting the first derivative equal to zero and finding the roots of the resulting equation:
 \begin{equation*}
-\frac{\partial \beta_{A}(\alpha_{D},\alpha_{A})}{\partial \delta_{D}} =0 ~~~~~~ =>~~~~~~ 2k_{A} = \dfrac{(\delta_{D}-d)^{2}}{\delta_{D}}
+\frac{\partial \beta_{A}(\delta_{D},\delta_{A})}{\partial \delta_{D}} =0 ~~~~~~ =>~~~~~~ 2k_{A} = \dfrac{(\delta_{D}-d)^{2}}{\delta_{D}}
 \end{equation*}
 
 it follows that $\beta_{A}(\delta_{D},\cdot)$ is increasing if $2k_{A} < (\delta_{D} - d)^{2} / \delta_{D}$ and decreasing if $2k_{A} > (\delta_{D} - d)^{2} / \delta_{D}$. This is the same result as in case 1.\\

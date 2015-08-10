@@ -11,7 +11,7 @@
 
 This chapter provides the reader with an introduction to the general context of the work presented in this paper.  Section 2.1 introduces the reader into the basic concepts of cyber security and the kind of cyber security threats that are in scope of this work. Section 2.2 then introduces the reader into the main principles of game theory. Subsequently, section 2.3 introduces the reader to the FlipIt game: this game will be used to model cyber security attacks of a periodic nature, including a delay.  Finally, section 2.4 gives an overview of the related work, and how the research presented in this paper compares to existing results.
 %- Remark: to the reader weg
-\section{What is security?}
+\section{What Is Security?}
 
 Before the digitalization of documents, information was kept on paper and the security of this information was ensured by administrative and physical means. For example, you needed a key to access documents stored in a room full of cabinets where the files were kept. In today's digital era more and more information is kept in a digital format, stored on a computer.  As digitalization progressed, the need for ensuring the security of digital information arose and automated tools were developed to protect files stored on a computer.  
 
@@ -147,7 +147,8 @@ Instead it means that each agent has preferences about which states of the world
 %
 %Coöperatieve spellen en niet-coöperatieve spellen[bewerken]
 %Het verschil tussen deze twee typen spellen is dat bij coöperatieve spellen (cooperative game theory) bindende afspraken tussen de spelers gemaakt kunnen worden terwijl dit niet mogelijk is bij de niet-coöperatieve spellen (non-cooperative game theory).
-The choices of each agent produce an outcome, with respect to the utilities of the agent. A pay-off of an agent is the 
+%The choices of each agent produce an outcome, with respect to the utilities of the agent. A pay-off of an agent is the 
+\todo{utility, pay-off, outcomes}
 Games can be devised into two types of games: cooperative or non-cooperative. In a non cooperative game, the basic modelling unit is the group of agents. 
 Two or more agents want to maximise their utility and their actions can be affected by other agents' utilities. In the individualistic approach the basic modelling is only one agent. This type of game is referred to as \textit{cooperative game theory}. 
 
@@ -157,7 +158,7 @@ Two or more agents want to maximise their utility and their actions can be affec
 %Nash equilibrium
 
 %John Nash speelde ook een grote rol in de geschiedenis van de speltheorie. Hij is een van de wiskundigen geweest die speltheorie geformaliseerd heeft. Het Nash evenwicht werd naar hem vernoemd. Een Nash evenwicht wordt gezien als een evenwicht tussen beide spelers zodat ze allebei de beste tactiek kiezen en niet meer veranderen als de andere van tactiek veranderen. John Nash breide de theorie over het Nash evenwicht in een paper nog uit met gemengde strategieën. In 1994 kreeg John Nash samen met twee andere wiskundigen gespecialiseerd op het vlak van speltheorie de Nobelprijs voor de economie op basis van hun prestaties in de niet-coöperatieve speltheorie. . Over John Nash is een prachtige film 
-\subsubsection{Best response and Nash Equilibrium}
+\subsubsection{Best Response and Nash Equilibrium}
 One of the solution concepts in game theory for non-cooperative games that will be used in this paper is a Nash equilibrium. A Nash Equilibrium is a subset of outcomes that can be interesting to analyse a game. To define this concept we first introduce the concept of best response. The best response, given an action of the other player, is the action that maximizes its pay-off.  We define $Opt_{i}$ as the best response function for player \textit{i}. The best response for player \textit{1} is: $a_{1} = Opt_{1}(a_{2})$, given that $a_{2}$ is an action of player 2. For a Nash Equilibrium each player has a list of actions and each player's action maximizes his or her pay-off given the actions of the other players. Nobody has the incentive to independently or unilaterally change his or her action if an equilibrium profile is played. We have a Nash Equilibrium for the pair $(a_{1}^{*},a_{2}^{*})$ when $a_{1}^{*} = Opt_{1}(a_{2}^{*})$ and $a_{2}^{*} = Opt_{2}(a_{1}^{*})$.\\
 
 %-Remark- Matthias: Beter uitleggen: the best response, given an action of the other player, is the action that maximizes its pay-off. Anders lijk je de definitie  v.e. dominante strategie te geven. (Een actie die ongeacht de actie v.d. tegenstander de beste pay-off geeft) Maak onmiddelijk duidelijk dat het een functie van de acties van de tegenstander betreft. Zo is een dominante actie een actie a waarvoor geldt forall a2 : Opt(a2) = a.
@@ -195,7 +196,7 @@ Figure \ref{Prison} shows the rewards of the possible actions of the two players
 %\end{description}
 %
 %A game in game theory consists of multiple agents and every agent has a set of actions that he can play.
-\section{The FlipIt game}
+\section{The FlipIt Game}
 \label{cha1:FlipItGame}
 FlipIt is a game introduced by van Dijk et al. To understand how to model a FlipIt game with virus propagation it is important to get familiar with the concepts of the normal FlipIt game and its notations.  Therefore, we first explain the framework of FlipIt and introduce the most important formulas that will be used throughout the paper. \\
 
