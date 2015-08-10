@@ -171,43 +171,43 @@ delay for virus propagation into account, which in our case will be a delay for 
 \end{abstract}
 
 \begin{abstract*}
-Security is een niet te missen aspect geworden in de technologie. Door de vooruitgang en betere technologie"en worden security aanvallen veel geavanceerder en moeilijker te bestrijden. Onlangs zijn er gerichte security aanvallen geweest op grote bedrijven, zoals de aanval op Belgacom (een grote Belgische telcom). Deze aanvallen hebben aangetoond dat zelfs de meest veilige
+In onze hedendaagse maatschappij valt security niet weg te denken.  Door de technologische vooruitgang worden security-aanvallen veel geavanceerder en moeilijker te bestrijden. Zo zijn er onlangs gerichte security-aanvallen geweest op grote bedrijven, zoals bijvoorbeeld de aanval op Belgacom (een grote Belgische telecom). Deze aanvallen hebben aangetoond dat zelfs de meest veilige
 bedrijven nog steeds gecompromitteerd kunnen worden, en dat bovendien dergelijke aanvallen onopgemerkt kunnen blijven voor een bepaalde tijd. \\
 
-Een groot aantal bedrijven hebben databases die belangrijke informatie bevatten zoals bijvoorbeeld vertrouwelijke informatie over klanten. Het is belangrijk dat deze informatie binnen het bedrijf blijft. Computer en Network security zorgen ervoor dat bedrijven hun informatie kunnen beschermen tegen bedreigingen. \\
-Een van deze bedreigingen die interessant is voor deze paper is een Advanced Persistent Threat (APT). Een APT is een continue en gerichte cyber aanval die ontworpen is om systemen en netwerken heimelijk binnen te dringen en dan voor een lange tijd onopgemerkt te blijven. Een manier om deze heimelijke aanvallen te analyseren is door deze te modelleren via speltheorie. Speltheorie krijgt meer en meer belangstelling in het veld van security om cyber security problemen te analyseren. Deze problemen zijn meestal gemodelleerd als een spel met twee spelers, een aanvaller en een verdediger. Er zijn ook problemen gemodelleerd als een spel met meerdere spelers, maar deze paper focust op een spel met twee spelers. \\
+Een groot aantal bedrijven hebben databases die belangrijke informatie bevatten zoals bijvoorbeeld vertrouwelijke informatie over klanten. Het is belangrijk dat deze informatie binnen het bedrijf blijft. Het doel van computer en network security is om deze informatie te beschermen tegen bedreigingen. \\
+Een van de bedreigingen die interessant is voor deze thesis is een Advanced Persistent Threat (APT). Een APT is een niet-aflatende en gerichte cyber-aanval die ontworpen is om systemen en netwerken heimelijk binnen te dringen en dan voor een lange tijd onopgemerkt te blijven. Een manier om deze heimelijke aanvallen te analyseren is door deze te modelleren via speltheorie. Speltheorie krijgt meer en meer belangstelling in het veld van security om cyber security problemen te analyseren. Deze problemen zijn meestal gemodelleerd als een spel met twee spelers: een aanvaller en een verdediger. \\
 
-In deze paper gaan we verder op een security spel ge"introduceerd door van Dijk et al, ``FlipIt'' \citep{FlipIt}.
-FlipIt is een speltheoretisch framework om computer scenario's te modelleren die een heimlijk aspect hebben. Het is een 2-spelers spel bestaande uit een aanvaller, een verdediger en een gedeelde bron.  De spelers proberen om controle te krijgen over de gedeelde bron en ze
-doen dit op een heimelijke manier. FlipIt houdt echter geen rekening met het feit dat een aanval niet onmiddellijk is, maar dat dit kan gebeuren met een zekere vertraging. Het kan bijvoorbeeld zijn dat een virus even tijd nodig heeft om een computer over te nemen. In dit artikel passen we het model van FlipIt zodanig aan dat we het kunnen gebruiken voor heimelijke aanvallen die onderheven zijn aan een vertraging.
+Deze thesis bouwt verder op een security spel ge"introduceerd door van Dijk et al, ``FlipIt'' \citep{FlipIt}.
+FlipIt is een speltheoretisch framework om computer scenario's te modelleren die een heimelijk aspect hebben. Het is een 2-spelers spel bestaande uit een aanvaller, een verdediger en een gedeelde bron.  De spelers proberen om controle te krijgen over de gedeelde bron en ze
+doen dit op een heimelijke manier. FlipIt houdt echter geen rekening met het feit dat een aanval niet onmiddellijk is, maar dat dit kan gebeuren met een zekere vertraging. Het kan bijvoorbeeld zijn dat een virus even tijd nodig heeft om een computer over te nemen. In deze thesis passen we het model van FlipIt zodanig dat het toepasbaar is voor heimelijke aanvallen die onderhevig zijn aan een vertraging.
  \\
 
 \subsection{FlipIt}
-FlipIt is een spel ge"introduceerd door Van Dijk et al. Om te begrijpen hoe we het FlipIt spel kunnen aanpassen om virus propagatie in acht te nemen, is het belangrijk om vertrouwd te raken met de concepten van het basische FlipIt spel en de notaties. Daarom beginnen we eerst met een uitleg hoe het basische FlipIt spel werkt en de belangrijkste formules die we in de paper gebruiken. \\
+Om te begrijpen hoe we het FlipIt spel kunnen aanpassen om virus propagatie in acht te nemen, is het belangrijk om vertrouwd te raken met de concepten van het basische FlipIt spel en de notaties.  \\
 
-FlipIt is een spel met twee spelers met een gedeelde bron die de spelers zo lang mogelijk willen beheren. De gedeelde bron kan een wachtwoord, een netwerk of een geheime sleutel zijn afhankelijk van de situatie. In de rest van de paper noemen we de twee spelers de aanvaller, aangegeven met onderschrift  \textit{A} en de verdediger, aangegeven met onderschrift \textit{D}.
+FlipIt is een spel met twee spelers met een gedeelde bron die de spelers zo lang mogelijk willen beheren. De gedeelde bron kan een wachtwoord, een netwerk of een geheime sleutel zijn, afhankelijk van de situatie. In de rest van de thesis duiden we de twee spelers aan met onderschrift  \textit{A} voor de aanvaller en onderschrift \textit{D} voor de verdediger.
 
-Het spel begint op tijdstip $ t = 0 $ en blijft voor onbepaalde tijd doorgaan ($ t \rightarrow \infty $). De tijd van het spel is continu. Om controle over de bron te krijgen kunnen de spelers $i$, met $ i \in \{A, D \} $ de bron flippen. Elke flip impliceert een zekere kost $ k_{i} $ en deze kosten kunnen vari"eren voor elke speler. Beide spelers proberen om hun kosten te minimaliseren. Door een kost in te voeren, voorkomt men dat de spelers te vaak bewegen. \\
+Het spel begint op tijdstip $ t = 0 $ en blijft voor onbepaalde tijd doorgaan ($ t \rightarrow \infty $). De tijd van het spel is continu. Om controle over de bron te krijgen kunnen de spelers $i$, met $ i \in \{A, D \} $ de bron flippen. Elke flip impliceert een zekere kost $ k_{i} $ en deze kosten kunnen vari"eren voor elke speler. Beide spelers proberen om hun kosten te minimaliseren. Door een kost in te voeren, voorkomt men dat de spelers te vaak flippen. \\
 
-De unieke eigenschap van FlipIt is dat elke flip gebeurt op een heimelijke manier. Dit betekent dat de speler geen weet heeft over wie de controle heeft over de bron. Zo zal de verdediger niet kunnen achterhalen of de bron al is gefipt door de aanvaller tot hij de bron zelf flipt. Het doel van elke speler is om zo lang mogelijk de controle te houden over de bron en tegelijkertijd de kost van de bewegingen te minimaliseren. Een beweging kan ook leiden tot een ``verloren beweging'', genoemd een flop. Het kan gebeuren dat de bron reeds onder controle is van de speler. Als de speler flipt wanneer hij of zij al de controle  heeft over de bron, dan verspilt de speler een zet omdat het niet leidt tot een verandering van controle. Dit betekent ook dat er een kost verloren gaat. \\
+De unieke eigenschap van FlipIt is dat elke flip op een heimelijke manier gebeurt. Dit betekent dat beide spelers geen weet hebben over wie de controle heeft over de bron. Zo zal de verdediger niet kunnen achterhalen of de bron al is gefipt door de aanvaller tot hij de bron zelf flipt. Het doel van elke speler is om zo lang mogelijk de controle te houden over de bron en tegelijkertijd de kost van de bewegingen (het flippen) te minimaliseren. Een beweging kan ook leiden tot een ``verloren beweging'', genoemd een flop.  Als een speler flipt wanneer hij of zij al de controle  heeft over de bron, dan verspilt deze speler een zet omdat het niet leidt tot een verandering van controle. Er gaat dus ook een kost verloren. \\
 
 
 \begin{figure}[hbtp]
 \center
 \includegraphics[scale=0.7]{../../doc/template/Images/DefFlipit}
-\caption{Een afbeelding van een FlipIt spel waarbij beide spelers periodiek spelen. Elke beweging of flip is aangegeven met een blauwe ( donkergrijs) of oranje (lichtgrijze) cirkel. De aanvaller is vertegenwoordigd in het oranje en speelt met een periode van $ \delta_{A} = 4 $. De verdediger is vertegenwoordigd in het blauw en speelt met een periode van $ \delta_{D} = 3 $. De blauwe en oranje rechthoeken geven de hoeveelheid tijd waarbij de betreffende speler in de controle is van de bron.}
+\caption{Een FlipIt spel waarbij beide spelers periodiek spelen. Elke beweging of flip is aangegeven met een blauwe ( donkergrijs) of oranje (lichtgrijze) cirkel. De aanvaller is weergegeven in het oranje en speelt met een periode van $ \delta_{A} = 4 $. De verdediger is weergegeven in het blauw en speelt met een periode van $ \delta_{D} = 3 $. De blauwe en oranje rechthoeken geven aan welke speler in controle is van de bron.}
 \label{fig: FLipItDefault}
 \end{figure}
 
 
 
 Een tijdsafhankelijke variabele $ C = C_{i}(t) $ duidt de toestand van de bron aan.
-$ C_{D}(t) $ is 1 als het spel onder controle is van de verdediger en 0 als het spel onder controle is van de aanvaller. Omgekeerd, zal $ C_{A}(t) $ 1 zijn als het spel onder controle is van de aanvaller en 0 als het onder controle is van de verdediger. Dus, $ C_{A}(t) = 1 - C_{D}(t) $.
+$ C_{D}(t) =$  1 als het spel onder controle is van de verdediger en 0 als het spel onder controle is van de aanvaller. Analoog zal $ C_{A}(t) =$ 1 zijn als het spel onder controle is van de aanvaller en 0 als het onder controle is van de verdediger. Aangezien er op elk tijdstip een en slechts een speler in controle is over de bron is dus  $ C_{A}(t) +  C_{D}(t) = 1 $.
 Het spel begint met de verdediger in controle: $ C_{D}(0) = 1 $. \\
 
 
-De spelers krijgen een benefit gelijk aan de hoeveelheid tijd dat ze in het bezit zijn van de bron min de kosten voor het maken van de bewegingen. De kosten van een speler \textit{i} worden aangegeven met $ k_{i} $.
-De totale winst van de speler \textit{i} is gelijk aan de totale hoeveelheid tijd waarbij een speler \textit{i} in controle is van de bron vanaf het begin van het spel tot de huidige tijd \textit{t}. Dit wordt als volgt uitgedrukt:
+
+De totale winst van de speler \textit{i} is gelijk aan de totale hoeveelheid tijd waarin een speler \textit{i} in controle is van de bron vanaf het begin van het spel tot de huidige tijd \textit{t}:
 \begin{equation}
 G_{i}(t) = \int_0^t \! C_{i}(x) dx.
 \end{equation}
@@ -223,16 +223,17 @@ En daarmee geldt voor alle $ t> 0 $:
 \begin{equation} 
 \gamma_{D}(t) + \gamma_{A}(t) = 1
 \end{equation}
-$\alpha_{i}$ definieert het gemiddeld aantal flippen door speler \textit{i} tot tijd \textit{t} met $n_{i}(t)$ het aantal bewegingen door speler \textit{i} tot tijd \textit{t}:
-\begin{equation}
-\alpha_{i}(t) = \dfrac{n_{i}(t)}{t}
-\end{equation}
+De spelers krijgen een benefit gelijk aan de hoeveelheid tijd dat ze in het bezit zijn van de bron min de kosten voor het maken van de bewegingen. 
 $ \beta_{i}(t) $ is de gemiddelde benefit ratio van een speler \textit{i} tot aan tijd \textit{t}:
 \begin{equation}
 \beta_{i}(t) = \gamma_{i}(t) - k_{i} \alpha_{i}.
 \end{equation}
-Dit is gelijk aan de fractie van de tijd waarbij de bron in handen is van speler \textit{i}, minus de kosten van het maken van de bewegingen. 
-Gedurende het spel wordt de asymptotische benefit ratio (of ook gewoon benefit) gedefinieerd als \textit{lim inf} van de gemiddelde benefit omdat de tijd \textit{t} toeneemt tot oneindig en de gemiddelde benefit heeft niet altijd een limiet.
+waarin de kosten van een speler \textit{i} worden aangegeven met $ k_{i} $ en waarin $\alpha_{i}$ het gemiddeld aantal flippen definieert door speler \textit{i} met $n_{i}(t)$ het aantal bewegingen door speler \textit{i}:
+\begin{equation}
+\alpha_{i}(t) = \dfrac{n_{i}(t)}{t}
+\end{equation}
+Dit is gelijk aan de fractie van de tijd waarin de bron in handen is van speler \textit{i}, minus de kost van het flippen.
+Gedurende het spel wordt de asymptotische benefit ratio (of ook gewoon benefit) gedefinieerd als \textit{lim inf} van de gemiddelde benefit omdat de tijd \textit{t} toeneemt tot oneindig en de gemiddelde benefit niet altijd een limiet heeft.
 \begin{equation}
 \beta_{i} (t) = \lim_{t \to \infty } inf \beta_{i}(t)
 \end{equation}
@@ -240,36 +241,37 @@ Gedurende het spel wordt de asymptotische benefit ratio (of ook gewoon benefit) 
 
 
 \subsubsection{Strategie"en}
-Omdat de spelers op een heimelijke manier bewegen, zijn er verschillende soorten feedback die een speler kan krijgen tijdens het flippen. Dergelijke feedback verdeelt de strategi"en in twee groepen van strategie"en. De niet-adaptieve strategie"en en de adaptieve strategie\"en. Deze zijn beschreven in de tabel \ref{tabel: Strategies}. \\
+Omdat de spelers op een heimelijke manier bewegen, zijn er verschillende soorten feedback die een speler kan krijgen tijdens het flippen. Dergelijke feedback verdeelt de strategi"en in twee groepen: de niet-adaptieve strategie"en en de adaptieve strategie\"en. Deze zijn beschreven in de tabel \ref{tabel: Strategies}. \\
 
-Als een speler geen feedback krijgt, dan zal hij op dezelfde manier spelen tegen elke tegenstander. Deze strategie is de niet-adaptieve strategie omdat de speelstrategie niet afhankelijk is van de bewegingen van de tegenstander. Een interessante subklasse van de niet-adaptieve strategie"en is de \textit{renewal} strategie waarbij de tijdsintervallen tussen twee opeenvolgende bewegingen worden gegenereerd door een vernieuwingsproces. 
-De lengte tussen twee opeenvolgende bewegingen zijn onafhankelijk en identiek verdeelde willekeurige variabelen gekozen uit een dichtheids formule \textit{f}. Het vernieuwingsproces betekent dat de strategie"en worden vernieuwd na elke beweging: de lengte van het interval tot aan de volgende beweging hangt alleen af van de huidige tijd en niet van de voorafgaande geschiedenis. Een voorbeeld van een dergelijke \textit{renewal} strategie is de periodieke strategie waarbij het tijdsverloop tussen twee opeenvolgende bewegingen van de spelers bepaald is door een vast interval. Een exponenti"ele strategie is een vernieuwingsstrategie waarbij het interval tussen twee opeenvolgende zetten exponentieel verdeeld is. \\
+Indien een speler geen feedback krijgt, zal hij op dezelfde manier spelen tegen elke tegenstander. Deze strategie noemt men een niet-adaptieve strategie omdat de speelstrategie niet afhankelijk is van de bewegingen van de tegenstander. Een interessante subklasse van de niet-adaptieve strategie"en is de \textit{renewal} strategie waarbij de tijdsintervallen tussen twee opeenvolgende bewegingen worden gegenereerd door een vernieuwingsproces. 
+%De lengte tussen twee opeenvolgende bewegingen zijn onafhankelijk en identiek verdeelde willekeurige variabelen gekozen uit een dichtheids formule \textit{f}. 
+Het vernieuwingsproces betekent dat de strategi"en worden vernieuwd na elke beweging: de lengte van het interval tot aan de volgende beweging hangt alleen af van de huidige tijd en niet van de voorafgaande geschiedenis. Een voorbeeld van een dergelijke \textit{renewal} strategie is de periodieke strategie waarbij het tijdsverloop tussen twee opeenvolgende bewegingen van de spelers bepaald is door een vast interval. Een exponenti"ele strategie is een \textit{renewal} strategie waarbij het interval tussen twee opeenvolgende zetten exponentieel verdeeld is. \\
 
-In het geval van feedback kan een speler kan zijn strategie aanpassen aan de informatie verkregen over de bewegingen van de tegenstander. Afhankelijk van de feedback kunnen twee subklassen van adaptieve strategie"en worden ge"identificeerd. The \textit{Last Move} (LM) strategie"en vertegenwoordigen de klasse waarbij een speler de exacte tijd te weten komt van de laatste flip van de tegenstander. In de tweede klasse, genaamd \textit{Full History} (FH), wanneer een speler flipt, krijgt hij de hele geschiedenis van de beweging van de tegenstander. \\
+Als een speler feedback krijgt, kan hij zijn strategie aanpassen aan de informatie verkregen over de bewegingen van de tegenstander. Afhankelijk van de feedback kunnen twee subklassen van adaptieve strategie"en worden ge"identificeerd. The \textit{Last Move} (LM) strategi"en vertegenwoordigen de klasse waarbij een speler de exacte tijd te weten komt van de laatste flip van de tegenstander. In de tweede klasse, genaamd \textit{Full History} (FH),  krijgt een speler de hele geschiedenis van de beweging van de tegenstander wanneer hij flipt. \\
 
 
  \begin{table}
  \center
  \begin {tabular} {l | c}
-  \textbf{Categories} & \textbf{Klassen Strategien} \\
+  \textbf{Categori"en} & \textbf{Klassen} \\
   \hline Niet-adaptieve (NA) & Renewal \\
   & - Periodieke \\
   & ~~~ - Exponenti"ele \\
-  & General niet-adaptieve \\
-  \hline Adaptive (AD) & Last move (LM) \\
+  & Algemeen niet-adaptieve \\
+  \hline Adaptieve (AD) & Last move (LM) \\
   & Full History (FH) \\
 \end{tabular}
- \caption{hi"erarchie van de klassen van de strategie"en in Flipit}
+ \caption{hi"erarchie van de strategi"en in Flipit}
  \label{tabel: Strategies}
  \end{table}
-
+\todo{tabel}
 
 Uit het onderzoek van het FlipIt framework zijn er een aantal interessante resultaten bekomen:
 \begin{itemize}
-\item periodieke spellen domineren de andere \textit{renewal }strategie"en. Dit betekent dat het altijd voordeliger is om een periodieke strategie te spelen tegen een tegenstander met een \textit{renewal} strategie;
-\item periodieke spellen zijn nadelig tegen spelers die de\textit{ Last Move} adaptieve strategie gebruiken. De tegenspeler kan telkens te weten komen wanneer de volgende flip is van de speler en juist erachter zelf flippen. De \textit{Last Move} tegenspeler zal dus heel de tijd in controle zijn van de bron met verwaarloosbare onderbrekingen van de andere speler;
-\item als een speler speelt tegen een \textit{Last Move} tegenspeler en met een veel lagere kost, dan heeft de speler twee opties. De eerste optie is om zo snel te spelen dat de speler de tegenspeler dwingt om te stoppen met het spel. De tweede optie is om te spelen met een random strategie, zodat de tegenspeler niets kan leren uit de informatie betreffende de volgende beweging van de speler;
-\item de beste verdediging strategie is om snel te spelen, om er voor te zorgen dat de tegenspeler afhaakt. Om snel te spelen, moet de speler er voor zorgen dat zijn bewegingskosten veel kleiner zijn dan de kosten van de tegenspeler.
+\item periodieke spellen domineren de andere \textit{renewal }strategi"en. Dit betekent dat het altijd voordeliger is om een periodieke strategie te spelen tegen een tegenstander met een \textit{renewal} strategie;
+\item periodieke spellen zijn nadelig tegen spelers die de\textit{ Last Move} adaptieve strategie gebruiken. De tegenspeler kan telkens te weten komen wanneer de volgende flip zal komen en juist erachter zelf flippen. De \textit{Last Move} tegenspeler zal dus heel de tijd in controle zijn van de bron met verwaarloosbare onderbrekingen van de andere speler;
+\item als een speler speelt tegen een \textit{Last Move} tegenspeler die een veel hogere kost heeft, dan heeft de speler twee opties. De eerste optie is om zo snel te spelen dat de speler de tegenspeler dwingt om te stoppen met het spel. De tweede optie is om te spelen met een random strategie, zodat de tegenspeler niets kan leren uit de informatie betreffende de volgende beweging van de speler;
+\item de beste verdedigingsstrategie is om snel te spelen, om er voor te zorgen dat de tegenspeler afhaakt. Om snel te spelen, moet de speler er voor zorgen dat zijn bewegingskosten veel kleiner zijn dan de kosten van de tegenspeler.
 %item een ​​bedrag van feedback over de tegenstander ontving tijdens het spel, de voordelen aan een speler.
 \end{itemize}
 
