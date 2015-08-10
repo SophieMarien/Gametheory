@@ -14,26 +14,26 @@
 \contentsline {subsection}{FlipIt}{vi}{section*.6}
 \contentsline {subsubsection}{Strategie"en}{vii}{section*.8}
 \contentsline {section}{FlipIt Met Propagatie Vertraging}{ix}{section*.11}
-\contentsline {subsection}{ Formalisatie van de benefit formule met een vertraging}{x}{section*.13}
-\contentsline {section}{Nash Equilibrium}{xv}{section*.20}
-\contentsline {section}{Conclusions and Further Research}{xv}{section*.21}
+\contentsline {subsection}{ Formalisatie van de benefit formule met een vertraging}{x}{section*.12}
+\contentsline {section}{Nash Equilibrium}{xv}{section*.19}
+\contentsline {section}{Conclusions and Further Research}{xv}{section*.20}
 \select@language {english}
-\contentsline {chapter}{List of Figures and Tables}{xvi}{chapter*.22}
-\contentsline {chapter}{List of Abbreviations and Symbols}{xviii}{chapter*.25}
+\contentsline {chapter}{List of Figures and Tables}{xvi}{chapter*.21}
+\contentsline {chapter}{List of Abbreviations and Symbols}{xviii}{chapter*.24}
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}
-\contentsline {subsubsection}{Research questions}{2}{section*.28}
-\contentsline {subsubsection}{Contributions and results}{3}{section*.29}
-\contentsline {subsubsection}{Overview of the thesis}{3}{section*.32}
+\contentsline {subsubsection}{Research questions}{2}{section*.27}
+\contentsline {subsubsection}{Contributions and results}{3}{section*.28}
+\contentsline {subsubsection}{Overview of the thesis}{3}{section*.31}
 \contentsline {chapter}{\chapternumberline {2}General context}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}What Is Security?}{5}{section.2.1}
-\contentsline {subsubsection}{Threats to computer systems}{6}{section*.34}
-\contentsline {subsubsection}{Advanced threats to computer systems}{8}{section*.35}
+\contentsline {subsubsection}{Threats to computer systems}{6}{section*.33}
+\contentsline {subsubsection}{Advanced threats to computer systems}{8}{section*.34}
 \contentsline {section}{\numberline {2.2}A Brief Introduction in Game Theory}{8}{section.2.2}
-\contentsline {subsubsection}{Best Response and Nash Equilibrium}{9}{section*.37}
+\contentsline {subsubsection}{Best Response and Nash Equilibrium}{9}{section*.36}
 \contentsline {section}{\numberline {2.3}The FlipIt Game}{10}{section.2.3}
-\contentsline {subsubsection}{Strategies}{12}{section*.40}
-\contentsline {subsubsection}{Results of the FlipIt game}{13}{section*.43}
+\contentsline {subsubsection}{Strategies}{12}{section*.39}
+\contentsline {subsubsection}{Results of the FlipIt game}{13}{section*.42}
 \contentsline {section}{\numberline {2.4}Related Work on Extensions to FlipIt}{13}{section.2.4}
 \contentsline {chapter}{\chapternumberline {3}FlipIt with propagation delay}{17}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introduction}{17}{section.3.1}
@@ -48,11 +48,11 @@
 \contentsline {chapter}{\chapternumberline {4}Nash Equilibria}{31}{chapter.4}
 \contentsline {section}{\numberline {4.1}Nash Equilibria}{31}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Determining the piecewise functions $opt_{D}(\delta _{A})$}{31}{subsection.4.1.1}
-\contentsline {subsubsection}{Best responses}{34}{section*.64}
-\contentsline {subsubsection}{$\delta _{A} = 2(k_{D} - d)$}{34}{section*.66}
-\contentsline {subsubsection}{$\delta _{A} > 2(k_{D} - d)$ }{34}{section*.67}
+\contentsline {subsubsection}{Best responses}{34}{section*.63}
+\contentsline {subsubsection}{$\delta _{A} = 2(k_{D} - d)$}{34}{section*.65}
+\contentsline {subsubsection}{$\delta _{A} > 2(k_{D} - d)$ }{34}{section*.66}
 \contentsline {subsection}{\numberline {4.1.2}Determining the piecewise functions $opt_{A}(\delta _{D})$}{34}{subsection.4.1.2}
-\contentsline {subsubsection}{Best responses}{36}{section*.72}
+\contentsline {subsubsection}{Best responses}{36}{section*.71}
 \contentsline {chapter}{\chapternumberline {5}Models for the Delay}{39}{chapter.5}
 \contentsline {section}{\numberline {5.1}Methods of propagation}{39}{section.5.1}
 \contentsline {section}{\numberline {5.2}Models for worm propagation}{41}{section.5.2}
@@ -61,12 +61,12 @@
 \contentsline {subsection}{\numberline {5.2.3}Bluetooth worm model}{44}{subsection.5.2.3}
 \contentsline {subsection}{\numberline {5.2.4}AAWP model}{44}{subsection.5.2.4}
 \contentsline {section}{\numberline {5.3}Matrix worm model}{45}{section.5.3}
-\contentsline {subsubsection}{Google PageRank algorithm}{45}{section*.86}
-\contentsline {subsubsection}{Model with matrix}{46}{section*.87}
+\contentsline {subsubsection}{Google PageRank algorithm}{45}{section*.85}
+\contentsline {subsubsection}{Model with matrix}{46}{section*.86}
 \contentsline {chapter}{\chapternumberline {6}Conclusion}{49}{chapter.6}
 \contentsline {subsection}{\numberline {6.0.1}Further work}{49}{subsection.6.0.1}
 \contentsline {section}{\numberline {6.1}trala}{49}{section.6.1}
-\contentsline {chapter}{Bibliography}{51}{section*.90}
+\contentsline {chapter}{Bibliography}{51}{section*.89}
 \select@language {dutch}
 \select@language {english}
 \select@language {dutch}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.27)  10 AUG 2015 20:37
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.27)  10 AUG 2015 22:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1446,7 +1446,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 192--193
 
  []
 
-<../../doc/template/Images/DefFlipit.png, id=238, 512.3943pt x 92.9874pt>
+<../../doc/template/Images/DefFlipit.png, id=236, 512.3943pt x 92.9874pt>
 File: ../../doc/template/Images/DefFlipit.png Graphic file (type png)
 
 <use ../../doc/template/Images/DefFlipit.png>
@@ -1560,30 +1560,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 287--288
  []
 
 
-Package natbib Warning: Citation `Flipit' on page ix undefined on input line 29
-0.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 289--292
+Underfull \hbox (badness 10000) in paragraph at lines 290--291
 
  []
 
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 292.
+(babel)             in language  on input line 291.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 292.
+(babel)             in language  on input line 291.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 292.
+(babel)             in language  on input line 291.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 292.
+(babel)             in language  on input line 291.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 292.
+(babel)             in language  on input line 291.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 292.
+(babel)             in language  on input line 291.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 292.
+(babel)             in language  on input line 291.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 292.
+(babel)             in language  on input line 291.
 [9]
 Underfull \hbox (badness 10000) in paragraph at lines 293--294
 
@@ -1611,7 +1607,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 307--308
 
  []
 
-<../../doc/template/Images/FLipItCase1.pdf, id=278, 594.22pt x 316.18124pt>
+<../../doc/template/Images/FLipItCase1.pdf, id=277, 594.22pt x 316.18124pt>
 File: ../../doc/template/Images/FLipItCase1.pdf Graphic file (type pdf)
 
 <use ../../doc/template/Images/FLipItCase1.pdf>
@@ -1701,7 +1697,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 383--384
 
  []
 
-<../../doc/template/Images/FlipItCase2.png, id=323, 403.2666pt x 498.4221pt>
+<../../doc/template/Images/FlipItCase2.png, id=322, 403.2666pt x 498.4221pt>
 File: ../../doc/template/Images/FlipItCase2.png Graphic file (type png)
 
 <use ../../doc/template/Images/FlipItCase2.png>
@@ -1879,7 +1875,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
 
-[9] <Images/PrisDilemma.png, id=518, 466.3824pt x 318.9516pt>
+[9] <Images/PrisDilemma.png, id=517, 466.3824pt x 318.9516pt>
 File: Images/PrisDilemma.png Graphic file (type png)
 
 <use Images/PrisDilemma.png>
@@ -1900,7 +1896,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 209--210
 
  []
 
-<../../doc/template/Images/DefFlipItt.png, id=524, 512.3943pt x 92.9874pt>
+<../../doc/template/Images/DefFlipItt.png, id=523, 512.3943pt x 92.9874pt>
 File: ../../doc/template/Images/DefFlipItt.png Graphic file (type png)
 
 <use ../../doc/template/Images/DefFlipItt.png>
@@ -1994,7 +1990,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 145--147
 
  []
 
-<Images/DefFlip.pdf, id=604, 512.38626pt x 108.42407pt>
+<Images/DefFlip.pdf, id=603, 512.38626pt x 108.42407pt>
 File: Images/DefFlip.pdf Graphic file (type pdf)
 
 <use Images/DefFlip.pdf>
@@ -2005,7 +2001,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 167--168
 
  []
 
-<Images/Delayuitgelegd.pdf, id=637, 512.38626pt x 236.17334pt>
+<Images/Delayuitgelegd.pdf, id=636, 512.38626pt x 236.17334pt>
 File: Images/Delayuitgelegd.pdf Graphic file (type pdf)
 
 <use Images/Delayuitgelegd.pdf>
@@ -2017,14 +2013,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 176--177
  []
 
 [21 <./Images/Delayuitgelegd.pdf>]
-<Images/FlipItCase1delay.pdf, id=671, 519.29205pt x 87.99817pt>
+<Images/FlipItCase1delay.pdf, id=670, 519.29205pt x 87.99817pt>
 File: Images/FlipItCase1delay.pdf Graphic file (type pdf)
 
 <use Images/FlipItCase1delay.pdf>
 Package pdftex.def Info: Images/FlipItCase1delay.pdf used on input line 185.
 (pdftex.def)             Requested size: 363.50195pt x 61.59828pt.
 
-<Images/FlipItCase1delaytobig.pdf, id=672, 512.38626pt x 77.18385pt>
+<Images/FlipItCase1delaytobig.pdf, id=671, 512.38626pt x 77.18385pt>
 File: Images/FlipItCase1delaytobig.pdf Graphic file (type pdf)
 
 <use Images/FlipItCase1delaytobig.pdf>
@@ -2042,7 +2038,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 208--209
  []
 
 
-<../../doc/template/Images/DiffDelayCase1.pdf, id=727, 512.38626pt x 236.17334p
+<../../doc/template/Images/DiffDelayCase1.pdf, id=726, 512.38626pt x 236.17334p
 t>
 File: ../../doc/template/Images/DiffDelayCase1.pdf Graphic file (type pdf)
  <use ../../doc/template/Images/DiffDelayCase1.pdf>
@@ -2050,7 +2046,7 @@ Package pdftex.def Info: ../../doc/template/Images/DiffDelayCase1.pdf used on i
 nput line 217.
 (pdftex.def)             Requested size: 358.66794pt x 165.32019pt.
 
-<../../doc/template/Images/delaydtijdens.pdf, id=730, 512.38626pt x 113.75499pt
+<../../doc/template/Images/delaydtijdens.pdf, id=729, 512.38626pt x 113.75499pt
 >
 File: ../../doc/template/Images/delaydtijdens.pdf Graphic file (type pdf)
  <use ../../doc/template/Images/delaydtijdens.pdf>
@@ -2087,7 +2083,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 292--293
 
  []
 
-<../../doc/template/Images/FlipIt2.pdf, id=803, 403.371pt x 683.10506pt>
+<../../doc/template/Images/FlipIt2.pdf, id=802, 403.371pt x 683.10506pt>
 File: ../../doc/template/Images/FlipIt2.pdf Graphic file (type pdf)
 
 <use ../../doc/template/Images/FlipIt2.pdf>
@@ -2109,7 +2105,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 323--324
 
  []
 
-<Images/flipcase2nb.pdf, id=839, 403.371pt x 213.21759pt>
+<Images/flipcase2nb.pdf, id=838, 403.371pt x 213.21759pt>
 File: Images/flipcase2nb.pdf Graphic file (type pdf)
 
 <use Images/flipcase2nb.pdf>
@@ -2172,7 +2168,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
-<Images/ShapesUp.png, id=899, 446.41782pt x 315.42844pt>
+<Images/ShapesUp.png, id=898, 446.41782pt x 315.42844pt>
 File: Images/ShapesUp.png Graphic file (type png)
 
 <use Images/ShapesUp.png>
@@ -2183,7 +2179,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
-<Images/ShapeDown.png, id=901, 444.91219pt x 312.41719pt>
+<Images/ShapeDown.png, id=900, 444.91219pt x 312.41719pt>
 File: Images/ShapeDown.png Graphic file (type png)
 
 <use Images/ShapeDown.png>
@@ -2265,7 +2261,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
-<Images/tableworms.png, id=981, 811.53188pt x 342.5297pt>
+<Images/tableworms.png, id=980, 811.53188pt x 342.5297pt>
 File: Images/tableworms.png Graphic file (type png)
 
 <use Images/tableworms.png>
@@ -2387,9 +2383,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 407--408
 ] [52]) [53] [54
 
 ]
-
-Package natbib Warning: There were undefined citations.
-
 \tf@toc=\write6
 \openout6 = `masterproef.toc'.
 
@@ -2404,12 +2397,13 @@ Package natbib Warning: There were undefined citations.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 533.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 533.
+
 (./masterproef.aux (./chap-10.aux) (./chap-5.aux) (./chap-9.aux) (./nash.aux)
 (./chap-4.aux) (./conclusion.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 533.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 533.
 Package rerunfilecheck Info: File `masterproef.out' has not changed.
-(rerunfilecheck)             Checksum: E5056AFF2C162FB0A6B013B5E98463CB;1796.
+(rerunfilecheck)             Checksum: 903DE18646945C0ED66D2A4B11703F17;1796.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2417,13 +2411,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 533.
  ) 
 Here is how much of TeX's memory you used:
- 25665 strings out of 493315
- 444524 string characters out of 6137903
- 717148 words of memory out of 5000000
- 28071 multiletter control sequences out of 15000+600000
- 103558 words of font info for 199 fonts, out of 8000000 for 9000
+ 25654 strings out of 493315
+ 444324 string characters out of 6137903
+ 716020 words of memory out of 5000000
+ 28065 multiletter control sequences out of 15000+600000
+ 103392 words of font info for 197 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 61i,12n,92p,2193b,969s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,12n,92p,2193b,944s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
 texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/20
 13/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2013/texmf-d
@@ -2446,10 +2440,10 @@ msy6.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></
 usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/
 texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive
 /2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on masterproef.pdf (76 pages, 2749548 bytes).
+Output written on masterproef.pdf (76 pages, 2748807 bytes).
 PDF statistics:
- 1213 PDF objects out of 1440 (max. 8388607)
- 954 compressed objects within 10 object streams
- 277 named destinations out of 1000 (max. 500000)
+ 1211 PDF objects out of 1440 (max. 8388607)
+ 952 compressed objects within 10 object streams
+ 276 named destinations out of 1000 (max. 500000)
  27970 words of extra memory for PDF output out of 29859 (max. 10000000)
 
