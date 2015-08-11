@@ -61,9 +61,10 @@ file sharing systems, which have been used by worms to propagate in a similar wa
 \label{modelsforpropagation}
 Early work on worm propagation models are based on the spread of real-world epidemic diseases. These models are based on the transition state of each node in the network.\\
 %Scan based or Topology based
-A node in a network can be in three different states: susceptible, infected or removed. A susceptible node is a node that is vulnerable to infection. An infected node is a node that has been compromised and can infect other nodes. A removed node is dead or immune, which means it cannot be infected again by worms. With these three states three main propagation models are proposed: SI, SIR and SIS. In the SI model, a node that has once been infected, stays infected. In the SIR model, an infected node can be removed afterwards. This node cannot become infected again. In the SIS model a node can become susceptible again after it has been infected. Currently, various other models have been proposed based on these three models. \todo{referenties naar andere modellen} We are only interested in models that will allow us to find the delay. \\
+A node in a network can be in three different states: susceptible, infected or removed. A susceptible node is a node that is vulnerable to infection. An infected node is a node that has been compromised and can infect other nodes. A removed node is dead or immune, which means it cannot be infected again by worms. With these three states three main propagation models are proposed: SI, SIR and SIS. In the SI model, a node that has once been infected, stays infected. In the SIR model, an infected node can be removed afterwards. This node cannot become infected again. In the SIS model a node can become susceptible again after it has been infected. Currently, various other models have been proposed based on these three models (\cite{wang2014modeling}, \cite{OnWorms2005survey}, \cite{xiang2009propagation} and \cite{serazzi2004computer}). We are only interested in models that will allow us to find the delay. \\
 
-Table \ref{tree} gives an overview of the most common propagation methods with the given type. This table comes from the most recent survey \citep{wang2014modeling}, which encompasses results of older surveys. Moreover, the survey explicitly focuses on propagation methods, while other papers also focus on other aspects such as  detection mechanisms and containment systems. All models that are based on SI model type (Susceptible-Infected) are good, because in our model every node that is infected will stay infected. Only the Local Preference and Email worms models will not be explained because they involve human interaction. OSN model is done by means of simulation. The SIR AAWP model is also interesting because the parameter that involves the R part of the model can be deleted.  \\ \todo{laatste zinnen zijn wazig: Het deel erboven over SIS enzo was duidelijk maar hier worden andere modellen er bij de haren bijgesleurd. Als we die niet bekijken, gewoon kort zeggen dat er andere modellen zijn (e.g. SIR AAWP, Email worms, ....) maar dat deze niet worden bekeken ofzo?}
+Table \ref{tree} gives an overview of the most common propagation methods with the given type. This table comes from the most recent survey \citep{wang2014modeling}, which encompasses results of older surveys. Moreover, the survey explicitly focuses on propagation methods, while other papers also focus on other aspects such as  detection mechanisms and containment systems. All models that are based on SI model type (Susceptible-Infected) are good, because in our model every node that is infected will stay infected. The other propagation models, SIR and SIS, are only interesting if there is a possibility to reduce the models to an SI model. The following section will apply the extraction of the delay to a few models. These models are not meant as an exhaustive list, but rather as an illustration to the possible ways of extracting the delay out of an propagation model. 
+%Only the Local Preference and Email worms models will not be explained because they involve human interaction. OSN model is done by means of simulation. The SIR AAWP model is also interesting because the parameter that involves the R part of the model can be deleted.  \\ \todo{laatste zinnen zijn wazig: Het deel erboven over SIS enzo was duidelijk maar hier worden andere modellen er bij de haren bijgesleurd. Als we die niet bekijken, gewoon kort zeggen dat er andere modellen zijn (e.g. SIR AAWP, Email worms, ....) maar dat deze niet worden bekeken ofzo?}
 
 
 
@@ -75,7 +76,7 @@ Table \ref{tree} gives an overview of the most common propagation methods with t
 
 %In this chapter we are only interested in the SI model. To apply the propagation models on FlipIt we need to know the propagation speed of the virus, without hosts becoming susceptible again. All hosts must stay infected. For this we only look at SI models. In table \ref{tree} the taxonomy of the propagation methods are given and the type of model. The General Epidemic model and Two-factor model are based on the Simple Epidemic Model with the difference that they both have extra parameters to model the Removed state.  We discuss a couple of SI models and then introduce a method of out own.\\
 
-For more information about other models the reader is referred to the following papers with other most common propagation models: \cite{wang2014modeling}, \cite{OnWorms2005survey}, \cite{xiang2009propagation} and \cite{serazzi2004computer}.
+
 
 %In this section we only list the models that are the most interesting from the perspective of calculating the delay, namely the SI type models.
 %SI, SIR, SIS assume $\beta$ to be constant.
@@ -274,14 +275,8 @@ As can be seen in table \ref{tree} all propagation models are depending on a spe
 What we want to have is a method to calculate the delay that is independent of a network topology. A method where we can chose in the beginning which topology we have and then calculate the delay.\\
 
 %All of the above models for modelling the mechanism of the spreading of a worm depend on the kind of topology of the network.  
-In this chapter we propose a method to calculate the spread of a worm in a way that the topology of the network can be easily integrated. The method will give an approximation of how fast a worm can infect a network. The method is based on Google Page Ranking \cite{GoogleRank} used by search engines to rank pages. 
+In this chapter we propose a method to calculate the spread of a worm in a way that the topology of the network can be easily integrated. The method will give an approximation of how fast a worm can infect a network. This method is capable of calculating the delay for any network topology, but it is not the most efficient way of doing this. For this paper it is just a proof of concept.  
 
-\subsubsection{Google PageRank algorithm}
-The PageRank algorithm is introduced by Page and Brin in 1998 as one of the main features of the search engine Google to improve the search results. PageRank models the human behaviour when users surf through the net. It can also model \textit{random surfers}. A random surfer is the probability that a surfer gets bored and randomly visits another page which is not linked with the initial page. The probability that he will visit a random page is the PageRank of that page. A page will have a high PageRank if many pages will point to this page. This means that this page is well cited through other pages and maybe an important one to look at.    The main idea of the PageRank algorithm is to look at the number of (important) web pages that point to a particular page. The ranking of this page depends than on the number of out coming links and the importance of the pages that link to this page. With a probability of $P$ the surfer will follow a link of the page to another page, and with a probability of $1-P$ the surfer will surf to a random page. The PageRank algorithm is expressed as follows:
-\begin{equation}
-PageRank(A)=P \sum \dfrac{PageRank(i)}{d_{out,i}} + (1-P) \cdot e_{A}
-\end{equation}
-where $N_{A}$ is the number of pages, $PR(i)$ is the ranking of web page $i$, $D_{out,i}$ is the number of outgoing links of page $i$, $(1-P)$ the probability that a random page is searched, and $e_{A}$ the restart value for web page A which is often uniformly distributed among all web pages.
 
 \subsubsection{Model with matrix}
 
@@ -409,7 +404,7 @@ $
 So, in $A^{N}$ every $a_{ij}$ entry gives the number of paths with N steps from $N_{i}$ to $N_{j}$.\\
 
 Using this knowledge we can calculate in how many steps a node is infected: \\
-The infection vector or start vector $I_{0}$ of lenght $|V|$ indicates which node is infected and which not. Multiplying the infection vector with $A$ results in a vector $I_{1}$, which represents which nodes are infected after 1 step. Multiplying the start vector $I_{0}$ with $A^{N}$ calculates which nodes are infected in \textit{N} steps: each non zero entry represents an node infected after \textit{N} steps. \\
+The infection vector or start vector $I_{0}$ of length $|V|$ indicates which node is infected and which not. Multiplying the infection vector with $A$ results in a vector $I_{1}$, which represents which nodes are infected after 1 step. Multiplying the start vector $I_{0}$ with $A^{N}$ calculates which nodes are infected in \textit{N} steps: each non zero entry represents an node infected after \textit{N} steps. \\
 In the context of the FlipIt game, it is safe to assume that once a node is infected, it stays infected until the defender Flips the node. This means that after d steps, it is assumed that all nodes that could be reached in less than \textit{d} steps from the node where the worm was dropped, are infected. In order to know how many nodes are infected after (for example) at most 3 steps, we have to consider nodes that are infected initially (step 1), or after 2 steps, or after 3 steps.  Calculating the sum of the three matrices $(A + A^{2} + A^{3}) $ results in a matrix that indicates for each node, the number of paths of length 1, 2 or 3 from \textit{i} to \textit{ j}. Multiplying the start vector with this matrix, results in a vector that indicates which nodes will be infected in at most 3 steps . This technique can be applied to calculate the state of the network after any number of steps. \\
 
 Determining the length of the delay boils down to determining which configuration of infected nodes is considered as corresponding to the attacker having flipped the resource. It may be that all nodes need to be flipped, a sufficient amount of nodes, or a (set of) particular nodes.\\
@@ -472,6 +467,58 @@ Determining the length of the delay boils down to determining which configuratio
 %				
 %		
 %\end{verbatim}
+\subsubsection{Google PageRank algorithm}
+
+To calculate the delay of a worm propagation we assumed that every node is even important. A possible relaxation of this rule can be done by the Page Rank Algorithm, which can be used to determine the importance of certain nodes. 
+
+The PageRank algorithm is introduced by Page and Brin in 1998 as one of the main features of the search engine Google to improve the search results. PageRank models the human behaviour when users surf through the net. It can also model \textit{random surfers}. A random surfer is the probability that a surfer gets bored and randomly visits another page which is not linked with the initial page. The probability that he will visit a random page is the PageRank of that page. A page will have a high PageRank if many pages will point to this page. This means that this page is well cited through other pages and maybe an important one to look at.    The main idea of the PageRank algorithm is to look at the number of (important) web pages that point to a particular page. The ranking of this page depends than on the number of out coming links and the importance of the pages that link to this page. With a probability of $P$ the surfer will follow a link of the page to another page, and with a probability of $1-P$ the surfer will surf to a random page. The PageRank algorithm is expressed as follows:
+\begin{equation}
+PageRank(A)=P \sum \dfrac{PageRank(i)}{d_{out,i}} + (1-P) \cdot e_{A}
+\end{equation}
+where $N_{A}$ is the number of pages, $PR(i)$ is the ranking of web page $i$, $D_{out,i}$ is the number of outgoing links of page $i$, $(1-P)$ the probability that a random page is searched, and $e_{A}$ the restart value for web page A which is often uniformly distributed among all web pages. \\
+
+The Google matrix is a stochastic matrix that is used to calculate the PageRank of all the web pages on the internet. The dominant eigenvalue of the matrix is the PageRank. The matrix is a graph where the edges denote the links between each page. Using the power method, the PageRank of each page can be calculated iteratively. \\
+
+The Google Matrix of a graph is defined as follow:
+\begin{equation}
+M = (1-p) \cdot A + p \cdot B ~~where~~B=\dfrac{1}{n}\cdot \begin{bmatrix}
+       1 & 1 & \ldots &1           \\[0.3em]
+       \vdots & \vdots          & \ddots & \vdots \\[0.3em]
+       1 & 1& \cdots &1
+     \end{bmatrix}
+\end{equation}
+
+where $p$ defines the damping factor and indicates the probability that a surfer quits a current page and continuous on a new random page. Matrix A is an transposed matrix of the graph matrix. The graph matrix is an $n x n$ matrix (\textit{n} defines the number of pages) that represents the graph where every entry corresponds to a non-zero entry if there is a link from one page to the other page. For dangling nodes (nodes with no outgoing links), the row entries are equal to $\dfrac{1}{n}$. Matrix A for the graph represented figure \ref{GoogleMatrix} is equal to:
 
 
-%\end{document}
+\begin{figure}
+\centering
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=black!60!green,draw=none,text=white]
+
+  \node[state] (A)                    {$N_1$};
+  \node[state]         (B) [above right of=A] {$N_2$};
+  \node[state]         (D) [below right of=A] {$N_3$};
+
+  \path (B) edge              node {} (A)
+        (D) edge 			  node {} (A);
+\end{tikzpicture}
+\caption{A representation of a graph with three nodes. Node 1 is a dangling node with no outgoing links.}
+\label{GoogleMatrix}
+\end{figure}
+
+$ A =
+\bordermatrix{
+         & N_1		& N_2	& N_3	 \cr
+    N_1   & 1/3		& 1		& 1			     \cr
+    N_2   & 1/3		& 0		& 0		     \cr
+    N_3   & 1/3		& 0		& 0		 \cr
+  }$ 
+ 
+~~\\
+
+The PageRank vector of a graph, with the transposition matrix A and the damping variable p, is equal to the probabilistic eigenvector of the matrix M, corresponding to the eigenvalue 1. This can be calculated by the use of the Power Method. \\
+
+We can use the Google matrix to calculate the probability that a node in a graph is infected by a worm after a certain amount op time. When a worm uses the topology of the graph to propagate the damping variable p must be equal to zero, as in the worm will not suddenly attack a node that is not connected. When the propagation of a worm is topology independent, the damping variable p can be set on 1. \\
+This can be useful for further research, when the defender can also flip a subset of nodes. It can be advantageous to flip the nodes with a higher PageRank more often than the other nodes. A higer PageRank means that the page has a bigger probability of being compromised by a worm. 

@@ -140,7 +140,8 @@ Game theory is a mathematical way of modelling the interactions between two or m
 
 One of the assumptions underlying game theory is that the players of the game are independent and self-interested. This does not necessarily mean that they want to harm other agents or that they only care about themselves. 
 %utility function meaning 
-Instead it means that each agent has preferences about which states of the world he likes. These preferences are mapped to natural numbers and are called the utility functions. The numbers are interpreted as a mathematical measure that tells how much an agent likes or dislikes the states of the world. \\
+Instead it means that each agent has preferences about which states of the world he likes. These preferences are mapped to natural numbers and are called the utility functions. The numbers are interpreted as a mathematical measure that tells how much an agent likes or dislikes the outcome of the game. Outcomes are the result of a specific combination of a player's strategy. Each combination of a player's strategy is an outcome of the game. \\% The utility function can be ordinal or cardinal. In case of a ordinal utility function only relative rankings are important. The utility function can also be cardinal which is important for games with mixed strategies. \\
+
 %Cooperative and non cooperative games
 %-Remark- Stuk herschrijven-- Payoff introduceren -- zin van wikipedia
 %Binnen de speltheorie is een 'spel' een (model van) interactie tussen spelers die individueel beslissingen nemen. De spelers ontvangen een beloning (pay-off) die afhangt van hun eigen beslissingen maar ook van die van de anderen. De volgende typen kunnen worden onderscheiden.
@@ -149,7 +150,7 @@ Instead it means that each agent has preferences about which states of the world
 %Het verschil tussen deze twee typen spellen is dat bij coöperatieve spellen (cooperative game theory) bindende afspraken tussen de spelers gemaakt kunnen worden terwijl dit niet mogelijk is bij de niet-coöperatieve spellen (non-cooperative game theory).
 %The choices of each agent produce an outcome, with respect to the utilities of the agent. A pay-off of an agent is the 
 \todo{utility, pay-off, outcomes}
-Games can be devised into two types of games: cooperative or non-cooperative. In a non cooperative game, the basic modelling unit is the group of agents. 
+Games can be divided into two types of games: cooperative or non-cooperative. In a non cooperative game, the basic modelling unit is the group of agents. 
 Two or more agents want to maximise their utility and their actions can be affected by other agents' utilities. In the individualistic approach the basic modelling is only one agent. This type of game is referred to as \textit{cooperative game theory}. 
 
 %There are two standard representations for games. The first one is the Normal Form. The second one is the Extensive Form.
@@ -223,8 +224,8 @@ $C_{D}(t)$ is 1 if the game is under control by the defender and 0 if the game i
 The game starts with the defender being in control: $C_{D}(0)= 1$. \\
 
 
-The players receive a benefit equal to the time units they were in possession of the resource minus the cost of making their moves. The cost for player \textit{i} is denoted by $k_{i}$. 
-The total gain for player \textit{i} is equal to the total amount of time that player \textit{i} has owned the resource from the beginning of the game up to time \textit{t}. It is expressed as follows:
+
+The total gain for player \textit{i} is equal to the total amount of time that player \textit{i} has owned the resource from the beginning of the game up to time \textit{t}:
 \begin{equation}\label{first}
 G_{i}(t) = \int_0^t \! C_{i}(x) dx.
 \end{equation}
@@ -240,16 +241,15 @@ And thus for all $t > 0$ :
 \begin{equation}\label{first}
 \gamma_{D}(t) + \gamma_{A}(t) = 1
 \end{equation}
-$\alpha_{i}$ defines the average move rate by player \textit{i} up to time \textit{t} with $n_{i}(t)$ the amount of moves made by player \textit{i} up to time \textit{t}:
-\begin{equation}
-\alpha_{i}(t) = \dfrac{n_{i}(t)}{t}
-\end{equation}
-Let $\beta_{i}(t)$ denote player's \textit{i} average benefit rate up to and including time \textit{t}:
+The players receive a benefit equal to the time units they were in possession of the resource minus the cost of making their moves. 
 \begin{equation}\label{first}
 \beta_{i}(t) = \gamma_{i}(t) - k_{i}\alpha_{i}.
 \end{equation}
-This is equal to the fraction of time the resource has been owned by player \textit{i}, minus the cost of making the moves.
-In a given game, the asymptotic benefit rate (or simply benefit) will be defined as the lim inf of the average benefit because time\textit{ t} will increase to infinity and the average benefit may not have limiting values.
+where  $\beta_{i}(t)$ denote player's \textit{i} average benefit rate, $k_{i}$ denotes the cost for player \textit{i} and $\alpha_{i}$ defines the average move rate by player \textit{i} up to time \textit{t} with $n_{i}(t)$ the amount of moves made by player \textit{i} up to time \textit{t}:
+\begin{equation}
+\alpha_{i}(t) = \dfrac{n_{i}(t)}{t}
+\end{equation}
+In a given game, the asymptotic benefit rate (or simply benefit) will be defined as the \textit{lim inf} of the average benefit because time\textit{ t} will increase to infinity and the average benefit may not have limiting values.
 \begin{equation}
 \beta_{i}(t)  = \lim_{t \to \infty} inf \beta_{i}(t) 
 \end{equation}
