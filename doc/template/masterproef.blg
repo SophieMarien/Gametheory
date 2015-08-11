@@ -1,9 +1,6 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: masterproef.aux
-Case mismatch error between cite keys Flipit and FlipIt
----line 83 of file masterproef.aux
- : \citation{Flipit
- :                 }
-I'm skipping whatever remains of this command
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: masterproef.aux
 A level-1 auxiliary file: chap-10.aux
 A level-1 auxiliary file: chap-5.aux
 A level-1 auxiliary file: chap-9.aux
@@ -14,15 +11,52 @@ The style file: abbrv.bst
 Database file #1: reffiess.bib
 Warning--entry type for "wikimatrix" isn't style-file defined
 --line 287 of file reffiess.bib
-Repeated entry---line 378 of file reffiess.bib
- : @article{xiang2009propagation
- :                              ,
-I'm skipping whatever remains of this entry
 Warning--entry type for "GoogleRank" isn't style-file defined
---line 388 of file reffiess.bib
+--line 379 of file reffiess.bib
 Warning--empty journal in fengstealthy
 Warning--empty year in fengstealthy
 Warning--empty journal in MitigationNonTargeted
 Warning--empty booktitle in Coursera
 Warning--there's a number but no volume in moore2003inside
-(There were 2 error messages)
+You've used 30 entries,
+            2118 wiz_defined-function locations,
+            687 strings with 8779 characters,
+and the built_in function-call counts, 10894 in all, are:
+= -- 1065
+> -- 492
+< -- 13
++ -- 196
+- -- 162
+* -- 722
+:= -- 1735
+add.period$ -- 94
+call.type$ -- 30
+change.case$ -- 164
+chr.to.int$ -- 0
+cite$ -- 35
+duplicate$ -- 445
+empty$ -- 898
+format.name$ -- 162
+if$ -- 2356
+int.to.chr$ -- 0
+int.to.str$ -- 30
+missing$ -- 30
+newline$ -- 149
+num.names$ -- 64
+pop$ -- 215
+preamble$ -- 1
+purify$ -- 137
+quote$ -- 0
+skip$ -- 324
+stack$ -- 0
+substring$ -- 662
+swap$ -- 123
+text.length$ -- 13
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 114
+warning$ -- 5
+while$ -- 103
+width$ -- 32
+write$ -- 323
+(There were 7 warnings)

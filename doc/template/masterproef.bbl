@@ -17,6 +17,13 @@ K.~Bowers, M.~van Dijk, R.~Griffin, A.~Juels, A.~Oprea, R.~Rivest, and
   Theory for Security}, volume 7638 of {\em Lecture Notes in Computer Science},
   pages 248--263. Springer Berlin Heidelberg, 2012.
 
+\bibitem{chen2003modeling}
+Z.~Chen, L.~Gao, and K.~Kwiat.
+\newblock Modeling the spread of active worms.
+\newblock In {\em INFOCOM 2003. Twenty-Second Annual Joint Conference of the
+  IEEE Computer and Communications. IEEE Societies}, volume~3, pages
+  1890--1900. IEEE, 2003.
+
 \bibitem{GoogleRank}
 Cornell.
 \newblock Google page rank, 2009.

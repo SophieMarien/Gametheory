@@ -238,17 +238,23 @@ To apply this model on FlipIt we again set up a threshold value for i(t) and see
 %OSN worms stands for Online Social Network worms. This model is based on worms that propagate through the use of social media, like Facebook. The difference between an email worm and a social network worms is that the topology of the network is different. 
 
 \subsection{AAWP model}
-AAWP stands for Analytic Active Worm Propagation. The model is \cite{chen2003modeling} The AAWP model is a SIR model which uses a death rate in the formula to calculate the amount of hosts that become Removed. Yet this model is still analysed because if the death rate is removed, this model becomes an SI mode. The model is different from other SI models because it includes the time that it takes to infect a host. A hosts cannot infect another hosts before it is completely compromised. The model also considers the fact that a hosts can be scanned and hit by multiple worms at the same time. %This model is used for worms that propagate through uniform scanning. When uniform scanning is used, each IP address 
+AAWP stands for Analytic Active Worm Propagation. The model is proposed in \cite{chen2003modeling} by Chen et al. to model the discrete behaviour of a worm. The AAWP model is a SIR model which uses a death and patch rate to calculate the amount of hosts that become Removed. Yet this model can still be useful to calculate the delay because if the death and patch rate are removed, this model becomes an SI model. It is different from other SI models because it includes the time that it takes to infect a host. A hosts cannot infect another hosts before it is completely compromised. The model also considers the fact that a hosts can be scanned and hit by multiple worms at the same time. \\%This model is used for worms that propagate through uniform scanning. When uniform scanning is used, each IP address 
 
-The spread of the AAWP model is characterized as follows:
+The spread of the AAWP model with death and patch rate is characterized as follows:
 \begin{equation}
-I_{t+1}=I_{t}+(N-I_{t})[1-(1-\dfrac{1}{\Omega})^{sI_{t}}]
+I_{t+1}=(1-d-p)I_{t}+[(1-p)^{t})N-I_{t}][1-(1-\dfrac{1}{\Omega})^{sI_{t}}]
 \end{equation}
-where $I_{t}$ is the amount of infected hosts at time \textit{t}, \textit{N} is the number of vulnerable hosts, \textit{s} is
+where \textit{d} is the death rate, $p$ is the patch rate, $I_{t}$ is the amount of infected hosts at time \textit{t}, \textit{N} is the number of vulnerable hosts, \textit{s} is
 the scanning rate of the worm and $\Omega$ is the scanning
 space. \\
 
-The biggest drawback of this model is that it is a discrete time model. Continuous models are more appropriate for large scale models. 
+The spread of the worm without the death and the patch rate is as follows:
+\begin{equation}
+I_{t+1}=I_{t}+(N-I_{t})[1-(1-\dfrac{1}{\Omega})^{sI_{t}}]
+\end{equation}
+
+The iteration procedure with death and patch rate will stop when all the nodes in the network are infected or when the number of infected nodes remains the same. When the death and patch rate are removed from the formula the iteration procedure will stop when all the nodes are infected. To extract the delay from this formula we need to know when the iteration procedure stops. \\
+The biggest drawback of this model is that it is a discrete time model. Continuous models are more appropriate for large scale models. The model also uses a complete undirected graph.
 
 
 %Popular mechanism that worms use to detect vulnerable targets by random IP scanning probing. Feasible due to use 32-bit addresses. 128-bit addresses life harder for worms, except the ones that use email systems to propagate. two new strategies: uniformly distributed random number generator to select new target. :spread locally, by biasing the search space towards addresses within the same subnet or network.  
@@ -261,10 +267,14 @@ The biggest drawback of this model is that it is a discrete time model. Continuo
 
 \section{Matrix worm model}
 \label{eigenmatrixmethode}
-As can be seen in table \ref{tree} most propagation models are for a specific network topology. The different kinds of network topology of each system is either homogeneous, small-world network, random network or power-law network. A homogeneous network is a network where every node has about the same degree of connectivity. This means that every node can infect each node with the same opportunity. A small-world topology is a network where most nodes are not connected with each other but they can all reach each other in a few steps. Social networks are an example of a small-world network. A random network is a topology where each connection is chosen at random with equal probability. In a power law network the degrees of each node in the network follow the power law. That is that some of the nodes have a small degree and other have a very large degree of connection. What we want to have is to have a method to calculate the delay that is independent of the network topology. A method where we can chose in the beginning which topology we have and then calculate the delay.\\
+For some of the propagation methods, the graph of the network matters. It is important to have the right topology for the right method. Email worms need a topology that represent a social network, BGP routing worms need a topology on network level. \\
+
+As can be seen in table \ref{tree} all propagation models are depending on a specific network topology. The different kinds of network topology of each system is either homogeneous, small-world network, random network or a power-law network. A homogeneous network is a network where every node has about the same degree of connectivity. This means that every node can infect each node with the same opportunity. A small-world topology is a network where most nodes are not connected with each other but they can all reach each other in a few steps. Social networks are an example of a small-world network. A random network is a topology where each connection is chosen at random with equal probability. In a power law network the degrees of each node in the network follow the power law. Some of the nodes have a small degree of connectivity, others have a very large degree of connectivity.\\
+
+What we want to have is a method to calculate the delay that is independent of a network topology. A method where we can chose in the beginning which topology we have and then calculate the delay.\\
 
 %All of the above models for modelling the mechanism of the spreading of a worm depend on the kind of topology of the network.  
-In this chapter we propose a method to calculate the spread of the worm in way that the topology of the network can be easily integrated. The method will give an approximation of how fast a worm can infect a network. The method is based on the method for Google Page Ranking \cite{GoogleRank}. 
+In this chapter we propose a method to calculate the spread of a worm in a way that the topology of the network can be easily integrated. The method will give an approximation of how fast a worm can infect a network. The method is based on Google Page Ranking \cite{GoogleRank} used by search engines to rank pages. 
 
 \subsubsection{Google PageRank algorithm}
 The PageRank algorithm is introduced by Page and Brin in 1998 as one of the main features of the search engine Google to improve the search results. PageRank models the human behaviour when users surf through the net. It can also model \textit{random surfers}. A random surfer is the probability that a surfer gets bored and randomly visits another page which is not linked with the initial page. The probability that he will visit a random page is the PageRank of that page. A page will have a high PageRank if many pages will point to this page. This means that this page is well cited through other pages and maybe an important one to look at.    The main idea of the PageRank algorithm is to look at the number of (important) web pages that point to a particular page. The ranking of this page depends than on the number of out coming links and the importance of the pages that link to this page. With a probability of $P$ the surfer will follow a link of the page to another page, and with a probability of $1-P$ the surfer will surf to a random page. The PageRank algorithm is expressed as follows:
@@ -276,7 +286,7 @@ where $N_{A}$ is the number of pages, $PR(i)$ is the ranking of web page $i$, $D
 \subsubsection{Model with matrix}
 
 
-For some of the spreading methods, the graph of the network matters. It is important to have the right topology for the right method. Email worms need a topology that represent a social network, BGP routing worms need a topology on network level. \\
+
 %--iets zeggen dat het ook belangrijk is voor de defender om zijn netwerk zo aan te passen dat het virus moeilijker kan verspreiden. Network segregation mss aanhalen ?--
 %
 %\begin{description}
