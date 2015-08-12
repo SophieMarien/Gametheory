@@ -510,7 +510,7 @@ M = (1-p) \cdot A + p \cdot B ~~where~~B=\dfrac{1}{n}\cdot \begin{bmatrix}
      \end{bmatrix}
 \end{equation}
 
-where $p$ defines the damping factor and indicates the probability that a surfer quits a current page and continuous on a new random page. Matrix A is an transposed matrix of the graph matrix. The graph matrix is an $n x n$ matrix (\textit{n} defines the number of pages) that represents the graph where every entry corresponds to a non-zero entry if there is a link from one page to the other page. For dangling nodes (nodes with no outgoing links), the row entries are equal to $\dfrac{1}{n}$. Matrix A for the graph represented figure \ref{GoogleMatrix} is equal to:
+where $p$ defines the damping factor and indicates the probability that a surfer quits a current page and continuous on a new random page. Matrix \textit{A} is an transposed matrix of the graph matrix. The graph matrix is an $n \times n$ matrix (\textit{n} defines the number of pages) that represents the graph where every entry corresponds to a non-zero entry if there is a link from one page to the other page. For dangling nodes (nodes with no outgoing links), the row entries are equal to $\dfrac{1}{n}$. Matrix \textit{A} for the graph represented figure \ref{GoogleMatrix} is equal to:
 
 
 \begin{figure}
@@ -540,7 +540,7 @@ $ A =
  
 ~~\\
 
-The PageRank vector of a graph, with the transposition matrix A and the damping variable p, is equal to the probabilistic eigenvector of the matrix M, corresponding to the eigenvalue 1. This can be calculated by the use of the Power Method. \\
+The PageRank vector of a graph, with the transposition matrix\textit{ A} and the damping variable \textit{p}, is equal to the probabilistic eigenvector of the matrix \textit{M}, corresponding to the eigenvalue 1. This can be calculated by the use of the Power Method. \\
 
-We can use the Google matrix to calculate the probability that a node in a graph is infected by a worm after a certain amount op time. When a worm uses the topology of the graph to propagate the damping variable p must be equal to zero, as in the worm will not suddenly attack a node that is not connected. When the propagation of a worm is topology independent, the damping variable p can be set on 1. \\
-This can be useful for further research, when the defender can also flip a subset of nodes. It can be advantageous to flip the nodes with a higher PageRank more often than the other nodes. A higer PageRank means that the page has a bigger probability of being compromised by a worm. 
+We can use the Google matrix to calculate the probability that a node in a graph is infected by a worm after a certain amount op time. When a worm uses the topology of the graph to propagate the damping variable p must be equal to zero, as in the worm will not suddenly attack a node that is not connected. When the propagation of a worm is topology independent, the damping variable \textit{p} can be set on 1. \\
+This can be useful for further research, when the defender can also flip a subset of nodes. It can be advantageous to flip the nodes with a higher PageRank more often than the other nodes. A higher PageRank means that the page has a bigger probability of being compromised by a worm. 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.27)  12 AUG 2015 14:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.27)  12 AUG 2015 16:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1366,8 +1366,8 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/local/texlive/2013/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-Overfull \hbox (6.8136pt too wide) detected at line 22
- \T1/lmr/bx/n/10.95 xviii
+Overfull \hbox (3.31563pt too wide) detected at line 21
+ \T1/lmr/bx/n/10.95 xvii
  []
 
 ) [2
@@ -1771,46 +1771,85 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 425.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 425.
+
+Underfull \hbox (badness 10000) in paragraph at lines 426--428
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 429--430
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--445
+
+ []
+
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 428.
+(babel)             in language  on input line 451.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 428.
+(babel)             in language  on input line 451.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 428.
+(babel)             in language  on input line 451.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 428.
+(babel)             in language  on input line 451.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 444.
+(babel)             in language  on input line 451.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 444.
+(babel)             in language  on input line 451.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 444.
+(babel)             in language  on input line 451.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 444.
+(babel)             in language  on input line 451.
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 451--452
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 454--455
+
+ []
+
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 444.
+(babel)             in language  on input line 478.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 444.
+(babel)             in language  on input line 478.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 444.
+(babel)             in language  on input line 478.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 444.
-[15] (./masterproef.lof
+(babel)             in language  on input line 478.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 494.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 494.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 494.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 494.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 494.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 494.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 494.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 494.
+[16] (./masterproef.lof
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16
+ [17
 
 
 ])
-(./masterproef.lot) [17]
+(./masterproef.lot) [18]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18
+ [19
 
 ]
-[19] [20
-
-]
+[20]
 \openout2 = `chap-10.aux'.
 
  (./chap-10.tex
@@ -1829,6 +1868,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--30
  []
 
 [1
+
 
 
 ]
@@ -2412,25 +2452,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 \tf@lot=\write9
 \openout9 = `masterproef.lot'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 532.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 532.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 582.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 582.
  (./masterproef.aux
 (./chap-10.aux) (./chap-5.aux) (./chap-9.aux) (./nash.aux) (./chap-4.aux)
 (./conclusion.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 532.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 532.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 582.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 582.
 Package rerunfilecheck Info: File `masterproef.out' has not changed.
 (rerunfilecheck)             Checksum: A62B77FAF9E6E98E8B609118F34031BF;1868.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 532.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 582.
  ) 
 Here is how much of TeX's memory you used:
  25614 strings out of 493315
  443055 string characters out of 6137903
- 710986 words of memory out of 5000000
+ 710987 words of memory out of 5000000
  28023 multiletter control sequences out of 15000+600000
  103522 words of font info for 198 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -2457,7 +2497,7 @@ msy6.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></
 usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/
 texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive
 /2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on masterproef.pdf (78 pages, 3111859 bytes).
+Output written on masterproef.pdf (78 pages, 3115578 bytes).
 PDF statistics:
  1253 PDF objects out of 1440 (max. 8388607)
  967 compressed objects within 10 object streams

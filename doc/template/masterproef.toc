@@ -16,10 +16,10 @@
 \contentsline {section}{FlipIt Met Propagatie Vertraging}{ix}{section*.11}
 \contentsline {subsection}{ Formalisering van de benefit formule met een vertraging}{x}{section*.12}
 \contentsline {section}{Nash Equilibrium}{xv}{section*.19}
-\contentsline {section}{Conclusions and Further Research}{xv}{section*.20}
+\contentsline {section}{Conclusions and Further Research}{xvi}{section*.20}
 \select@language {english}
-\contentsline {chapter}{List of Figures and Tables}{xvi}{chapter*.21}
-\contentsline {chapter}{List of Abbreviations and Symbols}{xviii}{chapter*.24}
+\contentsline {chapter}{List of Figures and Tables}{xvii}{chapter*.21}
+\contentsline {chapter}{List of Abbreviations and Symbols}{xix}{chapter*.24}
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}
 \contentsline {subsubsection}{Research questions}{2}{section*.27}

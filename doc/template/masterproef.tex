@@ -423,8 +423,58 @@ De benefit voor de aanvaller is de volgende formule:
 
 
 \section{Nash Equilibrium}
-Verder door schrijven
+Na het bepalen van de benefit functies voor de verdediger en de aanvaller, zijn we geinteresseerd in het vinden van de Nash evenwichten. Dit zijn de evenwichten waarbij de spelers benefit niet gaat vergroten door te veranderen van de speel frequentie.  \\
+Hiervoor moeten eerst de optimale strategi"en bepaald worden. Uit deze optimale strategi"en kan het Nash evenwicht bepaald worden. \\
 
+Meer formeel: een Nash evenwicht is een punt $(\delta_{D}^{*},\delta_{A}^{*})$ zodat de verdediger zijn benefit $\beta_{D}(\delta_{D},\delta_{A}^{*})$ maximaal is op $\delta_{A}=\delta_{A}^{*}$ en de attacker zijn benefit $\beta_{A}(\delta_{D}^{*}, \delta_{A})$ maximaal is op $\delta_{D}=\delta_{D}^{*}$. Eerst een aantal belangrijke notaties. $opt_{D}(\delta_{A})$ is the verzameling van waarden ( speeltempo $\delta_{D}$) die de benefit van de defender optimaliseren voor een vaste waarde van $\delta_{A}$ van de aanvaller. Hetzelfde voor $opt_{A}(\delta_{D})$ die verzameling voorstelt van waarden ( speeltempo $\delta_{A}$) die de benefit van de aanvaller optimaliseren voor een vaste waarde van $\delta_{D}$ van de verdediger.\\
+
+De benefit functies voor elke case worden eerst nog even opgelijst:
+
+\begin{itemize}
+\item \textbf{Case 1:} $\delta_{D} \leq \delta_{A} $ 
+ \begin{equation*}
+\beta_{D}(\alpha_{D},\alpha_{A}) = 1 - \dfrac { (\delta_{D}-d) ^{2}} {2 \cdot \delta_{D}  \delta_{A}} - k_{D} \alpha_{D}
+\end{equation*}
+\begin{equation*}
+\beta_{A}(\alpha_{D},\alpha_{A}) = \dfrac { (\delta_{D}-d) ^{2}} {2 \cdot \delta_{D}  \delta_{A}} - k_{A} \alpha_{A}
+\end{equation*}
+\item \textbf{Case 2.a:} $d + \delta_{A} \leq \delta_{D}$
+\begin{equation*}
+\beta_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - k_{D} \alpha_{D} 
+\end{equation*}\\
+\begin{equation*}
+\beta_{A}(\alpha_{D},\alpha_{A}) = 1 -\dfrac{\delta_{A}}{2\delta_{D}} - \dfrac{d}{\delta_{D}} - k_{A} \alpha_{A} 
+\end{equation*}
+\item \textbf{Case 2.b:} $d + \delta_{A} \geq \delta_{D}$
+\begin{equation*}\
+\beta_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - k_{D} \alpha_{D} - \dfrac{(d - (\delta_{D} - \delta_{A}))^{2}}{2 \delta_{D} \delta_{A}}
+\end{equation*}\\
+ \begin{equation*}
+\beta_{A}(\alpha_{D},\alpha_{A}) = 1 -\dfrac{\delta_{A}}{2\delta_{D}} - \dfrac{d}{\delta_{D}} - k_{A} \alpha_{A} + \dfrac{(d - (\delta_{D} - \delta_{A}))^{2}}{2 \delta_{D} \delta_{A}}
+\end{equation*}\\
+\end{itemize}
+
+De functie $opt_{D}(\delta_{A})$ :
+ \begin{displaymath}
+  opt_{D}(\delta_{A}) = \left\{
+     \begin{array}{lr}
+          \infty , & \delta_{A} < 2(k_{D} - d)\\
+      \left[ \sqrt{2k_{D}\delta_{A} + d^{2}},\infty\right] , & \delta_{A} = 2(k_{D} - d) \\
+      \sqrt{2k_{D}\delta_{A} + d^{2}}, & \delta_{A} > 2(k_{D} - d)
+     \end{array}
+   \right.
+\end{displaymath}
+
+De functie $opt_{A}(\delta_{D})$ :
+ \begin{displaymath}
+  opt_{A}(\delta_{D}) = \left\{
+     \begin{array}{lr}
+       \sqrt{d k_{A}\delta_{D}}, & \delta_{D} > \dfrac{(\delta_{D}-d)^{2}}{2k_{A}}\\
+       \left[ \sqrt{d k_{A}\delta_{D}}, \infty\right],  & \delta_{D} = \dfrac{(\delta_{D}-d)^{2}}{2k_{A}} \\
+       \infty & \delta_{D} < \dfrac{(\delta_{D}-d)^{2}}{2k_{A}}
+     \end{array}
+   \right.
+\end{displaymath} 
 \section{Conclusions and Further Research}
 \label{ch:conclusion}
 In this paper we presented an adaptation of the FlipIt game to the situation of virus propagation, such as to take the delay for network infection into account. We discerned two cases. In the case the defender plays faster than the attacker, the attacker simply looses the delay. In the case the attacker plays faster, each time the defender plays in an interval, he will gain extra time of the delay. The delay is therefore always detrimental to the benefit of the attacker. 
@@ -472,7 +522,7 @@ This demonstrates that the FlipIt game can be adapted to a game with virus propa
     SI & Susceptible - Infected \\
     SIR & Susceptible - Infected - Removed \\
     SIS & Susceptible - Infected - Susceptible \\
-    AAWP & \\
+    AAWP & Analytic Active Worm Propagation\\
       \end{tabularx}
 \end{flushleft}
 \section*{Symbols}
