@@ -16,7 +16,7 @@ The overview of this chapter will be as follows: Section \ref{methodsofpropagati
 \section{Methods of propagation}
 \label{methodsofpropagation}
 
-In the context of malware propagation, there are two kinds of APT's. First, there are APT's that launch an attack on just one target node of a network. The mechanism these APT's use to propagate malware is the dropper mechanism. The dropper is the initial attack vector that compromises the single targeted node of the system. The second kind of APT's target multiple nodes. These APT's also use a dropper mechanism but have an additional mechanism for self-propagation in order to propagate themselves to the multiple targeted nodes of the system. If the APT uses virus spreading, the virus infects one node on the network and has to wait for human interaction to spread. As such the spreading speed depends on the human interaction, and modelling virus propagation therefore requires modelling human behaviour. If an APT uses a worm propagation method it will spread by itself after it has been dropped on the network. Given the additional complexity of incorporating the human factor in a spreading method and that this chapter is merely meant as illustration on calculating the delay for use in the game theoretic approach, this chapter will be limited to worm propagation models for APT's. \\
+In the context of malware propagation, there are two kinds of APTs. First, there are APTs that launch an attack on just one target node of a network. The mechanism these APTs use to propagate malware is the dropper mechanism. The dropper is the initial attack vector that compromises the single targeted node of the system. The second kind of APTs target multiple nodes. These APTs also use a dropper mechanism but have an additional mechanism for self-propagation in order to propagate themselves to the multiple targeted nodes of the system. If the APT uses virus spreading, the virus infects one node on the network and has to wait for human interaction to spread. As such the spreading speed depends on the human interaction, and modelling virus propagation therefore requires modelling human behaviour. If an APT uses a worm propagation method it will spread by itself after it has been dropped on the network. Given the additional complexity of incorporating the human factor in a spreading method and that this chapter is merely meant as illustration on calculating the delay for use in the game theoretic approach, this chapter will be limited to worm propagation models for APTs. \\
 
 Infection by worms start by dropping the worm on the network. Different dropping mechanisms can be used, whereby the initial attack can be random or targeted at a specific node. Frequently used mechanisms are USB sticks (given to a specific person or left behind to be picked up by a random person), email, or malicious software through fishing or trojan horses. To determine the total delay, however, the propagation strategy is of higher importance than the drop mechanism. Propagation is achieved by determining the next nodes to spread the worm to. The following are common propagation methods: 
 \begin{description}
@@ -255,7 +255,7 @@ I_{t+1}=I_{t}+(N-I_{t})[1-(1-\dfrac{1}{\Omega})^{sI_{t}}]
 \end{equation}
 
 The iteration procedure with death and patch rate will stop when all the nodes in the network are infected or when the number of infected nodes remains the same. When the death and patch rate are removed from the formula the iteration procedure will stop when all the nodes are infected. To extract the delay from this formula we need to know when the iteration procedure stops. \\
-The biggest drawback of this model is that it is a discrete time model. Continuous models are more appropriate for large scale models. The model also uses a complete undirected graph.
+The biggest drawback is that the model is a discrete time model. Continuous models are more appropriate for large scale models. The model also uses a complete undirected graph.
 
 
 %Popular mechanism that worms use to detect vulnerable targets by random IP scanning probing. Feasible due to use 32-bit addresses. 128-bit addresses life harder for worms, except the ones that use email systems to propagate. two new strategies: uniformly distributed random number generator to select new target. :spread locally, by biasing the search space towards addresses within the same subnet or network.  
@@ -299,12 +299,13 @@ In this chapter we propose a method to calculate the spread of a worm in a way t
 
 %So the chance that a resource is infected after time t is the chance that the resource is infected by all the previous infections and that the defender has not flipped the resource.
 
-The computer network can be modelled by an undirected Graph $G = < V, E> $ where $|V|$ denotes the number of resources in the network and $|E|$ the number of connections. We can convert this to an adjacency matrix which represents which vertices of the graph are neighbours of other vertices. \\
-The graph is represented as a $|V| \times |V|$ matrix with for every entry $a_{ij}$ a 1 as value if there is a connection between node $V_{i}$ and $V_{j}$ and 0 otherwise, and with 0's for every $a_{ii}$. Because the graph is undirected we have a symmetric matrix.  \\ 
+A computer network can be modelled by an undirected or directed graph $G = < N, E> $ where $|N|$ denotes the number of nodes in the network and $|E|$ the number of connections. This graph can be converted to an  $|N| \times |N|$ adjacency matrix where the entries represent the connections between the nodes of the network. \\
+The matrix has a non-zero entry $a_{ij}$ if there is a connection from node $N_{i}$ to $N_{j}$. \\ 
+
 
 Adjacency matrices have many interesting applications, amongst which calculating the paths between vertices:
 \textit{``If \textit{A} is the adjacency matrix of the directed or undirected graph \textit{G}, then the matrix $A^{n}$ (i.e., the matrix product of \textit{n} copies of \textit{A}) has an interesting interpretation: the entry in row \textit{i} and column \textit{j} gives the number of (directed or undirected) walks of length \textit{n} from vertex \textit{i} to vertex \textit{j}. If \textit{n} is the smallest nonnegative integer, such that for all i ,j , the (i,j)-entry of $A^{n} > 0$, then n is the distance between vertex i and vertex \textit{j}.''}  source: \cite{wikimatrix} .\\
-
+Using this property of an adjacency matrix it is possible to calculate the time it takes for a worm, starting on a specific node, to infect a sufficient amount of other nodes in the network. Every matrix $A^{n}$ has a non-zero \textit{ij}-entry , if the worm starting in node \textit{i} can reach node $j$ in \textit{n} time steps. If we sum up all the matrices $A^{1} + A^{2} + ~...~+ A^{n-1}+A^{n}$, every \textit{i}-row indicates which node \textit{j} is infected by node \textit{i} after time $t=n$.  
 
 %%% Local Variables: 
 %%% mode: latex
@@ -316,7 +317,7 @@ Adjacency matrices have many interesting applications, amongst which calculating
                     semithick]
   \tikzstyle{every state}=[fill=black!60!green,draw=none,text=white]
 
-  \node[initial,state] (A)                    {$N_1$};
+  \node[state] (A)                    {$N_1$};
   \node[state]         (B) [above right of=A] {$N_2$};
   \node[state]         (D) [below right of=A] {$N_3$};
   \node[state]         (C) [below right of=B] {$N_4$};
@@ -326,17 +327,12 @@ Adjacency matrices have many interesting applications, amongst which calculating
   \path (A) edge              node {} (B)
             edge              node {} (D)
         (B) edge              node {} (A)
-        	edge			  node {} (C)
         (C) edge              node {} (B)
-            edge 			  node {} (D)
-            edge			  node {} (E)
-            edge			  node {} (F)
+            edge 			  node {} (F)
         (D) edge 			  node {} (C)
-            edge              node {} (A)
-        (E) edge 			  node {} (C)
-    	(F)	edge			  node {} (C);
+        (F) edge 			  node {} (E);
 \end{tikzpicture}
-\caption{Network with 6 nodes. The arrows represent the connections between the nodes. The start point is were the worm has been dropped, here node 1.}
+\caption{Network with 6 nodes. The arrows represent the connections between the nodes. }
 \label{netwerkfiguur}
 \end{figure}
 
@@ -355,61 +351,87 @@ Adjacency matrices have many interesting applications, amongst which calculating
 %    x_{d1} & x_{d2} & x_{d3} & \dots  & x_{dn}
 %\end{bmatrix}
 %\] 
-Assuming a network like in figure \ref{netwerkfiguur}, the corresponding adjacency matrix is the  matrix $[A]$: \\
+Assuming a network like in figure \ref{netwerkfiguur}, the corresponding adjacency matrix is the  matrix $A$: \\
 
-
-$
+\begin{equation}
+A =
 \bordermatrix{
          & N_1		& N_2	& N_3	& N_4 	& N_5	&N_6     \cr
     N_1   & 0		& 1		& 1		& 0		& 0		& 0	     \cr
+    N_2   & 1		& 0		& 0		& 0		& 0		& 0	     \cr
+    N_3   & 0		& 0		& 0		& 1		& 0		& 0	     \cr
+    N_4   & 0		& 1		& 0		& 0		& 0		& 1	     \cr
+	N_5   & 0		& 0		& 0		& 0		& 0		& 0	     \cr
+	N_6   & 0		& 0		& 0		& 0		& 1		& 0	     \cr
+}
+\end{equation}
+
+In matrix $A \times A = A^{2}$, each entry represents the number of  paths with length 2 from $N_{i}$ to $N_{j}$:\\
+
+
+\begin{equation}
+ A \times A = A^{2} =
+\bordermatrix{
+         & N_1		& N_2	& N_3	& N_4 	& N_5	&N_6     \cr
+    N_1   & 1		& 0		& 0		& 1		& 0		& 0	     \cr
+    N_2   & 0		& 1		& 1		& 0		& 0		& 0	     \cr
+    N_3   & 0		& 1		& 0		& 0		& 0		& 1 	     \cr
+    N_4   & 1	    & 0		& 0		& 0		& 1		& 0	     \cr
+	N_5   & 0		& 0		& 0		& 0		& 0		& 0	     \cr
+	N_6   & 0		& 0		& 0		& 0		& 0		& 0	     \cr
+}
+\end{equation}
+
+Likewise, in matrix $A^{2} \times A = A^{3}$ each entry represents the number of paths with 3 steps from $N_{i}$ to $N_{j}$.\\
+
+
+\begin{equation}
+ A \times A \times A = A^{3} =
+\bordermatrix{
+         & N_1		& N_2	& N_3	& N_4 	& N_5	&N_6     \cr
+    N_1   & 0		& 2		& 1		& 0		& 0		& 0	     \cr
     N_2   & 1		& 0		& 0		& 1		& 0		& 0	     \cr
-    N_3   & 1		& 0		& 0		& 1		& 0		& 0	     \cr
-    N_4   & 0		& 1		& 1		& 0		& 1		& 1	     \cr
-	N_5   & 0		& 0		& 0		& 1		& 0		& 0	     \cr
-	N_6   & 0		& 0		& 0		& 1		& 0		& 0	     \cr
-}$
-\\
-
-In matrix $A \times A = A^{2}$, each entry represents the number of 2 step paths from $N_{i}$ to $N_{j}$: We denote this matrix as matrix \textit{[B]}\\
-
-
-$
-\bordermatrix{
-         & N_1		& N_2	& N_3	& N_4 	& N_5	&N_6     \cr
-    N_1   & 2		& 0		& 0		& 2		& 0		& 0	     \cr
-    N_2   & 0		& 2		& 2		& 0		& 1		& 1	     \cr
-    N_3   & 0		& 2		& 2		& 0		& 1		& 1	     \cr
-    N_4   & 2		& 0		& 0		& 4		& 0		& 0	     \cr
-	N_5   & 0		& 1		& 1		& 0		& 1		& 1	     \cr
-	N_6   & 0		& 1		& 1		& 0		& 1		& 1	     \cr
-}$
-\\
-
-Likewise, in matrix $A^{2} \times A = A^{3}$ each entry represents the number of paths with 3 steps from $N_{i}$ to $N_{j}$: We denote this matrix as matrix \textit{[C]}\\
-
-
-$
-\bordermatrix{
-         & N_1		& N_2	& N_3	& N_4 	& N_5	&N_6     \cr
-    N_1   & 0		& 4		& 4		& 0		& 2		& 2	     \cr
-    N_2   & 4		& 0		& 0		& 6		& 0		& 0	     \cr
-    N_3   & 4		& 0		& 0		& 6		& 0		& 0	     \cr
-    N_4   & 0		& 6		& 6		& 0		& 4		& 4	     \cr
-	N_5   & 2		& 0		& 0		& 4		& 0		& 0	     \cr
-	N_6   & 2		& 0		& 0		& 4		& 0		& 0	     \cr
-}$ 
+    N_3   & 1		& 0		& 0		& 0		& 1		& 0	     \cr
+    N_4   & 0		& 1		& 1		& 0		& 0		& 0	     \cr
+	N_5   & 0		& 0		& 0		& 0		& 0		& 0	     \cr
+	N_6   & 0		& 0		& 0		& 0		& 0		& 0	     \cr
+}
+\end{equation}
 
 
 ~~\\
-So, in $A^{N}$ every $a_{ij}$ entry gives the number of paths with N steps from $N_{i}$ to $N_{j}$.\\
+So, in $A^{n}$ every $a_{ij}$ entry gives the number of paths with \textit{n} steps from $N_{i}$ to $N_{j}$.\\
 
-Using this knowledge we can calculate in how many steps a node is infected: \\
-The infection vector or start vector $I_{0}$ of length $|V|$ indicates which node is infected and which not. Multiplying the infection vector with $A$ results in a vector $I_{1}$, which represents which nodes are infected after 1 step. Multiplying the start vector $I_{0}$ with $A^{N}$ calculates which nodes are infected in \textit{N} steps: each non zero entry represents an node infected after \textit{N} steps. \\
-In the context of the FlipIt game, it is safe to assume that once a node is infected, it stays infected until the defender Flips the node. This means that after d steps, it is assumed that all nodes that could be reached in less than \textit{d} steps from the node where the worm was dropped, are infected. In order to know how many nodes are infected after (for example) at most 3 steps, we have to consider nodes that are infected initially (step 1), or after 2 steps, or after 3 steps.  Calculating the sum of the three matrices $(A + A^{2} + A^{3}) $ results in a matrix that indicates for each node, the number of paths of length 1, 2 or 3 from \textit{i} to \textit{ j}. Multiplying the start vector with this matrix, results in a vector that indicates which nodes will be infected in at most 3 steps . This technique can be applied to calculate the state of the network after any number of steps. \\
+Calculating the sum of the three matrices $(A + A^{2} + A^{3}) $ results in a matrix that indicates which nodes are infected after a 3 time steps:
 
-Determining the length of the delay boils down to determining which configuration of infected nodes is considered as corresponding to the attacker having flipped the resource. It may be that all nodes need to be flipped, a sufficient amount of nodes, or a (set of) particular nodes.\\
+\begin{equation}
+ A + A^{2} + A^{3} = \sum A^{n} =
+\bordermatrix{
+         & N_1		& N_2	& N_3	& N_4 	& N_5	&N_6     \cr
+    N_1   & 1		& 3		& 2		& 1		& 0		& 1	     \cr
+    N_2   & 2		& 1		& 1		& 1		& 0		& 0	     \cr
+    N_3   & 1		& 1		& 0		& 1		& 1		& 1	     \cr
+    N_4   & 1		& 2		& 1		& 0		& 1		& 1	     \cr
+	N_5   & 0		& 0		& 0		& 0		& 0		& 0	     \cr
+	N_6   & 0		& 0		& 0		& 0		& 1		& 0	     \cr
+}
+\end{equation}
 
---Hier nog een beetje verder uitschrijven hoe je exact de d dan moet bepalen, gegeven dat je niet weet in welke knoop het virus gedropt wordt-- \\
+With the formula $\sum A^{n}$ the average delay can be calculated by counting the expected delay of every node when a worm has been dropped and devide it by the number of nodes in the network. \\
+
+Matrix \textit{A} can also represent a graph where every link get a weight. The weight is equal to the probability that the worm spreads through that link. The outcome of $ \sum A^{n}$ is than equal to the probability that each node has been infected after n time steps. The average delay can be calculated by setting up a threshold value for the probability that a node is infected. \\
+
+\subsubsection*{Conclusions}
+The advantage of this matrix worm model in comparison with the above models is that matrix  \textit{A} can represent any network topology. Directed or undirected. \\
+With this method it is also possible to determine the shortest path in the network. By summing up all the matrices, the first row that has all non-zero entries determines the shortest path. From node \textit{i} to the last \textit{ij}-entry that became a non-zero value. Consequently, if a worm is dropped on node \textit{i}, this worm will compromise the network in the shortest time possible. A defender can use this knowledge to adapt its network configurations. \\
+A disadvantage of this method is the cost. A very large network needs a very large (sparse) matrix. 
+%Using this knowledge we can calculate in how many steps a node is infected: \\
+%The infection vector or start vector $I_{0}$ of length $|V|$ indicates which node is infected and which not. Multiplying the infection vector with $A$ results in a vector $I_{1}$, which represents which nodes are infected after 1 step. Multiplying the start vector $I_{0}$ with $A^{N}$ calculates which nodes are infected in \textit{N} steps: each non zero entry represents an node infected after \textit{N} steps. \\
+%In the context of the FlipIt game, it is safe to assume that once a node is infected, it stays infected until the defender Flips the node. This means that after d steps, it is assumed that all nodes that could be reached in less than \textit{d} steps from the node where the worm was dropped, are infected. In order to know how many nodes are infected after (for example) at most 3 steps, we have to consider nodes that are infected initially (step 1), or after 2 steps, or after 3 steps.  Calculating the sum of the three matrices $(A + A^{2} + A^{3}) $ results in a matrix that indicates for each node, the number of paths of length 1, 2 or 3 from \textit{i} to \textit{ j}. Multiplying the start vector with this matrix, results in a vector that indicates which nodes will be infected in at most 3 steps . This technique can be applied to calculate the state of the network after any number of steps. \\
+%
+%Determining the length of the delay boils down to determining which configuration of infected nodes is considered as corresponding to the attacker having flipped the resource. It may be that all nodes need to be flipped, a sufficient amount of nodes, or a (set of) particular nodes.\\
+%
+%--Hier nog een beetje verder uitschrijven hoe je exact de d dan moet bepalen, gegeven dat je niet weet in welke knoop het virus gedropt wordt-- \\
 
 
 %What do we need for an algorithm
@@ -467,9 +489,9 @@ Determining the length of the delay boils down to determining which configuratio
 %				
 %		
 %\end{verbatim}
-\subsubsection{Google PageRank algorithm}
+\section{Google PageRank algorithm}
 
-To calculate the delay of a worm propagation we assumed that every node is even important. A possible relaxation of this rule can be done by the Page Rank Algorithm, which can be used to determine the importance of certain nodes. 
+To calculate the delay of a worm propagation we assumed that every node is even important. A possible relaxation of this rule can be done by the PageRank Algorithm, which can be used to determine the importance of certain nodes. 
 
 The PageRank algorithm is introduced by Page and Brin in 1998 as one of the main features of the search engine Google to improve the search results. PageRank models the human behaviour when users surf through the net. It can also model \textit{random surfers}. A random surfer is the probability that a surfer gets bored and randomly visits another page which is not linked with the initial page. The probability that he will visit a random page is the PageRank of that page. A page will have a high PageRank if many pages will point to this page. This means that this page is well cited through other pages and maybe an important one to look at.    The main idea of the PageRank algorithm is to look at the number of (important) web pages that point to a particular page. The ranking of this page depends than on the number of out coming links and the importance of the pages that link to this page. With a probability of $P$ the surfer will follow a link of the page to another page, and with a probability of $1-P$ the surfer will surf to a random page. The PageRank algorithm is expressed as follows:
 \begin{equation}

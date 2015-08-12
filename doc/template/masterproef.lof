@@ -34,9 +34,9 @@
 \contentsline {figure}{\numberline {4.1}{\ignorespaces The benefit function is of the shape of 1/x if $\delta _{D}$ is always decreasing and if $\delta _{A} + 2(d-k_{D}) > 0$. \relax }}{33}{figure.caption.58}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces The benefit function is of the shape of -1/x if $\delta _{D}$ is always increasing and if $\delta _{A} + 2(d-k_{D}) < 0$.\relax }}{33}{figure.caption.59}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Taxonomy of worm modelling. Image based on taxonomy given in \cite {wang2014modeling}\relax }}{42}{figure.caption.77}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Network with 6 nodes. The arrows represent the connections between the nodes. The start point is were the worm has been dropped, here node 1.\relax }}{46}{figure.caption.79}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces A representation of a graph with three nodes. Node 1 is a dangling node with no outgoing links.\relax }}{49}{figure.caption.81}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Taxonomy of worm modelling. Image based on taxonomy given in \cite {wang2014modeling}\relax }}{42}{figure.caption.76}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Network with 6 nodes. The arrows represent the connections between the nodes. \relax }}{46}{figure.caption.78}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces A representation of a graph with three nodes. Node 1 is a dangling node with no outgoing links.\relax }}{49}{figure.caption.80}
 \addvspace {10pt}
 \select@language {dutch}
 \select@language {english}
