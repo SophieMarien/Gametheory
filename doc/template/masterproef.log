@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.27)  15 AUG 2015 13:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.27)  15 AUG 2015 14:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1916,7 +1916,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 163--164
 
  []
 
-[9] <Images/PrisDilemma.png, id=568, 466.3824pt x 318.9516pt>
+[9] <Images/PrisDilemma.png, id=569, 466.3824pt x 318.9516pt>
 File: Images/PrisDilemma.png Graphic file (type png)
 
 <use Images/PrisDilemma.png>
@@ -2029,7 +2029,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 145--147
 
  []
 
-<Images/DefFlip.pdf, id=652, 512.38626pt x 108.42407pt>
+<Images/DefFlip.pdf, id=653, 512.38626pt x 108.42407pt>
 File: Images/DefFlip.pdf Graphic file (type pdf)
 
 <use Images/DefFlip.pdf>
@@ -2040,7 +2040,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 167--168
 
  []
 
-<Images/Delayuitgelegd.pdf, id=685, 512.38626pt x 236.17334pt>
+<Images/Delayuitgelegd.pdf, id=686, 512.38626pt x 236.17334pt>
 File: Images/Delayuitgelegd.pdf Graphic file (type pdf)
 
 <use Images/Delayuitgelegd.pdf>
@@ -2056,14 +2056,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 184--185
 
  []
 
-<Images/FlipItCase1delay.pdf, id=720, 519.29205pt x 87.99817pt>
+<Images/FlipItCase1delay.pdf, id=721, 519.29205pt x 87.99817pt>
 File: Images/FlipItCase1delay.pdf Graphic file (type pdf)
 
 <use Images/FlipItCase1delay.pdf>
 Package pdftex.def Info: Images/FlipItCase1delay.pdf used on input line 202.
 (pdftex.def)             Requested size: 363.50195pt x 61.59828pt.
 
-<Images/FlipItCase1delaytobig.pdf, id=721, 512.38626pt x 77.18385pt>
+<Images/FlipItCase1delaytobig.pdf, id=722, 512.38626pt x 77.18385pt>
 File: Images/FlipItCase1delaytobig.pdf Graphic file (type pdf)
 
 <use Images/FlipItCase1delaytobig.pdf>
@@ -2081,7 +2081,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 224--225
  []
 
 
-<../../doc/template/Images/DiffDelayCase1.pdf, id=753, 512.38626pt x 236.17334p
+<../../doc/template/Images/DiffDelayCase1.pdf, id=754, 512.38626pt x 236.17334p
 t>
 File: ../../doc/template/Images/DiffDelayCase1.pdf Graphic file (type pdf)
  <use ../../doc/template/Images/DiffDelayCase1.pdf>
@@ -2089,7 +2089,7 @@ Package pdftex.def Info: ../../doc/template/Images/DiffDelayCase1.pdf used on i
 nput line 233.
 (pdftex.def)             Requested size: 358.66794pt x 165.32019pt.
 
-<../../doc/template/Images/delaydtijdens.pdf, id=756, 512.38626pt x 113.75499pt
+<../../doc/template/Images/delaydtijdens.pdf, id=757, 512.38626pt x 113.75499pt
 >
 File: ../../doc/template/Images/delaydtijdens.pdf Graphic file (type pdf)
  <use ../../doc/template/Images/delaydtijdens.pdf>
@@ -2142,7 +2142,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 339--340
 
  []
 
-[26] [27] <Images/flipcase2nb.pdf, id=871, 403.371pt x 213.21759pt>
+[26] [27] <Images/flipcase2nb.pdf, id=872, 403.371pt x 213.21759pt>
 File: Images/flipcase2nb.pdf Graphic file (type pdf)
 
 <use Images/flipcase2nb.pdf>
@@ -2178,14 +2178,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 378--379
 
  []
 
-<Images/borders.pdf, id=905, 464.8507pt x 284.74983pt>
+<Images/borders.pdf, id=906, 464.8507pt x 284.74983pt>
 File: Images/borders.pdf Graphic file (type pdf)
 
 <use Images/borders.pdf>
 Package pdftex.def Info: Images/borders.pdf used on input line 382.
 (pdftex.def)             Requested size: 325.39326pt x 199.32352pt.
 
-<Images/defborders.pdf, id=906, 427.33351pt x 299.45175pt>
+<Images/defborders.pdf, id=907, 427.33351pt x 299.45175pt>
 File: Images/defborders.pdf Graphic file (type pdf)
 
 <use Images/defborders.pdf>
@@ -2223,7 +2223,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
-<Images/ShapesUp.png, id=996, 446.41782pt x 315.42844pt>
+<Images/ShapesUp.png, id=997, 446.41782pt x 315.42844pt>
 File: Images/ShapesUp.png Graphic file (type png)
 
 <use Images/ShapesUp.png>
@@ -2234,7 +2234,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
-<Images/ShapeDown.png, id=999, 444.91219pt x 312.41719pt>
+<Images/ShapeDown.png, id=1000, 444.91219pt x 312.41719pt>
 File: Images/ShapeDown.png Graphic file (type png)
 
 <use Images/ShapeDown.png>
@@ -2321,7 +2321,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--65
 
  []
 
-[41] <Images/tableworms.png, id=1088, 811.53188pt x 342.5297pt>
+[41] <Images/tableworms.png, id=1089, 811.53188pt x 342.5297pt>
 File: Images/tableworms.png Graphic file (type png)
 
 <use Images/tableworms.png>
@@ -2476,9 +2476,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 582.
 (./conclusion.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 582.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 582.
-Package rerunfilecheck Info: File `masterproef.out' has not changed.
-(rerunfilecheck)             Checksum: 6C20FA5537749507A3B4ED20F451D2BD;1868.
 
+
+Package rerunfilecheck Warning: File `masterproef.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `masterproef.out':
+(rerunfilecheck)             Before: 6C20FA5537749507A3B4ED20F451D2BD;1868
+(rerunfilecheck)             After:  2BE6FF55E06E1DDD258D2761DE7C2926;1922.
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -2486,8 +2492,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 582.
  ) 
 Here is how much of TeX's memory you used:
  25618 strings out of 493315
- 442975 string characters out of 6137903
- 711073 words of memory out of 5000000
+ 442970 string characters out of 6137903
+ 711385 words of memory out of 5000000
  28020 multiletter control sequences out of 15000+600000
  103652 words of font info for 199 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -2514,10 +2520,10 @@ msy6.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></
 usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/
 texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive
 /2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on masterproef.pdf (78 pages, 3653329 bytes).
+Output written on masterproef.pdf (78 pages, 3653402 bytes).
 PDF statistics:
- 1327 PDF objects out of 1440 (max. 8388607)
- 1003 compressed objects within 11 object streams
+ 1328 PDF objects out of 1440 (max. 8388607)
+ 1004 compressed objects within 11 object streams
  282 named destinations out of 1000 (max. 500000)
  27978 words of extra memory for PDF output out of 29859 (max. 10000000)
 
