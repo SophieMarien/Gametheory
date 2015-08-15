@@ -344,7 +344,7 @@ We kunnen zien dat wanneer $d=0$, de formule terug gelijk is aan de formule in h
 
 Stel $r = \dfrac{\delta_{D}}{ \delta_{A} }$. De lengte van de intervallen tussen twee opeenvolgende bewegingen van de aanvaller zijn gelijk aan $\delta_{A}$. Beschouw een gegeven interval van de aanvaller. De waarschijnlijkheids-verdeling over de fase van de aanvaller dat de verdediger flipt tijdens dit interval is $\dfrac{\delta_{A}}{ \delta_{D} } = (1/r)$. Gegeven dat de verdediger flipt in dit interval, zal hij exact een keer flippen in dit interval (aangezien $\delta_{A} \leq \delta_{D} $) en zijn bewegingen zijn uniform en random verdeeld. \\
 
-Er volgt uit een gelijkaardige analyse als in case 1 voor een FlipIt spel zonder APT propagatie met de volgende benefit formules:
+Er volgt uit een gelijkaardige analyse als in case 1 voor een FlipIt spel zonder virus propagatie met de volgende benefit formules:
 
 \begin{equation}\label{first}
 \beta_{D}(\alpha_{D},\alpha_{A}) = \dfrac {1} {2r} - k_{D} \alpha_{D} = \dfrac {\delta_{A}} {2\delta_{D}} - k_{D} \alpha_{D} 
@@ -353,7 +353,7 @@ Er volgt uit een gelijkaardige analyse als in case 1 voor een FlipIt spel zonder
 \beta_{A}(\alpha_{D},\alpha_{A}) =1 - \dfrac {1} {2r} - k_{A} \alpha_{A} = 1- \dfrac {\delta_{A}} {2\delta_{D}} - k_{A} \alpha_{A}  
 \end{equation}\\
 
-Voor de case met een APT propagatie beschouwen we twee onderverdelingen: case 2.a en case 2.b, afhankelijk of de vertraging langer of korter duurt dan het verschil tussen de periode van de aanvaller en de verdediger.\\
+Voor de case met een virus propagatie beschouwen we twee onderverdelingen: case 2.a en case 2.b, afhankelijk of de vertraging langer of korter duurt dan het verschil tussen de periode van de aanvaller en de verdediger.\\
 
 
 \subsubsection*{\textbf{Case 2.a:} $d + \delta_{A} \leq \delta_{D}$}
@@ -476,7 +476,7 @@ De functie $opt_{A}(\delta_{D})$ :
 \end{displaymath} 
 \section{Conclusions and Further Research}
 \label{ch:conclusion}
-In this paper we presented an adaptation of the FlipIt game to the situation of an APT propagation, such as to take the delay for network infection into account. We discerned two cases. In the case the defender plays faster than the attacker, the attacker simply looses the delay. In the case the attacker plays faster, each time the defender plays in an interval, he will gain extra time of the delay. The delay is therefore always detrimental to the benefit of the attacker. 
+In this paper we presented an adaptation of the FlipIt game to the situation of a virus propagation, such as to take the delay for network infection into account. We discerned two cases. In the case the defender plays faster than the attacker, the attacker simply looses the delay. In the case the attacker plays faster, each time the defender plays in an interval, he will gain extra time of the delay. The delay is therefore always detrimental to the benefit of the attacker. 
 This demonstrates that the FlipIt game can be adapted to a game with propagation delay. Further research needs to be performed to calculate the impact of the delay on Nash equilibria and the determination of optimal defender and attacker strategies.
 %In dit \textit{abstract} environment wordt een al dan niet uitgebreide
 %Nederlandse samenvatting van het werk gegeven.
