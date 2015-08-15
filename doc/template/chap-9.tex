@@ -173,9 +173,26 @@ The adaptation of the FlipIt model starts from the assumption that, when an atta
 \label{dt}
 \end{figure}
 
-Similarly as in \cite{FlipIt}, we split the formalization in two cases. In the first case the defender plays at least as fast as the attacker, in the second case the attacker plays at least as fast as the defender. For each of these cases, the benefit formula of the basic case without delay is presented first, and subsequently the delay is introduced.  \\
 
-Intuitively, we could assume that $d$ can never be bigger than $\delta_{A}$ because then the attacker would play again before the delay has finished. This would seemingly result in a gain for the defender that is always 1, but this is not always true. Assume for example that an attacker plays with an interval of 3 time units, that the delay is equal to 4 time units and that the defender only plays every 8 time units. This situation is represented in figure \ref{langedelay}. Since the delay is shorter than the period of the defender, the attacker takes control of the resource once the delay has elapsed, until the defender plays. However, if the delay is larger that the period of the defender, then the defender will always be in control. This situation is represented in figure \ref{langeredelay}, where the attacker plays with an interval of 5 time units, the delay is equal to 6 time units and the defender plays with an interval of 4 time units. From this we can conclude that it only makes sense to calculate the formulas for the cases where $d$ is smaller than $\delta_{D}$. We can already conclude that it is of no use for the attacker to play when the delay is bigger than $\delta_{D}$. 
+%
+We split the formalization in three cases. Similarly as in \cite{FlipIt}, there is the case where the defender plays at least as fast as the attacker, and the case where the attacker plays at least as fast as the defender. For each of these cases, the benefit formula of the basic case without delay is presented first, and subsequently the delay is introduced.  The third case is a special case where the period of the attacker is smaller than the delay.\\
+
+In the original model of FlipIt \cite{FlipIt}, the authors express the formulas in terms of $\alpha_{D}$ and $\alpha_{A}$. However, when introducing the delay, some formulas become much simpler when expressed in terms of $\delta_{D}$ and $\delta_{A}$. Therefore in the remainder of this paper, we will formulate the model using both $\alpha_{i}$ and $\delta_{i}$, depending on which variable gives the simplest representation of the formulas.
+
+\subsection*{Case 0: $\delta_{D} \leq d$ (The defender plays with a period smaller than the delay}
+
+When the delay $d$ is bigger than $\delta_{A}$, the attacker would play again before the delay has finished. This would seemingly result in a gain for the defender that is always 1, but this is not always true. Assume for example that an attacker plays with an interval of 3 time units, that the delay is equal to 4 time units and that the defender only plays every 8 time units. This situation is represented in figure \ref{langedelay}. Since the delay is shorter than the period of the defender, the attacker takes control of the resource once the delay has elapsed, until the defender plays.\\
+
+However, if the delay is larger than or equal to the period of the defender, the attacker will never gain control over the resource. The defender will always flip before the delay is over. This situation is represented in figure \ref{langeredelay}, where the attacker plays with an interval of 5 time units, the delay is equal to 6 time units and the defender plays with an interval of 4 time units. \\
+For the attacker it does not matter if he plays faster or slower than the defender. The benefit of the defender and the attacker are as follows:
+\begin{equation}\label{case0def}
+\beta_{D}(\delta_{D},\delta_{A})=1-\dfrac{k_{D}}{\delta_{D}}
+\end{equation}
+\begin{equation}\label{case0att}
+\beta_{A}(\delta_{D},\delta_{A})=-\dfrac{k_{A}}{\delta_{A}}
+\end{equation}
+%-Remark- hier staat iets dat niet juist is.
+%From this we can conclude that it only makes sense to calculate the formulas for the cases where $d$ is smaller than $\delta_{D}$. We can already conclude that it is of no use for the attacker to play when the delay is bigger than $\delta_{D}$. 
 
 
 
@@ -194,8 +211,7 @@ Intuitively, we could assume that $d$ can never be bigger than $\delta_{A}$ beca
 \label{langeredelay}
 \end{figure}
 
-
-In the original model of FlipIt \cite{FlipIt}, the authors express the formulas in terms of $\alpha_{D}$ and $\alpha_{A}$. However, when introducing the delay, some formulas become much simpler when expressed in terms of $\delta_{D}$ and $\delta_{A}$. Therefore in the remainder of this paper, we will formulate the model using both $\alpha_{i}$ and $\delta_{i}$, depending on which variable gives the simplest representation of the formulas.
+For the rest of the cases we assume that $\delta_{D} \geq d$.
 
 \subsection*{\textbf{Case 1:} $\delta_{D} \leq \delta_{A} $ (The defender plays at least as fast as the attacker.) }
 
@@ -253,7 +269,7 @@ To find the benefit, the cost of moving is subtracted from the average gain.
 \end{equation}
 ~~\\
 For this case where $d$=0, we this equals the formula of the original FlipIt game \citep{FlipIt} [p675].\\
-
+For the cornercase with case 0, when $d=\delta_{D}$, the benefit of the defender and the attacker result in the same benefits as in case 0.
 
 
 
@@ -356,6 +372,55 @@ Consequently, the benefit for the attacker will be:
 \begin{equation}\label{benfcase2b:attacker}
 \beta_{A}(\delta_{D},\delta_{A}) = 1 -\dfrac{\delta_{A}}{2\delta_{D}} - \dfrac{d}{\delta_{D}} - \dfrac{k_{A}}{ \delta_{A}} + \dfrac{(d - (\delta_{D} - \delta_{A}))^{2}}{2 \delta_{D} \delta_{A}}
 \end{equation}\\
+
+\subsection{Conclusion}
+
+The benefit formulas of case 1 and case 2.b result in the same formula. Consequently, these two formulas can be brought together by adapting the border conditions. Figure \ref{Borders} shows all the cases and it can be seen that the border condition of case 1 and case 2.b can be brought together. This results in the following figure \ref{endborders}. \\
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=0.7]{Images/borders.pdf}
+\caption{the representation of the cases where the benefit functions are calculated.}
+\label{Borders}
+\end{figure}
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=0.7]{Images/defborders.pdf}
+\caption{The representation of the new border conditions of piece B which is a merge of case 2.b and case 1.}
+\label{endborders}
+\end{figure}
+
+
+The benefit functions can be represented as piecewise funtions for each case, with case 1 and case 2.b together:\\
+The benefit formula for the defender:
+\begin{displaymath}
+\beta_{D}(\delta_{D},\delta_{A})= \left\{
+\begin{array}{lll}
+	1 - \dfrac{k_{D}}{\delta_{D}}, &~~~~~ & \delta_{D} \leq d \\
+	~ & ~ \\
+   1 - \dfrac{(\delta_{D} - d)^2}{2\delta_{D}\delta_{A}} - \dfrac{k_{D}}{\delta_{D}}, & ~~~~~~& d \leq \delta_{D} \leq d + \delta_{A} \\
+   ~ & ~ \\
+   \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - \dfrac{k_{D}}{\delta_{D}} &~~~~~& \delta_{D} \geq d + \delta_{A} 
+\end{array}
+\right.
+\end{displaymath}
+~~ \\
+The benefit formula for the attacker:
+\begin{displaymath}
+\beta_{A}(\delta_{D},\delta_{A})= \left\{
+\begin{array}{lll}
+	 -\dfrac{k_{A}}{\delta_{A}}, & ~~~~~& \delta_{D} \leq d \\
+	~ & ~ \\
+   \dfrac{(\delta_{D} - d)^2}{2\delta_{D}\delta_{A}} - \dfrac{k_{A}}{\delta_{A}}, & ~~~~~~& d \leq \delta_{D} \leq d + \delta_{A} \\
+   ~ & ~ \\
+   1 - \dfrac{\delta_{A}}{2\delta_{D}} - \dfrac{d}{\delta_{D}} - \dfrac{k_{A}}{\delta_{A}} &~~~~~& \delta_{D} \geq d + \delta_{A} 
+
+\end{array}
+\right.
+\end{displaymath}
+
+The piecewise functions are also continuous functions. Filling in the border cases results in the same formula.  
 
 %~~\\
 %\subsection{Conclusion of this chapter}
