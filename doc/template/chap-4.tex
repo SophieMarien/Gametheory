@@ -19,13 +19,14 @@ The overview of this chapter will be as follows: Section \ref{methodsofpropagati
 
 In the context of malware propagation, there are two kinds of APTs. First, there are APTs that launch an attack on just one target node of a network. The mechanism these APTs use to propagate malware is the dropper mechanism. The dropper is the initial attack vector that compromises the single targeted node of the system. The second kind of APTs target multiple nodes. These APTs also use a dropper mechanism but have an additional mechanism for self-propagation in order to propagate themselves to the multiple targeted nodes of the system. If the APT uses virus spreading, the virus infects one node on the network and has to wait for human interaction to spread. As such the spreading speed depends on the human interaction, and modelling virus propagation therefore requires modelling human behaviour. If an APT uses a worm propagation method it will spread by itself after it has been dropped on the network. Given the additional complexity of incorporating the human factor in a spreading method and that this chapter is merely meant as illustration on calculating the delay for use in the game theoretic approach, this chapter will be limited to worm propagation models for APTs. \\
 
-Infection by worms start by dropping the worm on the network. Different dropping mechanisms can be used, whereby the initial attack can be random or targeted at a specific node. Frequently used mechanisms are USB sticks (given to a specific person or left behind to be picked up by a random person), email, or malicious software through phishing or trojan horses. To determine the total delay, however, the propagation strategy is of higher importance than the drop mechanism. Propagation is achieved by determining the next nodes to spread the worm to. The following are common propagation methods: 
+Infection by worms start by dropping the worm on the network. Different dropping mechanisms can be used, whereby the initial attack can be random or targeted at a specific node. Frequently used mechanisms are USB sticks (given to a specific person or left behind to be picked up by a random person), email, or malicious software through phishing or trojan horses. To determine the total delay, however, the propagation strategy is of higher importance than the drop mechanism. The propagation strategy is used to determine the next nodes the worm will spread to. The following are common propagation methods: 
 \begin{description}
 %\item Scanning methods: A worm tries to guess (scan) the address of potential target nodes to infect. It can use distinct ways of scanning.
 %% random, localized, topological or hit-list scanning.
 %\begin{itemize}
 
 \item \textbf{Selective Random scanning:} The worm randomly  selects a part of the selected IP address space instead of scanning the whole address space. The reserved address blocks and the unassigned addresses are excluded from the address space. The rate of success for randomly chosen IP addresses is very low, but it is easy to implement. Example of such worms are \textit{Code Red} \citep{OwnInternetSI} and \textit{Slammer} \citep{moore2003inside}. \todo{Voorbeeeld als mensen het idee niet snappen?}
+%-Remark- Ik weet niet wat er bedoeld wordt met de selected address space-Stijn
 
 \item \textbf{Localized scanning:} A worm that uses localized scanning will scan for hosts in the local address space. This method is used by the \textit{Code Red II} \citep{OwnInternetSI} and \textit{Nimda worm} \citep{OwnInternetSI}.
 %\item \textbf{Topological scanning:} Address information stored in the victim machines are used to locate new targets. This method used by the `Morris' worm.
@@ -34,6 +35,8 @@ Infection by worms start by dropping the worm on the network. Different dropping
 
 \item \textbf{Sequential scanning:}
 With sequential scanning, the worm will scan the IP addresses sequentially. This means that once a vulnerable host is compromised, it will look for IP addresses that are near to this host. For example, the address of the host is A, the next addresses that the worm will scan are A+1, or A-1. This method is used by the \textit{Blaster worm} \citep{zou2006performance}.
+%-Remark -Stijn- Hier welke IP addressen worden er juist gescand? Alle of alleen lokale, niet echt duidelijk :) kan ook zijn dat het van de implementatie afhangt natuurlijk
+
 
 \item \textbf{DNS random scanning:} Another strategy is a kind of strategy in which the DNS infrastructure is used to locate a new target address. The IP address table from a DNS server is acquired from DNS records. 
 The speed of a DNS scanning worm in the IPv6 internet is comparable to the speed of an IPv4 random scanning worm. 
@@ -62,9 +65,9 @@ file sharing systems, which have been used by worms to propagate in a similar wa
 \label{modelsforpropagation}
 Early work on worm propagation models are based on the spread of real-world epidemic diseases. These models are based on the transition state of each node in the network.\\
 %Scan based or Topology based
-A node in a network can be in three different states: susceptible, infected or removed. A susceptible node is a node that is vulnerable to infection. An infected node is a node that has been compromised and can infect other nodes. A removed node is dead or immune, which means it cannot be infected again by worms. With these three states three main propagation models are proposed: SI, SIR and SIS. In the SI model, a node that has once been infected, stays infected. In the SIR model, an infected node can be removed afterwards. This node cannot become infected again. In the SIS model a node can become susceptible again after it has been infected. Currently, various other models have been proposed based on these three models (\cite{wang2014modeling}, \cite{OnWorms2005survey}, \cite{xiang2009propagation} and \cite{serazzi2004computer}). We are only interested in models that will allow us to find the delay. \\
+A node in a network can be in three different states: susceptible, infected or removed. A susceptible node is a node that is vulnerable to infection. An infected node is a node that has been compromised and can infect other nodes. A removed node is dead or immune, which means it cannot be infected again by worms. With these three states three main propagation models are proposed: SI (Suspected-Infected), SIR (Suspected-Infected-Removed) and SIS (Suspected-Infected-Suspected). In the SI model, a node that has once been infected, stays infected. In the SIR model, an infected node can be removed afterwards. This node cannot become infected again. In the SIS model a node can become susceptible again after it has been infected. Currently, various other models have been proposed based on these three models ( Wang et al. \cite{wang2014modeling}, \cite{OnWorms2005survey}, \cite{xiang2009propagation} and \cite{serazzi2004computer}). We are only interested in models that will allow us to find the delay. \\ \todo{bij referenties titels schrijven}
 
-Table \ref{tree} gives an overview of the most common propagation methods with the given type. This table comes from the most recent survey \citep{wang2014modeling}, which encompasses results of older surveys. Moreover, the survey explicitly focuses on propagation methods, while other papers also focus on other aspects such as  detection mechanisms and containment systems. All models that are based on SI model type (Susceptible-Infected) are good, because in our model every node that is infected will stay infected. The other propagation models, SIR and SIS, are only interesting if there is a possibility to reduce the models to an SI model. The following section will apply the extraction of the delay to a few models. These models are not meant as an exhaustive list, but rather as an illustration to the possible ways of extracting the delay out of an propagation model. 
+Table \ref{tree} gives an overview of the most common propagation methods with the given type. This table comes from the most recent survey \citep{wang2014modeling}, which encompasses results of older surveys. Moreover, the survey explicitly focuses on propagation methods, while other papers also focus on other aspects such as  detection mechanisms and containment systems. All models that are based on SI model type (Susceptible-Infected) are good, because in our model every node that is infected will stay infected. The other propagation models, SIR and SIS, are only interesting if there is a possibility to reduce the models to an SI model. The following section will extract the delay parameter from some of the models. These models are not meant as an exhaustive list, but rather as an illustration to the possible ways of extracting the delay out of an propagation model. 
 %Only the Local Preference and Email worms models will not be explained because they involve human interaction. OSN model is done by means of simulation. The SIR AAWP model is also interesting because the parameter that involves the R part of the model can be deleted.  \\ \todo{laatste zinnen zijn wazig: Het deel erboven over SIS enzo was duidelijk maar hier worden andere modellen er bij de haren bijgesleurd. Als we die niet bekijken, gewoon kort zeggen dat er andere modellen zijn (e.g. SIR AAWP, Email worms, ....) maar dat deze niet worden bekeken ofzo?}
 
 
@@ -94,6 +97,7 @@ Table \ref{tree} gives an overview of the most common propagation methods with t
 \caption{Taxonomy of worm modelling. Image based on taxonomy given in \cite{wang2014modeling}}.
 \label{tree}
 \end{figure}
+\todo{tabel herschrijven of op zen mist de tekst wegdoen}
 
 
 \subsection{Simple Epidemic Model}
@@ -113,7 +117,7 @@ I = \dfrac{e^{\beta(t-T)}}{1+e^{\beta(t-T)}}
 \end{equation}
 where \textit{T} is a time parameter representing the point of maximum increase in the growth.\\
 
-
+%-Remark- Stijn- prentje van de curve maar hoeft niet
 %\begin{figure}[hbtp]
 %\centering
 %\includegraphics[scale=0.5]{Images/SEMmodel.png}
@@ -127,11 +131,12 @@ where \textit{T} is a time parameter representing the point of maximum increase 
 %%Er wordt geen rekening gehouden met de topology ? nog uitzoeken.
 To extract the delay from the formula we need the total amount of nodes in the network. If formula \ref{SIdelay} is equal to this amount, variable \textit{t} will be the value of the delay that we need. This is only applicable to nodes in a homogeneous network. A homogeneous network is a network where every node has approximately the same degree. This model is thus suitable for propagation of worms that are topology independent (e.g scan-based worms), because every node has the same chance to be infected by another node in the network. The \textit{Code Red} worm, which is a random scan based worm, has been analysed by this kind of model in \cite{OwnInternetSI}. Another drawback is that the graph is presented as an undirected graph. This means that the spread can always happen in both ways, which may not be suitable for every worm propagation. 
 
+%-Remark -Stijn- begreep degree niet van nodes en topology independent
 \subsection{RCS model}
 
-RCS model stands for Random Constant Spread model and is developed by Paxson and Weaver at Stanford \citep{OwnInternetSI}. It is a model derived from the classical Simple Epidemic Model. They used this model to analyse the \textit{Code Red I} worm. For this model it is assumed that the worm owns a good random number generator that is properly seeded. \\
-Let\textit{ N} be the total of vulnerable hosts in the network that can be potentially infected. It is assumed that no system is patched, shut down, deployed or disconnected, which means that the number of hosts in the system stay constant. The model also ignores spreads of the worm behind firewalls on private networks. \\
-Let K be the initial compromise rate. This is the rate of hosts that the worm can find and compromise per hour at the beginning of the infection. \textit{K} is a global constant and therefore does not depend on the speed of the network or the processor speed.  Every machine can infect only one other machine after it has been compromised. It cannot increase the rate that a worm can find new hosts. 
+RCS model stands for Random Constant Spread model and is developed by Paxson and Weaver at Stanford \citep{OwnInternetSI}. It is a model derived from the classical Simple Epidemic Model. This model was used to analyse \textit{Code Red I} worm. For this model it is assumed that the worm owns a good random number generator that is properly seeded. \\
+Let\textit{ N} be the total of vulnerable hosts in the network that can be potentially infected. It is assumed that no system is patched, shut down, deployed or disconnected. This means that the number of hosts in the system stay constant. The model also ignores spreads of the worm behind firewalls on private networks. \\ \todo{wat betekent de laatste zin?}
+Let K be the initial compromise rate. This is the rate of hosts that the worm can find and compromise per hour at the beginning of the infection. \textit{K} is a global constant and therefore does not depend on the speed of the network or the processor speed.  Every machine can infect only one other machine after it has been compromised. The rate that a worm can find hosts can not be increased.
 The internet topology is considered as a complete undirected graph.  The model type is SI, so the state of the host can only be infected or suspected. Once the host is compromised it stays that way.  
 Let \textit{T} be the moment of the start of the infection. Variable \textit{a} is the proportion of vulnerable hosts that has been compromised. Variable \textit{t} is the time in hours. \\
 
@@ -139,7 +144,7 @@ The formula to model the spread of the worm is as follows:
 \begin{equation}
 N da = (N a)K(1 - a)dt
 \end{equation}
-It tells how many vulnerable machines will be compromised in the next amount of time \textit{dt}, when it is known the proportion of machines \text{a} that already have been compromised.\\
+It tells how many vulnerable machines will be compromised in the next amount of time \textit{dt}, when the proportion of the machines \textit{a} that are already compromised is known.\\
 
 From this, it follows the simple differential equation:
 \begin{equation}
@@ -151,8 +156,9 @@ a = \dfrac{e^{K(t-T)}}{1+e^{K(t-T)}}
 \end{equation}
 \\
 
-To extract the delay from this formula, we need to know the maximum numbers of hosts that can be infected before the total system is compromised. The initial compromise rate has to be approximated. \textit{t} is a variable in the above formula that says how many time has passed. If \textit{a} passes the proportion of nodes that have to be compromised before the whole system is compromised by the attacker, value \textit{t}  is the value of \textit{d} in the FlipIt game with propagation delay.
+To extract the delay from this formula, we need to know the maximum numbers of hosts that can be infected before the total system is compromised. The initial compromise rate has to be approximated. \textit{t} is the time variable. If \textit{a} passes the proportion of nodes that have to be compromised before the whole system is compromised by the attacker, value \textit{t}  is the value of \textit{d} in the FlipIt game with propagation delay.
 A drawback for this model is that the network topology is homogeneous and that the graphical representation of the graph is an undirected graph.  
+\todo{voorlaatste zin is nog moeilijk en te lang}
 
 %\subsubsection{Kermack-Mckendrick model: SIR}
 %In the Kermack-Mckendrick model, also known as SIR model, nodes can have three states: susceptible, infected or removed. Once a node of the network has been recovered from a worm, the node will stay in the removed mode and never becomes infected again. These nodes are not able to infect other nodes and can no longer be infected. \\
@@ -234,7 +240,12 @@ The formula for a better estimation of the worm propagation:
 \alpha'=\dfrac{\rho(t_{k})-t(t_{k})}{\rho(t_{k})} \cdot \alpha(t_{k}) + \dfrac{i(t_{k})}{\rho(t_{k})} \cdot \alpha(t_{x})
 \end{equation}
 
+\todo{betekenis van alpha' uitleggen}
+
 To apply this model on FlipIt we again set up a threshold value for i(t) and see how long it takes to compromise this amount of hosts.  The paper by Yan and Eidenbenz concluded in their work  that after setting model parameters accordingly ($\lambda_{ne} = 0.2108$ the average node degree and $J_{in}= 0.2372$ the average meeting rate of neighbours), the model predicts that the time it would take to infect 99$\%$ of the devices is slightly less than one hour. So in this case the delay is equal to an hour and the amount of hosts that has to be infected by the attacker before the network is compromised is 99$\%$ of the hosts in the network.
+\todo{remark stijn}
+%-Remark -Stijn- waarom 99 procent en niet 100? gewoon een uitleg in de trant van bij 99 procent kunt ge even goed zeggen dat heel het netwerk geinfecteerd is is goed. Of mss is er effectief een reden in de paper genoemd voor de 99 
+
 
 %\subsubsection{OSN worm model}
 %OSN worms stands for Online Social Network worms. This model is based on worms that propagate through the use of social media, like Facebook. The difference between an email worm and a social network worms is that the topology of the network is different. 
@@ -248,7 +259,7 @@ I_{t+1}=(1-d-p)I_{t}+[(1-p)^{t})N-I_{t}][1-(1-\dfrac{1}{\Omega})^{sI_{t}}]
 \end{equation}
 where \textit{d} is the death rate, $p$ is the patch rate, $I_{t}$ is the amount of infected hosts at time \textit{t}, \textit{N} is the number of vulnerable hosts, \textit{s} is
 the scanning rate of the worm and $\Omega$ is the scanning
-space. \\
+space. \\ \todo{scanning space uitleggen}
 
 The spread of the worm without the death and the patch rate is as follows:
 \begin{equation}
@@ -257,7 +268,7 @@ I_{t+1}=I_{t}+(N-I_{t})[1-(1-\dfrac{1}{\Omega})^{sI_{t}}]
 
 The iteration procedure with death and patch rate will stop when all the nodes in the network are infected or when the number of infected nodes remains the same. When the death and patch rate are removed from the formula the iteration procedure will stop when all the nodes are infected. To extract the delay from this formula we need to know when the iteration procedure stops. \\
 The biggest drawback is that the model is a discrete time model. Continuous models are more appropriate for large scale models. The model also uses a complete undirected graph.
-
+\todo{The biggest drawback of the model is that is expressed in discrete time. Ofzoiets vind de zin niet heel goed}
 
 %Popular mechanism that worms use to detect vulnerable targets by random IP scanning probing. Feasible due to use 32-bit addresses. 128-bit addresses life harder for worms, except the ones that use email systems to propagate. two new strategies: uniformly distributed random number generator to select new target. :spread locally, by biasing the search space towards addresses within the same subnet or network.  
 %The second strategy is almost the same as what email virusses would get. For this reason we work an example out .. \\
@@ -271,7 +282,7 @@ The biggest drawback is that the model is a discrete time model. Continuous mode
 \label{eigenmatrixmethode}
 For some of the propagation methods, the graph of the network matters. It is important to have the right topology for the right method. Email worms need a topology that represent a social network, BGP routing worms need a topology on network level. \\
 
-As can be seen in table \ref{tree} all propagation models are depending on a specific network topology. The different kinds of network topology of each system is either homogeneous, small-world network, random network or a power-law network. A homogeneous network is a network where every node has about the same degree of connectivity. This means that every node can infect each node with the same opportunity. A small-world topology is a network where most nodes are not connected with each other but they can all reach each other in a few steps. Social networks are an example of a small-world network. A random network is a topology where each connection is chosen at random with equal probability. In a power law network the degrees of each node in the network follow the power law. Some of the nodes have a small degree of connectivity, others have a very large degree of connectivity.\\
+As can be seen in table \ref{tree} all propagation models are depending on a specific network topology. The different kinds of network topology of each model is either homogeneous, small-world network, random network or a power-law network. A homogeneous network is a network where every node has about the same degree of connectivity. This means that every node can infect each node with the same opportunity. A small-world topology is a network where most nodes are not connected with each other but they can all reach each other in a few steps. Social networks are an example of a small-world network. A random network is a topology where each connection is chosen at random with equal probability. In a power law \todo{ref power law} network the degrees of each node in the network follow the power law. Some of the nodes have a small degree of connectivity, others have a very large degree of connectivity.\\
 
 What we want to have is a method to calculate the delay that is independent of a network topology. A method where we can chose in the beginning which topology we have and then calculate the delay.\\
 
@@ -280,7 +291,7 @@ In this chapter we propose a method to calculate the spread of a worm in a way t
 
 
 \subsubsection{Model with matrix}
-
+%-Remark -Stijn- Ik vind de matrices maar weinig zeggen ik snap dat ze nodig zijn maar misschien kunt ge de overeenkomstige graph erbij tekenen of een pad erin uitlichten in kleur. bvb wie node 1 allemaal geinfecteerd heeft. Maar misschien is dat ook niet nuttig. Ik zou mij hier niet te veel van aantrekken
 
 
 %--iets zeggen dat het ook belangrijk is voor de defender om zijn netwerk zo aan te passen dat het virus moeilijker kan verspreiden. Network segregation mss aanhalen ?--
@@ -420,11 +431,11 @@ Calculating the sum of the three matrices $(A + A^{2} + A^{3}) $ results in a ma
 
 With the formula $\sum A^{n}$ the average delay can be calculated by counting the expected delay of every node when a worm has been dropped and devide it by the number of nodes in the network. \\
 
-Matrix \textit{A} can also represent a graph where every link get a weight. The weight is equal to the probability that the worm spreads through that link. The outcome of $ \sum A^{n}$ is than equal to the probability that each node has been infected after n time steps. The average delay can be calculated by setting up a threshold value for the probability that a node is infected. \\
+Matrix \textit{A} can also represent a graph where every link has a weight. The weight is equal to the probability that the worm spreads through that link. The outcome of $ \sum A^{n}$ is than equal to the probability that each node has been infected after n time steps. The average delay can be calculated by setting up a threshold value for the probability that a node is infected. \\
 
 \subsubsection*{Conclusions}
 The advantage of this matrix worm model in comparison with the above models is that matrix  \textit{A} can represent any network topology. Directed or undirected. \\
-With this method it is also possible to determine the shortest path in the network. By summing up all the matrices, the first row that has all non-zero entries determines the shortest path. From node \textit{i} to the last \textit{ij}-entry that became a non-zero value. Consequently, if a worm is dropped on node \textit{i}, this worm will compromise the network in the shortest time possible. A defender can use this knowledge to adapt its network configurations. \\
+With this method it is also possible to determine the shortest path through al the nodes in the network. By summing up all the matrices, the first row that has all non-zero entries determines the shortest path. From node \textit{i} to the last \textit{ij}-entry that became a non-zero value. Consequently, if a worm is dropped on node \textit{i}, this worm will compromise the network in the shortest time possible. A defender can use this knowledge to adapt its network configurations. \\
 A disadvantage of this method is the cost. A very large network needs a very large (sparse) matrix. 
 %Using this knowledge we can calculate in how many steps a node is infected: \\
 %The infection vector or start vector $I_{0}$ of length $|V|$ indicates which node is infected and which not. Multiplying the infection vector with $A$ results in a vector $I_{1}$, which represents which nodes are infected after 1 step. Multiplying the start vector $I_{0}$ with $A^{N}$ calculates which nodes are infected in \textit{N} steps: each non zero entry represents an node infected after \textit{N} steps. \\
@@ -492,13 +503,14 @@ A disadvantage of this method is the cost. A very large network needs a very lar
 %\end{verbatim}
 \section{Google PageRank algorithm}
 
+%-Remark stijn- 2 verschillende definities of page rank? of heb ik het niet door
 To calculate the delay of a worm propagation we assumed that every node is even important. A possible relaxation of this rule can be done by the PageRank Algorithm, which can be used to determine the importance of certain nodes. 
 
 The PageRank algorithm is introduced by Page and Brin in 1998 as one of the main features of the search engine Google to improve the search results. PageRank models the human behaviour when users surf through the net. It can also model \textit{random surfers}. A random surfer is the probability that a surfer gets bored and randomly visits another page which is not linked with the initial page. The probability that he will visit a random page is the PageRank of that page. A page will have a high PageRank if many pages will point to this page. This means that this page is well cited through other pages and maybe an important one to look at.    The main idea of the PageRank algorithm is to look at the number of (important) web pages that point to a particular page. The ranking of this page depends than on the number of out coming links and the importance of the pages that link to this page. With a probability of $P$ the surfer will follow a link of the page to another page, and with a probability of $1-P$ the surfer will surf to a random page. The PageRank algorithm is expressed as follows:
 \begin{equation}
 PageRank(A)=P \sum \dfrac{PageRank(i)}{d_{out,i}} + (1-P) \cdot e_{A}
 \end{equation}
-where $N_{A}$ is the number of pages, $PR(i)$ is the ranking of web page $i$, $D_{out,i}$ is the number of outgoing links of page $i$, $(1-P)$ the probability that a random page is searched, and $e_{A}$ the restart value for web page A which is often uniformly distributed among all web pages. \\
+where $N_{A}$ is the number of pages, $PageRank(i)$ is the ranking of web page $i$, $D_{out,i}$ is the number of outgoing links of page $i$, $(1-P)$ the probability that a random page is searched, and $e_{A}$ the restart value for web page A which is often uniformly distributed among all web pages. \\
 
 The Google matrix is a stochastic matrix that is used to calculate the PageRank of all the web pages on the internet. The dominant eigenvalue of the matrix is the PageRank. The matrix is a graph where the edges denote the links between each page. Using the power method, the PageRank of each page can be calculated iteratively. \\
 
@@ -511,6 +523,7 @@ M = (1-p) \cdot A + p \cdot B ~~where~~B=\dfrac{1}{n}\cdot \begin{bmatrix}
      \end{bmatrix}
 \end{equation}
 
+\todo{graph matrix symbool geven}
 where $p$ defines the damping factor and indicates the probability that a surfer quits a current page and continuous on a new random page. Matrix \textit{A} is an transposed matrix of the graph matrix. The graph matrix is an $n \times n$ matrix (\textit{n} defines the number of pages) that represents the graph where every entry corresponds to a non-zero entry if there is a link from one page to the other page. For dangling nodes (nodes with no outgoing links), the row entries are equal to $\dfrac{1}{n}$. Matrix \textit{A} for the graph represented figure \ref{GoogleMatrix} is equal to:
 
 
