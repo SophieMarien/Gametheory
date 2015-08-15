@@ -29,8 +29,8 @@ FlipIt does however not take into
 account that a move may not be instantaneous, but has a certain
 delay.  We adapt FlipIt such that we can use it to
 model the game of defending a company network that is attacked
-by a virus. The FlipIt formulas are adapted such as to take the
-delay for virus propagation into account, which in our case will be a delay for the attacker. In this paper, we restrict ourselves to games where both the defender and the attacker play with a periodic strategy. The goal of this thesis is to find out if their are interesting Nash Equilibria for a game with a virus propagation delay and if we can learn some lessons out of it. }}
+by an APT. The FlipIt formulas are adapted such as to take the
+delay for an APT propagation into account, which in our case will be a delay for the attacker. In this paper, we restrict ourselves to games where both the defender and the attacker play with a periodic strategy. The goal of this thesis is to find out if their are interesting Nash Equilibria for a game with an propagation delay and if we can learn some lessons out of it. }}
 % Verwijder de "%" op de volgende lijn als je de kaft wil afdrukken
 %\setup{coverpageonly}
 % Verwijder de "%" op de volgende lijn als je enkel de eerste pagina's wil
@@ -152,7 +152,7 @@ Thank you !
 Recently, high profile targeted attacks such as the
 attack on Belgacom (a major Belgian Telecom), have demonstrated
 that even the most secure companies can still be compromised,
-and that moreover that such attacks can go undetected for a while. This kind of attack is called APT, Advanced Persistent Threats, and designed to secretly penetrate a computer network, collect sensitive data and stay hidden for many years. Companies have every interest to mitigate the risks of an APT and the consequences that it can cause.  Because of stealthiness, fighting against this kind of attack requires methods that go beyond the standard tools against malware.\\
+and moreover that such attacks can go undetected for a while. This kind of attack is called APT, Advanced Persistent Threats, and designed to secretly penetrate a computer network, collect sensitive data and stay hidden for many years. Companies have every interest to mitigate the risks of an APT and the consequences that it can cause.  Because of stealthiness, fighting against this kind of attack requires methods that go beyond the standard tools against malware.\\
 A group of researchers at the RSA, van Dijk et al., proposed the game FlipIt (The game of ``stealthy takeover'') to model stealthy takeovers. It is a 2-players game composed of
 a single attacker, a single defender and a single shared resource.
 The players will 
@@ -162,11 +162,11 @@ FlipIt does however not take into
 account that a move may not be instantaneous, but may have a certain
 delay.  We adapt FlipIt such that we can use it to
 model the game of defending a company network that is attacked
-by a virus. The FlipIt formulas are adapted such as to take the
-delay for virus propagation into account, which in our case will be a delay for the attacker. In this paper, we restrict ourselves to games where both the defender and the attacker play with a periodic strategy. The goal of this paper is to find out if modelling such situations with FlipIt with propagation delay allows us to draw interesting lessons about security measures against APTs.  
-\todo{Results toevoegen} \\
+by an APT. The FlipIt formulas are adapted such as to take the
+delay for an APT propagation into account, which in our case will be a delay for the attacker. In this paper, we restrict ourselves to games where both the defender and the attacker play with a periodic strategy. The goal of this paper is to find out if modelling such situations with FlipIt with propagation delay allows us to draw interesting lessons about security measures against APTs. \\
+%-Remark- Resultaten toevoegen
 
-\textbf{Keywords}: Game theory, Advanced persistent threats, cyber security, FlipIt, stealthy takeovers, propagation methods.
+\textbf{Keywords}: Game theory, Advanced Persistent Threats, cyber security, FlipIt, stealthy takeovers, propagation methods.
 
 \end{abstract}
 
@@ -183,7 +183,7 @@ doen dit op een heimelijke manier. FlipIt houdt echter geen rekening met het fei
  \\
 
 \subsection{FlipIt}
-Om te begrijpen hoe we het FlipIt spel kunnen aanpassen om virus propagatie in acht te nemen, is het belangrijk om vertrouwd te raken met de concepten van het basische FlipIt spel en de notaties.  \\
+Om te begrijpen hoe we het FlipIt spel kunnen aanpassen om APT propagatie in acht te nemen, is het belangrijk om vertrouwd te raken met de concepten van het basische FlipIt spel en de notaties.  \\
 
 FlipIt is een spel met twee spelers met een gedeelde bron die de spelers zo lang mogelijk willen beheren. De gedeelde bron kan een wachtwoord, een netwerk of een geheime sleutel zijn, afhankelijk van de situatie. In de rest van de thesis duiden we de twee spelers aan met onderschrift  \textit{A} voor de aanvaller en onderschrift \textit{D} voor de verdediger.
 
@@ -477,8 +477,8 @@ De functie $opt_{A}(\delta_{D})$ :
 \end{displaymath} 
 \section{Conclusions and Further Research}
 \label{ch:conclusion}
-In this paper we presented an adaptation of the FlipIt game to the situation of virus propagation, such as to take the delay for network infection into account. We discerned two cases. In the case the defender plays faster than the attacker, the attacker simply looses the delay. In the case the attacker plays faster, each time the defender plays in an interval, he will gain extra time of the delay. The delay is therefore always detrimental to the benefit of the attacker. 
-This demonstrates that the FlipIt game can be adapted to a game with virus propagation. Further research needs to be performed to calculate the impact of the delay on Nash equilibria and the determination of optimal defender and attacker strategies.
+In this paper we presented an adaptation of the FlipIt game to the situation of an APT propagation, such as to take the delay for network infection into account. We discerned two cases. In the case the defender plays faster than the attacker, the attacker simply looses the delay. In the case the attacker plays faster, each time the defender plays in an interval, he will gain extra time of the delay. The delay is therefore always detrimental to the benefit of the attacker. 
+This demonstrates that the FlipIt game can be adapted to a game with propagation delay. Further research needs to be performed to calculate the impact of the delay on Nash equilibria and the determination of optimal defender and attacker strategies.
 %In dit \textit{abstract} environment wordt een al dan niet uitgebreide
 %Nederlandse samenvatting van het werk gegeven.
 %Wanneer de tekst voor een Nederlandstalige master in het Engels wordt
@@ -508,7 +508,7 @@ This demonstrates that the FlipIt game can be adapted to a game with virus propa
     RSA & Rivest-Shamir-Adleman \\
     DDoS & Distributed Denial of Service \\
     APT & Advanced Persistent Threat \\
-    CIA & Confidentiality , Integrity and Availability \\
+    CIA & Confidentiality, Integrity and Availability \\
     USB & Universal Serial Bus \\
     NA & Non-Adaptive \\ 
     AD & Adaptive \\
@@ -529,7 +529,7 @@ This demonstrates that the FlipIt game can be adapted to a game with virus propa
 \begin{flushleft}
   \renewcommand{\arraystretch}{1.1}
   \begin{tabularx}{\textwidth}{@{}p{12mm}X@{}}
- $i$ & $i \in \{D,A\}$, defines the player. `D' is the defender and `A' is the attacker. \\
+ $i$ & $i \in \{D,A\}$, defines the player. \textit{D} is the defender and \textit{A} is the attacker. \\
  $\delta_{i}$ & The length of the interval between two consecutive moves of player \textit{i}. \\
  $\alpha_{i}$ & The average flip rate of player \textit{i}, given by $\alpha_{i}=1/\delta_{i}$. \\
 $k_{i}$ & The cost of player \textit{i}'s moves. \\
@@ -537,7 +537,7 @@ $d$ & The delay caused by the propagation of a threat. \\
  $G_{i}(t)$ & The total gain of player \textit{i} denotes the amount of time player \textit{i} is in control over the resource up to time \textit{t}. \\
 $\gamma_{i}$ & The average gain rate of player \textit{i} defined as $G_{i}(t)/t$. \\
 $\beta_{i}$ &  The average benefit rate up to time \textit{t} defined as  $\beta_{i} = \gamma_{i} -k_{i} \alpha_{i} $. \\
-$opt_{i}$ & The optimum function. \\
+$opt_{i}$ & The optimum function for player \textit{i}. \\
 $n_{i}(t)$ & The amount of moves made by player \textit{i} up to time \textit{t}. \\
   \end{tabularx}
 \end{flushleft}
