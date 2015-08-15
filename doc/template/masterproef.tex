@@ -172,18 +172,18 @@ delay for an APT propagation into account, which in our case will be a delay for
 
 \begin{abstract*}
 In onze hedendaagse maatschappij valt security niet weg te denken.  Door de technologische vooruitgang worden security-aanvallen veel geavanceerder en moeilijker te bestrijden. Zo zijn er onlangs gerichte security-aanvallen geweest op grote bedrijven, zoals bijvoorbeeld de aanval op Belgacom (een grote Belgische telecom). Deze aanvallen hebben aangetoond dat zelfs de meest veilige
-bedrijven nog steeds gecompromitteerd kunnen worden, en dat bovendien dergelijke aanvallen onopgemerkt kunnen blijven voor een bepaalde tijd. \\
+bedrijven nog steeds gecompromitteerd kunnen worden, en dat bovendien dergelijke aanvallen onopgemerkt kunnen blijven gedurende een hele tijd. \\
 
 Een groot aantal bedrijven hebben databases die belangrijke informatie bevatten zoals bijvoorbeeld vertrouwelijke informatie over klanten. Het is belangrijk dat deze informatie binnen het bedrijf blijft. Het doel van computer en network security is om deze informatie te beschermen tegen bedreigingen. \\
-Een van de bedreigingen die interessant is voor deze thesis is een Advanced Persistent Threat (APT). Een APT is een niet-aflatende en gerichte cyber-aanval die ontworpen is om systemen en netwerken heimelijk binnen te dringen en dan voor een lange tijd onopgemerkt te blijven. Een manier om deze heimelijke aanvallen te analyseren is door deze te modelleren via speltheorie. Speltheorie krijgt meer en meer belangstelling in het veld van security om cyber security problemen te analyseren. Deze problemen zijn meestal gemodelleerd als een spel met twee spelers: een aanvaller en een verdediger. \\
+Deze thesis focust zich op Advanced Persistent Threats (APT). Een APT is een niet-aflatende en gerichte cyber-aanval die ontworpen is om systemen en netwerken heimelijk binnen te dringen en dan voor een lange tijd onopgemerkt te blijven. Een manier om deze heimelijke aanvallen te analyseren is door deze te modelleren via speltheorie. Speltheorie krijgt meer en meer belangstelling in het veld van security om cyber security problemen te analyseren. Deze problemen zijn meestal gemodelleerd als een spel met twee spelers: een aanvaller en een verdediger. \\
 
 Deze thesis bouwt verder op een security spel ge"introduceerd door van Dijk et al, ``FlipIt'' \citep{FlipIt}.
-FlipIt is een speltheoretisch framework om computer scenario's te modelleren die een heimelijk aspect hebben. Het is een 2-spelers spel bestaande uit een aanvaller, een verdediger en een gedeelde bron.  De spelers proberen om controle te krijgen over de gedeelde bron en ze
-doen dit op een heimelijke manier. FlipIt houdt echter geen rekening met het feit dat een aanval niet onmiddellijk is, maar dat dit kan gebeuren met een zekere vertraging. Het kan bijvoorbeeld zijn dat een virus even tijd nodig heeft om een computer over te nemen. In deze thesis passen we het model van FlipIt zodanig dat het toepasbaar is voor heimelijke aanvallen die onderhevig zijn aan een vertraging.
+FlipIt is een speltheoretisch framework om scenario's te modelleren die een heimelijk aspect hebben. Het is een 2-spelers spel bestaande uit een aanvaller, een verdediger en een gedeelde bron.  De spelers proberen om controle te krijgen over de gedeelde bron en ze
+doen dit op een heimelijke manier. FlipIt houdt echter geen rekening met het feit dat een aanval niet onmiddellijk effect heeft, maar dat de feitelijke overname van de bron kan gebeuren met een zekere vertraging. Het kan bijvoorbeeld zijn dat een virus even tijd nodig heeft om een computer over te nemen. In deze thesis passen we het model van FlipIt zodanig aan dat het toepasbaar is voor heimelijke aanvallen die onderhevig zijn aan een vertraging.
  \\
 
 \subsection{FlipIt}
-Om te begrijpen hoe we het FlipIt spel kunnen aanpassen om APT propagatie in acht te nemen, is het belangrijk om vertrouwd te raken met de concepten van het basische FlipIt spel en de notaties.  \\
+Om te begrijpen hoe we het FlipIt spel kunnen aanpassen om APT propagatie in acht te nemen, is het belangrijk om vertrouwd te raken met de concepten van het basisch FlipIt spel en de notaties.  \\
 
 FlipIt is een spel met twee spelers met een gedeelde bron die de spelers zo lang mogelijk willen beheren. De gedeelde bron kan een wachtwoord, een netwerk of een geheime sleutel zijn, afhankelijk van de situatie. In de rest van de thesis duiden we de twee spelers aan met onderschrift  \textit{A} voor de aanvaller en onderschrift \textit{D} voor de verdediger.
 
@@ -228,11 +228,11 @@ $ \beta_{i}(t) $ is de gemiddelde benefit ratio van een speler \textit{i} tot aa
 \begin{equation}
 \beta_{i}(t) = \gamma_{i}(t) - k_{i} \alpha_{i}.
 \end{equation}
-waarin de kosten van een speler \textit{i} worden aangegeven met $ k_{i} $ en waarin $\alpha_{i}$ het gemiddeld aantal flippen definieert door speler \textit{i} met $n_{i}(t)$ het aantal bewegingen door speler \textit{i}:
+waarin de kosten van een speler \textit{i} worden aangegeven met $ k_{i} $ en waarin $\alpha_{i}$ het gemiddelde flipfrequentie definieert voor speler \textit{i} met $n_{i}(t)$ het aantal bewegingen door speler \textit{i}:
 \begin{equation}
 \alpha_{i}(t) = \dfrac{n_{i}(t)}{t}
 \end{equation}
-Dit is gelijk aan de fractie van de tijd waarin de bron in handen is van speler \textit{i}, minus de kost van het flippen.
+De benefitratio is gelijk aan de fractie van de tijd waarin de bron in handen is van speler \textit{i}, minus de kost van het flippen.
 Gedurende het spel wordt de asymptotische benefit ratio (of ook gewoon benefit) gedefinieerd als \textit{lim inf} van de gemiddelde benefit omdat de tijd \textit{t} toeneemt tot oneindig en de gemiddelde benefit niet altijd een limiet heeft.
 \begin{equation}
 \beta_{i} (t) = \lim_{t \to \infty } inf \beta_{i}(t)
@@ -269,9 +269,9 @@ Als een speler feedback krijgt, kan hij zijn strategie aanpassen aan de informat
 Uit het onderzoek van het FlipIt framework zijn er een aantal interessante resultaten bekomen:
 \begin{itemize}
 \item periodieke spellen domineren de andere \textit{renewal }strategi"en. Dit betekent dat het altijd voordeliger is om een periodieke strategie te spelen tegen een tegenstander met een \textit{renewal} strategie;
-\item periodieke spellen zijn nadelig tegen spelers die de\textit{ Last Move} adaptieve strategie gebruiken. De tegenspeler kan telkens te weten komen wanneer de volgende flip zal komen en juist erachter zelf flippen. De \textit{Last Move} tegenspeler zal dus heel de tijd in controle zijn van de bron met verwaarloosbare onderbrekingen van de andere speler;
-\item als een speler speelt tegen een \textit{Last Move} tegenspeler die een veel hogere kost heeft, dan heeft de speler twee opties. De eerste optie is om zo snel te spelen dat de speler de tegenspeler dwingt om te stoppen met het spel. De tweede optie is om te spelen met een random strategie, zodat de tegenspeler niets kan leren uit de informatie betreffende de volgende beweging van de speler;
-\item de beste verdedigingsstrategie is om snel te spelen, om er voor te zorgen dat de tegenspeler afhaakt. Om snel te spelen, moet de speler er voor zorgen dat zijn bewegingskosten veel kleiner zijn dan de kosten van de tegenspeler.
+\item periodiek spelen is nadelig tegen spelers die de\textit{ Last Move} adaptieve strategie gebruiken. De tegenspeler kan telkens te weten komen wanneer de volgende flip zal komen en juist erachter zelf flippen. De \textit{Last Move} tegenspeler zal dus heel de tijd in controle zijn van de bron met verwaarloosbare onderbrekingen door de andere speler;
+\item als een speler speelt tegen een \textit{Last Move} tegenspeler die een veel hogere kost heeft, dan heeft de speler twee opties. De eerste optie is om zo snel te spelen zodat de hoge kosten de tegenspeler dwingt om te stoppen met het spel. De tweede optie is om te spelen met een random strategie, zodat de tegenspeler niets kan leren uit de informatie betreffende de volgende beweging van de speler;
+\item de beste verdedigingsstrategie is om snel te spelen, om er zo voor te zorgen dat de tegenspeler afhaakt. Om snel te spelen, moet de speler er voor zorgen dat zijn bewegingskosten veel kleiner zijn dan de kosten van de tegenspeler.
 %item een ​​bedrag van feedback over de tegenstander ontving tijdens het spel, de voordelen aan een speler.
 \end{itemize}
 
