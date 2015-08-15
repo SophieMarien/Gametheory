@@ -200,14 +200,14 @@ For the attacker it does not matter if he plays faster or slower than the defend
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=0.7]{Images/FlipItCase1delay.pdf} 
-\caption{FlipIt with delay propagation where $\delta_{D} > d > \delta_{A}$.   }
+\caption{FlipIt with delay propagation where $\delta_{D} \geq d \geq \delta_{A}$.   }
 \label{langedelay}
 \end{figure}
 
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=0.7]{Images/FlipItCase1delaytobig.pdf} 
-\caption{FlipIt with delay propagation where $ d > \delta_{D}$ }
+\caption{FlipIt with delay propagation where $ d \geq \delta_{D}$ }
 \label{langeredelay}
 \end{figure}
 
@@ -316,7 +316,7 @@ For the case with a delay we consider two cases, Case a and Case b, depending on
 
 \subsubsection*{\textbf{Case 2.a:} $ \delta_{D} \geq d + \delta_{A} \geq \delta_{A}$}
 %The first case is where the defender's period is larger than the sum of the delay and the attacker's period. 
-In this case the delay will never be counted twice in the defender's  benefit formula. To determine the total gain rate of the defender we need to know the probability that the defender will move during an interval and what the average time is that the defender controls the resource. Given that if the defender moves he will always benefit entirely from a period of delay in the next interval of the attacker, his total gain is $\dfrac{(d+\dfrac{\delta_{A}}{2})}{\delta_{A}}$ in one interval (as previously calculated. The total gain  rate of the defender is then the probability that the defender will move during an interval of the attacker multiplied by the total average gain per interval: 
+In this case the delay will never be counted twice in the defender's  benefit formula. To determine the total gain rate of the defender we need to know the probability that the defender will move during an interval and what the average time is that the defender controls the resource. Given that if the defender moves he will always benefit entirely from a period of delay in the next interval of the attacker, his total gain is $\dfrac{(d+\dfrac{\delta_{A}}{2})}{\delta_{A}}$ in one interval (as previously calculated). The total gain  rate of the defender is then the probability that the defender will move during an interval of the attacker multiplied by the total average gain per interval: 
 
 \begin{equation*}\label{first}
 \gamma_{D}(\delta_{D},\delta_{A}) = \dfrac{\delta_{A}}{\delta_{D}} \cdot \dfrac{(d+\dfrac{\delta_{A}}{2})}{\delta_{A}} 

@@ -287,18 +287,18 @@ aangeduid als een infectie vertragingsvariabele \textit{d}. Om de waarde van \te
 Veronderstel dat een aanvaller aanvalt op moment \textit {t}. Hij krijgt niet onmiddellijk de controle over het netwerk, maar pas na \textit {t + d}. Als de verdediger flipt voordat de periode $d$ verlopen is (ergens tussen $t$ en $t+d$), dan zal de aanvaller nooit de volledige controle krijgen over het netwerk. Dit impliceert dat de wiskundige formules voor de \textit{gain} en de \textit{benefit} aangepast moeten worden aan het feit dat de aanvaller een deel van zijn winst verliest vanwege de vertraging $d$. De rest van deze thesis zal zich toeleggen op de formalisering van het FlipIt spel met behulp van de variabele $ d $. \\
 
 
-De formalisering begint bij het model van het niet-adaptieve continue basis FlipIt spel waarin spelers een periodieke strategie gebruiken met een willekeurige fase. De motivatie voor deze keuze is de veronderstelling dat in de praktijk bij de meeste bedrijven de verdedigingsstrategie om het netwerk te verdedigen periodiek is. Er is gekozen voor een periodieke aanvallersstrategie zodat we in staat zijn om de resultaten te vergelijken met de periodieke strategie van het spel FlipIt in \citep{FlipIt}. \\%, As esta ook overeen met een real-life gemeenschappelijke strategie. % Nog verder Eventueel je motiveren
+De formalisering begint bij het model van het niet-adaptieve continue basis FlipIt spel waarin spelers een periodieke strategie gebruiken met een willekeurige fase. De motivatie voor deze keuze is de veronderstelling dat in de praktijk bij de meeste bedrijven de verdedigingsstrategie om het netwerk te verdedigen periodiek is. Er is gekozen voor een periodieke aanvallersstrategie zodat we in staat zijn om de resultaten te vergelijken met de periodieke strategie van het spel FlipIt in \citep{FlipIt}. Bovendien weten we uit de resultaten van het basisch FlipIt spel dat de periodieke strategie de beste strategie is binnen de categorie van de renewal strategi"en. De adaptieve strategi"en zijn minder relevant gezien het heimelijk karakter van de verdediger en de aanvaller. De verdediger zal geen informatie hebben over het tijdstip van de aanval en andersom.\\%, As esta ook overeen met een real-life gemeenschappelijke strategie. % Nog verder Eventueel je motiveren
 
 
 Net zoals in FlipIt \citep{FlipIt}, delen we de formalisering in twee gevallen. In het eerste geval speelt de verdediger minstens zo snel als de aanvaller en in het tweede geval speelt de aanvaller minstens zo snel als de verdediger. Voor beide gevallen presenteren we eerst de \textit{gain} formule van een FlipIt spel zonder vertraging, en daarna introduceren we de vertraging. \\
 
-\subsection{ Formalisering van de benefit formule met een vertraging}
+\subsection{ Formalisering van de benefitformule met een vertraging}
 Een periodische strategie is een niet-adaptieve strategie waarin het tijdsinterval tussen twee opeenvolgende bewegingen een constante is, weergegeven als $\delta$. Bovendien heeft het een random fase die uniform en random gekozen is in het eerste interval tijdens de eerste flip $[0,\delta]$. De gemiddelde snelheid van de bewegingen van een speler is uitgedrukt als volgt: $\alpha_{i} = \dfrac{1}{\delta_{i}}$. \\
 ~~\\
 
 \subsection*{\textbf{Case 1:} $\delta_{D} \leq \delta_{A} $ (De verdediger speelt minstens zo snel als de aanvaller.) }
 
-Stel $r = \dfrac{\delta_{D}}{ \delta_{A} }$. The intervallen tussen twee opeenvolgende bewegingen hebben lengte $\delta_{D}$. Beschouw een interval van de verdediger. De waarschijnlijkheids-verdeling over de fase van de aanvaller dat de aanvaller beweegt in het interval is \textit{r}. De aanvaller zal exact een keer bewegen in het interval, gegeven dat hij beweegt in dit interval (omdat $\delta_{D} \leq \delta_{A} $) en omdat zijn bewegingen uniform en random gedistribueerd zijn. \\
+Stel $r = \dfrac{\delta_{D}}{ \delta_{A} }$. The intervallen tussen twee opeenvolgende bewegingen hebben lengte $\delta_{D}$. Beschouw een interval van de verdediger. De waarschijnlijkheids-verdeling over de fase van de verdediger dat de aanvaller flipt tijdens dit interval is $\dfrac{\delta_{D}}{ \delta_{A} } = r$. Gegeven dat de aanvaller flipt in dit interval, zal hij exact een keer flippen in dit interval (aangezien $\delta_{D} \leq \delta_{A} $) en zijn bewegingen uniform en random verdeeld zijn. \\ \\
 
 De verwachte periode dat de aanvaller controle heeft in dit interval is \textit{r/2}, zonder de vertraging door een APT in acht te nemen. Daarom kan de benefit voor de aanvaller, zonder de vertraging als volgt uitgeschreven worden:
 
@@ -318,24 +318,23 @@ Bijgevolg is de benefit voor de verdediger:
 \label{fig:delaycase1}
 \end{figure}
 
+\todo{case 0 ook hierin zetten}
 
-Echter, omwille van de vertraging die nodig is door de APT propagatie, is de maximale tijd dat de aanvaller in controle kan zijn verminderd naar $\delta_{D}-d$. Zie figuur \ref{fig:delaycase1}.  Er is een kans van \textit{r} dat de aanvaller zal flippen in het interval van de verdediger. Door de vertraging zal de \textit{gain} deze keer niet de helft zijn van het interval. De aanvaller moet vroeg genoeg spelen om controle te krijgen over de bron. Vroeg genoeg betekent dat de aanvaller moet spelen tijdens de periode van $\delta_{D}-d$ tijdens het interval van de verdediger. De kans dat de aanvaller vroeg genoeg zal spelen is $\dfrac{\delta_{D}-d}{\delta_{D}}$ en dit geeft de aanvaller een gemiddelde \textit{gain} van $\dfrac{\delta_{D}-d}{2}$. Als de aanvaller flipt na de periode van $\delta_{D}-d$, dan zal zijn \textit{gain} gelijk zijn aan nul. De kans dat de aanvaller te laat flipt is gelijk aan $\dfrac{d}{\delta_{D}}$. De gemiddelde \textit{gain} ratio van de aanvaller kan dus als volgt uitgedrukt worden, als ze kijken naar het interval van de verdediger:
-\begin{equation}\label{first}
-\gamma_{A}(\alpha_{D},\alpha_{A}) = \dfrac {1}{\delta_{D}} [ \dfrac{\delta_{D}}{\delta_{A}} \cdot \dfrac{\delta_{D}-d}{\delta_{D}} \cdot \dfrac{\delta_{D}-d}{2} + \dfrac{\delta_{D}}{\delta_{A}} \cdot \dfrac{d}{\delta_{D}} \cdot 0 ]
-\end{equation}
+Echter, omwille van de vertraging die nodig is door de APT propagatie, is de maximale tijd dat de aanvaller in controle kan zijn verminderd van $\delta_{D}$ naar $\delta_{D}-d$. Zie figuur \ref{fig:delaycase1}.  Er is een kans \textit{r} dat de aanvaller zal flippen in het interval van de verdediger. Door de vertraging zal de \textit{gain} deze keer niet de helft zijn van het interval. De aanvaller moet vroeg genoeg spelen om controle te krijgen over de bron. Vroeg genoeg betekent dat de aanvaller moet spelen tijdens de periode van $\delta_{D}-d$ tijdens het interval van de verdediger. De kans dat de aanvaller vroeg genoeg zal spelen is $\dfrac{\delta_{D}-d}{\delta_{D}}$ en dit geeft de aanvaller een gemiddelde \textit{gain} van $\dfrac{\delta_{D}-d}{2}$. Als de aanvaller flipt na de periode van $\delta_{D}-d$, dan zal zijn \textit{gain} gelijk zijn aan nul. De kans dat de aanvaller te laat flipt is gelijk aan $\dfrac{d}{\delta_{D}}$. De gemiddelde \textit{gain} ratio van de aanvaller kan dus als volgt uitgedrukt worden, als ze kijken naar het interval van de verdediger:
+\begin{equation*}
+\gamma_{A}(\delta_{D},\delta_{A}) = \dfrac {1}{\delta_{D}} [ \dfrac{\delta_{D}}{\delta_{A}} \cdot \big[ \dfrac{\delta_{D}-d}{\delta_{D}} \cdot \dfrac{\delta_{D}-d}{2} + \dfrac{d}{\delta_{D}} \cdot 0 \big] ]
+\end{equation*}
+\todo{uitleg van thesis nemen}
 
 Om de benefit te berekenen, trekken we de bewegingskosten af van de gemiddelde \textit{gain}.
 \begin{equation}\label{first}
-\beta_{A}(\alpha_{D},\alpha_{A}) = \dfrac { (\delta_{D}-d) ^{2}} {2 \cdot \delta_{D}  \delta_{A}} - k_{A} \alpha_{A}
+\beta_{A}(\delta_{D},\delta_{A}) = \dfrac { (\delta_{D}-d) ^{2}} {2 \cdot \delta_{D}  \delta_{A}} - k_{A} \alpha_{A}
 \end{equation}
-\begin{equation}\label{first}
-\beta_{A}(\alpha_{D},\alpha_{A}) = \dfrac { \delta_{D}} {2 \cdot \delta_{A}} - k_{A} \alpha_{A} - ( \dfrac{d^{2}}{2 \cdot \delta_{A} \delta_{D}} - \dfrac{d}{\delta_{A}} )
-\end{equation}
- 
+
  
 De benefit van de verdediger wordt dan als volgt uitgedrukt:
  \begin{equation}\label{first}
-\beta_{D}(\alpha_{D},\alpha_{A}) = 1 - \dfrac { (\delta_{D}-d) ^{2}} {2 \cdot \delta_{D}  \delta_{A}} - k_{D} \alpha_{D}
+\beta_{D}(\delta_{D},\delta_{A}) = 1 - \dfrac { (\delta_{D}-d) ^{2}} {2 \cdot \delta_{D}  \delta_{A}} - k_{D} \alpha_{D}
 \end{equation}
 ~~\\
 We kunnen zien dat wanneer $d=0$, de formule terug gelijk is aan de formule in het originele FlipIt spel \citep{FlipIt}. \\
@@ -343,9 +342,9 @@ We kunnen zien dat wanneer $d=0$, de formule terug gelijk is aan de formule in h
 
 \subsection*{\textbf{Case 2:} $\delta_{A} \leq \delta_{D} $ (De aanvaller speelt minstens zo snel als de verdediger)}
 
-Stel eerst $r = \dfrac{\delta_{D}}{ \delta_{A} }$. De lengte van de intervallen tussen twee opeenvolgende bewegingen van de aanvaller zijn gelijk aan $\delta_{A}$. Beschouw een gegeven interval van de attacker. De waarschijnlijkheids-verdeling over de fase van de aanvaller dat de verdediger flipt tijdens dit interval is $\dfrac{\delta_{A}}{ \delta_{D} } = (1/r)$. Gegeven dat de verdediger flipt in dit interval, zal hij exact een keer flippen in dit interval (aangezien $\delta_{A} \leq \delta_{D} $) en zijn bewegingen zijn uniform en random verdeeld. \\
+Stel $r = \dfrac{\delta_{D}}{ \delta_{A} }$. De lengte van de intervallen tussen twee opeenvolgende bewegingen van de aanvaller zijn gelijk aan $\delta_{A}$. Beschouw een gegeven interval van de aanvaller. De waarschijnlijkheids-verdeling over de fase van de aanvaller dat de verdediger flipt tijdens dit interval is $\dfrac{\delta_{A}}{ \delta_{D} } = (1/r)$. Gegeven dat de verdediger flipt in dit interval, zal hij exact een keer flippen in dit interval (aangezien $\delta_{A} \leq \delta_{D} $) en zijn bewegingen zijn uniform en random verdeeld. \\
 
-Er volgt uit een gelijkaardige analyse als in case 1 voor een FlipIt spel zonder APT propagatie de volgende benefit formules:
+Er volgt uit een gelijkaardige analyse als in case 1 voor een FlipIt spel zonder APT propagatie met de volgende benefit formules:
 
 \begin{equation}\label{first}
 \beta_{D}(\alpha_{D},\alpha_{A}) = \dfrac {1} {2r} - k_{D} \alpha_{D} = \dfrac {\delta_{A}} {2\delta_{D}} - k_{D} \alpha_{D} 
@@ -359,11 +358,11 @@ Voor de case met een APT propagatie beschouwen we twee onderverdelingen: case 2.
 
 \subsubsection*{\textbf{Case 2.a:} $d + \delta_{A} \leq \delta_{D}$}
 ~~\\
-Beschouw een tijdsperiode van $\delta_{A} + d$, die het interval van de aanvaller voorstelt gevolgt door de periode van de vertraging in het volgende interval. De verdediger zal nooit twee keer flippen in dit interval omdat  $\delta_{A} + d \leq \delta_{D}$. De verdediger zal flippen tijdens het interval met een kans van $\dfrac{\delta_{A}}{\delta_{D}} $. Wanneer de verdediger flipt, zal de verdediger tot op het einde van het interval in controle zijn van de bron. In het volgende interval zal de aanvaller terug moeten flippen om terug controle te krijgen. Dit betekent dat tijdens de vertraging in het volgende interval, de verdediger de controle zal hebben, zie figuur  \ref{fig:case2} cases (1) and (2). De totale tijd dat de verdediger controle heeft over de bron is vanaf het moment dat de verdediger flipt tot het einde van het interval plus de periode van de vertraging in het volgende interval, namelijk \textit{d}. Omdat $d + \delta_{A} \leq \delta_{D}$  zal de volgende flip van de verdediger nooit gebeuren gedurende de vertraging. De hele vertraging kan worden beschouwd als een extra benefit van een flip in het vorige interval.
-Elke keer dat de verdediger flipt, zal hij een gemiddelde \textit{gain} van $\dfrac{\delta_{A}}{2}$ in het interval waar hij flipt en een extra \textit{gain} van $d$ van het volgende interval. Dit resulteert in een totaal gemiddelde \textit{gain} per interval van
+Beschouw een tijdsperiode van $\delta_{A} + d$, die het interval van de aanvaller voorstelt gevolgt door de periode van de vertraging in het volgende interval. De verdediger zal nooit twee keer flippen in dit interval omdat  $\delta_{A} + d \leq \delta_{D}$. De verdediger zal flippen tijdens het interval met een kans van $\dfrac{\delta_{A}}{\delta_{D}} $. Wanneer de verdediger flipt, zal de verdediger tot op het einde van het interval in controle zijn van de bron. In het volgende interval zal de aanvaller terug moeten flippen om terug controle te krijgen. Dit betekent dat tijdens de vertraging in het volgende interval, de verdediger de controle zal hebben, zie figuur  \ref{fig:case2} cases (1) and (2). De totale tijd dat de verdediger controle heeft over de bron is vanaf het moment dat de verdediger flipt tot het einde van het interval plus de periode van de vertraging in het volgende interval, namelijk \textit{d}. Omdat $d + \delta_{A} \leq \delta_{D}$  zal de volgende flip van de verdediger nooit gebeuren tijdens de vertraging. De hele vertraging kan worden beschouwd als een extra benefit van een flip in het vorige interval.
+Elke keer dat de verdediger flipt, zal hij een gemiddelde \textit{gain} hebben van $\dfrac{\delta_{A}}{2}$ in het interval waarin hij flipt en een extra \textit{gain} van $d$ in het volgende interval. Dit resulteert in een totaal gemiddelde \textit{gain} per interval van
 $\dfrac{(d+\dfrac{\delta_{A}}{2})}{\delta_{A}}$. \\
 
-De totale \textit{gain} rate van de verdediger is dan de kans dat de verdegier zal flippen gedurende het interval van de aanvaller vermenigvuldigd met het totaal gemiddelde \textit{gain} per interval:
+De totale \textit{gain} rate van de verdediger is dan de kans dat de verdediger zal flippen gedurende het interval van de aanvaller vermenigvuldigd met de totaal gemiddelde \textit{gain} per interval:
 
 
 \begin{equation}\label{first}
@@ -385,20 +384,20 @@ De benefit van de aanvaller is dan als volgt:
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=0.5]{../../doc/template/Images/FlipIt2}
-\caption{Case 2.a waar d + $\delta_{A} < \delta_{D}$}
+\caption{Case 2.a waar d + $\delta_{A} \leq \delta_{D}$}
 \label{fig:case2}
 \end{figure}
 
 
-Het is cruciaal dat $ \delta_{D}$ op zen minst zo groot is als $d + \delta_{A}$. Zoniet betekent dit dat de aanvaller kan bewegingen tijdens de vertraging in het interval die volgt op het interval waar de verdediger al geflipt heeft. Stel dat dit wel gebeurt dan kan er een overlap zijn tussen de gemiddelde \textit{gain} van $\dfrac{\delta_{A}}{2}$ en de vertraging. De bovenstaande formule bevat dan een overschatting van de \textit{gain} voor de verdediger gelijk aan de overlap tijdens de vertraging die dubbel geteld wordt. \\
+Het is cruciaal dat $ \delta_{D}$ op zijn minst zo groot is als $d + \delta_{A}$. Zo niet betekent dit dat de aanvaller kan bewegingen tijdens de vertraging in het interval dat volgt op het interval waar de verdediger al geflipt heeft. Stel dat dit wel gebeurt dan kan er een overlap zijn tussen de gemiddelde \textit{gain} van $\dfrac{\delta_{A}}{2}$ en de vertraging. De bovenstaande formule bevat dan een overschatting van de \textit{gain} voor de verdediger gelijk aan de overlap tijdens de vertraging die dubbel geteld wordt. \\
 
 
 ~~ \\
 \subsubsection*{\textbf{Case 2.b:} $d + \delta_{A} \geq \delta_{D}$}
 ~~~\\
 
-Om de formule te bekomen voor de case waarbij de delay te groot is, moeten we de overlap met de \textit{gain} berekenen en deze aftrekken. 
-Aangezien $\delta_{D} \geq \delta_{A}$, als de verdediger onmiddelijk speelt nadat de aanvaller geflipt heeft, van de verdediger nooit in het voorgaande interval geflipt hebben. In dit geval is er geen overlap. Het probleem van de overlap doet zich alleen voor als de verdediger te laat in het interval flipt. Dit betekent dat alleen het laatste deel van de vertraging kans heeft tot overlap. Hoe groter het verschil tussen de periode van de aanvaller en van de defender, hoe kleiner de kans tot overlap. Concreet gezien, alleen het laatste deel met lengte $d - (\delta_{D} - \delta_{A})$ is onderworpen aan overlap. Hieruit volgt dat de kans tot overlap gelijk is aan $\dfrac{ d - (\delta_{D} - \delta_{A})}{\delta_{D}}$ en dat de \textit{gain} de helft zal zijn van dit interval: $\dfrac{ d - (\delta_{D} - \delta_{A})}{2}$.  De \textit{gain} rate die tot overlap zorgt en dus afgetrokken moet worden is:
+Om de formule te bekomen voor de case waarbij de vertraging te groot is, moeten we de overlap met de \textit{gain} berekenen en deze aftrekken. 
+Aangezien $\delta_{D} \geq \delta_{A}$, als de verdediger onmiddellijk speelt nadat de aanvaller geflipt heeft, de verdediger nooit in het voorgaande interval geflipt hebben. In dit geval is er geen overlap. Het probleem van de overlap doet zich alleen voor als de verdediger te laat in het interval flipt. Dit betekent dat alleen het laatste deel van de vertraging kans heeft tot overlap. Hoe groter het verschil tussen de periode van de aanvaller en van de verdediger, hoe kleiner de kans tot overlap. Concreet gezien, alleen het laatste deel met lengte $d - (\delta_{D} - \delta_{A})$ is onderworpen aan overlap. Hieruit volgt dat de kans tot overlap gelijk is aan $\dfrac{ d - (\delta_{D} - \delta_{A})}{\delta_{D}}$ en dat de \textit{gain} de helft zal zijn van dit interval: $\dfrac{ d - (\delta_{D} - \delta_{A})}{2}$.  De \textit{gain} rate die voor overlap zorgt en dus afgetrokken moet worden is:
 
 \begin{equation}\label{first}
 \dfrac{1} {\delta_{A}} \cdot \dfrac{d - (\delta_{D} - \delta_{A})}{\delta_{D}} \cdot \dfrac{d - (\delta_{D} - \delta_{A})}{\delta_{D}}
