@@ -47,10 +47,10 @@ This leads us to the following research questions:
 The following contributions are made in this paper:
 \begin{itemize}
 \item[-] We propose an addition to the basic FlipIt model to model a scenario where the moves by the attacker will not be instantaneous. We extend the FlipIt game to a game wherein the attacker flips with a delay. The attacker only compromises the system if sufficient nodes in the network are infected. 
-\item[-] The periodic case of FlipIt is modelled with a delay, resulting in optimum functions and Nash equilibria. \todo{punt herschrijven en meer nadruk leggen op het vinden van de Nash equilibria}
+\item[-] The periodic case of FlipIt is modelled with a delay, resulting in optimum functions which lead to interesting cases. 
 \item[-] Based on our results we can give practical recommendations to take measures against advanced attacks.  The modelling of FlipIt with a propagation delay will give a guideline for both the attacker and the defender on how to respectively plan attacks or network clean-ups.
 \item[-] This work includes an overview of different propagation techniques of worms and models used to calculate the propagation delay (depending on the network layout). It also presents a method to calculate the speed of the propagation of a worm in a propagation independent of the topology of the network.
-\item[-] The Google Page Rank matrix is introduced as a proof of concept to calculate the importance of every node in the network.
+\item[-] The Page Rank matrix is introduced as a proof of concept to calculate the importance of every node in the network.
 \end{itemize}
 
 
@@ -69,8 +69,8 @@ While it may seem trivial to extend the basic FlipIt model with a propagation de
 
 The organisation of this paper is the following.  An introduction to cyber security and game theory is given in chapter \ref{Chapter1:Intro.Game.Theory} to allow the reader to become familiar with the kind of threats that are in the scope of this work and the game theoretic concepts that will be further used in the paper. In the same chapter the FlipIt framework is summarized with its most important conclusions. The chapter concludes with an overview of the related work on FlipIt and further clarifies the contributions of this paper compared to existing work. 
 Chapter \ref{chapter2:FlipIt with virus propagation} first introduces the adaptations made to the original FlipIt game to model a FlipIt game with a virus propagation delay. Subsequently formulas are derived to model a FlipIt game with a propagation delay for the specific case where players play a periodic strategy with a random phase. \\
-In Chapter \ref{chapter:Nash} the formulas are further analysed to determine if there is a Nash equilibrium. 
-In order to provide a clear perspective on delays, chapter \ref{chapter4: Worm propagation} gives an overview of the various methods of propagation and worm propagation models. It presents a method to calculate the speed of the propagation of a worm in a network independent of the topology of the network.
+In Chapter \ref{chapter:Nash} the formulas are further analysed to determine optimal strategies for the defender and the attacker.
+In order to provide a clear perspective on delays, chapter \ref{chapter4: Worm propagation} gives an overview of the various methods of propagation and worm propagation models. It presents a method to calculate the speed of the propagation of a worm in a network independent of the topology of the network. It also introduces a PageRank matrix to calculate the importance of every node in the network.
 Finally chapter \ref{chapter5:conclusion} discusses the main results and provides directions for further research.
 
 

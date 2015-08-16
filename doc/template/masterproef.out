@@ -14,17 +14,19 @@
 \BOOKMARK [1][-]{section.2.3}{The FlipIt Game}{chapter.2}% 14
 \BOOKMARK [1][-]{section.2.4}{Related Work on Extensions to FlipIt}{chapter.2}% 15
 \BOOKMARK [0][-]{chapter.3}{FlipIt with propagation delay}{}% 16
-\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 17
-\BOOKMARK [1][-]{section.3.2}{Difference between FlipIt with and without propagation delay}{chapter.3}% 18
-\BOOKMARK [1][-]{section.3.3}{Formalization of the periodic game with propagation delay}{chapter.3}% 19
-\BOOKMARK [1][-]{section.3.4}{Summary}{chapter.3}% 20
-\BOOKMARK [0][-]{chapter.4}{Nash Equilibria}{}% 21
-\BOOKMARK [1][-]{section.4.1}{Nash Equilibria}{chapter.4}% 22
-\BOOKMARK [0][-]{chapter.5}{Models for the Delay}{}% 23
-\BOOKMARK [1][-]{section.5.1}{Methods of propagation}{chapter.5}% 24
-\BOOKMARK [1][-]{section.5.2}{Models for worm propagation}{chapter.5}% 25
-\BOOKMARK [1][-]{section.5.3}{Matrix worm model}{chapter.5}% 26
-\BOOKMARK [1][-]{section.5.4}{Google PageRank algorithm}{chapter.5}% 27
-\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 28
-\BOOKMARK [1][-]{section.6.1}{trala}{chapter.6}% 29
-\BOOKMARK [0][-]{section*.95}{Bibliography}{}% 30
+\BOOKMARK [1][-]{section.3.1}{Difference between FlipIt with and without propagation delay}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.2}{Formalization of the periodic game with propagation delay}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.3}{Summary}{chapter.3}% 19
+\BOOKMARK [0][-]{chapter.4}{Optimal defence and attack strategies}{}% 20
+\BOOKMARK [1][-]{section.4.1}{Determining the piecewise functions optD\(A\)}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.2}{Best responses of D}{chapter.4}% 22
+\BOOKMARK [1][-]{section.4.3}{Determining the piecewise functions optA\(D\)}{chapter.4}% 23
+\BOOKMARK [1][-]{section.4.4}{Best responses of A}{chapter.4}% 24
+\BOOKMARK [0][-]{chapter.5}{Models for the Delay}{}% 25
+\BOOKMARK [1][-]{section.5.1}{Methods of propagation}{chapter.5}% 26
+\BOOKMARK [1][-]{section.5.2}{Models for worm propagation}{chapter.5}% 27
+\BOOKMARK [1][-]{section.5.3}{Matrix worm model}{chapter.5}% 28
+\BOOKMARK [1][-]{section.5.4}{PageRank algorithm}{chapter.5}% 29
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 30
+\BOOKMARK [1][-]{section.6.1}{trala}{chapter.6}% 31
+\BOOKMARK [0][-]{section*.87}{Bibliography}{}% 32
