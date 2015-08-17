@@ -11,7 +11,9 @@
 
 %TODO-- rechtstreeks uit FlipIt paper --\\
 
-In this chapter we are interested in finding the optimal defence and attack strategies. To calculate the optimal strategies of both players we have to find the Nash equilibria of the game. First the optimal functions are derived from the formulas in the previous chapter. From these piecewise functions we can derive the Nash equilibria. \\
+In this chapter we are interested in finding the optimal defence and attack strategies. Ultimately, the optimal strategies can allow the determination of the Nash equilibria of the game. \\
+
+%First the optimal functions are derived from the formulas in the previous chapter. From these piecewise functions we can derive the Nash equilibria. \\
 
 Nash equilibria are points with the property that neither player benefits by deviating in isolation from the equilibrium. We can compute Nash equilibria for the periodic game as an intersection point of curves $opt_{D}$ and $opt_{A}$. 
 \\
@@ -25,8 +27,7 @@ of play $\delta_{D}$) that optimize the benefit of the defender for a fixed rate
 attacker. Similarly, we denote by $opt_{D}(\delta_{D}$) the set of values (rates of play $\delta_{A}$) that optimize
 the benefit of the attacker for a fixed rate of play $\delta_{D}$ of the defender. \\
 
-To determine $opt_{D}(\delta_{A})$ we need to compute the derivative of  $\beta_{D}(\delta_{D},\delta_{A}) $ for a fixed $\delta_{A}$.
- We consider three cases for each piece of the piecewise function of $\beta_{D}$.
+
 % Fig \todo{fig} shows all the cases.\\
 %\begin{figure}[hbtp]
 %\centering
@@ -37,6 +38,10 @@ To determine $opt_{D}(\delta_{A})$ we need to compute the derivative of  $\beta_
 
 \section{Determining the piecewise functions $opt_{D}(\delta_{A})$}
 
+To determine $opt_{D}(\delta_{A})$ we need to compute the derivative of  $\beta_{D}(\delta_{D},\delta_{A}) $ for a fixed $\delta_{A}$.
+ We consider three cases for each piece of the piecewise function of $\beta_{D}$.
+ 
+ 
 \subsection*{Case A: $\delta_{D} \leq d$}
 
 The benefit formula obtained in the previous chapter is as follows:
@@ -60,12 +65,12 @@ The function is of the type $1-1/x$, see figure \ref{1x}. The root of the benefi
 \label{1x}
 \end{figure}
 
-This means that if $\delta_{D} < k_{D}$  the function is negative and if $\delta_{D} > k_{D}$ the function is positive. If $k_{D} < 0$ the function will decrease, and if $k_{D} > 0$ the function will increase.
+This means that if $\delta_{D} < k_{D}$  the function is negative and the defender will therefore not play, if $\delta_{D} > k_{D}$ the function is positive. If $k_{D} < 0$ the function will decrease and the defender will again not play (cost cannot be negative).  Assuming that costs are always non-negative $k_{D} > 0$, the function will increase, meaning that the slower the defender plays, the larger the benefit.
 
 
 
 \subsection*{Case B: $ d \leq\delta_{D} \leq \delta_{A} + d$}
-The benefit formula obtained in the previous chapter (formula \ref{Benfcase1:defender}) for the defender in this case is as follows:
+The defender's benefit formula obtained in the previous chapter in this case is as follows:
 \begin{equation*}
 \beta_{D}(\delta_{D},\delta_{A}) = 1 - \dfrac{\delta_{D}}{2\delta_{A}} - \dfrac{d^{2}}{2\delta_{D}\delta_{A}} + \dfrac{d}{\delta_{A}}  - \dfrac{k_{D}}{\delta_{D}}
 \end{equation*}
@@ -80,13 +85,14 @@ The stationary points (maximum, minimum) can be found by setting the first deriv
 \frac{\partial \beta_{D}(\delta_{D},\delta_{A})}{\partial \delta_{D}} =0 ~~~~~~ =>~~~~~~ \delta_{D} = \sqrt{2\delta_{A}k_{D} + d^{2}}
 \end{equation*}
 
-This leads to the following deduction given the sign of the coefficient of $\delta_{D}^{2}$: The function increases on $[0, \sqrt{2\delta_{A}k_{D} + d^{2}}]$ and is decreasing on $[\sqrt{2\delta_{A}k_{D} + d^{2}}, \infty]$. So we have a maximum at $\delta_{D} = min \{ \delta_{A} +d, \sqrt{2\delta_{A}k_{D} + d^{2}} \} $ and $\delta_{D}$ has to be greater than $d$. Taking the minimum of the two values is needed because $\delta_{D}$ cannot be larger than $\delta_{A}$. \\
+Given the sign of the coefficient of $\delta_{D}^{2}$, this
+leads to the following deduction: The function increases on $[0, \sqrt{2\delta_{A}k_{D} + d^{2}}]$ and is decreasing on $[\sqrt{2\delta_{A}k_{D} + d^{2}}, \infty]$. So we have a maximum at $\delta_{D} = min \{ \delta_{A} +d, \sqrt{2\delta_{A}k_{D} + d^{2}} \} $ and $\delta_{D}$ has to be larger than $d$. Taking the minimum of the two values is needed because $\delta_{D}$ cannot be larger than $\delta_{A} +d$. \\
 ~~\\
 
 
 \subsection*{Case C: $\delta_{D} \geq d+\delta_{A} $ }
 
-The benefit formula obtained in the previous chapter (formula \ref{benfcase2a:defender}) for the defender in this case is as follows:
+The benefit formula for the defender obtained in the previous chapter in this case is as follows:
 \begin{equation*}
 \beta_{D}(\delta_{D},\delta_{A})= \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - \dfrac{k_{D}}{\delta_{D}} = \dfrac{\delta_{A} + 2 (d-k_{D})}{2\delta_{D}}
 \end{equation*}
@@ -94,11 +100,11 @@ The benefit formula obtained in the previous chapter (formula \ref{benfcase2a:de
 Given that $\delta_{D}$ is always positive, the benefit function can be either increasing or decreasing depending on the numerator of the above fraction. \\
 
 For $\delta_{A} + 2(d-k_{D}) > 0$ the benefit will be always positive but decreasing, see figure \ref{ShapeUp}. 
-The defender will always play as fast as he can if $\delta_{A} + 2(d-k_{D}) > 0$ for $k_{D} < d$ or $k_{D} > d$ because $\delta_{A}$ will be positive in either case. There is an edge case if $d=k_{D}$, which results in a benefit of $\beta_{D}(\delta_{D},\delta_{A})= \dfrac{\delta_{A}}{\delta_{D}}$. \\
+The defender will always play as fast as he can if $\delta_{A} + 2(d-k_{D}) > 0$ for $k_{D} < d$ or $k_{D} > d$ because $\delta_{A}$ will be positive in either case. There is an edge case if $d=k_{D}$, which results in a benefit of $\beta_{D}(\delta_{D},\delta_{A})= \dfrac{\delta_{A}}{2\delta_{D}}$. \\
 \begin{figure}
 \centering
 \includegraphics[scale=0.5]{Images/ShapesUp.png} 
-\caption{The benefit function is of the shape of 1/x if $\delta_{D}$ is always decreasing and if $\delta_{A} + 2(d-k_{D}) > 0$. }
+\caption{The benefit function is of the shape of 1/x and is always decreasing and if $\delta_{A} + 2(d-k_{D}) > 0$. }
 \label{ShapeUp}
 \end{figure}
 
@@ -107,7 +113,7 @@ For $\delta_{A} + 2(d-k_{D}) < 0$, the benefit will always be increasing but neg
 \begin{figure}
 \centering
 \includegraphics[scale=0.5]{Images/ShapeDown.png} 
-\caption{The benefit function is of the shape of -1/x if $\delta_{D}$ is always increasing and if $\delta_{A} + 2(d-k_{D}) < 0$.}
+\caption{The benefit function is of the shape of -1/x and is always increasing and if $\delta_{A} + 2(d-k_{D}) < 0$.}
 \label{ShapeDown}
 \end{figure}
 %The derivative of the above formula for a fixed $\delta_{A}$ results in the following:
@@ -161,7 +167,7 @@ For $\delta_{A} + 2(d-k_{D}) < 0$, the benefit will always be increasing but neg
 
 \section{Best responses of $\delta_{D}$}
 The optimum functions will be piecewise functions. We distinguish six cases for different values of $\delta_{A}$ depending on the values of $k_{D}$ and $d$. 
-We point out that $\delta_{A}$ and $\delta_{D}$ are positive rates. 
+%We point out that $\delta_{A}$ and $\delta_{D}$ are positive rates. 
 
 
 \subsection*{$\delta_{A} < 2(k_{D} - d)$}
@@ -190,7 +196,7 @@ From this analyses we can compute $opt_{D}(\delta_{A})$ : \\
 ~~\\
 
 
-\subsection*{Bordercases:}
+\subsection*{Edge cases:}
 
 \subsection*{$\delta_{A}=0$ and $k_{D}=0$}
 If $\delta_{A}=0$ it means that the attacker is playing as fast as possible. For the defender it does not cost anything to flip, because $k_{D}=0$. We know that if $\delta_{D} \leq d$ the defender always has a benefit of 1. This means that for this case the defender will play with a rate $\delta_{D} \in [0,d]$.

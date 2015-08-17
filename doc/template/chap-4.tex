@@ -227,7 +227,7 @@ A drawback of this model is that the network topology is assumed to be homogeneo
 %%defenses (except for patching, in case of [16]) on the
 %%spread--
 %\subsection*{self disciplinary worms}
-%Model for self disciplinary worms and counter measures ... []  \todo{verder uitwerken ? ja of nee? }
+%Model for self disciplinary worms and counter measures ... []  \$•${verder uitwerken ? ja of nee? }
 
 
 %Popular mechanism that worms use to detect vulnerable targets by random IP scanning probing. Feasible due to use 32-bit addresses. 128-bit addresses life harder for worms, except the ones that use email systems to propagate. two new strategies: uniformly distributed random number generator to select new target. :spread locally, by biasing the search space towards addresses within the same subnet or network.  
@@ -246,8 +246,8 @@ where $\rho$(t) and $\beta$(t) are the average device density and the pairwise i
 \end{equation}
 
 To apply this model on FlipIt we again set up a threshold value for i(t) and see how long it takes to compromise this amount of hosts.  The paper by Yan and Eidenbenz concluded in their work that after setting model parameters accordingly ($\lambda_{ne} = 0.2108$ the average node degree and $J_{in}= 0.2372$ the average meeting rate of neighbours), the model predicts that the time it would take to infect 99$\%$ of the devices is slightly less than one hour. So in this case the delay is equal to an hour and the amount of hosts that has to be infected by the attacker before the network is compromised is 99$\%$ of the hosts in the network.
-The Bluetooth worm spreads rapidly once the density of the infected hosts reach 10 percent. The model shows that the spread in the beginning is very slowly at en early stage.
-\todo{remark stijn}
+The Bluetooth worm spreads rapidly once the density of the infected hosts reach 10 percent. The model shows that the spread in the beginning is very slowly at en early stage.\\
+
 %-Remark -Stijn- waarom 99 procent en niet 100? gewoon een uitleg in de trant van bij 99 procent kunt ge even goed zeggen dat heel het netwerk geinfecteerd is is goed. Of mss is er effectief een reden in de paper genoemd voor de 99 
 The limitation of this model is that it assumes that all the hosts in the network are homogeneously mixed and that the time increases in a discrete fashion. The graphical representation is also a undirected graph.
 
@@ -274,7 +274,7 @@ The iteration procedure with death and patch rate will stop when all the nodes i
 
 
 The biggest limitation of the model is that is expressed in discrete time. Continuous models are more appropriate for large scale models. The model also uses a complete undirected graph.
-\todo{. Ofzoiets vind de zin niet heel goed}
+
 
 %Popular mechanism that worms use to detect vulnerable targets by random IP scanning probing. Feasible due to use 32-bit addresses. 128-bit addresses life harder for worms, except the ones that use email systems to propagate. two new strategies: uniformly distributed random number generator to select new target. :spread locally, by biasing the search space towards addresses within the same subnet or network.  
 %The second strategy is almost the same as what email virusses would get. For this reason we work an example out .. \\
@@ -287,13 +287,15 @@ The biggest limitation of the model is that is expressed in discrete time. Conti
 \section{Matrix worm model}
 \label{eigenmatrixmethode}
 
-As can be seen in table \ref{tree} all propagation models are depending on a specific network topology. The different kinds of network topology of each model is either homogeneous, small-world network, random network or a power-law network. A homogeneous network is a network where every node has about the same degree of connectivity. This means that every node can infect each node with the same opportunity. A small-world topology is a network where most nodes are not connected with each other but they can all reach each other in a few steps. Social networks are an example of a small-world network. A random network is a topology where each connection is chosen at random with equal probability. In a power law \todo{ref power law} network the degrees of each node in the network follow the power law. Some of the nodes have a small degree of connectivity, others have a very large degree of connectivity.\\
+As can be seen in table \ref{tree} all propagation models depend on a specific network topology. A distinction is made between four kinds of network topologies: homogeneous, non-homogeneous, random network or power-law network. A homogeneous network is a network where every node has about the same degree of connectivity and each connection has the same probability. A non-homogeneous network is a network in which not all the nodes have the same degree and the connections have a different probability.
+%A small-world topology is a network where most nodes are not connected with each other but they can all reach each other in a few steps. Social networks are an example of such a small-world network. 
+A random network is a topology in which each connection is chosen at random with equal probability. In a power law network the degrees of each node in the network follow the power law. Some of the nodes have a small degree of connectivity, others have a very large degree of connectivity.\\
 
-However, for some of the propagation methods, the actual graph of the network matters. Each propagation method depends on having a right topology. Email worms need a topology that represent a social network, BGP routing worms need a topology on network level. 
-Ideally we need a method to calculate the delay that does not assume a specific kind of network topology, but where we can use the actual topology at hand to calculate the delay. \\
+However, for some of the propagation methods, the actual graph of the network matters. Each propagation method depends on having the right topology. Email worms need a topology that correspond to a social network, BGP routing worms need a topology on IP-network level. 
+Ideally, the propagation delay should be calculated without assuming that the network has one of these predefined topologies, but rather using the actual topology of the network at hand. \\
 
 %All of the above models for modelling the mechanism of the spreading of a worm depend on the kind of topology of the network.  
-In this chapter we propose a method to calculate the spread of a worm in a way that the specific topology of the network can be easily integrated. The method will give an approximation of how fast a worm can infect a network. This method is capable of calculating the delay for any network topology. 
+This chapter proposes a method to calculate the spread of a worm in a way that allows easy integration of the network topology. This method approximate how fast a worm can infect a network. It is capable of calculating the delay for any network topology. 
 
 
 \subsubsection{Proposal of a matrix based model}
@@ -317,13 +319,13 @@ In this chapter we propose a method to calculate the spread of a worm in a way t
 
 %So the chance that a resource is infected after time t is the chance that the resource is infected by all the previous infections and that the defender has not flipped the resource.
 
-A computer network can be modelled by an undirected or directed graph $G = < N, E> $ where $|N|$ denotes the number of nodes in the network and $|E|$ the number of connections. This graph can be converted to an  $|N| \times |N|$ adjacency matrix where the entries represent the connections between the nodes of the network. \\
+A computer network can be modelled by an undirected or directed graph $G = < N, E> $ where $|N|$ denotes the number of nodes in the network and $|E|$ the number of connections. This graph can be converted to an  $|N| \times |N|$ adjacency matrix in which the entries represent the connections between the nodes of the network. \\
 The matrix has a non-zero entry $a_{ij}$ if there is a connection from node $N_{i}$ to $N_{j}$. \\ 
 
 
 Adjacency matrices have many interesting applications, amongst which calculating the paths between vertices:
 \textit{``If \textit{A} is the adjacency matrix of the directed or undirected graph \textit{G}, then the matrix $A^{n}$ (i.e., the matrix product of \textit{n} copies of \textit{A}) has an interesting interpretation: the entry in row \textit{i} and column \textit{j} gives the number of (directed or undirected) walks of length \textit{n} from vertex \textit{i} to vertex \textit{j}. If \textit{n} is the smallest nonnegative integer, such that for all i ,j , the (i,j)-entry of $A^{n} > 0$, then n is the distance between vertex i and vertex \textit{j}.''}  source: \cite{wikimatrix} .\\
-Using this property of an adjacency matrix it is possible to calculate the time it takes for a worm, starting on a specific node, to infect a sufficient amount of other nodes in the network. Every matrix $A^{n}$ has a non-zero \textit{ij}-entry , if the worm starting in node \textit{i} can reach node $j$ in \textit{n} time steps. If we sum up all the matrices $A^{1} + A^{2} + ~...~+ A^{n-1}+A^{n}$, every \textit{i}-row indicates which node \textit{j} is infected by node \textit{i} after time $t=n$.  
+Using this property of an adjacency matrix, it is possible to calculate the time it takes for a worm, starting on a specific node, to infect a sufficient amount of other nodes in the network. Every matrix $A^{n}$ has a non-zero \textit{ij}-entry , if the worm starting in node \textit{i} can reach node $j$ in \textit{n} time steps. If we sum up all the matrices $A^{1} + A^{2} + ~...~+ A^{n-1}+A^{n}$, every \textit{i}-row indicates which node \textit{j} is infected by node \textit{i} after time $t=n$.  
 
 %%% Local Variables: 
 %%% mode: latex
@@ -439,12 +441,12 @@ For this sample network, the matrix in \ref{5:13} indicates that by dropping a v
 
 With the formula $\sum A^{n}$ the average delay can be calculated by counting the expected delay of every node when a worm has been dropped and devide it by the number of nodes in the network. \\
 
-Matrix \textit{A} can also represent a graph where every link has a weight. The weight is equal to the probability that the worm spreads through that link. The outcome of $ \sum A^{n}$ is then equal to the probability that each node has been infected after n time steps. The average delay can be calculated by setting up a threshold value for the probability that a node is infected. \\
+Matrix \textit{A} can also represent a graph where every link has a weight. The weight is equal to the probability that the worm spreads through that link. The outcome of $ \sum A^{n}$ is then equal to the probability that each node has been infected after n time steps. The average delay can be calculated by setting a threshold value for the probability that a node is infected. \\
 
-\subsubsection*{Conclusions}
-The advantage of this matrix worm model in comparison with the above models is that matrix  \textit{A} can represent any network topology. Directed or undirected. \\
-With this method it is also possible to determine the shortest path through al the nodes in the network. By summing up all the matrices, the first row that has all non-zero entries determines the shortest path. From node \textit{i} to the last \textit{ij}-entry that became a non-zero value. Consequently, if a worm is dropped on node \textit{i}, this worm will compromise the network in the shortest time possible. A defender can use this knowledge to adapt its network configurations. \\
-While matrix calculations may seem very time consuming, in the domain of network analytics efficient algorithms are available capable of calculating network attributes per node in networks of millions of nodes. In this paper, we only provide a proof of concept of how to apply matrices to calculate the delay. Developing an efficient algorithm is considered as a potential avenue for further research. 
+\subsubsection*{Conclusion}
+The advantage of this matrix worm model in comparison with the above models is that matrix  \textit{A} can represent any network topology, directed or undirected. \\
+Using this method it is also possible to determine the shortest path through al the nodes in the network. The shortest path that is necessary to infect all nodes can be found by summing all the matrices. The first row that only has non-zero entries determines this path. From node \textit{i} to the last \textit{ij}-entry that became a non-zero value. Consequently, if a worm is dropped on node \textit{i}, this worm will compromise the network in the shortest time possible. A defender can use this knowledge to adapt its network configurations. \\
+These matrix calculations may seem very time consuming, but in the domain of network analytics efficient algorithms are available that are capable of calculating network attributes per node in networks of millions of nodes. This paper only provides a proof of concept of how to apply these matrices to calculate the delay. Developing an efficient algorithm is considered as a potential avenue for further research. 
 %Using this knowledge we can calculate in how many steps a node is infected: \\
 %The infection vector or start vector $I_{0}$ of length $|V|$ indicates which node is infected and which not. Multiplying the infection vector with $A$ results in a vector $I_{1}$, which represents which nodes are infected after 1 step. Multiplying the start vector $I_{0}$ with $A^{N}$ calculates which nodes are infected in \textit{N} steps: each non zero entry represents an node infected after \textit{N} steps. \\
 %In the context of the FlipIt game, it is safe to assume that once a node is infected, it stays infected until the defender Flips the node. This means that after d steps, it is assumed that all nodes that could be reached in less than \textit{d} steps from the node where the worm was dropped, are infected. In order to know how many nodes are infected after (for example) at most 3 steps, we have to consider nodes that are infected initially (step 1), or after 2 steps, or after 3 steps.  Calculating the sum of the three matrices $(A + A^{2} + A^{3}) $ results in a matrix that indicates for each node, the number of paths of length 1, 2 or 3 from \textit{i} to \textit{ j}. Multiplying the start vector with this matrix, results in a vector that indicates which nodes will be infected in at most 3 steps . This technique can be applied to calculate the state of the network after any number of steps. \\
@@ -513,18 +515,21 @@ While matrix calculations may seem very time consuming, in the domain of network
 \label{googlesec:5.4}
 
 %-Remark stijn- 2 verschillende definities of page rank? of heb ik het niet door
-To calculate the delay of a worm propagation we assumed that every node is even important. A possible relaxation of this rule can be done by the PageRank Algorithm, which can be used to determine the importance of certain nodes. 
 
-The PageRank algorithm is introduced by Page and Brin in 1998 as one of the main features of the search engine Google to improve the search results. PageRank models the human behaviour when users surf through the net. It can also model \textit{random surfers}. A random surfer is the probability that a surfer gets bored and randomly visits another page which is not linked with the initial page. The probability that he will visit a random page is the PageRank of that page. A page will have a high PageRank if many pages will point to this page. This means that this page is well cited through other pages and maybe an important one to look at.    The main idea of the PageRank algorithm is to look at the number of (important) web pages that point to a particular page. The ranking of this page depends than on the number of out coming links and the importance of the pages that link to this page. With a probability of $P$ the surfer will follow a link of the page to another page, and with a probability of $1-P$ the surfer will surf to a random page. The PageRank algorithm is expressed as follows:
+The above method gives the propagation delay with the infection starting on a certain node. The following method, the PageRank algorithm, will give the probability that a node is infected, with the assumption that every node in the network is equally likely to be infected as a starting point.\\
+
+ 
+
+The PageRank algorithm was introduced by Page and Brin in 1998 as one of the main features of the search engine Google to improve the search results. PageRank models the human behaviour when users surf through the net. It can also model \textit{random surfers}. A random surfer represents the probability that a surfer gets bored and randomly visits another page which is not linked with the initial page. The probability that he will visit a random page is the PageRank of that page. A page will have a high PageRank if many pages point to this page. This means that the page is well-cited through other pages and may be important to look at. The main idea of the PageRank algorithm is to look at the number of (important) web pages that point to a particular page. The ranking of this page then depends on the number of outgoing links and the importance of the pages that link to this page. With a probability of $P$, the surfer will follow a link of the page to another page, and with a probability of $1-P$ the surfer will surf to a random page. The PageRank algorithm is expressed as follows:
 \begin{equation}
 PageRank(A)=P \sum \limits_{i \in N_{A}} \dfrac{PageRank(i)}{d_{out,i}} + (1-P) \cdot e_{A}
 \end{equation}
 
 where $N_{A}$ is the set of pages, $PageRank(i)$ is the page rank of web page $i$, $D_{out,i}$ is the number of outgoing links of page $i$, $(1-P)$ the probability that a random page is searched, and $e_{A}$ the restart value for web page A which is often uniformly distributed among all web pages. \\
 
-\textit{The Google matrix is a stochastic matrix that is used to calculate the PageRank of all the web pages on the internet. The dominant eigenvalue of the matrix is the PageRank. The matrix is a graph where the edges denote the links between each page. Using the power method, the PageRank of each page can be calculated iteratively. } --Moet anders verwoord worden. Hoe ?  komt uit wikipedia\\
+The PageRank of each page on the internet is the dominant eigenvalue of the Google Matrix. The Google Matrix is a stochastic matrix and represents a graph where every edge denotes a link between pages. Through the power iteration  \ref{Arnoldi}, the PageRank of all the pages can be calculated iteratively. \\
 
-The Google Matrix of a graph is defined as follow:
+The Google Matrix of a graph is defined as follows:
 \begin{equation}
 M = (1-p) \cdot A + p \cdot B ~~where~~B=\dfrac{1}{n}\cdot \begin{bmatrix}
        1 & 1 & \ldots &1           \\[0.3em]
@@ -567,9 +572,9 @@ $p$ defines the damping factor and indicates the probability that a surfer quits
 
 
 
-The PageRank vector of a graph, with the transposition matrix\textit{ A} and the damping variable \textit{p}, is equal to the probabilistic eigenvector of the matrix \textit{M}, corresponding to the eigenvalue 1. This can be calculated by the use of the Power Method. \\
+The PageRank vector of a graph, with the transposition matrix\textit{ A} and the damping variable \textit{p}, is equal to the probabilistic eigenvector of the matrix \textit{M}, corresponding to the eigenvalue 1. This can be calculated by the use of the power iteration. \\
 
-We can use the Google matrix to calculate the probability that a node in a graph is infected by a worm after a certain amount of time. When a worm uses the topology of the graph to propagate the damping variable p must be set equal to zero, as in the worm will not suddenly attack a node that is not connected. When the propagation of a worm is topology independent, the damping variable \textit{p} can be set to 1. \\
+We can use the Google matrix to calculate the probability that a node in a graph is infected by a worm after a certain amount of time. When a worm uses the topology of the graph to propagate the damping variable p must be set equal to zero, as in the worm will not suddenly attack a node that is not connected. If the propagation of a worm is topology independent, the damping variable \textit{p} can be set to 1. \\
 The ranking of nodes provides interesting avenues for further research for the case where the defender flips a subset of nodes (rather than the entire network). It can be advantageous to flip the nodes with a higher PageRank more often than the other nodes. A higher PageRank means that the page has a higher probability of being compromised by a worm. 
 
-\todo{nog een algemene conclusie schrijven ?}
+

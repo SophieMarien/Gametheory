@@ -290,11 +290,29 @@ Veronderstel dat een aanvaller aanvalt op moment \textit {t}. Hij krijgt niet on
 De formalisering begint bij het model van het niet-adaptieve continue basis FlipIt spel waarin spelers een periodieke strategie gebruiken met een willekeurige fase. De motivatie voor deze keuze is de veronderstelling dat in de praktijk bij de meeste bedrijven de verdedigingsstrategie om het netwerk te verdedigen periodiek is. Er is gekozen voor een periodieke aanvallersstrategie zodat we in staat zijn om de resultaten te vergelijken met de periodieke strategie van het spel FlipIt in \citep{FlipIt}. Bovendien weten we uit de resultaten van het basisch FlipIt spel dat de periodieke strategie de beste strategie is binnen de categorie van de renewal strategi"en. De adaptieve strategi"en zijn minder relevant gezien het heimelijk karakter van de verdediger en de aanvaller. De verdediger zal geen informatie hebben over het tijdstip van de aanval en andersom.\\%, As esta ook overeen met een real-life gemeenschappelijke strategie. % Nog verder Eventueel je motiveren
 
 
-Net zoals in FlipIt \citep{FlipIt}, delen we de formalisering in twee gevallen. In het eerste geval speelt de verdediger minstens zo snel als de aanvaller en in het tweede geval speelt de aanvaller minstens zo snel als de verdediger. Voor beide gevallen presenteren we eerst de \textit{gain} formule van een FlipIt spel zonder vertraging, en daarna introduceren we de vertraging. \\
+We delen de formalisatie op in drie gevallen. Gelijkaardig als in FlipIt \citep{FlipIt}, is er het geval waarbij de verdediger minstens zo snel speelt als de aanvaller en in het andere geval waarbij de aanvaller minstens zo snel speelt als de verdediger. Voor beide gevallen presenteren we eerst de \textit{gain} formule van een FlipIt spel zonder vertraging, en daarna introduceren we de vertraging. Het derde geval is een speciaal geval waarbij de periode van de verdediger trager of gelijk is aan de vertraging. \\
 
 \subsection{ Formalisering van de benefitformule met een vertraging}
 Een periodische strategie is een niet-adaptieve strategie waarin het tijdsinterval tussen twee opeenvolgende bewegingen een constante is, weergegeven als $\delta$. Bovendien heeft het een random fase die uniform en random gekozen is in het eerste interval tijdens de eerste flip $[0,\delta]$. De gemiddelde snelheid van de bewegingen van een speler is uitgedrukt als volgt: $\alpha_{i} = \dfrac{1}{\delta_{i}}$. \\
 ~~\\
+
+\subsection*{\textit{Case 0:} $\delta_{D} \leq d$ (De verdediger speelt met een periode trager of gelijk aan de vertraging}
+
+Wanneer de vertraging groter of gelijk is aan de periode van de verdediger , dan zal de aanvaller nooit controle krijgen over de bron. The verdediger zal altijd flippen voordat de vertraging verlopen is. Figuur \ref{langeredelaybegin} stelt de situatie voor. 
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=0.7]{Images/FlipItCase1delaytobig.pdf} 
+\caption{FlipIt met een vertraging die groter is dan de snelheid van de verdediger: $ d \geq \delta_{D}$ }
+\label{langeredelaybegin}
+\end{figure}
+Voor dit geval is de benefit voor de verdediger en de benefit voor de aanvaller gelijk aan het volgende:
+\begin{equation}
+\beta_{D}(\delta_{D},\delta_{A})=1-\dfrac{k_{D}}{\delta_{D}}
+\end{equation}
+\begin{equation}
+\beta_{A}(\delta_{D},\delta_{A})=-\dfrac{k_{A}}{\delta_{A}}
+\end{equation}
 
 \subsection*{\textbf{Case 1:} $\delta_{D} \leq \delta_{A} $ (De verdediger speelt minstens zo snel als de aanvaller.) }
 
