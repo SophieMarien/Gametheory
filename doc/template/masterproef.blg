@@ -11,52 +11,52 @@ The style file: abbrv.bst
 Database file #1: reffiess.bib
 Warning--entry type for "wikimatrix" isn't style-file defined
 --line 287 of file reffiess.bib
-Warning--entry type for "GoogleRank" isn't style-file defined
---line 379 of file reffiess.bib
+Warning--entry type for "Equation" isn't style-file defined
+--line 467 of file reffiess.bib
 Warning--empty journal in fengstealthy
 Warning--empty year in fengstealthy
 Warning--empty journal in MitigationNonTargeted
 Warning--empty booktitle in Coursera
 Warning--there's a number but no volume in moore2003inside
-You've used 30 entries,
+You've used 29 entries,
             2118 wiz_defined-function locations,
-            687 strings with 8779 characters,
-and the built_in function-call counts, 10894 in all, are:
-= -- 1065
-> -- 492
-< -- 13
-+ -- 196
-- -- 162
-* -- 722
-:= -- 1735
-add.period$ -- 94
-call.type$ -- 30
-change.case$ -- 164
+            681 strings with 8517 characters,
+and the built_in function-call counts, 10436 in all, are:
+= -- 1016
+> -- 474
+< -- 12
++ -- 189
+- -- 156
+* -- 694
+:= -- 1668
+add.period$ -- 90
+call.type$ -- 29
+change.case$ -- 158
 chr.to.int$ -- 0
-cite$ -- 35
-duplicate$ -- 445
-empty$ -- 898
-format.name$ -- 162
-if$ -- 2356
+cite$ -- 34
+duplicate$ -- 424
+empty$ -- 860
+format.name$ -- 156
+if$ -- 2250
 int.to.chr$ -- 0
-int.to.str$ -- 30
-missing$ -- 30
-newline$ -- 149
-num.names$ -- 64
-pop$ -- 215
+int.to.str$ -- 29
+missing$ -- 29
+newline$ -- 144
+num.names$ -- 62
+pop$ -- 206
 preamble$ -- 1
-purify$ -- 137
+purify$ -- 132
 quote$ -- 0
-skip$ -- 324
+skip$ -- 309
 stack$ -- 0
-substring$ -- 662
-swap$ -- 123
-text.length$ -- 13
+substring$ -- 633
+swap$ -- 114
+text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 114
+type$ -- 110
 warning$ -- 5
-while$ -- 103
-width$ -- 32
-write$ -- 323
+while$ -- 98
+width$ -- 31
+write$ -- 311
 (There were 7 warnings)

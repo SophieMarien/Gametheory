@@ -37,11 +37,11 @@
 \contentsline {figure}{\numberline {4.1}{\ignorespaces function of type $1-1/x$\relax }}{34}{figure.caption.57}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces The benefit function is of the shape of 1/x and is always decreasing and if $\delta _{A} + 2(d-k_{D}) > 0$. \relax }}{35}{figure.caption.60}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces The benefit function is of the shape of -1/x and is always increasing and if $\delta _{A} + 2(d-k_{D}) < 0$.\relax }}{36}{figure.caption.61}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces function of type $1-1/x$\relax }}{38}{figure.caption.70}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces function of type $-1/x$\relax }}{39}{figure.caption.70}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Taxonomy of worm modelling.Table based on only analytic worm propagation models given in \cite {wang2014modeling}. The models in green are the models illustrated in this paper.\relax }}{46}{figure.caption.79}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Network with 6 nodes. The arrows represent the connections between the nodes. \relax }}{51}{figure.caption.81}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces A representation of a graph with three nodes. Node 1 is a dangling node with no outgoing links.\relax }}{54}{figure.caption.83}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Taxonomy of worm modelling.Table based on only analytic worm propagation models given in \cite {wang2014modeling}. The models in green are the models illustrated in this paper.\relax }}{46}{figure.caption.80}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Network with 6 nodes. The arrows represent the connections between the nodes. \relax }}{51}{figure.caption.82}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces A representation of a graph with three nodes. Node 1 is a dangling node with no outgoing links.\relax }}{54}{figure.caption.84}
 \addvspace {10pt}
 \select@language {dutch}
 \select@language {english}

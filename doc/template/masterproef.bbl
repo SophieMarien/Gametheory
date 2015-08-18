@@ -1,13 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{NPhard}
-J.~Aspnes, K.~Chang, and A.~Yampolskiy.
-\newblock Inoculation strategies for victims of viruses and the sum-of-squares
-  partition problem.
-\newblock In {\em Proceedings of the sixteenth annual ACM-SIAM symposium on
-  Discrete algorithms}, pages 43--52. Society for Industrial and Applied
-  Mathematics, 2005.
-
 \bibitem{ApplyingFlipit}
 K.~Bowers, M.~van Dijk, R.~Griffin, A.~Juels, A.~Oprea, R.~Rivest, and
   N.~Triandopoulos.
@@ -23,10 +15,6 @@ Z.~Chen, L.~Gao, and K.~Kwiat.
 \newblock In {\em INFOCOM 2003. Twenty-Second Annual Joint Conference of the
   IEEE Computer and Communications. IEEE Societies}, volume~3, pages
   1890--1900. IEEE, 2003.
-
-\bibitem{GoogleRank}
-Cornell.
-\newblock Google page rank, 2009.
 
 \bibitem{fengstealthy}
 X.~Feng, Z.~Zheng, P.~Hu, D.~Cansever, and P.~Mohapatra.
@@ -133,6 +121,10 @@ W.~Stallings.
 S.~Staniford, V.~Paxson, N.~Weaver, et~al.
 \newblock How to own the internet in your spare time.
 \newblock In {\em USENIX Security Symposium}, pages 149--167, 2002.
+
+\bibitem{Equation}
+A.~technica: Dan~Goodin.
+\newblock Equation group, 2015-02-16.
 
 \bibitem{FlipIt}
 M.~van Dijk, A.~Juels, A.~Oprea, and R.~Rivest.
