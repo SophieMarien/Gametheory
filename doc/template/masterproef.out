@@ -1,34 +1,35 @@
 \BOOKMARK [0][-]{chapter*.1}{Preface}{}% 1
 \BOOKMARK [0][-]{chapter*.3}{Abstract}{}% 2
 \BOOKMARK [0][-]{chapter*.4}{Samenvatting}{}% 3
-\BOOKMARK [1][-]{section*.10}{FlipIt Met Propagatie Vertraging}{chapter*.4}% 4
-\BOOKMARK [1][-]{section*.22}{Nash Equilibrium}{chapter*.4}% 5
-\BOOKMARK [1][-]{section*.23}{Conclusions and Further Research}{chapter*.4}% 6
-\BOOKMARK [0][-]{chapter*.24}{List of Figures and Tables}{}% 7
-\BOOKMARK [0][-]{chapter*.27}{List of Abbreviations and Symbols}{}% 8
-\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 9
-\BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}% 10
-\BOOKMARK [0][-]{chapter.2}{General Context}{}% 11
-\BOOKMARK [1][-]{section.2.1}{What Is Security?}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.2}{A Brief Introduction in Game Theory}{chapter.2}% 13
-\BOOKMARK [1][-]{section.2.3}{The FlipIt Game}{chapter.2}% 14
-\BOOKMARK [1][-]{section.2.4}{Related Work on Extensions to FlipIt}{chapter.2}% 15
-\BOOKMARK [0][-]{chapter.3}{FlipIt with propagation delay}{}% 16
-\BOOKMARK [1][-]{section.3.1}{Difference between FlipIt with and without propagation delay}{chapter.3}% 17
-\BOOKMARK [1][-]{section.3.2}{Formalization of the periodic game with propagation delay}{chapter.3}% 18
-\BOOKMARK [1][-]{section.3.3}{Summary}{chapter.3}% 19
-\BOOKMARK [0][-]{chapter.4}{Optimal defence and attack strategies}{}% 20
-\BOOKMARK [1][-]{section.4.1}{Determining the piecewise functions optD\(A\)}{chapter.4}% 21
-\BOOKMARK [1][-]{section.4.2}{Best responses of D}{chapter.4}% 22
-\BOOKMARK [1][-]{section.4.3}{Determining the piecewise functions optA\(D\)}{chapter.4}% 23
-\BOOKMARK [1][-]{section.4.4}{Best responses of A}{chapter.4}% 24
-\BOOKMARK [1][-]{section.4.5}{Conclusion}{chapter.4}% 25
-\BOOKMARK [0][-]{chapter.5}{Models for the Delay}{}% 26
-\BOOKMARK [1][-]{section.5.1}{Methods of propagation}{chapter.5}% 27
-\BOOKMARK [1][-]{section.5.2}{Models for worm propagation}{chapter.5}% 28
-\BOOKMARK [1][-]{section.5.3}{Matrix worm model}{chapter.5}% 29
-\BOOKMARK [1][-]{section.5.4}{PageRank algorithm}{chapter.5}% 30
-\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 31
-\BOOKMARK [1][-]{section.6.1}{Further work}{chapter.6}% 32
-\BOOKMARK [1][-]{section.6.2}{General results and conclusions}{chapter.6}% 33
-\BOOKMARK [0][-]{section*.86}{Bibliography}{}% 34
+\BOOKMARK [1][-]{section*.9}{FlipIt Met Propagatie Vertraging}{chapter*.4}% 4
+\BOOKMARK [1][-]{section*.19}{Samenvatting}{chapter*.4}% 5
+\BOOKMARK [1][-]{section*.22}{Optimale strategi\353n voor de aanvaller en de verdediger}{chapter*.4}% 6
+\BOOKMARK [1][-]{section*.23}{Conclusions and Further Research}{chapter*.4}% 7
+\BOOKMARK [0][-]{chapter*.24}{List of Figures and Tables}{}% 8
+\BOOKMARK [0][-]{chapter*.27}{List of Abbreviations and Symbols}{}% 9
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 10
+\BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}% 11
+\BOOKMARK [0][-]{chapter.2}{General Context}{}% 12
+\BOOKMARK [1][-]{section.2.1}{What Is Security?}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.2}{A Brief Introduction in Game Theory}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.3}{The FlipIt Game}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.4}{Related Work on Extensions to FlipIt}{chapter.2}% 16
+\BOOKMARK [0][-]{chapter.3}{FlipIt with propagation delay}{}% 17
+\BOOKMARK [1][-]{section.3.1}{Difference between FlipIt with and without propagation delay}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.2}{Formalization of the periodic game with propagation delay}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.3}{Summary}{chapter.3}% 20
+\BOOKMARK [0][-]{chapter.4}{Optimal defence and attack strategies}{}% 21
+\BOOKMARK [1][-]{section.4.1}{Determining the piecewise functions optD\(A\)}{chapter.4}% 22
+\BOOKMARK [1][-]{section.4.2}{Best responses of D}{chapter.4}% 23
+\BOOKMARK [1][-]{section.4.3}{Determining the piecewise functions optA\(D\)}{chapter.4}% 24
+\BOOKMARK [1][-]{section.4.4}{Best responses of A}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.5}{Conclusion}{chapter.4}% 26
+\BOOKMARK [0][-]{chapter.5}{Models for the Delay}{}% 27
+\BOOKMARK [1][-]{section.5.1}{Methods of propagation}{chapter.5}% 28
+\BOOKMARK [1][-]{section.5.2}{Models for worm propagation}{chapter.5}% 29
+\BOOKMARK [1][-]{section.5.3}{Matrix worm model}{chapter.5}% 30
+\BOOKMARK [1][-]{section.5.4}{PageRank algorithm}{chapter.5}% 31
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 32
+\BOOKMARK [1][-]{section.6.1}{Further work}{chapter.6}% 33
+\BOOKMARK [1][-]{section.6.2}{General results and conclusions}{chapter.6}% 34
+\BOOKMARK [0][-]{section*.88}{Bibliography}{}% 35

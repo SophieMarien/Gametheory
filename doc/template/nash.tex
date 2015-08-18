@@ -20,11 +20,11 @@ Nash equilibria are points with the property that neither player benefits by dev
 %As a second step, we are interested in finding Nash equilibria, points
 %for which neither player will increase his benefit by changing his rate of play. 
 More formally, a Nash equilibrium for the periodic game is a point $(\delta_{D}^{*},\delta_{A}^{*})$ such that
-the defender's benefit $\beta_{D}(\delta_{D},\delta_{A}^{*}) $is maximized at $\delta_{D}= \delta_{D}^{*}$ and the attacker's benefit
-$\beta_{A}(\delta_{D}^{*},\delta_{A}) $ is maximized at $\delta_{A}= \delta_{A}^{*}$.
+the defender's benefit $\beta_{D}(\delta_{D},\delta_{A}^{*}) $is maximised at $\delta_{D}= \delta_{D}^{*}$ and the attacker's benefit
+$\beta_{A}(\delta_{D}^{*},\delta_{A}) $ is maximised at $\delta_{A}= \delta_{A}^{*}$.
 To begin with, some useful notation. We denote by $opt_{D}(\delta_{A}$) the set of values (rates
-of play $\delta_{D}$) that optimize the benefit of the defender for a fixed rate of play $\delta_{A}$ of the
-attacker. Similarly, we denote by $opt_{D}(\delta_{D}$) the set of values (rates of play $\delta_{A}$) that optimize
+of play $\delta_{D}$) that optimise the benefit of the defender for a fixed rate of play $\delta_{A}$ of the
+attacker. Similarly, we denote by $opt_{D}(\delta_{D}$) the set of values (rates of play $\delta_{A}$) that optimise
 the benefit of the attacker for a fixed rate of play $\delta_{D}$ of the defender. \\
 
 
@@ -222,7 +222,23 @@ If $\delta_{A}=0$ it means that the attacker is playing as fast as possible. The
    $  \infty \& \delta_{A}=0 ~~ \& ~~ k_{D} > d$ \\
 Combining the results leads to a rate for the defender equal to $[d,\infty]$. 
 \subsection*{$k_{D}=0$}
-The cost of flipping for the defender is equal to zero. 
+The cost of flipping for the defender is equal to zero. If we look at the benefit function of the defender and it's derivative in figure \ref{cost0}, we can see that the benefit for case B increases until $d$ and that the benefit in case A stays the same until $d$. After point $d$ the benefit decreases in all the cases. 
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=1]{Images/cost0.pdf} 
+\caption{Benefit function and derivative for a cost $k_{D} = 0$ and with $d (=2)$ and $\delta_{D}=(1.5)$ not equal to zero.}
+\label{cost0}
+\end{figure}
+
+
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=1]{Images/cost1.pdf} 
+\caption{Benefit function and derivative for a cost $k_{D} > 0$ and with $d (=2)$ and $\delta_{D}=(1.5)$ not equal to zero.}
+\label{cost1}
+\end{figure}
 
 \subsection{Conclusion}
 With the edge cases we can compute $opt_{D}(\delta_{A})$ : \\

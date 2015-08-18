@@ -12,9 +12,11 @@
 \select@language {dutch}
 \addvspace {10pt}
 \contentsline {figure}{\numberline {1}{\ignorespaces Een FlipIt spel waarbij beide spelers periodiek spelen. Elke beweging of flip is aangegeven met een groene ( donkergrijs) of oranje (lichtgrijze) cirkel. De aanvaller is weergegeven in het oranje en speelt met een periode van $ \delta _{A} = 4 $. De verdediger is weergegeven in het groen en speelt met een periode van $ \delta _{D} = 3 $. De groene en oranje rechthoeken geven aan welke speler in controle is van de bron.\relax }}{vii}{figure.caption.6}
-\contentsline {figure}{\numberline {2}{\ignorespaces FlipIt met een vertraging die groter is dan de snelheid van de verdediger: $ d \geq \delta _{D}$ \relax }}{xi}{figure.caption.13}
-\contentsline {figure}{\numberline {3}{\ignorespaces Het eerste spel is een spel zonder APT propagatie. Het tweede spel is een spel met APT propagatie en \textit {d} = 1. De vertraging wordt aangeduid via een pijl.\relax }}{xii}{figure.caption.15}
-\contentsline {figure}{\numberline {4}{\ignorespaces Case 2.a waar d + $\delta _{A} \leq \delta _{D}$\relax }}{xv}{figure.caption.20}
+\contentsline {figure}{\numberline {2}{\ignorespaces FlipIt met een vertraging die groter is dan de snelheid van de verdediger: $ d \geq \delta _{D}$ \relax }}{xi}{figure.caption.12}
+\contentsline {figure}{\numberline {3}{\ignorespaces Het eerste spel is een spel zonder APT propagatie. Het tweede spel is een spel met APT propagatie en \textit {d} = 1. De vertraging wordt aangeduid via een pijl.\relax }}{xii}{figure.caption.14}
+\contentsline {figure}{\numberline {4}{\ignorespaces Case 2.a waar d + $\delta _{A} \leq \delta _{D}$\relax }}{xv}{figure.caption.17}
+\contentsline {figure}{\numberline {5}{\ignorespaces De voorstelling van alle cases waarvoor de benefit berekend is.\relax }}{xvii}{figure.caption.20}
+\contentsline {figure}{\numberline {6}{\ignorespaces De voorstelling van de nieuwe randvoorwaarden door het samenbrengen van case 1 en case 2.b.\relax }}{xvii}{figure.caption.21}
 \select@language {english}
 \addvspace {10pt}
 \addvspace {10pt}
@@ -31,17 +33,19 @@
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Attacker playing to late. If the attacker enters the defender's interval after $\delta _{D} -d$, he can not get in control in that interval.\relax }}{24}{figure.caption.48}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces All possible cases for the attacker and the defender in Case 2.A where $d + \delta _{A} < \delta _{D}$. As can be seen in cases (1) to (4), the defender will have control during a period of \textit {d} over the resource in the next interval when the defender has flipped in the previous interval.\relax }}{27}{figure.caption.50}
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Cases where the delay would be counted twice.\relax }}{28}{figure.caption.52}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces the representation of the cases where the benefit functions are calculated.\relax }}{30}{figure.caption.54}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces The representation of the new border conditions of piece B which is a merge of case 2.b and case 1.\relax }}{30}{figure.caption.55}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces The benefit function of the defender for a cost $k_{D} =1$, $d =2$ and $\delta _{D}=1.5$. The three pieces match with the three colours.\relax }}{30}{figure.caption.54}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces The first figure is the representation of the cases where the benefit functions are calculated. The second figure is the representation of the new border conditions of piece B which is a merge of case 2.b and case 1.\relax }}{31}{figure.caption.55}
 \addvspace {10pt}
 \contentsline {figure}{\numberline {4.1}{\ignorespaces function of type $1-1/x$\relax }}{34}{figure.caption.57}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces The benefit function is of the shape of 1/x and is always decreasing and if $\delta _{A} + 2(d-k_{D}) > 0$. \relax }}{35}{figure.caption.60}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces The benefit function is of the shape of -1/x and is always increasing and if $\delta _{A} + 2(d-k_{D}) < 0$.\relax }}{36}{figure.caption.61}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces function of type $-1/x$\relax }}{39}{figure.caption.70}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Benefit function and derivative for a cost $k_{D} = 0$ and with $d (=2)$ and $\delta _{D}=(1.5)$ not equal to zero.\relax }}{38}{figure.caption.69}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Benefit function and derivative for a cost $k_{D} > 0$ and with $d (=2)$ and $\delta _{D}=(1.5)$ not equal to zero.\relax }}{38}{figure.caption.70}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces function of type $-1/x$\relax }}{39}{figure.caption.72}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Taxonomy of worm modelling.Table based on only analytic worm propagation models given in \cite {wang2014modeling}. The models in green are the models illustrated in this paper.\relax }}{46}{figure.caption.80}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Network with 6 nodes. The arrows represent the connections between the nodes. \relax }}{51}{figure.caption.82}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces A representation of a graph with three nodes. Node 1 is a dangling node with no outgoing links.\relax }}{54}{figure.caption.84}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Taxonomy of worm modelling.Table based on only analytic worm propagation models given in \cite {wang2014modeling}. The models in green are the models illustrated in this paper.\relax }}{46}{figure.caption.82}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Network with 6 nodes. The arrows represent the connections between the nodes. \relax }}{51}{figure.caption.84}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces A representation of a graph with three nodes. Node 1 is a dangling node with no outgoing links.\relax }}{54}{figure.caption.86}
 \addvspace {10pt}
 \select@language {dutch}
 \select@language {english}

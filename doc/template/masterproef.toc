@@ -11,11 +11,12 @@
 \contentsline {chapter}{Abstract}{v}{chapter*.3}
 \select@language {dutch}
 \contentsline {chapter}{Samenvatting}{vi}{chapter*.4}
-\contentsline {subsection}{FlipIt}{vii}{section*.5}
+\contentsline {subsection}{FlipIt}{vi}{section*.5}
 \contentsline {subsubsection}{Strategie"en}{viii}{section*.7}
-\contentsline {section}{FlipIt Met Propagatie Vertraging}{x}{section*.10}
-\contentsline {subsection}{ Formalisering van de benefitformule met een vertraging}{xi}{section*.11}
-\contentsline {section}{Nash Equilibrium}{xvi}{section*.22}
+\contentsline {section}{FlipIt Met Propagatie Vertraging}{x}{section*.9}
+\contentsline {subsection}{ Formalisering van de benefitformule met een vertraging}{xi}{section*.10}
+\contentsline {section}{Samenvatting}{xvi}{section*.19}
+\contentsline {section}{Optimale strategi"en voor de aanvaller en de verdediger}{xviii}{section*.22}
 \contentsline {section}{Conclusions and Further Research}{xviii}{section*.23}
 \select@language {english}
 \contentsline {chapter}{List of Figures and Tables}{xix}{chapter*.24}
@@ -49,10 +50,10 @@
 \contentsline {section}{\numberline {4.1}Determining the piecewise functions $opt_{D}(\delta _{A})$}{33}{section.4.1}
 \contentsline {section}{\numberline {4.2}Best responses of $\delta _{D}$}{36}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Conclusion}{38}{subsection.4.2.1}
-\contentsline {section}{\numberline {4.3}Determining the piecewise functions $opt_{A}(\delta _{D})$}{38}{section.4.3}
+\contentsline {section}{\numberline {4.3}Determining the piecewise functions $opt_{A}(\delta _{D})$}{39}{section.4.3}
 \contentsline {section}{\numberline {4.4}Best responses of $\delta _{A}$}{40}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Conclusion}{41}{subsection.4.4.1}
-\contentsline {section}{\numberline {4.5}Conclusion}{41}{section.4.5}
+\contentsline {subsection}{\numberline {4.4.1}Conclusion}{42}{subsection.4.4.1}
+\contentsline {section}{\numberline {4.5}Conclusion}{42}{section.4.5}
 \contentsline {chapter}{\chapternumberline {5}Models for the Delay}{43}{chapter.5}
 \contentsline {section}{\numberline {5.1}Methods of propagation}{43}{section.5.1}
 \contentsline {section}{\numberline {5.2}Models for worm propagation}{45}{section.5.2}
@@ -61,12 +62,12 @@
 \contentsline {subsection}{\numberline {5.2.3}Bluetooth worm model}{48}{subsection.5.2.3}
 \contentsline {subsection}{\numberline {5.2.4}AAWP model}{49}{subsection.5.2.4}
 \contentsline {section}{\numberline {5.3}Matrix worm model}{49}{section.5.3}
-\contentsline {subsubsection}{Proposal of a matrix based model}{50}{section*.81}
+\contentsline {subsubsection}{Proposal of a matrix based model}{50}{section*.83}
 \contentsline {section}{\numberline {5.4}PageRank algorithm}{53}{section.5.4}
 \contentsline {chapter}{\chapternumberline {6}Conclusion}{55}{chapter.6}
 \contentsline {section}{\numberline {6.1}Further work}{55}{section.6.1}
 \contentsline {section}{\numberline {6.2}General results and conclusions}{56}{section.6.2}
-\contentsline {chapter}{Bibliography}{57}{section*.86}
+\contentsline {chapter}{Bibliography}{57}{section*.88}
 \select@language {dutch}
 \select@language {english}
 \select@language {dutch}
