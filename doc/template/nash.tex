@@ -168,7 +168,7 @@ For $\delta_{A} + 2(d-k_{D}) < 0$, the benefit will always be increasing but neg
 \section{Best responses of $\delta_{D}$}
 The optimum functions will be piecewise functions. We distinguish six cases for different values of $\delta_{A}$ depending on the values of $k_{D}$ and $d$. 
 %We point out that $\delta_{A}$ and $\delta_{D}$ are positive rates. 
-
+Figure XXX shows on the left how the three cases can be combined in a single continuous function (shown as the thick line). On the right, the derivative function indicates at which points the benefit will change. It is interesting to note that the derivative is also continuous, meaning that the benefit function is smooth and has no rough edges or corners. This implies that there are no sudden changes in benefit for small changes of period.
 
 \subsection*{$\delta_{A} < 2(k_{D} - d)$}
 From case C above, it follows that if $\delta_{A} < 2(k_{D} - d)$ the benefit is increasing but it will always be non-positive. The defender will try not to play ($\delta_{D}= \infty$). 
@@ -212,15 +212,14 @@ If $k_{D}=0$ it means that every flip of the defender is free. So for the cost i
 
 Combining those two leads to a rate for the defender equal to $[0,d]$. This means that the defender will never not play, which is intuitively correct if we know that the defender has no disadvantage to play because there is no cost involved.
 \subsection*{$\delta_{A}=0$}
-If $\delta_{A}=0$ it means that the attacker is playing as fast as possible. The defender has still a cost for every flip.
+If $\delta_{A}=0$ it means that the attacker is playing as fast as possible. The defender has still a cost for every flip. This means we have to look at different values for $k_{D}$ and $d$.
 \begin{itemize}
-\item if $k_{D} > d$, we look at the first piece of $opt_{D}(\delta_{A})$. It follows that the defender will not play (rate equal to $\infty$).
-\item if $k_{D}=d$, corresponds to the second piece: the defender will play with a rate of $[d,\infty]$.
-\item if $k_{D} < 0$, for the last case the rate of the defender corresponds to \textit{d}.
+\item if $k_{D} > d$, it follows that the defender will not play (rate equal to $\infty$). This is already the case for the first piece in the piecewise function. $\delta_{A}$ will always be smaller than $2(k_{D}-d)$ if $k_{D} > d.$
+\item if $k_{D}=d$, it corresponds to the second piece: the defender will play with a rate of $[d,\infty]$.
+\item if $k_{D} < 0$, will correspond with the last case, where the rate of the defender is equal to \textit{d}.
 \end{itemize}
-~~\\
-   $  \infty \& \delta_{A}=0 ~~ \& ~~ k_{D} > d$ \\
-Combining the results leads to a rate for the defender equal to $[d,\infty]$. 
+By combining the last two pieces we have  $d ~~for~~ \delta_{A} =0 ~~ and ~~k_{D} \leq d$.\\
+
 \subsection*{$k_{D}=0$}
 The cost of flipping for the defender is equal to zero. If we look at the benefit function of the defender and it's derivative in figure \ref{cost0}, we can see that the benefit for case B increases until $d$ and that the benefit in case A stays the same until $d$. After point $d$ the benefit decreases in all the cases. 
 
@@ -233,12 +232,6 @@ The cost of flipping for the defender is equal to zero. If we look at the benefi
 
 
 
-\begin{figure}[hbtp]
-\centering
-\includegraphics[scale=1]{Images/cost1.pdf} 
-\caption{Benefit function and derivative for a cost $k_{D} > 0$ and with $d (=2)$ and $\delta_{D}=(1.5)$ not equal to zero.}
-\label{cost1}
-\end{figure}
 
 \subsection{Conclusion}
 With the edge cases we can compute $opt_{D}(\delta_{A})$ : \\
@@ -397,4 +390,7 @@ With the edge cases we can compute $opt_{A}(\delta_{D})$ : \\
 \\
 
 \section{Conclusion}
+
+The piecewise functions $opt_{D}$ and $opt_{A}$ give some interesting results. \todo{resultaten nog toevoegen, zelfde als in de andere conclusie}
+
 The Nash Equilibria can be found as the intersection points of the piecewise functions $opt_{A}(\delta_{D})$ and $opt_{D}(\delta_{A})$. For this we have to compare the function in terms of the relationship of the players move cost. We distinguish three cases: $k_{A} < k_{D} , ~k_{A} > k_{D} $ and $k_{A} = k_{D}$. 

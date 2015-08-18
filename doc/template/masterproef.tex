@@ -132,17 +132,16 @@ delay for an APT propagation into account, which in our case will be a delay for
  Many people have helped in the realization of this thesis. 
   I would like to thank everybody who kept me busy the last year and made it possible for me to finish my thesis.\\
   
-  First I would like to thank my promoter and my assistants for their excellent support during the writing of this paper. They helped me figure out what to do and put a lot of time and effort in me.\\
-  
+  First of all, I would like to thank my promoter and my assistants for their support during the writing of this paper. Without their guidance this paper would not have been possible. They helped me figure out what to do and put a lot of time and effort in this work.\\
+  Special thanks to my parents for giving me the opportunity to study in this wonderful city and obtaining my master's degree in engineering.\\
+   I would also like to thank my boyfriend Jeroen, who supported me during the writing of this paper and helped me not to flip out.  \\   
+   Last but not least, I would like to thank all the people that read my paper for typo's, mistakes, and ease of understanding: my mother, my brother Hans, and my friends Matthias, Ska and Stijn. \\
+
    
-   I would also like to thank my boyfriend who supported me during the writing of this thesis and helped me not to flip out.  \\
-   
-   Last but not least all the people that read my thesis for faults: My mother, my brother Hans, Matthias van der Hallen, Robin Ska and Stijn De Haes.\\
-   
-   A few other people earn a special mention: Revue-blokt for keeping me focused on my thesis, DistriNet labo for letting me in and study in a quit place and Antonio for distracting me and telling me stories about his travels.
-   A special memorial to John Nash, a mathematician with a fundamental contribution to Game Theory, that died in a car accident during the writing of this thesis. His Nash Equilibrium is used in this thesis.. \\
+      A few other people earn a special mention: Revue-blokt for keeping me focused on my paper, DistriNet labo for letting me in and allowing me to study in a quite place and Antonio for distracting me and telling me stories about his travels.
+   A special tribute to John Nash, a mathematician with a fundamental contribution to Game Theory, who died in a car accident during the writing of this thesis. His Nash Equilibrium is the main motivation behind the application of game theory to security problems in this paper. \\
  
- Thank you !
+
 \end{preface}
 
 \tableofcontents*
@@ -198,7 +197,7 @@ De unieke eigenschap van FlipIt is dat elke flip op een heimelijke manier gebeur
 \begin{figure}[hbtp]
 \center
 \includegraphics[scale=0.6]{../../doc/template/Images/FlipBasic}
-\caption{Een FlipIt spel waarbij beide spelers periodiek spelen. Elke beweging of flip is aangegeven met een groene ( donkergrijs) of oranje (lichtgrijze) cirkel. De aanvaller is weergegeven in het oranje en speelt met een periode van $ \delta_{A} = 4 $. De verdediger is weergegeven in het groen en speelt met een periode van $ \delta_{D} = 3 $. De groene en oranje rechthoeken geven aan welke speler in controle is van de bron.}
+\caption{Een FlipIt spel waarbij beide spelers periodiek spelen. Elke beweging of flip is aangegeven met een groene (donkergrijs) of oranje (lichtgrijze) cirkel. De aanvaller is weergegeven in het oranje en speelt met een periode van $ \delta_{A} = 4 $. De verdediger is weergegeven in het groen en speelt met een periode van $ \delta_{D} = 3 $. De groene en oranje rechthoeken geven aan welke speler in controle is van de bron.}
 \label{fig: FLipItDefault}
 \end{figure}
 
@@ -434,25 +433,20 @@ De benefit voor de aanvaller is de volgende formule:
 \end{equation}\\
 
 \section{Samenvatting}
-We berekenden de benefit voor beide spelers voor de volgende drie gevallen: Wanneer $ \delta_ {D} $ kleiner is dan $ d $. Wanneer $ \delta_ {D} $ kleiner is dan $ \delta_ {A} $ en wanneer het groter is dan $ \delta_ {A} $. \\
-De benefit formules voor case 1 en case 2.b leiden tot hetzelfde resultaat. Deze twee cases kunnen worden samengebracht door het aanpassen van de randvoorwaarden. Figuur \ref{grensen} toont de cases en hoe ze samengebracht kunnen worden. Case 1 en case 2.b liggen naast elkaar. Het resultaat van het samenbrengen is visueel te zien in figuur \ref{samenb}.\\
+We berekenden de benefit voor beide spelers voor de volgende drie gevallen: wanneer $ \delta_ {D} $ kleiner is dan $ d $, wanneer $ \delta_ {D} $ kleiner is dan $ \delta_ {A} $ en wanneer $\delta_{D}$ groter is dan $ \delta_ {A} $. \\
+De benefit formules voor case 1 en case 2.b leiden tot hetzelfde resultaat. Deze twee cases kunnen worden samengebracht door het aanpassen van de randvoorwaarden. Op figuur \ref{grensen} toont de linkse voorstelling de cases die samengebracht kunnen worden. Case 1 en case 2.b liggen naast elkaar. Het resultaat van het samenbrengen is visueel te zien op de rechtse voorstelling in figuur \ref{grensen}.\\
 
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=0.5]{Images/borders.pdf}
-\caption{De voorstelling van alle cases waarvoor de benefit berekend is.}
+\caption{De eerste figuur is de voorstelling van alle cases waarvoor de benefit berekend is. De tweede figuur is de voorstelling van de nieuwe randvoorwaarden door het samenbrengen van case 1 en case 2.b.}
 \label{grensen}
 \end{figure}
 
-\begin{figure}[hbtp]
-\centering
-\includegraphics[scale=0.5]{Images/defborders.pdf}
-\caption{De voorstelling van de nieuwe randvoorwaarden door het samenbrengen van case 1 en case 2.b.}
-\label{samenb}
-\end{figure}
 
-De benefit functies als piecewise functies voor elke case:\\
-De benefit formule voor de verdediger:
+
+De benefit functies werden als piecewise functies voor elke case uitgerekend:\\
+De benefit formule voor de verdediger is als volgt:
 \begin{displaymath}
 \beta_{D}(\delta_{D},\delta_{A})= \left\{
 \begin{array}{lll}
@@ -465,7 +459,7 @@ De benefit formule voor de verdediger:
 \right.
 \end{displaymath}
 ~~ \\
-De benefit formule voor de aanvaller:
+De benefit formule voor de aanvaller is als volgt:
 \begin{displaymath}
 \beta_{A}(\delta_{D},\delta_{A})= \left\{
 \begin{array}{lll}
@@ -479,10 +473,11 @@ De benefit formule voor de aanvaller:
 \right.
 \end{displaymath}
 
-The piecewise functions are also continuous functions. Filling in the border cases results in the same formula.  
+De piecewise functies zijn ook functies die continu zijn. Door de randgevallen in te vullen, (e.g $\delta_{D}=d$ voor case A en case B), bekomt ben dezelfde formule.
+  
 
 \section{Optimale strategi"en voor de aanvaller en de verdediger}
-Na het bepalen van de benefit functies zijn we ge"interesseerd in de optimale strategi"en van de aanvaller en de verdediger. Vanuit deze strategi"en kunnen later de Nash evenwichten bepaald worden.\\
+Na het bepalen van de benefit functies zijn we ge"interesseerd in de optimale strategi"en van de aanvaller en de verdediger. Vanuit deze strategi"en kunnen later de Nash evenwichten bepaald worden. De berekening van de optimale strategi"en, gegeven een bepaalde periode van de tegenpartij zijn als volgt:\\
 %Na het bepalen van de benefit functies voor de verdediger en de aanvaller, zijn we geinteresseerd in het vinden van de Nash evenwichten. Dit zijn de evenwichten waarbij de spelers benefit niet gaat vergroten door te veranderen van de speel frequentie.  \\
 %Hiervoor moeten eerst de optimale strategi"en bepaald worden. Uit deze optimale strategi"en kan het Nash evenwicht bepaald worden. \\
 %
@@ -547,6 +542,16 @@ De functie $opt_{A}(\delta_{D})$ :
 \label{ch:conclusion}
 In this paper we presented an adaptation of the FlipIt game to the situation of a virus propagation, such as to take the delay for network infection into account. We discerned two cases. In the case the defender plays faster than the attacker, the attacker simply looses the delay. In the case the attacker plays faster, each time the defender plays in an interval, he will gain extra time of the delay. The delay is therefore always detrimental to the benefit of the attacker. 
 This demonstrates that the FlipIt game can be adapted to a game with propagation delay. Further research needs to be performed to calculate the impact of the delay on Nash equilibria and the determination of optimal defender and attacker strategies.
+
+Our FlipIt model with worm propagation delay showed us some interesting results. 
+\begin{itemize}
+\item When the defender plays faster than the delay, the attacker will either have a negative benefit or a benefit equal to zero if the flips do not cost anything. It is for the defender a target to be able to play at a rate smaller or equal to the delay.
+\item If the defender can play with a cost equal to zero, the attacker will not play. The defender can play at any rate he wants, and the attacker is always disadvantaged by his delay.
+\item From a certain value for the speed of the attacker, the defender will not play any more or will play at the same rate. The same for the attacker.
+\end{itemize}
+
+As of today APTs become more and more extraordinary pieces of malicious code. There are APTs known to survive military-grade disk wiping and reformatting, and even after the reformatting and reinstalling the operating system are able to send sensitive data (Equation group \citep{Equation}). This means that even if you know that an APT is on your network, the actual practical "flip" has to exist or known by the defender.  \\
+The best way to secure a system is to find the weakest link. This is mostly the employee. To counter this problem, you have to raise the awareness of the risks.  Awareness is very important. Even if you have good security protection layers, spam filters, firewalls, a phishing mail opened by one of your employees or a USB stick is enough to infect a pc on the network and by that it can spread further. But a system can never be 100\% waterproof. If an infection has occurred and the defender knows a counter measure, the FlipIt game will help to prevent a system to be compromised. 
 %In dit \textit{abstract} environment wordt een al dan niet uitgebreide
 %Nederlandse samenvatting van het werk gegeven.
 %Wanneer de tekst voor een Nederlandstalige master in het Engels wordt

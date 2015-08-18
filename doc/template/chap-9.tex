@@ -397,12 +397,13 @@ The benefit formula for the defender, see figure \ref{pfb} :
 
 \begin{figure}[hbtp]
 \centering
-\includegraphics[scale=1]{Images/functie4.pdf} 
-\caption{The benefit function of the defender for a cost $k_{D} =1$, $d =2$ and $\delta_{D}=1.5$. The three pieces match with the three colours.}
+\includegraphics[scale=1.4]{Images/functie4.pdf} 
+\caption{The benefit function of the defender for a cost $k_{D} =1$, $d =2$ and $\delta_{A}=1.5$. The three pieces match with the three colours.}
 \label{pfb}
 \end{figure}
 
-The benefit formula for the attacker:
+
+The benefit formula for the attacker, see figure \ref{pfa}:
 \begin{displaymath}
 \beta_{A}(\delta_{D},\delta_{A})= \left\{
 \begin{array}{lll}
@@ -411,10 +412,16 @@ The benefit formula for the attacker:
    \dfrac{(\delta_{D} - d)^2}{2\delta_{D}\delta_{A}} - \dfrac{k_{A}}{\delta_{A}}, & ~~~~~~& d \leq \delta_{D} \leq d + \delta_{A} \\
    ~ & ~ \\
    1 - \dfrac{\delta_{A}}{2\delta_{D}} - \dfrac{d}{\delta_{D}} - \dfrac{k_{A}}{\delta_{A}} &~~~~~& \delta_{D} \geq d + \delta_{A} 
-
 \end{array}
 \right.
 \end{displaymath}
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=1.4]{Images/benfa.pdf} 
+\caption{The benefit function of the attacker for a cost $k_{A} =1.2$, $d =0.5$ and $\delta_{D}=5$. The three pieces match with the three colours.}
+\label{pfa}
+\end{figure}
 
 The piecewise functions are also continuous functions. Filling in the border cases results in the same formula.  
 \begin{figure}[hbtp]

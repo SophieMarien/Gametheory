@@ -1,29 +1,34 @@
 \chapter{Conclusion}
 \label{chapter5:conclusion}
 
-This paper presents an adaptation to the basic FlipIt game by \citep{FlipIt} to model an attacker with a delay.  We list a set of extensions that might be interesting for further research.
-\section{Further work}
-
-\begin{description}
-\item \textit{Nash equilibria}\\ This paper concluded with the best responds functions of the attacker and the defender. The next step would be to calculate the Nash equilibria. For these calculation multiple cases have to be examined. All the possible cases regarding $k_{A}, k_{D}$ and $d$. 
-\item \textit{Analysing other renewal strategies} \\ By analysing other renewal strategies, it might be interesting to find out if the original result regarding periodic and renewal strategies of the basic FlipIt game still stands. This result was that periodic strategies strongly dominate the other renewal strategies if an opponent plays with a non-adaptive strategy. 
-\item \textit{Delay for the defender}\\ This paper only assumed that the attacker had a delay. It could be interesting to have a defender with a delay. This situation could happen when it takes some time to make a patch a system or when a new exploit is found. 
-\item \textit{Variable delay} \\This paper assumed that the propagation delay had a fixed value. This can be relaxed by giving the attacker a delay that can vary every flip. The delay is always negative for the attacker, so the attacker will always choose the lowest delay. But if the attacker always sends a new worm at every flip, it could be that the delays vary. So a variable delay would be more accurate to simulate a real world case. 
-\item \textit{The defender flips a subset of nodes} \\ Our model assumes that if the defender flips, he flips the whole network. An option for the defender would be to flip a subset of nodes in the network. If the costs of the flipping are related to the amount of nodes that are flipped, this option might be interesting to look at. It could be that a certain subset of nodes is found that protects the whole network. The PageRank matrix explained in Chapter 5 can help with finding the right nodes. \\
-
-\end{description}
-
+This paper presents an adaptation to the basic FlipIt game by \citep{FlipIt} to model an attacker with a delay.  
 
 \section{General results and conclusions}
 Our FlipIt model with worm propagation delay showed us some interesting results. 
 \begin{itemize}
 \item When the defender plays faster than the delay, the attacker will either have a negative benefit or a benefit equal to zero if the flips do not cost anything. It is for the defender a target to be able to play at a rate smaller or equal to the delay.
 \item If the defender can play with a cost equal to zero, the attacker will not play. The defender can play at any rate he wants, and the attacker is always disadvantaged by his delay.
-\item From a certain value for the speed of the attacker, the defender will not play any more or will play at the same rate. The same for the attacker.
+\item If the cost of the defender is non-zero, then, depending on the ratio between it's cost and the delay, from a certain value for the speed of the attacker, the defender will not play. The same thing goes for the attacker. This result is similar to the results obtained for the original FlipIt game.
 \end{itemize}
 
-As of today APTs become more and more extraordinary pieces of malicious code. There are APTs known to survive military-grade disk wiping and reformatting, and even after the reformatting and reinstalling the operating system are able to send sensitive data (Equation group \citep{Equation}). This means that even if you know that an APT is on your network, the actual practical "flip" has to exist or known by the defender.  \\
-The best way to secure a system is to find the weakest link. This is mostly the employee. To counter this problem, you have to raise the awareness of the risks.  Awareness is very important. Even if you have good security protection layers, spam filters, firewalls, a phishing mail opened by one of your employees or a USB stick is enough to infect a pc on the network and by that it can spread further. But a system can never be 100\% waterproof. If an infection has occurred and the defender knows a counter measure, the FlipIt game will help to prevent a system to be compromised. 
+While the first two results are intuitively clear, in the third case, the mathematical analysis is important to determine the exact ratio's at which it is no longer beneficial for the defender to play. \\
+In the next section we list a set of extensions that might be interesting for further research.
+\section{Further work}
+
+\begin{description}
+\item \textit{Nash equilibria}\\ This paper concluded with the best responds functions of the attacker and the defender. The next step would be to calculate the Nash equilibria. For these calculation multiple cases have to be examined, i.e. all the possible cases regarding the mutual relations between $k_{A}, k_{D}$ and $d$. 
+\item \textit{Analysing other renewal strategies} \\ By analysing other renewal strategies, it might be interesting to find out if the original result regarding periodic versus other renewal strategies of the basic FlipIt game still stands. This result implied that periodic strategies strongly dominate the other renewal strategies if an opponent plays with a non-adaptive strategy. 
+\item \textit{Delay for the defender}\\ This paper only assumed that the attacker had a delay. It could be interesting to have a defender with a delay. This situation could happen if it takes some time to make a patch to a system or when a new exploit is found. 
+\item \textit{Variable delay} \\This paper assumed that the propagation delay has a fixed value. This can be relaxed by giving the attacker a delay could vary. The delay always negatively impacts the benefit of the attacker, so the attacker will always choose the lowest delay. But if the attacker always sends a new worm at every flip, it could be that the delays vary. In that regard, a variable delay would be more accurate to simulate a real world case. 
+\item \textit{The defender flips a subset of nodes} \\ Our model assumes that if the defender flips, he flips the whole network. An option for the defender would be to flip a subset of nodes in the network. If the costs of flipping are related to the amount of nodes that are flipped, this option might be interesting to look at. It could be that a certain subset of nodes is found that protects the whole network. The PageRank matrix explained in Chapter 5 can help finding the right nodes. \\
+
+\end{description}
+
+
+
+
+As of today APTs become more and more extraordinary pieces of malicious code. There are APTs known to survive military-grade disk wiping and reformatting, and even after reformatting and reinstalling the operating system they are able to send sensitive data (Equation group \citep{Equation}). This means that even if you know that an APT is on your network, the actual practical ``flip'' has to exist and be known by the defender.  \\
+Most often the best way to secure a system is to find the weakest link. This is mostly the employee. An effective way to counter this problem is to raise awareness about risks of infections amongst the employees.  Even in the presence of good security protection layers, spam filters, and firewalls, the opening of a phishing mail or use of an unknown USB stick by one of your employees may be suficient to infect a PC on the network, from which the virus can spread further. A system can however never be 100\% waterproof.  If an infection has occurred and the defender knows a countermeasure, the FlipIt game will help to determine the most effective pace at which countermeasures need to be taken.
 %%% Local Variables: 
 %%% mode: latex
 %%% TeX-master: "thesis"
