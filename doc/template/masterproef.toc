@@ -49,25 +49,25 @@
 \contentsline {chapter}{\chapternumberline {4}Optimal defence and attack strategies}{33}{chapter.4}
 \contentsline {section}{\numberline {4.1}Determining the piecewise functions $opt_{D}(\delta _{A})$}{33}{section.4.1}
 \contentsline {section}{\numberline {4.2}Best responses of $\delta _{D}$}{36}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Conclusion}{38}{subsection.4.2.1}
-\contentsline {section}{\numberline {4.3}Determining the piecewise functions $opt_{A}(\delta _{D})$}{38}{section.4.3}
-\contentsline {section}{\numberline {4.4}Best responses of $\delta _{A}$}{40}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Conclusion}{41}{subsection.4.4.1}
-\contentsline {section}{\numberline {4.5}Conclusion}{42}{section.4.5}
-\contentsline {chapter}{\chapternumberline {5}Models for the Delay}{43}{chapter.5}
-\contentsline {section}{\numberline {5.1}Methods of propagation}{43}{section.5.1}
-\contentsline {section}{\numberline {5.2}Models for worm propagation}{45}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Simple Epidemic Model}{46}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}RCS model}{47}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Bluetooth worm model}{48}{subsection.5.2.3}
-\contentsline {subsection}{\numberline {5.2.4}AAWP model}{49}{subsection.5.2.4}
-\contentsline {section}{\numberline {5.3}Matrix worm model}{49}{section.5.3}
-\contentsline {subsubsection}{Proposal of a matrix based model}{50}{section*.83}
-\contentsline {section}{\numberline {5.4}PageRank algorithm}{53}{section.5.4}
-\contentsline {chapter}{\chapternumberline {6}Conclusion}{55}{chapter.6}
-\contentsline {section}{\numberline {6.1}General results and conclusions}{55}{section.6.1}
-\contentsline {section}{\numberline {6.2}Further work}{55}{section.6.2}
-\contentsline {chapter}{Bibliography}{57}{section*.88}
+\contentsline {subsection}{\numberline {4.2.1}Conclusion}{39}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.3}Determining the piecewise functions $opt_{A}(\delta _{D})$}{40}{section.4.3}
+\contentsline {section}{\numberline {4.4}Best responses of $\delta _{A}$}{42}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Conclusion}{44}{subsection.4.4.1}
+\contentsline {section}{\numberline {4.5}Conclusion}{44}{section.4.5}
+\contentsline {chapter}{\chapternumberline {5}Models for the Delay}{47}{chapter.5}
+\contentsline {section}{\numberline {5.1}Methods of propagation}{47}{section.5.1}
+\contentsline {section}{\numberline {5.2}Models for worm propagation}{49}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Simple Epidemic Model}{50}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}RCS model}{51}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Bluetooth worm model}{52}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}AAWP model}{53}{subsection.5.2.4}
+\contentsline {section}{\numberline {5.3}Matrix worm model}{53}{section.5.3}
+\contentsline {subsubsection}{Proposal of a matrix based model}{54}{section*.85}
+\contentsline {section}{\numberline {5.4}PageRank algorithm}{57}{section.5.4}
+\contentsline {chapter}{\chapternumberline {6}Conclusion}{59}{chapter.6}
+\contentsline {section}{\numberline {6.1}General results and conclusions}{59}{section.6.1}
+\contentsline {section}{\numberline {6.2}Further work}{59}{section.6.2}
+\contentsline {chapter}{Bibliography}{61}{section*.90}
 \select@language {dutch}
 \select@language {english}
 \select@language {dutch}

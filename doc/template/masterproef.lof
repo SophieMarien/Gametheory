@@ -37,14 +37,16 @@
 \contentsline {figure}{\numberline {3.11}{\ignorespaces The first figure is the representation of the cases where the benefit functions are calculated. The second figure is the representation of the new border conditions of piece B which is a merge of case 2.b and case 1.\relax }}{31}{figure.caption.55}
 \addvspace {10pt}
 \contentsline {figure}{\numberline {4.1}{\ignorespaces function of type $1-1/x$\relax }}{34}{figure.caption.57}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces The benefit function is of the shape of 1/x and is always decreasing and if $\delta _{A} + 2(d-k_{D}) > 0$. \relax }}{35}{figure.caption.60}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces The benefit function is of the shape of -1/x and is always increasing and if $\delta _{A} + 2(d-k_{D}) < 0$.\relax }}{36}{figure.caption.61}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Benefit function and derivative for a cost $k_{D} = 0$ and with $d (=2)$ and $\delta _{D}=(1.5)$ not equal to zero.\relax }}{38}{figure.caption.69}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces function of type $-1/x$\relax }}{39}{figure.caption.71}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The benefit function is of the shape of 1/x and is always decreasing if $\delta _{A} + 2(d-k_{D}) > 0$. \relax }}{35}{figure.caption.60}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces The benefit function is of the shape of -1/x and is always increasing if $\delta _{A} + 2(d-k_{D}) < 0$.\relax }}{36}{figure.caption.61}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Illustration of the best response functions. The left functions are the piecewise benefit function of the defender for a certain values of $k_{D},d$ and $\delta _{A}$.. The right functions are the derivatives of the benefit functions on the left. The best responses are the values where the function intersects with the x-as. (A): $\delta _{A} < 2(k_{D}-d)$, (B): $\delta _{A} = 2(k_{D} - d)$, (C): $\delta _{A} > 2(k_{D} - d)$\relax }}{37}{figure.caption.63}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Benefit function and derivative for a cost $k_{D} = 0$ and with $d (=2)$ and $\delta _{A}=(1.5)$ not equal to zero.\relax }}{39}{figure.caption.70}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces function of type $-1/x$\relax }}{40}{figure.caption.72}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Illustration of the best response functions. The left functions are the piecewise benefit function of the attacker for a certain values of $k_{A},d$ and $\delta _{D}$. The right functions are the derivatives of the benefit functions on the left. The best responses are the values where the function intersects with the x-as. (A): $\delta _{D} > d+k_{A} + \sqrt {2dk_{A}+k_{A}^{2}}$, (B): $\delta _{D} = d+k_{A} + \sqrt {2dk_{A}+k_{A}^{2}}$, (C): $\delta _{D} < d+k_{A} + \sqrt {2dk_{A}+k_{A}^{2}}$\relax }}{43}{figure.caption.76}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Taxonomy of worm modelling.Table based on only analytic worm propagation models given in \cite {wang2014modeling}. The models in green are the models illustrated in this paper.\relax }}{46}{figure.caption.82}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Network with 6 nodes. The arrows represent the connections between the nodes. \relax }}{51}{figure.caption.84}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces A representation of a graph with three nodes. Node 1 is a dangling node with no outgoing links.\relax }}{54}{figure.caption.86}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Taxonomy of worm modelling.Table based on only analytic worm propagation models given in \cite {wang2014modeling}. The models in green are the models illustrated in this paper.\relax }}{50}{figure.caption.84}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Network with 6 nodes. The arrows represent the connections between the nodes. \relax }}{55}{figure.caption.86}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces A representation of a graph with three nodes. Node 1 is a dangling node with no outgoing links.\relax }}{58}{figure.caption.88}
 \addvspace {10pt}
 \select@language {dutch}
 \select@language {english}

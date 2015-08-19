@@ -104,7 +104,7 @@ The defender will always play as fast as he can if $\delta_{A} + 2(d-k_{D}) > 0$
 \begin{figure}
 \centering
 \includegraphics[scale=0.5]{Images/ShapesUp.png} 
-\caption{The benefit function is of the shape of 1/x and is always decreasing and if $\delta_{A} + 2(d-k_{D}) > 0$. }
+\caption{The benefit function is of the shape of 1/x and is always decreasing if $\delta_{A} + 2(d-k_{D}) > 0$. }
 \label{ShapeUp}
 \end{figure}
 
@@ -113,7 +113,7 @@ For $\delta_{A} + 2(d-k_{D}) < 0$, the benefit will always be increasing but neg
 \begin{figure}
 \centering
 \includegraphics[scale=0.5]{Images/ShapeDown.png} 
-\caption{The benefit function is of the shape of -1/x and is always increasing and if $\delta_{A} + 2(d-k_{D}) < 0$.}
+\caption{The benefit function is of the shape of -1/x and is always increasing if $\delta_{A} + 2(d-k_{D}) < 0$.}
 \label{ShapeDown}
 \end{figure}
 %The derivative of the above formula for a fixed $\delta_{A}$ results in the following:
@@ -171,15 +171,32 @@ The optimum functions will be piecewise functions. We distinguish six cases for 
 Figure XXX shows on the left how the three cases can be combined in a single continuous function (shown as the thick line). On the right, the derivative function indicates at which points the benefit will change. It is interesting to note that the derivative is also continuous, meaning that the benefit function is smooth and has no rough edges or corners. This implies that there are no sudden changes in benefit for small changes of period.
 
 \subsection*{$\delta_{A} < 2(k_{D} - d)$}
-From case C above, it follows that if $\delta_{A} < 2(k_{D} - d)$ the benefit is increasing but it will always be non-positive. The defender will try not to play ($\delta_{D}= \infty$). 
+For case A, the function will always increase if $k_{D} > 0$. If $k_{D} < 0$ it means that the cost is negative and we assume a positive cost. The function will thus never decrease. $k_{D} =0$ is an edge case and will be covered later in the paragraph of edge cases. So for case A we can conclude that the function is always increasing. In the next case, case B, the benefit function will increase in the interval $[0, 2(k_{D}-d)[$. In case C, for $\delta_{A} < 2(k_{D} - d)$, the benefit function will always increase. Because for all the cases we are dealing with a negative benefit function that is increasing, the maximum benefit is achieved for $\delta_{} = \infty$. This can be seen in (A) in figure \ref{case1D}.
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=1]{Images/case1b.pdf}
+\caption{ Illustration of the best response functions. The left functions are the piecewise benefit function of the defender for a certain values of $k_{D},d$ and $\delta_{A}$.. The right functions are the derivatives of the benefit functions on the left. The best responses are the values where the function intersects with the x-as. (A): $\delta_{A} < 2(k_{D}-d)$, (B): $\delta_{A} = 2(k_{D} - d)$, (C): $\delta_{A} > 2(k_{D} - d)$}
+\label{case1D}
+\end{figure}
+
+
+%From case C above, it follows that if $\delta_{A} < 2(k_{D} - d)$ the benefit is increasing but it will always be non-positive. The defender will try not to play ($\delta_{D}= \infty$). 
 
 %From case C it follows that from interval $[2(k_{D} -d), \sqrt{2k_{D}\delta_{A} + d^{2}}]$  (because for case 2 $\delta_{D} \geq \delta_{A}$), that the benefit is increasing.  The maximum of case 2.a and the maximum of case 2.b can be brought together. It follows that the optimal benefit is achieved at the $\delta_{D}=minimum[\delta_{A} + d, \sqrt{2k_{D}\delta_{A} + d^{2}}]$, which is $\delta_{D}=\sqrt{2k_{D}\delta_{A} + d^{2}}$. But because of case 2.a, the defender's maximum benefit is not to play at all.
 
 \subsection*{$\delta_{A} = 2(k_{D} - d)$}
-For case C, $\beta_{D}(\delta_{D}, \delta_{A})=0$ for  all $\delta_{D} \in [\sqrt{2k_{D}\delta_{A} + d^{2}}, \infty]$. For case B, the benefit is increasing in the interval $[\delta_{A},\sqrt{2k_{D}\delta_{A} + d^{2}}]$. If we put both cases back together, we get a maximum at $\sqrt{2k_{D}\delta_{A} + d^{2}}$. So in this case the defender's maximum benefit is achieved for any $\delta_{D}$ in $[\sqrt{2k_{D}\delta_{A} + d^{2}}, \infty]$ with value 0.
+The delay can not be a negative value. So for $\delta_{A}$, a positive period, to be equal to  $2(k_{D} - d)$, $k_{D}$ has to be positive. \\
+For case A, if $k_{D}>0$ the benefit function is always increasing. In case B, the value of $\delta_{A} =2(k_{D} - d)$ has to filled in in the root, $\sqrt{2k_{D}\delta_{A} + d^{2}}$. This gives the value $2k_{D}-d$. $2(k_{D}-d) < 2k_{D}-d$ so this means that $\delta_{A}$ is smaller than $ \sqrt{2k_{D}\delta_{A} + d^{2}}$, so the function is increasing. A maximum is achieved for $\delta_{D}$ equal to the maximum of $\left\lbrace \delta_{A}+d, \sqrt{2k_{D}\delta_{A} + d^{2}}\right\rbrace $. If we fill in $\delta_{A} = 2(k_{D} - d)$, the two values are the same so they are both a maximum.
+If we fill in the value of $\delta_{A} = 2(k_{D} - d)$ in case C, the benefit will always be 0. Case C is the case for all values $\delta_{D} \geq \delta_{A} + d$, so $\beta_{D}=0$ is true for all $\delta_{D} \in [\delta_{A}+d, \infty]$.
+The defender's maximum benefit is thus achieved for all $\delta_{D} \in [\sqrt{2k_{D}\delta_{A} + d^{2}}, \infty]$. See (B) in figure \ref{case1D}.
+
+%For case C, $\beta_{D}(\delta_{D}, \delta_{A})=0$ for  all $\delta_{D} \in [\sqrt{2k_{D}\delta_{A} + d^{2}}, \infty]$. For case B, the benefit is increasing in the interval $[\delta_{A},\sqrt{2k_{D}\delta_{A} + d^{2}}]$. If we put both cases back together, we get a maximum at $\sqrt{2k_{D}\delta_{A} + d^{2}}$. So in this case the defender's maximum benefit is achieved for any $\delta_{D}$ in $[\sqrt{2k_{D}\delta_{A} + d^{2}}, \infty]$ with value 0.
 
 \subsection*{$\delta_{A} > 2(k_{D} - d)$ }
-For case C, it follows that the benefit is decreasing but positive. So the defender will try to play as fast as possible ($\delta_{D} \rightarrow 0$). For case B it is increasing in the interval $[ 0,\sqrt{2k_{D}\delta_{A} + d^{2}}]$. It follows that the defender's maximum benefit is achieved for $\delta_{D} = \sqrt{2k_{D}\delta_{A} + d^{2}} $  \\
+Again for case A, we assume that $k_{D}$ is positive which implies that the benefit function for the defender is always increasing. If $\delta_{A} > 2(k_{D} - d)$, the benefit function of the defender in case B will only increase in the interval $]2(k_{D} - d), \sqrt{2k_{D}\delta_{A} + d^{2}}$. The maximum is achieved for $\delta_{D}$ equal to the maximum of $\left\lbrace \delta_{A}+d, \sqrt{2k_{D}\delta_{A} + d^{2}}\right\rbrace $. If we fill in $\delta_{A} > 2(k_{D} - d)$ , $\sqrt{2k_{D}\delta_{A} + d^{2}}$ is the maximum value. In case C, for all $\delta_{A} > 2(k_{D} - d)$, the benefit function is always decreasing. If we put all the pieces together, the defender's maximum benefit is achieved for $\delta_{D} = \sqrt{2k_{D}\delta_{A} + d^{2}}$. See (C) in figure \ref{case1D}.
+
+%For case C, it follows that the benefit is decreasing but positive. So the defender will try to play as fast as possible ($\delta_{D} \rightarrow 0$). For case B it is increasing in the interval $[ 0,\sqrt{2k_{D}\delta_{A} + d^{2}}]$. It follows that the defender's maximum benefit is achieved for $\delta_{D} = \sqrt{2k_{D}\delta_{A} + d^{2}} $  \\
 
 
 ~~\\
@@ -201,24 +218,24 @@ From this analyses we can compute $opt_{D}(\delta_{A})$ : \\
 \subsection*{Edge cases:}
 
 \subsection*{$\delta_{A}=0$ and $k_{D}=0$}
-If $\delta_{A}=0$ it means that the attacker is playing as fast as possible. For the defender it does not cost anything to flip, because $k_{D}=0$. We know that if $\delta_{D} \leq d$ the defender always has a benefit of 1. This means that for this case the defender will play with a rate $\delta_{D} \in [0,d]$.
 
--- ofwel volgende uitleg--- \\
 If $k_{D}=0$ it means that every flip of the defender is free. So for the cost it does not matter for the defender if he plays faster or slower. $\delta_{A}=0$ means that the attacker will play as fast as he can.  
 \begin{itemize}
 \item if $d=0$, if we look at $opt_{D}(\delta_{A})$ it means that we are in the second piece. The defender will play with a rate of $[0,\infty]$. 
 \item if $d >0$, we have to look at the third piece of  $opt_{D}(\delta_{A})$ . Here it follows that the defender has to play with a rate of \textit{d}.
 \end{itemize}
 
-Combining those two leads to a rate for the defender equal to $[0,d]$. This means that the defender will never not play, which is intuitively correct if we know that the defender has no disadvantage to play because there is no cost involved.
+Combining those two leads to a rate for the defender equal to $[0,d]$. This means that the defender will never not play, which is intuitively correct if we know that the defender has no disadvantage to play because there is no cost involved.\\
+
+Or more intuitively: If $\delta_{A}=0$ it means that the attacker is playing as fast as possible. For the defender it does not cost anything to flip, because $k_{D}=0$. We know that if $\delta_{D} \leq d$ the defender always has a benefit of 1. This means that for this case the defender will play with a rate $\delta_{D} \in [0,d]$.\\
 \subsection*{$\delta_{A}=0$}
 If $\delta_{A}=0$ it means that the attacker is playing as fast as possible. The defender has still a cost for every flip. This means we have to look at different values for $k_{D}$ and $d$.
 \begin{itemize}
 \item if $k_{D} > d$, it follows that the defender will not play (rate equal to $\infty$). This is already the case for the first piece in the piecewise function. $\delta_{A}$ will always be smaller than $2(k_{D}-d)$ if $k_{D} > d.$
 \item if $k_{D}=d$, it corresponds to the second piece: the defender will play with a rate of $[d,\infty]$.
-\item if $k_{D} < 0$, will correspond with the last case, where the rate of the defender is equal to \textit{d}.
+\item if $k_{D} < 0$, this corresponds with the last piece, where the rate of the defender is equal to \textit{d}.
 \end{itemize}
-By combining the last two pieces we have  $d ~~for~~ \delta_{A} =0 ~~ and ~~k_{D} \leq d$.\\
+By combining the last two pieces we have  $d ~~$for$~~ \delta_{A} =0 ~~$ and$ ~~k_{D} \leq d$.\\
 
 \subsection*{$k_{D}=0$}
 The cost of flipping for the defender is equal to zero. If we look at the benefit function of the defender and it's derivative in figure \ref{cost0}, we can see that the benefit for case B increases until $d$ and that the benefit in case A stays the same until $d$. After point $d$ the benefit decreases in all the cases. 
@@ -226,7 +243,7 @@ The cost of flipping for the defender is equal to zero. If we look at the benefi
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=1]{Images/cost0.pdf} 
-\caption{Benefit function and derivative for a cost $k_{D} = 0$ and with $d (=2)$ and $\delta_{D}=(1.5)$ not equal to zero.}
+\caption{Benefit function and derivative for a cost $k_{D} = 0$ and with $d (=2)$ and $\delta_{A}=(1.5)$ not equal to zero.}
 \label{cost0}
 \end{figure}
 
@@ -234,7 +251,7 @@ The cost of flipping for the defender is equal to zero. If we look at the benefi
 
 
 \subsection{Conclusion}
-With the edge cases we can compute $opt_{D}(\delta_{A})$ : \\
+Including the edge cases, $opt_{D}(\delta_{A})$ is as follows:  \\
 
  \begin{displaymath}
   opt_{D}(\delta_{A}) = \left\{
@@ -260,7 +277,7 @@ To determine the optimal strategy of the attacker we also need to determine $opt
 
 \subsection*{Case A: $\delta_{D} \leq d$}
 
-The benefit formula obtained in the previous chapter is as follows:
+The benefit formula for the attacker for this case obtained in the previous chapter is as follows:
 \begin{equation}
 \beta_{A}(\delta_{D},\delta_{A}) =  - \dfrac{k_{A}}{\delta_{A}}
 \end{equation}
@@ -279,29 +296,14 @@ The function is of the type $-1/x$, see figure \ref{1xx}. The root of the benefi
 \label{1xx}
 \end{figure}
 
-This means that if $k_{A} < 0$ the benefit function is positive and decreasing but $k_{D}$ cannot be negative so the attacker will not play. If $k_{A} > 0$ the function will be negative but always increasing.
+This means that the optimal benefit is achieved for a value $\delta_{A}=0$.
 
 
 
-\subsection*{Case B: $d \leq \delta_{D} \geq \delta_{A} + d$}
 
-The benefit formula obtained in the previous chapter \ref{Benfcase1:attacker} for this case is as follows:
-\begin{equation*}
-\beta_{A}(\delta_{D},\delta_{A}) =\dfrac{\delta_{D}}{2\delta_{A}} - \dfrac{k_{A}}{\delta_{A}} + \dfrac{d^{2}}{2\delta_{D}\delta_{A}} - \dfrac{d}{\delta_{A}}
-\end{equation*}
-The derivative for a fixed $\delta_{D}$ is as follows:
-\begin{equation*}
-\dfrac{\partial \beta_{A}(\delta_{D},\delta_{A})}{\partial \delta_{A}} = -\dfrac{\delta_{D}}{2\delta_{A}^{2}} + \dfrac{k_{A}}{\delta_{A}^{2}} - \dfrac{d^{2}}{2\delta_{D}\delta_{A}^{2}} + \dfrac{d}{\delta_{A}^{2}} = \dfrac{-\delta_{D}^{2} - d^{2} + 2\delta_{D}d + 2\delta_{D}k_{A}}{2\delta_{A}^{2}\delta_{D}}
-\end{equation*}
-The stationary points (maximum, minimum) can be found by setting the first derivative equal to zero and finding the roots of the resulting equation:
-\begin{equation*}
-\frac{\partial \beta_{A}(\delta_{D},\delta_{A})}{\partial \delta_{D}} =0 ~~~~~~ =>~~~~~~  \delta_{D}= \dfrac{(\delta_{D}-d)^{2}}{2k_{A}}
-\end{equation*}
 
-It follows that $\beta_{A}(\delta_{D},\cdot)$ is increasing and non-positive if $\delta_{D}> \dfrac{(\delta_{D}-d)^{2}}{2k_{A}}$ and decreasing and positive if $\delta_{D} < \dfrac{(\delta_{D}-d)^{2}}{2k_{A}}$  \\
-
-\subsection*{Case B: $\delta_{D} \geq d+\delta_{A} \geq \delta_{A} $ }
-The benefit formula obtained from the previous chapter \ref{benfcase2a:attacker} for this case is as follows:
+\subsection*{Case B: $ \delta_{A} \leq \delta_{D} -d$ }
+The benefit formula for the attacker for this case obtained from the previous chapter is as follows:
 \begin{equation*}
 \beta_{A}(\delta_{D},\delta_{A}) =1- \dfrac{\delta_{A}}{2\delta_{D}} - \dfrac{k_{A}}{\delta_{A}} - \dfrac{d}{\delta_{D}}
 \end{equation*}
@@ -319,7 +321,7 @@ It follows that $\beta_{A}(\delta_{D},\cdot)$ is increasing on $[0,\sqrt{2k_{A}\
 %
 %The benefit formula obtained from the previous chapter \ref{benfcase2b:attacker} for this case is as follows: 
 %\begin{equation*}
-%\beta_{A}(\delta_{D},\delta_{A}) = 1 - \dfrac{•}{•}\delta_{A}}{2\delta_{D}} - \dfrac{d}{\delta_{A}} - \dfrac{k_{A}}{\delta_{A}} + \dfrac{(d-(\delta_{D}-\delta_{A})^{2}}{2\delta_{D}\delta_{A}} 
+%\beta_{A}(\delta_{D},\delta_{A}) = 1 - \delta_{A}}{2\delta_{D}} - \dfrac{d}{\delta_{A}} - \dfrac{k_{A}}{\delta_{A}} + \dfrac{(d-(\delta_{D}-\delta_{A})^{2}}{2\delta_{D}\delta_{A}} 
 %\end{equation*}
 %The derivative for a fixed $\delta_{D}$ is as follows:
 %\begin{equation*}
@@ -333,30 +335,65 @@ It follows that $\beta_{A}(\delta_{D},\cdot)$ is increasing on $[0,\sqrt{2k_{A}\
 %
 %It follows that $\beta_{A}(\delta_{D},\cdot)$ is increasing and non-positif if $\delta_{D} > \dfrac{(\delta_{D}-d)^{2}}{2k_{A}}$ and decreasing and positive if $\delta_{D} < \dfrac{(\delta_{D}-d)^{2}}{2k_{A}}$. This is the same result as in case 1.\\
 
+\subsection*{Case C: $d \leq \delta_{D} -d \leq \delta_{A} $}
+
+The benefit formula for the attacker for this case obtained in the previous chapter is as follows:
+\begin{equation*}
+\beta_{A}(\delta_{D},\delta_{A}) =\dfrac{\delta_{D}}{2\delta_{A}} - \dfrac{k_{A}}{\delta_{A}} + \dfrac{d^{2}}{2\delta_{D}\delta_{A}} - \dfrac{d}{\delta_{A}}
+\end{equation*}
+The derivative for a fixed $\delta_{D}$ is as follows:
+\begin{equation*}
+\dfrac{\partial \beta_{A}(\delta_{D},\delta_{A})}{\partial \delta_{A}} = -\dfrac{\delta_{D}}{2\delta_{A}^{2}} + \dfrac{k_{A}}{\delta_{A}^{2}} - \dfrac{d^{2}}{2\delta_{D}\delta_{A}^{2}} + \dfrac{d}{\delta_{A}^{2}} = \dfrac{-\delta_{D}^{2} - d^{2} + 2\delta_{D}d + 2\delta_{D}k_{A}}{2\delta_{A}^{2}\delta_{D}}
+\end{equation*}
+The stationary points (maximum, minimum) can be found by setting the first derivative equal to zero and finding the roots of the resulting equation:
+\begin{equation*}
+\frac{\partial \beta_{A}(\delta_{D},\delta_{A})}{\partial \delta_{D}} =0 ~~~~~~ =>~~~~~~  \delta_{D}^{2}-\delta_{D}(2k_{A}-2d) + d^{2}= 0
+\end{equation*}
+
+The roots of this quadratic equation are $\delta_{D}=d+k_{A}\pm \sqrt{2dk_{A}+k_{A}^{2}}$. Because for this case $d\leq \delta_{D}$, we only look at root $\delta_{D}=d+k_{A} + \sqrt{2dk_{A}+k_{A}^{2}}$. $\sqrt{2dk_{A}+k_{A}^{2}}$ is bigger than $k_{A}$ so if we subtract it from $d+k_{A}$, we are in the part where $delta_{D}$ is smaller than d. \\
+It follows that $\beta_{A}(\delta_{D},\delta_{A})$ is increasing and non-positive if $\delta_{D}> d+k_{A} + \sqrt{2dk_{A}+k_{A}^{2}}$ and decreasing and positive if $\delta_{D} < d+k_{A} + \sqrt{2dk_{A}+k_{A}^{2}}$  \\
 
 \section{Best responses of $\delta_{A}$}
-The optimum functions will be piecewise functions. We distinguish three cases for different values of $\delta_{D}$ regarding $d$ and $k_{A}$. 
+The optimum function of the attacker is found in the same way as the optimum function of the defender. The derivatives of each piece of the piecewise benefit function of the attacker is taken. From these derivatives the best responses are derived. \\
+Case A is an edge case and will be addressed in the paragraph about the edge cases.
+%The optimum functions will be piecewise functions. We distinguish three cases for different values of $\delta_{D}$ regarding $d$ and $k_{A}$. 
+%
+%
+%For this term $\dfrac{(\delta_{D}-d)^{2}}{2k_{A}} $ , $d$ has to be bigger than  $\delta_{D}$ because the cost $\delta_{D}$ cannot be negative. This was an assumption that was already made, because the benefit of the defender will always be 1 if $d$ is bigger than  $\delta_{D}$.
+
+\subsubsection*{$\delta_{D} < d+k_{A} + \sqrt{2dk_{A}+k_{A}^{2}}$} 
+For case B, the function is increasing. The function has a maximum on on $\delta_{A} = minimum \{\delta_{D} -d, \sqrt{2k_{A}\delta_{D}} \} $. For $\delta_{D} < d+k_{A} + \sqrt{2dk_{A}+k_{A}^{2}}$, the minimum of the two values is $\delta_{D}-d$.\\
+For case C, if $\delta_{D} < d+k_{A} + \sqrt{2dk_{A}+k_{A}^{2}}$, the benefit function is increasing. Because we have a continuous function and the benefit is still increasing and negative in case C, the defender will try not to play. The defender's optimum benefit is achieved in $\delta_{A}=\infty$. See (A) in figure \ref{case1A}.
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=1]{Images/case1A.pdf}
+\caption{ Illustration of the best response functions. The left functions are the piecewise benefit function of the attacker for a certain values of $k_{A},d$ and $\delta_{D}$. The right functions are the derivatives of the benefit functions on the left. The best responses are the values where the function intersects with the x-as. (A): $\delta_{D} > d+k_{A} + \sqrt{2dk_{A}+k_{A}^{2}}$, (B): $\delta_{D} = d+k_{A} + \sqrt{2dk_{A}+k_{A}^{2}}$, (C): $\delta_{D} < d+k_{A} + \sqrt{2dk_{A}+k_{A}^{2}}$}
+\label{case1A}
+\end{figure}
+
+%From case 1 and case 2.b above, it follows that the benefit is decreasing but positive, which means that the attacker will play as fast as he can. For case 2.a  $\delta_{D} \geq \delta_{A}$ is increasing. It follows that for this case the attacker's maximum benefit is achieved for $\delta_{A} = \sqrt{d k_{A}\delta_{D}}$.
+%. In this case the attacker's maximum benefit is reached at $\delta_{A} = \delta_{A} = \sqrt{dk_{A}\delta_{D}}$  .
+\subsubsection*{$\delta_{D} = d+k_{A} + \sqrt{2dk_{A}+k_{A}^{2}}$} 
+For case B, the function is increasing. The function has a maximum on on $\delta_{A} = minimum \{\delta_{D} -d, \sqrt{2k_{A}\delta_{D}} \} $. For $\delta_{D} = d+k_{A} + \sqrt{2dk_{A}+k_{A}^{2}}$, the minimum of the two values is $\delta_{D}-d$.\\
+For case C, $\delta_{D} = d+k_{A} + \sqrt{2dk_{A}+k_{A}^{2}}$ is a root so the benefit function of the attacker will be equal to zero. Because case C is the case where $\delta_{A}$ has to be bigger or equal to $\delta_{D}-d$, $\beta_{A}=0$ is valid for all $\delta_{A} \in [\delta_{D}-d,\infty]$.\\
+Putting the pieces together gives us the optimum benefit for the attacker for all $\delta_{A} \in [\delta_{D}-d,\infty]$. See (B) in figure \ref{case1A}.
+
+%The benefit $\beta_{A}(\delta_{D},\delta_{A})=0$ for case 1 and case 2.b for all $\delta_{D}$ in $[0, \infty [$. For case 2.a it follows that the benefit is increasing. The attacker's maximum benefit is achieved at any $\delta_{A} $ in 
+\subsubsection*{$\delta_{D} > d+k_{A} + \sqrt{2dk_{A}+k_{A}^{2}}$} 
+For case B, the function is increasing. The function has a maximum on on $\delta_{A} = minimum \{\delta_{D} -d, \sqrt{2k_{A}\delta_{D}} \} $. For $\delta_{D} > d+k_{A} + \sqrt{2dk_{A}+k_{A}^{2}}$, the minimum of the two values is $\delta_{D}-d$.\\
+For case C, if $\delta_{D} > d+k_{A} + \sqrt{2dk_{A}+k_{A}^{2}}$ the function is decreasing. So the optimum benefit for all the cases is when $\delta_{D} = \delta_{D}-d$. See (C) in figure \ref{case1A}.\\
+%For case 1 and case 2.b the benefit is increasing but non-positive. This means that the attacker won't play ($\delta_{A} = \infty$). 
 
 
-For this term $\dfrac{(\delta_{D}-d)^{2}}{2k_{A}} $ , $d$ has to be bigger than  $\delta_{D}$ because the cost $\delta_{D}$ cannot be negative. This was an assumption that was already made, because the benefit of the defender will always be 1 if $d$ is bigger than  $\delta_{D}$.
-
-\subsubsection*{$\delta_{D} < \dfrac{(\delta_{D}-d)^{2}}{2k_{A}}$} 
-From case 1 and case 2.b above, it follows that the benefit is decreasing but positive, which means that the attacker will play as fast as he can. For case 2.a  $\delta_{D} \geq \delta_{A}$ is increasing. It follows that for this case the attacker's maximum benefit is achieved for $\delta_{A} = \sqrt{d k_{A}\delta_{D}}$.
-. In this case the attacker's maximum benefit is reached at $\delta_{A} = \delta_{A} = \sqrt{dk_{A}\delta_{D}}$  .
-\subsubsection*{$\delta_{D} = \dfrac{(\delta_{D}-d)^{2}}{2k_{A}}$} 
-The benefit $\beta_{A}(\delta_{D},\delta_{A})=0$ for case 1 and case 2.b for all $\delta_{D}$ in $[0, \infty [$. For case 2.a it follows that the benefit is increasing. The attacker's maximum benefit is achieved at any $\delta_{A} $ in 
-\subsubsection*{$\delta_{D} > \dfrac{(\delta_{D}-d)^{2}}{2k_{A}}$} 
-For case 1 and case 2.b the benefit is increasing but non-positive. This means that the attacker won't play ($\delta_{A} = \infty$). 
-\\
-~~\\
 From this analyses we can compute $opt_{A}(\delta_{D})$ : 
 
  \begin{displaymath}
   opt_{A}(\delta_{D}) = \left\{
      \begin{array}{lr}
-            \infty & \delta_{D} < \dfrac{(\delta_{D}-d)^{2}}{2k_{A}} \\
-       \left[ \sqrt{d k_{A}\delta_{D}}, \infty\right],  & \delta_{D} = \dfrac{(\delta_{D}-d)^{2}}{2k_{A}} \\
-       \sqrt{d k_{A}\delta_{D}}, & \delta_{D} > \dfrac{(\delta_{D}-d)^{2}}{2k_{A}}
+            \infty & \delta_{D} < d+k_{A} + \sqrt{2dk_{A}+k_{A}^{2}} \\
+       \left[ \delta_{D}-d, \infty\right],  & \delta_{D} = d+k_{A} + \sqrt{2dk_{A}+k_{A}^{2}} \\
+    	\delta_{D}-d, & \delta_{D} > d+k_{A} + \sqrt{2dk_{A}+k_{A}^{2}}
      \end{array}
    \right.
 \end{displaymath}
@@ -373,7 +410,7 @@ If the cost of playing for the attacker is zero, the attacker can play as fast a
 If $\delta_{D}=0$ it follows from the case $\delta_{D} \leq d$ that the attacker will always have a negative benefit, unless the cost is zero. If the cost is zero we have again the case of $\delta_{D}=0$ and $k_{A}=0$. But if the cost is non-zero, the optimal strategy of the defender is not moving at all. 
 
 \subsection{Conclusion}
-With the edge cases we can compute $opt_{A}(\delta_{D})$ : \\
+Including the edge cases yields the following for $opt_{A}(\delta_{D})$ : \\
 
  \begin{displaymath}
   opt_{A}(\delta_{D}) = \left\{
