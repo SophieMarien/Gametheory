@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.27)  19 AUG 2015 23:45
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.27)  19 AUG 2015 23:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1180,7 +1180,7 @@ LaTeX Warning: Label `first' multiply defined.
 
 LaTeX Warning: Label `fig:case2' multiply defined.
 
-) (./nash.aux) (./chap-4.aux) (./conclusion.aux) (./app-A.aux))
+) (./nash.aux) (./chap-4.aux) (./conclusion.aux) (./app-A.aux) (./app-n.aux))
 \openout1 = `masterproef.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
@@ -1295,7 +1295,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-<logokuleng.pdf, id=139, 159.33528pt x 85.358pt>
+<logokuleng.pdf, id=143, 159.33528pt x 85.358pt>
 File: logokuleng.pdf Graphic file (type pdf)
  <use logokuleng.pdf>
 Package pdftex.def Info: logokuleng.pdf used on input line 122.
@@ -1460,7 +1460,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 194--195
 
  []
 
-<../../doc/template/Images/FlipBasic.pdf, id=223, 512.38626pt x 108.42407pt>
+<../../doc/template/Images/FlipBasic.pdf, id=228, 512.38626pt x 108.42407pt>
 File: ../../doc/template/Images/FlipBasic.pdf Graphic file (type pdf)
 
 <use ../../doc/template/Images/FlipBasic.pdf>
@@ -1597,7 +1597,7 @@ Package babel Info: Redefining dutch shorthand "Y
 [9]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12> on input line 300.
- <Images/FlipItCase1delaytobig.pdf, id=282, 512.38626pt x 77.18385pt>
+ <Images/FlipItCase1delaytobig.pdf, id=287, 512.38626pt x 77.18385pt>
 File: Images/FlipItCase1delaytobig.pdf Graphic file (type pdf)
 
 <use Images/FlipItCase1delaytobig.pdf>
@@ -1636,7 +1636,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 328--329
  []
 
 
-<../../doc/template/Images/Delayuitgelegd.pdf, id=319, 512.38626pt x 236.17334p
+<../../doc/template/Images/Delayuitgelegd.pdf, id=324, 512.38626pt x 236.17334p
 t>
 File: ../../doc/template/Images/Delayuitgelegd.pdf Graphic file (type pdf)
  <use ../../doc/template/Images/Delayuitgelegd.pdf>
@@ -1700,7 +1700,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 398--399
 
  []
 
-<../../doc/template/Images/FlipIt2.pdf, id=368, 403.371pt x 683.10506pt>
+<../../doc/template/Images/FlipIt2.pdf, id=373, 403.371pt x 683.10506pt>
 File: ../../doc/template/Images/FlipIt2.pdf Graphic file (type pdf)
 
 <use ../../doc/template/Images/FlipIt2.pdf>
@@ -1757,7 +1757,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 436--438
 
  []
 
-<Images/borders.pdf, id=412, 572.1084pt x 353.31299pt>
+<Images/borders.pdf, id=417, 572.1084pt x 353.31299pt>
 File: Images/borders.pdf Graphic file (type pdf)
 
 <use Images/borders.pdf>
@@ -1951,7 +1951,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 165--166
 
  []
 
-[9] <Images/PrisDilemma.png, id=703, 466.3824pt x 318.9516pt>
+[9] <Images/PrisDilemma.png, id=708, 466.3824pt x 318.9516pt>
 File: Images/PrisDilemma.png Graphic file (type png)
 
 <use Images/PrisDilemma.png>
@@ -2067,7 +2067,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 146--148
 
  []
 
-<Images/DefFlip.pdf, id=787, 512.38626pt x 108.42407pt>
+<Images/DefFlip.pdf, id=792, 512.38626pt x 108.42407pt>
 File: Images/DefFlip.pdf Graphic file (type pdf)
 
 <use Images/DefFlip.pdf>
@@ -2078,7 +2078,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 168--169
 
  []
 
-<Images/Delayuitgelegd.pdf, id=821, 512.38626pt x 236.17334pt>
+<Images/Delayuitgelegd.pdf, id=826, 512.38626pt x 236.17334pt>
 File: Images/Delayuitgelegd.pdf Graphic file (type pdf)
 
 <use Images/Delayuitgelegd.pdf>
@@ -2094,7 +2094,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
 
-[21] <Images/FlipItCase1delay.pdf, id=828, 519.29205pt x 87.99817pt>
+[21] <Images/FlipItCase1delay.pdf, id=833, 519.29205pt x 87.99817pt>
 File: Images/FlipItCase1delay.pdf Graphic file (type pdf)
 
 <use Images/FlipItCase1delay.pdf>
@@ -2116,7 +2116,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 226--227
  []
 
 
-<../../doc/template/Images/DiffDelayCase1.pdf, id=861, 512.38626pt x 236.17334p
+<../../doc/template/Images/DiffDelayCase1.pdf, id=866, 512.38626pt x 236.17334p
 t>
 File: ../../doc/template/Images/DiffDelayCase1.pdf Graphic file (type pdf)
  <use ../../doc/template/Images/DiffDelayCase1.pdf>
@@ -2124,7 +2124,7 @@ Package pdftex.def Info: ../../doc/template/Images/DiffDelayCase1.pdf used on i
 nput line 235.
 (pdftex.def)             Requested size: 358.66794pt x 165.32019pt.
 
-<../../doc/template/Images/delaydtijdens.pdf, id=864, 512.38626pt x 113.75499pt
+<../../doc/template/Images/delaydtijdens.pdf, id=869, 512.38626pt x 113.75499pt
 >
 File: ../../doc/template/Images/delaydtijdens.pdf Graphic file (type pdf)
  <use ../../doc/template/Images/delaydtijdens.pdf>
@@ -2177,7 +2177,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 341--342
 
  []
 
-<Images/flipcase2nb.pdf, id=978, 403.371pt x 213.21759pt>
+<Images/flipcase2nb.pdf, id=983, 403.371pt x 213.21759pt>
 File: Images/flipcase2nb.pdf Graphic file (type pdf)
 
 <use Images/flipcase2nb.pdf>
@@ -2227,7 +2227,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 401--403
 
  []
 
-<Images/functie4.pdf, id=1013, 226.8475pt x 128.22906pt>
+<Images/functie4.pdf, id=1018, 226.8475pt x 128.22906pt>
 File: Images/functie4.pdf Graphic file (type pdf)
 
 <use Images/functie4.pdf>
@@ -2238,7 +2238,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 439--441
 
  []
 
-<Images/att.pdf, id=1054, 226.8475pt x 128.22906pt>
+<Images/att.pdf, id=1059, 226.8475pt x 128.22906pt>
 File: Images/att.pdf Graphic file (type pdf)
  <use Images/att.pdf>
 Package pdftex.def Info: Images/att.pdf used on input line 444.
@@ -2283,7 +2283,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 
-] <Images/1x.png, id=1105, 233.87375pt x 148.555pt>
+] <Images/1x.png, id=1110, 233.87375pt x 148.555pt>
 File: Images/1x.png Graphic file (type png)
  <use Images/1x.png>
 Package pdftex.def Info: Images/1x.png used on input line 63.
@@ -2303,7 +2303,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
-<Images/ShapesUp.png, id=1117, 446.41782pt x 315.42844pt>
+<Images/ShapesUp.png, id=1122, 446.41782pt x 315.42844pt>
 File: Images/ShapesUp.png Graphic file (type png)
 
 <use Images/ShapesUp.png>
@@ -2314,7 +2314,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
-<Images/ShapeDown.png, id=1119, 444.91219pt x 312.41719pt>
+<Images/ShapeDown.png, id=1124, 444.91219pt x 312.41719pt>
 File: Images/ShapeDown.png Graphic file (type png)
 
 <use Images/ShapeDown.png>
@@ -2325,7 +2325,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
 
-<Images/cost0.pdf, id=1121, 429.34303pt x 123.43916pt>
+<Images/cost0.pdf, id=1126, 429.34303pt x 123.43916pt>
 File: Images/cost0.pdf Graphic file (type pdf)
  <use Images/cost0.pdf>
 Package pdftex.def Info: Images/cost0.pdf used on input line 174.
@@ -2339,7 +2339,7 @@ Overfull \hbox (31.34196pt too wide) in paragraph at lines 174--175
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [36 <./Images/ShapeDown.png> <./Images/cost0.pdf>]
-<Images/case1b.pdf, id=1199, 440.312pt x 418.89801pt>
+<Images/case1b.pdf, id=1204, 440.312pt x 418.89801pt>
 File: Images/case1b.pdf Graphic file (type pdf)
  <use Images/case1b.pdf>
 Package pdftex.def Info: Images/case1b.pdf used on input line 183.
@@ -2419,7 +2419,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 353--355
 
  []
 
-[41] <Images/case1A.pdf, id=1608, 440.312pt x 418.89801pt>
+[41] <Images/case1A.pdf, id=1613, 440.312pt x 418.89801pt>
 File: Images/case1A.pdf Graphic file (type pdf)
 
 <use Images/case1A.pdf>
@@ -2487,7 +2487,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
-[49] <Images/Picture2.png, id=1717, 592.1322pt x 490.4724pt>
+[49] <Images/Picture2.png, id=1722, 592.1322pt x 490.4724pt>
 File: Images/Picture2.png Graphic file (type png)
 
 <use Images/Picture2.png>
@@ -2635,124 +2635,202 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
 
 
-]
+] [63]
+<paper.pdf, id=1826, page=1, 597.50829pt x 845.0471pt>
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 1>
+Package pdftex.def Info: paper.pdf, page1 used on input line 3.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: paper.pdf Graphic file (type pdf)
 
-! Package pdfpages Error: Cannot find file `IEEE.pdf'.
+<use paper.pdf, page 1>
+Package pdftex.def Info: paper.pdf, page1 used on input line 3.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 1>
+Package pdftex.def Info: paper.pdf, page1 used on input line 3.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 1>
+Package pdftex.def Info: paper.pdf, page1 used on input line 3.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: paper.pdf Graphic file (type pdf)
 
-See the pdfpages package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3 \includepdf[pages={6}]{IEEE.pdf}
-                                    
-This error message was generated by an \errmessage
-command, so I can't give any explicit help.
-Pretend that you're Hercule Poirot: Examine all clues,
-and deduce the truth by order and method.
+<use paper.pdf, page 1>
+Package pdftex.def Info: paper.pdf, page1 used on input line 3.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+ [64 <./paper.pdf>]
+<paper.pdf, id=1852, page=2, 597.50829pt x 845.0471pt>
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 2>
+Package pdftex.def Info: paper.pdf, page2 used on input line 3.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: paper.pdf Graphic file (type pdf)
 
-! Undefined control sequence.
-\AM@checkpagenumber #1->\ifnum #1>\AM@pagecount 
-                                                \relax \ifthenelse {\boolean...
-l.3 \includepdf[pages={6}]{IEEE.pdf}
-                                    
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+<use paper.pdf, page 2>
+Package pdftex.def Info: paper.pdf, page2 used on input line 3.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 2>
+Package pdftex.def Info: paper.pdf, page2 used on input line 3.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+ [65 <./paper.pdf>]
+<paper.pdf, id=1896, page=3, 597.50829pt x 845.0471pt>
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 3>
+Package pdftex.def Info: paper.pdf, page3 used on input line 3.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: paper.pdf Graphic file (type pdf)
 
-! Missing number, treated as zero.
-<to be read again> 
-                   \relax 
-l.3 \includepdf[pages={6}]{IEEE.pdf}
-                                    
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
+<use paper.pdf, page 3>
+Package pdftex.def Info: paper.pdf, page3 used on input line 3.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 3>
+Package pdftex.def Info: paper.pdf, page3 used on input line 3.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+ [66 <./paper.pdf>]
+<paper.pdf, id=1901, page=4, 597.50829pt x 845.0471pt>
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 4>
+Package pdftex.def Info: paper.pdf, page4 used on input line 3.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: paper.pdf Graphic file (type pdf)
 
+<use paper.pdf, page 4>
+Package pdftex.def Info: paper.pdf, page4 used on input line 3.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 4>
+Package pdftex.def Info: paper.pdf, page4 used on input line 3.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+ [67 <./paper.pdf>]
+<paper.pdf, id=1919, page=5, 597.50829pt x 845.0471pt>
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 5>
+Package pdftex.def Info: paper.pdf, page5 used on input line 3.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: paper.pdf Graphic file (type pdf)
 
-! Package pdfpages Error: page 6 of `\AM@currentdocname ' does not exist.
+<use paper.pdf, page 5>
+Package pdftex.def Info: paper.pdf, page5 used on input line 3.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 5>
+Package pdftex.def Info: paper.pdf, page5 used on input line 3.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+ [68 <./paper.pdf>]
+<paper.pdf, id=1926, page=6, 597.50829pt x 845.0471pt>
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 6>
+Package pdftex.def Info: paper.pdf, page6 used on input line 3.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: paper.pdf Graphic file (type pdf)
 
-See the pdfpages package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3 \includepdf[pages={6}]{IEEE.pdf}
-                                    
-You have set a wrong page number in the `pages' option. Document 
-`\AM@currentdocname ' does not have 6 pages.
-
-[63]
-
-! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3 \includepdf[pages={6}]{IEEE.pdf}
-                                    
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3 \includepdf[pages={6}]{IEEE.pdf}
-                                    
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3 \includepdf[pages={6}]{IEEE.pdf}
-                                    
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3 \includepdf[pages={6}]{IEEE.pdf}
-                                    
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<use paper.pdf, page 6>
+Package pdftex.def Info: paper.pdf, page6 used on input line 3.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 6>
+Package pdftex.def Info: paper.pdf, page6 used on input line 3.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+ [69 <./paper.pdf>])
+\openout2 = `app-n.aux'.
 
 
-! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3 \includepdf[pages={6}]{IEEE.pdf}
-                                    
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[64]) (./masterproef.bbl [65
+(./app-n.tex [70
 
 
 
-] [66]) [67] [68
+] [71] <finaal.pdf, id=1942, page=1, 614.295pt x 794.97pt>
+File: finaal.pdf Graphic file (type pdf)
+
+<use finaal.pdf, page 1>
+Package pdftex.def Info: finaal.pdf, page1 used on input line 3.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: finaal.pdf Graphic file (type pdf)
+ <use finaal.pdf, page 1>
+Package pdftex.def Info: finaal.pdf, page1 used on input line 3.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: finaal.pdf Graphic file (type pdf)
+ <use finaal.pdf, page 1>
+Package pdftex.def Info: finaal.pdf, page1 used on input line 3.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: finaal.pdf Graphic file (type pdf)
+
+<use finaal.pdf, page 1>
+Package pdftex.def Info: finaal.pdf, page1 used on input line 3.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: finaal.pdf Graphic file (type pdf)
+ <use finaal.pdf, page 1>
+Package pdftex.def Info: finaal.pdf, page1 used on input line 3.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [72 <./finaal.pdf>]
+<finaal.pdf, id=1979, page=2, 614.295pt x 794.97pt>
+File: finaal.pdf Graphic file (type pdf)
+ <use finaal.pdf, page 2>
+Package pdftex.def Info: finaal.pdf, page2 used on input line 3.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: finaal.pdf Graphic file (type pdf)
+
+<use finaal.pdf, page 2>
+Package pdftex.def Info: finaal.pdf, page2 used on input line 3.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: finaal.pdf Graphic file (type pdf)
+ <use finaal.pdf, page 2>
+Package pdftex.def Info: finaal.pdf, page2 used on input line 3.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [73 <./finaal.pdf>]
+<finaal.pdf, id=1988, page=3, 614.295pt x 794.97pt>
+File: finaal.pdf Graphic file (type pdf)
+ <use finaal.pdf, page 3>
+Package pdftex.def Info: finaal.pdf, page3 used on input line 3.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: finaal.pdf Graphic file (type pdf)
+
+<use finaal.pdf, page 3>
+Package pdftex.def Info: finaal.pdf, page3 used on input line 3.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: finaal.pdf Graphic file (type pdf)
+ <use finaal.pdf, page 3>
+Package pdftex.def Info: finaal.pdf, page3 used on input line 3.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [74 <./finaal.pdf>]
+<finaal.pdf, id=1994, page=4, 614.295pt x 794.97pt>
+File: finaal.pdf Graphic file (type pdf)
+ <use finaal.pdf, page 4>
+Package pdftex.def Info: finaal.pdf, page4 used on input line 3.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: finaal.pdf Graphic file (type pdf)
+
+<use finaal.pdf, page 4>
+Package pdftex.def Info: finaal.pdf, page4 used on input line 3.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: finaal.pdf Graphic file (type pdf)
+ <use finaal.pdf, page 4>
+Package pdftex.def Info: finaal.pdf, page4 used on input line 3.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [75 <./finaal.pdf>]
+<finaal.pdf, id=2000, page=5, 614.295pt x 794.97pt>
+File: finaal.pdf Graphic file (type pdf)
+ <use finaal.pdf, page 5>
+Package pdftex.def Info: finaal.pdf, page5 used on input line 3.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: finaal.pdf Graphic file (type pdf)
+
+<use finaal.pdf, page 5>
+Package pdftex.def Info: finaal.pdf, page5 used on input line 3.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: finaal.pdf Graphic file (type pdf)
+ <use finaal.pdf, page 5>
+Package pdftex.def Info: finaal.pdf, page5 used on input line 3.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [76 <./finaal.pdf>])
+(./masterproef.bbl [77
+
+
+
+] [78]) [79] [80
 
 ]
 \tf@toc=\write6
@@ -2766,13 +2844,13 @@ If that doesn't work, type  X <return>  to quit.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 654.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 654.
- (./masterproef.aux (./chap-10.aux) (./chap-5.aux) (./chap-9.aux) (./nash.aux) 
-(./chap-4.aux) (./conclusion.aux)
-(./app-A.aux))
+ (./masterproef.aux (./chap-10.aux)
+(./chap-5.aux) (./chap-9.aux) (./nash.aux) (./chap-4.aux) (./conclusion.aux)
+(./app-A.aux) (./app-n.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 654.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 654.
 Package rerunfilecheck Info: File `masterproef.out' has not changed.
-(rerunfilecheck)             Checksum: CFC8102EF57F7C1FB9CFAA1E8C32F854;2220.
+(rerunfilecheck)             Checksum: E0DE6DAF02ECA3444919AF52D5B408A5;2274.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2780,41 +2858,51 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 654.
  ) 
 Here is how much of TeX's memory you used:
- 26218 strings out of 493315
- 451752 string characters out of 6137903
- 725881 words of memory out of 5000000
- 28543 multiletter control sequences out of 15000+600000
+ 26280 strings out of 493315
+ 452633 string characters out of 6137903
+ 727068 words of memory out of 5000000
+ 28583 multiletter control sequences out of 15000+600000
  112994 words of font info for 216 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 61i,17n,92p,2218b,863s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,18n,92p,2218b,863s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
 texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/20
 13/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2013/texmf-d
 ist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2013/texmf-dist/fonts/enc/
 dvips/lm/lm-mathex.enc}{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base
-/8r.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></
-usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/
-texlive/2013/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2
-013/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2013/texmf
--dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2013/texmf-dist/font
-s/type1/public/lm/lmmi10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/pu
-blic/lm/lmmi12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lm
-mi6.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></u
-sr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/te
-xlive/2013/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2013/
-texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2013/texmf-dist/
-fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/
-public/lm/lmr8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lm
-ri10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><
-/usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/
-texlive/2013/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/201
-3/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2013/texmf-di
-st/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2013/texmf-dist/font
-s/type1/urw/helvetic/uhvr8a.pfb>
-Output written on masterproef.pdf (94 pages, 6847865 bytes).
+/8r.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex
+10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
+0.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.
+pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pf
+b></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><
+/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></us
+r/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/te
+xlive/2013/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2013
+/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2013/texmf-di
+st/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2013/texmf-dist/fonts/
+type1/public/lm/lmex10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/publ
+ic/lm/lmmi10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmmi
+12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></us
+r/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/tex
+live/2013/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2013/t
+exmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2013/texmf-dist/f
+onts/type1/public/lm/lmr12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/
+public/lm/lmr7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lm
+r8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmri10.pfb></u
+sr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/t
+exlive/2013/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2013
+/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2013/texmf-dist
+/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2013/texmf-dist/fonts/typ
+e1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/
+helvetic/uhvr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/u
+tmb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb
+></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/loc
+al/texlive/2013/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on masterproef.pdf (106 pages, 7656277 bytes).
 PDF statistics:
- 1988 PDF objects out of 2073 (max. 8388607)
- 1182 compressed objects within 12 object streams
- 313 named destinations out of 1000 (max. 500000)
- 29059 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 2192 PDF objects out of 2487 (max. 8388607)
+ 1330 compressed objects within 14 object streams
+ 326 named destinations out of 1000 (max. 500000)
+ 29142 words of extra memory for PDF output out of 29859 (max. 10000000)
 

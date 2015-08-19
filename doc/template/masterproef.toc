@@ -67,7 +67,8 @@
 \contentsline {section}{\numberline {6.1}General Results and Conclusions}{59}{section.6.1}
 \contentsline {section}{\numberline {6.2}Further Work}{60}{section.6.2}
 \contentsline {appendix}{\chapternumberline {A}The First Appendix}{63}{appendix.A}
-\contentsline {chapter}{Bibliography}{65}{section*.88}
+\contentsline {appendix}{\chapternumberline {B}The Last Appendix}{71}{appendix.B}
+\contentsline {chapter}{Bibliography}{77}{section*.88}
 \select@language {dutch}
 \select@language {english}
 \select@language {dutch}
