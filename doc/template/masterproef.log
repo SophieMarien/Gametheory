@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.27)  19 AUG 2015 15:36
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.27)  19 AUG 2015 17:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1281,7 +1281,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-<logokuleng.pdf, id=147, 159.33528pt x 85.358pt>
+<logokuleng.pdf, id=135, 159.33528pt x 85.358pt>
 File: logokuleng.pdf Graphic file (type pdf)
  <use logokuleng.pdf>
 Package pdftex.def Info: logokuleng.pdf used on input line 122.
@@ -1380,30 +1380,23 @@ Overfull \hbox (0.66957pt too wide) detected at line 19
  []
 
 
-Overfull \hbox (3.71121pt too wide) detected at line 20
- \T1/lmr/m/n/10.95 xviii
+Overfull \hbox (3.31563pt too wide) detected at line 22
+ \T1/lmr/bx/n/10.95 xxii
  []
 
-
-Overfull \hbox (6.8136pt too wide) detected at line 23
- \T1/lmr/bx/n/10.95 xxiii
- []
-
-[2
+) [2
 
 
-])
+]
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
- [3] (./masterproef.tdo) [4
-
-]
+ [3]
 Underfull \hbox (badness 10000) in paragraph at lines 153--169
 
  []
 
-[5
+[4
 
 ]
 Package babel Info: Redefining dutch shorthand "|
@@ -1440,7 +1433,7 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 190.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 190.
-[6
+[5
 
 
 ]
@@ -1453,7 +1446,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 194--195
 
  []
 
-<../../doc/template/Images/FlipBasic.pdf, id=240, 512.38626pt x 108.42407pt>
+<../../doc/template/Images/FlipBasic.pdf, id=218, 512.38626pt x 108.42407pt>
 File: ../../doc/template/Images/FlipBasic.pdf Graphic file (type pdf)
 
 <use ../../doc/template/Images/FlipBasic.pdf>
@@ -1490,7 +1483,7 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 215.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 215.
- [7 <../../doc/template/Images/FlipBasic.pdf>]
+ [6 <../../doc/template/Images/FlipBasic.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 241--243
 
  []
@@ -1521,7 +1514,7 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 251.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 251.
-[8]
+[7]
 Underfull \hbox (badness 10000) in paragraph at lines 252--253
 
  []
@@ -1542,7 +1535,7 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 278.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 278.
-[9]
+[8]
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 281.
 Package babel Info: Redefining dutch shorthand "~
@@ -1587,10 +1580,10 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 293.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 293.
-[10]
+[9]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12> on input line 300.
- <Images/FlipItCase1delaytobig.pdf, id=299, 512.38626pt x 77.18385pt>
+ <Images/FlipItCase1delaytobig.pdf, id=277, 512.38626pt x 77.18385pt>
 File: Images/FlipItCase1delaytobig.pdf Graphic file (type pdf)
 
 <use Images/FlipItCase1delaytobig.pdf>
@@ -1623,13 +1616,13 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 323.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 323.
-[11 <./Images/FlipItCase1delaytobig.pdf>]
+[10 <./Images/FlipItCase1delaytobig.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 328--329
 
  []
 
 
-<../../doc/template/Images/Delayuitgelegd.pdf, id=337, 512.38626pt x 236.17334p
+<../../doc/template/Images/Delayuitgelegd.pdf, id=314, 512.38626pt x 236.17334p
 t>
 File: ../../doc/template/Images/Delayuitgelegd.pdf Graphic file (type pdf)
  <use ../../doc/template/Images/Delayuitgelegd.pdf>
@@ -1652,7 +1645,7 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 346.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 346.
- [12 <../../doc/template/Images/Delayuitgelegd.pdf>]
+ [11 <../../doc/template/Images/Delayuitgelegd.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 363--364
 
  []
@@ -1683,7 +1676,7 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 380.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 380.
-[13]
+[12]
 Underfull \hbox (badness 10000) in paragraph at lines 393--394
 
  []
@@ -1693,7 +1686,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 398--399
 
  []
 
-<../../doc/template/Images/FlipIt2.pdf, id=385, 403.371pt x 683.10506pt>
+<../../doc/template/Images/FlipIt2.pdf, id=363, 403.371pt x 683.10506pt>
 File: ../../doc/template/Images/FlipIt2.pdf Graphic file (type pdf)
 
 <use ../../doc/template/Images/FlipIt2.pdf>
@@ -1716,24 +1709,26 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 413.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 413.
- [14]
+ [13]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 419.
+(babel)             in language  on input line 416.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 419.
+(babel)             in language  on input line 416.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 419.
+(babel)             in language  on input line 416.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 419.
+(babel)             in language  on input line 416.
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 419.
+(babel)             in language  on input line 416.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 419.
+(babel)             in language  on input line 416.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 419.
+(babel)             in language  on input line 416.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 419.
- [15 <../../doc/template/Images/FlipIt2.pdf>]
+(babel)             in language  on input line 416.
+ [14 <../../doc/template/Images/FlipIt2.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 428--429
 
  []
@@ -1743,20 +1738,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 433--434
 
  []
 
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 435.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 435.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 435.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 435.
 
 Underfull \hbox (badness 10000) in paragraph at lines 436--438
 
  []
 
-<Images/borders.pdf, id=430, 572.1084pt x 353.31299pt>
+<Images/borders.pdf, id=407, 572.1084pt x 353.31299pt>
 File: Images/borders.pdf Graphic file (type pdf)
 
 <use Images/borders.pdf>
@@ -1778,7 +1765,7 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 474.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 474.
- [16]
+ [15]
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 479.
 Package babel Info: Redefining dutch shorthand "~
@@ -1811,74 +1798,76 @@ Package babel Info: Redefining dutch shorthand "y
 (babel)             in language  on input line 524.
 Package babel Info: Redefining dutch shorthand "Y
 (babel)             in language  on input line 524.
- [17 <./Images/borders.pdf>]
+ [16 <./Images/borders.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 538--540
 
  []
 
 Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 541.
+(babel)             in language  on input line 540.
 Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 541.
+(babel)             in language  on input line 540.
 Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 541.
+(babel)             in language  on input line 540.
 Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 541.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 567.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 567.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 567.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 567.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 567.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 567.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 567.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 567.
-[18]
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 567.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 567.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 567.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 567.
-Package babel Info: Redefining dutch shorthand "|
-(babel)             in language  on input line 567.
-Package babel Info: Redefining dutch shorthand "~
-(babel)             in language  on input line 567.
-Package babel Info: Redefining dutch shorthand "y
-(babel)             in language  on input line 567.
-Package babel Info: Redefining dutch shorthand "Y
-(babel)             in language  on input line 567.
- [19] (./masterproef.lof
-Overfull \hbox (0.66957pt too wide) detected at line 18
- \T1/lmr/m/n/10.95 xvii
+(babel)             in language  on input line 540.
+
+Underfull \hbox (badness 10000) in paragraph at lines 542--543
+
  []
 
-
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 549.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 549.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 549.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 549.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 549.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 549.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 549.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 549.
+[17]
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 566.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 566.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 566.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 566.
+Package babel Info: Redefining dutch shorthand "|
+(babel)             in language  on input line 566.
+Package babel Info: Redefining dutch shorthand "~
+(babel)             in language  on input line 566.
+Package babel Info: Redefining dutch shorthand "y
+(babel)             in language  on input line 566.
+Package babel Info: Redefining dutch shorthand "Y
+(babel)             in language  on input line 566.
+ [18] (./masterproef.lof
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20
+ [19
 
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21])
-(./masterproef.lot) [22]
+ [20])
+(./masterproef.lot) [21]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23
+ [22
 
 ]
-[24]
+[23] [24
+
+]
 \openout2 = `chap-10.aux'.
 
  (./chap-10.tex
@@ -1900,7 +1889,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--24
 Underfull \vbox (badness 1708) has occurred while \output is active []
 
  [1
-
 
 
 ]
@@ -1949,7 +1937,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 165--166
 
  []
 
-[9] <Images/PrisDilemma.png, id=712, 466.3824pt x 318.9516pt>
+[9] <Images/PrisDilemma.png, id=699, 466.3824pt x 318.9516pt>
 File: Images/PrisDilemma.png Graphic file (type png)
 
 <use Images/PrisDilemma.png>
@@ -2062,7 +2050,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 146--148
 
  []
 
-<Images/DefFlip.pdf, id=796, 512.38626pt x 108.42407pt>
+<Images/DefFlip.pdf, id=783, 512.38626pt x 108.42407pt>
 File: Images/DefFlip.pdf Graphic file (type pdf)
 
 <use Images/DefFlip.pdf>
@@ -2073,7 +2061,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 168--169
 
  []
 
-<Images/Delayuitgelegd.pdf, id=829, 512.38626pt x 236.17334pt>
+<Images/Delayuitgelegd.pdf, id=816, 512.38626pt x 236.17334pt>
 File: Images/Delayuitgelegd.pdf Graphic file (type pdf)
 
 <use Images/Delayuitgelegd.pdf>
@@ -2084,12 +2072,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 179--180
 
  []
 
-[21 <./Images/Delayuitgelegd.pdf>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 185--186
 
  []
 
-<Images/FlipItCase1delay.pdf, id=863, 519.29205pt x 87.99817pt>
+[21] <Images/FlipItCase1delay.pdf, id=825, 519.29205pt x 87.99817pt>
 File: Images/FlipItCase1delay.pdf Graphic file (type pdf)
 
 <use Images/FlipItCase1delay.pdf>
@@ -2105,13 +2093,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 219--220
 
  []
 
-[22 <./Images/FlipItCase1delay.pdf>]
+[22 <./Images/Delayuitgelegd.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 225--226
 
  []
 
 
-<../../doc/template/Images/DiffDelayCase1.pdf, id=895, 512.38626pt x 236.17334p
+<../../doc/template/Images/DiffDelayCase1.pdf, id=858, 512.38626pt x 236.17334p
 t>
 File: ../../doc/template/Images/DiffDelayCase1.pdf Graphic file (type pdf)
  <use ../../doc/template/Images/DiffDelayCase1.pdf>
@@ -2119,20 +2107,20 @@ Package pdftex.def Info: ../../doc/template/Images/DiffDelayCase1.pdf used on i
 nput line 234.
 (pdftex.def)             Requested size: 358.66794pt x 165.32019pt.
 
-<../../doc/template/Images/delaydtijdens.pdf, id=898, 512.38626pt x 113.75499pt
+<../../doc/template/Images/delaydtijdens.pdf, id=861, 512.38626pt x 113.75499pt
 >
 File: ../../doc/template/Images/delaydtijdens.pdf Graphic file (type pdf)
  <use ../../doc/template/Images/delaydtijdens.pdf>
 Package pdftex.def Info: ../../doc/template/Images/delaydtijdens.pdf used on in
 put line 245.
 (pdftex.def)             Requested size: 358.66794pt x 79.62793pt.
- [23]
+ [23 <./Images/FlipItCase1delay.pdf>] [24 <../../doc/template/Images/DiffDelayC
+ase1.pdf> <../../doc/template/Images/delaydtijdens.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 280--281
 
  []
 
-[24 <../../doc/template/Images/DiffDelayCase1.pdf> <../../doc/template/Images/d
-elaydtijdens.pdf>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 289--290
 
  []
@@ -2162,7 +2150,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 331--332
 
  []
 
-
+[26] [27]
 Underfull \hbox (badness 10000) in paragraph at lines 336--337
 
  []
@@ -2172,7 +2160,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 340--341
 
  []
 
-[26] [27] <Images/flipcase2nb.pdf, id=989, 403.371pt x 213.21759pt>
+<Images/flipcase2nb.pdf, id=975, 403.371pt x 213.21759pt>
 File: Images/flipcase2nb.pdf Graphic file (type pdf)
 
 <use Images/flipcase2nb.pdf>
@@ -2216,14 +2204,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 395--397
 
  []
 
-<Images/functie4.pdf, id=1023, 226.8475pt x 128.22906pt>
+<Images/functie4.pdf, id=1010, 226.8475pt x 128.22906pt>
 File: Images/functie4.pdf Graphic file (type pdf)
 
 <use Images/functie4.pdf>
 Package pdftex.def Info: Images/functie4.pdf used on input line 400.
 (pdftex.def)             Requested size: 317.58432pt x 179.51942pt.
  [29]
-<Images/benfa.pdf, id=1032, 206.92708pt x 125.28206pt>
+<Images/benfa.pdf, id=1019, 206.92708pt x 125.28206pt>
 File: Images/benfa.pdf Graphic file (type pdf)
  <use Images/benfa.pdf>
 Package pdftex.def Info: Images/benfa.pdf used on input line 421.
@@ -2238,11 +2226,7 @@ Overfull \hbox (2.47314pt too wide) in paragraph at lines 429--430
  [][] 
  []
 
-[30 <./Images/functie4.pdf> <./Images/benfa.pdf
-
-pdfTeX warning: /usr/texbin/pdflatex (file ./Images/benfa.pdf): PDF inclusion: 
-multiple pdfs with page group included in a single page
->]) [31]
+) [30 <./Images/functie4.pdf>] [31 <./Images/benfa.pdf>]
 \openout2 = `nash.aux'.
 
  (./nash.tex [32
@@ -2281,7 +2265,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 39.
 
-[33] <Images/1x.png, id=1143, 233.87375pt x 148.555pt>
+[33] <Images/1x.png, id=1129, 233.87375pt x 148.555pt>
 File: Images/1x.png Graphic file (type png)
  <use Images/1x.png>
 Package pdftex.def Info: Images/1x.png used on input line 63.
@@ -2301,7 +2285,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
-<Images/ShapesUp.png, id=1154, 446.41782pt x 315.42844pt>
+<Images/ShapesUp.png, id=1141, 446.41782pt x 315.42844pt>
 File: Images/ShapesUp.png Graphic file (type png)
 
 <use Images/ShapesUp.png>
@@ -2312,7 +2296,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
-<Images/ShapeDown.png, id=1156, 444.91219pt x 312.41719pt>
+<Images/ShapeDown.png, id=1143, 444.91219pt x 312.41719pt>
 File: Images/ShapeDown.png Graphic file (type png)
 
 <use Images/ShapeDown.png>
@@ -2323,30 +2307,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
 
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 168.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\delta' on input line 168.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 168.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 168.
-
-
-Underfull \vbox (badness 2990) has occurred while \output is active []
-
- [35 <./Images/ShapesUp.png>] <Images/case1b.pdf, id=1165, 440.312pt x 418.8980
-1pt>
+[35 <./Images/ShapesUp.png>]
+<Images/case1b.pdf, id=1153, 440.312pt x 418.89801pt>
 File: Images/case1b.pdf Graphic file (type pdf)
-
-<use Images/case1b.pdf>
+ <use Images/case1b.pdf>
 Package pdftex.def Info: Images/case1b.pdf used on input line 178.
 (pdftex.def)             Requested size: 440.31091pt x 418.89697pt.
 
@@ -2379,7 +2343,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
-<Images/cost0.pdf, id=1556, 429.34303pt x 123.43916pt>
+<Images/cost0.pdf, id=1545, 429.34303pt x 123.43916pt>
 File: Images/cost0.pdf Graphic file (type pdf)
  <use Images/cost0.pdf>
 Package pdftex.def Info: Images/cost0.pdf used on input line 245.
@@ -2394,7 +2358,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 254--255
 
  []
 
-[39 <./Images/cost0.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 273.
@@ -2420,40 +2383,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 275--276
 
  []
 
+[39 <./Images/cost0.pdf>]
 File: Images/1x.png Graphic file (type png)
-<use Images/1x.png>
+ <use Images/1x.png>
 Package pdftex.def Info: Images/1x.png used on input line 294.
 (pdftex.def)             Requested size: 233.87315pt x 148.55463pt.
- [40]
+
 Underfull \hbox (badness 10000) in paragraph at lines 317--319
 
  []
 
-
+[40]
 Underfull \hbox (badness 10000) in paragraph at lines 353--355
 
  []
 
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 356.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\delta' on input line 356.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 356.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 356.
-
-[41] <Images/case1A.pdf, id=1644, 440.312pt x 418.89801pt>
+<Images/case1A.pdf, id=1626, 440.312pt x 418.89801pt>
 File: Images/case1A.pdf Graphic file (type pdf)
-
-<use Images/case1A.pdf>
+ <use Images/case1A.pdf>
 Package pdftex.def Info: Images/case1A.pdf used on input line 370.
 (pdftex.def)             Requested size: 440.31091pt x 418.89697pt.
 
@@ -2461,7 +2408,7 @@ Overfull \hbox (42.31091pt too wide) in paragraph at lines 370--371
  [][] 
  []
 
-
+[41] [42 <./Images/case1A.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 384--387
 
  []
@@ -2471,7 +2418,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 399--401
 
  []
 
-[42] [43 <./Images/case1A.pdf>]
+[43]
 Underfull \hbox (badness 10000) in paragraph at lines 413--414
 
  []
@@ -2481,16 +2428,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 426--428
 
  []
 
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 431.
-) [44] [45]
+) [44]
 \openout2 = `chap-4.aux'.
 
- (./chap-4.tex [46
-
-
-
-]
+ (./chap-4.tex
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
@@ -2505,7 +2446,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
-[47] [48]
+[45
+
+
+
+] [46]
 Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
@@ -2520,13 +2465,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
-[49] <Images/Picture2.png, id=1752, 592.1322pt x 490.4724pt>
+[47] <Images/Picture2.png, id=1733, 592.1322pt x 490.4724pt>
 File: Images/Picture2.png Graphic file (type png)
 
 <use Images/Picture2.png>
 Package pdftex.def Info: Images/Picture2.png used on input line 100.
 (pdftex.def)             Requested size: 325.6737pt x 269.76065pt.
- [50 <./Images/Picture2.png>]
+ [48 <./Images/Picture2.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 121--123
 
  []
@@ -2546,7 +2491,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--153
 
  []
 
-[51]
+[49]
 Underfull \hbox (badness 10000) in paragraph at lines 161--163
 
  []
@@ -2561,7 +2506,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 248--250
 
  []
 
-[52]
+[50]
 Underfull \hbox (badness 10000) in paragraph at lines 258--259
 
  []
@@ -2576,7 +2521,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 290--293
 
  []
 
-[53]
+[51]
 Underfull \hbox (badness 10000) in paragraph at lines 294--296
 
  []
@@ -2594,7 +2539,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 374--375
 
 Underfull \vbox (badness 2698) has occurred while \output is active []
 
- [54]
+ [52]
 Underfull \hbox (badness 10000) in paragraph at lines 389--390
 
  []
@@ -2609,7 +2554,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 422--424
 
  []
 
-[55]
+[53]
 Underfull \hbox (badness 10000) in paragraph at lines 440--441
 
  []
@@ -2624,7 +2569,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 444--445
 
  []
 
-[56]
+[54]
 Underfull \hbox (badness 10000) in paragraph at lines 519--520
 
  []
@@ -2635,7 +2580,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 528--529
  []
 
 
-LaTeX Warning: Reference `Arnoldi' on page 57 undefined on input line 530.
+LaTeX Warning: Reference `Arnoldi' on page 55 undefined on input line 530.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 530--531
@@ -2647,15 +2592,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 543--545
 
  []
 
-[57]
+[55]
 Underfull \hbox (badness 10000) in paragraph at lines 575--576
 
  []
 
-) [58]
+) [56]
 \openout2 = `conclusion.aux'.
 
- (./conclusion.tex [59
+ (./conclusion.tex [57
 
 
 
@@ -2664,34 +2609,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
-) [60] (./masterproef.bbl [61
+) [58] (./masterproef.bbl [59
 
 
 
-] [62]) [63] [64
+] [60]) [61] [62
 
 ]
 \tf@toc=\write6
 \openout6 = `masterproef.toc'.
 
-\tf@tdo=\write7
-\openout7 = `masterproef.tdo'.
+\tf@lof=\write7
+\openout7 = `masterproef.lof'.
 
-\tf@lof=\write8
-\openout8 = `masterproef.lof'.
+\tf@lot=\write8
+\openout8 = `masterproef.lot'.
 
-\tf@lot=\write9
-\openout9 = `masterproef.lot'.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 655.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 655.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 654.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 654.
  (./masterproef.aux
 (./chap-10.aux) (./chap-5.aux) (./chap-9.aux) (./nash.aux) (./chap-4.aux)
 (./conclusion.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 655.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 655.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 654.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 654.
 Package rerunfilecheck Info: File `masterproef.out' has not changed.
-(rerunfilecheck)             Checksum: 2918411440FA7654CB483E258E7C5FF2;2374.
+(rerunfilecheck)             Checksum: 7318F01E9292ABFCBEA7CA9E7FB881AB;2165.
 
 
 LaTeX Warning: There were undefined references.
@@ -2699,16 +2641,16 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 655.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 654.
  ) 
 Here is how much of TeX's memory you used:
- 25691 strings out of 493315
- 443364 string characters out of 6137903
- 712640 words of memory out of 5000000
- 28032 multiletter control sequences out of 15000+600000
+ 25637 strings out of 493315
+ 442432 string characters out of 6137903
+ 713561 words of memory out of 5000000
+ 27985 multiletter control sequences out of 15000+600000
  113337 words of font info for 219 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 61i,14n,92p,2194b,865s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,13n,92p,2198b,863s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
 texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/20
 13/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2013/texmf-d
@@ -2733,10 +2675,10 @@ texlive/2013/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/201
 3/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2013/texmf-di
 st/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2013/texmf-dist/font
 s/type1/urw/helvetic/uhvr8a.pfb>
-Output written on masterproef.pdf (90 pages, 6291566 bytes).
+Output written on masterproef.pdf (88 pages, 6292661 bytes).
 PDF statistics:
- 2003 PDF objects out of 2073 (max. 8388607)
- 1172 compressed objects within 12 object streams
- 309 named destinations out of 1000 (max. 500000)
- 29075 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 1983 PDF objects out of 2073 (max. 8388607)
+ 1154 compressed objects within 12 object streams
+ 305 named destinations out of 1000 (max. 500000)
+ 29051 words of extra memory for PDF output out of 29859 (max. 10000000)
 

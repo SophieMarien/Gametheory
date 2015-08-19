@@ -14,7 +14,7 @@ The overview of this chapter will be as follows: Section \ref{methodsofpropagati
 %This chapter is based on the following papers: \cite{importantjournal}, \cite{OnWorms2005survey}, \cite{GameTheorApprCostBenefitAnalyses} and \cite{SecurelistAPT}.
 
 
-\section{Methods of propagation}
+\section{Methods of Propagation}
 \label{methodsofpropagation}
 
 In the context of malware propagation, there are two kinds of APTs. First, there are APTs that launch an attack on just one target node of a network. The mechanism these APTs use to propagate malware is the dropper mechanism. The dropper is the initial attack vector that compromises the single targeted node of the system. The second kind of APTs target multiple nodes. These APTs also use a dropper mechanism but have an additional mechanism for self-propagation in order to propagate themselves to the multiple targeted nodes of the system. If the APT uses virus spreading, the virus infects one node on the network and has to wait for human interaction to spread. As such the spreading speed depends on the human interaction, and modelling virus propagation therefore requires modelling human behaviour. If an APT uses a worm propagation method it will spread by itself after it has been dropped on the network. Given the additional complexity of incorporating the human factor in a spreading method and that this chapter is merely meant as illustration on calculating the delay for use in the game theoretic approach, this chapter will be limited to worm propagation models for APTs. \\
@@ -61,7 +61,7 @@ file sharing systems, which have been used by worms to propagate in a similar wa
 
  Modelling the propagation methods described above can help us to find the time needed for a worm to infect the whole network. This will be equal to the \textit{d} parameter in the FlipIt model with propagation delay. \\
 
-\section{Models for worm propagation}
+\section{Models for Worm Propagation}
 \label{modelsforpropagation}
 Early work on worm propagation models are based on the spread of real-world epidemic diseases. These models are based on the transition state of each node in the network.\\
 
@@ -284,7 +284,7 @@ The biggest limitation of the model is that is expressed in discrete time. Conti
 %A method to calculate the propagation of the virus in an easy way. Google page ranking algorithm. 
 
 
-\section{Matrix worm model}
+\section{Matrix based Worm Model}
 \label{eigenmatrixmethode}
 
 As can be seen in table \ref{tree} all propagation models depend on a specific network topology. A distinction is made between four kinds of network topologies: homogeneous, non-homogeneous, random network or power-law network. A homogeneous network is a network where every node has about the same degree of connectivity and each connection has the same probability. A non-homogeneous network is a network in which not all the nodes have the same degree and the connections have a different probability.
@@ -511,7 +511,7 @@ These matrix calculations may seem very time consuming, but in the domain of net
 %				
 %		
 %\end{verbatim}
-\section{PageRank algorithm}
+\section{PageRank Algorithm}
 \label{googlesec:5.4}
 
 %-Remark stijn- 2 verschillende definities of page rank? of heb ik het niet door
@@ -575,6 +575,6 @@ $p$ defines the damping factor and indicates the probability that a surfer quits
 The PageRank vector of a graph, with the transposition matrix\textit{ A} and the damping variable \textit{p}, is equal to the probabilistic eigenvector of the matrix \textit{M}, corresponding to the eigenvalue 1. This can be calculated by the use of the power iteration. \\
 
 We can use the Google matrix to calculate the probability that a node in a graph is infected by a worm after a certain amount of time. When a worm uses the topology of the graph to propagate the damping variable p must be set equal to zero, as in the worm will not suddenly attack a node that is not connected. If the propagation of a worm is topology independent, the damping variable \textit{p} can be set to 1. \\
-The ranking of nodes provides interesting avenues for further research for the case where the defender flips a subset of nodes (rather than the entire network). It can be advantageous to flip the nodes with a higher PageRank more often than the other nodes. A higher PageRank means that the page has a higher probability of being compromised by a worm. 
+The ranking of nodes provides interesting avenues for further research for the case where the defender flips a subset of nodes (rather than the entire network). It can be advantageous to flip the nodes with a higher PageRank more often than the other nodes. A higher PageRank means that the node has a higher probability of being compromised by a worm. 
 
 

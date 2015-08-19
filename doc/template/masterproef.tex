@@ -129,7 +129,7 @@ delay for an APT propagation into account, which in our case will be a delay for
 %meesterproef, maar zijn een belangrijke hulp voor mijn academische
 %studies in het geheel. Zonder hen zou niets wat ik tot nu toe heb
 %bereikt, mogelijk geweest zijn
- Many people have helped in the realization of this thesis. 
+ Many people have helped in the realisation of this thesis. 
   I would like to thank everybody who kept me busy the last year and made it possible for me to finish my thesis.\\
   
   First of all, I would like to thank my promoter and my assistants for their support during the writing of this paper. Without their guidance this paper would not have been possible. They helped me figure out what to do and put a lot of time and effort in this work.\\
@@ -145,7 +145,7 @@ delay for an APT propagation into account, which in our case will be a delay for
 \end{preface}
 
 \tableofcontents*
-\listoftodos
+
 \begin{abstract}
 
 %  The \texttt{abstract} environment contains a more extensive overview of  the work. But it should be limited to one page.
@@ -278,7 +278,7 @@ Uit het onderzoek van het FlipIt framework zijn er een aantal interessante resul
 \end{itemize}
 
 
-\section {FlipIt Met Propagatie Vertraging}
+\section {FlipIt met Propagatie Vertraging}
 \label{ch: flipitvirus}
 Het FlipIt spel bestaat uit een enkele bron. Om het security probleem voor te stellen van een APT die propageert doorheen een netwerk, defini"eren we de bron als een computer netwerk met meerdere knooppunten. Een van de spelers, de verdediger, zal proberen om zijn netwerk te verdedigen. Hij zal dit doen door elk knooppunt van het netwerk te flippen. De andere speler, de aanvaller, zal proberen om alle knooppunten in het netwerk te infecteren. De aanvaller zal dit doen door een APT te droppen op een van de knooppunten in het netwerk. Deze APT zal zich dan verspreiden en andere knooppunten in het netwerk infecteren. \\
 
@@ -294,7 +294,7 @@ De formalisering begint bij het model van het niet-adaptieve continue basis Flip
 
 We delen de formalisatie op in drie gevallen. Gelijkaardig als in FlipIt \citep{FlipIt}, is er het geval waarbij de verdediger minstens zo snel speelt als de aanvaller en in het andere geval waarbij de aanvaller minstens zo snel speelt als de verdediger. Voor beide gevallen presenteren we eerst de \textit{gain} formule van een FlipIt spel zonder vertraging, en daarna introduceren we de vertraging. Het derde geval is een speciaal geval waarbij de periode van de verdediger trager of gelijk is aan de vertraging. 
 
-\subsection{ Formalisering van de benefitformule met een vertraging}
+\subsection{Formalisering van de benefitformule met een vertraging}
 Een periodische strategie is een niet-adaptieve strategie waarin het tijdsinterval tussen twee opeenvolgende bewegingen een constante is, weergegeven als $\delta$. Bovendien heeft het een random fase die uniform en random gekozen is in het eerste interval tijdens de eerste flip $[0,\delta]$. De gemiddelde snelheid van de bewegingen van een speler is uitgedrukt als volgt: $\alpha_{i} = \dfrac{1}{\delta_{i}}$. 
 
 \subsection*{\textit{Case 0:} $\delta_{D} \leq d$ (De verdediger speelt met een periode trager of gelijk aan de vertraging}
@@ -400,7 +400,7 @@ De benefit van de aanvaller is dan als volgt:
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=0.5]{../../doc/template/Images/FlipIt2}
-\caption{Case 2.a waar d + $\delta_{A} \leq \delta_{D}$}
+\caption{ Alle verschillende situaties voor de verdediger en de aanvaller in case 2.a waar d + $\delta_{A} \leq \delta_{D}$ Van case (1) tot case (4) zal de verdediger de controle hebben gedurende een perdiode van $d$ in het interval dat volgt op het interval waarin de verdediger geflipt heeft.}
 \label{fig:case2}
 \end{figure}
 
@@ -432,7 +432,7 @@ De benefit voor de aanvaller is de volgende formule:
 \beta_{A}(\alpha_{D},\alpha_{A}) = 1 -\dfrac{\delta_{A}}{2\delta_{D}} - \dfrac{d}{\delta_{D}} - k_{A} \alpha_{A} + \dfrac{(d - (\delta_{D} - \delta_{A}))^{2}}{2 \delta_{D} \delta_{A}}
 \end{equation}\\
 
-\section{Samenvatting}
+\section*{Samenvatting}
 We berekenden de benefit voor beide spelers voor de volgende drie gevallen: wanneer $ \delta_ {D} $ kleiner is dan $ d $, wanneer $ \delta_ {D} $ kleiner is dan $ \delta_ {A} $ en wanneer $\delta_{D}$ groter is dan $ \delta_ {A} $. \\
 De benefit formules voor case 1 en case 2.b leiden tot hetzelfde resultaat. Deze twee cases kunnen worden samengebracht door het aanpassen van de randvoorwaarden. Op figuur \ref{grensen} toont de linkse voorstelling de cases die samengebracht kunnen worden. Case 1 en case 2.b liggen naast elkaar. Het resultaat van het samenbrengen is visueel te zien op de rechtse voorstelling in figuur \ref{grensen}.\\
 
@@ -476,7 +476,7 @@ De benefit formule voor de aanvaller is als volgt:
 De piecewise functies zijn ook functies die continu zijn. Door de randgevallen in te vullen, (e.g $\delta_{D}=d$ voor case A en case B), bekomt ben dezelfde formule.
   
 
-\section{Optimale strategi"en voor de aanvaller en de verdediger}
+\section{Optimale Strategi"en voor de Aanvaller en de Verdediger}
 Na het bepalen van de benefit functies zijn we ge"interesseerd in de optimale strategi"en van de aanvaller en de verdediger. Vanuit deze strategi"en kunnen later de Nash evenwichten bepaald worden. De berekening van de optimale strategi"en, gegeven een bepaalde periode van de tegenpartij zijn als volgt:\\
 %Na het bepalen van de benefit functies voor de verdediger en de aanvaller, zijn we geinteresseerd in het vinden van de Nash evenwichten. Dit zijn de evenwichten waarbij de spelers benefit niet gaat vergroten door te veranderen van de speel frequentie.  \\
 %Hiervoor moeten eerst de optimale strategi"en bepaald worden. Uit deze optimale strategi"en kan het Nash evenwicht bepaald worden. \\
@@ -530,28 +530,27 @@ De functie $opt_{A}(\delta_{D})$ :
      \infty & \delta_{D} = 0 \\
      \left[0,\infty\right] & \delta_{D} \leq d ~~\& ~~k_{A}=0 \\
           \left[0,\delta_{D} - d\right] & \delta_{D} > d ~~\& ~~k_{A}=0 \\
-                 \infty & \delta_{D} < \dfrac{(\delta_{D}-d)^{2}}{2k_{A}} \\
-       \left[ \sqrt{d k_{A}\delta_{D}}, \infty\right],  & \delta_{D} = \dfrac{(\delta_{D}-d)^{2}}{2k_{A}} \\
-       \sqrt{d k_{A}\delta_{D}}, & \delta_{D} > \dfrac{(\delta_{D}-d)^{2}}{2k_{A}}
+            \infty & \delta_{D} < d+k_{A} + \sqrt{2dk_{A}+k_{A}^{2}} \\
+       \left[ \delta_{D}-d, \infty\right],  & \delta_{D} = d+k_{A} + \sqrt{2dk_{A}+k_{A}^{2}} \\
+    	\delta_{D}-d, & \delta_{D} > d+k_{A} + \sqrt{2dk_{A}+k_{A}^{2}}
      \end{array}
    \right.
 \end{displaymath}
 \\
-
-\section{Conclusions and Further Research}
+\section{Conclusie}
 \label{ch:conclusion}
-In this paper we presented an adaptation of the FlipIt game to the situation of a virus propagation, such as to take the delay for network infection into account. We discerned two cases. In the case the defender plays faster than the attacker, the attacker simply looses the delay. In the case the attacker plays faster, each time the defender plays in an interval, he will gain extra time of the delay. The delay is therefore always detrimental to the benefit of the attacker. 
-This demonstrates that the FlipIt game can be adapted to a game with propagation delay. Further research needs to be performed to calculate the impact of the delay on Nash equilibria and the determination of optimal defender and attacker strategies.
+Deze thesis presenteerde een aanpassing aan het basische FlipIt spel \citep{FlipIt} om de propagatie van een virus in rekening te brengen. We onderscheiden drie gevallen: het geval waarbij de verdediger trager of even snel speelt als de vertraging, het geval waarbij de verdediger trager of even snel speelt als de aanvaller en het geval waarbij de verdediger sneller of even snel speelt als de aanvaller. In het geval waarbij de verdediger sneller speelt dan de aanvaller, zal de aanvaller telkens benefit verliezen door de vertraging. In het geval waarbij de aanvaller sneller speelt dan de verdediger, zal de verdediger telkens hij speelt, extra benefit krijgen door de aanvaller. Dit laat zien dat de vertraging dus steeds nadelig is voor de aanvaller. Verder onderzoek moet kunnen aantonen wat de exacte impact van de vertraging van de aanvaller heeft op de Nash evenwichten en het bepalen van de optimale strategie voor de aanvaller.\\
 
-Our FlipIt model with worm propagation delay showed us some interesting results. 
+Het bepalen van de optimum functies voor de verdediger en de aanvaller van het FlipIt spel met de vertraging leidde tot interessante resultaten: 
 \begin{itemize}
-\item When the defender plays faster than the delay, the attacker will either have a negative benefit or a benefit equal to zero if the flips do not cost anything. It is for the defender a target to be able to play at a rate smaller or equal to the delay.
-\item If the defender can play with a cost equal to zero, the attacker will not play. The defender can play at any rate he wants, and the attacker is always disadvantaged by his delay.
-\item From a certain value for the speed of the attacker, the defender will not play any more or will play at the same rate. The same for the attacker.
+\item Wanneer de verdediger sneller speelt dan de vertraging zal de aanvaller ofwel als zijn kost niet nul is niet spelen. Zijn benefit in dit geval zal altijd negatief zijn. Ofwel als zijn kost nul is, zal hij zo snel mogelijk spelen, hij verliest er geen benefit door. 
+\item Als de verdediger kan spelen met een kost gelijk aan nul, dan zal de aanvaller niet spelen. Doordat de kost nul is, kan de verdediger zo snel spelen als hij kan. Ook al probeert de aanvaller even snel te spelen als de verdediger, de vertraging zal altijd nadelig zijn voor de aanvaller. 
+\item Vanaf een bepaalde snelheid van de aanvaller zal de verdediger niet meer spelen. Hetzelfde geldt voor een specifieke waarde van de verdediger, waarbij de aanvaller zal kiezen om niet meer te spelen.
 \end{itemize}
 
-As of today APTs become more and more extraordinary pieces of malicious code. There are APTs known to survive military-grade disk wiping and reformatting, and even after the reformatting and reinstalling the operating system are able to send sensitive data (Equation group \citep{Equation}). This means that even if you know that an APT is on your network, the actual practical "flip" has to exist or known by the defender.  \\
-The best way to secure a system is to find the weakest link. This is mostly the employee. To counter this problem, you have to raise the awareness of the risks.  Awareness is very important. Even if you have good security protection layers, spam filters, firewalls, a phishing mail opened by one of your employees or a USB stick is enough to infect a pc on the network and by that it can spread further. But a system can never be 100\% waterproof. If an infection has occurred and the defender knows a counter measure, the FlipIt game will help to prevent a system to be compromised. 
+APTs zijn steeds meer en meer bijzonder gesofisticeerde kwaadaardige stukken code.  Er zijn APTs bekend die militaire disk-wiping en opnieuw formatteren overleven. Na het formatteren en het opnieuw installeren van het besturingssysteem kunnen deze APTs nog in staat zijn om gevoelige informatie door te sturen (Equation group \citep{Equation}). Dit betekent dat zelfs als de verdediger weet dat een APT het netwerk ge"infecteerd heeft, de werkelijke praktische `` flip '' dient te bestaan en gekend moet zijn door de verdediger. \\
+De meest effici"ente manier om een netwerk systeem te beveiligen is de zwakste link ontdekken. Dit zijn meestal de werknemers. Een effectieve manier om dit probleem tegen te gaan is om het bewustzijn over de risico's van infecties bij de medewerkers te verhogen. Zelfs in aanwezigheid van goede security protection layers, spamfilters en firewalls kan het openen van een phishing mail of gebruik van een onbekende USB stick door een van werknemers genoeg zijn om het netwerk te infecteren. Een systeem kan echter nooit 100 \% waterdicht zijn. Indien een infectie heeft plaatsgevonden en de verdediger kent een tegenmaatregel, dan kan het Flipit spel helpen om de meest effectieve tempo te bepalen waarin tegenmaatregelen moeten worden doorgebracht.
+
 %In dit \textit{abstract} environment wordt een al dan niet uitgebreide
 %Nederlandse samenvatting van het werk gegeven.
 %Wanneer de tekst voor een Nederlandstalige master in het Engels wordt

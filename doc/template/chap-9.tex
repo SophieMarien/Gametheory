@@ -1,4 +1,4 @@
-\chapter{FlipIt with propagation delay}
+\chapter{FlipIt with Propagation Delay}
 \label{chapter2:FlipIt with virus propagation}
 %\documentclass[10pt]{article}
 %\begin{document}
@@ -20,7 +20,7 @@ The FlipIt game with propagation delay considers a game where the moves of the a
 %
 %The actions of a defender: the actions of an attacker:
 
-\section{Difference between FlipIt with and without propagation delay}
+\section{Difference between FlipIt with and without Propagation Delay}
 \label{ch2:diffFlip}
 
 %\textbf{Section:Required adaptations to the FlipIt game}
@@ -42,8 +42,8 @@ By defining the resource as a network with multiple nodes it is possible to incr
 
 
 The network is composed of multiple nodes. The defender can choose to flip one node, a subset of nodes or all nodes of the network. The analyses in this paper is based on the assumption that the defender flips all the nodes in the network every time he plays. This action can be extended to flipping only a subset of the nodes or a single node of the network. This extension has already been investigated in the context of installing anti-virus systems on specific nodes in a graph and investigating how this affects the spreading of malware. 
-In chapter \ref{chapter4: Worm propagation}, when discussing future work, the use of a matrix model is discussed to determine the probability that a node is infected by malware.  \\
-The attacker only has one action: sending different kinds of malware to a computer network. Every time the attacker flips the resource, he does this by sending a new kind of malware e.g worm to the system. The attacker does not send the same malware again, because if the computers are patched, the malware will be unable to penetrate the system. The node can be a targeted node or a random node. If the attacker has knowledge about the topology of the network, the attacker can choose to target a specific node. Most likely, this will be the node that can infect all other nodes in a minimum timespan.
+In chapter \ref{chapter4: Worm propagation}, when discussing future work, the use of a matrix model is discussed to determine the probability that a node is infected by malware. A practical example of a flip of the defender may consist of patching, formatting, disk-wiping or unplugging a computer on the network. \\
+The attacker only has one action: sending different kinds of malware to a computer network. Every time the attacker flips the resource, he does this by sending a new kind of malware e.g virus to the system. The attacker does not send the same malware again, because if the action of the defender, e.g. consists of patching, the malware will be unable to penetrate the system. The node can be a targeted node or a random node. If the attacker has knowledge about the topology of the network, the attacker can choose to target a specific node. Most likely, this will be the node that can infect all other nodes in a minimum timespan.
 \subsection{Immediate effect of the move}
 %The framework of FlipIt is used to model targeted attacks. In FlipIt when an attacker attacks, he will get immediately control over the resource. One of the differences is that FlipIt does not consider that moves of the attacker might not be instantaneous. 
 %With FlipIt with a propagation delay we model the fact that if the attacker flips, he does not get immediate control over the resource.  This is motivated by the fact that it takes a while before a targeted attack can compromise a computer network. The virus or worm has to spread to infect sufficient computer controlled device in the network. This propagation make take a while. \\
@@ -55,9 +55,9 @@ first infected node to the farthest node. Rather than denoting the time needed f
 The moves of the defender are immediate. It is assumed that if a defender tries to clean the network that this will happen without a delay. The defender can de-plug the computer from the network, push a security update to all pc's, or even format a pc. 
 \subsection{Stealth character of the move}
 Moves in the basic FlipIt game are stealthy or covert and not immediately detected by the other player. The attacker's moves are stealthy because we want to model a scenario where a computer network is attacked by an APT. The main characteristic of an APT is that the attack is stealthy. Depending on how the attacker has set up his attack, and depending on whether or not the network is connected with the Internet, the moves of the defender are stealthy or not stealthy. For example, if the attacker launches an APT only to harm the system and not to receive feedback, the moves of the defender are stealthy. If the attacker launches an APT to steal sensitive information, the moves of the defender are non stealthy because if the defender takes actions the attacker can see that he does not receive information any more. \\
-In this paper we assume that both moves of the attacker and the defender are stealthy. Our motivation for a defender with stealthy moves is that it can not be assumed that every attacker can receive feedback from an APT. Some APTs can be resident on a isolated network (e.g. the Stuxnetworm), meaning that there is no way to connect to the Internet. \\
+In this paper we assume that both moves of the attacker and the defender are stealthy. Our motivation for a defender with stealthy moves is that it can not be assumed that every attacker can receive feedback from an APT. Some APTs can be resident on a isolated network (e.g. the \textit{Stuxnetworm}), meaning that there is no way to connect to the Internet. \\
 %Another example is by the use of honeypots. 
-Even when the APT is launched to steal sensitive information the defender can set-up a honey pot, making the attacker believe that he is stealing sensitive information, but the information in the honeypot is all fake. Honeypots emulate services or creates multiple instances of real operating systems and can pretend to have sensitive information.  The case where the moves of the defender are non stealthy has already been investigated by Laszka \citep{MitigationNonTargeted}.
+Even when the APT is launched to steal sensitive information the defender can set-up a honey pot, making the attacker believe that he is stealing sensitive information, but the information in the honeypot is all fake. Honeypots emulate services or creates multiple instances of real operating systems and can pretend to have sensitive information.  While the analysis in this paper is limited to immediate effect of the defender's moves, the case where the moves of the defender are non stealthy has already been investigated by Laszka \citep{MitigationNonTargeted}.
 
 
   
@@ -68,7 +68,7 @@ The cost of the attacker depends on the complexity of the vulnerabilities exploi
 The formal definition of the adapted FlipIt game starts from the model of the non-adaptive continuous basic FlipIt game where players use a periodic strategy with a random phase. \\
 
 \textbf{No feedback (non-adaptive)}\\
-Non-adaptive strategies are chosen because of the assumption that both players will receive no feedback during the game. This is motivated by the fact that the identity of the attackers and their attack strategy is rarely known to the defenders. In the case of the attacker, if an attacker wants to have feedback it may be disadvantageous if he wants to stay undetected. If the attacker wants to have feedback, the malware needs to make a connection with the attacker to provide this feedback. For example, this can cause more network traffic for the defender to detect. \\
+Non-adaptive strategies are chosen because of the assumption that both players will receive no feedback during the game. This is motivated by the fact that the identity of the attackers and their attack strategy is rarely known to the defenders. In the case of the attacker, if an attacker wants to have feedback, receiving feedback may compromise the desire to stay undetected. To be able to get feedback, the malware needs to make a connection with the attacker to provide this feedback. This may for example cause extra network traffic, which can be detected by the defender. \\
 
 \textbf{Periodic strategy}\\
 The choice of periodic strategy is motivated by the assumption that in most organisations, the defence strategy is to periodically defend the network.  This is true for the example of patching. Companies like Microsoft and Google release their security patches at fixed intervals, so companies will apply these patches as they come out. Microsoft security bulletins are released, for example, on the Second Tuesday of each month. \cite{MicroPatch} \\
@@ -140,7 +140,7 @@ Further research can investigate the effect of relaxing this assumption. \\
 
 
 
-\section{Formalization of the periodic game with propagation delay}
+\section{Formalization of the Periodic Game with Propagation Delay}
 \label{ch2:periodicvirus}
 
  A Periodic strategy is a non-adaptive renewal strategy where the time intervals between consecutive moves are a fixed period, denoted by $\delta$. It has a random phase, that is chosen uniformly and randomly in the interval $[0,\delta]$ for the first move. The average rate of play of a player is denoted by $\alpha_{i} = \dfrac{1}{\delta_{i}}$. Given below is a list of symbols that will be used throughout the paper. Figure \ref{FlipItDelay} clarifies the main symbols.\\
@@ -149,12 +149,12 @@ Further research can investigate the effect of relaxing this assumption. \\
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=0.7]{Images/DefFlip.pdf}
-\caption{Formalization of a FlipIt game with delay: A representation of a FlipIt game where both players are playing periodically. Every move or flip is indicated by a green or orange circle, respectively dark gray and light grey.  The defender is represented in green (dark grey) and plays with a period of $\delta_{D}$. The flip of the attacker is represented by a white circle, but because there is a delay d, the attacker only controls the resource after time d represented by an orange circle (light grey). The attacker plays with a period of $\delta_{A}$. The green and orange rectangles represent the amount of time the respective player is in control of the resource.}
+\caption{Formalization of a FlipIt game with  propagation delay: A representation of a FlipIt game where both players are playing periodically. Every move or flip is indicated by a green or orange circle, respectively dark gray and light grey.  The defender is represented in green and plays with a period of $\delta_{D}$. The flip of the attacker is represented by a white circle, but because there is a delay d, the attacker only controls the resource after time d represented by an orange circle. The attacker plays with a period of $\delta_{A}$. The green and orange rectangles represent the amount of time the respective player is in control of the resource.}
 \label{FlipItDelay}
 \end{figure}
 
 \begin{description}
-\item $i$: Denotes the player. \textit{D} denotes the defender, and \textit{A} denotes the attacker which differs form the notation in \citep{FlipIt}, where the defender is denoted by the subscript \textit{0} and the attacker by the subscript \textit{1}.
+\item $i$: Denotes the player. \textit{D} denotes the defender, and \textit{A} denotes the attacker which differs from the notation in \citep{FlipIt}, where the defender is denoted by the subscript \textit{0} and the attacker by the subscript \textit{1}.
 \item $\delta_{i}$: The length of the interval between two consecutive moves of player \textit{i}. 
 \item $\alpha_{i}$: The average flip rate of player \textit{i}, given by $\alpha_{i}=1/\delta_{i}$.
 \item $k_{i}$: The cost of player \textit{i}'s moves.
@@ -165,20 +165,20 @@ Further research can investigate the effect of relaxing this assumption. \\
 \item $opt_{i}$: The optimum function for player \textit{i}. 
 \end{description}
 
-The adaptation of the FlipIt model starts from the assumption that, when an attacker attacks at time \textit{t}, he doesn't get immediate control over the resource, but he only gains control at time \textit{t + d}, with $d$ denoting the time needed to infect a sufficient number of (or all) nodes. If the defender flips the network before the period $d$ has elapsed (so, somewhere between $t$ and $t + d$), then the attacker will never gain full control over the resource. (See figure \ref{dt} at point 3 and 4). This implies that the mathematical formulas for gain and benefit need to be adapted to the fact that the attacker loses part of his benefit because of this delay. In the remainder of this paper, we will adapt the formalization of the FlipIt game using the delay variable $d$. \\ 
-
+The adaptation of the FlipIt model starts from the assumption that, when an attacker attacks at time \textit{t}, he doesn't get immediate control over the resource, but he only gains control at time \textit{t + d}, with $d$ denoting the time needed to infect a sufficient number of (or all) nodes. If the defender flips the network before the period $d$ has elapsed (so, somewhere between $t$ and $t + d$), then the attacker will never gain full control over the resource. (See figure \ref{dt} at points 3 and 4). This implies that the mathematical formulas for gain and benefit need to be adapted to the fact that the attacker loses part of his benefit because of this delay. In the remainder of this paper, we will adapt the formalization of the FlipIt game using the delay variable $d$. \\ 
+We adapt the same definition for players that play at the same time as in the original FlipIt game. The probability that this happens will be close to zero, but if it happens the moves cancel each other out and no change of control happens (see figure \ref{dt} point 3).\\
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=0.7]{Images/Delayuitgelegd.pdf}
-\caption{The first game is the basic FlipIt game. The second is the FlipIt game with a delay. During the first flip of the attacker, the defender moves after the delay (point 2), resulting in the attacker gaining control over the resource, until the defender flips. During the second flip of the attacker, the defender flips at time t+d, causing the defender to retain control over the resource before the attacker. During the third and final flip of the attacker, the defender flips during time t+d, causing the attacker to never gain control over the resource. }
+\caption{The first game is the basic FlipIt game. The second is the FlipIt game with a delay. During the first flip of the attacker, the defender moves after the delay (point 2), resulting in the attacker gaining control over the resource, until the defender flips. During the second flip of the attacker, the defender flips at time t+d, causing the defender to retain control over the resource before the attacker can gain control. During the third and final flip of the attacker, the defender flips during time t+d, causing the attacker to never gain control over the resource. }
 \label{dt}
 \end{figure}
 
 
 %
-We split the formalization in three cases. Similarly as in \cite{FlipIt}, there is the case where the defender plays at least as fast as the attacker, and the case where the attacker plays at least as fast as the defender. For each of these cases, the benefit formula of the basic case without delay is presented first, and subsequently the delay is introduced.  The third case is a special case where the period of the defender is smaller than the delay.\\
+We split the formalization in three cases. Similarly as in the original FlipIt game, there is the case where the defender plays at least as fast as the attacker, and the case where the attacker plays at least as fast as the defender. For each of these cases, the benefit formula of the basic case without delay is presented first, and subsequently the delay is introduced.  The third case is a special case where the period of the defender is smaller than the delay.\\
 
-In the original model of FlipIt \cite{FlipIt}, the authors express the formulas in terms of $\alpha_{D}$ and $\alpha_{A}$. However, when introducing the delay, some formulas become much simpler when expressed in terms of $\delta_{D}$ and $\delta_{A}$. Therefore in the remainder of this paper, we will formulate the model using both $\alpha_{i}$ and $\delta_{i}$, depending on which variable gives the simplest representation of the formulas.
+In the original model of FlipIt, the authors express the formulas in terms of $\alpha_{D}$ and $\alpha_{A}$. However, when introducing the delay, some formulas become much simpler when expressed in terms of $\delta_{D}$ and $\delta_{A}$. Therefore in the remainder of this paper, we will formulate the model using both $\alpha_{i}$ and $\delta_{i}$, depending on which variable gives the simplest representation of the formulas.
 
 \subsection*{Case 0: $\delta_{D} \leq d$ (The defender plays with a period smaller than the delay)}
 
@@ -295,7 +295,7 @@ An intuitive solution for the case with a virus would be to subtract the benefit
 
 This however results in an overestimation. 
 %By simulation the game, it can be notices that the closer $\delta_{A}/\delta_{D}$ is equal to one, the better the approximation. If $\delta_{A}/\delta_{D} = 1$ the result is correct. 
-The reason this formula overestimates the benefit of the attacker is that it assumes that the defender is always in control during the delay. However, if the attacker was in control in the previous interval, then he continues to be in control during the period of the delay, see figure \ref{fig:case2} situation 5 to 7. This means that the average benefit formulas for this case cannot be derived from one interval only; what happens in the previous interval must be taken into account. \\
+The reason this formula overestimates the benefit of the attacker is that it assumes that the defender is always in control during the delay. However, if the attacker was in control in the previous interval, then he continues to be in control during the period of the delay, see figure \ref{fig:case2} situations 5 to 7. This means that the average benefit formulas for this case cannot be derived from one interval only; what happens in the previous interval must be taken into account. \\
 
 We know that the defender's moves are instantaneous. Therefore, it is easier to calculate the benefit of the defender. Because the defender moves more slowly than the attacker we know that if the defender moves during the interval of the attacker, he only moves once within this interval.
 
@@ -303,15 +303,15 @@ The defender will move during the interval of the attacker with a probability of
 
 Consider a timespan $\delta_{A} + d$, representing the attacker's interval followed by the delay period in his next interval. If we assume that $\delta_{A}+d<\delta_{D}$, we can infer that the defender will never move twice during this timespan.
 Because $d + \delta_{A} \leq \delta_{D}$ the next move of the defender in this second interval will never occur during the delay, meaning that the entire delay can be considered as an extra benefit resulting of a play in the previous interval. 
-So, every time the defender plays, he will get an average gain of $\dfrac{\delta_{A}}{2}$ in the interval where he plays and in the next interval will always receive a extra gain of $d$, yielding a total average gain per interval of
+So, every time the defender plays, he will get an average gain of $\dfrac{\delta_{A}}{2}$ in the interval where he plays and in the next interval will always receive an extra gain of $d$, yielding a total average gain per interval of
 $\dfrac{(d+\dfrac{\delta_{A}}{2})}{\delta_{A}}$
 
-For the remainder of the analyses we consider two cases, Case a and Case b, depending on whether the delay is shorter or longer than the difference between the attacker's and the defender's period.  \\
+For the remainder of the analyses we consider two cases, Case 2.a and Case 2.b, depending on whether the delay is shorter or longer than the difference between the attacker's and the defender's period.  \\
 
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=0.7]{../../doc/template/Images/FlipIt2.pdf}
-\caption{All possible cases for the attacker and the defender in Case 2.A where $d + \delta_{A} < \delta_{D}$. As can be seen in cases (1) to (4), the defender will have control during a period of \textit{d} over the resource in the next interval when the defender has flipped in the previous interval.}
+\caption{All possible cases for the attacker and the defender in Case 2.A where $d + \delta_{A} \leq \delta_{D}$. As can be seen in cases (1) to (4), the defender will have control during a period of \textit{d} over the resource in the next interval when the defender has flipped in the previous interval.}
 \label{fig:case2}
 \end{figure}
 
@@ -337,7 +337,7 @@ The benefit for the attacker will be as follows:
 
 
 
-It is crucial that $ \delta_{D}$ is at least as large as $d + \delta_{A}$. If not, the defender can move during the delay in the interval following the interval in which the defender already moved. This would result in an overlap between the average gain of $\dfrac{\delta_{A}}{2} +d$ and the delay. The above benefit formula would then include too much gain for the defender: the potential overlap during the delay would be counted twice. See figure \ref{countedtwice}\\
+It is crucial that $ \delta_{D}$ is at least as large as $d + \delta_{A}$. If not, the defender can move during the delay in the interval following the interval in which the defender already moved. This would result in an overlap between the average gain of $\dfrac{\delta_{A}}{2} +d$ and the delay. The above benefit formula would then include too much gain for the defender: the potential overlap during the delay would be counted twice. See figure \ref{countedtwice}.\\
 
 \begin{figure}[hbtp]
 \centering
@@ -377,8 +377,8 @@ Consequently, the benefit for the attacker will be:
 \section{Summary}
 
 
-We calculated the benefit for three cases: when $\delta_{D}$ is smaller than $d$. When $\delta_{A}$ is smaller than $\delta_{A}$ and when it is larger than $\delta_{A}$.
-The benefit formulas of case 1 and case 2.b result in the same formula. Consequently, these two formulas can be brought together by adapting the border conditions. The first figure in figure \ref{Borders} shows all the cases and it can be seen that the border condition of case 1 and case 2.b can be brought together. This can be seen as the second figure in \ref{endborders}. \\
+We calculated the benefit for three cases: when $\delta_{D}$ is smaller than $d$, when $\delta_{D}$ is smaller than $\delta_{A}$ and when $\delta_{D}$ is larger than $\delta_{A}$.
+The benefit formulas of case 1 and case 2.b result in the same formula. Consequently, these two formulas can be brought together by adapting the border conditions. The first figure in figure \ref{Borders} shows all the cases and it can be seen that the border condition of case 1 and case 2.b can be brought together. This can be seen as the second figure in \ref{Borders}. \\
 
 The benefit functions can be represented as piecewise functions for each case, with case 1 and case 2.b together:\\
 The benefit formula for the defender, see figure \ref{pfb} :
