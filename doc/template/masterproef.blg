@@ -18,45 +18,45 @@ Warning--empty year in fengstealthy
 Warning--empty journal in MitigationNonTargeted
 Warning--empty booktitle in Coursera
 Warning--there's a number but no volume in moore2003inside
-You've used 29 entries,
+You've used 30 entries,
             2118 wiz_defined-function locations,
-            681 strings with 8517 characters,
-and the built_in function-call counts, 10436 in all, are:
-= -- 1016
-> -- 474
-< -- 12
-+ -- 189
-- -- 156
-* -- 694
-:= -- 1668
-add.period$ -- 90
-call.type$ -- 29
-change.case$ -- 158
+            688 strings with 8602 characters,
+and the built_in function-call counts, 10698 in all, are:
+= -- 1039
+> -- 487
+< -- 13
++ -- 194
+- -- 160
+* -- 709
+:= -- 1713
+add.period$ -- 93
+call.type$ -- 30
+change.case$ -- 162
 chr.to.int$ -- 0
-cite$ -- 34
-duplicate$ -- 424
-empty$ -- 860
-format.name$ -- 156
-if$ -- 2250
+cite$ -- 35
+duplicate$ -- 436
+empty$ -- 882
+format.name$ -- 160
+if$ -- 2305
 int.to.chr$ -- 0
-int.to.str$ -- 29
-missing$ -- 29
-newline$ -- 144
-num.names$ -- 62
-pop$ -- 206
+int.to.str$ -- 30
+missing$ -- 31
+newline$ -- 149
+num.names$ -- 64
+pop$ -- 214
 preamble$ -- 1
-purify$ -- 132
+purify$ -- 136
 quote$ -- 0
-skip$ -- 309
+skip$ -- 317
 stack$ -- 0
-substring$ -- 633
-swap$ -- 114
-text.length$ -- 12
+substring$ -- 638
+swap$ -- 116
+text.length$ -- 13
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 110
+type$ -- 112
 warning$ -- 5
-while$ -- 98
-width$ -- 31
-write$ -- 311
+while$ -- 100
+width$ -- 32
+write$ -- 322
 (There were 7 warnings)

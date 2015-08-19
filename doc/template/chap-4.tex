@@ -527,7 +527,7 @@ PageRank(A)=P \sum \limits_{i \in N_{A}} \dfrac{PageRank(i)}{d_{out,i}} + (1-P) 
 
 where $N_{A}$ is the set of pages, $PageRank(i)$ is the page rank of web page $i$, $D_{out,i}$ is the number of outgoing links of page $i$, $(1-P)$ the probability that a random page is searched, and $e_{A}$ the restart value for web page A which is often uniformly distributed among all web pages. \\
 
-The PageRank of each page on the internet is the dominant eigenvalue of the Google Matrix. The Google Matrix is a stochastic matrix and represents a graph where every edge denotes a link between pages. Through the power iteration  \ref{Arnoldi}, the PageRank of all the pages can be calculated iteratively. \\
+The PageRank of each page on the internet is the dominant eigenvalue of the Google Matrix. The Google Matrix is a stochastic matrix and represents a graph where every edge denotes a link between pages. Through the power iteration \citep{Arnoldi}, the PageRank of all the pages can be calculated iteratively. \\
 
 The Google Matrix of a graph is defined as follows:
 \begin{equation}

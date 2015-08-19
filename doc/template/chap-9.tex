@@ -166,7 +166,8 @@ Further research can investigate the effect of relaxing this assumption. \\
 \end{description}
 
 The adaptation of the FlipIt model starts from the assumption that, when an attacker attacks at time \textit{t}, he doesn't get immediate control over the resource, but he only gains control at time \textit{t + d}, with $d$ denoting the time needed to infect a sufficient number of (or all) nodes. If the defender flips the network before the period $d$ has elapsed (so, somewhere between $t$ and $t + d$), then the attacker will never gain full control over the resource. (See figure \ref{dt} at points 3 and 4). This implies that the mathematical formulas for gain and benefit need to be adapted to the fact that the attacker loses part of his benefit because of this delay. In the remainder of this paper, we will adapt the formalization of the FlipIt game using the delay variable $d$. \\ 
-We adapt the same definition for players that play at the same time as in the original FlipIt game. The probability that this happens will be close to zero, but if it happens the moves cancel each other out and no change of control happens (see figure \ref{dt} point 3).\\
+
+We apply the same definition for players that play at the same time as in the original FlipIt game. As the time in the game is continuous, the probability of this happening is close to zero, but if it happens the moves cancel each other out and no change of control happens (see figure \ref{dt} point 3).\\
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=0.7]{Images/Delayuitgelegd.pdf}
@@ -176,7 +177,7 @@ We adapt the same definition for players that play at the same time as in the or
 
 
 %
-We split the formalization in three cases. Similarly as in the original FlipIt game, there is the case where the defender plays at least as fast as the attacker, and the case where the attacker plays at least as fast as the defender. For each of these cases, the benefit formula of the basic case without delay is presented first, and subsequently the delay is introduced.  The third case is a special case where the period of the defender is smaller than the delay.\\
+The formalization is split three cases. Similarly as in the original FlipIt game, there is the case where the defender plays at least as fast as the attacker, and the case where the attacker plays at least as fast as the defender. For each of these cases, the benefit formula of the basic case without delay is presented first, and subsequently the delay is introduced.  The third case is a special case where the period of the defender is smaller than the delay.\\
 
 In the original model of FlipIt, the authors express the formulas in terms of $\alpha_{D}$ and $\alpha_{A}$. However, when introducing the delay, some formulas become much simpler when expressed in terms of $\delta_{D}$ and $\delta_{A}$. Therefore in the remainder of this paper, we will formulate the model using both $\alpha_{i}$ and $\delta_{i}$, depending on which variable gives the simplest representation of the formulas.
 
@@ -376,13 +377,18 @@ Consequently, the benefit for the attacker will be:
 
 \section{Summary}
 
-
-We calculated the benefit for three cases: when $\delta_{D}$ is smaller than $d$, when $\delta_{D}$ is smaller than $\delta_{A}$ and when $\delta_{D}$ is larger than $\delta_{A}$.
-The benefit formulas of case 1 and case 2.b result in the same formula. Consequently, these two formulas can be brought together by adapting the border conditions. The first figure in figure \ref{Borders} shows all the cases and it can be seen that the border condition of case 1 and case 2.b can be brought together. This can be seen as the second figure in \ref{Borders}. \\
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=0.7]{Images/borders.pdf}
+\caption{The first figure is the representation of the cases where the benefit functions are calculated. The second figure is the representation of the new domain of piece B which is a merge of case 2.b and case 1.}
+\label{Borders}
+\end{figure}
+We calculated the benefit for three cases: when $\delta_{D}$ is smaller or equal to $d$, when $\delta_{D}$ is smaller or equal to $\delta_{A}$ and when $\delta_{D}$ is larger or equal to $\delta_{A}$.
+The benefit formulas of case 1 and case 2.b result in the same formula. Consequently, these two formulas can be brought together by adapting the border conditions. The first figure in figure \ref{Borders} shows all the cases and it can be seen that the domain of case 1 and case 2.b can be brought together. This can be seen as the second figure in \ref{Borders}. \\
 
 The benefit functions can be represented as piecewise functions for each case, with case 1 and case 2.b together:\\
-The benefit formula for the defender, see figure \ref{pfb} :
-\begin{displaymath}
+The benefit formula for the defender is as follows:
+\begin{displaymath}\label{PWFD}
 \beta_{D}(\delta_{D},\delta_{A})= \left\{
 \begin{array}{lll}
 	1 - \dfrac{k_{D}}{\delta_{D}}, &~~~~~ & \delta_{D} \leq d \\
@@ -395,6 +401,7 @@ The benefit formula for the defender, see figure \ref{pfb} :
 \end{displaymath}
 ~~ \\
 
+
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=1.4]{Images/functie4.pdf} 
@@ -403,7 +410,7 @@ The benefit formula for the defender, see figure \ref{pfb} :
 \end{figure}
 
 
-The benefit formula for the attacker, see figure \ref{pfa}:
+The benefit formula for the attacker is as follows: 
 \begin{displaymath}
 \beta_{A}(\delta_{D},\delta_{A})= \left\{
 \begin{array}{lll}
@@ -416,20 +423,31 @@ The benefit formula for the attacker, see figure \ref{pfa}:
 \right.
 \end{displaymath}
 
+To be able to show the continuity of the benefit function, piece 2 and piece 3 are switched and the boder conditions are reformulated.
+
+\begin{displaymath}\label{PWFA}
+\beta_{D}(\delta_{D},\delta_{A})= \left\{
+\begin{array}{lll}
+	1 - \dfrac{k_{D}}{\delta_{D}}, &~~~~~ & \delta_{D} \leq d \\
+	~ & ~ \\
+	\dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - \dfrac{k_{D}}{\delta_{D}} &~~~~~& \delta_{A}  \leq \delta_{D} -d \\
+	   ~ & ~ \\
+   1 - \dfrac{(\delta_{D} - d)^2}{2\delta_{D}\delta_{A}} - \dfrac{k_{D}}{\delta_{D}}, & ~~~~~~&  \delta_{D} -d \leq \delta_{A} 
+
+\end{array}
+\right.
+\end{displaymath}
+~~ \\
+
 \begin{figure}[hbtp]
 \centering
-\includegraphics[scale=1.4]{Images/benfa.pdf} 
-\caption{The benefit function of the attacker for a cost $k_{A} =1.2$, $d =0.5$ and $\delta_{D}=5$. The three pieces match with the three colours.}
+\includegraphics[scale=1.4]{Images/att.pdf} 
+\caption{The benefit function of the attacker for a cost $k_{A} =0.5$, $d =3$ and $\delta_{D}=7$.}
 \label{pfa}
 \end{figure}
 
-The piecewise functions are also continuous functions. Filling in the border cases results in the same formula.  
-\begin{figure}[hbtp]
-\centering
-\includegraphics[scale=0.7]{Images/borders.pdf}
-\caption{The first figure is the representation of the cases where the benefit functions are calculated. The second figure is the representation of the new border conditions of piece B which is a merge of case 2.b and case 1.}
-\label{Borders}
-\end{figure}
+The piecewise functions are also continuous functions. Filling in the border cases results in the same formula.  This can be seen on both figures \ref{pfb} and \ref{pfa} that give respectively a visual representation of the benefit function of the defender and the benefit function of the attacker. The thick pieces indicate the cases for which each piece of the benefit function holds. For the benefit of the attacker case B and case C correspond respectively with piece 2 and piece 3 of the reformulated benefit function of the attacker.
+
 
 
 %~~\\

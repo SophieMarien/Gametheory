@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.27)  19 AUG 2015 17:11
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.27)  19 AUG 2015 23:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1049,6 +1049,20 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 )
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2012/08/31 v0.4t Insert pages of external PDF documents (AM)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2010/10/06 v2.0c eso-pic (RN)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2012/08/31 v0.4t Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box42
+\AM@toc@title=\toks48
+\c@AM@survey=\count201
+\AM@templatesizebox=\box43
+)
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryarrows.code.tex
 File: tikzlibraryarrows.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
@@ -1069,30 +1083,30 @@ File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
 shapes.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2010/01/07 v2.10 (rcs-revision 1.2)
-\pgfnodepartlowerbox=\box42
-\pgfnodeparttwobox=\box43
-\pgfnodepartthreebox=\box44
-\pgfnodepartfourbox=\box45
-\pgfnodeparttwentybox=\box46
-\pgfnodepartnineteenbox=\box47
-\pgfnodeparteighteenbox=\box48
-\pgfnodepartseventeenbox=\box49
-\pgfnodepartsixteenbox=\box50
-\pgfnodepartfifteenbox=\box51
-\pgfnodepartfourteenbox=\box52
-\pgfnodepartthirteenbox=\box53
-\pgfnodeparttwelvebox=\box54
-\pgfnodepartelevenbox=\box55
-\pgfnodeparttenbox=\box56
-\pgfnodepartninebox=\box57
-\pgfnodeparteightbox=\box58
-\pgfnodepartsevenbox=\box59
-\pgfnodepartsixbox=\box60
-\pgfnodepartfivebox=\box61
+\pgfnodepartlowerbox=\box44
+\pgfnodeparttwobox=\box45
+\pgfnodepartthreebox=\box46
+\pgfnodepartfourbox=\box47
+\pgfnodeparttwentybox=\box48
+\pgfnodepartnineteenbox=\box49
+\pgfnodeparteighteenbox=\box50
+\pgfnodepartseventeenbox=\box51
+\pgfnodepartsixteenbox=\box52
+\pgfnodepartfifteenbox=\box53
+\pgfnodepartfourteenbox=\box54
+\pgfnodepartthirteenbox=\box55
+\pgfnodeparttwelvebox=\box56
+\pgfnodepartelevenbox=\box57
+\pgfnodeparttenbox=\box58
+\pgfnodepartninebox=\box59
+\pgfnodeparteightbox=\box60
+\pgfnodepartsevenbox=\box61
+\pgfnodepartsixbox=\box62
+\pgfnodepartfivebox=\box63
 )))
 (/usr/local/texlive/2013/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2011/04/14 v1.2 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count201
+\c@lips@count=\count202
 )
 (./masterproef.aux
 
@@ -1166,7 +1180,7 @@ LaTeX Warning: Label `first' multiply defined.
 
 LaTeX Warning: Label `fig:case2' multiply defined.
 
-) (./nash.aux) (./chap-4.aux) (./conclusion.aux))
+) (./nash.aux) (./chap-4.aux) (./conclusion.aux) (./app-A.aux))
 \openout1 = `masterproef.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
@@ -1190,17 +1204,17 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count202
+\scratchcounter=\count203
 \scratchdimen=\dimen225
-\scratchbox=\box62
-\nofMPsegments=\count203
-\nofMParguments=\count204
-\everyMPshowfont=\toks48
-\MPscratchCnt=\count205
+\scratchbox=\box64
+\nofMPsegments=\count204
+\nofMParguments=\count205
+\everyMPshowfont=\toks49
+\MPscratchCnt=\count206
 \MPscratchDim=\dimen226
-\MPnumerator=\count206
-\makeMPintoPDFobject=\count207
-\everyMPtoPDFconversion=\toks49
+\MPnumerator=\count207
+\makeMPintoPDFobject=\count208
+\everyMPtoPDFconversion=\toks50
 ) (/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1250,10 +1264,10 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-\c@lstlisting=\count208
+\c@lstlisting=\count209
 
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box63
+\AtBeginShipoutBox=\box65
 Package hyperref Info: Link coloring OFF on input line 122.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -1262,7 +1276,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count209
+\c@section@level=\count210
 )
 Redoing nameref's sectioning
 Redoing nameref's label
@@ -1281,7 +1295,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-<logokuleng.pdf, id=135, 159.33528pt x 85.358pt>
+<logokuleng.pdf, id=139, 159.33528pt x 85.358pt>
 File: logokuleng.pdf Graphic file (type pdf)
  <use logokuleng.pdf>
 Package pdftex.def Info: logokuleng.pdf used on input line 122.
@@ -1384,10 +1398,10 @@ Overfull \hbox (3.31563pt too wide) detected at line 22
  \T1/lmr/bx/n/10.95 xxii
  []
 
-) [2
+[2
 
 
-]
+])
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -1446,7 +1460,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 194--195
 
  []
 
-<../../doc/template/Images/FlipBasic.pdf, id=218, 512.38626pt x 108.42407pt>
+<../../doc/template/Images/FlipBasic.pdf, id=223, 512.38626pt x 108.42407pt>
 File: ../../doc/template/Images/FlipBasic.pdf Graphic file (type pdf)
 
 <use ../../doc/template/Images/FlipBasic.pdf>
@@ -1583,7 +1597,7 @@ Package babel Info: Redefining dutch shorthand "Y
 [9]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12> on input line 300.
- <Images/FlipItCase1delaytobig.pdf, id=277, 512.38626pt x 77.18385pt>
+ <Images/FlipItCase1delaytobig.pdf, id=282, 512.38626pt x 77.18385pt>
 File: Images/FlipItCase1delaytobig.pdf Graphic file (type pdf)
 
 <use Images/FlipItCase1delaytobig.pdf>
@@ -1622,7 +1636,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 328--329
  []
 
 
-<../../doc/template/Images/Delayuitgelegd.pdf, id=314, 512.38626pt x 236.17334p
+<../../doc/template/Images/Delayuitgelegd.pdf, id=319, 512.38626pt x 236.17334p
 t>
 File: ../../doc/template/Images/Delayuitgelegd.pdf Graphic file (type pdf)
  <use ../../doc/template/Images/Delayuitgelegd.pdf>
@@ -1686,7 +1700,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 398--399
 
  []
 
-<../../doc/template/Images/FlipIt2.pdf, id=363, 403.371pt x 683.10506pt>
+<../../doc/template/Images/FlipIt2.pdf, id=368, 403.371pt x 683.10506pt>
 File: ../../doc/template/Images/FlipIt2.pdf Graphic file (type pdf)
 
 <use ../../doc/template/Images/FlipIt2.pdf>
@@ -1743,7 +1757,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 436--438
 
  []
 
-<Images/borders.pdf, id=407, 572.1084pt x 353.31299pt>
+<Images/borders.pdf, id=412, 572.1084pt x 353.31299pt>
 File: Images/borders.pdf Graphic file (type pdf)
 
 <use Images/borders.pdf>
@@ -1937,7 +1951,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 165--166
 
  []
 
-[9] <Images/PrisDilemma.png, id=699, 466.3824pt x 318.9516pt>
+[9] <Images/PrisDilemma.png, id=703, 466.3824pt x 318.9516pt>
 File: Images/PrisDilemma.png Graphic file (type png)
 
 <use Images/PrisDilemma.png>
@@ -1968,7 +1982,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 224--227
 
  []
 
-[11]
+
+Underfull \vbox (badness 1874) has occurred while \output is active []
+
+ [11]
 Underfull \hbox (badness 10000) in paragraph at lines 257--259
 
  []
@@ -1988,22 +2005,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 268--269
 
  []
 
-[12]
+[12] [13]
 Underfull \hbox (badness 10000) in paragraph at lines 304--306
 
  []
 
-[13]
+
 Underfull \hbox (badness 10000) in paragraph at lines 307--310
 
  []
 
-
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 311--315
 
  []
 
-[14]
+
 Underfull \hbox (badness 10000) in paragraph at lines 317--318
 
  []
@@ -2050,7 +2067,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 146--148
 
  []
 
-<Images/DefFlip.pdf, id=783, 512.38626pt x 108.42407pt>
+<Images/DefFlip.pdf, id=787, 512.38626pt x 108.42407pt>
 File: Images/DefFlip.pdf Graphic file (type pdf)
 
 <use Images/DefFlip.pdf>
@@ -2061,179 +2078,176 @@ Underfull \hbox (badness 10000) in paragraph at lines 168--169
 
  []
 
-<Images/Delayuitgelegd.pdf, id=816, 512.38626pt x 236.17334pt>
+<Images/Delayuitgelegd.pdf, id=821, 512.38626pt x 236.17334pt>
 File: Images/Delayuitgelegd.pdf Graphic file (type pdf)
 
 <use Images/Delayuitgelegd.pdf>
-Package pdftex.def Info: Images/Delayuitgelegd.pdf used on input line 172.
+Package pdftex.def Info: Images/Delayuitgelegd.pdf used on input line 173.
 (pdftex.def)             Requested size: 358.66794pt x 165.32019pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--180
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
 
-[21] <Images/FlipItCase1delay.pdf, id=825, 519.29205pt x 87.99817pt>
+[21] <Images/FlipItCase1delay.pdf, id=828, 519.29205pt x 87.99817pt>
 File: Images/FlipItCase1delay.pdf Graphic file (type pdf)
 
 <use Images/FlipItCase1delay.pdf>
-Package pdftex.def Info: Images/FlipItCase1delay.pdf used on input line 203.
+Package pdftex.def Info: Images/FlipItCase1delay.pdf used on input line 204.
 (pdftex.def)             Requested size: 363.50195pt x 61.59828pt.
 File: Images/FlipItCase1delaytobig.pdf Graphic file (type pdf)
  <use Images/FlipItCase1delaytobig.pdf>
 Package pdftex.def Info: Images/FlipItCase1delaytobig.pdf used on input line 21
-0.
+1.
 (pdftex.def)             Requested size: 358.66794pt x 54.0283pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--220
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
 
  []
 
 [22 <./Images/Delayuitgelegd.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 225--226
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
 
  []
 
 
-<../../doc/template/Images/DiffDelayCase1.pdf, id=858, 512.38626pt x 236.17334p
+<../../doc/template/Images/DiffDelayCase1.pdf, id=861, 512.38626pt x 236.17334p
 t>
 File: ../../doc/template/Images/DiffDelayCase1.pdf Graphic file (type pdf)
  <use ../../doc/template/Images/DiffDelayCase1.pdf>
 Package pdftex.def Info: ../../doc/template/Images/DiffDelayCase1.pdf used on i
-nput line 234.
+nput line 235.
 (pdftex.def)             Requested size: 358.66794pt x 165.32019pt.
 
-<../../doc/template/Images/delaydtijdens.pdf, id=861, 512.38626pt x 113.75499pt
+<../../doc/template/Images/delaydtijdens.pdf, id=864, 512.38626pt x 113.75499pt
 >
 File: ../../doc/template/Images/delaydtijdens.pdf Graphic file (type pdf)
  <use ../../doc/template/Images/delaydtijdens.pdf>
 Package pdftex.def Info: ../../doc/template/Images/delaydtijdens.pdf used on in
-put line 245.
+put line 246.
 (pdftex.def)             Requested size: 358.66794pt x 79.62793pt.
  [23 <./Images/FlipItCase1delay.pdf>] [24 <../../doc/template/Images/DiffDelayC
 ase1.pdf> <../../doc/template/Images/delaydtijdens.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 280--281
+Underfull \hbox (badness 10000) in paragraph at lines 281--282
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 289--290
+Underfull \hbox (badness 10000) in paragraph at lines 290--291
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 296--299
+Underfull \hbox (badness 10000) in paragraph at lines 297--300
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 302--303
+Underfull \hbox (badness 10000) in paragraph at lines 303--304
 
  []
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 309--310
+Underfull \hbox (badness 10000) in paragraph at lines 310--311
 
  []
 
 File: ../../doc/template/Images/FlipIt2.pdf Graphic file (type pdf)
 <use ../../doc/template/Images/FlipIt2.pdf>
 Package pdftex.def Info: ../../doc/template/Images/FlipIt2.pdf used on input li
-ne 313.
+ne 314.
 (pdftex.def)             Requested size: 282.35777pt x 478.17029pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--332
+Underfull \hbox (badness 10000) in paragraph at lines 332--333
 
  []
 
 [26] [27]
-Underfull \hbox (badness 10000) in paragraph at lines 336--337
+Underfull \hbox (badness 10000) in paragraph at lines 337--338
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 340--341
+Underfull \hbox (badness 10000) in paragraph at lines 341--342
 
  []
 
-<Images/flipcase2nb.pdf, id=975, 403.371pt x 213.21759pt>
+<Images/flipcase2nb.pdf, id=978, 403.371pt x 213.21759pt>
 File: Images/flipcase2nb.pdf Graphic file (type pdf)
 
 <use Images/flipcase2nb.pdf>
-Package pdftex.def Info: Images/flipcase2nb.pdf used on input line 344.
+Package pdftex.def Info: Images/flipcase2nb.pdf used on input line 345.
 (pdftex.def)             Requested size: 282.35777pt x 149.25128pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--350
+Underfull \hbox (badness 10000) in paragraph at lines 350--351
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 351--352
+Underfull \hbox (badness 10000) in paragraph at lines 352--353
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 353--355
+Underfull \hbox (badness 10000) in paragraph at lines 354--356
 
  []
 
 [28 <./Images/flipcase2nb.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 370--371
+Underfull \hbox (badness 10000) in paragraph at lines 371--372
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 375--376
+Underfull \hbox (badness 10000) in paragraph at lines 376--377
 
  []
 
-
-LaTeX Warning: Reference `endborders' on page 29 undefined on input line 381.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 380--382
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 395--397
-
- []
-
-<Images/functie4.pdf, id=1010, 226.8475pt x 128.22906pt>
-File: Images/functie4.pdf Graphic file (type pdf)
-
-<use Images/functie4.pdf>
-Package pdftex.def Info: Images/functie4.pdf used on input line 400.
-(pdftex.def)             Requested size: 317.58432pt x 179.51942pt.
- [29]
-<Images/benfa.pdf, id=1019, 206.92708pt x 125.28206pt>
-File: Images/benfa.pdf Graphic file (type pdf)
- <use Images/benfa.pdf>
-Package pdftex.def Info: Images/benfa.pdf used on input line 421.
-(pdftex.def)             Requested size: 289.6959pt x 175.39366pt.
 File: Images/borders.pdf Graphic file (type pdf)
-
 <use Images/borders.pdf>
-Package pdftex.def Info: Images/borders.pdf used on input line 429.
+Package pdftex.def Info: Images/borders.pdf used on input line 382.
 (pdftex.def)             Requested size: 400.47314pt x 247.3174pt.
 
-Overfull \hbox (2.47314pt too wide) in paragraph at lines 429--430
+Overfull \hbox (2.47314pt too wide) in paragraph at lines 382--383
  [][] 
  []
 
-) [30 <./Images/functie4.pdf>] [31 <./Images/benfa.pdf>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 386--388
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 401--403
+
+ []
+
+<Images/functie4.pdf, id=1013, 226.8475pt x 128.22906pt>
+File: Images/functie4.pdf Graphic file (type pdf)
+
+<use Images/functie4.pdf>
+Package pdftex.def Info: Images/functie4.pdf used on input line 407.
+(pdftex.def)             Requested size: 317.58432pt x 179.51942pt.
+ [29] [30 <./Images/functie4.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 439--441
+
+ []
+
+<Images/att.pdf, id=1054, 226.8475pt x 128.22906pt>
+File: Images/att.pdf Graphic file (type pdf)
+ <use Images/att.pdf>
+Package pdftex.def Info: Images/att.pdf used on input line 444.
+(pdftex.def)             Requested size: 317.58432pt x 179.51942pt.
+
+[31 <./Images/att.pdf>]) [32]
 \openout2 = `nash.aux'.
 
- (./nash.tex [32
-
-
-
-]
+ (./nash.tex
 Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
@@ -2265,7 +2279,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 39.
 
-[33] <Images/1x.png, id=1129, 233.87375pt x 148.555pt>
+[33
+
+
+
+] <Images/1x.png, id=1105, 233.87375pt x 148.555pt>
 File: Images/1x.png Graphic file (type png)
  <use Images/1x.png>
 Package pdftex.def Info: Images/1x.png used on input line 63.
@@ -2285,7 +2303,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
-<Images/ShapesUp.png, id=1141, 446.41782pt x 315.42844pt>
+<Images/ShapesUp.png, id=1117, 446.41782pt x 315.42844pt>
 File: Images/ShapesUp.png Graphic file (type png)
 
 <use Images/ShapesUp.png>
@@ -2296,7 +2314,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
-<Images/ShapeDown.png, id=1143, 444.91219pt x 312.41719pt>
+<Images/ShapeDown.png, id=1119, 444.91219pt x 312.41719pt>
 File: Images/ShapeDown.png Graphic file (type png)
 
 <use Images/ShapeDown.png>
@@ -2307,50 +2325,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
 
-[35 <./Images/ShapesUp.png>]
-<Images/case1b.pdf, id=1153, 440.312pt x 418.89801pt>
-File: Images/case1b.pdf Graphic file (type pdf)
- <use Images/case1b.pdf>
-Package pdftex.def Info: Images/case1b.pdf used on input line 178.
-(pdftex.def)             Requested size: 440.31091pt x 418.89697pt.
-
-Overfull \hbox (42.31091pt too wide) in paragraph at lines 178--179
- [][] 
- []
-
-[36 <./Images/ShapeDown.png>] [37 <./Images/case1b.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 202--204
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 215--216
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 228--229
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 230--231
-
- []
-
-[38]
-Underfull \hbox (badness 10000) in paragraph at lines 238--239
-
- []
-
-<Images/cost0.pdf, id=1545, 429.34303pt x 123.43916pt>
+<Images/cost0.pdf, id=1121, 429.34303pt x 123.43916pt>
 File: Images/cost0.pdf Graphic file (type pdf)
  <use Images/cost0.pdf>
-Package pdftex.def Info: Images/cost0.pdf used on input line 245.
+Package pdftex.def Info: Images/cost0.pdf used on input line 174.
 (pdftex.def)             Requested size: 429.34196pt x 123.43884pt.
 
-Overfull \hbox (31.34196pt too wide) in paragraph at lines 245--246
+Overfull \hbox (31.34196pt too wide) in paragraph at lines 174--175
  [][] 
+ []
+
+[35 <./Images/ShapesUp.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [36 <./Images/ShapeDown.png> <./Images/cost0.pdf>]
+<Images/case1b.pdf, id=1199, 440.312pt x 418.89801pt>
+File: Images/case1b.pdf Graphic file (type pdf)
+ <use Images/case1b.pdf>
+Package pdftex.def Info: Images/case1b.pdf used on input line 183.
+(pdftex.def)             Requested size: 440.31091pt x 418.89697pt.
+
+Overfull \hbox (42.31091pt too wide) in paragraph at lines 183--184
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--209
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
+
+ []
+
+[37] [38 <./Images/case1b.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
+
  []
 
 
@@ -2358,6 +2379,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 254--255
 
  []
 
+[39]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 273.
@@ -2383,24 +2405,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 275--276
 
  []
 
-[39 <./Images/cost0.pdf>]
 File: Images/1x.png Graphic file (type png)
- <use Images/1x.png>
+<use Images/1x.png>
 Package pdftex.def Info: Images/1x.png used on input line 294.
 (pdftex.def)             Requested size: 233.87315pt x 148.55463pt.
-
+ [40]
 Underfull \hbox (badness 10000) in paragraph at lines 317--319
 
  []
 
-[40]
+
 Underfull \hbox (badness 10000) in paragraph at lines 353--355
 
  []
 
-<Images/case1A.pdf, id=1626, 440.312pt x 418.89801pt>
+[41] <Images/case1A.pdf, id=1608, 440.312pt x 418.89801pt>
 File: Images/case1A.pdf Graphic file (type pdf)
- <use Images/case1A.pdf>
+
+<use Images/case1A.pdf>
 Package pdftex.def Info: Images/case1A.pdf used on input line 370.
 (pdftex.def)             Requested size: 440.31091pt x 418.89697pt.
 
@@ -2408,7 +2430,7 @@ Overfull \hbox (42.31091pt too wide) in paragraph at lines 370--371
  [][] 
  []
 
-[41] [42 <./Images/case1A.pdf>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 384--387
 
  []
@@ -2418,7 +2440,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 399--401
 
  []
 
-[43]
+[42] [43 <./Images/case1A.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 413--414
 
  []
@@ -2428,10 +2450,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 426--428
 
  []
 
-) [44]
+[44]) [45]
 \openout2 = `chap-4.aux'.
 
- (./chap-4.tex
+ (./chap-4.tex [46
+
+
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
@@ -2446,11 +2472,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
-[45
-
-
-
-] [46]
+[47] [48]
 Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
@@ -2465,13 +2487,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
-[47] <Images/Picture2.png, id=1733, 592.1322pt x 490.4724pt>
+[49] <Images/Picture2.png, id=1717, 592.1322pt x 490.4724pt>
 File: Images/Picture2.png Graphic file (type png)
 
 <use Images/Picture2.png>
 Package pdftex.def Info: Images/Picture2.png used on input line 100.
 (pdftex.def)             Requested size: 325.6737pt x 269.76065pt.
- [48 <./Images/Picture2.png>]
+ [50 <./Images/Picture2.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 121--123
 
  []
@@ -2491,7 +2513,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--153
 
  []
 
-[49]
+[51]
 Underfull \hbox (badness 10000) in paragraph at lines 161--163
 
  []
@@ -2506,7 +2528,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 248--250
 
  []
 
-[50]
+[52]
 Underfull \hbox (badness 10000) in paragraph at lines 258--259
 
  []
@@ -2521,7 +2543,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 290--293
 
  []
 
-[51]
+[53]
 Underfull \hbox (badness 10000) in paragraph at lines 294--296
 
  []
@@ -2539,7 +2561,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 374--375
 
 Underfull \vbox (badness 2698) has occurred while \output is active []
 
- [52]
+ [54]
 Underfull \hbox (badness 10000) in paragraph at lines 389--390
 
  []
@@ -2554,7 +2576,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 422--424
 
  []
 
-[53]
+[55]
 Underfull \hbox (badness 10000) in paragraph at lines 440--441
 
  []
@@ -2569,7 +2591,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 444--445
 
  []
 
-[54]
+[56]
 Underfull \hbox (badness 10000) in paragraph at lines 519--520
 
  []
@@ -2578,9 +2600,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 519--520
 Underfull \hbox (badness 10000) in paragraph at lines 528--529
 
  []
-
-
-LaTeX Warning: Reference `Arnoldi' on page 55 undefined on input line 530.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 530--531
@@ -2592,28 +2611,148 @@ Underfull \hbox (badness 10000) in paragraph at lines 543--545
 
  []
 
-[55]
+[57]
 Underfull \hbox (badness 10000) in paragraph at lines 575--576
 
  []
 
-) [56]
+) [58]
 \openout2 = `conclusion.aux'.
 
- (./conclusion.tex [57
+ (./conclusion.tex [59
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-) [58] (./masterproef.bbl [59
+) [60] [61]
+\openout2 = `app-A.aux'.
+
+ (./app-A.tex [62
 
 
 
-] [60]) [61] [62
+]
+
+! Package pdfpages Error: Cannot find file `IEEE.pdf'.
+
+See the pdfpages package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \includepdf[pages={6}]{IEEE.pdf}
+                                    
+This error message was generated by an \errmessage
+command, so I can't give any explicit help.
+Pretend that you're Hercule Poirot: Examine all clues,
+and deduce the truth by order and method.
+
+! Undefined control sequence.
+\AM@checkpagenumber #1->\ifnum #1>\AM@pagecount 
+                                                \relax \ifthenelse {\boolean...
+l.3 \includepdf[pages={6}]{IEEE.pdf}
+                                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.3 \includepdf[pages={6}]{IEEE.pdf}
+                                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+! Package pdfpages Error: page 6 of `\AM@currentdocname ' does not exist.
+
+See the pdfpages package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \includepdf[pages={6}]{IEEE.pdf}
+                                    
+You have set a wrong page number in the `pages' option. Document 
+`\AM@currentdocname ' does not have 6 pages.
+
+[63]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \includepdf[pages={6}]{IEEE.pdf}
+                                    
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \includepdf[pages={6}]{IEEE.pdf}
+                                    
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \includepdf[pages={6}]{IEEE.pdf}
+                                    
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \includepdf[pages={6}]{IEEE.pdf}
+                                    
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \includepdf[pages={6}]{IEEE.pdf}
+                                    
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[64]) (./masterproef.bbl [65
+
+
+
+] [66]) [67] [68
 
 ]
 \tf@toc=\write6
@@ -2627,16 +2766,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 654.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 654.
- (./masterproef.aux
-(./chap-10.aux) (./chap-5.aux) (./chap-9.aux) (./nash.aux) (./chap-4.aux)
-(./conclusion.aux))
+ (./masterproef.aux (./chap-10.aux) (./chap-5.aux) (./chap-9.aux) (./nash.aux) 
+(./chap-4.aux) (./conclusion.aux)
+(./app-A.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 654.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 654.
 Package rerunfilecheck Info: File `masterproef.out' has not changed.
-(rerunfilecheck)             Checksum: 7318F01E9292ABFCBEA7CA9E7FB881AB;2165.
-
-
-LaTeX Warning: There were undefined references.
+(rerunfilecheck)             Checksum: CFC8102EF57F7C1FB9CFAA1E8C32F854;2220.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2644,13 +2780,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 654.
  ) 
 Here is how much of TeX's memory you used:
- 25637 strings out of 493315
- 442432 string characters out of 6137903
- 713561 words of memory out of 5000000
- 27985 multiletter control sequences out of 15000+600000
- 113337 words of font info for 219 fonts, out of 8000000 for 9000
+ 26218 strings out of 493315
+ 451752 string characters out of 6137903
+ 725881 words of memory out of 5000000
+ 28543 multiletter control sequences out of 15000+600000
+ 112994 words of font info for 216 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 61i,13n,92p,2198b,863s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,17n,92p,2218b,863s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
 texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/20
 13/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2013/texmf-d
@@ -2675,10 +2811,10 @@ texlive/2013/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/201
 3/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2013/texmf-di
 st/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2013/texmf-dist/font
 s/type1/urw/helvetic/uhvr8a.pfb>
-Output written on masterproef.pdf (88 pages, 6292661 bytes).
+Output written on masterproef.pdf (94 pages, 6847865 bytes).
 PDF statistics:
- 1983 PDF objects out of 2073 (max. 8388607)
- 1154 compressed objects within 12 object streams
- 305 named destinations out of 1000 (max. 500000)
- 29051 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 1988 PDF objects out of 2073 (max. 8388607)
+ 1182 compressed objects within 12 object streams
+ 313 named destinations out of 1000 (max. 500000)
+ 29059 words of extra memory for PDF output out of 29859 (max. 10000000)
 

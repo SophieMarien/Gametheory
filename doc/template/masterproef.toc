@@ -30,7 +30,7 @@
 \contentsline {subsubsection}{Threats to computer systems}{6}{section*.31}
 \contentsline {subsubsection}{Advanced threats to computer systems}{8}{section*.32}
 \contentsline {section}{\numberline {2.2}A Brief Introduction in Game Theory}{8}{section.2.2}
-\contentsline {subsubsection}{Best Response and Nash Equilibrium}{9}{section*.33}
+\contentsline {subsubsection}{Best response and Nash equilibrium}{9}{section*.33}
 \contentsline {section}{\numberline {2.3}The FlipIt Game}{10}{section.2.3}
 \contentsline {subsubsection}{Strategies}{12}{section*.36}
 \contentsline {subsubsection}{Results of the FlipIt game}{13}{section*.38}
@@ -47,26 +47,27 @@
 \contentsline {section}{\numberline {3.3}Summary}{29}{section.3.3}
 \contentsline {chapter}{\chapternumberline {4}Optimal Defence and Attack Strategies}{33}{chapter.4}
 \contentsline {section}{\numberline {4.1}Determining the Piecewise Functions $opt_{D}(\delta _{A})$}{33}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Best Responses of $\delta _{D}$}{35}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Conclusion}{39}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.1}Best Responses of $\delta _{D}$}{36}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Conclusion}{40}{subsection.4.1.2}
 \contentsline {section}{\numberline {4.2}Determining the Piecewise Functions $opt_{A}(\delta _{D})$}{40}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Best Responses of $\delta _{A}$}{41}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.1}Best Responses of $\delta _{A}$}{42}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}Conclusion}{44}{subsection.4.2.2}
 \contentsline {section}{\numberline {4.3}Conclusion}{44}{section.4.3}
-\contentsline {chapter}{\chapternumberline {5}Models for the Delay}{45}{chapter.5}
-\contentsline {section}{\numberline {5.1}Methods of Propagation}{45}{section.5.1}
-\contentsline {section}{\numberline {5.2}Models for Worm Propagation}{47}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Simple Epidemic Model}{48}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}RCS model}{49}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Bluetooth worm model}{50}{subsection.5.2.3}
-\contentsline {subsection}{\numberline {5.2.4}AAWP model}{51}{subsection.5.2.4}
-\contentsline {section}{\numberline {5.3}Matrix based Worm Model}{51}{section.5.3}
-\contentsline {subsubsection}{Proposal of a matrix based model}{52}{section*.83}
-\contentsline {section}{\numberline {5.4}PageRank Algorithm}{55}{section.5.4}
-\contentsline {chapter}{\chapternumberline {6}Conclusion}{57}{chapter.6}
-\contentsline {section}{\numberline {6.1}General Results and Conclusions}{57}{section.6.1}
-\contentsline {section}{\numberline {6.2}Further Work}{57}{section.6.2}
-\contentsline {chapter}{Bibliography}{59}{section*.88}
+\contentsline {chapter}{\chapternumberline {5}Models for the Delay}{47}{chapter.5}
+\contentsline {section}{\numberline {5.1}Methods of Propagation}{47}{section.5.1}
+\contentsline {section}{\numberline {5.2}Models for Worm Propagation}{49}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Simple Epidemic Model}{50}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}RCS model}{51}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Bluetooth worm model}{52}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}AAWP model}{53}{subsection.5.2.4}
+\contentsline {section}{\numberline {5.3}Matrix based Worm Model}{53}{section.5.3}
+\contentsline {subsubsection}{Proposal of a matrix based model}{54}{section*.83}
+\contentsline {section}{\numberline {5.4}PageRank Algorithm}{57}{section.5.4}
+\contentsline {chapter}{\chapternumberline {6}Conclusion}{59}{chapter.6}
+\contentsline {section}{\numberline {6.1}General Results and Conclusions}{59}{section.6.1}
+\contentsline {section}{\numberline {6.2}Further Work}{60}{section.6.2}
+\contentsline {appendix}{\chapternumberline {A}The First Appendix}{63}{appendix.A}
+\contentsline {chapter}{Bibliography}{65}{section*.88}
 \select@language {dutch}
 \select@language {english}
 \select@language {dutch}

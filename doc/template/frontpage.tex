@@ -1,0 +1,672 @@
+ \documentclass[master=cws, masteroption=vs,english]{kulemt}
+
+% Vul de titel van jouw masterproef hieronder in tussen { en }.
+
+\setup{title={Flip the virus:  Modelling targeted attacks using FlipIt with propagation delay},
+%
+% Vul hieronder namen in, steeds Voornaam Naam.
+% Indien meerdere auteurs, assessoren, assistenten, scheidt hun namen
+% met \and .
+author={Sophie Marien},
+promotor={Prof. dr. T. Holvoet},
+assessor={Prof. dr. B. Jacobs \and Dr. ir. A. Dries},
+assistant={Ir. Jonathan Merlevede, \and Ir. Kristof Coninx}}
+% 
+% De volgende \setup mag verwijderd worden als geen fiche gewenst is.
+\setup{filingcard,
+  translatedtitle={Flip the virus:  Modelling targeted attacks using FlipIt with propagation delay},
+  udc=621.3,
+  shortabstract={Recently, high profile targeted attacks such as the
+attack on Belgacom (a major Belgian Telecom), have demonstrated
+that even the most secure companies can still be compromised,
+and moreover that such attacks can go undetected for a while. This kind of attack is called an APT, Advanced Persistent Threat, and is designed to secretly penetrate a computer network, collect sensitive data and stay hidden for many years. Companies have every interest to mitigate the risks of an APT and the consequences that it can cause.  Because of stealthiness, fighting against this kind of attack requires methods that go beyond the standard tools against malware.\\
+A group of researchers at the RSA, van Dijk et al., proposed the game FlipIt (The game of ``stealthy takeover'') to model stealthy takeovers. It is a 2-players game composed of
+a single attacker, a single defender and a single shared resource.
+The players will 
+compete to get control over the shared resource. Every move of the players will involve a cost and
+these moves happen in a stealthy way. The objective of the game for each player is to maximise the fraction of time being in control of the resource and to minimise the total move cost.  \\
+FlipIt does however not take into
+account that a move may not be instantaneous, but may have a certain
+delay.  We adapt FlipIt such that we can use it to
+model the game of defending a company network that is attacked
+by an APT. The FlipIt formulas are adapted such as to take the
+delay for an APT propagation into account, which in our case will be a delay for the attacker. In this paper, we restrict ourselves to games where both the defender and the attacker play with a periodic strategy. The goal of this paper is to find out if modelling such situations with FlipIt with propagation delay allows us to draw interesting lessons about security measures against APTs.  }}
+% Verwijder de "%" op de volgende lijn als je de kaft wil afdrukken
+\setup{coverpageonly}
+% Verwijder de "%" op de volgende lijn als je enkel de eerste pagina's wil
+% afdrukken en de rest bv. via Word aanmaken.
+%\setup{frontpagesonly}
+
+% Kies de fonts voor de gewone tekst, bv. Latin Modern
+\setup{font=lm}
+
+% Hier kun je dan nog andere pakketten laden of eigen definities voorzien
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{soul}
+\usepackage{tikz}
+\usepackage{parskip}
+\usepackage{todonotes}
+\usepackage{url}
+\usepackage{natbib} 
+%\usepackage{pgf}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage[font={small,it}]{caption}
+\usepackage[english]{babel}
+%\headstyles{kulemtman}
+
+
+%\usepackage{float}
+%\usepackage{caption}
+%\usepackage[caption = false,subrefformat=parens,labelformat=parens]{subfig}
+%\usepackage{todonotes}
+%\usepackage{epstopdf}
+%\usepackage{textcomp}
+%\usepackage{gensymb}
+%\usepackage[titlenumbered,algoruled, linesnumbered]{algorithm2e}
+%\usepackage{algpseudocode}
+%\usepackage{parskip}
+%\usepackage{kulemtx}
+%\headstyles{kulemtman}
+%
+%\DontPrintSemicolon
+
+
+
+\usetikzlibrary{arrows,automata}
+%\usepackage[latin1]{inputenc}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+%\lstset{frame=tb,
+%  language=Java,
+%  aboveskip=3mm,
+%  belowskip=3mm,
+%  showstringspaces=false,
+%  columns=flexible,
+%  basicstyle={\small\ttfamily},
+%  numbers=none,
+%  numberstyle=\tiny\color{gray},
+%  keywordstyle=\color{blue},
+%  commentstyle=\color{green},
+%  stringstyle=\color{black},
+%  breaklines=true,
+%  breakatwhitespace=true
+%  tabsize=3
+%}
+
+%\newcommand{\todo}[1]{{\huge \textcolor{green}{#1}}\\}
+%\newcommand{\com}[1]{\textcolor{red}{#1}\\}
+%\newcommand{\viscomment}[1]{\textcolor{red}{#1}}
+\newcommand{\flip}[1] {\textcolor{black}{#1}}
+
+% Tenslotte wordt hyperref gebruikt voor pdf bestanden.
+% Dit mag verwijderd worden voor de af te drukken versie.
+%\usepackage[pdfusetitle,colorlinks,plainpages=false]{hyperref}
+
+%%%%%%%
+% Om wat tekst te genereren wordt hier het lipsum pakket gebruikt.
+% Bij een echte masterproef heb je dit natuurlijk nooit nodig!
+\IfFileExists{lipsum.sty}%
+ {\usepackage{lipsum}\setlipsumdefault{11-13}}%
+ {\newcommand{\lipsum}[1][11-13]{\par Hier komt wat tekst: lipsum ##1.\par}}
+%%%%%%%
+
+
+%\includeonly{chap-n}
+\begin{document}
+
+\begin{preface}
+
+
+%Ten slotte gaat mijn grootste dank uit naar mijn ouders. Zij leverden
+%niet alleen een cruciale bijdrage aan het welslagen van deze
+%meesterproef, maar zijn een belangrijke hulp voor mijn academische
+%studies in het geheel. Zonder hen zou niets wat ik tot nu toe heb
+%bereikt, mogelijk geweest zijn
+ Many people have helped in the realisation of this thesis. 
+  I would like to thank everybody who kept me busy the last year and made it possible for me to finish my thesis.\\
+  
+  First of all, I would like to thank my promoter and my assistants for their support during the writing of this paper. Without their guidance this paper would not have been possible. They helped me figure out what to do and put a lot of time and effort in this work.\\
+  Special thanks to my parents for giving me the opportunity to study in this wonderful city and obtaining my master's degree in engineering.\\
+   I would also like to thank my boyfriend Jeroen, who supported me during the writing of this paper and helped me not to flip out.  \\   
+   Last but not least, I would like to thank all the people that read my paper for typo's, mistakes, and ease of understanding: my mother, my brother Hans, and my friends Matthias, Ska and Stijn. \\
+
+   
+      A few other people earn a special mention: Revue-blokt for keeping me focused on my paper, DistriNet labo for letting me in and allowing me to study in a quite place and Antonio for distracting me and telling me stories about his travels.
+   A special tribute to John Nash, a mathematician with a fundamental contribution to Game Theory, who died in a car accident during the writing of this thesis. His Nash Equilibrium is the main motivation behind the application of game theory to security problems in this paper. \\
+ 
+
+\end{preface}
+
+\tableofcontents*
+
+\begin{abstract}
+
+%  The \texttt{abstract} environment contains a more extensive overview of  the work. But it should be limited to one page.
+  
+Recently, high profile targeted attacks such as the
+attack on Belgacom (a major Belgian Telecom), have demonstrated
+that even the most secure companies can still be compromised,
+and moreover that such attacks can go undetected for a while. This kind of attack is called an APT, Advanced Persistent Threat, and is designed to secretly penetrate a computer network, collect sensitive data and stay hidden for many years. Companies have every interest to mitigate the risks of an APT and the consequences that it can cause.  Because of stealthiness, fighting against this kind of attack requires methods that go beyond the standard tools against malware.\\
+A group of researchers at the RSA, van Dijk et al., proposed the game FlipIt (The game of ``stealthy takeover'') to model stealthy takeovers. It is a 2-players game composed of
+a single attacker, a single defender and a single shared resource.
+The players will 
+compete to get control over the shared resource. Every move of the players will involve a cost and
+these moves happen in a stealthy way. The objective of the game for each player is to maximise the fraction of time being in control of the resource and to minimise the total move cost.  \\
+FlipIt does however not take into
+account that a move may not be instantaneous, but may have a certain
+delay.  We adapt FlipIt such that we can use it to
+model the game of defending a company network that is attacked
+by an APT. The FlipIt formulas are adapted such as to take the
+delay for an APT propagation into account, which in our case will be a delay for the attacker. In this paper, we restrict ourselves to games where both the defender and the attacker play with a periodic strategy. The goal of this paper is to find out if modelling such situations with FlipIt with propagation delay allows us to draw interesting lessons about security measures against APTs. \\
+%-Remark- Resultaten toevoegen
+
+\textbf{Keywords}: Game theory, Advanced Persistent Threats, cyber security, FlipIt, stealthy takeovers, propagation methods.
+
+\end{abstract}
+
+\begin{abstract*}
+In onze hedendaagse maatschappij valt security niet weg te denken.  Door de technologische vooruitgang worden security-aanvallen veel geavanceerder en moeilijker te bestrijden. Zo zijn er onlangs gerichte security-aanvallen geweest op grote bedrijven, zoals bijvoorbeeld de aanval op Belgacom (een grote Belgische telecom). Deze aanvallen hebben aangetoond dat zelfs de meest veilige
+bedrijven nog steeds gecompromitteerd kunnen worden, en dat bovendien dergelijke aanvallen onopgemerkt kunnen blijven gedurende een hele tijd. 
+
+Een groot aantal bedrijven hebben databases die belangrijke informatie bevatten zoals bijvoorbeeld vertrouwelijke informatie over klanten. Het is belangrijk dat deze informatie binnen het bedrijf blijft. Het doel van computer en network security is om deze informatie te beschermen tegen bedreigingen. \\
+Deze thesis focust zich op Advanced Persistent Threats (APT). Een APT is een niet-aflatende en gerichte cyber-aanval die ontworpen is om systemen en netwerken heimelijk binnen te dringen en dan voor een lange tijd onopgemerkt te blijven. Een manier om deze heimelijke aanvallen te analyseren is door deze te modelleren via speltheorie. Speltheorie krijgt meer en meer belangstelling in het veld van security om cyber security problemen te analyseren. Deze problemen zijn meestal gemodelleerd als een spel met twee spelers: een aanvaller en een verdediger. 
+
+
+Deze thesis bouwt verder op een security spel ge"introduceerd door van Dijk et al, ``FlipIt'' \citep{FlipIt}.
+FlipIt is een speltheoretisch framework om scenario's te modelleren die een heimelijk aspect hebben. Het is een 2-spelers spel bestaande uit een aanvaller, een verdediger en een gedeelde bron.  De spelers proberen om controle te krijgen over de gedeelde bron en ze
+doen dit op een heimelijke manier. FlipIt houdt echter geen rekening met het feit dat een aanval niet onmiddellijk effect heeft, maar dat de feitelijke overname van de bron kan gebeuren met een zekere vertraging. Het kan bijvoorbeeld zijn dat een virus even tijd nodig heeft om een computer over te nemen. In deze thesis passen we het model van FlipIt zodanig aan dat het toepasbaar is voor heimelijke aanvallen die onderhevig zijn aan een vertraging.
+ \\
+
+\subsection{FlipIt}
+Om te begrijpen hoe we het FlipIt spel kunnen aanpassen om APT propagatie in acht te nemen, is het belangrijk om vertrouwd te raken met de concepten van het basisch FlipIt spel en de notaties.  \\
+
+FlipIt is een spel met twee spelers met een gedeelde bron die de spelers zo lang mogelijk willen beheren. De gedeelde bron kan een wachtwoord, een netwerk of een geheime sleutel zijn, afhankelijk van de situatie. In de rest van de thesis duiden we de twee spelers aan met onderschrift  \textit{A} voor de aanvaller en onderschrift \textit{D} voor de verdediger.
+
+Het spel begint op tijdstip $ t = 0 $ en blijft voor onbepaalde tijd doorgaan ($ t \rightarrow \infty $). De tijd van het spel is continu. Om controle over de bron te krijgen kunnen de spelers $i$, met $ i \in \{A, D \} $ de bron flippen. Elke flip impliceert een zekere kost $ k_{i} $ en deze kosten kunnen vari"eren voor elke speler. Beide spelers proberen om hun kosten te minimaliseren. Door een kost in te voeren, voorkomt men dat de spelers te vaak flippen. \\
+
+De unieke eigenschap van FlipIt is dat elke flip op een heimelijke manier gebeurt. Dit betekent dat beide spelers geen weet hebben over wie de controle heeft over de bron. Zo zal de verdediger niet kunnen achterhalen of de bron al is gefipt door de aanvaller tot hij de bron zelf flipt. Het doel van elke speler is om zo lang mogelijk de controle te houden over de bron en tegelijkertijd de kost van de bewegingen (het flippen) te minimaliseren. Een beweging kan ook leiden tot een ``verloren beweging'', genoemd een flop.  Als een speler flipt wanneer hij of zij al de controle  heeft over de bron, dan verspilt deze speler een zet omdat het niet leidt tot een verandering van controle. Er gaat dus ook een kost verloren. \\
+
+
+\begin{figure}[hbtp]
+\center
+\includegraphics[scale=0.6]{../../doc/template/Images/FlipBasic}
+\caption{Een FlipIt spel waarbij beide spelers periodiek spelen. Elke beweging of flip is aangegeven met een groene (donkergrijs) of oranje (lichtgrijze) cirkel. De aanvaller is weergegeven in het oranje en speelt met een periode van $ \delta_{A} = 4 $. De verdediger is weergegeven in het groen en speelt met een periode van $ \delta_{D} = 3 $. De groene en oranje rechthoeken geven aan welke speler in controle is van de bron.}
+\label{fig: FLipItDefault}
+\end{figure}
+
+
+
+Een tijdsafhankelijke variabele $ C = C_{i}(t) $ duidt de toestand van de bron aan.
+$ C_{D}(t) =$  1 als het spel onder controle is van de verdediger en 0 als het spel onder controle is van de aanvaller. Analoog zal $ C_{A}(t) =$ 1 zijn als het spel onder controle is van de aanvaller en 0 als het onder controle is van de verdediger. Aangezien er op elk tijdstip een en slechts een speler in controle is over de bron is dus  $ C_{A}(t) +  C_{D}(t) = 1 $.
+Het spel begint met de verdediger in controle: $ C_{D}(0) = 1 $. \\
+
+
+
+De totale winst van de speler \textit{i} is gelijk aan de totale hoeveelheid tijd waarin een speler \textit{i} in controle is van de bron vanaf het begin van het spel tot de huidige tijd \textit{t}:
+\begin{equation}
+G_{i}(t) = \int_0^t \! C_{i}(x) dx.
+\end{equation}
+De totale winst van de verdediger opgeteld bij de totale winst van de aanvaller telt op tot \textit{t}:
+\begin{equation} 
+G_{D}(t) + G_{A}(t) = t
+\end{equation}
+De gemiddelde winst ratio van speler \textit{i} is als volgt:
+\begin{equation}
+\gamma_{i}(t) = G_{i}(t) / t.
+\end{equation}
+En daarmee geldt voor alle $ t> 0 $:
+\begin{equation} 
+\gamma_{D}(t) + \gamma_{A}(t) = 1
+\end{equation}
+De spelers krijgen een benefit gelijk aan de hoeveelheid tijd dat ze in het bezit zijn van de bron min de kosten voor het maken van de bewegingen. 
+$ \beta_{i}(t) $ is de gemiddelde benefit ratio van een speler \textit{i} tot aan tijd \textit{t}:
+\begin{equation}
+\beta_{i}(t) = \gamma_{i}(t) - k_{i} \alpha_{i}.
+\end{equation}
+waarin de kosten van een speler \textit{i} worden aangegeven met $ k_{i} $ en waarin $\alpha_{i}$ het gemiddelde flipfrequentie definieert voor speler \textit{i} met $n_{i}(t)$ het aantal bewegingen door speler \textit{i}:
+\begin{equation}
+\alpha_{i}(t) = \dfrac{n_{i}(t)}{t}
+\end{equation}
+De benefitratio is gelijk aan de fractie van de tijd waarin de bron in handen is van speler \textit{i}, minus de kost van het flippen.
+Gedurende het spel wordt de asymptotische benefit ratio (of ook gewoon benefit) gedefinieerd als \textit{lim inf} van de gemiddelde benefit omdat de tijd \textit{t} toeneemt tot oneindig en de gemiddelde benefit niet altijd een limiet heeft.
+\begin{equation}
+\beta_{i} (t) = \lim_{t \to \infty } inf \beta_{i}(t)
+\end{equation}
+\\
+
+
+\subsubsection{Strategie"en}
+Omdat de spelers op een heimelijke manier bewegen, zijn er verschillende soorten feedback die een speler kan krijgen tijdens het flippen. Dergelijke feedback verdeelt de strategi"en in twee groepen: de niet-adaptieve strategie"en en de adaptieve strategie\"en. Deze zijn beschreven in de tabel \ref{tabel: Strategies}. \\
+
+Indien een speler geen feedback krijgt, zal hij op dezelfde manier spelen tegen elke tegenstander. Deze strategie noemt men een niet-adaptieve strategie omdat de speelstrategie niet afhankelijk is van de bewegingen van de tegenstander. Een interessante subklasse van de niet-adaptieve strategie"en is de \textit{renewal} strategie waarbij de tijdsintervallen tussen twee opeenvolgende bewegingen worden gegenereerd door een vernieuwingsproces. 
+%De lengte tussen twee opeenvolgende bewegingen zijn onafhankelijk en identiek verdeelde willekeurige variabelen gekozen uit een dichtheids formule \textit{f}. 
+Het vernieuwingsproces betekent dat de strategi"en worden vernieuwd na elke beweging: de lengte van het interval tot aan de volgende beweging hangt alleen af van de huidige tijd en niet van de voorafgaande geschiedenis. Een voorbeeld van een dergelijke \textit{renewal} strategie is de periodieke strategie waarbij het tijdsverloop tussen twee opeenvolgende bewegingen van de spelers bepaald is door een vast interval. Een exponenti"ele strategie is een \textit{renewal} strategie waarbij het interval tussen twee opeenvolgende zetten exponentieel verdeeld is. \\
+
+Als een speler feedback krijgt, kan hij zijn strategie aanpassen aan de informatie verkregen over de bewegingen van de tegenstander. Afhankelijk van de feedback kunnen twee subklassen van adaptieve strategie"en worden ge"identificeerd. The \textit{Last Move} (LM) strategi"en vertegenwoordigen de klasse waarbij een speler de exacte tijd te weten komt van de laatste flip van de tegenstander. In de tweede klasse, genaamd \textit{Full History} (FH),  krijgt een speler de hele geschiedenis van de beweging van de tegenstander wanneer hij flipt. \\
+
+
+ \begin{table}
+ \center
+ \begin {tabular} {l | c}
+  \textbf{Categori"en} & \textbf{Klassen} \\
+  \hline Niet-adaptieve (NA) & Renewal \\
+  & - Periodieke \\
+  & ~~~ - Exponenti"ele \\
+  & Algemeen niet-adaptieve \\
+  \hline Adaptieve (AD) & Last move (LM) \\
+  & Full History (FH) \\
+\end{tabular}
+ \caption{Hi"erarchie van de strategi"en in FlipIt}
+ \label{tabel: Strategies}
+ \end{table}
+
+
+Uit het onderzoek van het FlipIt framework zijn er een aantal interessante resultaten bekomen:
+\begin{itemize}
+\item periodieke spellen domineren de andere \textit{renewal }strategi"en. Dit betekent dat het altijd voordeliger is om een periodieke strategie te spelen tegen een tegenstander met een \textit{renewal} strategie;
+\item periodiek spelen is nadelig tegen spelers die de\textit{ Last Move} adaptieve strategie gebruiken. De tegenspeler kan telkens te weten komen wanneer de volgende flip zal komen en juist erachter zelf flippen. De \textit{Last Move} tegenspeler zal dus heel de tijd in controle zijn van de bron met verwaarloosbare onderbrekingen door de andere speler;
+\item als een speler speelt tegen een \textit{Last Move} tegenspeler die een veel hogere kost heeft, dan heeft de speler twee opties. De eerste optie is om zo snel te spelen zodat de hoge kosten de tegenspeler dwingt om te stoppen met het spel. De tweede optie is om te spelen met een random strategie, zodat de tegenspeler niets kan leren uit de informatie betreffende de volgende beweging van de speler;
+\item de beste verdedigingsstrategie is om snel te spelen, om er zo voor te zorgen dat de tegenspeler afhaakt. Om snel te spelen, moet de speler er voor zorgen dat zijn bewegingskosten veel kleiner zijn dan de kosten van de tegenspeler.
+%item een ​​bedrag van feedback over de tegenstander ontving tijdens het spel, de voordelen aan een speler.
+\end{itemize}
+
+
+\section {FlipIt met Propagatie Vertraging}
+\label{ch: flipitvirus}
+Het FlipIt spel bestaat uit een enkele bron. Om het security probleem voor te stellen van een APT die propageert doorheen een netwerk, defini"eren we de bron als een computer netwerk met meerdere knooppunten. Een van de spelers, de verdediger, zal proberen om zijn netwerk te verdedigen. Hij zal dit doen door elk knooppunt van het netwerk te flippen. De andere speler, de aanvaller, zal proberen om alle knooppunten in het netwerk te infecteren. De aanvaller zal dit doen door een APT te droppen op een van de knooppunten in het netwerk. Deze APT zal zich dan verspreiden en andere knooppunten in het netwerk infecteren. \\
+
+Na het droppen van een APT op een knooppunt in het netwerk duurt het een tijdje voor de malware het gehele netwerk heeft ge"infecteerd. Dus de veronderstelling dat de aanvaller de volledige controle heeft over het hele netwerk zodra een knooppunt besmet is, is niet realistisch. De aanvaller heeft slechts controle over heel het hele netwerk van zodra er een voldoende aantal knooppunten besmet zijn.
+De tijd die nodig is voor de APT om elk knooppunt te infecteren (of een voldoende aantal knooppunten) wordt
+aangeduid als een infectie vertragingsvariabele \textit{d}. Om de waarde van \textit{d} te berekenen, is het voldoende om het kortste pad te berekenen tussen het eerst ge"infecteerde knooppunt en het knooppunt dat het verst hiervan af staat. De variabele $ d $ kan ook dienen om de tijd aan te duiden die nodig is om een voldoende aantal knooppunten te infecteren.\\
+
+Veronderstel dat een aanvaller aanvalt op moment \textit {t}. Hij krijgt niet onmiddellijk de controle over het netwerk, maar pas na \textit {t + d}. Als de verdediger flipt voordat de periode $d$ verlopen is (ergens tussen $t$ en $t+d$), dan zal de aanvaller nooit de volledige controle krijgen over het netwerk. Dit impliceert dat de wiskundige formules voor de \textit{gain} en de \textit{benefit} aangepast moeten worden aan het feit dat de aanvaller een deel van zijn winst verliest vanwege de vertraging $d$. De rest van deze thesis zal zich toeleggen op de formalisering van het FlipIt spel met behulp van de variabele $ d $. \\
+
+
+De formalisering begint bij het model van het niet-adaptieve continue basis FlipIt spel waarin spelers een periodieke strategie gebruiken met een willekeurige fase. De motivatie voor deze keuze is de veronderstelling dat in de praktijk bij de meeste bedrijven de verdedigingsstrategie om het netwerk te verdedigen periodiek is. Er is gekozen voor een periodieke aanvallersstrategie zodat we in staat zijn om de resultaten te vergelijken met de periodieke strategie van het spel FlipIt in \citep{FlipIt}. Bovendien weten we uit de resultaten van het basisch FlipIt spel dat de periodieke strategie de beste strategie is binnen de categorie van de renewal strategi"en. De adaptieve strategi"en zijn minder relevant gezien het heimelijk karakter van de verdediger en de aanvaller. De verdediger zal geen informatie hebben over het tijdstip van de aanval en andersom.\\%, As esta ook overeen met een real-life gemeenschappelijke strategie. % Nog verder Eventueel je motiveren
+
+
+We delen de formalisatie op in drie gevallen. Gelijkaardig als in FlipIt \citep{FlipIt}, is er het geval waarbij de verdediger minstens zo snel speelt als de aanvaller en in het andere geval waarbij de aanvaller minstens zo snel speelt als de verdediger. Voor beide gevallen presenteren we eerst de \textit{gain} formule van een FlipIt spel zonder vertraging, en daarna introduceren we de vertraging. Het derde geval is een speciaal geval waarbij de periode van de verdediger trager of gelijk is aan de vertraging. 
+
+\subsection{Formalisering van de benefitformule met een vertraging}
+Een periodische strategie is een niet-adaptieve strategie waarin het tijdsinterval tussen twee opeenvolgende bewegingen een constante is, weergegeven als $\delta$. Bovendien heeft het een random fase die uniform en random gekozen is in het eerste interval tijdens de eerste flip $[0,\delta]$. De gemiddelde snelheid van de bewegingen van een speler is uitgedrukt als volgt: $\alpha_{i} = \dfrac{1}{\delta_{i}}$. 
+
+\subsection*{\textit{Case 0:} $\delta_{D} \leq d$ (De verdediger speelt met een periode trager of gelijk aan de vertraging}
+
+Wanneer de vertraging groter of gelijk is aan de periode van de verdediger , dan zal de aanvaller nooit controle krijgen over de bron. The verdediger zal altijd flippen voordat de vertraging verlopen is. Figuur \ref{langeredelaybegin} stelt de situatie voor. 
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=0.7]{Images/FlipItCase1delaytobig.pdf} 
+\caption{FlipIt met een vertraging die groter is dan de snelheid van de verdediger: $ d \geq \delta_{D}$ }
+\label{langeredelaybegin}
+\end{figure}
+In dit geval is de benefit voor de verdediger en de benefit voor de aanvaller gelijk aan het volgende:
+\begin{equation}
+\beta_{D}(\delta_{D},\delta_{A})=1-\dfrac{k_{D}}{\delta_{D}}
+\end{equation}
+\begin{equation}
+\beta_{A}(\delta_{D},\delta_{A})=-\dfrac{k_{A}}{\delta_{A}}
+\end{equation}
+
+In de rest van de cases zal $\delta_{D}$ altijd groter zijn dan de vertraging $d$.
+
+\subsection*{\textbf{Case 1:} $\delta_{D} \leq \delta_{A} $ (De verdediger speelt minstens zo snel als de aanvaller.) }
+
+Stel $r = \dfrac{\delta_{D}}{ \delta_{A} }$. The intervallen tussen twee opeenvolgende bewegingen hebben lengte $\delta_{D}$. Beschouw een interval van de verdediger. De waarschijnlijkheids-verdeling over de fase van de verdediger dat de aanvaller flipt tijdens dit interval is $\dfrac{\delta_{D}}{ \delta_{A} } = r$. Gegeven dat de aanvaller flipt in dit interval, zal hij exact een keer flippen in dit interval (aangezien $\delta_{D} \leq \delta_{A} $) en zijn bewegingen uniform en random verdeeld zijn. \\ \\
+
+De verwachte periode dat de aanvaller controle heeft in dit interval is \textit{r/2}, zonder de vertraging door een APT in acht te nemen. Daarom kan de benefit voor de aanvaller, zonder de vertraging als volgt uitgeschreven worden:
+
+\begin{equation}\label{first}
+\beta_{A}(\alpha_{D},\alpha_{A}) =\dfrac {r} {2} - k_{A} \alpha_{A} = \dfrac {\delta_{D}} {2\delta_{A}} - k_{A} \alpha_{A}  
+\end{equation}\\
+
+Bijgevolg is de benefit voor de verdediger:
+\begin{equation}\label{first}
+\beta_{D}(\alpha_{D},\alpha_{A}) =1 -  \dfrac {r} {2} - k_{D} \alpha_{D} = 1 - \dfrac {\delta_{D}} {2\delta_{A}} - k_{D} \alpha_{D} 
+\end{equation}
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=0.6]{../../doc/template/Images/Delayuitgelegd}
+\caption{Het eerste spel is een spel zonder APT propagatie. Het tweede spel is een spel met APT propagatie en \textit{d} = 1. De vertraging wordt aangeduid via een pijl.}
+\label{fig:delaycase1}
+\end{figure}
+
+
+Echter, omwille van de vertraging die nodig is door de APT propagatie, is de maximale tijd dat de aanvaller in controle kan zijn verminderd van $\delta_{D}$ naar $\delta_{D}-d$. Zie figuur \ref{fig:delaycase1}.  Er is een kans \textit{r} dat de aanvaller zal flippen in het interval van de verdediger. Door de vertraging zal de \textit{gain} deze keer niet de helft zijn van het interval. De aanvaller moet vroeg genoeg spelen om controle te krijgen over de bron. Vroeg genoeg betekent dat de aanvaller moet spelen tijdens de periode van $\delta_{D}-d$ tijdens het interval van de verdediger. De kans dat de aanvaller vroeg genoeg zal spelen is $\dfrac{\delta_{D}-d}{\delta_{D}}$ en dit geeft de aanvaller een gemiddelde \textit{gain} van $\dfrac{\delta_{D}-d}{2}$. Als de aanvaller flipt na de periode van $\delta_{D}-d$, dan zal zijn \textit{gain} gelijk zijn aan nul. De kans dat de aanvaller te laat flipt is gelijk aan $\dfrac{d}{\delta_{D}}$. De gemiddelde \textit{gain} ratio van de aanvaller kan dus als volgt uitgedrukt worden, als ze kijken naar het interval van de verdediger:
+\begin{equation*}
+\gamma_{A}(\delta_{D},\delta_{A}) = \dfrac {1}{\delta_{D}} [ \dfrac{\delta_{D}}{\delta_{A}} \cdot \big[ \dfrac{\delta_{D}-d}{\delta_{D}} \cdot \dfrac{\delta_{D}-d}{2} + \dfrac{d}{\delta_{D}} \cdot 0 \big] ]
+\end{equation*}
+
+Om de benefit te berekenen, trekken we de bewegingskosten af van de gemiddelde \textit{gain}.
+\begin{equation}\label{first}
+\beta_{A}(\delta_{D},\delta_{A}) = \dfrac { (\delta_{D}-d) ^{2}} {2 \cdot \delta_{D}  \delta_{A}} - k_{A} \alpha_{A}
+\end{equation}
+
+ 
+De benefit van de verdediger wordt dan als volgt uitgedrukt:
+ \begin{equation}\label{first}
+\beta_{D}(\delta_{D},\delta_{A}) = 1 - \dfrac { (\delta_{D}-d) ^{2}} {2 \cdot \delta_{D}  \delta_{A}} - k_{D} \alpha_{D}
+\end{equation}
+~~\\
+We kunnen zien dat wanneer $d=0$, de formule terug gelijk is aan de formule in het originele FlipIt spel \citep{FlipIt}. 
+
+\subsection*{\textbf{Case 2:} $\delta_{A} \leq \delta_{D} $ (De aanvaller speelt minstens zo snel als de verdediger)}
+
+Stel $r = \dfrac{\delta_{D}}{ \delta_{A} }$. De lengte van de intervallen tussen twee opeenvolgende bewegingen van de aanvaller zijn gelijk aan $\delta_{A}$. Beschouw een gegeven interval van de aanvaller. De waarschijnlijkheids-verdeling over de fase van de aanvaller dat de verdediger flipt tijdens dit interval is $\dfrac{\delta_{A}}{ \delta_{D} } = (1/r)$. Gegeven dat de verdediger flipt in dit interval, zal hij exact een keer flippen in dit interval (aangezien $\delta_{A} \leq \delta_{D} $) en zijn bewegingen zijn uniform en random verdeeld. \\
+
+Er volgt uit een gelijkaardige analyse als in case 1 voor een FlipIt spel zonder virus propagatie met de volgende benefit formules:
+
+\begin{equation}\label{first}
+\beta_{D}(\alpha_{D},\alpha_{A}) = \dfrac {1} {2r} - k_{D} \alpha_{D} = \dfrac {\delta_{A}} {2\delta_{D}} - k_{D} \alpha_{D} 
+\end{equation}
+\begin{equation}\label{first}
+\beta_{A}(\alpha_{D},\alpha_{A}) =1 - \dfrac {1} {2r} - k_{A} \alpha_{A} = 1- \dfrac {\delta_{A}} {2\delta_{D}} - k_{A} \alpha_{A}  
+\end{equation}\\
+
+Voor de case met een virus propagatie beschouwen we twee onderverdelingen: case 2.a en case 2.b, afhankelijk of de vertraging langer of korter duurt dan het verschil tussen de periode van de aanvaller en de verdediger.
+
+\subsubsection*{\textbf{Case 2.a:} $d + \delta_{A} \leq \delta_{D}$}
+Beschouw een tijdsperiode van $\delta_{A} + d$, die het interval van de aanvaller voorstelt gevolgt door de periode van de vertraging in het volgende interval. De verdediger zal nooit twee keer flippen in dit interval omdat  $\delta_{A} + d \leq \delta_{D}$. De verdediger zal flippen tijdens het interval met een kans van $\dfrac{\delta_{A}}{\delta_{D}} $. Wanneer de verdediger flipt, zal de verdediger tot op het einde van het interval in controle zijn van de bron. In het volgende interval zal de aanvaller terug moeten flippen om terug controle te krijgen. Dit betekent dat tijdens de vertraging in het volgende interval, de verdediger de controle zal hebben, zie figuur  \ref{fig:case2} cases (1) and (2). De totale tijd dat de verdediger controle heeft over de bron is vanaf het moment dat de verdediger flipt tot het einde van het interval plus de periode van de vertraging in het volgende interval, namelijk \textit{d}. Omdat $d + \delta_{A} \leq \delta_{D}$  zal de volgende flip van de verdediger nooit gebeuren tijdens de vertraging. De hele vertraging kan worden beschouwd als een extra benefit van een flip in het vorige interval.
+Elke keer dat de verdediger flipt, zal hij een gemiddelde \textit{gain} hebben van $\dfrac{\delta_{A}}{2}$ in het interval waarin hij flipt en een extra \textit{gain} van $d$ in het volgende interval. Dit resulteert in een totaal gemiddelde \textit{gain} per interval van
+$\dfrac{(d+\dfrac{\delta_{A}}{2})}{\delta_{A}}$. \\
+
+De totale \textit{gain} rate van de verdediger is dan de kans dat de verdediger zal flippen gedurende het interval van de aanvaller vermenigvuldigd met de totaal gemiddelde \textit{gain} per interval:
+
+
+\begin{equation}\label{first}
+\gamma_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta_{A}}{\delta_{D}} \cdot \dfrac{(d+\dfrac{\delta_{A}}{2})}{\delta_{A}} 
+\end{equation}
+\begin{equation}\label{first}
+\gamma_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} 
+\end{equation}\\
+Dit resulteert in de volgende benefit formule:
+\begin{equation}\label{first}
+\beta_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - k_{D} \alpha_{D} 
+\end{equation}\\
+
+De benefit van de aanvaller is dan als volgt:
+\begin{equation}\label{first}
+\beta_{A}(\alpha_{D},\alpha_{A}) = 1 -\dfrac{\delta_{A}}{2\delta_{D}} - \dfrac{d}{\delta_{D}} - k_{A} \alpha_{A} 
+\end{equation}\\
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=0.5]{../../doc/template/Images/FlipIt2}
+\caption{ Alle verschillende situaties voor de verdediger en de aanvaller in case 2.a waar d + $\delta_{A} \leq \delta_{D}$ Van case (1) tot case (4) zal de verdediger de controle hebben gedurende een perdiode van $d$ in het interval dat volgt op het interval waarin de verdediger geflipt heeft.}
+\label{fig:case2}
+\end{figure}
+
+
+Het is cruciaal dat $ \delta_{D}$ op zijn minst zo groot is als $d + \delta_{A}$. Zo niet betekent dit dat de aanvaller kan bewegingen tijdens de vertraging in het interval dat volgt op het interval waar de verdediger al geflipt heeft. Stel dat dit wel gebeurt dan kan er een overlap zijn tussen de gemiddelde \textit{gain} van $\dfrac{\delta_{A}}{2}$ en de vertraging. De bovenstaande formule bevat dan een overschatting van de \textit{gain} voor de verdediger gelijk aan de overlap tijdens de vertraging die dubbel geteld wordt. 
+
+\subsubsection*{\textbf{Case 2.b:} $d + \delta_{A} \geq \delta_{D}$}
+Om de formule te bekomen voor de case waarbij de vertraging te groot is, moeten we de overlap met de \textit{gain} berekenen en deze aftrekken. 
+Aangezien $\delta_{D} \geq \delta_{A}$, als de verdediger onmiddellijk speelt nadat de aanvaller geflipt heeft, de verdediger nooit in het voorgaande interval geflipt hebben. In dit geval is er geen overlap. Het probleem van de overlap doet zich alleen voor als de verdediger te laat in het interval flipt. Dit betekent dat alleen het laatste deel van de vertraging kans heeft tot overlap. Hoe groter het verschil tussen de periode van de aanvaller en van de verdediger, hoe kleiner de kans tot overlap. Concreet gezien, alleen het laatste deel met lengte $d - (\delta_{D} - \delta_{A})$ is onderworpen aan overlap. Hieruit volgt dat de kans tot overlap gelijk is aan $\dfrac{ d - (\delta_{D} - \delta_{A})}{\delta_{D}}$ en dat de \textit{gain} de helft zal zijn van dit interval: $\dfrac{ d - (\delta_{D} - \delta_{A})}{2}$.  De \textit{gain} rate die voor overlap zorgt en dus afgetrokken moet worden is:
+
+\begin{equation}\label{first}
+\dfrac{1} {\delta_{A}} \cdot \dfrac{d - (\delta_{D} - \delta_{A})}{\delta_{D}} \cdot \dfrac{d - (\delta_{D} - \delta_{A})}{2}
+\end{equation}
+
+De totale \textit{gain} rate van de verdediger bekomt men dus door de overlap af te trekken van de \textit{gain} rate die bekomen is in case a:
+ \begin{equation}\label{first}
+\gamma_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta_{A}}{\delta_{D}} \cdot \dfrac{(d+\dfrac{\delta_{A}}{2})}{\delta_{A}} - \dfrac{(d - (\delta_{D} - \delta_{A}))^{2}}{2 \delta_{D} \delta_{A}}
+\end{equation}
+\begin{equation}\label{first}
+\gamma_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - \dfrac{(d - (\delta_{D} - \delta_{A}))^{2}}{2 \delta_{D} \delta_{A}}
+\end{equation}\\
+Hieruit volgt de volgende benefit formule:
+\begin{equation}\label{first}
+\beta_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - k_{D} \alpha_{D} - \dfrac{(d - (\delta_{D} - \delta_{A}))^{2}}{2 \delta_{D} \delta_{A}}
+\end{equation}\\
+ 
+De benefit voor de aanvaller is de volgende formule:
+\begin{equation}\label{first}
+\beta_{A}(\alpha_{D},\alpha_{A}) = 1 -\dfrac{\delta_{A}}{2\delta_{D}} - \dfrac{d}{\delta_{D}} - k_{A} \alpha_{A} + \dfrac{(d - (\delta_{D} - \delta_{A}))^{2}}{2 \delta_{D} \delta_{A}}
+\end{equation}\\
+
+\section*{Samenvatting}
+We berekenden de benefit voor beide spelers voor de volgende drie gevallen: wanneer $ \delta_ {D} $ kleiner is dan $ d $, wanneer $ \delta_ {D} $ kleiner is dan $ \delta_ {A} $ en wanneer $\delta_{D}$ groter is dan $ \delta_ {A} $. \\
+De benefit formules voor case 1 en case 2.b leiden tot hetzelfde resultaat. Deze twee cases kunnen worden samengebracht door het aanpassen van de randvoorwaarden. Op figuur \ref{grensen} toont de linkse voorstelling de cases die samengebracht kunnen worden. Case 1 en case 2.b liggen naast elkaar. Het resultaat van het samenbrengen is visueel te zien op de rechtse voorstelling in figuur \ref{grensen}.\\
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=0.5]{Images/borders.pdf}
+\caption{De eerste figuur is de voorstelling van alle cases waarvoor de benefit berekend is. De tweede figuur is de voorstelling van de nieuwe randvoorwaarden door het samenbrengen van case 1 en case 2.b.}
+\label{grensen}
+\end{figure}
+
+
+
+De benefit functies werden als piecewise functies voor elke case uitgerekend:\\
+De benefit formule voor de verdediger is als volgt:
+\begin{displaymath}
+\beta_{D}(\delta_{D},\delta_{A})= \left\{
+\begin{array}{lll}
+	1 - \dfrac{k_{D}}{\delta_{D}}, &~~~~~ & \delta_{D} \leq d \\
+	~ & ~ \\
+   1 - \dfrac{(\delta_{D} - d)^2}{2\delta_{D}\delta_{A}} - \dfrac{k_{D}}{\delta_{D}}, & ~~~~~~& d \leq \delta_{D} \leq d + \delta_{A} \\
+   ~ & ~ \\
+   \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - \dfrac{k_{D}}{\delta_{D}} &~~~~~& \delta_{D} \geq d + \delta_{A} 
+\end{array}
+\right.
+\end{displaymath}
+~~ \\
+De benefit formule voor de aanvaller is als volgt:
+\begin{displaymath}
+\beta_{A}(\delta_{D},\delta_{A})= \left\{
+\begin{array}{lll}
+	 -\dfrac{k_{A}}{\delta_{A}}, & ~~~~~& \delta_{D} \leq d \\
+	~ & ~ \\
+   \dfrac{(\delta_{D} - d)^2}{2\delta_{D}\delta_{A}} - \dfrac{k_{A}}{\delta_{A}}, & ~~~~~~& d \leq \delta_{D} \leq d + \delta_{A} \\
+   ~ & ~ \\
+   1 - \dfrac{\delta_{A}}{2\delta_{D}} - \dfrac{d}{\delta_{D}} - \dfrac{k_{A}}{\delta_{A}} &~~~~~& \delta_{D} \geq d + \delta_{A} 
+
+\end{array}
+\right.
+\end{displaymath}
+
+De piecewise functies zijn ook functies die continu zijn. Door de randgevallen in te vullen, (e.g $\delta_{D}=d$ voor case A en case B), bekomt ben dezelfde formule.
+  
+
+\section{Optimale Strategi"en voor de Aanvaller en de Verdediger}
+Na het bepalen van de benefit functies zijn we ge"interesseerd in de optimale strategi"en van de aanvaller en de verdediger. Vanuit deze strategi"en kunnen later de Nash evenwichten bepaald worden. De berekening van de optimale strategi"en, gegeven een bepaalde periode van de tegenpartij zijn als volgt:\\
+%Na het bepalen van de benefit functies voor de verdediger en de aanvaller, zijn we geinteresseerd in het vinden van de Nash evenwichten. Dit zijn de evenwichten waarbij de spelers benefit niet gaat vergroten door te veranderen van de speel frequentie.  \\
+%Hiervoor moeten eerst de optimale strategi"en bepaald worden. Uit deze optimale strategi"en kan het Nash evenwicht bepaald worden. \\
+%
+%Meer formeel: een Nash evenwicht is een punt $(\delta_{D}^{*},\delta_{A}^{*})$ zodat de verdediger zijn benefit $\beta_{D}(\delta_{D},\delta_{A}^{*})$ maximaal is op $\delta_{A}=\delta_{A}^{*}$ en de attacker zijn benefit $\beta_{A}(\delta_{D}^{*}, \delta_{A})$ maximaal is op $\delta_{D}=\delta_{D}^{*}$. Eerst een aantal belangrijke notaties. $opt_{D}(\delta_{A})$ is the verzameling van waarden ( speeltempo $\delta_{D}$) die de benefit van de defender optimaliseren voor een vaste waarde van $\delta_{A}$ van de aanvaller. Hetzelfde voor $opt_{A}(\delta_{D})$ die verzameling voorstelt van waarden ( speeltempo $\delta_{A}$) die de benefit van de aanvaller optimaliseren voor een vaste waarde van $\delta_{D}$ van de verdediger.\\
+%
+%De benefit functies voor elke case worden eerst nog even opgelijst:
+%
+%\begin{itemize}
+%\item \textbf{Case 1:} $\delta_{D} \leq \delta_{A} $ 
+% \begin{equation*}
+%\beta_{D}(\alpha_{D},\alpha_{A}) = 1 - \dfrac { (\delta_{D}-d) ^{2}} {2 \cdot \delta_{D}  \delta_{A}} - k_{D} \alpha_{D}
+%\end{equation*}
+%\begin{equation*}
+%\beta_{A}(\alpha_{D},\alpha_{A}) = \dfrac { (\delta_{D}-d) ^{2}} {2 \cdot \delta_{D}  \delta_{A}} - k_{A} \alpha_{A}
+%\end{equation*}
+%\item \textbf{Case 2.a:} $d + \delta_{A} \leq \delta_{D}$
+%\begin{equation*}
+%\beta_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - k_{D} \alpha_{D} 
+%\end{equation*}\\
+%\begin{equation*}
+%\beta_{A}(\alpha_{D},\alpha_{A}) = 1 -\dfrac{\delta_{A}}{2\delta_{D}} - \dfrac{d}{\delta_{D}} - k_{A} \alpha_{A} 
+%\end{equation*}
+%\item \textbf{Case 2.b:} $d + \delta_{A} \geq \delta_{D}$
+%\begin{equation*}\
+%\beta_{D}(\alpha_{D},\alpha_{A}) = \dfrac{\delta_{A}}{2\delta_{D}} + \dfrac{d}{\delta_{D}} - k_{D} \alpha_{D} - \dfrac{(d - (\delta_{D} - \delta_{A}))^{2}}{2 \delta_{D} \delta_{A}}
+%\end{equation*}\\
+% \begin{equation*}
+%\beta_{A}(\alpha_{D},\alpha_{A}) = 1 -\dfrac{\delta_{A}}{2\delta_{D}} - \dfrac{d}{\delta_{D}} - k_{A} \alpha_{A} + \dfrac{(d - (\delta_{D} - \delta_{A}))^{2}}{2 \delta_{D} \delta_{A}}
+%\end{equation*}\\
+%\end{itemize}
+
+De functie $opt_{D}(\delta_{A})$ :
+ \begin{displaymath}
+  opt_{D}(\delta_{A}) = \left\{
+     \begin{array}{lr}
+     \left[0,d\right] & \delta_{A} =0 ~~\& ~~k_{D}=0 \\
+     \left[0,d\right] & k_{D}=0\\
+     d & \delta_{A} =0 ~~ \& k_{D} \leq d\\
+          \infty , & \delta_{A} < 2(k_{D} - d)\\
+      \left[ \sqrt{2k_{D}\delta_{A} + d^{2}},\infty\right[ , & \delta_{A} = 2(k_{D} - d) \\
+      \sqrt{2k_{D}\delta_{A} + d^{2}}, & \delta_{A} > 2(k_{D} - d)
+     \end{array}
+   \right.
+\end{displaymath}
+
+De functie $opt_{A}(\delta_{D})$ :
+ \begin{displaymath}
+  opt_{A}(\delta_{D}) = \left\{
+     \begin{array}{lr}
+     \infty & \delta_{D} = 0 \\
+     \left[0,\infty\right] & \delta_{D} \leq d ~~\& ~~k_{A}=0 \\
+          \left[0,\delta_{D} - d\right] & \delta_{D} > d ~~\& ~~k_{A}=0 \\
+            \infty & \delta_{D} < d+k_{A} + \sqrt{2dk_{A}+k_{A}^{2}} \\
+       \left[ \delta_{D}-d, \infty\right],  & \delta_{D} = d+k_{A} + \sqrt{2dk_{A}+k_{A}^{2}} \\
+    	\delta_{D}-d, & \delta_{D} > d+k_{A} + \sqrt{2dk_{A}+k_{A}^{2}}
+     \end{array}
+   \right.
+\end{displaymath}
+\\
+\section{Conclusie}
+\label{ch:conclusion}
+Deze thesis presenteert een aanpassing aan het originele FlipIt spel \citep{FlipIt} om de propagatie van een virus mee in rekening te brengen. We onderscheiden drie gevallen: het geval waarbij de verdediger trager of even snel speelt als de vertraging, het geval waarbij de verdediger trager of even snel speelt als de aanvaller en het geval waarbij de verdediger sneller of even snel speelt als de aanvaller. In het geval waarbij de verdediger sneller speelt als de aanvaller, zal de aanvaller telkens benefit verliezen door de vertraging. In het geval waarbij de aanvaller sneller speelt dan de verdediger, zal de verdediger telkens wanneer hij speelt, extra benefit krijgen door de vertraging van de aanvaller. Verder onderzoekzal moeten aantonen wat de exacte impact van de vertraging van de aanvaller heeft op de Nash evenwichten en het bepalen van de optimale strategie voor de verdediger en de aanvaller.\\
+
+Het bepalen van de optimum functies voor de verdediger en de aanvaller van het FlipIt spel met de vertraging leidt tot interessante resultaten: 
+\begin{itemize}
+\item Wanneer de verdediger sneller speelt dan de vertraging zal de aanvaller niet spelen. Zijn benefit in dit geval zal altijd negatief zijn. Een uitzondering hierop is als zijn kost nul is, dan is de benefit van de aanvaller nul en maakt het niet uit hoe snel hij speelt.
+\item Als de verdediger kan spelen met een kost gelijk aan nul, dan zal de aanvaller niet spelen. Doordat de kost nul is, kan de verdediger zo snel spelen als hij kan. Ook al probeert de aanvaller even snel te spelen als de verdediger, de vertraging zal altijd nadelig zijn voor de aanvaller. 
+\item Vanaf een bepaalde snelheid van de aanvaller zal de verdediger niet meer spelen. Hetzelfde geldt voor een specifieke waarde van de verdediger, waarbij de aanvaller zal kiezen om niet meer te spelen.
+\end{itemize}
+
+APTs zijn steeds meer en meer bijzonder gesofisticeerde kwaadaardige stukken code.  Er zijn APTs bekend die militaire disk-wiping en opnieuw formatteren overleven. Na het formatteren en het opnieuw installeren van het besturingssysteem kunnen deze APTs nog in staat zijn om gevoelige informatie door te sturen (Equation group \citep{Equation}). Dit betekent dat zelfs als de verdediger weet dat een APT het netwerk ge"infecteerd heeft, de werkelijke praktische `` flip '' dient te bestaan en gekend moet zijn door de verdediger. \\
+De meest effici"ente manier om een netwerk systeem te beveiligen is de zwakste link ontdekken. Dit zijn meestal de werknemers. Een effectieve manier om dit probleem tegen te gaan is om het bewustzijn over de risico's van infecties bij de medewerkers te verhogen. Zelfs in aanwezigheid van goede security protection layers, spamfilters en firewalls kan het openen van een phishing mail of gebruik van een onbekende USB stick door een van werknemers genoeg zijn om het netwerk te infecteren. Een systeem kan echter nooit 100 \% waterdicht zijn. Indien een infectie heeft plaatsgevonden en de verdediger een tegenmaatregel , dan kan het Flipit spel helpen om de meest effectieve tempo te bepalen waarin tegenmaatregelen moeten worden doorgebracht.
+
+%In dit \textit{abstract} environment wordt een al dan niet uitgebreide
+%Nederlandse samenvatting van het werk gegeven.
+%Wanneer de tekst voor een Nederlandstalige master in het Engels wordt
+%geschreven, wordt hier normaal een uitgebreide samenvatting verwacht,
+%bijvoorbeeld een tiental bladzijden. \\
+%  
+%Dit is het kort geschreven.\\ Eigenlijk paper in het nederlands schrijven \\
+%Intro -- positionering -- vraagstelling -- oplossingen en contributies \\
+%Flipit en cybersecurity\\
+%Flipit met delay \\
+%Berekeningen \\
+%Niet zo lang geleden werden APT's ontdekt. (Introzin moet beter en anders). Bedrijven worden door APTs aangevallen. Belangrijk om APTs tegen te gaan. Geven een grote kost aan de bedrijven. Hun stealthy aspect is vervelend en moeilijk aan te pakken. Preventie is beter dan detectie. Eens ze binnen zijn kunnen we veel schade veroorzaken. Conventionele middelen zoals firewalls, malware detection helpen hier niet tegen. Nieuwe methode nodig. Gametheory FlipIt. FlipIt uitleggen. Deze formules gaan we dan omvormen tot ze wel propagatie delay kunnen modelleren. Hiervan berekenen we ook het Nash equilibrium. 
+\end{abstract*}
+
+% Een lijst van figuren en tabellen is optioneel
+%\listoffigures
+%\listoftables
+% Bij een beperkt aantal figuren en tabellen gebruik je liever het volgende:
+\listoffiguresandtables
+% De lijst van symbolen is eveneens optioneel.
+% Deze lijst moet wel manueel aangemaakt worden, bv. als volgt:
+\chapter{List of Abbreviations and Symbols}
+\section*{Abbreviations}
+\begin{flushleft}
+  \renewcommand{\arraystretch}{1.1}
+  \begin{tabularx}{\textwidth}{@{}p{12mm}X@{}}
+    RSA & Rivest-Shamir-Adleman \\
+    DDoS & Distributed Denial of Service \\
+    APT & Advanced Persistent Threat \\
+    CIA & Confidentiality, Integrity and Availability \\
+    USB & Universal Serial Bus \\
+    NA & Non-Adaptive \\ 
+    AD & Adaptive \\
+    LM & Last Move \\
+    FH & Full History \\
+    VM & Virtual Machine \\
+    IP & Internet Protocol \\
+    DNS & Domain Name System \\
+    BGP & Border Gateway Protocol \\
+    SEM & Simple Epidemic Model \\
+    SI & Susceptible - Infected \\
+    SIR & Susceptible - Infected - Removed \\
+    SIS & Susceptible - Infected - Susceptible \\
+    AAWP & Analytic Active Worm Propagation\\
+      \end{tabularx}
+\end{flushleft}
+\section*{Symbols}
+\begin{flushleft}
+  \renewcommand{\arraystretch}{1.1}
+  \begin{tabularx}{\textwidth}{@{}p{12mm}X@{}}
+ $i$ & $i \in \{D,A\}$, defines the player. \textit{D} is the defender and \textit{A} is the attacker. \\
+ $\delta_{i}$ & The length of the interval between two consecutive moves of player \textit{i}. \\
+ $\alpha_{i}$ & The average flip rate of player \textit{i}, given by $\alpha_{i}=1/\delta_{i}$. \\
+$k_{i}$ & The cost of player \textit{i}'s moves. \\
+$d$ & The delay caused by the propagation of a threat. \\
+ $G_{i}(t)$ & The total gain of player \textit{i} denotes the amount of time player \textit{i} is in control over the resource up to time \textit{t}. \\
+$\gamma_{i}$ & The average gain rate of player \textit{i} defined as $G_{i}(t)/t$. \\
+$\beta_{i}$ &  The average benefit rate up to time \textit{t} defined as  $\beta_{i} = \gamma_{i} -k_{i} \alpha_{i} $. \\
+$opt_{i}$ & The optimum function for player \textit{i}. \\
+$n_{i}(t)$ & The amount of moves made by player \textit{i} up to time \textit{t}. \\
+  \end{tabularx}
+\end{flushleft}
+
+% Nu begint de eigenlijke tekst
+\mainmatter
+
+%\include{intro}
+\include{chap-10}
+%gebruik van mijn model kan bevoorbeeld gebruikt worden om aan te duiden hoe vaak paswoorden moeten worden veranderd. 
+
+%\include{chap-1}
+\include{chap-5}
+\include{chap-9}
+
+
+
+\include{nash}
+\include{chap-4}
+%\include{chap-3} Related work
+%\include{chap-6}
+%\include{chap-7}
+%\include{chap-8}
+%\include{chap-9}
+% ... en zo verder tot
+%\include{chap-n}
+\include{conclusion}
+
+% Indien er bijlagen zijn:
+%\appendixpage*          % indien gewenst
+%\appendix
+%\include{app-A}
+% ... en zo verder tot
+%\include{app-n}
+
+\backmatter
+% Na de bijlagen plaatst men nog de bibliografie.
+% Je kan de  standaard "abbrv" bibliografiestijl vervangen door een andere. plainnat
+\bibliographystyle{abbrv}
+\bibliography{reffiess}
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 
+
+%@Misc{Coursera,
+%author = {Coursera},
+%title = {Game Theory by Matthew O. Jackson, Kevin Leyton-Brown, Yoav Shoham},
+%howpublished = {https://class.coursera.org/gametheory-004}, last checked on 2015-02-22}
+%}
+%
+%
+%@Misc{Symantec,
+%author = {Symentec},
+%title = {2014 Internet Security Threat Report, Volume 19},
+%howpublished = {http://www.symantec.com/content/en/us/enterprise/other-resources/b-istr-appendices-v19-221284438.en-us.pdf}, last checked on 2015-02-22}
+%}

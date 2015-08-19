@@ -126,6 +126,11 @@ S.~Staniford, V.~Paxson, N.~Weaver, et~al.
 A.~technica: Dan~Goodin.
 \newblock Equation group, 2015-02-16.
 
+\bibitem{Arnoldi}
+L.~N. Trefethen and D.~Bau~III.
+\newblock {\em Numerical linear algebra}, volume~50.
+\newblock Siam, 1997.
+
 \bibitem{FlipIt}
 M.~van Dijk, A.~Juels, A.~Oprea, and R.~Rivest.
 \newblock Flipit: The game of ''stealthy takeover''.

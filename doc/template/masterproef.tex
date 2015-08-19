@@ -58,7 +58,7 @@ delay for an APT propagation into account, which in our case will be a delay for
 \usepackage[font={small,it}]{caption}
 \usepackage[english]{babel}
 %\headstyles{kulemtman}
-
+\usepackage{pdfpages}
 
 %\usepackage{float}
 %\usepackage{caption}
@@ -539,17 +539,17 @@ De functie $opt_{A}(\delta_{D})$ :
 \\
 \section{Conclusie}
 \label{ch:conclusion}
-Deze thesis presenteerde een aanpassing aan het basische FlipIt spel \citep{FlipIt} om de propagatie van een virus in rekening te brengen. We onderscheiden drie gevallen: het geval waarbij de verdediger trager of even snel speelt als de vertraging, het geval waarbij de verdediger trager of even snel speelt als de aanvaller en het geval waarbij de verdediger sneller of even snel speelt als de aanvaller. In het geval waarbij de verdediger sneller speelt dan de aanvaller, zal de aanvaller telkens benefit verliezen door de vertraging. In het geval waarbij de aanvaller sneller speelt dan de verdediger, zal de verdediger telkens hij speelt, extra benefit krijgen door de aanvaller. Dit laat zien dat de vertraging dus steeds nadelig is voor de aanvaller. Verder onderzoek moet kunnen aantonen wat de exacte impact van de vertraging van de aanvaller heeft op de Nash evenwichten en het bepalen van de optimale strategie voor de aanvaller.\\
+Deze thesis presenteert een aanpassing aan het originele FlipIt spel \citep{FlipIt} om de propagatie van een virus mee in rekening te brengen. We onderscheiden drie gevallen: het geval waarbij de verdediger trager of even snel speelt als de vertraging, het geval waarbij de verdediger trager of even snel speelt als de aanvaller en het geval waarbij de verdediger sneller of even snel speelt als de aanvaller. In het geval waarbij de verdediger sneller speelt als de aanvaller, zal de aanvaller telkens benefit verliezen door de vertraging. In het geval waarbij de aanvaller sneller speelt dan de verdediger, zal de verdediger telkens wanneer hij speelt, extra benefit krijgen door de vertraging van de aanvaller. Verder onderzoekzal moeten aantonen wat de exacte impact van de vertraging van de aanvaller heeft op de Nash evenwichten en het bepalen van de optimale strategie voor de verdediger en de aanvaller.\\
 
-Het bepalen van de optimum functies voor de verdediger en de aanvaller van het FlipIt spel met de vertraging leidde tot interessante resultaten: 
+Het bepalen van de optimum functies voor de verdediger en de aanvaller van het FlipIt spel met de vertraging leidt tot interessante resultaten: 
 \begin{itemize}
-\item Wanneer de verdediger sneller speelt dan de vertraging zal de aanvaller ofwel als zijn kost niet nul is niet spelen. Zijn benefit in dit geval zal altijd negatief zijn. Ofwel als zijn kost nul is, zal hij zo snel mogelijk spelen, hij verliest er geen benefit door. 
+\item Wanneer de verdediger sneller speelt dan de vertraging zal de aanvaller niet spelen. Zijn benefit in dit geval zal altijd negatief zijn. Een uitzondering hierop is als zijn kost nul is, dan is de benefit van de aanvaller nul en maakt het niet uit hoe snel hij speelt.
 \item Als de verdediger kan spelen met een kost gelijk aan nul, dan zal de aanvaller niet spelen. Doordat de kost nul is, kan de verdediger zo snel spelen als hij kan. Ook al probeert de aanvaller even snel te spelen als de verdediger, de vertraging zal altijd nadelig zijn voor de aanvaller. 
 \item Vanaf een bepaalde snelheid van de aanvaller zal de verdediger niet meer spelen. Hetzelfde geldt voor een specifieke waarde van de verdediger, waarbij de aanvaller zal kiezen om niet meer te spelen.
 \end{itemize}
 
-APTs zijn steeds meer en meer bijzonder gesofisticeerde kwaadaardige stukken code.  Er zijn APTs bekend die militaire disk-wiping en opnieuw formatteren overleven. Na het formatteren en het opnieuw installeren van het besturingssysteem kunnen deze APTs nog in staat zijn om gevoelige informatie door te sturen (Equation group \citep{Equation}). Dit betekent dat zelfs als de verdediger weet dat een APT het netwerk ge"infecteerd heeft, de werkelijke praktische `` flip '' dient te bestaan en gekend moet zijn door de verdediger. \\
-De meest effici"ente manier om een netwerk systeem te beveiligen is de zwakste link ontdekken. Dit zijn meestal de werknemers. Een effectieve manier om dit probleem tegen te gaan is om het bewustzijn over de risico's van infecties bij de medewerkers te verhogen. Zelfs in aanwezigheid van goede security protection layers, spamfilters en firewalls kan het openen van een phishing mail of gebruik van een onbekende USB stick door een van werknemers genoeg zijn om het netwerk te infecteren. Een systeem kan echter nooit 100 \% waterdicht zijn. Indien een infectie heeft plaatsgevonden en de verdediger kent een tegenmaatregel, dan kan het Flipit spel helpen om de meest effectieve tempo te bepalen waarin tegenmaatregelen moeten worden doorgebracht.
+APTs zijn steeds meer en meer bijzonder gesofisticeerde kwaadaardige stukken code.  Er zijn APTs bekend die militaire disk-wiping en opnieuw formatteren overleven. Na het formatteren en het opnieuw installeren van het besturingssysteem kunnen deze APTs nog in staat zijn om gevoelige informatie door te sturen (Equation group \citep{Equation}). Dit betekent dat zelfs als de verdediger weet dat een APT het netwerk ge"infecteerd heeft, de werkelijke praktische ``flip'' dient te bestaan en gekend moet zijn door de verdediger. \\
+De meest effici"ente manier om een netwerk systeem te beveiligen is de zwakste link ontdekken. Dit zijn meestal de werknemers. Een effectieve manier om dit probleem tegen te gaan is om het bewustzijn over de risico's van infecties bij de medewerkers te verhogen. Zelfs in aanwezigheid van goede security protection layers, spamfilters en firewalls kan het openen van een phishing mail of gebruik van een onbekende USB stick door een van werknemers genoeg zijn om het netwerk te infecteren. Een systeem kan echter nooit 100 \% waterdicht zijn. Indien een infectie heeft plaatsgevonden en de verdediger een tegenmaatregel kent, dan kan het Flipit spel helpen om het meest effectieve tempo te bepalen waarin tegenmaatregelen moeten worden doorgebracht.
 
 %In dit \textit{abstract} environment wordt een al dan niet uitgebreide
 %Nederlandse samenvatting van het werk gegeven.
@@ -640,8 +640,8 @@ $n_{i}(t)$ & The amount of moves made by player \textit{i} up to time \textit{t}
 
 % Indien er bijlagen zijn:
 %\appendixpage*          % indien gewenst
-%\appendix
-%\include{app-A}
+\appendix
+\include{app-A}
 % ... en zo verder tot
 %\include{app-n}
 
